@@ -1,0 +1,139 @@
+{
+  "id": "781",
+  "title": "Dynamic Partition Models",
+  "abstract": "We present a new approach for learning compact and intuitive distributed representations with binary encoding. Rather than summing up expert votes as in products of experts, we employ for each variable the opinion of the most reliable expert. Data points are hence explained through a partitioning of the variables into expert supports. The partitions are dynamically adapted based on which experts are active. During the learning phase we adopt a smoothed version of this model that uses separate mixtures for each data dimension. In our experiments we achieve accurate reconstructions of high-dimensional data points with at most a dozen experts.",
+  "accepted": false,
+  "zeroShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Limited novelty and experimental validation. The core idea of partitioning variables among experts is intuitive but not sufficiently novel for a top-tier venue. The learning procedure relies on heuristic sign-based updates for expertise rather than principled optimization. Experimental evaluation is primarily qualitative (visual reconstructions) with no quantitative comparisons on standard benchmarks, no statistical significance testing, and very small test sets (28 and 48 samples). Missing comparisons with modern representation learning methods and no clear advantages demonstrated over existing approaches."
+      },
+      "token": {
+        "prompt_tokens": 4244,
+        "completion_tokens": 147,
+        "total_tokens": 4391
+      },
+      "time": "2026-02-05T23:19:19.359975+00:00"
+    }
+  ],
+  "article": [
+    {
+      "heading": "1 INTRODUCTION",
+      "text": "We consider the task of learning a compact binary representation (e.g. Goessling & Amit, 2015). That means we are seeking a parsimonious set of experts, which can explain a given collection of multivariate data points. In contrast to most existing approaches the emphasis here is on finding experts that are individually meaningful and that have disjoint responsibilities. Ideally, each expert explains only one factor of variation in the data and for each factor of variation there is exactly one expert that focuses on it. Formally, the experts Pk, k = 1, . . . ,K, are probability distributions that depend on binary latent variables h(k). The latent state h specifies which experts are active and has to be inferred for each D-dimensional data point x. The active experts then define a probability distribution P. The goal of representation learning is to train experts such that the conditional likelihood P(x |h) of the data given the latent activations is maximized. We start by describing a simple model family, which forms the basis of our work. A partition model (Hartigan, 1990) makes use of a manually specified partitioning of the D variables into subsets 1, . . . , D = L l=1 Sl. For each subset of variablesx(Sl) = (x(d))dSl there exists a separate model Pl. It is then typically assumed that variables in different subsets are conditionally independent, i.e., P(x |h) = L l=1 Pl(x(Sl) |h(l)). (1) The model is completed by specifying a prior distribution P(h) for the latent state h. One advantage of partition models is that estimating Pl from observations is straightforward, while learning expert models in general requires computationally involved procedures (Bengio et al., 2013). However, in order to be able to define a satisfactory partitioning of the variables some prior knowledge about the dependence structure is needed. For image data a common choice is to use a regular grid that divides the image into patches (e.g. Pal et al., 2002). In general, a good partitioning is characterized by providing weakly dependent subsets of variables so that the conditional independence assumption (1) is reasonable and the distribution of the latent variables is easy to model. Unfortunately, often there simply is no single fixed partitioning that works well for the whole dataset because the set of variables, which are affected by different factors of variation, might overlap. This restricts the scenarios in which partition models are useful. In this paper we extend partition models to allow for dynamically adapting partitionings. In Section 2 we introduce the model and present an appropriate learning procedure. Related work is discussed in Section 3. Special emphasis is given to the comparison with products of experts (Hinton, 2002). Experiments on binary and real-valued data are performed in Section 4. While it is important to explain high-dimensional data points through multiple experts, our work shows that it is possible to assign the responsibility for individual variables to a single expert (rather than having all active experts speak for every variable).",
+      "exclude": true
+    },
+    {
+      "heading": "2 DYNAMIC PARTITION MODELS",
+      "text": "Our main proposal is to define for each expert Pk its level of expertise ek RD+ for all variables. We can then dynamically partition the variables based on the active experts. Specifically, for each variable we employ the most reliable (active) expert P(x |h) = D d=1 Pk(d)(x(d)), k(d) = argmax k:h(k)=1 ek(d). (2) That means, each variable x(d) is explained by only a single expert k(d). The partitioning into expert supports Sk(h) = d 1, . . . , D : k(d) = k is determined dynamically based on the latent configuration h. We hence call our model a dynamic partition model.",
+      "exclude": false
+    },
+    {
+      "heading": "2.1 INFERENCE",
+      "text": "In the inference step we try to find for each data point xn the subset of experts k : hn(k) = 1 that maximizes P (xn |hn). To do this, we suggest to sequentially activate the expert that most improves the likelihood, until the likelihood cannot be improved anymore. This approach is called likelihood matching pursuit (Goessling & Amit, 2015). The greedy search works well for our model because we are working with a small set of experts and each expert focuses on a rather different structure in the data. Consequently, the posterior distribution on the latent variables given xn is often highly peaked at a state hn (note that for high-dimensional data the effect of the prior P(h) is typically negligible).",
+      "exclude": false
+    },
+    {
+      "heading": "2.2 LEARNING",
+      "text": "In contrast to traditional approaches, which combine multiple experts for individual variables, training the experts in a dynamic partition model is trivial. Indeed, the maximum-likelihood estimates are simply the empirical averages over all observations for which the expert was responsible. For example, the expert means can be estimated from training data xn, n = 1, . . . , N , as k(d) = N n=1 1kn(d)=kxn(d) N n=1 1kn(d)=k . (3) Here, kn(d) denotes the expert with the highest level of expertise ek(d) among all experts k with hn(k) = 1.",
+      "exclude": false
+    },
+    {
+      "heading": "2.2.1 EXPERTISE-WEIGHTED COMPOSITION",
+      "text": "In order to compute the estimator in (3) the levels of expertise ek have to be known. Since in this paper we are trying to train the experts as well as the associated levels of expertise we consider a smoothing of the maximum-expertise composition (2) to motivate our learning procedure. Rather than using the expert with the highest level of expertise, we form a mixture of the active experts, where the mixture weight is proportional to the level of expertise. Thus, the smoothed composition rule is P(x |h) = D d=1 K k=1 rk(d)Pk(x(d)), rk(d) = ek(d) k:h(k)=1 ek (d) if h(k) = 1 0 if h(k) = 0 . (4) In contrast to classical mixture models (e.g. McLachlan & Peel, 2004) we use different mixture weights for each dimension d 1, . . . , D. The mixture weight rk(d) is the degree of responsibility of k-th expert for the d-th dimension and depends on the latent state h. An expert with a medium level of expertise assumes full responsibility if no other reliable expert is present and takes on a low degree of responsibility if experts with a higher level of expertise are present. According to the total variance formula V[P] = Erk [V[Pk]] + Vrk [E[Pk]] the variance of a mixture is always larger than the smallest variance of its components. In other words, the precision of the smoothed model is maximized when all the mixture weight (individually for each dimension) is concentrated on the most precise expert. We can thus learn a dynamic partition model in an EM manner (Dempster et al., 1977) by interleaving inference steps with updates of the experts and levels of expertise in the smoothed model.",
+      "exclude": false
+    },
+    {
+      "heading": "2.2.2 EXPERT UPDATE",
+      "text": "The sequential inference procedure (from Section 2.1) provides for each data point xn the latent representation hn. We denote the corresponding expert responsibilities (using the current estimates for the level of expertise) by rnk. The smooth analog to the hard update equation (3) is a responsibilityweighted average of the training samples k(d) = N n=1 rnk(d)xn(d) + 0 N n=1 rnk(d) + . (5) For stability we added a term that shrinks the updated templates towards some target 0 if the total responsibility of the expert is small. In our experiments we set 0 to the average of all training examples. The update rule implies that the experts have local supports, in the sense that they are uninformative about variables for which they are not responsible. For binary data the mean templates k are all we need. Continuous data x RD is modeled through Gaussians and hence we also have to specify the variance vk of the experts. We again use a responsibility-weighted average vk(d) = N n=1 rnk(d)(xn(d) k(d))2 + v0 N n=1 rnk(d) + , (6) where v0 is the empirical variance of all training samples.",
+      "exclude": false
+    },
+    {
+      "heading": "2.2.3 EXPERTISE UPDATE",
+      "text": "We now turn to the updates of the levels of expertise. The log-likelihood of the smoothed model (4) as a function of ek is rather complex. Using gradient descent is thus problematic because the derivatives with respect to ek can have very different scales, which makes it difficult to choose an appropriate learning rate and hence the convergence could be slow. However, exact optimization is not necessary because in the end only the order of the levels of expertise matters. Consequently, we propose to adjust ek(d) only based on the sign of the gradient. We simply multiply or divide the current value by a constant C. If the gradient is very close to 0 we leave ek(d) unchanged. For all our experiments we used C = 2. Larger values can speed up the convergence but sometimes lead to a worse solution. Using an exponential decay is common practice when learning levels of expertise (e.g. Herbster & Warmuth, 1998). In the learning procedure we perform the expertise update first. We then recompute the responsibilities using these new levels of expertise and update the experts. Our algorithm typically converges after about 10 iterations.",
+      "exclude": false
+    },
+    {
+      "heading": "3 RELATED WORK",
+      "text": "Herbster & Warmuth (1998) proposed an algorithm for tracking the best expert in a sequential prediction task. In their work it is assumed that a linear ordering of the variables is known such that the expert with the highest level of expertise is constant on certain segments. In contrast to that, our approach can be applied to an arbitrary permutation of the variables. Moreover, they consider a single sequence of variables with a fixed partitioning into experts supports. In our setup the partitioning changes dynamically depending on the observed sample. However, the greatest difference to our work is that Herbster & Warmuth (1998) do not learn the individual experts but only focus on training the levels of expertise. Lucke & Sahani (2008) studied a composition rule that also partitions the variables into expert supports. In their model the composed template is simply the maximum of the experts templates k. This rule is only useful in special cases. A generalization, in which the composition depends on the maximum and the minimum of the expert templates k(d), was considered by Goessling & Amit (2015). While the motivation for that rule was similar, the maximum-expertise rule in this paper is more principled and can be applied to continuous data. In the work by Amit & Trouve (2007) a simple average (i.e., an equal mixture) of the individual templates was used. With such a composition rule, all experts are equally responsible for each of the variables and hence specialization on local structures is not possible. To circumvent this problem, in their work ek(d) was manually set to 1 for some subset of the dimensions (depending on a latent shift variable) and to 0 elsewhere. A popular model family with latent binary representation are products of experts (Hinton, 2002). In such a model the individual distributions Pk are multiplied together and renormalized. Computation of the normalizing constant is in general intractable though. A special case, in which an explicit normalization is possible, are restricted Boltzmann machines (Hinton, 2002). In these models the experts are product Bernoulli distributions with templates k [0, 1]D. The composed distribution is then also a product Bernoulli distribution with composed template RBM(d) = ( k:h(k)=1 wk(d) ) , where the weights wk(d) = log(k(d)/(1 k(d)) R are the log-odds of the experts and (t) = (1 + exp(t))1 is the logistic function. This sum-of-log-odds composition rule arises naturally from generalized linear models for binary data because the log-odds are the canonical parameter of the Bernoulli family. In a product of experts, the variance of the composition is usually smaller than the smallest variance of the experts. As a consequence, products of experts tend to employ many experts for each dimension (for more details on this issue see Goessling & Amit (2015)). Even with an L1-penalty on the votes wk(d) the responsibility for individual variables x(d) is typically still shared among many experts. The reason for this is that under the constraint k wk(d) = w(d) the quantity k |wk(d)| is minimized whenever wk(d) has the same sign for all k. The usual inference procedure for products of experts independently activates experts based on their inner product with the data point. In particular, not just the most probable expert configuration is determined but the whole posterior distribution on latent states given the data is explored through Monte Carlo methods. For learning in products of experts, simple update rules like (5) and (6) cannot be used because for each expert the effects of all other experts have to be factored out. Dynamic partition models essentially decompose the expert votes wk into expert opinions k and levels of expertise ek. Apart from the computational advantages for learning, this introduces an additional degree of flexibility because the expert supports are adjusted depending on which other experts are present (cf. Figure 5). Moreover, the decomposition into opinions and levels of expertise avoids ambiguities. For example, a votewk(d) 0 could mean that k(d) 1/2 or that ek(d) 0. Another common model for representation learning are autoencoders (Vincent et al., 2008), which can be considered as mean-field approximations of restricted Boltzmann machines that use latent variables h(k) with values in [0, 1]. To obtain a sparse representation a penalty on the number of active experts can be added (Ng, 2011). Such approaches are also known as sparse dictionaries (e.g., Elad, 2010) and are based on opinion pools of the form k h(k)wk(d). The strength of the sparsity penalty is an additional tuning parameter which has to be tuned. In dynamic partition models sparse activations are inherent. In the next section, we experimentally compare products of experts, autoencoders and sparse dictionaries to our proposed model.",
+      "exclude": true
+    },
+    {
+      "heading": "4 EXPERIMENTS",
+      "text": "",
+      "exclude": false
+    },
+    {
+      "heading": "4.1 SYNTHETIC DATA",
+      "text": "We consider a synthetic example and try to learn the underlying factors of variation. The dataset consists of the 32-element subset (0, 1), (1, 0)5 0, 110. Note that there are 5 factors of variation corresponding to the state of the pairs (x(2l1),x(2l)) for l = 1, . . . , 5 with the two factor levels (0, 1) and (1, 0). Indeed, the distribution can be easily expressed through a partition model with partitioning 1, 2 3, 4 5, 6 7, 8 9, 10 and corresponding models Pl(x(2l1),x(2l)) = 12 1x(2l1)=0, x(2l)=1+ 1 2 1x(2l1)=1, x(2l)=0. We show that our dynamic partition model is able to learn these factors of variation without requiring a manual specification of the partitioning. Here, the total number of experts we need to accurately reconstruct all data points happens to be equal to the number of dimensions. However, in other cases the number of required experts could be smaller or larger than D. We ran our learning algorithm for 15 iterations starting from a random initialization of the experts. The resulting templates after 3, 5 and 15 iterations are shown in Figure 1. We see that each of the final experts specializes in exactly two dimensions d and d+1. Its opinion for these variables are close to 0 and 1, respectively, while the opinions for the remaining variables are about 1/2. Every data point can now be (almost) perfectly reconstructed by using exactly 5 of these experts. For comparison we trained various other models with 10 experts, which use a sum-of-log-odds composition. We first tried an autoencoder (Vincent et al., 2008), which in principle could adopt the identity map because it uses (in contrast to our model) a bias term for the observable and latent variables. However, the gradient descent learning algorithm with tuned step size yielded a different representation (Figure 2, 1st panel). While the reconstruction errors are rather low, they are clearly nonzero and the factors of variations have not been disentangled. Next, we considered a dictionary with a sparse representation (e.g., Elad, 2010). The sparsity penalty was adjusted so that the average number of active dictionary elements was around 5. The learning algorithm again yielded highly dependent experts (Figure 2, 2nd panel). Finally, we trained a restricted Boltzmann machine through batch persistent contrastive divergence (Tieleman, 2008) using a tuned learning rate. Note that a restricted Boltzmann machine in principle only requires 5 experts to model the data appropriately because it uses bias terms. However, we again learned 10 experts (Figure 2, 3rd panel). While the results look better than for the previous two models they are still far from optimal. In earlier work Goessling & Amit (2015) we performed a quantitative comparison for a similar dataset, which showed that the reconstruction performance of models with sum-of-log-odds composition is indeed suboptimal.",
+      "exclude": false
+    },
+    {
+      "heading": "4.2 MNIST DIGITS",
+      "text": "We now consider the MNIST digits dataset (LeCun et al., 1998), which consists of 60,000 training samples and 10,000 test samples of dimension 28 28 = 784. We ran our learning algorithm for 10 iterations and trained 100 experts (Figure 3). We see that some experts specialize on local structures while others focus on more global ones. In Figure 4 we visualize the inference procedure for some test samples using these 100 learned experts. On average 12 experts were activated for each data point. For easier visualization we show at most 10 iterations of the likelihood matching pursuit algorithm. The reconstructions are overall accurate and peculiarities of the samples are smoothed out. In Figure 5 we illustrate how the expert supports change based on the latent representation. Depending on which other experts are present the supports can vary quite a bit.",
+      "exclude": false
+    },
+    {
+      "heading": "4.3 WEIZMANN HORSES",
+      "text": "The following experiment shows that our model is able to cope with very high-dimensional data. The Weizmann horse dataset (Borenstein & Ullman, 2008) consists of 328 binary images of size 200 240. We used the first 300 images to train 20 experts (Figure 6) and used the remaining 28 images for testing. Some of the experts are responsible for the background and the central region of the horse while other experts focus on local structures like head posture, legs and tail. In Figure 7 we illustrate the partitioning of the test examples into expert opinions. For simplicity we used exactly 4 experts to reconstruct each sample. Not all characteristics of the samples are perfectly reconstructed but the general pose is correctly recovered. The same dataset was used to evaluate the shape Boltzmann machine (Eslami et al., 2014), where 2,000 experts were learned. For those experiments the images were downsampled to 32 32 pixels. This is a factor 50 smaller than the full resolution of 48,000 dimensions that we use.",
+      "exclude": false
+    },
+    {
+      "heading": "4.4 CALTECH MOTORCYCLES",
+      "text": "We also experimented with real-valued data using the Caltech-101 motorcycle dataset (Fei-Fei et al., 2007), which consists of 798 images of size 100 180. The first 750 images were used for training and the remaining 48 images for testing. We trained 50 experts by running our learning procedure for 10 iterations. In Figure 8 we visualize the reconstructed test examples. The reconstructions are a bit blurry since we use a fairly sparse binary representation. Indeed, for each data point on average only 7 experts were employed. Note that the shapes of the motorcycles are reconstructed quite accurately.",
+      "exclude": false
+    },
+    {
+      "heading": "5 DISCUSSION",
+      "text": "In order to improve the reconstructions for continuous image data we could use real-valued latent variables in addition to binary ones (as in Hinton et al. (1998)). This would allow us to model intensities and contrasts more accurately. The inference procedure would have to be adapted accordingly such that continuous activations can be returned. Our work focused on product distributions. In order to apply the proposed approach to models with dependence structure one can make use of an autoregressive decomposition (e.g., Goessling & Amit, 2016). If the joint distribution is written as a product of conditional distributions then we can employ the same composition rule as before. Indeed, we can model composed the conditionals as P(x(d) |x(1:d1),h) = Pk(d)(x(d) |x(1:d1)), where Pk are autoregressive expert models and k(d) is the active expert with the highest level of expertise for dimension d.",
+      "exclude": true
+    },
+    {
+      "heading": "6 DERIVATIVES",
+      "text": "We provide here the derivatives of the log-likelihood in the expertise-weighted compositional model (4) with respect to the expert parameters.",
+      "exclude": false
+    },
+    {
+      "heading": "6.1 BERNOULLI MODEL",
+      "text": "The Bernoulli log-likelihood is f() = x log+ (1 x) log(1 ), where the composition rule for the probability is = k rkk, rk = ek k ek .",
+      "exclude": false
+    },
+    {
+      "heading": "6.1.1 DERIVATIVES WITH RESPECT TO THE COMPOSED PROBABILITY",
+      "text": "The first and second derivative of the log-likelihood with respect to the composed probability are df d = x 1 x 1 = x (1 ) , d2f d2 = x 2 1 x (1 )2 = (x ) 2 2(1 )2 .",
+      "exclude": false
+    },
+    {
+      "heading": "6.1.2 DERIVATIVES WITH RESPECT TO THE EXPERT PROBABILITIES",
+      "text": "The first and second derivative of the composed probability with respect to the expert probabilities are d dk = rk, d2 d2k = 0. Consequently, the derivatives of the log-likelihood with respect to the expert probabilities are df dk = df d d dk = rk x (1 ) , d2f d2k = d2f d2 ( d dk )2 + df d d 2 d2k = r2k (x )2 2(1 )2 . We see that d2f/d2k < 0 for (0, 1), i.e., the log-likelihood is a strictly concave function of k.",
+      "exclude": false
+    },
+    {
+      "heading": "6.1.3 DERIVATIVE WITH RESPECT TO THE LEVELS OF EXPERTISE",
+      "text": "The derivative of the composed probability with respect to the levels of expertise is d dek = kE ekk E2 = k E , where E = k ek . The derivative of the log-likelihood with respect to the levels of expertise can be computed as df dek = df d d dek .",
+      "exclude": false
+    },
+    {
+      "heading": "6.2 GAUSSIAN MODEL",
+      "text": "The Gaussian log-likelihood is f(, v) = (x ) 2 2v 1 2 log(v) 1 2 log(2), where the composition rules for the mean and variance are = k rkk, v = k rk(vk + 2 k) 2, rk = ek k ek .",
+      "exclude": false
+    },
+    {
+      "heading": "6.2.1 DERIVATIVE WITH RESPECT TO THE COMPOSED MEAN AND VARIANCE",
+      "text": "The derivative of the log-likelihood with respect to the composed mean and variance are df d = x v , df dv = (x )2 2v2 1 2v = (x )2 v 2v2 .",
+      "exclude": false
+    },
+    {
+      "heading": "6.2.2 DERIVATIVE WITH RESPECT TO THE LEVELS OF EXPERTISE",
+      "text": "The derivative of the composed mean and variance with respect to the levels of expertise are d dek = kE ekk E2 = k E , dv dek = qkE ekqk E2 2 d dek = qk q E 2k E = vk v + (k )2 E , whereE = k ek and qk = vk+ 2 k, q = v+ 2. The derivative of the log-likelihood with respect to the levels of expertise can be computed as df dek = df d d dek + df dv dv dek .",
+      "exclude": false
+    },
+    {
+      "heading": "7 NUMERICAL OPTIMIZATION",
+      "text": "For binary data, the log-likelihood of the smoothed model is a concave function of k(d), see Section 6.1.2. We could therefore in principal perform an optimization for the experts opinions using Newtons method. There are a few complications though. One problem is that the second derivative is proportional to the squared responsibility and hence close to 0 if the level of expertise is small. Consequently, template updates in regions with low expertise would be unstable. To deal with that we could add a penalty on the squared log-odds for example. Another problem is that the Newton steps may lead to probability estimates outside of [0, 1]. This can be dealt with by pulling the estimates back into the unit interval. Note that working on the log-odds scale is not possible because the log-likelihood of our model is not concave in the expert log-odds. Because of these complications we use the simple, fast and robust heuristic (5) instead of Netwons method.",
+      "exclude": false
+    }
+  ]
+}
