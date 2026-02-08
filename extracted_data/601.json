@@ -155,5 +155,21 @@
       "text": "Here we present the user interfaces used in question sourcing, answer sourcing, and question/answer validation. 5https://github.com/hyperopt/hyperopt",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "High-quality dataset paper with rigorous collection methodology, thorough analysis, and significant human-machine performance gap indicating genuine challenge. Establishes important benchmark for machine comprehension research."
+      },
+      "token": {
+        "prompt_tokens": 6090,
+        "completion_tokens": 73,
+        "total_tokens": 6163
+      },
+      "time": "2026-02-08T22:33:12.974928+00:00"
+    }
   ]
 }

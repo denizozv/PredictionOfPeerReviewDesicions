@@ -70,5 +70,21 @@
       "text": "In this appendix we further explain some of the terms and ideas mentioned in the paper, which due to space constrains, and to keep the flow of the paper, couldnt be extremely developed in the main text. Some of these have to do with notation, others with technical elements of the proofs. On the latter case, we try to convey more intuition than we previously could. We present these clarifications in a very informal fashion in the following item list. There are two different but very related properties a random variable can have. A random variable X is said to be continuous if P (X = x) = 0 for all single points x X . Note that a random variable concentrated on a low dimensional manifold such as a plane can have this property. However, an absolutely continuous random variable has the following property: if a set A has Lebesgue measure 0, then P (X A) = 0. Since points have measure 0 with the Lebesgue measure, absolute continuity implies continuity. A random variable thats supported on a low dimensional manifold therefore will not be absolutely continuous: let M a low dimensional manifold be the support of X . Since a low dimensional manifold has 0 Lebesgue measure, this would imply P (X M) = 0, which is an absurd since M was the support of X . The property of X being absolutely continuous can be shown to be equivalent to X having a density: the existence of a function f : X R such that P (X A) = A f(x) dx (this is a consequence of the Radon-Nikodym theorem). The annoying part is that in everyday paper writing when we talk about continuous random variables, we omit the absolutely word to keep the text concise and actually talk about absolutely continuous random variables (ones that have a density), this is done through almost all sciences and throughout mathematics as well, annoying as it is. However we made the clarification in here since its relevant to our paper not to mistake the two terms. The notation Pr[D(x) = 1] = 1 is the abbreviation of Pr[x X : D(x) = 1] = 1 for a measure Pr. Another way of expressing this more formally is Pr[D1(1)] = 1. In the proof of Theorem 2.1, the distance between sets d(A,B) is defined as the usual distance between sets in a metric space d(A,B) = inf xA,yB d(x, y) where d(x, y) is the distance between points (in our case the Euclidean distance). Note that not everything thats outside of the support of Pr has to be a generated image. Generated images are only things that lie in the support of Pg , and there are things that dont need to be in the support of either Pr or Pg (these could be places where 0 < D < 1 for example). This is because the discriminator is not trained to discriminate Pr from all things that are not Pr, but to distinguish Pr from Pg . Points that dont lie in the support of Pr or Pg are not important to the performance of the discriminator (as is easily evidenced in its cost). Why we define accuracy 1 as is done in the text is to avoid the identification of a single tight support, since this typically leads to problems (if I take a measure 0 set from any support it still is the support of the distribution). In the end, what we aim for is: We want D(x) = 1 with probability 1 when x Pr. We want D(x) = 0 with probability 1 when x Pg . Whatever happens elsewhere is irrelevant (as it is also reflected by the cost of the discriminator) We say that a discriminator D is optimal for g (or its corresponding Pg) if for all mea- surable functions D : X [0, 1] we have L(D, g) L(D, g) for L defined as in equation (1).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Rigorous theoretical analysis of GAN training dynamics with novel insights into instability sources (manifold support, vanishing gradients, mode collapse). Strong mathematical contributions (Theorems 2.1-2.6, 3.1-3.3) with principled solutions via noise injection and Wasserstein distance bounds. Addresses fundamental problems in deep learning with clear experimental validation."
+      },
+      "token": {
+        "prompt_tokens": 11239,
+        "completion_tokens": 118,
+        "total_tokens": 11357
+      },
+      "time": "2026-02-08T22:02:41.754148+00:00"
+    }
   ]
 }

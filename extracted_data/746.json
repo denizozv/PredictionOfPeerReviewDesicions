@@ -100,5 +100,21 @@
       "text": "A.1 SPLIT Lets define for k = 1, . . . , r layers F 0i = xi, F k i = F k i (xi, z k1, F k1i , ) R d i = 1, . . . , n where zk = 1n n i=1 F k i is the empirical moment defined by Fi and is a set of parameters. Then, p(x) = (F r) is the vector of probabilities, i.e, pi = P(xi 1). This is the most general expression of our architecture. The idea is that the hidden units in layer k at position i depend on xi (input at same index), zk1 (average of all hidden states of previous layer) and F ki (previous hidden unit at same index). We reduce the covariate shift of the split architecture by normalizing the input sets by their empirical mean and covariance: x = x . Since both and are two empirical averages as the zks, they can be seamlessly integrated as extra averages by concatenating them to zk. We have parametrized the functions F ki in the following way: F ki = k 0 F k1i + k 1 k2 where k0 , k 1 and k 2 have the following form: k0 = (C k 0xi+W k 0 z (k1)+bk0) , k 1 = (C k 1xi+W k 1 z (k1)+bk1) , k 2 = tanh(C k 2xi+W k 2 z (k1)+bk2) , and Cki ,W k i are d d matrices and bki Rd a bias vector. Note that the total number of parameters is r(3d2 + 3d) where r is the number of layers and d is the dimensionality of the input elements.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel recursive neural architecture with principled divide-and-conquer inductive bias, theoretical complexity analysis, and weak supervision learning strategy. Strong conceptual contribution despite limited experimental scope."
+      },
+      "token": {
+        "prompt_tokens": 6230,
+        "completion_tokens": 72,
+        "total_tokens": 6302
+      },
+      "time": "2026-02-08T22:47:04.797508+00:00"
+    }
   ]
 }

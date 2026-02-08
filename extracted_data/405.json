@@ -130,5 +130,21 @@
       "text": "In this section we compare different action-dependent state transitions and prediction lengths T for the prediction-independent simulator. More specifically, in Fig. 51 we compare (with T = 15) the state transition Encoding: zt1 = C(xt1) Up to t 1 = 1 , ht1 From t 1 = , Action fusion: vt = Whht1 Waat1 , Gate update: it = (Wivvt +Wizzt1) , ft = (Wfvvt +Wfzzt1) , ot = (W ovvt +W ozzt1) , Cell update: ct = ft ct1 + it tanh(Wcvvt +Wczzt1) , where the vectors ht1 and vt have dimension 1024 and 2048 respectively and with different matrices W for the warm-up and the prediction phases (the resulting model has around 40M parameters we refer to this structure as Basezt1 = ht1 in the figures), with the following alternatives: Basezt1 = 0: Remove the action-independent transformation of ht1, i.e. zt1 = C(xt1) Up to t 1 = 1 , 0 From t 1 = , where 0 represents a zero-vector and with different matrices W for the warm-up and the prediction phases. This model has around 40M parameters. ht1izt 2816zt1 = 0: Substitute zt1 with ht1 in the gate updates and have a separate gating for the encoded frame, i.e. zt1 = C(xt1) Up to t 1 = 1 , 0 From t 1 = , vt = W hht1 Waat1 , it = (W ivvt +W ihht1) , ft = (W fvvt +W fhht1) , ot = (W ovvt +W ohht1) , ct = ft ct1 + it tanh(Wcvvt +Wcsht1) + izt tanh(zt1) , with shared W matrices for the warm-up and the prediction phases, without RReLU after the last convolution of the encoding, and with vectors ht1 and vt of dimensionality 2816. This model has around 95M parameters. As we can see, the Basezt1 = 0 state transition performs quite poorly for long-term prediction compared to the other transitions. With this transition, the prediction-independent simulator performs much worse than the prediction-dependent simulator with the baseline state transition (Appendix B.1.1). The best performance is obtained with the ht1izt 2816zt1 = 0 structure, which however has a large number of parameters. In Figs. 52 and 53, we show the effect of using different prediction lengths T on the structure Base zt1 = ht1. As we can see, using longer prediction lengths dramatically improves long-term. Overall, the best performance is obtained using two subsequences of length T = 15.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Comprehensive empirical study with novel architectural insights (action-dependent transitions, prediction-independent simulators) and extensive analysis of training dynamics (short vs. long-term accuracy trade-offs). Strong experimental validation across diverse environments (Atari, 3D racing, mazes) with in-depth ablations and human evaluation."
+      },
+      "token": {
+        "prompt_tokens": 15092,
+        "completion_tokens": 104,
+        "total_tokens": 15196
+      },
+      "time": "2026-02-08T22:12:30.136100+00:00"
+    }
   ]
 }

@@ -90,5 +90,21 @@
       "text": "This research is supported by the National Research Foundation, Prime Ministers Office, Singapore under its International Research Centres in Singapore Funding Initiative.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical work with systematic comparison of matching functions across multiple tasks. Novel element-wise comparison functions (SUB, MULT) show practical value. Comprehensive evaluation on 4 datasets with strong results, though limited conceptual novelty and incremental over Parikh et al. (2016)."
+      },
+      "token": {
+        "prompt_tokens": 4828,
+        "completion_tokens": 101,
+        "total_tokens": 4929
+      },
+      "time": "2026-02-08T22:07:18.714916+00:00"
+    }
   ]
 }

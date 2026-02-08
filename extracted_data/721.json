@@ -85,5 +85,21 @@
       "text": "Figure 6 presents an example of structure learned by deeper trees. This example consists of vertical and horizontal lines. Each image patch is either blank, contains one vertical or one horizontal line or both. A patch is blank with probability 19 , contains exactly one line with probability 2 3 or two lines with probability 29 . Each line is then generated at one of eight positions at random. Fitting two binary trees results in some continuity in the features, whereas flat trees provide no such structure. C LEARNED FEATURES (a)",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework combining sparse coding with learned affine transformations via hierarchical trees; addresses fundamental equivariance vs. invariance trade-off; solid mathematical foundation with Lie groups; demonstrates parameter efficiency. However, experiments limited to small patches (10×10) with no downstream task validation or comparison to modern deep learning baselines."
+      },
+      "token": {
+        "prompt_tokens": 3199,
+        "completion_tokens": 105,
+        "total_tokens": 3304
+      },
+      "time": "2026-02-08T22:45:08.538166+00:00"
+    }
   ]
 }

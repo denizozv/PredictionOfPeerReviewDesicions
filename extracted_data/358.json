@@ -100,5 +100,21 @@
       "text": "B.1 OMNIGLOT Shared encoder x h 2 conv2d 64 feature maps with 3 3 kernels and ELU activations conv2d 64 feature maps with 3 3 kernels, stride 2 and ELU activations 2 conv2d 128 feature maps with 3 3 kernels and ELU activations conv2d 128 feature maps with 3 3 kernels, stride 2 and ELU activations 2 conv2d 256 feature maps with 3 3 kernels and ELU activations conv2d 256 feature maps with 3 3 kernels, stride 2 and ELU activations Statistic network q(c|D;) : h1, . . . , hk c, 2c fully-connected layer with 256 units and ELU activations sample-dropout and concatenation with number of samples average pooling within each dataset 2 fully-connected layer with 256 units and ELU activations fully-connected linear layers to c and log 2c Inference network q(z|x, c;) : h, c z, 2z concatenate c and h 3 fully-connected layer with 256 units and ELU activations fully-connected linear layers to z and log 2z Latent decoder network p(z|c; ) : c z, 2z 3 fully-connected layer with 256 units and ELU activations fully-connected linear layers to z and log 2z Observation decoder network p(x|c, z; ) : c, z x concatenate z and c fully-connected linear layers with 4 4 256 units 2 conv2d 256 feature maps with 3 3 kernels and ELU activations deconv2d 256 feature maps with 2 2 kernels, stride 2, ELU activations 2 conv2d 128 feature maps with 3 3 kernels and ELU activations deconv2d 128 feature maps with 2 2 kernels, stride 2, ELU activations 2 conv2d 64 feature maps with 3 3 kernels and ELU activations deconv2d 64 feature maps with 2 2 kernels, stride 2, ELU activations conv2d 1 feature map with 1 1 kernels, sigmoid activations B.2 YOUTUBE FACES Shared encoder x h 2 conv2d 32 feature maps with 3 3 kernels and ELU activations conv2d 32 feature maps with 3 3 kernels, stride 2 and ELU activations 2 conv2d 64 feature maps with 3 3 kernels and ELU activations conv2d 64 feature maps with 3 3 kernels, stride 2 and ELU activations 2 conv2d 128 feature maps with 3 3 kernels and ELU activations conv2d 128 feature maps with 3 3 kernels, stride 2 and ELU activations 2 conv2d 256 feature maps with 3 3 kernels and ELU activations conv2d 256 feature maps with 3 3 kernels, stride 2 and ELU activations Statistic network q(c|D,) : h1, . . . , hk c, 2c fully-connected layer with 1000 units and ELU activations average pooling within each dataset fully-connected linear layers to c and log 2c Inference network q(z|x, c, ) : h, c z, 2z concatenate c and h fully-connected layer with 1000 units and ELU activations fully-connected linear layers to z and log 2z Latent decoder network p(z|c, ; ) : c z, 2z fully-connected layer with 1000 units and ELU activations fully-connected linear layers to z and log 2z Observation decoder network p(x|c, z; ) : c, z x concatenate z and c fully-connected layer with 1000 units and ELU activations fully-connected linear layer with 8 8 256 units 2 conv2d 256 feature maps with 3 3 kernels and ELU activations deconv2d 256 feature maps with 2 2 kernels, stride 2, ELU activations 2 conv2d 128 feature maps with 3 3 kernels and ELU activations deconv2d 128 feature maps with 2 2 kernels, stride 2, ELU activations 2 conv2d 64 feature maps with 3 3 kernels and ELU activations deconv2d 64 feature maps with 2 2 kernels, stride 2, ELU activations 2 conv2d 32 feature maps with 3 3 kernels and ELU activations deconv2d 32 feature maps with 2 2 kernels, stride 2, ELU activations conv2d 3 feature maps with 1 1 kernels, sigmoid activations",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel hierarchical VAE framework for dataset-level representation learning with strong conceptual contribution, diverse experimental validation across synthetic/real tasks, and clear methodological innovation in statistic networks for few-shot learning."
+      },
+      "token": {
+        "prompt_tokens": 4894,
+        "completion_tokens": 78,
+        "total_tokens": 4972
+      },
+      "time": "2026-02-08T22:07:11.533787+00:00"
+    }
   ]
 }

@@ -85,5 +85,21 @@
       "text": "In this paper, we have presented NoiseOut, a simple but effective pruning method to reduce the number of parameters in the dense layers of neural networks by removing neurons with correlated activation during training. We showed how adding noise outputs to the network could increase the correlation between neurons in the hidden layer and hence result to more efficient pruning. The experimental results on different networks and various datasets validate this approach, achieving significant compression rates without loss of accuracy.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core contribution. Correlation-based pruning is well-established; adding random noise outputs to encourage neuron correlation lacks strong theoretical justification and appears ad-hoc. Experiments limited to small/dated networks (LeNet, basic SVHN model). Missing comparisons with modern pruning methods and lacks depth in analysis of why noise outputs work. Insufficient experimental rigor for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4598,
+        "completion_tokens": 123,
+        "total_tokens": 4721
+      },
+      "time": "2026-02-08T22:42:10.880615+00:00"
+    }
   ]
 }

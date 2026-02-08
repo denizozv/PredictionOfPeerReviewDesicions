@@ -145,5 +145,21 @@
       "text": "We wondered how robust the HPs are to the variability of both random batching of data, and random initialization of parameters. So we identified the best HPs from the parentheses experiments of 100k parameter, 1 layer architectures, and reran the parameter optimization 100 times. We measured the number of infeasible experiments, as well as a number of statistics of the loss for the reruns (Table App.1). These results show that the best HPs yielded a distribution of losses very close to the originally reported loss value. Architecture Original Infeasible Min Mean Max S.D. S.D./Mean RNN 1.16e-2 0 % 1.41e-2 8.21e-2 0.294 5.22e-2 0.636 IRNN 4.20e-4 48 % 2.24e-4 5.02e-4 8.69e-4 1.35e-4 0.269 UGRNN 1.02e-4 0 % 3.66e-5 2.71e-4 6.06e-3 7.12e-4 2.63 GRU 2.80e-4 1 % 7.66e-5 1.89e-4 5.48e-4 9.08e-5 0.480 LSTM 7.96e-4 0 % 8.10e-4 2.02e-3 0.0145 2.31e-3 1.14 Table App.1: Results of 100 runs on the parentheses task using the best HPs for each architecture, at depth 1. HPs were chosen to be the set which achieved the minimum loss. Table shows original loss achieved by the HP tuner, amount of infeasible trials, minimum loss from running 100 iterations of the same HPs, mean loss, maximum loss, standard deviation, and standard deviation divided by the mean. 1 layer 8 layer t-stat df p-value t-stat df p-value +RNN/GRU - - - -23.6 1080 0.05). Negative t-statistic indicates that the mean of the second architecture in the pair is larger than the first.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Rigorous empirical study with novel theoretical insights on RNN capacity bottlenecks. Extensive experiments (CPU-millennia scale) with careful HP tuning across multiple architectures and tasks. Introduces two new architectures (UGRNN, +RNN) and provides actionable findings that reconcile capacity vs. trainability—a significant contribution to understanding RNN design tradeoffs."
+      },
+      "token": {
+        "prompt_tokens": 8370,
+        "completion_tokens": 119,
+        "total_tokens": 8489
+      },
+      "time": "2026-02-08T22:09:02.588528+00:00"
+    }
   ]
 }

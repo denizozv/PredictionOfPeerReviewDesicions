@@ -80,5 +80,21 @@
       "text": "",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel integration of knowledge graphs with RNNLMs via copy mechanism and fact prediction; introduces WikiFacts dataset and Unknown-Penalized Perplexity metric; solid experimental validation with meaningful improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 5191,
+        "completion_tokens": 82,
+        "total_tokens": 5273
+      },
+      "time": "2026-02-08T22:49:06.827642+00:00"
+    }
   ]
 }

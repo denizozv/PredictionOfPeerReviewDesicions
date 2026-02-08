@@ -95,5 +95,21 @@
       "text": "A.1 FIGURES AND TABLES videostore 0 1 2 3 4 5 6 7 0 2 4 6 8 10 bookshop, bookstore, bookstall 0 1 2 3 4 5 6 7 0 2 4 6 8 10 videostore 0 1 2 3 4 5 6 7 0 2 4 6 8 10 videostore 0 1 2 3 4 5 6 7 0 2 4 6 8 10 videostore hospitalroom 0 2 4 6 8 10 0 1 2 3 4 5 6 7 desk 0 2 4 6 8 10 0 1 2 3 4 5 6 7 hospitalroom 0 2 4 6 8 10 0 1 2 3 4 5 6 7 hospitalroom 0 2 4 6 8 10 0 1 2 3 4 5 6 7 hospitalroom dentaloffice 0 1 2 3 4 5 6 7 ResNet-18-ImageNet 0 2 4 6 8 10 desk 0 1 2 3 4 5 6 7 ResNet-18-scenes 0 2 4 6 8 10 dentaloffice 0 1 2 3 4 5 6 7 ResNet-18-scenes-AT 0 2 4 6 8 10 dentaloffice 0 1 2 3 4 5 6 7 ResNet-34-scenes 0 2 4 6 8 10 dentaloffice A.2 IMPLEMENTATION DETAILS The experiments were conducted in Torch machine learning framework. Double propagation can be implemented in a modern framework with automatic differentiation support, e.g. Torch, Theano, Tensorflow. For ImageNet experiments we used fb.resnet.torch code, and used 2 Titan X cards with data parallelizm in both teacher and student to speed up training. Code and models for our experiments are available at https://github.com/szagoruyko/attention-transfer.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel attention transfer mechanism with solid experimental validation across multiple datasets and architectures. Clear methodological contribution (activation-based and gradient-based attention transfer) with consistent improvements over baselines. Well-executed experiments on CIFAR, ImageNet, and transfer learning tasks demonstrate practical value."
+      },
+      "token": {
+        "prompt_tokens": 5361,
+        "completion_tokens": 93,
+        "total_tokens": 5454
+      },
+      "time": "2026-02-08T22:04:06.849408+00:00"
+    }
   ]
 }

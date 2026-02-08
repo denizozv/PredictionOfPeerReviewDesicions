@@ -85,5 +85,21 @@
       "text": "This work has been supported in part by the Defense Advanced Research Projects Agency (DARPA).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: surprisal-driven feedback is a straightforward addition of prediction error as input signal. Narrow experimental validation (single dataset, enwik8 only). Weak baselines and incomplete comparisons. Incremental improvement over LSTM without sufficient theoretical insight or broad empirical validation. Missing ablation studies and analysis of when/why feedback helps."
+      },
+      "token": {
+        "prompt_tokens": 2518,
+        "completion_tokens": 112,
+        "total_tokens": 2630
+      },
+      "time": "2026-02-08T22:51:09.548622+00:00"
+    }
   ]
 }

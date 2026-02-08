@@ -130,5 +130,21 @@
       "text": "A.1 MEAN LATENT VECTOR TARGETED ATTACK A variant of the single latent vector targeted attack described in Section 4.3, that was not explored in previous work to our knowledge is to take the mean latent vector of many target images and use that vector as xt. This variant is more flexible, in that the attacker can choose different latent properties to target without needing to find the ideal input. For example, in MNIST, the attacker may wish to have a particular line thickness or slant in the reconstructed digit, but may not have such an image available. In that case, by choosing some images of the target class with thinner lines or less slant, and some with thicker lines or more slant, the attacker can find a target latent vector that closely matches the desired properties. In this case, the attack starts by using fenc to produce the target latent vector, zt, from the chosen target images, x(t). zt = 1 |x(t)| |x(t)| i=0 fenc(x i (t)). (8) In this work, we choose to reconstruct ideal MNIST digits by taking the mean latent vector of all of the training digits of each class, and using those vectors as xt. Given a target class yt, a set of examples X and their corresponding ground truth labels y, we create a subset x(t) as follows: x(t) = xi|xi X yi = yt . (9) Both variants of this attack appear to be similarly effective, as shown in Figure 15 and Figure 5. The trade-off between the two in these experiments is between the simplicity of the first attack and the flexibility of the second attack. A.2 EVALUATION RESULTS",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel application of adversarial attacks to generative models (VAE/VAE-GAN) with three distinct attack methodologies and comprehensive evaluation across multiple datasets. While adversarial examples were known for classifiers, extending this to generative models with well-motivated attack scenarios and systematic comparison of approaches represents a solid contribution. Experiments are thorough with clear metrics and ablations."
+      },
+      "token": {
+        "prompt_tokens": 6770,
+        "completion_tokens": 115,
+        "total_tokens": 6885
+      },
+      "time": "2026-02-08T22:30:24.354720+00:00"
+    }
   ]
 }

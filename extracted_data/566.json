@@ -100,5 +100,21 @@
       "text": "In a nutshell, we proposed a scalable batch active learning framework for deep networks relying on a variational approximation to perform bayesian inference. We deduced a formulation of the posterior and prior distributions of the weights using statistical knowledge on the Maximum Likelihood Estimator. Those assumptions combined with an existing approximation of the Fisher information for neural network, lead us to a backpropagation free active criterion. Eventually we used our own approximations to obtain a greedy active selection scheme. Our criterion is the first of the kind to scale batch active learning to deep networks, especially Convolutional Neural Networks. On different databases, it achieves better test accuracy than random sampling, and is scalable with increasing size of queries. It achieves near optimal error on the test set using a limited percentage (30%) of the annotated training set on larger and more reduced dataset. Our works demonstrated the validity of batch mode active learning for deep networks and the promise of the KFAC approximations for deep Fisher matrices for the active learning community. Such a solution is also interesting as a new technique for curriculum learning approach.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in active learning approach, weak experimental validation (only MNIST/USPS), numerous approximations undermine theoretical claims, missing comparisons with recent deep active learning methods."
+      },
+      "token": {
+        "prompt_tokens": 6237,
+        "completion_tokens": 74,
+        "total_tokens": 6311
+      },
+      "time": "2026-02-08T22:29:21.050130+00:00"
+    }
   ]
 }

@@ -105,5 +105,21 @@
       "text": "We thank Jake Snell, Kevin Swersky, and Oriol Vinyals for helpful discussions of this work.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel meta-learning approach using LSTM to learn optimization algorithms for few-shot learning. Strong methodological contribution with clever LSTM-gradient descent analogy, solid experimental validation on Mini-ImageNet, and competitive results against Matching Networks. Clear presentation and reproducible work."
+      },
+      "token": {
+        "prompt_tokens": 5831,
+        "completion_tokens": 92,
+        "total_tokens": 5923
+      },
+      "time": "2026-02-08T22:02:37.482846+00:00"
+    }
   ]
 }

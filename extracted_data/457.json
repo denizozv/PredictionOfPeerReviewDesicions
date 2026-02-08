@@ -85,5 +85,21 @@
       "text": "Recently, we have made some good progress on developing our INQ for lossless CNNs with both low-precision weights and low-precision activations. According to the results summarized in Table 7, it can be seen that our VGG-16 model with 5-bit weights and 4-bit activations shows improved top-5 and top-1 recognition rates in comparison to the pre-trained reference with 32-bit floating-point weights and 32-bit floating-point activations. To the best of our knowledge, this should be the best results reported on VGG-16 architecture so far.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel incremental quantization strategy with strong empirical results on ImageNet across multiple architectures; achieves lossless low-precision conversion (5-bit, 4-bit) through weight partitioning and iterative retraining—a meaningful contribution to network compression with practical hardware implications."
+      },
+      "token": {
+        "prompt_tokens": 6727,
+        "completion_tokens": 97,
+        "total_tokens": 6824
+      },
+      "time": "2026-02-08T22:18:12.778844+00:00"
+    }
   ]
 }

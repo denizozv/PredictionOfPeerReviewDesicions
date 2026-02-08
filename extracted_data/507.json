@@ -85,5 +85,21 @@
       "text": "We now provide a formal description of the approach taken to generate our dataset. Let V be the set of entities in Wikidata. For all v1, v2 V , we denote the relations v1Iv2 when v1 is an instance of v2, and v1Sv2 when v1 is a subclass of v2. We then define I : V V as the following instances mapping: I(v) = v V | vIv (7) For convenience, we then denote C = v V | |I(v)| 2; the interpretation being that C is the set of entities which have enough instances to possibly be viable clusters. We now formally state the following definition: Definition 1. A set A V is a cluster if A = I(v) for some v C. We additionally say that v is the class associated with the cluster A. Let P : V V be the following parent of mapping: P (v) = v V | vSv (8) Furthermore, let P1 : V V be the dual of P : P1(v) = v V | vSv (9) For additional convenience, we denote the following: P k(v) = P (v) k = 1 vP (v) P k1(v) k > 1 (10) As an abuse of notation, we define the following: I(v) = I(v) vP1(v) I(v) (11) That is, I(v) is the set of all instances of v and all instances of anything that is a subclass of v (recursively). We then define the measure d : V V N to be the graph distance between any entities in V , using the following set of edges: ESU = (v1, v2) | v1Sv2 v2Sv1 (12) Finally, we define9 three additional mappings for outliers parametrized10 by N+: O1(v) = pP (v) cP1(p)\\v I(c) \\ I(v) (13) 9For the definition of O2, note that we do not say that it must be true that p P 2(v) \\ P (v). In practice, however, avoiding (if not excluding) certain values of p in this manner can help improve the quality of resulting clusters, at the cost of reducing the number of clusters which can be produced. 10The WikiSem500 dataset was generated with a value of = 7. O2(v) = pP 2(v) cP1(p)\\v I(c) \\ I(v) (14) O3(v) = pP (v) e I(v) | d(p, v) \\ I(v) (15) To simplify the model, we assume that all three of the above sets are mutually exclusive. Given these, we can formally state the following definition: Definition 2. Let A = I(v) be a cluster based on a class v. An outlier for A is any o O1(v) O2(v)O3(v). If o is in O1(v), O2(v), or O3(v), we denote the outlier class of o as O1, O2, or O3 (respectively). Intuitively, the three outlier classes denote different degrees of dissimilarity from the original cluster; O1 outliers are the most challenging to distinguish, for they are semantically quite similar to the cluster. O2 outliers are slightly easier to distinguish, and O3 outliers should be quite simple to pick out. The final dataset (a set of cluster, outliers pairs) is then created by serializing the following: D = ( fD ( cC fi(i[I(c)]), fo (o[O1(c)] o[O2(c)] o[O3(c)]) )) (16) Where i and o are functions which select up to a given number of elements from the given set of instances and outliers (respectively), and fD, fi, and fo are functions which filter out dataset elements, instances, and outliers (respectively) based on any number of heuristics (see Section 3.1). Finally, takes the resulting tuples and resolves their QIDs to the appropriate surface strings. The benefit of stating the dataset in the above terms is that it is highly configurable. In particular, different languages can be targeted by simply changing to resolve Wikidata entities to their labels in that language.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Dataset contribution with limited methodological novelty. The work is primarily an engineering effort to create a multilingual evaluation benchmark using Wikidata's graph structure. While the dataset may be useful, the core contribution lacks algorithmic or conceptual innovation. The evaluation is narrow (outlier detection only), and the downstream correlation analysis, though valuable, is insufficient to elevate this to a top-tier venue. Better suited for a datasets/benchmarks track or workshop."
+      },
+      "token": {
+        "prompt_tokens": 6180,
+        "completion_tokens": 130,
+        "total_tokens": 6310
+      },
+      "time": "2026-02-08T22:24:07.976332+00:00"
+    }
   ]
 }

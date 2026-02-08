@@ -75,5 +75,21 @@
       "text": "The research was supported solely by the Russian Science Foundation grant (project 14-50-00150). The authors would like to thank I. Nazarov for his assistance in preparation of this paper.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: straightforward application of existing DCGAN to steganography via multi-objective loss; weak experimental validation with inconsistent results; no comparison with state-of-the-art steganography methods; unclear practical advantage over standard approaches."
+      },
+      "token": {
+        "prompt_tokens": 4263,
+        "completion_tokens": 88,
+        "total_tokens": 4351
+      },
+      "time": "2026-02-08T22:39:16.820026+00:00"
+    }
   ]
 }

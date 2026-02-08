@@ -105,5 +105,21 @@
       "text": "We presented PixelCNN++, a modification of PixelCNN using a discretized logistic mixture likelihood on the pixels among other modifications. We demonstrated the usefulness of these modifications with state-of-the-art results on CIFAR-10. Our code is made available at https: //github.com/openai/pixel-cnn and can easily be adapted for use on other data sets.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Strong methodological contributions (discretized logistic mixture likelihood, architectural innovations with downsampling/shortcuts), comprehensive ablation studies, state-of-the-art results on CIFAR-10, clear practical improvements with thorough experimental validation."
+      },
+      "token": {
+        "prompt_tokens": 4644,
+        "completion_tokens": 86,
+        "total_tokens": 4730
+      },
+      "time": "2026-02-08T22:05:13.118877+00:00"
+    }
   ]
 }

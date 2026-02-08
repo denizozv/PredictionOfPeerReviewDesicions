@@ -80,5 +80,21 @@
       "text": "The authors are grateful to John Platt for helpful discussions and feedback. This research was partly supported by ONR grant N00014-16-1-2697, AFRL contract FA8750-13-2-0019, a Google PhD Fellowship, an AWS in Education Grant, and an NVIDIA academic hardware grant. The views and conclusions contained in this document are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of ONR, AFRL, or the United States Government.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework combining kernel methods with compositional structure and sum-product networks for efficient virtual instance generation. Strong mathematical foundation with clear computational advantages. However, experimental validation is limited to NORB datasets only, which weakens the contribution's impact and generalizability claims."
+      },
+      "token": {
+        "prompt_tokens": 6397,
+        "completion_tokens": 91,
+        "total_tokens": 6488
+      },
+      "time": "2026-02-08T22:28:02.023631+00:00"
+    }
   ]
 }

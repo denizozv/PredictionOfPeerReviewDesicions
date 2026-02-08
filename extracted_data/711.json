@@ -95,5 +95,21 @@
       "text": "We have shown a novel approach for perform extractive question answering on the SQUAD dataset by explicitly representing and scoring answer span candidates. The core of our model relies on a recurrent network that enables shared computation for the shared substructure across span candidates. We explore different methods of encoding the passage and question, showing the benefits of including both passage-independent and passage-aligned question representations. While we show that this encoding method is beneficial for the task, this is orthogonal to the core contribution of efficiently computing span representation. In future work, we plan to explore alternate architectures that provide input to the recurrent span representations.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel span representation approach with strong empirical results on SQuAD, thorough ablations demonstrating architectural choices, and clear methodological contribution to extractive QA."
+      },
+      "token": {
+        "prompt_tokens": 5350,
+        "completion_tokens": 71,
+        "total_tokens": 5421
+      },
+      "time": "2026-02-08T22:44:08.724216+00:00"
+    }
   ]
 }

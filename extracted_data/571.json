@@ -90,5 +90,21 @@
       "text": "A.1 PROOFS A.1.1 THEOREM 1 Proof. We first derive the sufficient condition, tKL(ht, t) = p log qt dx p log qt1 dx = p log htt qt1 Zt p log qt1 (using Eq. (2)) = t Ep[log ht] logEqt1 [htt ] (6) t Ep[log ht] logEqt1 [ht]t (Jensens inequality) = t [ Ep[log ht] logEqt1 [ht] ] 0 (by assumption). Note that if t = 1, the sufficient condition is also necessary. For the necessary condition, 0 tKL(ht, t) = t Ep[log ht] logEqt1 [htt ] t Ep[log ht] Eqt1 [log htt ] (Jensens inequality) = t [Ep[log ht] Eqt1 [log ht]] (Linearity of expectation) Ep[log ht] Eqt1 [log ht] (since 0 t 1). A.1.2 THEOREM 2 Proof. For the proposed binary classification problem, since the m positive training examples are sampled from p and the k negative training examples are sampled from qt1, p = u(x|y = +1) u(y = +1) = m m+ k (7) qt1 = u(x|y = 1) u(y = 1) = k m+ k . (8) The Bayes optimal density d can be expressed as, dt = u(y = +1 | x) (from Definition 1) = u(x | y = +1)u(y = +1)/u(x). (9) Similarly, 1 dt = u(x | y = 1)u(y = 1)/u(x). (10) From Eqs. (7- 10), we have, dt 1 dt = p qt1 . Finally from Eq. (2), qt = qt1 htt = p finishing the proof. A.1.3 COROLLARY 1 Proof. For a completely adversarial classifier w.r.t. Bayes optimality, dt = u(x | y = 1)u(y = 1)/u(x) (11) 1 dt = u(x | y = +1)u(y = +1)/u(x). (12) From Eqs. (7,8, 11,12), ht = dt 1 dt = qt1 p . Substituting the above intermediate model distribution in Eq. (6), tKL(ht, t) = t Ep [ log qt1 p ] logEqt1 [ qt1 p ]t t Ep [ log qt1 p ] Eqt1 [ t log qt1 p ] (Jensens inequality) = t [ Ep [ log qt1 p ] Eqt1 [ log qt1 p ]] (Linearity of expectation) = t [DKL(p qt1) +DKL(qt1 p)] 0 (DKL is non-negative). By inspection, the equality holds when t = 0 finishing the proof. A.2 MODEL ARCHITECTURES AND PARAMETER SETTINGS The baseline VAE model consists of a deterministic hidden layer with 500 units between the visible layer and stochastic hidden layer with 50 latent variables. The inference network specifying the posterior also contains a single deterministic layer with 500 units. The prior over the latent variables is standard Gaussian, the hidden layer activations are tanh, and learning is done using Adam (Kingma & Ba, 2015) with a learning rate of 103 and mini-batches of size 100. The baseline RBM model consists of 250 hidden units trained for 50 epochs using Stochastic Gradient Descent with a learning rate of 5 102, mini-batches of size 100, and 15 steps of contrastive divergence. The CNN contains two convolutional layers and a single full connected layer with 1024 units. Convolution layers have kernel size 55, and 32 and 64 output channels, respectively. We apply ReLUs and 2 2 max pooling after each convolution. The net is randomly initialized prior to training, and learning is done for 2 epochs using Adam (Kingma & Ba, 2015) with a learning rate of 103 and mini-batches of size 100.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework extending boosting to unsupervised generative modeling with formal guarantees (Theorems 1-2), flexible hybrid discriminative-generative approach, and comprehensive empirical validation across multiple tasks and model types."
+      },
+      "token": {
+        "prompt_tokens": 4788,
+        "completion_tokens": 84,
+        "total_tokens": 4872
+      },
+      "time": "2026-02-08T22:30:20.829469+00:00"
+    }
   ]
 }

@@ -65,5 +65,21 @@
       "text": "Fig.5 demonstrates LP collectives effectively reduce the total training time without affecting SGDs convergence properties in training large scale neural networks. We use inspurCaffe, Caffe and cuhks Caffe branch to benchmark the performance of BE-Alg.1, MST-Alg.1 and BE-Overlap-Alg.3. We also implement Alg.1,2,3, integrated with LP collectives, in Caffe to ensure consistency. Please note the model size affects the communication time, while the batch size affects the computation time. We carefully set these parameters to cover as many cases as possible. Please refer to the captions of Table.2 and Fig.5 for experiment details. We assume these algorithms have similar convergence speeds in iterations as losses of AlexNet are approximately 1 after 30000 iterations and losses of GoogLeNet are approximately 2 after 67000 iterations. However, the time taken to reach the target loss varies dramatically. For example, the speedups of LP-Overlap-Alg.3 over BE-Alg.1 in training AlexNet and GoogLeNet are 2.12x and 2.19x, respectively. Under Alg.1, but using different underlying collective algorithms, LP-Alg.1 presents 1.91x and 1.74x speedup over BE-Alg.1 and MST-Alg.1 in AlexNet, and 1.6x and 1.1x speedup over BE-Alg.1 and MST-Alg.1 in GoogLeNet. The iteration profiles of these 3 algorithms in Table.2 indicate the communication cost of LP-Alg.1 is only 10% of BE-Alg.1, and 11% of MST-Alg.1 in AlexNet; and 6% of BE-Alg.1, and 43% of MST-Alg.1 in GoogLetNet. The experiments demonstrate that the speed of the three proposed BSP SGD algorithms is Alg.3 > Alg.2 > Alg.1. The result conforms to our expectations as the cost of Alg.3 is max(comm, compt), while the cost of Alg.1 and Alg.2 is comm+ compt. However, the performance gain is quite limited from Alg.2 to Alg.3 as there is little room left for reducing communications from LP Alg.2 to Alg.3 as demonstrated in Table.2. If the model parameters keep increasing, we expect Alg.3 to be more efficient than Alg.2.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid systems contribution with novel collective communication algorithm (Linear Pipelining) for distributed neural network training. Strong theoretical analysis, comprehensive experimental validation, and practical impact on multi-GPU scalability. Addresses real bottleneck in parallel training."
+      },
+      "token": {
+        "prompt_tokens": 5499,
+        "completion_tokens": 86,
+        "total_tokens": 5585
+      },
+      "time": "2026-02-08T22:50:02.788159+00:00"
+    }
   ]
 }

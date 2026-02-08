@@ -85,5 +85,21 @@
       "text": "A.1 MNIST CNN, SECTION 2.1 The model used in our experiments is a 4-layer CNN that have 3x3 filters with max-pooling and weight normalization in every layer. We trained the model with SGD for 25 epochs and evaluated performance on the exponential moving average using a decay rate of = 0.9999. Initial learning rate was set to be 0.1 and linearly annealed to 0 in the last 10 epochs. We also used small image rotations and zooms as a data augmentation scheme. A.2 INCEPTION, SECTION 3.1 For our straggler experiments, we trained the Inception (Szegedy et al., 2016) model on the ImageNet Challenge dataset (Russakovsky et al., 2015). 10 parameter servers were used, and each worker was equipped with a k40 GPU. The underlying optimizer was RMSProp with momentum, with decay of 0.9 and momentum of 0.9. Mini-batch size B = 32 was used. Initial learning rates 0 were set at 0.045N , which we found to provide good test precisions for Inception. Learning rates were also exponentially decreased with decay rate = 0.94 as 0tN/(2T ), where T = |X |/B is the number of mini-batches in the dataset. Test precisions were evaluated on the exponential moving average using = 0.9999. A.3 INCEPTION, SECTION 4.2 For experiments comparing Async-Opt and Sync-Opt on the Inception model in Section 4.2, each worker is equipped with a k40 GPU. For N + b = 53 workers, 17 parameter servers were used; for N + b = 106 workers, we used 27 parameter servers; and 37 parameter servers were used for N + b = 212. In the asynchronous training mode, gradient clipping is also needed for stabilization, which requires each worker to collect the gradient across all layers of the deep model, compute the global norm ||G|| and then clip all gradient accordingly. However, synchronization turns out to be very stable so gradient clipping is no longer needed, which means that we can pipeline the update of parameters in different layers: the gradient of top layers parameters can be sent to parameter servers while concurrently computing gradients for the lower layers. The underlying optimizer is RMSProp with momentum, with decay of 0.9 and momentum of 0.9. Mini-batch size B = 32 was used. Initial learning rates 0 for Async-Opt were set to 0.045; for Sync-Opt, we found as a rule-of-thumb that a learning rate of 0.045N worked well for this model. Learning rates were then exponentially decayed with decay rate = 0.94 as 0t/(2T ) for AsyncOpt, where T = |X |/B is the number of mini-batches in the dataset. For Sync-Opt, we learning rates were also exponentially decreased at rate of 0tN/(2T ), so that the learning rates after computing the same number of datapoints are comparable for Async-Opt and Sync-Opt. Test precisions were evaluated on the exponential moving average using = 0.9999. A.4 PIXELCNN, SECTION 4.3 The PixelCNN (Oord et al., 2016) model was trained on the CIFAR-10 (Krizhevsky & Hinton, 2009) dataset. Configurations of N + b = 1, 8, 16 workers each with a k80 GPU, and 10 parameter servers were used. For Sync-Opt, we always used b = 1 backup worker. The underlying optimizer is RMSProp with momentum, using decay of 0.95 and momentum of 0.9. Initial learning rates 0 were set to 1e 4 and slowly decreased to 3e 6 after 200,000 iterations. Mini-batch size B = 4 was used.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical study revisiting synchronous SGD with backup workers for straggler mitigation. Clear practical contribution with thorough experiments on Inception and PixelCNN, demonstrating faster convergence and better test accuracy than asynchronous approaches. However, limited theoretical novelty and incremental nature of the core idea (backup workers are known technique) prevent higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 5419,
+        "completion_tokens": 114,
+        "total_tokens": 5533
+      },
+      "time": "2026-02-08T22:50:10.351431+00:00"
+    }
   ]
 }

@@ -70,5 +70,21 @@
       "text": "In this contribution we presented a model of mental representations as distribution sensitive data structures, and a method which employs neural networks (or any parameterized function) to synthesize concrete data types from a relaxed specification. We demonstrated this on a number of examples, and visualized the results from the stack and queue. One of the important properties of conventional data structures is that they compose; they can be combined to form more complex data structures. In this paper we explored a simple form of parametric composition by synthesizing containers of numbers. This extends naturally to containers of containers, .e.g sets of sets, or sets of sets of numbers. Future work is to extend this to richer forms of composition. In conventional programming languages, trees and sets are often made by composing arrays, which are indexed with numbers. This kind of composition ls fundamental to building complex software from simple parts. In this work we learned representations from axioms. Humans, in contrast, learn representations mostly from experience in the world. One rich area of future work is to extend data-structure learning to the unsupervised setting, such that for example an agent operating in the real world would learn a geometric data-structures purely from observation.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Interesting conceptual framework but severely limited experimental validation. Only toy examples (MNIST stacks/queues), no comparison with baselines, no quantitative metrics, no scalability analysis. The core contribution—probabilistic axiomatic specifications—lacks rigorous theoretical development and practical demonstration of utility over standard approaches."
+      },
+      "token": {
+        "prompt_tokens": 2119,
+        "completion_tokens": 100,
+        "total_tokens": 2219
+      },
+      "time": "2026-02-08T22:34:05.424531+00:00"
+    }
   ]
 }

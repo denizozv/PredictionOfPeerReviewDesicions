@@ -100,5 +100,21 @@
       "text": "MODEL TRAINING All models were trained using theano and a single GPU. Training the standard neural network is fast, the training time for this method was between 5 - 20 minutes, depending on data set size and dimensionality of the benchmark. In theano, the computational graph of the BNNs is similar to that of an ensemble of standard neural networks. The training time for the BNNs varied between 30 minutes to 5 hours depending on data size and dimensionality of benchmark. The sparse Gaussian Process was optimized using an expectation propagation algorithm and after training, it was approximated with a Bayesian linear model with fixed basis functions whose weights are initialized randomly (see Appendix B). We choose the inducing points in the GPs and the number of training epochs for these models so that the resulting training time was comparable to that of the BNNs. POLICY SEARCH For policy training we used a single CPU. All methods are of similar complexity as they are all trained using Algorithm 1. Depending on the horizon, data set size and network topology, training took between 20 minutes (Wet-Chicken, T = 5), 3-4 hours (Turbine, T = 20) and 14-16 hours (industrial benchmark, T = 75).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel use of α-divergence (α=0.5) for BNN training in model-based RL with stochastic inputs; solid experimental validation on challenging benchmarks (Wet-Chicken, gas turbine, industrial benchmark) demonstrating practical advantages over VB and GPs; clear methodological contribution with real-world applications."
+      },
+      "token": {
+        "prompt_tokens": 8651,
+        "completion_tokens": 108,
+        "total_tokens": 8759
+      },
+      "time": "2026-02-08T22:16:12.352369+00:00"
+    }
   ]
 }

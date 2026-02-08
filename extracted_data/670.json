@@ -75,5 +75,21 @@
       "text": "We gratefully acknowledge the funding provided by the German Research Foundation (DFG, Exploration Challenge, BR 2248/3-1), the Alexander von Humboldt foundation through an Alexander von Humboldt professorship (funded by the German Federal Ministry of Education and Research). Additionally, Antonin Raffin was supported by an Erasmus+ grant.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited experimental scope (toy slot-car domain only), incremental methodological contribution (gated network + task coherence loss extension of existing LRP), weak baselines, and narrow applicability. Lacks depth for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4730,
+        "completion_tokens": 85,
+        "total_tokens": 4815
+      },
+      "time": "2026-02-08T22:40:08.980107+00:00"
+    }
   ]
 }

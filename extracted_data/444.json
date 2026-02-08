@@ -140,5 +140,21 @@
       "text": "We provide an example heat map using the cell decomposition metric for each class in both sentiment analysis datasets, and selected WikiMovie question categories Dataset Category Heat Map Yelp Polarity Positive we went here twice for breakfast . had the bananas foster waffles with fresh whipped cream , they were amazing ! ! perfect seat out side on the terrace Yelp Polarity Negative call me spoiled ...this sushi is gross and the orange chicken , well it was so thin i don t think it had chicken in it. gosomewhereelse Stanford Sentiment Positive Whether or not you re enlightened by any of Derrida s lectures on the other and the self , Derrida is an undeniablyfascinatingandplayfulfellow Stanford Sentiment Negative ... begins with promise , but runs aground after being snared in its own tangled plot Pattern Question Heat Map Movie to Year What was the release year of another 48 hours? another 48 hrs is a 1990 Movie to Writer Which person wrote the movie last of the dogmen? last of the dogmen is a 1995 western adventure film written and directed by tab murphy Movie to Actor Who acted in the movie thunderbolt? thunderbolt ( ) ( piklik foh ) is a 1995 hong kong action filmstarring jackie chan Movie to Director Who directed bloody bloody bible camp? bloody bloody bible cam p is a 2012 american horror - comedy /s platter film . the film was directed by vito trabucco Movie to Genre What genre is trespass in? trespassisa 1992 action Movie to Votes How would people rate the pool? though filmed in hindi , a language smith didn t know , the film earned good Movie to Rating How popular was les miserables? les mis rables is a 1935 american drama film starring fredric march and charles laughton based upon thefamous Movie to Tags Describe rough magic? rough magic is a 1995 comedy film directed by clare peploe and starring bridget fonda , russell crowe Movie to Language What is the main language in fate? fate ( ) is a 2001 turkish",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel interpretability method with solid theoretical foundation (multiplicative/additive LSTM decomposition), comprehensive experiments across multiple tasks (sentiment analysis, QA), and practical rule extraction validation. Addresses important problem of neural network interpretability with principled approach."
+      },
+      "token": {
+        "prompt_tokens": 4859,
+        "completion_tokens": 87,
+        "total_tokens": 4946
+      },
+      "time": "2026-02-08T22:17:05.407601+00:00"
+    }
   ]
 }

@@ -120,5 +120,21 @@
       "text": "Knowledge base completion has been a common task for testing knowledge base models on their ability of generalizing to unseen facts. Here, we apply our TransGaussian model to a knowledge completion task and show that it has competitive performance. We tested on the subset of WordNet released by Guu et al. (2015). The atomic triplets in this dataset was originally created by Socher et al. (2013) and Guu et al. (2015) added path queries that were randomly sampled from the knowledge graph. We build our TransGaussian model by training on these triplets and paths and tested our model on the same link prediction task as done by Socher et al. (2013); Guu et al. (2015). As done by Guu et al. (2015), we trained TransGaussian (SINGLE) with atomic triplets only and trained TransGaussian (COMP) with the union of atomic triplets and paths. We did not incorporate word embedding in this task and each entity is assigned its individual vector. Without getting parameters tuned too much, TransGaussian (COMP) obtained accuracy comparable to TransE (COMP). See Table 11.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty and narrow experimental scope. Gaussian attention is a straightforward extension of TransE with learned diagonal covariance. Experiments only on a small custom FIFA dataset (1127 entities) with oracle entity recognition. No comparison with neural QA baselines or standard KB completion benchmarks. Weak generalization evidence."
+      },
+      "token": {
+        "prompt_tokens": 6515,
+        "completion_tokens": 103,
+        "total_tokens": 6618
+      },
+      "time": "2026-02-08T22:37:04.050603+00:00"
+    }
   ]
 }

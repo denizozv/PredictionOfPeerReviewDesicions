@@ -85,5 +85,21 @@
       "text": "We have presented a simple semi-supervised learning framework based on in-painting with an adversarial loss. The generator in our CC-GAN model is capable of producing semantically meaningful in-paintings and the discriminator performs comparable to or better than existing semi-supervised methods on two classification benchmarks. Since discrimination of real/fake in-paintings is more closely related to the target task of object classification than extracting a feature representation suitable for in-filling, it is not surprising that we are able to exceed the performance of Pathak et al. (2016) on PASCAL classification. Furthermore, since our model operates on images half the resolution as those used by other approaches (128128 vs. 224244), there is potential for further gains if improvements in the generator resolution can be made. Our models and code are available at https://github.com/edenton/cc-gan. Acknowledgements: Emily Denton is supported by a Google Fellowship. Rob Fergus is grateful for the support of CIFAR.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel context-conditional GAN formulation for semi-supervised learning with solid experimental validation on STL-10 and PASCAL VOC, demonstrating clear improvements over baselines and competitive results with state-of-the-art methods."
+      },
+      "token": {
+        "prompt_tokens": 3852,
+        "completion_tokens": 85,
+        "total_tokens": 3937
+      },
+      "time": "2026-02-08T22:38:14.692247+00:00"
+    }
   ]
 }

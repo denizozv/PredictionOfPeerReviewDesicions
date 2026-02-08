@@ -85,5 +85,21 @@
       "text": "The optimized hyperparameters are detailed in Table 4. All hyperparameters were optimized using the Spearmint (Snoek et al., 2012) Bayesian optimization package. The same range of values was used for all common model hyperparameters. 5 10 B O O L L5 B O O L 8 5 10 B O O L 5 B O O L 8 5 10 B O O L 5 B O O L 10 5 10 P O LY 8 S IM P P O LY 8 5 10 S IM P P O LY 5 S IM P P O LY 10 5 10 S IM P P O LY 8 S IM P P O LY 10 5 10 P O LY 5 S IM P P O LY 10 5 10 P O LY 8 S IM P P O LY 10 5 10 O N E V -P O LY 10 O N E V -P O LY 13 5 10 P O LY 8 O N E V -P O LY 13 5 10 0.0 0.2 0.4 0.6 0.8 1.0 P O LY 5 P O LY 8 (a) SEENEQCLASS evaluation using model trained on simpler datasets. Caption is model trained onTest dataset. 5 10 B O O L L5 B O O L 8 5 10 B O O L 5 B O O L 8 5 10 B O O L 5 B O O L 10 5 10 P O LY 8 S IM P P O LY 8 5 10 S IM P P O LY 5 S IM P P O LY 10 5 10 S IM P P O LY 8 S IM P P O LY 10 5 10 P O LY 5 S IM P P O LY 10 5 10 P O LY 8 S IM P P O LY 10 5 10 O N E V -P O LY 10 O N E V -P O LY 13 5 10 P O LY 8 O N E V -P O LY 13 5 10 0.0 0.2 0.4 0.6 0.8 1.0 P O LY 5 P O LY 8 (b) Evaluation of compositionality. UNSEENEQCLASS evaluation using model trained on simpler datasets. Caption is model trained onTest dataset. tf-idf GRU StackRNN TreeNN-1Layer TreeNN-2Layer EqNet Figure 6: Evaluation of compositionality. Evaluation of scorex (y axis) for x = 1, . . . , 15. The markers are shown every five ticks of the x-axis to make the graph more clear. TREENN refers to the model of Socher et al. (2012).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel architecture (EQNETs) with principled design for learning semantic equivalence of symbolic expressions. Strong technical contributions (unit normalization, subexpression forcing) addressing real optimization challenges in deep compositional models. Comprehensive evaluation on synthetic datasets with clear ablations and transfer learning analysis. Addresses fundamental problem at intersection of symbolic and neural reasoning."
+      },
+      "token": {
+        "prompt_tokens": 7113,
+        "completion_tokens": 108,
+        "total_tokens": 7221
+      },
+      "time": "2026-02-08T22:27:12.166102+00:00"
+    }
   ]
 }

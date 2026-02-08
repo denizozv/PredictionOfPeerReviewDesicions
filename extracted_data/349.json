@@ -85,5 +85,21 @@
       "text": "Xiaoxiao Guo and Satinder Singhs work on this paper was supported by funding from IBMs Cognitive Horizons Network. Clemens Rosenbaums work was conducted while an intern at IBM Research. The authors would like to thank Iulian Serban for helpful conversations.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel interactive reasoning task with well-designed synthetic domain, thoughtful RL formulation for ambiguity resolution, and systematic experimental analysis across complexity dimensions. Solid contribution despite limited architectural novelty."
+      },
+      "token": {
+        "prompt_tokens": 5213,
+        "completion_tokens": 76,
+        "total_tokens": 5289
+      },
+      "time": "2026-02-08T22:06:19.253484+00:00"
+    }
   ]
 }

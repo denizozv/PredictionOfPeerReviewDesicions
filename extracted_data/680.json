@@ -105,5 +105,21 @@
       "text": "We show additional sample translations in the following Tables.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel hierarchical character-level architecture with morphology learning for NMT; solid experimental validation on morphologically rich languages; demonstrates practical advantages (faster convergence, handling OOV words) with reasonable BLEU results, though incremental over concurrent work."
+      },
+      "token": {
+        "prompt_tokens": 5964,
+        "completion_tokens": 89,
+        "total_tokens": 6053
+      },
+      "time": "2026-02-08T22:41:10.283136+00:00"
+    }
   ]
 }

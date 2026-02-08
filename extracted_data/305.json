@@ -75,5 +75,21 @@
       "text": "Although it is desirable to summarize and compare the ratedistortion behavior of JPEG, JPEG 2000, and our method across an image set, it is difficult to do this in a way that is fair and interpretable. First, ratedistortion behavior varies substantially across bit rates for different images. For example, for the image in figure 12, our method achieves the same MSE with roughly 50% of the bits needed by JPEG 2000 for low rates, and about 30% for high rates. For the image in figure 17, the gains are more modest, although still significant through the range. But for the image in figure 15, our method only slightly outperforms JPEG 2000 at low rates, and under-performs it at high rates. Note that these behaviors are again different for MS-SSIM, which shows a significant improvement for all images and bit rates (consistent with their visual appearance). Second, there is no obvious or agreed-upon method for combining ratedistortion curves across images. More specifically, one must decide which points in the curves to combine. For our method, it is natural to average the MSE and entropy values across images compressed using the same choice of , since these are all coded and decoded using exactly the same representation and quantization scheme. For JPEG, it seems natural to average over images coded at the same quality setting, which appear to be coded using the same quantization choices. The OpenJPEG implementation of JPEG 2000 we use allows selection of points on the ratedistortion curve either through specification of a target bit rate, or a target quality. This choice has no effect on ratedistortion plots for individual images (verified, but not shown), but has a substantial effect when averaging over images, since the two choices lead one to average over a different set of R-D points. This is illustrated in figure 11. Even if points were selected in exactly the same fashion for each of the methods (say, matched to a given set of target rates), summary plots can still over- or underemphasize high rate vs. low rate performance. We conclude that summaries of ratedistortion are of limited use. Instead, we encourage the reader to browse our extensive collection of test images, with individual ratedistortion plots for each image, available at http://www.cns.nyu.edu/ lcv/iclr2017 in both grayscale and RGB. In the following pages, we show additional example images, compressed at relatively low bit rates, in order to visualize the qualitative nature of compression artifacts. On each page, the JPEG 2000 image is selected to have the lowest possible bit rate that is equal or greater than the bit rate of the proposed method. In all experiments, we compare to JPEG with 4:2:0 chroma subsampling, and the OpenJPEG implementation of JPEG 2000 with the default multiple component transform. For evaluating PSNR, we use the JPEG-defined conversion matrix to convert between RGB and YCbCr. For evaluating MS-SSIM (Wang, Simoncelli, and Bovik, 2003), we used only the resulting luma component. Original images are not shown, but are available online, along with compressed images at a variety of other bit rates, at http://www.cns.nyu.edu/ lcv/iclr2017.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel end-to-end learned image compression with principled rate-distortion optimization, theoretically grounded in variational inference, strong empirical results surpassing JPEG/JPEG2000, and significant visual quality improvements. Methodologically sophisticated with well-motivated architectural choices (GDN, continuous relaxation for quantization)."
+      },
+      "token": {
+        "prompt_tokens": 7728,
+        "completion_tokens": 107,
+        "total_tokens": 7835
+      },
+      "time": "2026-02-08T22:02:35.717251+00:00"
+    }
   ]
 }

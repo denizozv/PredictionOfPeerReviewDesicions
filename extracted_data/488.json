@@ -85,5 +85,21 @@
       "text": "We thank the developers of Tensorflow. We thank the members of Google Brain team for their warm support and valuable comments. This work is partly supported by NEDO.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel application of adversarial training to embedding space for semi-supervised text classification with strong empirical results across multiple benchmarks and insightful analysis of learned representations."
+      },
+      "token": {
+        "prompt_tokens": 5154,
+        "completion_tokens": 70,
+        "total_tokens": 5224
+      },
+      "time": "2026-02-08T22:22:22.991252+00:00"
+    }
   ]
 }

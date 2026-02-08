@@ -160,5 +160,21 @@
       "text": "We would like to thank all the members of the Statistics and Machine Learning Lab at the Indian Institute of Science for their support and feedback. We would like to specifically thank Akshay Mehrotra for his extensive help with everything from the implementation to discussing results. We would also like to thank Siddharth Agrawal and Gaurav Pandey for their helpful feedback throughout the process. We would like to thank Soumith Chintala for his feedback on this manuscript and the idea.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel attention-recurrence architecture for similarity learning with strong empirical results (1.5% error on Omniglot one-shot, first DL to beat humans), thorough qualitative/quantitative analysis, and clear methodological contribution despite some presentation issues."
+      },
+      "token": {
+        "prompt_tokens": 5921,
+        "completion_tokens": 92,
+        "total_tokens": 6013
+      },
+      "time": "2026-02-08T22:30:15.487483+00:00"
+    }
   ]
 }

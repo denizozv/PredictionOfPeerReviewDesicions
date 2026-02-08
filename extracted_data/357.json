@@ -125,5 +125,21 @@
       "text": "Mathieu et al. (2015) proposed an adversarial training for frame prediction. Inspired by Goodfellow et al. (2014), they proposed a training procedure that involves a generative model G and a discriminative model D. The two models compete in a two-player minimax game. The discriminator D is optimized to correctly classify its inputs as either coming from the training data (real frame sequence) or from the generator G (synthetic frame sequence). The generator G is optimized to generate frames that fool the discriminator into believing that they come from the training data. At training time, D takes the concatenation of the input frames that go into G and the images produced by G. The adversarial training objective is defined as follows: min G max D logD ([x1:t,xt+1:t+T ]) + log (1D ([x1:t, G (x1:t)])) , where [., .] denotes concatenation in the depth dimension, x1:t denotes the input frames toG, xt+1:t+T are the target frames, andG (x1:t) = xt+1:t+T are the frames predicted byG. In practice, we split the minimax objective into two separate, but equivalent, objectives: LGAN and Ldisc. During optimization, we minimize the adversarial objective alternating between LGAN and Ldisc. LGAN is defined by LGAN = logD ([x1:t, G (x1:t)]) , where we optimize the parameters of G to minimize LGAN while the parameters of D stay untouched. As a result, G is optimized to generate images that make D believe that they come from the training data. Thus, the generated images look sharper, and more realistic. Ldisc is defined by Ldisc = logD ([x1:t,xt+1:t+T ]) log (1D ([x1:t, G (x1:t)])) , where we optimize the parameters of D to minimize Ldisc, while the parameters of G stay untouched. D tells us whether its input came from the training data or the generator G. Alternating between the two objectives, causes G to generate very realistic images, and D not being able to distinguish between generated frames and frames from the training data.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel motion-content decomposition architecture with strong empirical results on multiple datasets and clear generalization benefits, though incremental in some technical components."
+      },
+      "token": {
+        "prompt_tokens": 6769,
+        "completion_tokens": 65,
+        "total_tokens": 6834
+      },
+      "time": "2026-02-08T22:07:09.797092+00:00"
+    }
   ]
 }

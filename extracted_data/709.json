@@ -130,5 +130,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel unsupervised pretraining approach for seq2seq models with strong empirical results (SOTA on WMT14/15), comprehensive ablation studies, and clear methodological contributions including monolingual LM objectives and architectural improvements."
+      },
+      "token": {
+        "prompt_tokens": 3097,
+        "completion_tokens": 87,
+        "total_tokens": 3184
+      },
+      "time": "2026-02-08T22:44:03.462112+00:00"
+    }
   ]
 }

@@ -105,5 +105,21 @@
       "text": "C.1 VARIATIONAL AUTO-ENCODER See Figure 14. C.2 PROBABILISTIC MODEL FOR WORD EMBEDDINGS See Figure 15. This example uses data subsampling (Section 4.4). The priors and conditional likelihoods are defined only for a minibatch of data. Similarly the variational model only models the embeddings used in a given minibatch. TensorFlow variables contain the embedding vectors for the entire vocabulary. TensorFlow placeholders ensure that the correct embedding vectors are used as variational parameters for a given minibatch. The Bernoulli variables y_pos and y_neg are fixed to be 1s and 0s respectively. They model whether a word is indeed the target word for a given context window or has been drawn as a negative sample. Without regularization (via priors), the objective we optimize is identical to negative sampling.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel probabilistic programming framework with strong theoretical design, comprehensive experimental validation, and significant practical impact. Compositional representations for both modeling and inference are methodologically innovative and well-executed."
+      },
+      "token": {
+        "prompt_tokens": 7795,
+        "completion_tokens": 73,
+        "total_tokens": 7868
+      },
+      "time": "2026-02-08T22:10:21.860158+00:00"
+    }
   ]
 }

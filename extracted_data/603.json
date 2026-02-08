@@ -120,5 +120,21 @@
       "text": "We thank the anonymous reviewers for their valuable comments. This material is based upon work partially supported by the National Science Foundation under Grant No. TWC-1409915, and a DARPA grant FA8750-15-2-0104. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation and DARPA.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in neural architecture (standard LSTM), narrow application domain, incremental improvements over baselines (0.5-3.8 points), lacks theoretical insight or broader methodological contribution expected at top venues."
+      },
+      "token": {
+        "prompt_tokens": 8113,
+        "completion_tokens": 81,
+        "total_tokens": 8194
+      },
+      "time": "2026-02-08T22:33:19.109359+00:00"
+    }
   ]
 }

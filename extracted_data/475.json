@@ -120,5 +120,21 @@
       "text": "To highlight the contribution of the various components of our generative model, we investigate performance on a selection of simplified models.21 First, we remove the continuous latent layers. The resulting prior, depicted in Figure 1b, consists of the bipartite Boltzmann machine (RBM), the smoothing variables , and a factorial Bernoulli distribution over the observed variables x defined via a deep neural network with a logistic final layer. This probabilistic model achieves a log-likelihood of 86.9 with 128 RBM units and 85.2 with 200 RBM units. Next, we further restrict the neural network defining the distribution over the observed variables x given the smoothing variables to consist of a linear transformation followed by a pointwise logistic nonlinearity, analogous to a sigmoid belief network (SBN; Spiegelhalter & Lauritzen, 1990; Neal, 1992). This decreases the negative log-likelihood to 92.7 with 128 RBM units and 88.8 with 200 RBM units. We then remove the lateral connections in the RBM, reducing it to a set of independent binary random variables. The resulting network is a noisy sigmoid belief network. That is, samples are produced by drawing samples from the independent binary random variables, multiplying by an independent noise source, and then sampling from the observed variables as in a standard SBN. With this SBN-like architecture, the discrete variational autoencoder achieves a log-likelihood of 97.0 with 200 binary latent variables. Finally, we replace the hierarchical approximating posterior of Figure 3a with the factorial approximating posterior of Figure 1a. This simplification of the approximating posterior, in addition to the prior, reduces the log-likelihood to 102.9 with 200 binary latent variables. 21In all cases, we report the negative log-likelihood on statically binarized MNIST (Salakhutdinov & Murray, 2008), estimated with 104 importance weighted samples (Burda et al., 2016). Figures 11, 12, and 13 repeat the analysis of Figure 5 for statically binarized MNIST, Omniglot, and Caltech-101 Silhouettes. Specifically, they show the generative output of a discrete VAE as the Markov chain over the RBM evolves via block Gibbs sampling. The RBM is held constant across each sub-row of five samples, and variation amongst these samples is due to the layers of continuous latent variables. Given a multimodal distribution with well-separated modes, Gibbs sampling passes through the large, low-probability space between the modes only infrequently. As a result, consistency of the object class over many successive rows in Figures 11, 12, and 13 indicates that the RBM prior has well-separated modes. On statically binarized MNIST, the RBM still learns distinct, separated modes corresponding to most of the different digit types. However, these modes are not as well separated as in dynamically binarized MNIST, as is evident from the more rapid switching between digit types in Figure 11. There are not obvious modes for Omniglot in Figure 12; it is plausible that an RBM with 128 units could not represent enough well-separated modes to capture the large number of distinct character types in the Omniglot dataset. On Caltech-101 Silhouettes, there may be a mode corresponding to large, roughly convex blobs.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel methodological contribution solving a fundamental problem (backpropagation through discrete latent variables) with rigorous mathematical framework, comprehensive experimental validation, and strong empirical results on standard benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 17476,
+        "completion_tokens": 76,
+        "total_tokens": 17552
+      },
+      "time": "2026-02-08T22:21:01.637105+00:00"
+    }
   ]
 }

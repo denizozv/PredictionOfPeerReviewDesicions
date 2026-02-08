@@ -135,5 +135,21 @@
       "text": "We analyzed the performance of trained neural networks by investigating which program instructions tend to get confused by the networks. To this end, we looked at a generalization of confusion matrices to the multilabel classification setting: for each attribute in a ground truth program (rows) measure how likely each other attribute (columns) is predicted as a false positive. More formally, in this matrix the (i, j)-entry is the average predicted probability of attribute j among test programs that do possess attribute i and do not possess attribute j. Intuitively, the i-th row of this matrix shows how the presence of attribute i confuses the network into incorrectly predicting each other attribute j. Figure 9 shows this conditional confusion matrix for the neural network and P = 500 program test set configuration used to obtain Table 1. We re-ordered the confusion matrix to try to expose block structure in the false positive probabilities, revealing groups of instructions that tend to be difficult to distinguish. Figure 10 show the conditional confusion matrix for the neural network used to obtain the table in Fig. 3a. While the results are somewhat noisy, we observe a few general tendencies: There is increased confusion amongst instructions that select out a single element from an array: HEAD, LAST, ACCESS, MINIMUM, MAXIMUM. Some common attributes get predicted more often regardless of the ground truth program: FILTER, (>0), (<0), (%2==1), (%2==0), MIN, MAX, (+), (-), ZIPWITH. There are some groups of lambdas that are more difficult for the network to distinguish within: (+) vs (-); (+1) vs (-1); (/2) vs (/3) vs (/4). When a program uses (**2), the network often thinks its using (*), presumably because both can lead to large values in the output.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel framework (LIPS) combining neural networks with classical program synthesis techniques. Strong methodological contribution with rigorous experimental validation, theoretical justification (Lemma 1), and impressive empirical speedups (order of magnitude). Addresses fundamental problem in program synthesis with principled approach to attribute prediction and search guidance."
+      },
+      "token": {
+        "prompt_tokens": 11045,
+        "completion_tokens": 100,
+        "total_tokens": 11145
+      },
+      "time": "2026-02-08T22:16:09.235880+00:00"
+    }
   ]
 }

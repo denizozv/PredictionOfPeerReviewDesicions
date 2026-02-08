@@ -90,5 +90,21 @@
       "text": "The author would like to thank Vianney Perchet for helpful discussions.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical contribution with practical relevance: concave lower bounds for sample-efficient policy optimization, extension to negative rewards via control variates, validated on real-world advertising problem with significant improvements."
+      },
+      "token": {
+        "prompt_tokens": 4390,
+        "completion_tokens": 75,
+        "total_tokens": 4465
+      },
+      "time": "2026-02-08T22:41:29.870404+00:00"
+    }
   ]
 }

@@ -100,5 +100,21 @@
       "text": "We studied how number of adversarial examples k in the minibatch affect accuracy on clean and adversarial examples. Results are summarized in Table 8. Overall we noticed that increase of k lead to increase of accuracy on adversarial examples and to decrease of accuracy on clean examples. At the same having more than half of adversarial examples in the minibatch (which correspond to k > 16 in our case) does not provide significant improvement of accuracy on adversarial images, however lead to up to 1% of additional decrease of accuracy on clean images. Thus for most experiments in the paper we have chosen k = 16 as a reasonable trade-off between accuracy on clean and adversarial images.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Pioneering large-scale adversarial training on ImageNet with novel practical insights (label leaking discovery, batch composition strategy, model capacity effects), rigorous experimental methodology, and significant security implications for deep learning."
+      },
+      "token": {
+        "prompt_tokens": 6936,
+        "completion_tokens": 80,
+        "total_tokens": 7016
+      },
+      "time": "2026-02-08T22:22:04.484186+00:00"
+    }
   ]
 }

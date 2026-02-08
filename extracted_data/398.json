@@ -50,5 +50,21 @@
       "text": "Despite its simple dynamics, the CFN obtains results that compare well against LSTM networks and GRUs on word-level language modeling. This indicates that it might be possible, in general, to build RNNs that perform well while avoiding the intricate, uninterpretable and potentially chaotic dynamics that can occur in LSTMs and GRUs. Of course, it remains to be seen if dynamically simple RNNs such as the proposed CFN can perform well on a wide variety of tasks, potentially requiring longer term dependencies than the one needed for word level language modeling. The experiments presented in Section 2 indicate a plausible path forward activations in the higher layers of a multi-layer CFN decay at a slower rate than the activations in the lower layers. In theory, complexity and long-term dependencies can therefore be captured using a more feed-forward approach (i.e. stacking layers) rather than relying on the intricate and hard to interpret dynamics of an LSTM or a GRU. Overall, the CFN is a simple model and it therefore has the potential of being mathematically wellunderstood. In particular, Section 2 reveals that the dynamics of its hidden states are inherently more interpretable than those of an LSTM. The mathematical analysis here provides a few key insights into the network, in both the presence and absence of input data, but obviously more work is needed before a complete picture can emerge. We hope that this investigation opens up new avenues of inquiry, and that such an understanding will drive subsequent improvements.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel theoretical contribution analyzing chaos in RNNs with rigorous dynamical systems analysis; proposes simpler alternative (CFN) with provable non-chaotic dynamics; competitive empirical results on standard benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 5664,
+        "completion_tokens": 81,
+        "total_tokens": 5745
+      },
+      "time": "2026-02-08T22:11:06.847270+00:00"
+    }
   ]
 }

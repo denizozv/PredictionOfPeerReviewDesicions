@@ -80,5 +80,21 @@
       "text": "This paper presented a new method for predicting the interactions between users and items, called Collaborative Deep Embedding. This method uses dual networks to encode users and items respectively. The user-network and item-network are trained jointly, in a collaborative manner, based on two streams of data. We obtained considerable performance gains over the state-of-the-art consistently on three large datasets. The proposed method also demonstrated superior generalization performance (on out-matrix predictions). This improvement, from our perspective, is ascribed to three important reasons: (1) the expressive power of deep models for capturing the rich variations in user interests, (2) the collaborative training process that encourages closely coupled embeddings, and (3) an objective function that directly targets the prediction accuracy. We consider this work as a significant step that brings the power of deep models to relational modeling. However, the space of deep relational modeling remains wide open lots of questions remain yet to be answered. In future, we plan to investigate more sophisticated network architectures, and extend the proposed methodology to applications that involve more than two domains.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core contribution. Dual encoding networks for recommendation is a straightforward extension of existing collaborative filtering and deep learning approaches. Multi-level branching is an incremental architectural variation. Experimental validation is narrow (3 datasets, 2 baselines), lacks statistical significance testing, and missing comparisons with other neural recommendation methods contemporary to 2015. The paper reads as solid engineering rather than a methodological advance suitable for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 5297,
+        "completion_tokens": 130,
+        "total_tokens": 5427
+      },
+      "time": "2026-02-08T22:34:19.401649+00:00"
+    }
   ]
 }

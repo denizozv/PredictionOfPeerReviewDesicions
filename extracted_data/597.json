@@ -90,5 +90,21 @@
       "text": "A.1 POINTING AND ATTENDING Pointing mechanism: Its computations are parameterized by two attention matrices Wref ,Wq Rdd and an attention vector v Rd as follows: ui = v> tanh (Wref ri +Wq q) if i 6= (j) for all j 1, the distribution represented by A(ref, q) becomes less steep, hence preventing the model from being overconfident. Logit clipping: We modify Equation 9 as follows: A(ref, q;Wref ,Wq, v) def = softmax(C tanh(u)), (16) whereC is a hyperparameter that controls the range of the logits and hence the entropy ofA(ref, q). A.3 OR TOOLS METAHEURISTICS BASELINES FOR TSP A.4 SAMPLE TOURS (5.934) RL pretraining -Greedy (5.734) RL pretraining -Sampling (5.688) RL pretraining -Active Search (5.827) Active Search (5.688) Optimal RL pretraining -Greedy RL pretraining -Sampling RL pretraining -Active Search Active Search Optimal",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel application of RL to combinatorial optimization with pointer networks; introduces actor-critic training and active search strategies; demonstrates generalization across problem types (TSP, Knapsack); solid experimental validation on multiple scales."
+      },
+      "token": {
+        "prompt_tokens": 8215,
+        "completion_tokens": 81,
+        "total_tokens": 8296
+      },
+      "time": "2026-02-08T22:32:28.150996+00:00"
+    }
   ]
 }

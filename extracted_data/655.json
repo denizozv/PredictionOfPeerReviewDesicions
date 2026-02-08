@@ -65,5 +65,21 @@
       "text": "We introduce a novel transfer learning for deep convolutional networks that tackles the optimization complexity of a highly non-convex objective by breaking it to several distributed fine-tuning operations. This also resolves the imbalance class coverage between original-target domains by using basic probability assignment across several week single-filter classifiers. By the above boosting, the overall performance shows considerable improvement over conventional transfer learning scheme. We conduct several experiments on publicly available datasets and report the performance as traintest errors. The results confirm the advantage of our distributed strategy for the transfer learning.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: BPA from evidence theory is existing technique; distributed single-filter training lacks theoretical justification; weak experimental validation (only MNIST/CIFAR/SVHN, no statistical significance, missing comparisons with modern transfer learning and class-imbalance methods); presentation issues (unclear motivation, ad-hoc design choices, incomplete algorithmic details)."
+      },
+      "token": {
+        "prompt_tokens": 3990,
+        "completion_tokens": 113,
+        "total_tokens": 4103
+      },
+      "time": "2026-02-08T22:38:25.227415+00:00"
+    }
   ]
 }

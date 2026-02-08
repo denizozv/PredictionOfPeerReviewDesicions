@@ -75,5 +75,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel iterative refinement approach with dual attention mechanism for post-editing machine translation. Well-motivated problem, technically sound methodology combining error detection and context-aware word substitution, comprehensive experimental analysis with oracle studies. Modest but consistent BLEU improvements demonstrate practical value. Solid contribution to neural MT, though incremental gains limit impact."
+      },
+      "token": {
+        "prompt_tokens": 5172,
+        "completion_tokens": 105,
+        "total_tokens": 5277
+      },
+      "time": "2026-02-08T22:49:18.585983+00:00"
+    }
   ]
 }

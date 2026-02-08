@@ -105,5 +105,21 @@
       "text": "Our student models have the same architecture as models in Section 6.2. The model without convolutional layers consists of one linear layer that acts as a bottleneck followed by a hidden layer of ReLU units. The following hyperparameters are optimized: initial learning rate [0.0013, 0.016] (optimized on a log scale), momentum [0.68, 0.97] (optimized on a log scale), input-scale [0.8, 1.25], global initialization scale (after initialization) [0.4, 2.0], layer-width constants C1, C2 [0, 1] that control the number of filters or neurons. The exact ranges for the number of filters and implicitly resulting number of hidden units was chosen for all twenty optimization experiments independently, as architectures, number of units and number of parameters strongly interact. For the non-convolutional models we chose a slightly different hyper-parameterization. Given that all layers (in models with two layers or more) are nonlinear and fully connected we treat all of them similarly from the hyperparameter-optimizers point of view. In order to smoothly enforce the parameter budgets without rejecting any samples from the Bayesian optimizer we instead optimize the ratios of hidden units in each layer (numbers between 0 and 1), and then re-normalize and scale them to the final number of neurons in each layer to match the target parameter budget. Figure 2 is similar to 1 but includes preliminary results from experiments for models with 100M parameters. We are also running experiments with 300M parameters. Unfortunately, Bayesian optimization on models with 100M and 300M parameters is even more expensive than for the other points in the graph. As expected, adding capacity to the convolutional students (top of the figure) modestly increases their accuracy. Preliminary results for the MLPs however (too preliminary to include in the graph) may not show the same increase in accuracy with increasing model size. Models with two or three hidden layers may benefit from adding capacity to each layer, but we have yet to see any benefit from adding capacity to the MLPs with four or five hidden layers.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Well-designed empirical study with rigorous methodology (Bayesian hyperparameter optimization, state-of-the-art teacher ensemble at 93.8% CIFAR-10), clear scientific question, and strong experimental evidence demonstrating architectural necessity of convolution and depth despite distillation—addresses important theoretical question about inductive biases in deep learning."
+      },
+      "token": {
+        "prompt_tokens": 7192,
+        "completion_tokens": 111,
+        "total_tokens": 7303
+      },
+      "time": "2026-02-08T22:21:03.756652+00:00"
+    }
   ]
 }

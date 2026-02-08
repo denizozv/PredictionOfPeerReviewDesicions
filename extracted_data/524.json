@@ -85,5 +85,21 @@
       "text": "In this paper, we demonstrate a new domain-independent data augmentation technique that can be used to improve performance when training supervised learning models. We train a sequence autoencoder to construct a learned feature space in which we extrapolate between samples. This technique allows us to increase the amount of variability within the dataset, ultimately resulting in a more robust model. We demonstrate our technique quantitatively on five datasets from different domains (speech, sensor processing, motion capture, and images) using the same simple architecture and achieve near state-of-the-art results on two of them. Moreover, we show that data augmentation in feature space may complement domain-specific augmentation. An important finding is that the extrapolation operator, when used in feature space, generated useful synthetic examples while noise and interpolation did not. Additional synthetic data experiments where we could control the complexity of the decision boundary revealed that extrapolation only improved model performance in cases where there were complex class boundaries. In cases with simple class boundaries, such as linear separability or one class encircling another, extrapolation hindered model performance, while interpolation helped. Our current hypothesis is that interpolation tends to tighten class boundaries and unnecessarily increase confidence, leading to overfitting. This behaviour may cause the model to ignore informative extremities that can describe a complex decision boundary and as a result produce an unnecessarily smooth decision boundary. As most high-dimensional, real datasets will typically have complex decision boundaries, we find extrapolation to be well suited for feature space dataset augmentation.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty: applying noise, interpolation, and extrapolation in learned feature space is straightforward; weak theoretical justification for why feature space augmentation should outperform input space methods; experiments lack depth (small datasets, simple baselines, no comparison with modern augmentation techniques or representation learning methods); writing suggests pre-2016 work with outdated experimental standards for top venues."
+      },
+      "token": {
+        "prompt_tokens": 5052,
+        "completion_tokens": 116,
+        "total_tokens": 5168
+      },
+      "time": "2026-02-08T22:26:08.118288+00:00"
+    }
   ]
 }

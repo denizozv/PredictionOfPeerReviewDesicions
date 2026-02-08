@@ -95,5 +95,21 @@
       "text": "In this work, we conduct an analysis, both empirically and theoretically, on how feature regularization influences and improves low-shot learning performance. By exploiting an XOR classification and two-layer linear regression, we find that the regularization of feature centers the representation, which in turn makes the learning problem easier with better numerical behavior. From the Bayesian point of view, the feature regularization is closely related to batch normalization. Evaluation on synthetic, Omniglot one-shot and large-scale ImageNet benchmark validates our analysis.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty with incremental contribution. Feature regularization analysis is mostly empirical validation of known techniques (SGM, L2 penalty). Theoretical insights (connection to batch normalization, VC-dimension argument) are relatively shallow. Experimental improvements are marginal and lack comparison with modern meta-learning baselines for low-shot learning. The paper reads as an analysis paper rather than a methodological advance."
+      },
+      "token": {
+        "prompt_tokens": 6384,
+        "completion_tokens": 121,
+        "total_tokens": 6505
+      },
+      "time": "2026-02-08T22:47:15.551054+00:00"
+    }
   ]
 }

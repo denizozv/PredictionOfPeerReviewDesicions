@@ -130,5 +130,21 @@
       "text": "A natural way of avoiding sharp minima is through robust optimization techniques. These methods attempt to optimize a worst-case cost as opposed to the nominal (or true) cost. Mathematically, given an > 0, these techniques solve the problem min x (x) := max x f(x+ x) (6) Geometrically, classical (nominal) optimization attempts to locate the lowest point of a valley, while robust optimization attempts to lower an disc down the loss surface. We refer an interested reader to (Bertsimas et al., 2010), and the references therein, for a review of non-convex robust optimization. A direct application of this technique is, however, not feasible in our context since each iteration is prohibitively expensive because it involves solving a large-scale second-order conic program (SOCP). In the context of Deep Learning, there are two inter-dependent forms of robustness: robustness to the data and robustness to the solution. The former exploits the fact that the function f is inherently a statistical model, while the latter treats f as a black-box function. In (Shaham et al., 2015), the authors prove the equivalence between robustness of the solution (with respect to the data) and adversarial training (Goodfellow et al., 2014a). Given the partial success of the data augmentation strategy, it is natural to question the efficacy of adversarial training. As described in (Goodfellow et al., 2014a), adversarial training also aims to artificially increase the training set but, unlike randomized data augmentation, uses the models sensitivity to construct new examples. Despite its intuitive appeal, in our experiments, we found that this strategy did not improve generalization. Similarly, we observed no generalization benefit from the stability training proposed by (Zheng et al., 2016). In both cases, the testing accuracy, sharpness values and the parametric plots were similar to the unmodified (baseline) case discussed in Section 2. It remains to be seen whether adversarial training (or any other form of robust training) can increase the viability of large-batch training.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Seminal work identifying sharp/flat minima as fundamental cause of large-batch generalization gap. Novel sharpness metric, comprehensive experiments across architectures, strong theoretical motivation via MDL/Bayesian perspectives, and practical implications for distributed training. High-impact contribution to optimization understanding in deep learning."
+      },
+      "token": {
+        "prompt_tokens": 6567,
+        "completion_tokens": 99,
+        "total_tokens": 6666
+      },
+      "time": "2026-02-08T22:03:02.681944+00:00"
+    }
   ]
 }

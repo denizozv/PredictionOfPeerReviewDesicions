@@ -115,5 +115,21 @@
       "text": "We follow the approach by Eggensperger et al. (2015) and used the generated datasets from Section 3.1 to build surrogates of the objective functions. This allows us to compare different optimizers on this benchmark very efficiently while (approximately) preserving the characteristics of the underlying benchmark. Using surrogates instead of optimizing the real benchmarks allows us to carry out a more thorough empirical evaluation (since single function evaluations are cheap and we therefore can afford more and longer optimization runs). We used random forests as surrogates following Eggensperger et al. (2015) since they do not introduce a bias for our approach (in contrast to, e.g., surrogates based on standard feed forward neural networks trained with stochastic gradient descent ). For each benchmark, we used all configurations to train a random forest predicting the validation accuracy of a configuration at a certain time step as well as the wall clock time for its evaluation. After each round of successive halving, we return the current best observed configuration and its asymptotic performance. For each function evaluation, we predict the accuracy, and the runtime. By adding the optimization overhead, we can predict the wallclock time necessary to optimize the real objective function. Reporting the wallclock time rather than the number of iterations also takes the additional overhead from running our method into account. Furthermore, we argue that the wallclock time is more interesting in practice. As baselines, we compare to Gaussian process based Bayesian optimization with the upper confidence bound acquisition function (GP-BO-UCB) and the (log) expected improvement acquisition function (GP-BO-Log-EI), as well as Bayesian optimization with Bayesian neural networks (BOHAMIANN) (Springenberg et al., 2016). As an additional baseline, we use standard Bayesian neural networks (SGHMC-BNN) inside Hyperband instead of our specialized neural network architecture (SGHMCLCNet). We compare our model-based version of Hyperband against all these baselines with sampling from the asymptotic mean (SGHMC-LCNet-mean-sampling) and the asymptotic upper confidence bound (SGHMC-LCNet-ucb-sampling). Figure 12 shows that our specialized neural network architecture helps to speed up the convergence of Hyperband on the CNN and the FCNet benchmark. For the LR benchmarks our model still improves over Hyperband but does not perform better than Bayesian optimization. Hyperband as well as our method find the optimum already after the first round of successive halving for the VAE benchmark, which leads to an regret of 0.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel specialized learning curve layer for BNNs with heteroscedastic noise modeling; solid empirical validation across multiple tasks; practical application to hyperparameter optimization via model-based Hyperband. Methodologically sound contribution to an important problem."
+      },
+      "token": {
+        "prompt_tokens": 6043,
+        "completion_tokens": 87,
+        "total_tokens": 6130
+      },
+      "time": "2026-02-08T22:07:15.062539+00:00"
+    }
   ]
 }

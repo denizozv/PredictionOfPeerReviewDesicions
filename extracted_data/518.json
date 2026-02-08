@@ -50,5 +50,21 @@
       "text": "We propose a new method to train neural samplers for given distributions, together with a new SteinGAN method for generative adversarial training. Future directions involve more applications and theoretical understandings for training neural samplers.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel theoretical framework (amortized SVGD for neural sampling) with principled connection to energy-based models and GANs. Strong methodological contribution combining Stein variational gradients with neural network amortization. Solid experimental validation across multiple datasets with competitive results."
+      },
+      "token": {
+        "prompt_tokens": 5230,
+        "completion_tokens": 95,
+        "total_tokens": 5325
+      },
+      "time": "2026-02-08T22:25:05.966965+00:00"
+    }
   ]
 }

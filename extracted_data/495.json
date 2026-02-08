@@ -115,5 +115,21 @@
       "text": "Corollary 13 (Gaussian function). For Gaussian function f(x) = f(x(1), ..., x(d)) = e d i=1(x (i))2/2, x [0, 1]d, there exists a deep neural network f(x) with O ( log d ) lay- ers, O ( d log d ) binary step units and O ( d log d + ( log 1 )2) rectifier linear units such that |f(x) f(x)| for x [0, 1]d. Proof. It follows from the Theorem 4 that there exists d multilayer neural networks g1(x (1)), ..., gd(x (d)) with O ( log d ) layers and O ( d log d ) binary step units and O ( d log d ) rectifier linear units in total such thatx(1) 2 + ...+ x(d) 2 2 g1(x (1)) + ...+ gd(x (d)) 2 2 . (13) Besides, from Theorem 4, it follows that there exists a deep neural network f with O ( log 1 ) layers O ( log 1 ) binary step units and O (( log 1 )2) such that |edx f(x)| 2 , x [0, 1]. Let x = (g1(x(1)) + ...+ gd(x(d)))/2d, then we havee(di=1 gi(x(i)))/2 f (d i=1 gi(x (i)) 2 ) 2 . (14) Let the deep neural network f(x) = f ( g1(x (1)) + ...+ gd(x (d)) 2 ) . By inequalities (13) and (14), the the approximation error is upper bounded by |f(x) f(x)| = e(di=1 x(i))/2 f (d i=1 gi(x (i)) 2 ) e(di=1 x(i))/2 e(di=1 gi(x(i)))/2+ e(di=1 gi(x(i)))/2 f (d i=1 gi(x (i)) 2 ) 2 + 2 = . Now the deep neural network has O ( log d ) layers, O ( d log d ) binary step units and O ( d log d + ( log 1 )2) rectifier linear units. APPENDIX I PROOF OF COROLLARY 14 Corollary 14 (Ridge function). If f(x) = g(aTx) for some direction a Rd with a1 = 1, a 0, x [0, 1]d and some univariate function g satisfying conditions in Theorem 4, then there exists a multilayer neural network f with O ( log 1 ) layers, O ( log 1 ) binary step units and O (( log 1 )2) rectifier linear units such that |f(x) f(x)| for x [0, 1]d. Proof. Let t = aTx. Since a1 = 1, a 0 and x [0, 1]d, then 0 t 1. Then from Theorem 4, it follows that then there exists a multilayer neural network g with O ( log 1 ) layers, O ( log 1 ) binary step units and O (( log 1 )2) rectifier linear units such that |g(t) g(t)| , t [0, 1]. If we define the deep network f as f(x) = g(t), then the approximation error of f is |f(x) f(x)| = |g(t) g(t)| . Now we have proved the corollary.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Foundational theoretical contribution with rigorous approximation bounds showing exponential separation between deep and shallow networks for piecewise smooth functions. Novel proof techniques (binary expansion + ReLU multiplication) and comprehensive analysis across univariate/multivariate cases with matching upper/lower bounds."
+      },
+      "token": {
+        "prompt_tokens": 7007,
+        "completion_tokens": 94,
+        "total_tokens": 7101
+      },
+      "time": "2026-02-08T22:23:05.525345+00:00"
+    }
   ]
 }

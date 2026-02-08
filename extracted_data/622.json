@@ -80,5 +80,21 @@
       "text": "Fig. 1(d) and 1(e) report the experimental results of a straightforward setting, in which the task is to classify a mixture of 10 multivariate Gaussians in 50D. The input is therefore of size 50. The loss employed is the cross entropy loss of ten classes. The network has 10 blocks, each containing 20 hidden neurons, a batch normalization layer, and a skip connection. Training was performed on 10,000 samples, using SGD with minibatches of 50 samples. Next, we provide additional experiments performed on the public CIFAR-10 and CIFAR-100 data sets (Krizhevsky, 2009). The public ResNet code of https://github.com/facebook/fb. resnet.torch is used for networks of depth 32. As noted in Sec. 4.2, the dynamic behavior can be present in the Batch Normalization multiplicative coefficient or in the weight matrices themselves. In the following experiments, it seems that until the learning rate is reduced, the dynamic behavior is manifested in the Batch Normalization multiplicative coefficients and then it moves to the convolution layers themselves. We therefore absorb the BN coefficients into the convolutional layer using the public code of https: //github.com/e-lab/torch-toolbox/tree/master/BN-absorber. Note that the multiplicative coefficient of Batch Normalization is typically refereed to as . However, throughout our paper, since we follow the notation of Choromanska et al. (2015a), refers to the number of paths. The multiplicative factor of Batch normalization appears as in Sec. 4. Fig. 2 depicts the results. There are two types of plots: Fig. 2(a,c) presents for CIFAR-10 and CIFAR-100 respectively the magnitude of the various convolutional layers for multiple epochs (similar in type to Fig. 1(d) in the paper). Fig. 2(b,d) depict for the two datasets the mean of these norms over all convolutional layers as a function of epoch (similar to Fig. 1(e)). As can be seen, the dynamic phenomenon we describe is very prominent in the public ResNet implementation when applied to these conventional datasets: the dominance of paths with fewer skip connections increases over time. Moreover, once the learning rate is reduced in epoch 81 the phenomenon we describe speeds up. In Fig. 3 we present the multiplicative coefficient of the Batch Normalization when not absorbed. As future work, we would like to better understand why these coefficients start to decrease once the learning rate is reduced. As shown above, taking the magnitude of the convolutions into account, the dynamic phenomenon we study becomes even more prominent at this point. The change of location from the multiplicative coefficient of the Batch Normalization layers to the convolutions themselves might indicate that Batch Normalization is no longer required at this point. Indeed, Batch Normalization enables larger training rates and this shift happens exactly when the training rate is reduced. A complete analysis is left for future work.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel theoretical framework connecting ResNets to spin glass models with rigorous analysis of dynamic ensemble behavior and batch normalization's role. Strong mathematical contributions with experimental validation, though some assumptions limit practical applicability."
+      },
+      "token": {
+        "prompt_tokens": 8396,
+        "completion_tokens": 77,
+        "total_tokens": 8473
+      },
+      "time": "2026-02-08T22:35:13.908367+00:00"
+    }
   ]
 }

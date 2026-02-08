@@ -105,5 +105,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel multi-task auxiliary learning framework with strong empirical results (880% on Atari, 10× speedup on Labyrinth), well-motivated design combining control and reward prediction tasks, comprehensive experiments with ablations and robustness analysis."
+      },
+      "token": {
+        "prompt_tokens": 6943,
+        "completion_tokens": 89,
+        "total_tokens": 7032
+      },
+      "time": "2026-02-08T22:02:43.672161+00:00"
+    }
   ]
 }

@@ -60,5 +60,21 @@
       "text": "We have shown that it is possible to learn a static analyzer from data. Even though the problem we address is particularly simple and on a toy language, it is interesting to note that in our experiments, only LSTM networks provided a reasonable enough solution. We have also shown that it is possible to make the static analyzer useful by using a language model to help the programmer understand where to look in the program to find the error. Of course, this experiment is very far from any practical tool. First, dealing with more complicated programs involving memory, functions, and modularity should be vastly more complex. Also, our solution is very brittle. For example, in our language, the space of variable names is very restricted, it might be much more difficult to deal with normal variable names where a specific variable name could not appear at all in the training dataset. Finally, a fundamental issue are false positives, that is, programs that are wrongly classified as being without error. This is a serious problem that may make such a tool risky to use. However, note that there are useful programming language tools that indeed generate false positive. For instance, a tool that report buffer overflows might not catch every error, but it is still useful if it catches some. Another possibility is to consider approaches were a result is verified by an external tools. For example, in the field of certified compilation, Tristan & Leroy (2008) have shown that it can be acceptable to use an untrusted, potentially bogus, program transformation as long as each use can be formally checked. Also, as exemplified by Gulwani & Necula (2003; 2004; 2005) some static analysis algorithms do trade a small amount of unsoundness for much faster computation, which can be necessary when applying programming tools to very large code base.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited scope (toy language, single task), incremental technical contribution (standard LSTM + simple differentiable set), weak experimental validation (synthetic data only, no real-world relevance), and insufficient novelty for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4027,
+        "completion_tokens": 85,
+        "total_tokens": 4112
+      },
+      "time": "2026-02-08T22:48:15.653103+00:00"
+    }
   ]
 }

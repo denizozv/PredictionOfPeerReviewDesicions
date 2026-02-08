@@ -75,5 +75,21 @@
       "text": "Figure 5 illustrates the reconstruction errors of a 40961000 weight matrix of the last fully connected layer in VGG-16 model (Simonyan & Zisserman, 2015). We tested both the binary and ternary constraints on Mw for comparison. The reconstruction error Jw monotonically decreased along with an increase in kw. It was clear that the ternary basis provided better reconstruction than the binary basis.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core techniques (rank-one approximation, alternating optimization are standard); narrow experimental scope (only VGG variants and MNIST); modest practical gains (15x on FC layers only, with 1.43% accuracy drop); lacks comparison with contemporary quantization/compression methods; incremental contribution to network compression literature."
+      },
+      "token": {
+        "prompt_tokens": 5603,
+        "completion_tokens": 106,
+        "total_tokens": 5709
+      },
+      "time": "2026-02-08T22:49:23.406635+00:00"
+    }
   ]
 }

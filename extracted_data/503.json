@@ -105,5 +105,21 @@
       "text": "Arevalo thanks Colciencias for its support through a doctoral grant in call 617/2013. The authors also thank for K40 Tesla GPU donated by NVIDIA and which was used for some representation learning experiments.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel gated fusion mechanism with solid experimental validation, new multimodal dataset, and clear improvements over baselines. However, limited scope (single task), modest technical depth, and incremental nature of contribution prevent higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 7569,
+        "completion_tokens": 81,
+        "total_tokens": 7650
+      },
+      "time": "2026-02-08T22:24:03.593316+00:00"
+    }
   ]
 }

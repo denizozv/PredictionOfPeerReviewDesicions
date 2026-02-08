@@ -95,5 +95,21 @@
       "text": "Figure 6 shows the procedure for obtaining the parsing marginals from the input potentials. This corresponds to running the inside-outside version of Eisners algorithm (Eisner, 1996). The intermediate data structures used during the dynamic programming algorithm are the (log) inside tables , and the (log) outside tables . Both , are of size nn22, where n is the sentence length. First two dimensions encode the start/end index of the span (i.e. subtree). The third dimension encodes whether the root of the subtree is the left (L) or right (R) index of the span. The fourth dimension indicates if the span is complete (1) or incomplete (0). We can calculate the marginal distribution of each words parent (for all words) in O(n3) using this algorithm. Backward pass through the inside-outside algorithm is slightly more involved, but still takes O(n3) time. Figure 7 illustrates the backward procedure, which receives the gradient of the loss L with respect to the marginals, Lp , and computes the gradient of the loss with respect to the potentials L . The computations must be performed in the signed log-space semifield to handle log of negative values. See section 3.3 and Table 1 for more details.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel integration of graphical model inference (CRFs, dependency parsing) as differentiable neural network layers. Strong methodological contribution with rigorous treatment of backpropagation through structured inference. Comprehensive experiments across diverse tasks (tree transduction, NMT, QA, NLI) demonstrating effectiveness and generalization of structured attention beyond standard soft-selection."
+      },
+      "token": {
+        "prompt_tokens": 11169,
+        "completion_tokens": 114,
+        "total_tokens": 11283
+      },
+      "time": "2026-02-08T22:10:18.038524+00:00"
+    }
   ]
 }

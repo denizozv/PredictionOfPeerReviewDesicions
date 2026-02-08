@@ -75,5 +75,21 @@
       "text": "This research work was supported by US Army Research Office(W911NF-14-1-0477) and National Science Foundation of China(61472147).",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: applies standard distance metrics and existing tree-construction algorithms (ACP, MST, MDS) to CNN activations. No methodological innovation. Evaluation is purely qualitative (visual inspection of trees) with no quantitative metrics, statistical significance testing, or rigorous comparison to phylogenetic baselines. Narrow application scope. Lacks depth expected for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 3070,
+        "completion_tokens": 118,
+        "total_tokens": 3188
+      },
+      "time": "2026-02-08T22:29:14.812134+00:00"
+    }
   ]
 }

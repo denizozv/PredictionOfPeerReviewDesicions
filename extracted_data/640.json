@@ -55,5 +55,21 @@
       "text": "We presented a multi-view, non-parametric word representation learning algorithm which can leverage multilingual distributional information. Our approach effectively combines the benefits of crosslingual training and Bayesian non-parametrics. Ours is the first multi-sense representation learning algorithm capable of using multilingual distributional information efficiently, by combining several parallel corpora to obtained a large multilingual corpus. Our experiments show how this multi-view approach learns high-quality embeddings using substantially less data and parameters than prior state-of-the-art. While we focused on improving the embedding of English words here, the same algorithm could learn better multi-sense embedding for Chinese, for instance. Exciting avenues for future research include extending our approach to model polysemy in foreign language. The sense vectors can then be aligned across languages (thanks to our joint training paradigm), to generate a multilingual Wordnet like resource, in a completely unsupervised manner.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel multilingual extension of multi-sense embeddings with principled Bayesian non-parametric approach; solid experimental validation on WSI tasks; clear methodological contribution beyond prior bilingual work."
+      },
+      "token": {
+        "prompt_tokens": 5159,
+        "completion_tokens": 76,
+        "total_tokens": 5235
+      },
+      "time": "2026-02-08T22:37:15.373266+00:00"
+    }
   ]
 }

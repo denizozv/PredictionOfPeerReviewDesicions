@@ -120,5 +120,21 @@
       "text": "C.1 MNIST The weights of the models are initialized with Glorot & Bengio initialization Glorot et al. (2011). We use the learning rate of 4e 4 along with RMSProp. We initialize ai parameters of mollified activation function by sampling it from a uniform distribution, U[2, 2]. We used 100 hidden units at each layer with a minibatches of size 500. C.2 PENTOMINO We train a 6layer MLP with sigmoid activation function using SGD and momentum. We used 200 units per layer with sigmoid activation functions. We use a learning rate of 1e 3. C.3 CIFAR10 We use the same model with the same hyperparameters for both ResNet, mollified network and the stochastic depth. We borrowed the hyperparameters of the model from Huang et al. (2016a). Our mollified convnet model has residual connections coming from its layer below. C.4 PARITY The n-dimensional parity task is the task to figure out whether the sum of n-bits in a binary vector is even or odd. We use SGD with Nesterov momentum and initialize the weight matrices by using Glorot&Bengio initializationGlorot et al. (2011). For all models, we use the learning rate of 1e 3 and momentum of 0.92. ai is the parameters of mollified activation function are initialized by sampling from uniform distribution, U [2, 2]. C.5 LSTM LANGUAGE MODELING We trained 2-layered LSTM language models on PTB word-level. We used the models with the same hyperparameters as in Zaremba & Sutskever (2014). We used the same hyperparameters for both the mollified LSTM language model and the LSTM. We use hard-sigmoid activation function for both the LSTM and mollified LSTM language model. We use hard-sigmoid activation function for the gates of the LSTM. C.6 PREDICTING THE CHARACTER EMBEDDINGS FROM CHARACTERS We use 10k of these words as a validation and another 10k word embeddings as test set. We train a bidirectional-LSTM on top of each sequence of characters for each word and on top of the representation of bidirectional LSTM, we use a 5-layered tanh-MLP to predict the word-embedding. We train our models using RMSProp and momentum with learning rate of 6e 4 and momentum 0.92. The size of the minibatches, we used is 64. As seen in Figure 9, mollified LSTM network converges faster.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework connecting mollification, continuation methods, and neural network optimization with solid mathematical foundation and diverse experimental validation across multiple architectures."
+      },
+      "token": {
+        "prompt_tokens": 7500,
+        "completion_tokens": 63,
+        "total_tokens": 7563
+      },
+      "time": "2026-02-08T22:14:21.539188+00:00"
+    }
   ]
 }

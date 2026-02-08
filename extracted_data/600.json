@@ -70,5 +70,21 @@
       "text": "In this paper, we first present a novel GSA framework which functions as dictionary learning and sparse coding models with inter- and intra- group sparse constraints. We also prove GSAs learning ability by visualizing the projection matrix and activations. We further propose a group sparse convolutional neural networks by embedding GSA into CNNs. We show that CNNs can benefit from GSA by learning more meaningful representation from dictionary.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty (straightforward application of group sparse lasso to autoencoders), narrow task scope (question classification), weak experimental validation (mostly private datasets, marginal improvements on public benchmarks, no comparison with relevant baselines beyond basic CNN), and presentation issues."
+      },
+      "token": {
+        "prompt_tokens": 5045,
+        "completion_tokens": 91,
+        "total_tokens": 5136
+      },
+      "time": "2026-02-08T22:33:09.804869+00:00"
+    }
   ]
 }

@@ -120,5 +120,21 @@
       "text": "Here we provide more details on the network architectures of the R-DANN and DANN. Please refer to Figure 7 for a diagram of the R-DANN model showing the dimensions of each layer and the connections between layers. The R-DANN and DANN were essentially identical except that, for the DANN, the first layer used a fully-connected layer instead of an RNN and took input flattened over the time-dimension. Thus the input dimensions corresponded to f and t f for the R-DANN and DANN, respectively, where f is the number of features and t is the length of the time-dimension.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel combination of VRNN with adversarial domain adaptation for temporal data; solid experimental validation on healthcare datasets with consistent improvements over baselines; addresses meaningful problem of transferring temporal latent dependencies across domains."
+      },
+      "token": {
+        "prompt_tokens": 5961,
+        "completion_tokens": 78,
+        "total_tokens": 6039
+      },
+      "time": "2026-02-08T22:06:10.072758+00:00"
+    }
   ]
 }

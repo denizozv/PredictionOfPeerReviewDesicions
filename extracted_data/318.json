@@ -130,5 +130,21 @@
       "text": "The model described in Section 4 conditions the output of the model on the final graph produced by the network. This is ideal when the graph represents all of the necessary knowledge for solving the task. However, it may also be desirable for each graph to represent a subset of knowledge corresponding to a particular time, and for the output to be based on the sequence of graphs produced. For instance, in the third bAbI task (which requires reasoning about the temporal sequence of events) each graph could represent the state of the word at that particular time, instead of representing the full sequence of events prior to that time. In Appendix C, section C.1, I describe a transformation to the tasks which allows all information to be contained in the graph. But this adds complexity to the graphical structure. If it were possible for the model to take into account the full sequence of graphs, instead of just the final one, we could maintain the simplicity of the graph transformation. To this end, I present an extension of the GGT-NN model that can produce output using the full graphical sequence. In the extended model, the graphical output of the network after each input sentence is saved for later use. Then, when processing the query, the same set of query transformations are applied to every intermediate graph, producing a sequence of representation vectors hanswer1 , . . . ,h answer K . These are then combined into a final summary representation vector h answer summary Direct reference No direct reference Task Accuracy Accuracy 3 - Three Supporting Facts 90.3% 65.4% 5 - Three Arg. Relations 89.8% 74.2% using a recurrent network such as a GRU layer, from which the output can be produced. The modified pseudocode for this is shown in Algorithm 2. I evaluated the extended model on bAbI tasks 3 and 5, the two tasks which asked questions about a sequence of events. (Note that although Task 14 also involves a sequence of events, it uses a set of discrete named time periods and so is not applicable to this modification.) The model was trained on each of these tasks, without the extra record and history nodes used to store the sequence, instead simply using the sequence of graphs to encode the relevant information. Due to the simpler graphs produced, intermediate propagation was also disabled. Results from training the model are shown in Table 4. The accuracy of the extended model appears to be slightly inferior to the original model in general, although the extended direct-reference model of task 5 performs slightly better than its original counterpart. One possible explanation for the inferiority of the extended model is that the increased amount of query processing made the model more likely to overfit on the training data. Even so, the extended model shows promise, and could be advantageous for modeling complex tasks for which preprocessing the graph would be impractical.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel differentiable graph transformation framework with solid experimental validation on diverse tasks (bAbI, cellular automata, Turing machines). Clear methodological contribution combining graph neural networks with structured supervision. Strong results on graph-suited problems despite requiring additional supervision."
+      },
+      "token": {
+        "prompt_tokens": 5837,
+        "completion_tokens": 88,
+        "total_tokens": 5925
+      },
+      "time": "2026-02-08T22:04:05.105786+00:00"
+    }
   ]
 }

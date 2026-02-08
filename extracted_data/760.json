@@ -150,5 +150,21 @@
       "text": "In the following we provide the message update equations for the different types of factors used in the main paper. The messages are in normalized form: each message is a single scalar and corresponds to the difference between the unnormalized message value evaluated at 1 and the unnormalized message value evaluated at 0. For each update we assume that the incoming messages mIN() for all the variables of the factor are available. The incoming messages are the sum of all messages going to that variable except for the one from the factor under consideration. The outgoing messages are well-defined even for incoming messages, by taking the corresponding limit in the expressions below. D.1 AND FACTOR Bottom-up messages mOUT(t1) = max(0,mIN(t2) + mIN(b))max(0,mIN(t2)) mOUT(t2) = max(0,mIN(t1) + mIN(b))max(0,mIN(t1)) Top-down message mOUT(b) = min(mIN(t1) + mIN(t2),mIN(t1),mIN(t2)) 14The max-marginal of a variable in a factor graph gives the maximum value attainable in that factor graph for each value of that variable. D.2 POOL FACTOR Bottom-up message mOUT(t) = max(mIN(b1), . . . ,mIN(bM )) logM Top-down messages mOUT(bm) = min(mIN(t) logM,max j 6=m mIN(bj)) D.3 OR FACTOR Bottom-up messages mOUT(tm) = min(mIN(b) + j 6=m max(0,mIN(tj)),max(0,mIN(ti))mIN(ti)) with i = argmax i 6=m mIN(ti) Top-down message mOUT(b) = mIN(ti) + j 6=i max(0,mIN(tj)) with i = argmax m mIN(tm) E IMAGE CORRUPTION TYPE ILLUSTRATION The different types of image corruption used in Section 4.4 are shown in the following Figure:",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel hierarchical compositional generative model with principled inference via MPMP; strong theoretical contribution (connection to CNN forward pass, noise invariance); demonstrates unsupervised feature discovery on synthetic and real data with superior generalization. However, limited to binary images and modest experimental scale (MNIST with only 40 samples per class) somewhat constrain impact."
+      },
+      "token": {
+        "prompt_tokens": 10939,
+        "completion_tokens": 111,
+        "total_tokens": 11050
+      },
+      "time": "2026-02-08T22:48:13.841189+00:00"
+    }
   ]
 }

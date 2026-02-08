@@ -75,5 +75,21 @@
       "text": "A.2 SELECTED SOLUTIONS We show example results of our training in Figs. 4-16. Note that these are the actual results produced by our system, and have only been slightly edited for typesetting. Finally, we have colored statements that a simple program analysis can identify as not contributing to the result in gray.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel systematic study of design choices for differentiable programming languages with strong empirical validation. Clear methodological contributions (memory allocation, immutability, types, control flow) and comprehensive experiments demonstrating significant improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 6221,
+        "completion_tokens": 82,
+        "total_tokens": 6303
+      },
+      "time": "2026-02-08T22:26:15.519933+00:00"
+    }
   ]
 }

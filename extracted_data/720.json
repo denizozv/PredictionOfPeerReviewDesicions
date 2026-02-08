@@ -105,5 +105,21 @@
       "text": "In this paper we have proposed a novel Cat2Vec model working on the multi-field categorical data. Different from the other models, Cat2Vec repetitively computes and selects inter-field category pairwise interactions to explore high-level interactions, which is analogous to the Apriori algorithm in association rule mining. Moreover, we present an efficient discriminant training method to estimate the category vectors. We also apply our pairwise interaction model on CTR prediction, of which we have observed a significant performance gain over several strong baselines. For future work, we plan to design more sophisticated gates to explore different interaction patterns among inter-field categories; also leveraging Cat2Vec in various data mining problems is of great interest to us.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel application of distributed representations to multi-field categorical data with reasonable methodological contribution (pairwise interactions + K-max pooling). Solid experimental validation on both synthetic and real datasets (CTR prediction). However, limited theoretical novelty and incremental improvements over baselines reduce confidence for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 4202,
+        "completion_tokens": 100,
+        "total_tokens": 4302
+      },
+      "time": "2026-02-08T22:45:06.481956+00:00"
+    }
   ]
 }

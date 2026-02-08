@@ -115,5 +115,21 @@
       "text": "C.1 SAMPLES C.2 INTERPOLATIONS",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical contribution (MCMC sampling for generative autoencoders with convergence proofs), clear methodological insight about learned vs. prior latent distributions, solid experimental validation revealing differences between denoising and non-denoising variants. Addresses a genuine gap in sampling practice."
+      },
+      "token": {
+        "prompt_tokens": 4977,
+        "completion_tokens": 96,
+        "total_tokens": 5073
+      },
+      "time": "2026-02-08T22:50:16.675463+00:00"
+    }
   ]
 }

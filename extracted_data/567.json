@@ -60,5 +60,21 @@
       "text": "We presented a novel method for seeking dependent subspaces across multiple views, preserving neighborhood relationships of data. It has strong invariance properties, detects nonlinear dependencies, is related to an information retrieval task of the analyst, and performs well in experiments.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel information retrieval-based objective for multi-view subspace learning with solid theoretical grounding (KL divergence, neighborhood correlation) and reasonable experimental validation, though limited scope (linear methods only) and modest experimental scale reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 6284,
+        "completion_tokens": 84,
+        "total_tokens": 6368
+      },
+      "time": "2026-02-08T22:30:10.305914+00:00"
+    }
   ]
 }

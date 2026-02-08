@@ -100,5 +100,21 @@
       "text": "Part of this work was funded by Samsung. We used Theano (Theano Development Team, 2016), Blocks and Fuel (van Merrienboer et al., 2015) for our experiments. We also want to thanks Caglar Gulcehre and Tim Cooijmans for the talks and Jorg Bornschein for his DRAW implementation.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel analytical reparametrization of LSTM that preserves normalization without per-timestep statistics computation, with theoretical gradient flow analysis and competitive empirical results on language modeling and generative modeling tasks."
+      },
+      "token": {
+        "prompt_tokens": 5144,
+        "completion_tokens": 78,
+        "total_tokens": 5222
+      },
+      "time": "2026-02-08T22:25:07.726129+00:00"
+    }
   ]
 }

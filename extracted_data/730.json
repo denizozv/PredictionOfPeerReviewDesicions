@@ -70,5 +70,21 @@
       "text": "We explore several easy to implement enhancements to the basic LSTM network that positively impact performance. These include both fairly well established extensions (biasing the forget gate, dropout, increasing the model size, bidirectionality) and several more novel ones (Monte Carlo 1For IMDB, we benchmark only against results obtained from training exclusively on the labeled training set. Thus, we omit results from unsupervised models that leveraged the additional 50, 000 unlabeled examples, such as Miyato et al. (2016). model averaging, embed average pooling, residual connections). We find that these enhancements improve the performance of the LSTM in classification tasks, both in conjunction or isolation, with an accuracy close to state of the art despite being more lightweight and using less information than the current state of the art models. Our results suggest that these extensions should be incorporated into LSTM baselines.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Empirical engineering paper combining known techniques (MC dropout, residual connections, embed averaging) without significant methodological novelty. Limited to two text classification datasets with incremental improvements. Lacks theoretical insight or broad scientific contribution expected at top venues."
+      },
+      "token": {
+        "prompt_tokens": 4988,
+        "completion_tokens": 86,
+        "total_tokens": 5074
+      },
+      "time": "2026-02-08T22:45:16.921485+00:00"
+    }
   ]
 }

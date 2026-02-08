@@ -90,5 +90,21 @@
       "text": "This work was funded by NVIDIA, the Office of Naval Research Scene Understanding grant N000141310721, the NSF grant IIS1250956, and Google Research.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel fine-grained gating mechanisms with clear motivation and strong empirical results across multiple datasets (CBT, Who Did What, SQuAD, Twitter). Good analysis and visualization support the approach, though incremental over prior work."
+      },
+      "token": {
+        "prompt_tokens": 4072,
+        "completion_tokens": 85,
+        "total_tokens": 4157
+      },
+      "time": "2026-02-08T22:08:19.898034+00:00"
+    }
   ]
 }

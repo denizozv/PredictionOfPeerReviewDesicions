@@ -90,5 +90,21 @@
       "text": "We would like to thank David J. Anderson and Charless Fowlkes for insightful discussions, and acknowledge Google and The Simons Foundation for their financial support.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel hierarchical architecture with lateral connections between discriminative-generative paths; strong multi-faceted evaluation (classification, simulation, discovery); demonstrates clear benefits of auxiliary motion prediction task; well-executed experiments across diverse domains (fly behavior, handwriting, synthetic data)."
+      },
+      "token": {
+        "prompt_tokens": 6360,
+        "completion_tokens": 91,
+        "total_tokens": 6451
+      },
+      "time": "2026-02-08T22:22:02.775116+00:00"
+    }
   ]
 }

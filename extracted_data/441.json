@@ -85,5 +85,21 @@
       "text": "A.1 NEW UNITS: VCRNN AND VCGRU We apply the method outlined in the previous paragraph to two commonly used architecture. Recall that, given a proportion of dimensions to use mt [0, 1] and a sharpness parameter , we the gating vector et RD is defined as: i 1, . . . , D, (et)i = Thres ( ( (mtD i) )) . (11) The masked versions of the previous hidden and current input vectors respectively are then: ht1 = et ht1 and it = et xt. (12) First, we derive a variable computation version of the Elman RNN to get the Variable Computation Recurrent Neural Network (VCRNN) by transforming Equation 3 as follows: ht = et g(ht1, xt) + (1 et) ht. (13) Secondly, we obtain the Variable Computation Gated Recurrent Unit (VCGRU) by deriving the variable computation of the GRU architecture. This is achieved by modifying Equations 4 to 6 as follows: rt = (Urht1 + Vrxt), zt = et (Uzht1 + Vzxt) (14) ht = tanh(U(rt ht1) + V xt) (15) And: ht = zt ht + (1 zt) ht1 (16)",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel adaptive computation mechanism for RNNs with solid experimental validation across multiple sequence modeling tasks, demonstrating both efficiency gains and interpretable learned patterns."
+      },
+      "token": {
+        "prompt_tokens": 4407,
+        "completion_tokens": 66,
+        "total_tokens": 4473
+      },
+      "time": "2026-02-08T22:16:14.070614+00:00"
+    }
   ]
 }

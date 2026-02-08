@@ -125,5 +125,21 @@
       "text": "Using these three examples, we also present in Fig. 13 the resulting features computed on the first two layers of the scattering network in order to highlight the possibly linear hyperplanes separating these 3 species in this new feature space.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core contributions (quadratic nonlinearity and variance statistics are incremental), weak experimental validation (single narrow task, results match but don't exceed prior work), and presentation issues. The Fourier-domain implementation is engineering-focused rather than methodologically novel. Missing comparisons with modern deep learning baselines and insufficient analysis of when/why the method works."
+      },
+      "token": {
+        "prompt_tokens": 7920,
+        "completion_tokens": 113,
+        "total_tokens": 8033
+      },
+      "time": "2026-02-08T22:41:13.823100+00:00"
+    }
   ]
 }

@@ -95,5 +95,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel activation function with principled probabilistic motivation, comprehensive empirical evaluation across diverse tasks (vision, NLP, speech), and interesting theoretical insight connecting stochastic regularization to nonlinearities. Strong methodological contribution with consistent improvements."
+      },
+      "token": {
+        "prompt_tokens": 3451,
+        "completion_tokens": 85,
+        "total_tokens": 3536
+      },
+      "time": "2026-02-08T22:38:19.213486+00:00"
+    }
   ]
 }

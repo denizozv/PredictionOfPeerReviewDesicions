@@ -70,5 +70,21 @@
       "text": "This work was supported by CREST, JST.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Engineering contribution without novel ML methodology. JavaScript framework implementation is a systems/tools paper, not a research advance in deep learning. Distributed training uses standard data parallelism with no algorithmic innovation. Experimental comparisons are against older baselines (Caffe, ConvNetJS) and show inferior performance. Limited scientific novelty for top-tier ML venues."
+      },
+      "token": {
+        "prompt_tokens": 3896,
+        "completion_tokens": 111,
+        "total_tokens": 4007
+      },
+      "time": "2026-02-08T22:27:17.687078+00:00"
+    }
   ]
 }

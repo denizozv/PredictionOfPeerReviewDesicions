@@ -105,5 +105,21 @@
       "text": "In this paper, we explored how an intelligent agent can benefit from interacting with users by asking questions. We developed tasks where interaction via asking questions is desired. We explore both online and offline settings that mimic different real world situations and show that in most cases, teaching a bot to interact with humans facilitates language understanding, and consequently leads to better question answering ability.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel interactive learning framework with comprehensive experimental design across simulator and real data (Mechanical Turk). Well-motivated task taxonomy (clarification, knowledge operation, acquisition) and systematic train/test regime analysis. Solid contribution to dialogue-based learning, though limited architectural novelty (MemN2N backbone) and incremental methodological advances."
+      },
+      "token": {
+        "prompt_tokens": 7074,
+        "completion_tokens": 107,
+        "total_tokens": 7181
+      },
+      "time": "2026-02-08T22:17:11.511043+00:00"
+    }
   ]
 }

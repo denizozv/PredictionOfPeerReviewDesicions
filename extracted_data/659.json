@@ -80,5 +80,21 @@
       "text": "We presented the hard attention model for sequence to sequence transduction of monotonically aligned sequences and evaluated it on the well-studied task of morphological inflection generation. The model employs an explicit alignment model learned independently in training time which is used to teach a neural network to perform both alignment and transduction when decoding with a hard attention mechanism. We showed that our model performs better or on par with more complex soft attention and neural transduction models on various morphological inflection datasets, forming a new state of the art on the CELEX dataset and the Wiktionary dataset and outperforming the best system in the SIGMORPHON2016 inflection generation task. Future work may include experimenting with different external alignment methods, or applying the model to other tasks which require a monotonic align-and-transduce approach like abstractive summarization or transliteration.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel hard monotonic attention mechanism for sequence transduction with strong empirical results across multiple morphological datasets and insightful analysis of learned representations versus soft attention."
+      },
+      "token": {
+        "prompt_tokens": 4442,
+        "completion_tokens": 68,
+        "total_tokens": 4510
+      },
+      "time": "2026-02-08T22:39:06.683723+00:00"
+    }
   ]
 }

@@ -80,5 +80,21 @@
       "text": "This work presented Tartan an accelerator for inference with Deep Learning Networks whose performance scales inversely linearly with the number of bits used to represent values in fully-connected and convolutional layers. TRT also enables on-the-fly accuracy vs. performance and energy efficiency trade offs and its benefits were demonstrated over a set of popular image classification networks. The new key ideas in TRT are: 1) Supporting both the bit-parallel and the bit-serial loading of weights into processing units to facilitate the processing of either convolutional or fullyconnected layers, and 2) cascading the adder trees of various subunits (SIPs) to enable slicing the output computation thus reducing or eliminating cross-lane imbalance for relatively small layers. TRT opens up a new direction for research in inference and training by enabling precision adjustments to translate into performance and energy savings. These precisions adjustments can be done statically prior to execution or dynamically during execution. While we demonstrated TRT for inference only, we believe that TRT , especially if combined with Pragmatic, opens up a new direction for research in training as well. For systems level research and development, TRT with its ability to trade off accuracy for performance and energy efficiency enables a new degree of adaptivity for operating systems and applications.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Hardware accelerator with novel bit-serial processing exploiting per-layer precision variability. Solid experimental validation on real networks with 1.90x speedup and post-layout results. Addresses practical DNN inference optimization with clear technical contribution, though incremental over prior work (extends prior convolutional-only approach to fully-connected layers)."
+      },
+      "token": {
+        "prompt_tokens": 7056,
+        "completion_tokens": 109,
+        "total_tokens": 7165
+      },
+      "time": "2026-02-08T22:43:16.904252+00:00"
+    }
   ]
 }

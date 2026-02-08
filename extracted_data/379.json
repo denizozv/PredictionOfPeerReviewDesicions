@@ -95,5 +95,21 @@
       "text": "Our protocol for calculating lines6 of code is as follows: Define the functional unit of comparison as an input-output mapping. Prepare a single file that implements this functionality and nothing else. Remove import statements, abstract base classes, logging, file i/o, and validation logic. Count lines of code, ignoring blank lines and comments.7. FEED-FORWARD ATTENTION The functional unit of comparison is creating the model for the variable-length experiment described in Raffel & Ellis (2016, sec. 2.3). This includes the loss and accuracy calculations, but does not include the training loop or the creation of training data. The original implementation8 is in Python and uses Theano and Lasagne. The TensorFlow Fold implementation is more concise, partly due to differences between TensorFlow and Lasagne. Fold itself reduces implementation complexity by eliminating the need for manual batching, e.g. x.sum(axis=1) where batching is explicit over axis 0, vs. x >> Sum(), which is implicitly batched. 6All of the implementations we examine are formatted with 80-column lines excepting the Tree-LSTM implementation, which has a few lines that are slightly longer; we still count these as single lines. 7The calculations were performed with cloc (https://github.com/AlDanial/cloc). 8Commit e8fce3e from https://github.com/craffel/ff-attention. TREE-LSTM The functional unit of comparison is creating a (binary) constituency Tree-LSTM and running an epoch of training for the fine-grained sentiment classification task as described in Tai et al. (2015, sec. 5.1). This does not include loading the word embeddings or dataset, which are provided as inputs. The original implementation9 is in Lua and uses Torch. Lua terminates blocks with the end keyword; we do not count these lines. Here, the use of Python and TensorFlow leads to substantially more concise code than with Lua and Torch. Unlike the previous example manual batching plays no role here, because the original implementation computes gradients and losses one tree at a time. Fold reduces complexity here by using a OneOf block to distinguish between leaves and internal nodes, rather than a recursive function that explicitly traverses the tree. GRAPH CONVOLUTION The functional unit of comparison is creating a single weave module as described in Kearnes et al. (2016, sec. 3.3). The original implementation10 is in Python and uses TensorFlow. Here, both implementations use the same language and deep learning library. Fold helps by eliminating the need for manual batching, as in the first example. This is particularly apparent in the atoms-to-pairs calculation, which requires making n copies of an n d matrix x to get an n n d tensor. In native TensorFlow the first dimension is batch, and the copying is explicit, as reshape(tile(x, [1, n, 1]), [batch_size, n, n, d]). In Fold, x >> Broadcast() suffices, because the number of copies needed is determined lazily by subsequent computations. 9Commit b02ad49 from https://github.com/stanfordnlp/treelstm. 10Provided by Kearnes et al. (2016).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel systems contribution with strong practical impact. Dynamic batching elegantly solves a real problem (batching heterogeneous computation graphs), is well-engineered, and enables significant speedups (120x on GPU). The combinator library demonstrates principled abstraction design. Solid experimental validation and multiple application domains (NLP, chemistry) show generality."
+      },
+      "token": {
+        "prompt_tokens": 7654,
+        "completion_tokens": 109,
+        "total_tokens": 7763
+      },
+      "time": "2026-02-08T22:09:06.344204+00:00"
+    }
   ]
 }

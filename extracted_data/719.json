@@ -60,5 +60,21 @@
       "text": "We would like to thank Damian Borth, Christian Schulze, Jorn Hees, Tushar Karayil, and Philipp Blandfort for helpful discussions.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty and weak experimental validation. The core contribution—two parallel MLPs trained with EM to match a statistical distribution—lacks clear theoretical justification and practical motivation. Experiments only on MNIST variants with weak baselines (k-means, agglomerative clustering); no comparison to relevant semi-supervised or metric learning methods. The 'classless' framing is unclear and the connection to symbol grounding is superficial. Missing ablations, statistical significance testing, and evaluation on realistic datasets."
+      },
+      "token": {
+        "prompt_tokens": 3402,
+        "completion_tokens": 140,
+        "total_tokens": 3542
+      },
+      "time": "2026-02-08T22:45:04.604529+00:00"
+    }
   ]
 }

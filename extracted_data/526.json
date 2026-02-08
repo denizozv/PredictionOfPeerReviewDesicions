@@ -120,5 +120,21 @@
       "text": "Given matrix or vector A or a, the squared Frobenius norm is A2F = M,N m,n=1 A2m,n and a2F = N n=1 a2n. The Hamming distance between two binary vectors a and b can be computed as a b2F . For tractability in the convnet, we only record activations for 1% of the CIFAR dataset, and at most 10000 units of each convolutional layer. We record the full network state on all inputs for the autoencoder. The singular value plots in figure 5 are calculated only on the first 50 epochs.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel theoretical framework (neural Taylor approximation) with rigorous convergence guarantees for nonsmooth rectifier networks, complemented by multi-scale empirical validation and mechanistic insights into adaptive optimizer behavior via activation configuration exploration."
+      },
+      "token": {
+        "prompt_tokens": 7659,
+        "completion_tokens": 82,
+        "total_tokens": 7741
+      },
+      "time": "2026-02-08T22:26:11.744685+00:00"
+    }
   ]
 }

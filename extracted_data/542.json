@@ -85,5 +85,21 @@
       "text": "The complete list of tasks, sketches, and symbols is given below. Tasks marked with an asterisk are held out for the generalization experiments described in Section 4.4, but included in the multitask training experiments in Sections 4.2 and 4.3. Goal Sketch Maze environment goal1 left left goal2 left down goal3 right down goal4 up left goal5 up right goal6 up right up goal7 down right up goal8 left left down goal9 right down down goal10 left up right Crafting environment make plank get wood use toolshed make stick get wood use workbench make cloth get grass use factory make rope get grass use toolshed make bridge get iron get wood use factory make bed get wood use toolshed get grass use workbench make axe get wood use workbench get iron use toolshed make shears get wood use workbench get iron use workbench get gold get iron get wood use factory use bridge get gem get wood use workbench get iron use toolshed use axe",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel modular multitask RL framework with policy sketches, principled decoupled actor-critic optimization, strong empirical validation, and demonstrated generalization capabilities."
+      },
+      "token": {
+        "prompt_tokens": 5191,
+        "completion_tokens": 71,
+        "total_tokens": 5262
+      },
+      "time": "2026-02-08T22:27:15.501397+00:00"
+    }
   ]
 }

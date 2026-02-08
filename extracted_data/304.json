@@ -170,5 +170,21 @@
       "text": "which directly exposes which of the two values pointed to is larger. This modification also enables us to sort arrays containing arbitrary comparable elements. By reasoning about the possible set of environment observations created by all valid inputs, we construct V using the procedure described in Section 3.3. Using this modification, we constructed a verification set consisting of one array of size 10. We also report on generalization results for the non-recursive and recursive versions of this variant of bubble sort. Table 4 demonstrates that the accuracy of the non-recursive program degrades sharply when moving from arrays of length 7 to arrays of length 8. This is due to the properties of the training set we trained on 2 traces synthesized from arrays of length 7 and 1 trace synthesized from an array of length 6. Table 4 also demonstrates that the (verified) recursive program generalizes perfectly. Base Cases and Reduction Rules for Topological Sort. For each function we use to implement the recursive version of topological sort, we need to consider the set of possible environment observation sequences we can create from all valid inputs and test that the learned program produces the correct behavior on each of these inputs. We have three observations: the color of the start node, the color of the active nodes next child to be considered, and whether the stack is empty. Navely, we might expect to synthesize and test an input for any sequence created by combining the four possible colors in two variables and another boolean variable for whether the stack is empty (so 32 possible observations at any point), but for various reasons, most of these combinations are impossible to occur at any given point in the execution trace. Through careful reasoning about the possible set of environment observations created by all valid inputs, and how each of the operations in the execution trace affects the environment, we can construct V using the procedure described in Section 3.3. We then construct a verification set of size 73 by ensuring that randomly generated graphs cover the analytically derived V . The model described in the training setup of Section 4 (trained on 6 traces) was verified to be correct via the matching procedure described in Section 4.2. Base Cases and Reduction Rules for Quicksort. As with the others, we apply the procedure described in Section 3.3 to construct V and then empirically create a verification set which covers V . The verification set can be very small, as we found a 10-element array ([8,2,1,2,0,8,5,8,3,7]) is sufficient to cover all of V . We note that an earlier version of quicksort we tried lacked primitive operations to directly move a pointer to another, and therefore needed more functions and observations. As this complexity interfered with determining the base cases and reductions, we changed the algorithm to its current form. Even though the earlier version also generalized just as well in practice, relatively small differences in the formulation of the traces and the environment observations can drastically change the difficulty of verification.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel conceptual contribution (recursion for neural programming) with rigorous verification framework enabling provable generalization guarantees. Strong experimental validation across multiple algorithmic tasks with formal proofs of perfect generalization."
+      },
+      "token": {
+        "prompt_tokens": 14505,
+        "completion_tokens": 77,
+        "total_tokens": 14582
+      },
+      "time": "2026-02-08T22:02:32.675142+00:00"
+    }
   ]
 }

@@ -105,5 +105,21 @@
       "text": "In the main paper, our analysis focuses on evaluating how well our model serves the purpose of cumulative reward prediction. Here, we evaluate network performance in terms of both the video frame reconstruction loss as well as the reward prediction loss on the test set following the analysis conducted in Oh et al. (2015). For each game, we sample 300 minibatches of size I = 50 from the underlying test set and compute the test loss over K = 100 look ahead steps with the formula presented in the main paper in Section 3.3 used for learning network parameters, but without averaging over look ahead steps because we aim to illustrate the test loss as a function of look ahead stepsstatistics of this analysis are plotted in Figure 9. Best overall test loss is achieved in Freeway and for initial look ahead steps (up to roughly between 40 and 60 steps) in Q*bert, which is in accordance with results for cumulative reward prediction from the main paper. Also in line with results from the main paper is the finding that the reward loss on the test set is worse in Seaquest, Ms Pacman and Space Invaders when compared to Q*bert (up to approximately 40 steps) and Freeway. Worst video frame reconstruction loss is observed for Space Invaders in compliance with Oh et al. (2015) where the authors report that there are objects in the scene moving at a period of 9 time steps which is hard to predict by a network only taking the last 4 frames from the last 4 steps as input for future predictions. At first sight, it might seem a bit surprising that the reward prediction loss in Space Invaders is significantly lower than in Seaquest and Ms Pacman for long-term ahead prediction despite the higher frame reconstruction loss in Space Invaders. A possible explanation for this paradox might be the frequency at which rewards are collectedthis frequency is significantly higher in Seaquest and Ms Pacman than in Space Invaders. A reward prediction model with bias towards zero rewardsas indicated by the main results in the papermight therefore err less often in absolute terms when rewards are collected at a lower frequency and may hence achieve lower overall reward reconstruction loss. Compound loss Reconstruction loss Reward loss",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Incremental extension of Oh et al. (2015) with limited novelty. Simply adds a softmax layer for reward prediction to existing video frame prediction architecture. Narrow experimental scope (5 Atari games), weak baselines (only marginal distribution), and results degrade significantly beyond 20-26 steps. Lacks theoretical insight and broader impact for model-based RL."
+      },
+      "token": {
+        "prompt_tokens": 5960,
+        "completion_tokens": 118,
+        "total_tokens": 6078
+      },
+      "time": "2026-02-08T22:48:22.937347+00:00"
+    }
   ]
 }

@@ -145,5 +145,21 @@
       "text": "",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel attention-based architecture for selective multi-source transfer learning with solid experimental validation across policy and value transfer settings, though incremental in some aspects."
+      },
+      "token": {
+        "prompt_tokens": 6848,
+        "completion_tokens": 66,
+        "total_tokens": 6914
+      },
+      "time": "2026-02-08T22:12:34.824979+00:00"
+    }
   ]
 }

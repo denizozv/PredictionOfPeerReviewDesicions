@@ -80,5 +80,21 @@
       "text": "The research reported in this paper has been supported by the Austrian Ministry for Transport, Innovation and Technology, the Federal Ministry of Science, Research and Economy, and the Province of Upper Austria in the frame of the COMET center SCCH. We would like to thank Bernhard Moser and Florian Sobieczky for fruitful discussions on metric spaces.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel theoretical contribution (CMD as metric with convergence guarantees) + solid experimental validation on standard benchmarks with competitive/SOTA results + practical advantages over MMD (lower computational cost, better parameter stability). Addresses domain adaptation rigorously with mathematical grounding."
+      },
+      "token": {
+        "prompt_tokens": 6605,
+        "completion_tokens": 90,
+        "total_tokens": 6695
+      },
+      "time": "2026-02-08T22:18:10.959322+00:00"
+    }
   ]
 }

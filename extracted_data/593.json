@@ -75,5 +75,21 @@
       "text": "The syntax of our computation graph construction is such that the first call instantiates the computation, and the second instantiates the node and its connections. For specified random variables, the first set of parameters defines the prior and second set the parameters for the proposal distributions. In all our models, we extract the common, feature-extraction portions of the recognition model q into a simple pre-encoder. Parameters and structure for this are specified above. The class-conditional model for MNIST and SVHN. local ndim = 50 local program = function program:getNetwork() local input = nn.Identity()() -- required to make nngraph play nice -- the actual program local d = pp.DiscreteR(torch.Tensor(1,10):fill(1/10))(input) local mu = nn.Sequential() :add(nn.JoinTable(2)) :add(nn.FluidLinear(ndim)) :add(nn.SoftPlus()) local sig = nn.Sequential() :add(nn.JoinTable(2)) :add(nn.FluidLinear(ndim)) :add(nn.SoftPlus()) local n = pp.Gaussian( torch.zeros(1,ndim), torch.zeros(1,ndim) )(mu(d, input), sig(d, input)) -- end program nngraph.annotateNodes() -- necessary to annotate nodes with local varnames return pp.gModule(input, d, n) end return program The model used for the faces dataset. local program = function program:getNetwork() local input = nn.Identity()() -- required to make nngraph play nice -- the actual program local id = pp.DiscreteR(torch.Tensor(1,38):fill(1/38))(input) local light = pp.Gaussian( torch.zeros(1,3), torch.zeros(1,3) )(pp.r(input), pp.r(input)) local factorQ = nn.Sequential() :add(nn.JoinTable(2)) :add(nn.FluidLinear(20)) :add(nn.SoftPlus()) local shading = pp.Gaussian( torch.zeros(1,20), torch.zeros(1,20) )(pp.r(factorQ(id,light)), pp.r(factorQ(id,light))) local reflectance = pp.Gaussian( torch.zeros(1,20), torch.zeros(1,20) )(pp.r(input), pp.r(input)) -- end program nngraph.annotateNodes() -- necessary to annotate nodes with local varnames return pp.gModule(input, shading, reflectance) end return program The model used for the multi-mnist dataset. local program = local function mnist() local input = nn.Identity()() -- required to make nngraph play nice local d = pp.DiscreteR(torch.Tensor(1,10):fill(0.1))(input) local n = pp.Gaussian( torch.zeros(1,50), torch.zeros(1,50) )(pp.r(input), pp.r(input)) -- end program nngraph.annotateNodes() -- necessary to annotate nodes with local varnames return pp.gModule(input, d, n) end function program:getNetwork() local input = nn.Identity()() -- required to make nngraph play nice -- the actual program local c = pp.Discrete((torch.Tensor(1,5):fill(0.2))(input)) -- needswork: have to handle number of inputs and inter-repeat-state local ds = pp.Repeat(mnist())(input, c) -- end program nngraph.annotateNodes() -- necessary to annotate nodes with local varnames return pp.gModule(input, ds) end return program",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel semi-supervised VAE framework with structured graphical model encoders, principled auxiliary variable formulation for balancing supervised/unsupervised learning, and comprehensive experiments demonstrating disentangled representation learning across multiple domains."
+      },
+      "token": {
+        "prompt_tokens": 5618,
+        "completion_tokens": 83,
+        "total_tokens": 5701
+      },
+      "time": "2026-02-08T22:32:19.037778+00:00"
+    }
   ]
 }

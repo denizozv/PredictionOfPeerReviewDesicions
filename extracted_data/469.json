@@ -75,5 +75,21 @@
       "text": "We would like to thank Yiwen Guo, Anbang Yao, and Yurong Chen for sharing the dynamic network surgery source code and their insights. We would also like to thank Nitish Shirish Keskar for his recommendations on hyper-parameter settings.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel direct sparse convolution implementation with analytical performance modeling and guided pruning algorithm. Strong experimental validation across multiple architectures (Atom, Xeon, Xeon Phi) with significant speedups (3.1-7.3x). Solid technical contribution bridging theory and practice."
+      },
+      "token": {
+        "prompt_tokens": 5895,
+        "completion_tokens": 97,
+        "total_tokens": 5992
+      },
+      "time": "2026-02-08T22:20:08.053101+00:00"
+    }
   ]
 }

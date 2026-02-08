@@ -110,5 +110,21 @@
       "text": "We present an additional analysis of the learned 20 News-Groups document models in order to explore what each set of latent variables might be capturing. To calculate the gradient of the KL terms needed to formulate word scores, we follow the approach described in Sub-section 6.2, however, conditioning only on the (training) document bag-of-words to compute the latent posterior to then calculate the gradient of the KL-terms with respect to each word in the document. In Table 4, we observe results similar to those of Sub-section 6.2the piecewise variables capture different aspects of the document data. It is worth noting, in this experiment, that the Gaussian variables alone were originally were sensitive to some of these words. However, in the hybrid model, nearly all of the temporal words that the Gaussian variables were once more sensitive to now more strongly affect the piecewise variables, which themselves also capture all of the words that were originally missed. This might indicate a shift in responsibility in which latent variables the document model decide are more suitable to capture certain aspects of the data. This effect appears to be even stronger in the case of certain nationality-based adjectives (e.g., american, israeli, etc.). While the G-NVDM could model multi-modality in the data to some degree, this work would be primarily done in the models decoder. In the H-NVDM, the piecewise variables provide an explicit mechanism for capturing modes in the unknown target distribution, so it makes sense that the model would learn to use the piecewise variables instead, thus freeing up the Gaussian variables to capture other aspects of the data, as we found was the case with names (e.g., jesus, kent, etc.).",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel piecewise-constant prior for multi-modal latent variables in VAEs with solid theoretical foundation, comprehensive experiments on document and dialogue modeling showing consistent improvements, and clear methodological contribution to variational inference."
+      },
+      "token": {
+        "prompt_tokens": 10151,
+        "completion_tokens": 79,
+        "total_tokens": 10230
+      },
+      "time": "2026-02-08T22:43:20.646707+00:00"
+    }
   ]
 }

@@ -75,5 +75,21 @@
       "text": "In this work, we proposed feature map and kernel pruning for reducing the computational complexity of deep CNN. We have discussed that the cost of sparse representation can be avoided with coarse pruning granularities. We demonstrated a simple and generic algorithm for selecting the best pruning mask from a random pool. We showed that the proposed approach adopts a holistic approach and performs better than the other methods. Further, we adopted the efficient one-shot pruing approach as the iterative retraining consumes much time. We conducted experiments with several benchmarks and networks and showed that the proposed technique has good scalability.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in pruning strategy (random mask selection is simplistic), incremental contribution over existing work, weak baselines for comparison, and lack of theoretical insight or significant methodological innovation expected at top venues."
+      },
+      "token": {
+        "prompt_tokens": 6168,
+        "completion_tokens": 79,
+        "total_tokens": 6247
+      },
+      "time": "2026-02-08T22:44:16.238197+00:00"
+    }
   ]
 }

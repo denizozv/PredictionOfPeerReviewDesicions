@@ -130,5 +130,21 @@
       "text": "The authors would like to thank Byunghan Lee at Data Science Laboratory, Seoul National University for proofreading the manuscript. This work was supported in part by BK21 Plus (Electrical and Computer Engineering, Seoul National University) in 2016, in part by a grant from SK Hynix, and in part by a grant from Samsung Electronics.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Systems/architecture paper with limited ML novelty. Focuses on SSD simulator design and SGD implementation rather than advancing machine learning methodology. Experiments limited to logistic regression on MNIST; no deep learning validation despite claims of broader applicability. Contribution is primarily engineering-focused (ISP-ML platform) rather than algorithmic or scientific."
+      },
+      "token": {
+        "prompt_tokens": 6903,
+        "completion_tokens": 107,
+        "total_tokens": 7010
+      },
+      "time": "2026-02-08T22:28:17.492103+00:00"
+    }
   ]
 }

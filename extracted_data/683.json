@@ -50,5 +50,21 @@
       "text": "In this paper we have derived a new ensemble algorithm specifically tailored to Convolutional Networks to generate Boosted Residual Networks. We have shown that this surpasses the performance of a single Residual Network equivalent to the one trained at the last round of boosting, of an ensemble of such networks trained with AdaBoost, and Deep Incremental Boosting on the MNIST and CIFAR datasets, without using augmentation techniques. We then derived and looked at a distilled version of the method, and how this can serve as an effective way to reduce the test-time cost of running the Ensemble. We used Bagging as a proxy to test generating the approximate Residual Network, which, with the parameters tested, does not perform as well as the original Residual Network, BRN or DBRN. Further experimentation of the Distilled methods presented in the paper, namely DBRN and DBARN, is necessary to fully investigate their behaviour. This is indeed part of our work in the near future. Additionally, the Residual Networks built in our experiments were comparatively smaller than those that achieve state-of-the-art performance. Reaching state-of-the-art on specific benchmark datasets was not our goal, instead we intended to show that we developed a methodology that makes it feasible to created ensembles of Residual Networks following a white-box approach to significantly improve the training times and accuracy levels. Nevertheless, it might be appealing in the future to evaluate the performance improvements obtained when creating ensembles of larger, state-of-the-art, networks. Additional further investigation could also be conducted on the creation of Boosted Densely Connected Convolutional Networks, by applying the same principle to DCCN instead of Residual Networks.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: straightforward combination of existing methods (ResNets + Deep Incremental Boosting). Weak experimental validation with no results section shown. Incremental contribution insufficient for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 2608,
+        "completion_tokens": 80,
+        "total_tokens": 2688
+      },
+      "time": "2026-02-08T22:41:16.355881+00:00"
+    }
   ]
 }

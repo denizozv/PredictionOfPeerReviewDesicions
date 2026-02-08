@@ -140,5 +140,21 @@
       "text": "As mentioned in Section 5, evaluating the proposed formulation quantitatively on high-dimensional data is extremely challenging. Here, in order to provide more quantitative intuitions on the learned discriminator at convergence, we adopt a proxy measure. Specifically, we take the last-layer activation of the converged discriminator network as fixed pretrained feature, and build a linear classifier upon it. Hypothetically, if the discriminator does not degenerate, the extracted last-layer feature should maintain more information about the data points, especially compared to features from degenerated discriminators. Following this idea, we first train EGAN-Ent-NN, EGAN-Const, and GAN on the MNIST till convergence, and then extract the last-layer activation from their discriminator networks as fixed feature input. Based on fixed feature, a randomly initialized linear classifier is trained to do classification on MNIST. Based on 10 runs (with different initialization) of each of the three models, the test classification performance is summarized in Table 3. For comparison purpose, we also include a baseline where the input features are extracted from a discriminator network with random weights. Based on the proxy measure, EGAN-Ent-NN seems to maintain more information of data, which suggests that the discriminator from our proposed formulation is more informative. Despite the positive result, it is important to point out that maintaining information about categories does not necessarily mean maintaining information about the energy (density). Thus, this proxy measure should be understood cautiously.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel theoretical framework connecting adversarial training to energy-based models with rigorous analysis; dual approximation techniques for practical implementation; comprehensive experiments validating theory on synthetic and real data."
+      },
+      "token": {
+        "prompt_tokens": 10733,
+        "completion_tokens": 73,
+        "total_tokens": 10806
+      },
+      "time": "2026-02-08T22:09:08.383516+00:00"
+    }
   ]
 }

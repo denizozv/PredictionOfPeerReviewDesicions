@@ -80,5 +80,21 @@
       "text": "We propose a character-aware attention residual network for short text classification. We construct the sentence representation vector by two kinds of features. The first is focusing on feature space, which include both character-level characteristics and semantic characteristics. The other is n-gram features. To make them consistent, the residual network helps refine the vector representation. Experiment results suggest both extracted features and the residual network helps on short text clas- sification. Our proposed method could outperform the state-of-the-art traditional models and deep learning models.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: straightforward combination of existing techniques (character CNN + word embeddings + attention + residual blocks). Weak experimental validation: only 3 small datasets, missing comparisons with relevant baselines (RNNs, modern attention models), no statistical significance testing. Incremental contribution without clear scientific insight."
+      },
+      "token": {
+        "prompt_tokens": 3093,
+        "completion_tokens": 103,
+        "total_tokens": 3196
+      },
+      "time": "2026-02-08T22:30:12.323305+00:00"
+    }
   ]
 }

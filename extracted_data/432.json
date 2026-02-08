@@ -125,5 +125,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical connection between policy gradient fixed points and Q-values with practical hybrid algorithm; solid experimental validation on Atari; establishes equivalence between actor-critic and action-value methods."
+      },
+      "token": {
+        "prompt_tokens": 9190,
+        "completion_tokens": 75,
+        "total_tokens": 9265
+      },
+      "time": "2026-02-08T22:15:05.377450+00:00"
+    }
   ]
 }

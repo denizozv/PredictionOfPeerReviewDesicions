@@ -70,5 +70,21 @@
       "text": "We have proposed a novel layer augmentation technique that facilitates the optimization of deep networks by making identity mappings easy to learn. Unlike previous models, layers augmented by our technique require optimizing only one parameter to degenerate into identity, and by designing our method such that randomly initialized parameter sets are always close to identity mappings, our design offers less optimization issues caused by depth. Our experiments showed that augmenting plain and residual layers improves performance and facilitates learning in settings with increased depth. In the MNIST dataset, augmented plain networks outperformed ResNets, suggesting that models with gated shortcut connections such as Highway Neural Networks could be further improved by redesigning the gates. We have shown that applying our technique to ResNets yield a model that can regulate the residuals. This model performed better in all our experiments with negligible extra training time and parameters. Lastly, we have shown how it can be used for layer pruning, effectively removing large numbers of parameters from a network without necessarily harming its performance.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel gating mechanism with clear theoretical motivation, comprehensive experiments across multiple architectures, interpretable design with single parameter per layer, strong empirical results on CIFAR with practical insights on layer importance."
+      },
+      "token": {
+        "prompt_tokens": 4952,
+        "completion_tokens": 76,
+        "total_tokens": 5028
+      },
+      "time": "2026-02-08T22:46:22.464238+00:00"
+    }
   ]
 }

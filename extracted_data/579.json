@@ -115,5 +115,21 @@
       "text": "For multivariate time series, we can augment the input of TreNet by including the trend sequences and local data of exogenous time series and then train TreNet for a certain target time series to predict its trend. Another line of research is to explore equipping TreNet with multi-task learning. This is motivated by the observation that if we decompose the trend forecasting problem into classification and regression respectively for the slope and duration, we can utilize the correlation between slope and duration to boost the prediction performance. In addition, there could be alternative frameworks to combine the outputs of CNN and LSTM and our work opens the door for applying hybrid neural networks for trend analysis in time series.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Standard CNN-LSTM hybrid architecture with simple additive feature fusion. Limited novelty: combines existing components without significant methodological innovation. Narrow task scope (local trend prediction). Weak experimental validation: only 3 datasets, basic baselines, no statistical significance testing, missing ablation studies, no comparison with recent deep learning methods for time series."
+      },
+      "token": {
+        "prompt_tokens": 5493,
+        "completion_tokens": 108,
+        "total_tokens": 5601
+      },
+      "time": "2026-02-08T22:31:03.678292+00:00"
+    }
   ]
 }

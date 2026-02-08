@@ -80,5 +80,21 @@
       "text": "DNNs are capable of solving complex tasks: their ability to do so depends on the number of neurons and their connections. Fully-connected layers in DNNs contain more than 96% of the total neural network parameters, pushing the designers to use off-chip memories which are band-width limited and consume large amounts of energy. In this paper, we proposed sparsely-connected networks and their training algorithm to substantially reduce the memory requirements of DNNs. The sparsity degree of the proposed network can be tuned by an SNG, which is implemented using an LFSR unit and a comparator. We used the proposed sparsely-connected network instead of fully-connected networks in a VGG-like network on three commonly used datasets: we achieved better accuracy results with up to 90% fewer connections than the state of the art. Moreover, our simulation results confirm that the proposed network can be used as a regularizer to prevent models from overfitting. Finally, we implemented a single neuron of the sparsely-connected network in in 65 nm CMOS technology for different sparsity degrees. The implementation results show that the proposed architecture can save up to 84% energy and 90% silicon area compared to the conventional fully-connected network while having a lower misclassification rate.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: sparse neural networks and pruning are well-established (Han et al. 2016); LFSR-based masking is a minor hardware contribution. Weak experimental validation: only MNIST/CIFAR10/SVHN with modest improvements; no comparison with contemporary pruning methods (magnitude pruning, lottery ticket, etc.). Hardware contribution is incremental (standard MAC unit modification). Paper reads as systems/hardware work rather than advancing ML methodology."
+      },
+      "token": {
+        "prompt_tokens": 5641,
+        "completion_tokens": 135,
+        "total_tokens": 5776
+      },
+      "time": "2026-02-08T22:22:21.448057+00:00"
+    }
   ]
 }

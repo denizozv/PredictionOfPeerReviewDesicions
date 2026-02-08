@@ -115,5 +115,21 @@
       "text": "There is a tradeoff between maintaining equivalence to sequential methods versus leveraging the vast computational resources available for gradient descent. We find that asynchronous methods can give a 1.7x speedup while not sacrificing accuracy at the end of an otherwise identical training regime. This improvement was achieved without the need for a warm start, contrary to previously published results using parameter servers.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in distributed training techniques. Layer-wise gradient descent is incremental over prior work (Chen et al. 2016). Asynchronous approach with fixed delays is a straightforward engineering solution without theoretical depth. Experimental evaluation lacks convergence analysis, hyperparameter sensitivity, and comparison with contemporary distributed training methods. Results show modest 1.7x speedup with no clear advantage of proposed methods over baselines."
+      },
+      "token": {
+        "prompt_tokens": 4936,
+        "completion_tokens": 124,
+        "total_tokens": 5060
+      },
+      "time": "2026-02-08T22:35:07.463418+00:00"
+    }
   ]
 }

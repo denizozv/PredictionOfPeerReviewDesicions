@@ -135,5 +135,21 @@
       "text": "Used images depicted sine gratings at different contrast, spatial frequency, sine phase, and sine orientation combinations.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel empirical investigation of DNN-human perception alignment across multiple well-controlled psychophysical tasks with quantitative correlates; strong experimental design and interpretable findings, though limited methodological innovation and scope constraints reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 6807,
+        "completion_tokens": 81,
+        "total_tokens": 6888
+      },
+      "time": "2026-02-08T22:36:10.067452+00:00"
+    }
   ]
 }

@@ -80,5 +80,21 @@
       "text": "To understand the adversarial examples better, as well as the potential adversary models and corresponding defensive learners, we conduct extensive experiments to evaluate properties of different defensive strategies. We point out that RAD works the best among all the defensive strategies against different adversary models, including one-step and iterative ones, in terms of the classification test error. The adversarial retraining framework, RAD, also generalizes well for the cross-model evaluation compared with AEC, IAEC, and Distillation. Moreover, both RAD and Distillation do not introduce additional vulnerability penalty to the original models, while still increase the robustness. So in the future work, to generalize the robust learner across different adversary models, one direction could be to generate retraining instances based on diverse adversarial algorithms to cover as much as possible the blind-spots within the input space. In addition, we will dynamically optimize the choice of adversary model and the quantity of retraining instances according to the robustness requirements of a specific learner. Therefore, the tradeoff between robustness and accuracy on the normal data can be balanced based on the specific resilience demand of the learner.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Empirical comparison study with limited novelty. RAD is from prior work (Li et al. 2016); IAEC is a minor modification (adding cross-entropy regularizer); experiments on only MNIST/CIFAR-10 with binary classification; no significant methodological innovation or theoretical insights; lacks depth in analysis of why methods work."
+      },
+      "token": {
+        "prompt_tokens": 6360,
+        "completion_tokens": 110,
+        "total_tokens": 6470
+      },
+      "time": "2026-02-08T22:34:16.990512+00:00"
+    }
   ]
 }

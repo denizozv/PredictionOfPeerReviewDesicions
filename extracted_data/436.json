@@ -105,5 +105,21 @@
       "text": "In this paper, we enhance Neural Programmer to work with weaker supervision signals to make it more broadly applicable. Soft selection during training enables the model to actively explore the space of programs by backpropagation with superior sample complexity. In our experiments, we show that the model achieves performance comparable to a state-of-the-art traditional semantic parser even though the training set contains only 10,000 examples. To our knowledge, this is the first instance of a weakly supervised, end-to-end neural network model that induces programs on a real-world dataset. Acknowledgements We are grateful to Panupong Pasupat for answering numerous questions about the dataset, and providing pre-processed version of the dataset and the output of the semantic parser. We thank David Belanger, Samy Bengio, Greg Corrado, Andrew Dai, Jeff Dean, Nando de Freitas, Shixiang Gu, Navdeep Jaitly, Rafal Jozefowicz, Ashish Vaswani, Luke Vilnis, Yuan Yu and Barret Zoph for their suggestions and the Google Brain team for the support. Arvind Neelakantan is supported by a Google PhD fellowship in machine learning.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel weak supervision approach for program induction with practical modifications to Neural Programmer architecture. Strong experimental validation on real-world dataset with competitive results and thorough ablation studies. Clear methodological contribution despite modest absolute performance."
+      },
+      "token": {
+        "prompt_tokens": 4635,
+        "completion_tokens": 80,
+        "total_tokens": 4715
+      },
+      "time": "2026-02-08T22:16:02.434260+00:00"
+    }
   ]
 }

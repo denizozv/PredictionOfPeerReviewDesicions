@@ -125,5 +125,21 @@
       "text": "Additionally, we exploit the attribute information y in CelebA to build a conditional model, i.e. the invertible function f from image to latent variable uses the labels in y to define its parameters. In order to observe the information stored in the latent variables, we choose to encode a batch of images x with their original attribute y and decode them using a new set of attributes y, build by shuffling the original attributes inside the batch. We obtain the new images x = g ( f(x; y); y ) . We observe that, although the faces are changed as to respect the new attributes, several properties remain unchanged like position and background.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel invertible transformation architecture (Real NVP) with tractable likelihood, exact sampling, and inference. Strong theoretical foundation, comprehensive experiments on multiple datasets, and significant methodological contributions to generative modeling."
+      },
+      "token": {
+        "prompt_tokens": 4631,
+        "completion_tokens": 78,
+        "total_tokens": 4709
+      },
+      "time": "2026-02-08T22:15:08.668420+00:00"
+    }
   ]
 }

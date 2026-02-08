@@ -95,5 +95,21 @@
       "text": "The following derivation is based on modifications to (Rawlik et al., 2012) and resembles the derivation in Fox et al.. We define the generalized function as, (st, at;) = r(st, at)/c+ log p(at|st) (16) + Ep(st+1|st,at)E[ tt+1 r(st , at)/c KL[(|st)||p(|st)]] (17) = r(st, at)/c+ log p(at|st) + Ep(st+1|st,at)[V (st+1;)] (18) The value function can be expressed as, V (st;) = E[(st, at;)] + H[] (19) = E[(st, at;) log (at|st)] (20) Fixing (st, at) = (st, at;) and constraining to be a probability distribution, the optimal greedy policy update can be derived by functional calculus, along with the corresponding optimal value function, (at|st) e(st,at) (21) V (st; ) = log at e(st,at) (22) Given Eq. 18 and 22, the following Bellman optimality equation for generalized function is derived, and the -learning loss in Eq. 11 directly follows. (st, at; ) = r(st, at)/c+ log p(at|st) + Ep(st+1|st,at)[log at+1 e(st+1,at+1; )] (23) 8.1.2 G-LEARNING The following derivation is based on (Fox et al.) with small modifications. We define theG function as, G(st, at;) = r(st, at)/c+ Ep(st+1|st,at)E[ tt+1 r(st , at)/c KL[(|st)||p(|st)]] (24) = r(st, at)/c+ Ep(st+1|st,at)[V (st+1;)] = (st, at;) log p(at|st) (25) Similar derivation as above can be applied. V (st;) = E[G(st, at;)] KL[(|st)||p(|st)] (26) = E[G(st, at;) log (at|st) log p(at|st) ] (27) (at|st) p(at|st)eG(st,at) (28) V (st; ) = log at p(at|st)eG(st,at) (29) G(st, at; ) = r(st, at)/c+ Ep(st+1|st,at)[log at+1 p(at+1|st+1)eG(st+1,at+1; )] (30) Alternatively, the above expression for G-learning can be derived from -learning by simple reparametrization with (s, a) = G(s, a) + log p(a|s) in Eq. 23.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel integration of RL with pre-trained RNNs for sequence generation; principled KL-control framework; strong empirical validation with user studies; addresses real failure modes of supervised sequence models."
+      },
+      "token": {
+        "prompt_tokens": 6815,
+        "completion_tokens": 78,
+        "total_tokens": 6893
+      },
+      "time": "2026-02-08T22:26:18.157096+00:00"
+    }
   ]
 }

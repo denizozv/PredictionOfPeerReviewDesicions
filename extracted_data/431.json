@@ -115,5 +115,21 @@
       "text": "We introduced PALEO an analytical performance model for exploring the space of scalable deep learning systems. By extracting computational requirements carried by neural network architectures and mapping them to the design space of software, hardware, and communication strategies, PALEO can effectively and accurately model the expected scalability and performance of a putative deep learning system.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel analytical performance model with strong empirical validation across multiple architectures and systems; addresses important practical problem of predicting DNN scalability without full implementation; comprehensive experimental validation including case studies and hypothetical scenarios."
+      },
+      "token": {
+        "prompt_tokens": 4881,
+        "completion_tokens": 78,
+        "total_tokens": 4959
+      },
+      "time": "2026-02-08T22:15:03.064453+00:00"
+    }
   ]
 }

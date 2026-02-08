@@ -105,5 +105,21 @@
       "text": "Let the singulars values of W be 1(W) 2(W) m(W). 21(W) 1 m m i=1 2i (W) = 1 m W2F = 1 m mn = n. Thus, 1(W) n.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel loss-aware binarization approach using proximal Newton with diagonal Hessian approximation. Solid theoretical contribution (convergence analysis, gradient explosion mitigation in RNNs), comprehensive experiments on feedforward and recurrent networks showing consistent improvements over BinaryConnect/BWN baselines. Well-motivated second-order optimization perspective on network quantization."
+      },
+      "token": {
+        "prompt_tokens": 7016,
+        "completion_tokens": 111,
+        "total_tokens": 7127
+      },
+      "time": "2026-02-08T22:18:07.489717+00:00"
+    }
   ]
 }

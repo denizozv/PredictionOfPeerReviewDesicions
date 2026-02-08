@@ -70,5 +70,21 @@
       "text": "We presented an algorithm for learning auto-encoders based on an modified objective for Denoising that explicitly enforces the denoising to be carried out during the encoding phase. Moreover, 2 3 4 5 1.7 1.8 1.9 2 2.1 2.2 2.3 2.4 2.5 2.6 log10 () T es t er ro r % Original DA, = Modified DA (a) Test errors for different values of we described how the modified objective can be understood as minimizing an upper bound on the conditional entropy of the code given the inputs assuming the corruption process to be part of the encoding. By simply minimizing the distance between the encoding of the uncorrupted inputs and the encoding of their corrupted counterparts, we show that robustness of the auto encoder can be guaranteed at the encoding phase. Experiments using over-complete bases showed that the modified DAE was able to learn useful encoding mapping (representation) and can also learn a regularized input-output in an implicit manner.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Incremental modification to DAEs with limited novelty, weak experimental validation (toy synthetic data + single MNIST experiment), no comparison with modern baselines or state-of-the-art methods, insufficient depth for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 2897,
+        "completion_tokens": 85,
+        "total_tokens": 2982
+      },
+      "time": "2026-02-08T22:28:11.078451+00:00"
+    }
   ]
 }

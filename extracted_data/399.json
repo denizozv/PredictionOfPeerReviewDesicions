@@ -135,5 +135,21 @@
       "text": "The attention mechanism described in GNMT (Wu et al., 2016) involves a learned Attention Function\" A(xi, yj) which takes a source vector\" xi and a target vector\" yj , and must be computed for every source time step i and target time step j. In GNMT, the attention function is implemented as a feed forward neural network with a hidden layer of size n. It can be expressed as: AGNMT (xi, yj) = n d=1 Vdtanh((xiU)d + (yjW )d) (21) Where U and W are trainable weight matrices and V is a trainable weight vector. For performance reasons, in our models, we used a slightly different attention function: A(xi, yj) = n d=1 Vdtanh((xiU)d)tanh((yjW )d) (22) With our attention function, we can simultaneously compute the attention function on multiple source time steps and multiple target time steps using optimized matrix multiplications. We found little difference in quality between the two functions.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.98,
+        "primary_reason": "Landmark work introducing Sparsely-Gated Mixture-of-Experts with strong theoretical motivation, novel solutions to practical challenges (batch shrinking, load balancing, network bandwidth), comprehensive experiments on multiple large-scale tasks (language modeling, machine translation), and significant empirical improvements. Demonstrates 1000x capacity gains with practical efficiency—a major methodological and empirical contribution."
+      },
+      "token": {
+        "prompt_tokens": 11623,
+        "completion_tokens": 119,
+        "total_tokens": 11742
+      },
+      "time": "2026-02-08T22:11:10.238620+00:00"
+    }
   ]
 }

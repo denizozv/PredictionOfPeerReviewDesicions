@@ -170,5 +170,21 @@
       "text": "In our JMT model, the word and character n-gram embedding matrices are shared across all of the five different tasks. To better qualitatively explain the importance of the shortcut connections shown in Table 9, we inspected how the shared embeddings change when fed into the different biLSTM layers. More concretely, we checked closest neighbors in terms of the cosine similarity for the word representations before and after fed into the forward LSTM layers. In particular, we used the corresponding part of Wu in Eq. (1) to perform linear transformation of the input embeddings, because ut directly affects the hidden states of the LSTMs. Thus, this is a context-independent analysis. Table 16 shows the examples of the word standing. The row of Embedding shows the cases of using the shared embeddings, and the others show the results of using the linear-transformed embeddings. In the column of Only word, the results of using only the word embeddings are shown. The closest neighbors in the case of Embedding capture the semantic similarity, but after fed into the POS layer, the semantic similarity is almost washed out. This is not surprising because it is sufficient to cluster the words of the same POS tags: here, NN, VBG, etc. In the chunking layer, the similarity in terms of verbs is captured, and this is because it is sufficient to identify the coarse chunking tags: here, VP. In the dependency layer, the closest neighbors are adverbs, gerunds of verbs, and nouns, and all of them can be child nodes of verbs in dependency trees. However, this information is not sufficient in further classifying the dependency labels. Then we can see that in the column of Word and char, jointly using the character n-gram embeddings adds the morphological information, and as shown in Table 11, the LAS score is substantially improved. In the case of semantic tasks, the projected embeddings capture not only syntactic, but also semantic similarities. These results show that different tasks need different aspects of the word similarities, and our JMT model efficiently transforms the shared embeddings for the different tasks by the simple linear transformation. Therefore, without the shortcut connections, the information about the word representations are fed into the semantic tasks after transformed in the lower layers where the semantic similarities are not always important. Indeed, the results of the semantic tasks are very poor without the shortcut connections.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel multi-task architecture with successive regularization, strong empirical results across 5 diverse NLP tasks, thorough ablation studies, and clear scientific contribution to joint learning."
+      },
+      "token": {
+        "prompt_tokens": 9749,
+        "completion_tokens": 73,
+        "total_tokens": 9822
+      },
+      "time": "2026-02-08T22:31:12.307498+00:00"
+    }
   ]
 }

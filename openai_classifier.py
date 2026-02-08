@@ -10,27 +10,21 @@ from openai import OpenAI
 
 load_dotenv()
 
-SYSTEM_PROMPT = """Sen deneyimli bir akademik editörsün. Aşağıdaki bilimsel makaleyi inceleyerek konferansta (ICML/ICLR/NeurIPS gibi) kabul edilip edilmeyeceği kararını ver.
 
-Değerlendirme kriterleri:
-- Kapsam uyumu (dergi/konferans ile alakalı mı?)
-- Metodolojik kalite (yöntem güvenilir mi?)
-- Örneklem büyüklüğü (yeterli mi?)
-- Özgünlük (yeni bir katkı var mı?)
+class OpenAiClassifier:
+    """Sends extracted paper data to OpenAI for desk rejection classification."""
 
-Çıktını kesinlikle aşağıdaki JSON formatında ver, başka hiçbir şey yazma:
-{"rejection": true/false, "confidence": 0.00-1.0, "primary_reason": "Short Desc"}"""
-
-
-class OpenAiZeroShotClassifier:
-    """Sends extracted paper data to OpenAI for zero-shot desk rejection classification."""
-
-    def __init__(self, data_dir: str = "extracted_data", model: str = "gpt-4o-mini",
-                 error_log: str = "failed_ids.json", limit: int = 0):
+    def __init__(self, system_prompt: str, approach: str = "zeroShot",
+                 data_dir: str = "extracted_data", model: str = "gpt-4o-mini",
+                 error_log: str = "failed_ids.json", limit: int = 0,
+                 dry_run: bool = False):
+        self.system_prompt = system_prompt
+        self.approach = approach
         self.data_dir = data_dir
         self.model = model
         self.error_log = error_log
         self.limit = limit  # 0 = process all, >0 = process only N files (for debugging)
+        self.dry_run = dry_run  # True = print prompts to terminal, skip API call
         self.client = OpenAI()  # reads OPENAI_API_KEY from environment
         self.failed: list[dict] = []
 
@@ -66,7 +60,7 @@ class OpenAiZeroShotClassifier:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "system", "content": self.system_prompt},
                     {"role": "user", "content": user_prompt},
                 ],
                 response_format={"type": "json_object"},
@@ -98,12 +92,12 @@ class OpenAiZeroShotClassifier:
         return decision, token_info, elapsed
 
     def run(self) -> None:
-        """Process all extracted JSON files and append zero-shot classification results."""
+        """Process all extracted JSON files and append classification results."""
         pattern = os.path.join(self.data_dir, "*.json")
         files = sorted(glob.glob(pattern))
         if self.limit > 0:
             files = files[:self.limit]
-        print(f"[INFO] Running zero-shot classification on {len(files)} file(s) with model '{self.model}'")
+        print(f"[INFO] Running OpenAI {self.approach} classification on {len(files)} file(s) with model '{self.model}'")
 
         for i, filepath in enumerate(files, start=1):
             filename = os.path.basename(filepath)
@@ -111,12 +105,22 @@ class OpenAiZeroShotClassifier:
             with open(filepath, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            existing_models = [e.get("model") for e in data.get("zeroShot", [])]
+            existing_models = [e.get("model") for e in data.get(self.approach, [])]
             if self.model in existing_models:
-                print(f"[SKIP] {filename} already has results for model '{self.model}'")
+                print(f"[SKIP] {filename} already has {self.approach} results for model '{self.model}'")
                 continue
 
             user_prompt = self._build_user_prompt(data)
+
+            if self.dry_run:
+                print(f"\n{'='*80}")
+                print(f"[DRY RUN] File: {filename} ({i}/{len(files)})")
+                print(f"{'='*80}")
+                print(f"\n--- SYSTEM PROMPT ---\n{self.system_prompt}")
+                print(f"\n--- USER PROMPT ---\n{user_prompt}")
+                print(f"{'='*80}\n")
+                continue
+
             decision, token_info, elapsed = self._classify(user_prompt)
 
             if decision is None:
@@ -135,7 +139,7 @@ class OpenAiZeroShotClassifier:
                 "time": datetime.now(timezone.utc).isoformat(),
             }
 
-            data.setdefault("zeroShot", []).append(entry)
+            data.setdefault(self.approach, []).append(entry)
 
             with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
@@ -147,7 +151,7 @@ class OpenAiZeroShotClassifier:
             time.sleep(4)
 
         self._save_failed()
-        print(f"[OK] Zero-shot classification completed.")
+        print(f"[OK] OpenAI {self.approach} classification completed.")
 
     def _save_failed(self) -> None:
         """Save failed IDs to a JSON file. Remove the file if there are no failures."""

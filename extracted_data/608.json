@@ -75,5 +75,21 @@
       "text": "We report here similar experiments to Section 4.2 but using uniform sampling of the addends, instead of uniform sampling of the number of digits of each addend. As shown on the left plots in Fig. 6, for D = 8 the networks using sin learn faster and reach higher accuracy than the network using tanh. For the case of D = 16 and 3 recurrent layers in the encoder, sine reaches almost 80% accuracy, while tanh never takes off in the 5000 epochs of training. A similar behavior emerges on the task dif, as shown in Fig. 7, although with overall lower accuracy and with none of the networks successfully learning the task with D = 16. Surprisingly, the LSTMs almost completely fail to learn the tasks under these training setting. More hidden neurons When the number of hidden units is doubled from 128 to 256, the standard LSTM using tanh as activation learns faster and reaches higher accuracy than the network trained with sine, while the vanilla RNN using sin still outperforms both the vanilla RNN and the LSTM using tanh. These results are reported in Fig. 8 for the case of D = 8 only, since for D = 16 all networks are stuck at zero accuracy. Further investigation would be required to explain how doubling the amount of neurons in the tanh LSTM changed the learned representation, providing such a boost in performance. Curriculum learning experiments For the D = 16 case, we also experiment with a curriculum learning approach: while keeping the length of the input and output sequences fixed to 16+1+16 and 17 respectively, we start training by limiting the maximum number of digits to D = 8 and increase D by 2 every 1000 iterations, so that by the 4000th iteration D = 16. As shown in Fig. 9, by using this approach the network using sine as activation function reaches an accuracy close to 1 by the end of the training. As shown by the steep drops in performance when D is increased, the network has only learned to correctly perform the operation within the number of digits it was trained upon, but it can adapt very quickly to the longer addends. The network using tanh takes more time to learn the case with D = 8 and after that does not adapt to larger number of digits.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical analysis of sinusoidal activations with rigorous loss landscape characterization, comprehensive experiments revealing periodicity usage patterns, and demonstration of advantages on algorithmic tasks. Solid contribution despite limited scope on standard benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 4254,
+        "completion_tokens": 82,
+        "total_tokens": 4336
+      },
+      "time": "2026-02-08T22:34:09.948749+00:00"
+    }
   ]
 }

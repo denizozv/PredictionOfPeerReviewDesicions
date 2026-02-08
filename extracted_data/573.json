@@ -85,5 +85,21 @@
       "text": "In this work we developed a general setting to train and test the ability of agents to seek information. We defined a class of problems in which success requires searching, in a partially-observed environment, for fragments of information that must be pieced together to achieve some goal. We then demonstrated how to combine deep architectures with techniques from reinforcement learning to build agents that solve these tasks. It was demonstrated empirically that these agents learn to search actively and intelligently for new information to reduce their uncertainty, and to exploit information they have already acquired. Information seeking is an essential capability for agents acting in complex, ever-changing environments.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel problem formulation for information-seeking agents with principled RL framework, diverse experimental validation across vision and language tasks, and clear methodological contribution combining intrinsic/extrinsic rewards with deep architectures."
+      },
+      "token": {
+        "prompt_tokens": 5697,
+        "completion_tokens": 81,
+        "total_tokens": 5778
+      },
+      "time": "2026-02-08T22:30:26.044139+00:00"
+    }
   ]
 }

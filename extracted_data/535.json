@@ -50,5 +50,21 @@
       "text": "We have proposed a novel video captioning model, that adaptively selects/weights the feature abstraction (CNN layer), as well as the location within a layer-dependent feature map. Our model achieves state-of-the-art video caption generation performance on Youtube2Text benchmark.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel dual attention mechanism (spatiotemporal + abstraction-level) with principled feature alignment across CNN layers for video captioning. Solid experimental validation on multiple benchmarks with clear improvements over baselines. Methodologically sound contribution to multimodal learning."
+      },
+      "token": {
+        "prompt_tokens": 2477,
+        "completion_tokens": 90,
+        "total_tokens": 2567
+      },
+      "time": "2026-02-08T22:27:06.793610+00:00"
+    }
   ]
 }

@@ -150,5 +150,21 @@
       "text": "ID 57265746dd62a815002e821a Cydippid ctenophores have bodies that are more or less rounded, sometimes nearly spherical and other times more cylindrical or egg-shaped; the common coastal sea gooseberry, Pleurobrachia, sometimes has an egg-shaped body with the mouth at the narrow end, although some individuals are more uniformly round. From opposite sides of the body extends a pair of long, slender tentacles, each housed in a sheath into which it can be withdrawn. Some species of cydippids have bodies that are flattened to various extents, so that they are wider in the plane of the tentacles. Ground truth more or less rounded, egg-shaped Prediction spherical Comment Although the mistake is subtle, the prediction is incorrect. The statement are more or less rounded, sometimes nearly spherical suggests that the entity is more often rounded than spherical or cylindrical or egg-shaped (an answer given by an annotator). This suggests that the model has trouble discerning among multiple intuitive answers due to a lack of understanding of the relative severity of more or less versus sometimes and other times.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel coattention mechanism with dynamic iterative decoder for QA; strong empirical results (SOTA on SQuAD); thorough ablations and analysis; clear methodological contribution beyond standard attention."
+      },
+      "token": {
+        "prompt_tokens": 6613,
+        "completion_tokens": 78,
+        "total_tokens": 6691
+      },
+      "time": "2026-02-08T22:10:05.148694+00:00"
+    }
   ]
 }

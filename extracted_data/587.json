@@ -90,5 +90,21 @@
       "text": "We have proposed DeepRebirth acceleration framework which can speed up the neural networks with satisfactory accuracy. Our method operates by re-generating new tensor layers from optimizing the non-tensor layers and their neighboring units. Moreover, as a generic method, DeepRebirth is compatible with state-of-the-art deep models like GoogleNet and ResNet, where most parameter weight compression methods failed. By applying DeepRebirth at different deep learning architectures, we obtain the significant speed-up on different processors, especially on mobile CPUs. This will greatly facilitate the deployment of deep learning models on mobile phones and make it possible to provide more smart and intelligent services in the new AI tide.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: layer merging and fine-tuning are straightforward engineering optimizations without fundamental algorithmic innovation. Narrow scope focused on specific architectures (GoogLeNet, AlexNet, ResNet). Missing comparisons with contemporary mobile acceleration methods beyond SqueezeNet. Lacks theoretical insight into why merged layers preserve functionality. Incremental contribution suitable for systems/applications venue, not top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 4923,
+        "completion_tokens": 125,
+        "total_tokens": 5048
+      },
+      "time": "2026-02-08T22:32:05.409326+00:00"
+    }
   ]
 }

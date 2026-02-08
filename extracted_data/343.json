@@ -75,5 +75,21 @@
       "text": "In this paper we proposed and evaluated a new approach for building character level statistical language models based on a program that parameterizes the model. We design a language TChar for character level language modeling and synthesize a program in this language. We show that our model works especially well for structured data and is significantly more precise that prior work. We also demonstrate competitive results in the less structured task of modeling English text. Expressing the language model as a program results in several advantages including easier interpretability, debugging and extensibility with deep semantic domain knowledge by simply incorporating a new instruction in the DSL. We believe that this development is an interesting result in bridging synthesis and machine learning with much potential for future research.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel DSL-based approach to character-level language modeling with interpretability advantages, solid experimental validation on two diverse datasets, and practical benefits (fast inference, inspectable programs) over neural baselines, though limited scope and incremental improvements on unstructured text."
+      },
+      "token": {
+        "prompt_tokens": 5009,
+        "completion_tokens": 90,
+        "total_tokens": 5099
+      },
+      "time": "2026-02-08T22:06:12.407260+00:00"
+    }
   ]
 }

@@ -120,5 +120,21 @@
       "text": "We used the following datasets for the experimental evaluation 1. UCI (Lichman, 2013) Car dataset is a classification problem with 1728 objects and 21 binary features (after one-hot encoding). We randomly splitted the data into 1382 training and 346 test objects. For simplicity, we binarized the labels: we picked the first class (unacc) and made a one-versus-rest binary classification problem from the original Car dataset. 2. UCI (Lichman, 2013) HIV dataset is a binary classification problem with 1625 objects and 160 features, which we randomly splitted into 1300 training and 325 test objects. 3. Synthetic data. We generated 100 000 train and 100 000 test objects with 30 features. Each entry of the data matrix X was independently sampled from 1,+1 with equal probabilities 0.5. We also uniformly sampled 20 subsets of features (interactions) of order 6: j11 , . . . , j 1 6 , . . . , j 20 1 , . . . , j 20 6 U1, . . . , 30. We set the ground truth target variable to a deterministic function of the input: y(x) = 20 z=1 z 6 h=1 xjzh , and sampled the weights of the interactions from the uniform distribution: 1, . . . , 20 U(1, 1). 4. MovieLens 100K. MovieLens 100K is a recommender system dataset with 943 users and 1682 movies (Harper & Konstan, 2015). We followed Blondel et al. (2016a) in preparing the features and in turning the problem into binary classification. For users, we converted age (rounded to decades), living area (the first digit of the zipcode), gender and occupation into a binary indicator vector using one-hot encoding. For movies, we used the release year (rounded to decades) and genres, also encoded. This process yielded 49+29 = 78 additional one-hot features for each user-movie pair (943 + 1682 + 78 features in total). Original ratings were binarized using 5 as a threshold. This results in 21200 positive samples, half of which were used for traininig (with equal amount of sampled negative examples) and the rest were used for testing.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel tensor factorization approach with principled Riemannian optimization for modeling all-order feature interactions. Strong theoretical contributions (Theorems 1-2), practical algorithmic innovations, and solid experimental validation on synthetic and real datasets."
+      },
+      "token": {
+        "prompt_tokens": 7535,
+        "completion_tokens": 86,
+        "total_tokens": 7621
+      },
+      "time": "2026-02-08T22:25:03.913296+00:00"
+    }
   ]
 }

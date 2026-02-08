@@ -85,5 +85,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel interpretability method with principled improvements (conditional sampling, multivariate analysis, hidden layer visualization) over prior work; solid experimental validation on ImageNet and medical imaging; addresses important problem of neural network interpretability with practical applications."
+      },
+      "token": {
+        "prompt_tokens": 4728,
+        "completion_tokens": 83,
+        "total_tokens": 4811
+      },
+      "time": "2026-02-08T22:14:29.099598+00:00"
+    }
   ]
 }

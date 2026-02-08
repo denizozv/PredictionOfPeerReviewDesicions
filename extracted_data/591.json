@@ -90,5 +90,21 @@
       "text": "Samples impact on the deep networks parameters vary across stages of training and networks layers. In our work, we found that easy samples predominantly shape parameters the top layers at the early training stages, while hard samples predominantly shape the parameters of the bottom layers at the late training stage. Our experiments show that it is important to mix hard samples into different batches rather than keep them together in the same batch and away from other examples. There are many future extensions to the current work. Firstly, we want to expand our sample importance analysis to different deep learning structures, like Convolution Neural Network and Recurrent Neural Networks. Secondly, we want to use the sample importance as a guidance to extract a minimal subset of samples that are sufficient to achieve performance comparable to a network trained on the full dataset.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty and experimental scope. Sample importance defined as gradient magnitude is straightforward; empirical findings (easy samples affect output layers, hard samples affect input layers) are intuitive consequences of training dynamics. Experiments limited to small networks on MNIST/CIFAR-10 with fixed hyperparameters. Batch ordering experiments contradict curriculum learning but lack theoretical justification or deeper mechanistic insight. Missing comparisons with related influence function work and limited practical impact demonstrated."
+      },
+      "token": {
+        "prompt_tokens": 4256,
+        "completion_tokens": 133,
+        "total_tokens": 4389
+      },
+      "time": "2026-02-08T22:32:15.671033+00:00"
+    }
   ]
 }

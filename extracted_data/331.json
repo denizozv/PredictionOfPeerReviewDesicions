@@ -115,5 +115,21 @@
       "text": "Although we can use any suitable reinforcement learning algorithm for learning policies, in this work, we use a simple trajectory-centric reinforcement learning method that trains time-varying linear-Gaussian policies (Levine & Abbeel, 2014). While this method produces simple policies, it is very efficient, making it well suited for robotic learning. To obtain robot trajectories for training tasks and source robots, we optimize time-varying linear-Gaussian policies through a trajectorycentric reinforcement learning algorithm that alternates between fitting local time-varying linear dynamics models, and updating the time-varying linear-Gaussian policies using the iterative linearquadratic Gaussian regulator algorithm (iLQG) (Li & Todorov, 2004). This approach is simple and efficient, and is typically able to learn complex high-dimensional skills using just tens of trials, making it well suited for rapid transfer. The resulting time-varying linear-Gaussian policies are parametrized as p(ut |xt) = N (Ktxt + kt ,Ct) where Kt , kt , and Ct are learned parameters. Further details of this method are presented in prior work (Levine & Abbeel, 2014). We use the same reinforcement learning algorithm to provide solutions in the source domain DS, though again any suitable reinforcement learning method (or even human demonstrations) could be used instead. To evaluate the ability of our method to provide detailed guidance through the transfer reward rtransfer, we use relatively sparse reward functions in the target domain DT , as discussed below. To generate the original skills in the source domain DS and in the proxy domains DSp and DT p, we manually designed the appropriate shaped costs to enable learning from scratch to succeed, though we note again that our method is agnostic to how the source domain and proxy domain skills are acquired.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel problem formulation for cross-morphology skill transfer via invariant feature spaces; solid experimental validation on diverse robotic tasks; clear methodological contribution combining contrastive learning with RL-based transfer, though limited to simulation and relatively simple tasks."
+      },
+      "token": {
+        "prompt_tokens": 6879,
+        "completion_tokens": 87,
+        "total_tokens": 6966
+      },
+      "time": "2026-02-08T22:04:28.325379+00:00"
+    }
   ]
 }

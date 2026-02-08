@@ -85,5 +85,21 @@
       "text": "We introduce reference-aware language models which explicitly model the decision of from where to generate the token at each step. Our model can also learns the decision by treating it as a latent variable. We demonstrate on three tasks, table based dialogue modeling, recipe generation and coref based LM, that our model performs better than attention based model, which does not incorporate this decision explicitly. There are several directions to explore further based on our framework. The current evaluation method is based on perplexity and BLEU. In task oriented dialogues, we can also try human evaluation to see if the model can reply users query accurately. It is also interesting to use reinforcement learning to learn the actions in each step.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel framework treating reference as explicit latent variable with principled probabilistic formulation; demonstrates generality across three diverse tasks (dialogue, recipe generation, coreference); solid experimental validation with meaningful ablations."
+      },
+      "token": {
+        "prompt_tokens": 5449,
+        "completion_tokens": 78,
+        "total_tokens": 5527
+      },
+      "time": "2026-02-08T22:43:22.357073+00:00"
+    }
   ]
 }

@@ -70,5 +70,21 @@
       "text": "We proposed a simple and efficient method for incorporating feedback in to stochastic gradient descent algorithms. We used this method to create Eve, a modified version of the Adam algorithm. Experiments with a variety of models showed that the proposed method can help improve the optimization of deep learning models. For future work, we would look to theoretically analyze our method and its effects. While we have tried to evaluate our algorithm Eve on a variety of tasks, additional experiments on larger scale problems would further highlight the strength of our approach. We are making code for our method and the experiments publicly available to encourage more research on this method.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: feedback-based learning rate adaptation is incremental over Adam. Strong empirical results on standard benchmarks, but lacks theoretical justification, generalization analysis, or insights into when/why the method works. Restrictive assumption (known minimum) limits applicability. Hyperparameter tuning (β₃, k, K) appears ad-hoc without principled selection."
+      },
+      "token": {
+        "prompt_tokens": 3739,
+        "completion_tokens": 118,
+        "total_tokens": 3857
+      },
+      "time": "2026-02-08T22:39:09.286238+00:00"
+    }
   ]
 }

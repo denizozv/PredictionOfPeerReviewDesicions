@@ -80,5 +80,21 @@
       "text": "We also note that the previously developed constructions can be applied recursively, producing a deeper network that progressively approximates data using linear subspaces of decreasing dimension. That is, we may first divide the data into a set of segments that each lie in a low dimensional subspace whose dimension is higher than the intrinsic dimension of the data. Then we may subdivide each segment into a set of subsegments of lower dimension, using a similar construction, and deeper layers of the network. These subsegments may represent the original data, or they be further subdivided by additional layers, until we ultimately produce subsegments that represent the data. We first illustrate this hierarchical approach with a simple example that requires only one extra layer in the hierarchy. Consider a monotonic chain of K, m2-dimensional linear segments that collectively lie in a m1-dimensional linear subspace, L, of a d-dimensional space, with m2 < m1. We can construct the first hidden layer with m1 units that are active over the entire monotonic chain, so that their gradient directions form an orthonormal basis for L. The output of this layer will contain the coordinates in L of points on the monotonic chain. These can form the input to two layers that then flatten the chain, as described in Section 3. In Section 3 we had already shown how to flatten the manifold with two layers that take their input directly from the input space. Here we accomplish the same end with an extra layer. However, this construction, while using more layers, may also use fewer parameters. The construction in Section 3 required d(m2 +K1) parameters. Our new construction will require dm1 +m1(m2 +K1) parameters. Note that as K increases, the number of parameters used in the first construction increases in proportion to d, while in the second construction the parameters increase only in proportion to m1. Consequently, the second construction can be much more economical when K is large and m1 is small. In much the same way, we could represent a manifold using a hierarchy of chains. The first layers can map a m1-dimensional chain to a linear m1-dimensional output space. The next layers can select an m2-dimensional chain that lies in this m1-dimensional space, and map it to an m2-dimensional space. This process can repeat indefinitely, but whether it is economical will depend on the structure of the manifold.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel theoretical contribution with rigorous analysis of efficient neural network representations for low-dimensional manifolds. Constructive proofs for monotonic chains with near-optimal parameter efficiency, error bounds, and experimental validation. Strong methodological depth and clear scientific contribution to understanding deep network expressivity."
+      },
+      "token": {
+        "prompt_tokens": 10710,
+        "completion_tokens": 93,
+        "total_tokens": 10803
+      },
+      "time": "2026-02-08T22:22:11.092468+00:00"
+    }
   ]
 }

@@ -105,5 +105,21 @@
       "text": "Consider the special case when the bottleneck Z is a multivariate Normal, i.e., z|x N(x,x) where x is a K K positive definite matrix. The parameters x,x can be constructed from a deep neural network, e.g., x = 1:K(x) chol(x) = diag(log(1 + exp(K+1:2K))) + subtril(2K+1:K(K+3)/2), where (x) RK(K+3)/2 is the network output of input x. Suppose that the prediction is a categorical distribution computed as S(Wz) where W is a C K weight matrix and logS(x) = x lse(x) is the log-soft-max function with lse(x) = log K k=1 exp(xk) being the log-sum-exp function. This setup (which is identical to our experiments) induces a classifier which is bounded by a quadratic function, which is interesting because the theoretical framework Fawzi et al. (2016) proves that quadratic classifiers have greater capacity for adversarial robustness than linear functions. We now derive an approximate bound using second order Taylor series expansion (TSE). The bound can be made proper via Browne & McNicholas (2015). However, using the TSE is sufficient to sketch the derivation. Jensens inequality implies that the negative log-likelihood soft-max is upper bounded by: log E [S(WZ)|x,x] E [logS(WZ)|x,x] = Wx + E [lse(WZ)|x,x] = Wx + E [lse(Z)|Wx,Wx] . The second order Taylor series expansion (TSE) of lse is given by, lse(x+ ) lse(x) + T S(x) + 12T [ diag(S(x)) S(x)S(x)T ] . Taking the expectation of the TSE at the mean yields, EN(0,WxW T )[ lse(Wx + )] lse(Wx) + EN(0,WxW T )[T ]S(Wx)+ + 12 EN(0,WxW T )[ T [ diag(S(Wx)) S(Wx)S(Wx)T ] ] = lse(Wx) + 1 2 tr(WxW T [ diag(S(Wx)) S(Wx)S(Wx)T ] ) = lse(Wx) + 1 2 tr(WxW T diag(S(Wx))) 12S(Wx)T WxW T S(Wx) = lse(Wx) + 1 2 S(Wx) T WxW T S(Wx) 12S(Wx)T WxW T S(Wx) The second-moment was calculated by noting, E[XT BX] = E tr(XXT B) = tr(E[XXT ]B) = tr(B). Putting this altogether, we conclude, E [S(WZ)|x,x] ' S(Wx) exp ( 12 S(Wx) T WxW T S(Wx) + 12S(Wx)T WxW T S(Wx) ) . As indicated, rather than approximate the lse via TSE, we can make a sharp, quadratic upper bound via Browne & McNicholas (2015). However this merely changes the S(Wx) scaling in the exponential; the result is still log-quadratic.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel variational framework for information bottleneck with principled neural network parameterization, strong theoretical contribution, comprehensive experiments demonstrating generalization and adversarial robustness benefits, clear connections to VAEs and unsupervised learning."
+      },
+      "token": {
+        "prompt_tokens": 8179,
+        "completion_tokens": 85,
+        "total_tokens": 8264
+      },
+      "time": "2026-02-08T22:16:16.240540+00:00"
+    }
   ]
 }

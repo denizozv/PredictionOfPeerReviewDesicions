@@ -115,5 +115,21 @@
       "text": "The confusion matrices of our method and two baseline algorithms are shown in Figure 13. Also, we split the segmentation results of one sequence into four parts, and show them in Figure 14.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel integration of RNN into HSMM with principled variational inference via distributional penalty method. Strong empirical results across diverse datasets (synthetic, activity, behavior, medical). Technical contribution in handling discrete latent variables and computational acceleration via bi-RNN encoder is solid, though presentation clarity could be improved."
+      },
+      "token": {
+        "prompt_tokens": 8907,
+        "completion_tokens": 101,
+        "total_tokens": 9008
+      },
+      "time": "2026-02-08T22:14:15.116261+00:00"
+    }
   ]
 }

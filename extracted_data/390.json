@@ -145,5 +145,21 @@
       "text": "Reactive agent. Training for the reactive agents was straightforward and converged reliably on all datasets. Iterative agent. For the iterative agent with the interaction network or true simulation experts, convergence was also reliable for small numbers of ponder steps. Convergence was somewhat less reliable for larger numbers of ponder steps. We believe this is because for some scenes, a larger number of ponder steps was more than necessary to solve the task (as is evidenced by the plateauing performance in Figure 2). So, the iterative agent had to effectively remember what the best control was while it took the last few ponder steps, which is a more complicated and difficult task to perform. For the iterative agent with the MLP expert, convergence was more variable especially when the task was harder, as can be seen in the variable performance on the five planets dataset in Figure 2 (left). We believe this is because the MLP agent was so poor, and that convergence would have been more reliable with a better agent. Metacontroller with a single expert. The metacontroller agent with a single expert converged more reliably than the corresponding iterative agent (see the bottom row of Figure 3). As mentioned in the previous paragraph, the iterative agent had to take more steps than actually necessary, causing it to perform less well for larger numbers of ponder steps, whereas the metacontroller agent had the flexibility of stopping when it had found a good control. On the other hand, we found that the metacontroller agent sometimes performed too many ponder steps for large values of (see Figures 3 and 7). We believe this is due to the entropy term () added to the REINFORCE loss. This is because when then ponder cost is very high, the optimal thing to do is to behave deterministically and always execute (never ponder); however, the entropy term encouraged the policy to be nondeterministic. We plan to explore different training regimes in future work to alleviate this problem, for example by annealing the entropy term to zero over the course of training. Metacontroller with multiple experts. The metacontroller agent with multiple experts was somewhat more difficult to train, especially for high ponder cost of the interaction network expert. For example, note how the proportion of steps using the MLP expert does not decrease monotonically in Figure 5 (right) with increasing cost for the MLP expert. We believe this is also an unexpected result of using the entropy term: in all of these cases, the optimal thing to do actually is to rely on the MLP expert 100% of the time, yet the entropy term encourages the policy to be non-deterministic. Future work will explore these difficulties further by using experts that complement each other better (i.e., so there is not one that is wholly better than the other). Experts. The experts themselves always converged quickly and reliably, and trained much faster than the rest of the network.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel metacontrol framework for adaptive computation allocation in model-based RL. Strong conceptual contribution combining meta-reasoning with imagination-based optimization. Well-executed experiments on physics task demonstrating emergent adaptive behavior. Clear presentation of problem formulation and technical approach."
+      },
+      "token": {
+        "prompt_tokens": 9543,
+        "completion_tokens": 90,
+        "total_tokens": 9633
+      },
+      "time": "2026-02-08T22:10:09.973136+00:00"
+    }
   ]
 }

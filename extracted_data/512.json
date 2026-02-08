@@ -90,5 +90,21 @@
       "text": "First note that if f(x) is well defined everywhere and if ||f(x)|| L over the entire domain, it is L-Lipschitz by the mean value theorem and an application of Cauchy-Schwartz. In the convex case, the reverse is also true. Lemma D.1. Take g to be a function from Rn Rd. If g is L-Lipschitz in each of its components, g is nL-Lipschitz. Proof. Consider any x, y Rn. By the assumption we know that for i = 1, . . . , n |gi(x)gi(y)|2 L2||x y||22. Therefore n i=1 |gi(x) gi(y)|2 nL2||x y||22, and, thus, the desired result that ||g(x) g(y)||2 = n i=1 |gi(x) gi(y)|2 nL||x y||2. Directly from the definition it is difficult to prove a gradient to be Lipschitz continuous. However we can utilize Lemma D.2. Lemma D.2. For some twice differentiable function f : A Rn R, f is -smooth if its Hessian is bounded by with respect to the euclidean norm. Proof. Take the gradient f which is a mapping A Rn Rn. We can apply the mean value inequality for vector valued functions, Theorem B.1, which gives us ||f(x)f(y)||2 ||2f(z)(x y)||2, where z is on the line segment connecting x and y. Because of how the induced euclidean norm on a matrix is defined it follows that ||2f(z)(x y)||2 ||2f(z)||2||x y||2 ||x y||2. Combining the two equations above gives the desired result, ||f(x)f(y)||2 ||x y||2. The insight to take this approach to demonstrating -smoothness is from Bach & Moulines (2011).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel nonparametric activation function learning via Fourier basis with theoretical generalization bounds and consistent empirical improvements across datasets. Solid contribution despite modest experimental gains."
+      },
+      "token": {
+        "prompt_tokens": 8524,
+        "completion_tokens": 70,
+        "total_tokens": 8594
+      },
+      "time": "2026-02-08T22:24:15.390003+00:00"
+    }
   ]
 }

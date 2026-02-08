@@ -65,5 +65,21 @@
       "text": "In this paper we introduce Neural Data Filter (NDF), a reinforcement learning framework to select/filter data for training deep neural network. Experiments on several deep neural networks training demonstrate that NDF boosts the convergence of Stochastic Gradient Descent. Going beyond data filtration, the proposed framework is able to supervise any sequential training process, thus opens a new view for self-adaptively tuning/controlling machine learning process. As to future work, on one aspect, we aim to test NDF to more tasks and models, such as Convolutional Neural Network (CNN) for image classification. We would also plan to give clearer explanation on the behavior of NDF, such as what data is dropped at different phrases of training, and whether the proposed critic function is good enough. On the other aspect, we aim to apply such a reinforcement learning based teacher-student framework to other strategy design problems for machine learning, such as hyper-parameter tuning, structure learning and distributed scheduling, with the hope of providing better guidance for controlled training process.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core contribution (RL for data selection is incremental), weak experimental validation (only MNIST and IMDB), shallow baselines (no comparison with modern curriculum learning or hard example mining), and unclear practical advantages over simpler alternatives."
+      },
+      "token": {
+        "prompt_tokens": 4967,
+        "completion_tokens": 88,
+        "total_tokens": 5055
+      },
+      "time": "2026-02-08T22:27:03.256593+00:00"
+    }
   ]
 }

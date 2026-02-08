@@ -120,5 +120,21 @@
       "text": "In this appendix section we add more case studies of NVSM performance on both synthetic data and real-world stock data. NSVM obtains 2.044, 2.609 and 1.939 on the stocks corresponding to Fig 4(a), (b) and (c) respectively, each of which is better than the that of GARCH (0.589, 0.109 and 0.207 lower on NLL). The reason of the drops in Fig 4(b) and (c) seems to be that NSVM has captured the jumps and drops of the stock price using its nonlinear dynamics and modelled the sudden changes as part of the trend: the estimated trend mu goes very close to the real observed price even around the jumps and drops (see the upper figure of Fig 4(b) and (c) around step 1300 and 1600). The residual (i.e. difference between the real value of observation and the trend of prediction) therefore becomes quite small, which lead to a lower volatility estimation. On the other hand, for the baselines, we adopt AR as the trend model, which is a relatively simple linear model compared with the nonlinear NSVM. AR would not capture the sudden changes and leave those spikes in the residual; GARCH then took the residuals as input for volatility modelling, resulting in the spikes in volatility estimation. 0 500 1000 1500 2000 2500 timestep 0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 x data + 0 500 1000 1500 2000 2500 timestep 0.00 0.02 0.04 0.06 0.08 0.10 0.12 0.14 0.16 0.18 v a ri a n ce garch's prediction nsvm's prediction (a) Real-world stock price prediction II. (up) The data and the predicted x and bounds x x. (down) The variance prediction from GARCH(1,1) and NSVM. The prediction of NSVM is more smooth and stable than that of GARCH(1,1), also yielding smaller NLL. 0 500 1000 1500 2000 2500 timestep 0.0 0.5 1.0 1.5 2.0 2.5 3.0 x data + 0 500 1000 1500 2000 2500 timestep 0.00 0.02 0.04 0.06 0.08 0.10 0.12 0.14 0.16 v a ri a n ce garch's prediction nsvm's prediction (b) Real-world stock price prediction III. (up) The data and the predicted x and bounds x x. (down) The variance prediction from GARCH(1,1) and NSVM. The prediction of NSVM is more smooth and stable than that of GARCH(1,1), also yielding smaller NLL. 0 500 1000 1500 2000 2500 timestep 0.0 0.5 1.0 1.5 2.0 2.5 x data + 0 500 1000 1500 2000 2500 timestep 0.00 0.02 0.04 0.06 0.08 0.10 0.12 0.14 0.16 v a ri a n ce garch's prediction nsvm's prediction (c) Real-world stock price prediction IV. (up) The data and the predicted x and bounds x x. (down) The variance prediction from GARCH(1,1) and NSVM. The prediction of NSVM is more smooth and stable than that of GARCH(1,1), also yielding smaller NLL. Figure 4: A case study of real-world stock time series prediction.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel integration of VAE framework with stochastic volatility modeling; theoretical contributions showing GARCH/Heston as special cases; comprehensive experiments on synthetic and real data with multiple baselines."
+      },
+      "token": {
+        "prompt_tokens": 6979,
+        "completion_tokens": 76,
+        "total_tokens": 7055
+      },
+      "time": "2026-02-08T22:44:10.337137+00:00"
+    }
   ]
 }

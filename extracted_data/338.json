@@ -105,5 +105,21 @@
       "text": "A.1 OPTIMAL LINEAR ESTIMATOR Assume two random variables A and B that are both noisy measurements of a third (latent) random variable C: E[A C] = E[B C] = 0 (13) We call the corresponding variances Var[A C] = 2A and Var[B C] = 2B and covariance Cov[A,B] = 2AB . We are looking for the linear estimator q(A,B) = q0+q1A+q2B of C with E[qC] = 0 (unbiased) that has minimum variance. E[q(A,B) C] = 0 E[q0 + q1A+ q2B C] = 0 E[q0 + q1A q1C + q2B q2C + (q1 + q2 1)C] = 0 E[q0 + q1(A C) + q2(B C) + (q1 + q2 1)C] = 0 q0 + (q1 + q2 1)E[C] = 0 E[C](1 q1 q2) = q0 for all E[C] which is possible iff: q0 = 0 and q1 + q2 = 1. (14) The second condition about minimal variance thus reduces to: minimize q1,q2 Var[q1A+ q2B C] subject to q1 + q2 = 1 We can solve this using Lagrangian multipliers. For that we need to take the derivative of the following term w.r.t. q1, q2 and and set them to zero: Var[q1A+ q2B C] (q1 + q2 1)) The first equation is therefore: d dq1 (Var[q1A+ q2B C] (q1 + q2 1)) = 0 d dq1 Var[q1A+ q2B C] = 0 d dq1 Var[q1(A C) + q2(B C)] = 0 d dq1 (q21 Var[A C] + 2q1q2 Cov[A C,B C]) = 0 2q1 2 A + 2q2 2 AB = 0 Analogously we get: 2q2 2 B + 2q1 2 AB = 0 and: q1 + q2 = 1 Solving these equations gives us: q1 = 2B 2AB 2A 22AB + 2B (15) q2 = 2A 2AB 2A 22AB + 2B (16) (17) We can write our estimator in terms of 1 = 2B 2AB and 2 = 2A 2AB : q = 1 1 + 2 A+ 2 1 + 2 B",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel theoretical framework explaining ResNets/Highway networks as unrolled iterative estimation rather than hierarchical feature abstraction. Strong mathematical grounding, comprehensive empirical validation across multiple domains, and insightful reinterpretation of existing architectural design choices."
+      },
+      "token": {
+        "prompt_tokens": 7807,
+        "completion_tokens": 89,
+        "total_tokens": 7896
+      },
+      "time": "2026-02-08T22:05:15.003509+00:00"
+    }
   ]
 }

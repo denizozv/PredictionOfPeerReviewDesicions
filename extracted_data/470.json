@@ -115,5 +115,21 @@
       "text": "Many thanks to Marc-Alexandre Cote and Hugo Larochelle for helpful discussions. This work was supported in part by NSF award number IIS-1320527.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel methodological contribution combining stick-breaking processes with VAEs via differentiable reparameterization; strong experimental validation on multiple datasets with clear improvements in discriminative quality and adaptive dimensionality; addresses practical challenges (decoder pruning) with principled solution."
+      },
+      "token": {
+        "prompt_tokens": 6577,
+        "completion_tokens": 90,
+        "total_tokens": 6667
+      },
+      "time": "2026-02-08T22:20:12.403681+00:00"
+    }
   ]
 }

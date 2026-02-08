@@ -65,5 +65,21 @@
       "text": "We would like to thank Andrew Zisserman for pointing out the work of Mahendran & Vedaldi (2015; 2016). Stefan Carlsson, Hossein Azizpour and Ali Razavian are supported by the School of Computer Science and Communication, KTH. In Razavians case via a grant held by Atsuto Maki",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework for understanding ReLU networks through preimage analysis with geometric insights into manifold learning and class separation, though limited empirical validation and presentation clarity issues."
+      },
+      "token": {
+        "prompt_tokens": 3489,
+        "completion_tokens": 70,
+        "total_tokens": 3559
+      },
+      "time": "2026-02-08T22:36:01.843642+00:00"
+    }
   ]
 }

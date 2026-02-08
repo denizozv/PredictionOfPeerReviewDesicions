@@ -85,5 +85,21 @@
       "text": "We proposed a group orthogonal neural network for image classification which encourages learning more diverse feature representations. Privileged information is utilized to train the proposed GoCNN model. To the best of our knowledge, we are the first to explore how to use image segmentation as privileged information to assist CNN training for image classification.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core contribution. The method is essentially partitioning CNN filters into foreground/background groups using segmentation masks as privileged information during training. The technical innovation (group orthogonal constraints, suppression losses) is incremental. Experimental validation is narrow: only ImageNet-0.1m (10% annotated) and PASCAL VOC; modest improvements (0.5-1.2% top-1); weak baselines (only ResNet and SVM+); no comparison with other privileged information or diversity-promoting methods. The writing and presentation are adequate but the scientific contribution lacks sufficient depth for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 5112,
+        "completion_tokens": 172,
+        "total_tokens": 5284
+      },
+      "time": "2026-02-08T22:49:05.179093+00:00"
+    }
   ]
 }

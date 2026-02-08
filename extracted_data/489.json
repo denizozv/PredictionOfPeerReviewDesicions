@@ -95,5 +95,21 @@
       "text": "How well do the models preserve content when we increase the sentence length? In Fig. 5 we plot content prediction accuracy vs. sentence length for different models. As expected, all models suffer a drop in content accuracy on longer sentences. The degradation is roughly linear in the sentence length. For the encoder-decoder, models with fewer dimensions seem to degrade slower. APPENDIX III: SIGNIFICANCE TESTS In this section we report the significance tests we conduct in order to evaluate our findings. In order to do so, we use the paired t-test (Rubin, 1973). All the results reported in the summery of findings are highly significant (p-value 0.0001). The ones we found to be not significant (p-value 0.03) are the ones which their accuracy does not have much of a difference, i.e ED with size 500 and ED with size 750 tested on the word order task (p-value=0.11), or CBOW with dimensions 750 and 1000 (p-value=0.3).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in analysis framework; auxiliary prediction tasks are straightforward probes without methodological innovation. Insights about CBOW norm effects and word order statistics are interesting but incremental. Lacks depth in explaining findings or proposing improvements to representations. Suitable for workshop/analysis venue but below ICML/ICLR/NeurIPS bar for novel methods or significant empirical contributions."
+      },
+      "token": {
+        "prompt_tokens": 5059,
+        "completion_tokens": 119,
+        "total_tokens": 5178
+      },
+      "time": "2026-02-08T22:22:25.385756+00:00"
+    }
   ]
 }

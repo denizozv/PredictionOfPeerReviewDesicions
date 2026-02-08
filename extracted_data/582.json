@@ -100,5 +100,21 @@
       "text": "This work has several key contributions. We show how to use all product signal for the task of product recommendation using a modular architecture that can leverage fast evolving solutions for each type of input modality. We define a set of requirements for evaluating the resulting product embeddings and show that our method leads to significant improvements over the single signal approaches on hard recommendation situations such as cold-start and cross-category evaluation. Finally, in order to model the joint aspects of the product embeddings we introduce a new type of learning unit, named Pairwise Residual Unit and show the resulting gains on a real product co-purchases dataset. In the current work we have addressed all but one of the desired requirements, namely generating retrieval-optimized embeddings. For the next steps, we want to pursue sparse and compressed product representations, in order to help the performance of the final product retrieval system.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in architecture design. Combines existing techniques (AlexNet, Word2Vec, Text-CNN, Prod2Vec) with standard residual connections. The pairwise residual unit is a straightforward adaptation of ResNets. Experimental evaluation is narrow (single dataset, limited baselines), lacks comparison with contemporary deep learning recommendation methods, and the improvements are incremental. Suitable for applications/industry venues but below the bar for top-tier ML conferences."
+      },
+      "token": {
+        "prompt_tokens": 4622,
+        "completion_tokens": 135,
+        "total_tokens": 4757
+      },
+      "time": "2026-02-08T22:31:08.508296+00:00"
+    }
   ]
 }

@@ -100,5 +100,21 @@
       "text": "We analyzed how input queries are updated through memory read, write and gating operations in order for the model to make a prediction for the correct answer. A.1 QUERY GATING Figure 2 depicts the memory key (zqt ) and the query gate (g q t ) states of the NSE Query Gating model for the input document shown on the top. As noted previously, the model updates the query memory at a position that has a lower memory key value (i.e. the values in the memory key closer to zero indicate the update positions) but rolls back or ignores the new query change if the gating value is one at the same position. The top attended words resulted by the memory read operation define the information for the update. We listed the top-3 attended words in Figure 2, which already includes the correct answer. Note how the the memory key and the gating states are changed during the regression steps. The memory key values are varied across the query positions. Overall the query tokens He and Meadows are pointed to be updated. As proceeding with the query regression, the model effectively adjusts its gates. During the first two steps, the model is willing to accept new updates occurred at certain positions such as He and Meadows. However, the gating value reaches one and the gates are closed in the later steps. The model no longer accepts new query updates in step 6 and is now ready to output the correct answer. Our analysis showed that the model rarely updates the query at the place holder position (i.e. XXXXX in the query). This is desirable in such iterative query regression process. Here the placeholder information remains unchanged in order to be used in the subsequent steps and to inform the model of what part of the query needs to be completed. A.2 ADAPTIVE COMPUTATION In Figure 3, we showed the memory key and the termination head states for an input pair from the CBT dev set. The model actively performs the query regression during the first two steps and then it halts the process as the termination head reaches one in the third step. Interestingly, the memory key points to the most of the query positions for update in the first step and then its values gradually increase in the later steps implying no information exchange between the document and the query. The answer cue word Johnny and the place holder information are not overwritten until the loop is halted.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel memory-augmented hypothesis testing framework with dynamic termination strategies (query gating and adaptive computation) for machine reading comprehension. Solid experimental validation on CBT and WDW benchmarks with consistent SOTA improvements (1.2-2.6%). Clear methodological contribution beyond standard attention mechanisms, though incremental gains and limited theoretical novelty prevent higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 5970,
+        "completion_tokens": 112,
+        "total_tokens": 6082
+      },
+      "time": "2026-02-08T22:21:06.346332+00:00"
+    }
   ]
 }

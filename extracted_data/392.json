@@ -85,5 +85,21 @@
       "text": "A.1 GRADIENT OF CLIPPING We redefine the gradient of the clipping operation to be constant, d dx clip0,255(x) := 1. (14) Consider how this affects the gradients of a squared loss, d dx (clip0,255(x) x)2 = 2(clip0,255(x) x) d dx clip0,255(x). (15) Assume that x is larger than 255. Without redefinition of the derivative, the error signal will be 0 and not helpful. Without any clipping, the error signal will depend on the value of x, even though any value above 255 will have the same effect on the loss at test time. On the other hand, using clipping but a different signal in the backward pass is intuitive, as it yields an error signal which is proportional to the error that would also be incurred at test time. A.2 DIFFERENT MODES OF JPEG We compared optimized and non-optimized JPEG with (4:2:0) and without (4:4:4) chroma subsampling. Optimized JPEG computes a Huffman table specific to a given image, while unoptimized JPEG uses a predefined Huffman table. We did not count bits allocated to the header of the file format, but for optimized JPEG we counted the bits required to store the Huffman table. We found that on average, chroma-subsampled and optimized JPEG performed better on the Kodak dataset (Figure 7). A.3 COMPRESSION VS DIMENSIONALITY REDUCTION Since a single real number can carry as much information as a high-dimensional entity, dimensionality reduction alone does not amount to compression. However, if we constrain the architecture of the encoder, it may be forced to discard certain information. To better understand how much information is lost due to dimensionality reduction and how much information is lost due to quantization, Figure 8 shows reconstructions produced by a compressive autoencoder with and without quantization. The effect of dimensionality reduction is minimal compared to the effect of quantization. A.4 ENSEMBLE To bring the parameter controlling the rate-distortion trade-off into a more intuitive range, we rescaled the distortion term and expressed the objective as follows: N ln q ([f(x) ] + u) + 1 1000 M ||x g([f(x) ] /)||2. (16) Here, N is the number of coefficients produced by the encoder and M is the dimensionality of x (i.e., 3 times the number of pixels). The high-bit-rate CAE was trained with = 0.01 and 96 output channels, the medium-bit-rate CAE was trained with = 0.05 and 96 output channels, and the low-bit-rate CAE was trained with = 0.2 and 64 output channels. A.5 COMPARISON WITH VAE A.6 COMPLETE IMAGES Below we show complete images corresponding to the crops in Figure 5. For each image, we show the original image (top left), reconstructions using CAE (top right), reconstructions using JPEG 2000 (bottom left) and reconstructions using the method of (Toderici et al., 2016b) (bottom right). The images are best viewed on a monitor screen.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel technical contributions (differentiable quantization via gradient substitution, entropy rate estimation via Jensen's inequality upper bound), strong experimental validation (PSNR/SSIM/MS-SSIM metrics, MOS study), competitive results against JPEG 2000, practical efficiency via sub-pixel architecture. Addresses real compression problem with principled solutions to non-differentiability."
+      },
+      "token": {
+        "prompt_tokens": 4713,
+        "completion_tokens": 117,
+        "total_tokens": 4830
+      },
+      "time": "2026-02-08T22:10:15.649715+00:00"
+    }
   ]
 }

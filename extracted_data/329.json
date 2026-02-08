@@ -85,5 +85,21 @@
       "text": "We thank Ian Goodfellow, Laurent Dinh, Yaroslav Ganin and Kyle Kastner for helpful discussions. We thank Vincent Dumoulin and Ishmael Belghazi for making available code and model parameters used in comparison to ALI, as well as Alec Radford for making available the code and model parameters for his ImageNet model. We would like to thank Antonia Creswell and Hiroyuki Yamazaki for pointing out an error in the initial version of this manuscript, and anonymous reviewers for valuable feedback. We thank the University of Montreal and Compute Canada for the computational resources used for this investigation, as well as the authors of Theano (Al-Rfou et al., 2016), Blocks and Fuel (van Merrienboer et al., 2015). We thank CIFAR, NSERC, Google, Samsung and Canada Research Chairs for funding.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel denoising feature matching approach with solid theoretical motivation (score matching via denoising autoencoders), comprehensive experiments across multiple datasets, and consistent improvements. However, limited by low resolution experiments (32×32), modest quantitative gains, and incremental nature of the contribution."
+      },
+      "token": {
+        "prompt_tokens": 4502,
+        "completion_tokens": 94,
+        "total_tokens": 4596
+      },
+      "time": "2026-02-08T22:04:23.909430+00:00"
+    }
   ]
 }

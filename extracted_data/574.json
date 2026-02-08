@@ -60,5 +60,21 @@
       "text": "Today's deep learning technology has given great impact on various research fields. Such a success story is about to be applied to many industries. Following this trend, we traced the start-of-the art computer vision and language modelling research and then, used these technologies to create value for our customers especially in the e-commerce platform. We expect active discussion on that how to apply many existing research works into the e-commerce industry.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Application paper lacking methodological novelty. RNN for multi-label learning is standard; ResCeption is minor Inception-v3 modification; system combines existing techniques (Faster R-CNN, GoogleNet, color histograms) without significant innovation. Evaluation is internal/proprietary with no public benchmarks or comparisons to state-of-the-art methods. Suitable for applications track, not main conference."
+      },
+      "token": {
+        "prompt_tokens": 4311,
+        "completion_tokens": 125,
+        "total_tokens": 4436
+      },
+      "time": "2026-02-08T22:30:29.134602+00:00"
+    }
   ]
 }

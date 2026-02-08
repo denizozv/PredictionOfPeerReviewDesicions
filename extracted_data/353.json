@@ -110,5 +110,21 @@
       "text": "E.1 MNIST For our quantitative MNIST experiments, the architectures of our encoder and decoder are as follows. Unless otherwise specified, all convolutional layers use ReLU nonlinearity. We also make an open-source implementation of this model available at https://github.com/igul222/ PixelVAE. Encoder x (, ) Kernel size Stride Output channels Convolution 3x3 1 32 Convolution 3x3 2 32 Convolution 3x3 1 32 Convolution 3x3 2 64 Pad 77 feature maps to 88 Convolution 3x3 1 64 Convolution 3x3 2 64 Convolution 3x3 1 64 Convolution 3x3 1 64 Convolution 3x3 1 64 Flatten Linear - - 2latent dimensionality Decoder z x Kernel size Stride Output channels Linear - - 4464 Reshape to (64, 4, 4) Convolution 3x3 1 64 Convolution 3x3 1 64 Transposed convolution 3x3 2 64 Convolution 3x3 1 64 Crop 88 feature maps to 77 Transposed convolution 3x3 2 32 Convolution 3x3 1 32 Transposed convolution 3x3 2 32 Convolution 3x3 1 32 PixelCNN gated residual block 7x7 1 32 PixelCNN gated residual block(s) [ 5x5 ] N 1 32 PixelCNN gated convolution 1x1 1 32 PixelCNN gated convolution 1x1 1 32 Convolution 1x1 1 1 E.2 LSUN BEDROOMS AND 6464 IMAGENET The LSUN and ImageNet models use the same architecture: all encoders and decoders are residual networks; we use pre-activation residual blocks with two 3 3 convolutional layers each and ELU nonlinearity. Some residual blocks perform downsampling, using a 2 2 stride in the second convolutional layer, or upsampling, using subpixel convolution in the first convolutional layer. Weight normalization is used in masked convolutional layers; in all other layers, batch normalization is used. We optimize using Adam with learning rate 1e-3. Training proceeds for 400K iterations using batch size 48. For further architectural details, please refer to our open-source implementation at https:// github.com/igul222/PixelVAE. Bottom-level Encoder x h1 Kernel size Resample Output channels Embedding - - 48 Convolution 1x1 - 192 Residual block [ 3x3 ] 2 - 192 Residual block [ 3x3 ] 2 Down 2 256 Residual block [ 3x3 ] 2 - 256 Residual block [ 3x3 ] 2 Down 2 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Bottom-level Decoder z1 x Kernel size Resample Output channels Convolution 1x1 1 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 Up 2 256 Residual block [ 3x3 ] 2 - 256 Residual block [ 3x3 ] 2 Up 2 192 Residual block [ 3x3 ] 2 - 192 Embedding - - 48 PixelCNN gated residual block [ 3x3 ] 2 - 384 PixelCNN gated residual block [ 3x3 ] 2 - 384 PixelCNN gated residual block [ 3x3 ] 2 - 384 Top-level Encoder h1 h2 Kernel size Resample Output channels Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 Down 2 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 Down 2 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Top-level Decoder z2 z1 Kernel size Resample Output channels Linear - - 44512 Reshape to (512, 4, 4) Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 Up 2 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 Up 2 512 Residual block [ 3x3 ] 2 - 512 Residual block [ 3x3 ] 2 - 512 PixelCNN convolution 5x5 - 512 PixelCNN gated residual block [ 3x3 ] 2 - 512 PixelCNN gated residual block [ 3x3 ] 2 - 512 PixelCNN gated residual block [ 3x3 ] 2 - 512 Convolution 1x1 - 256",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel hybrid architecture combining VAE with autoregressive PixelCNN decoder, strong theoretical motivation, comprehensive experiments across multiple datasets with state-of-the-art results, clear scientific insights on latent variable information content and multi-scale modeling."
+      },
+      "token": {
+        "prompt_tokens": 5059,
+        "completion_tokens": 87,
+        "total_tokens": 5146
+      },
+      "time": "2026-02-08T22:07:05.262712+00:00"
+    }
   ]
 }

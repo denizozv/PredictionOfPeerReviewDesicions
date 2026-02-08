@@ -95,5 +95,21 @@
       "text": "Although the method proposed in section 2 relies on a matrix inversion, an operation with O(n3) complexity for an n n matrix, the running time of an RNN factorized in such a way actually remains reasonable. This running time is summarized in Table 5 and includes all computations in the graph, together with the matrix inversion. As this method is meant to be used only for the analysis in this work, we find the running times acceptable for that purpose. Models were run on an Nvidia GTX-770 GPU and were run against the T=100 length copy task.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical investigation of orthogonality constraints in RNNs with novel insights on margin-based spectral control, though incremental methodologically and limited by narrow experimental scope (mostly synthetic tasks)."
+      },
+      "token": {
+        "prompt_tokens": 7083,
+        "completion_tokens": 80,
+        "total_tokens": 7163
+      },
+      "time": "2026-02-08T22:29:12.628439+00:00"
+    }
   ]
 }

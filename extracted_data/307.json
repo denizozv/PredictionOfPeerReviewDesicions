@@ -125,5 +125,21 @@
       "text": "Table 10 provides results for additional variants of supervised embeddings, using either a dictionary that includes all bigrams to leverage some word order information, or match type features. On some tasks, supervised embeddings perform better when the last user utterance is used as sole input, without the full dialog history (see Table 8). When no history is used, we slightly adapt match type features to only record type: a special word corresponding to type T (e.g., phone, address, etc) is appended to the representation of a candidate if the 2API calls are stored as bot utterances cri , and KB facts resulting from such calls as user utterances c u i . candidate contains a word that appears in the knowledge base as an entity of type T , regardless of whether the same word appeared earlier in the conversation. As seen on Table 10, match type features improve performance on out-of-vocabulary tasks 1 and 5, bringing it closer to that of Memory Networks without match type features, but still quite lagging Memory Networks with match type features. Bigrams slightly hurt rather than help performance, except in Task 5 in the standard in-vocabulary setup (performance is lower in the OOV setup).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel benchmark dataset for goal-oriented dialog with systematic task decomposition, comprehensive baseline comparisons, and real-world validation. Strong methodological contribution through match-type features for entity handling and OOV generalization."
+      },
+      "token": {
+        "prompt_tokens": 7165,
+        "completion_tokens": 80,
+        "total_tokens": 7245
+      },
+      "time": "2026-02-08T22:02:39.332938+00:00"
+    }
   ]
 }

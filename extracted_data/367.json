@@ -135,5 +135,21 @@
       "text": "We made some technical choices in the derivation of PC-AE, which prompt possible alternatives not explored here for a variety of reasons. Recounting these choices gives more insight into our framework. The output reconstructions could have restricted pairwise correlations, i.e. 1nXE > = B. One option is to impose such restrictions instead of the existing constraints on X, leaving X unrestricted. However, this is not in the spirit of this paper, because B is our means of indirectly conveying information to the decoder about how X is decoded. Another option is to restrict both X and X. This is possible and may be useful in propagating correlation information between layers of deeper architectures while learning, but its minimax solution does not have the conveniently clean structure of the PC-AE derivation. In a similar vein, we could restrict E during the encoding phase, using B and X. As B is changed only during this phase to better conform to the true data X, this tactic fixes B during the optimization, which is not in the spirit of this papers approach. It also performed significantly worse in our experiments.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework with rigorous minimax analysis, convex optimization guarantees, and competitive empirical results. However, limited to binary autoencoders and single-layer decoders, with modest experimental scope and unclear practical advantages over standard methods."
+      },
+      "token": {
+        "prompt_tokens": 11561,
+        "completion_tokens": 87,
+        "total_tokens": 11648
+      },
+      "time": "2026-02-08T22:08:04.004093+00:00"
+    }
   ]
 }

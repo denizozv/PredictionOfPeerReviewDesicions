@@ -145,5 +145,21 @@
       "text": "LSUN AUGMENTED VERSION TRAINING For LSUN bedroom dataset, aside from the experiment on the whole images, we also train an EBGAN auto-encoder model based on dataset augmentation by cropping patches. All the patches are of size 64 64 and cropped from 96 96 original images. The generation is shown in figure 11. COMPARISON OF EBGANS AND EBGAN-PTS To further demonstrate how the pull-away term (PT) may influence EBGAN auto-encoder model training, we chose both the whole-image and augmented-patch version of the LSUN bedroom dataset, together with the CelebA dataset to make some further experimentation. The comparison of EBGAN and EBGAN-PT generation are showed in figure 12, figure 13 and figure 14. Note that all comparison pairs adopt identical architectural and hyper-parameter setting as in section 4.3. The cost weight on the PT is set to 0.1.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel energy-based reformulation of GANs with theoretical guarantees, creative auto-encoder discriminator instantiation, comprehensive experiments demonstrating improved stability and high-resolution generation capability."
+      },
+      "token": {
+        "prompt_tokens": 5527,
+        "completion_tokens": 73,
+        "total_tokens": 5600
+      },
+      "time": "2026-02-08T22:18:09.020790+00:00"
+    }
   ]
 }

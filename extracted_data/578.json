@@ -190,5 +190,21 @@
       "text": "In this section, we include additional results from the experiments in Section 6.2 that did not fit in the main text. Figure 11 shows an example T-SNE embedding of the CNN representations. There appears to be very little cluster structure and the T-SNE embeddings appear to be sensitive to the random initialization of the embedding vectors. The results from multiple runs of the T-SNE embedding in general do not agree on either which points are outliers or on nearest neighbor pairs. This is likely because representation distances do not seem to follow the triangle inequality axiom. While Eq. 4 yields a symmetric function by averaging two one-way distances, we find that for some pairs of CNNs, there is significant difference between the magnitudes of those one-way distances. In other words, D(1, 2) = min E1 [L(E11(x), 2)]min E2 [L(1, E22(x))] (9) is large. Figure 12 plots a heat map of Eq. 9 applied pairwise to each CNN for each dataset. Optimization difficulties are one possible cause of large values in Figure 12. However, a more likely explanation is that some CNNs encode unique information about the input that cannot be predicted from the representations learned from other CNNs. B.4 IMPROVED EQUIVARIANCE Table 4 shows the results of finetuning using Eq. 7 for CNNs trained with different types of data augmentation. Overall, finetuning improves 3 of 9 transform types. We believe that performance does not improve for some transforms because the dataset naturally contains examples of those transforms due to different object poses. This is not the case for RVL-CDIP because the document images are always scanned in the same manner.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical study with novel measurement framework for CNN invariance/equivariance properties, comprehensive experiments across multiple transforms and datasets, and a practical loss function contribution. However, limited theoretical novelty and modest improvements from proposed method reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 7928,
+        "completion_tokens": 86,
+        "total_tokens": 8014
+      },
+      "time": "2026-02-08T22:30:35.202682+00:00"
+    }
   ]
 }

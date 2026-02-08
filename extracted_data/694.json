@@ -110,5 +110,21 @@
       "text": "Table 4 shows the phoneme to viseme clustering of Neti et al. (2000) and Figure 4 shows LipNets full phoneme confusion matrix.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel end-to-end sentence-level lipreading with spatiotemporal convolutions + RNN + CTC. Strong empirical results (95.2% accuracy, outperforms human lipreaders), thorough experimental validation with ablations, and interpretable learned representations. Clear methodological contribution to multimodal sequence learning."
+      },
+      "token": {
+        "prompt_tokens": 5609,
+        "completion_tokens": 106,
+        "total_tokens": 5715
+      },
+      "time": "2026-02-08T22:42:07.961447+00:00"
+    }
   ]
 }

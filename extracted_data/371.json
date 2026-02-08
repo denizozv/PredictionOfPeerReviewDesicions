@@ -110,5 +110,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel compositional architecture with strong inductive biases for physics learning; demonstrates clear generalization across variable object counts and scene configurations; rigorous ablation studies isolate contributions of each component; well-motivated design bridging symbolic and learned approaches."
+      },
+      "token": {
+        "prompt_tokens": 6349,
+        "completion_tokens": 85,
+        "total_tokens": 6434
+      },
+      "time": "2026-02-08T22:08:13.706070+00:00"
+    }
   ]
 }

@@ -120,5 +120,21 @@
       "text": "This experiment was suggested by AnonReviewer2 during the ICLR review process with the goal of disentangling the effects zoneout has (1) through noise injection in the training process and (2) through identity connections. Based on these results, we observe that noise injection is essential for obtaining the regularization benefits of zoneout. In this experiment, one zoneout mask is sampled at the beginning of training, and used for all examples. This means the identity connections introduced are static across training examples (but still different for each timestep). Using static identity connections resulted in slightly lower training (but not validation) error than zoneout, but worse performance than an unregularized LSTM on both train and validation sets, as shown in Figure 7.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel regularization technique with clear motivation, comprehensive experiments across multiple tasks and architectures, strong theoretical grounding (connections to dropout, stochastic depth), and significant empirical improvements. Well-executed work with thorough ablations and gradient flow analysis."
+      },
+      "token": {
+        "prompt_tokens": 5019,
+        "completion_tokens": 87,
+        "total_tokens": 5106
+      },
+      "time": "2026-02-08T22:10:20.231115+00:00"
+    }
   ]
 }

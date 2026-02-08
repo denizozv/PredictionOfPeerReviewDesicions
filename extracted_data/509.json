@@ -110,5 +110,21 @@
       "text": "An example of a Forth program, that implements the Bubble sort algorithm, is shown in Listing 1. Here we provide a description of how the first iteration of this algorithm is executed by the Forth abstract machine: The program begins at line 11, putting the sequence [2 4 2 7] on the data stack D, followed by the sequence length 44. It then calls the SORT word. D R c comment 1 [] [] 11 execution start 2 [2 4 2 7 4] [] 8 pushing sequence to D, calling SORT subroutine puts ASORT to R For a sequence of length 4, SORT performs a do-loop in line 9 that calls the BUBBLE sub-routine 3 times. It does so by decrementing the top of D with the 1- word to 3. Subsequently, 3 is duplicated on D by using DUP, and 0 is pushed onto D. 3 [2 4 2 7 3] [ASORT] 9 1- 4 [2 4 2 7 3 3] [ASORT] 9 DUP 6 [2 4 2 7 3 3 0] [ASORT] 9 0 DO consumes the top two stack elements 3 and 0 as the limit and starting point of the loop, leaving the stack D to be [2,4,2,7,3]. We use the return stack R as a temporary variable buffer and push 3 onto it using the word >R. This drops 3 from D, which we copy from R with R@ 7 [2 4 2 7 3] [AddrSORT] 9 DO 8 [2 4 2 7] [AddrSORT 3] 9 >R 9 [2 4 2 7 3] [AddrSORT 3] 9 @R Next, we call BUBBLE to perform one iteration of the bubble pass, (calling BUBBLE 3 times internally), and consuming 3. Notice that this call puts the current program counter onto R, to be used for the program counter c when exiting BUBBLE. Inside the BUBBLE subroutine, DUP duplicates 3 onR. IF consumes the duplicated 3 and interprets is as TRUE. >R puts 3 on R. 10 [2 4 2 7 3] [ASORT 3 ABUBBLE] 0 calling BUBBLE subroutine puts ABUBBLE to R 11 [2 4 2 7 3 3] [ASORT 3 ABUBBLE] 1 DUP 12 [2 4 2 7 3] [ASORT 3 ABUBBLE] 1 IF 13 [2 4 2 7] [ASORT 3 ABUBBLE 3] 1 >R Calling OVER twice duplicates the top two elements of the stack, to test them with , SWAP it with the next element, put it back to R with >R, decrease the TOS with 1- and invoke BUBBLE again. Notice that R will accumulate the analysed part of the sequence, which will be recursively taken back. 18 [2 4 7 2 3] [ASORT 3 ABUBBLE] 3 R > 19 [2 4 7 3 2] [ASORT 3 ABUBBLE] 3 SWAP 20 [2 4 7 3] [ASORT 3 ABUBBLE 2] 3 >R 21 [2 4 7 2] [ASORT 3 ABUBBLE 2] 3 1- 22 [2 4 7 2] [ASORT 3 ABUBBLE 2] 0 ...BUBBLE 4Note that Forth uses Reverse Polish Notation and that the top of the data stack is 4 in this example. When we reach the loop limit we drop the length of the sequence and exit SORT using the ; word, which takes the return address from R. At the final point, the stack should contain the ordered sequence [7 4 2 2]. C 4 WORDS IMPLEMENTATION",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel differentiable programming language interpreter with strong theoretical foundation, creative integration of neural networks with symbolic computation, and compelling empirical results on generalization tasks with limited data."
+      },
+      "token": {
+        "prompt_tokens": 7050,
+        "completion_tokens": 70,
+        "total_tokens": 7120
+      },
+      "time": "2026-02-08T22:24:11.703109+00:00"
+    }
   ]
 }

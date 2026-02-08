@@ -75,5 +75,21 @@
       "text": "Project funded by MINECO Ref. TIN (TIN2014-61068-R)",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty and narrow scope. The paper proposes straightforward visualization and ranking methods (weighted averaging of top activations, PCA-based color indexing, class label frequency analysis) applied to existing pre-trained networks. No new architectures, training methods, or theoretical insights. Empirical analysis is descriptive rather than providing actionable understanding. Methods lack rigor (arbitrary thresholds, ad-hoc normalization choices). Comparisons are absent—no validation against alternative interpretability approaches or quantitative benchmarks. The connection to neuroscience is speculative without rigorous testing. Work is more suitable for a workshop or domain-specific venue than top-tier ML conferences."
+      },
+      "token": {
+        "prompt_tokens": 5171,
+        "completion_tokens": 178,
+        "total_tokens": 5349
+      },
+      "time": "2026-02-08T22:44:20.938133+00:00"
+    }
   ]
 }

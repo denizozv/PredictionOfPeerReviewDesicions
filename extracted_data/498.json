@@ -200,5 +200,21 @@
       "text": "Neural network training in all the experiments is performed with mini-batch stochastic gradient descent (SGD) with momentum. We choose an initial learning rate of 0, and the learning rate is updated on each epoch of training as t = 0/(1 + t), where is the decay rate and t is the number of epoch completed. We run each experiment with 2,000 epochs and choose the parameters achieving the best performance on validation sets. Table 3 summarizes the chosen hyper-parameters for all experiments. Most of the hyper-parameters are chosen from Srivastava et al. (2014). But for some experiments, we cannot reproduce the performance reported in Srivastava et al. (2014) (We guess one of the possible reasons is that we used different library for implementation.). For these experiments, we tune the hyper-parameters on the validation sets by random search. Due to time constrains it is infeasible to do a random search across the full hyper-parameter space. Thus, we try to use as many hyper-parameters reported in Srivastava et al. (2014) as possible. D.3 EFFECT OF EXPECTATION-LINEARIZATION RATE Table 4 illustrates the detailed results of the experiments on the effect of . For MNIST, it lists the error rates under different values for six different network architectures. For two datasets of CIFAR, it gives the error rates under different values, among with the empirical expectation-linearization risk .",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel theoretical framework for dropout's inference gap with formal characterization, practical regularization method, and solid experimental validation across benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 13601,
+        "completion_tokens": 62,
+        "total_tokens": 13663
+      },
+      "time": "2026-02-08T22:23:08.814593+00:00"
+    }
   ]
 }

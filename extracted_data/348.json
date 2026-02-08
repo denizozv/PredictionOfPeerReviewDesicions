@@ -120,5 +120,21 @@
       "text": "Let H be a finite group. A subgroup of H is a subset that is also itself a group (i.e. closed under composition and inverses). The (left) coset of a subgroup K in H are the sets hK = hk|k K. The cosets are disjoint and jointly cover the whole group H (i.e. they partition H). The set of all cosets of K in H is denoted H/K, and is also called the quotient of H by K. The coset space caries a natural left action by H . Let a, b H , then a bK = (ab)K. This action translates into an action on the space of functions on H/K. Let Q denote the space of functions f : H/K R. Then we have the following representation of H: (a)f(bK) = f(a1 bK). (20) The function f attaches a value to every coset. The H-action permutes these values, because it permutes the cosets. Hence, can be realized by permutation matrices. For small groups the explicit computations can easily be done by hand, while for large groups this task can be automated. In this way, we get one permutation representation for each subgroup K of H . In particular, for the subgroup K = e (the trivial subgroup containing only the identity e), we have H/K = H . The representation in the space of functions on H is known as the regular representation. Using such regular representations in a steerable CNN is equivalent to using the group convolutions introduced in Cohen & Welling (2016), so steerable CNNs are a strict generalization of G-CNNs. At the other extreme, we take K = H , which gives the quotient H/K = e, the trivial group, which gives the trivial representation A1. For the roto-reflection group H = D4, we have the following subgroups and associated quotient features Subgroup K quotient feature name dimensionality e regular 8 e,m qm 4 e,mr qmr 4 e,mr2 qmr2 4 e,mr3 qmr3 4 e, r2 r2 4 e, r, r2, r3 r 2 e, r2,m,mr2 r2m 2 e, r2,mr,mr3 r2mr 2 H A1 1",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel theoretical framework grounding equivariant CNNs in group representation theory with practical efficiency gains and strong empirical results on CIFAR benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 6176,
+        "completion_tokens": 68,
+        "total_tokens": 6244
+      },
+      "time": "2026-02-08T22:06:17.424337+00:00"
+    }
   ]
 }

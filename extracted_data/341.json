@@ -90,5 +90,21 @@
       "text": "Joint Feature Extractor: Input is images are size 50 x 50 with 3 channels, RGB. Layers are 2 convolutional layers each followed by a max pooling layer of size 2. Layers use 5 filters of size 3 each. Domain Discriminator and the Class Discriminator: Input is domain agnostic output of convolutional layers. Layers are two feed forward layers of size 128 followed by a final feed forward layer of size 2 and a soft-max layer to get the log probabilities. ADAM is used for discriminator training with a learning rate of 0.001. The RL generator uses the off-the-shelf TRPO implementation available in RLLab.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel problem formulation (third-person imitation learning) with principled domain confusion approach. Clear methodological contribution combining adversarial imitation learning with domain adaptation. Solid experimental validation across multiple tasks, though limited to simple simulated environments and modest baseline comparisons."
+      },
+      "token": {
+        "prompt_tokens": 4966,
+        "completion_tokens": 91,
+        "total_tokens": 5057
+      },
+      "time": "2026-02-08T22:06:07.831394+00:00"
+    }
   ]
 }

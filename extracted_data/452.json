@@ -135,5 +135,21 @@
       "text": "Section 5.2 contains results of experiments on FiGAR-TRPO. Appendix C contains the experimental setup for the same. Throughout these experiments on FiGAR-TRPO the policy components fa and fx do not share any representations. This appendix contains experimental results in the setting wherein (fa and fx) share all layers except the final one. This agent/network is denoted with the name FiGAR-shared-TRPO. All the hyper-parameters are the same as those in Appendix C except ar and KL which were obtained through a grid-search similar to appendix C. These were tuned on all the 5 tasks. The values for these hyper-parameters that we found to be optimal are ar = 1.28 and KL = 0.16. The same training and evaluation regime as appendix C was used. The performance of the best policy learnt is tabulated in Table 10 FiGAR-shared-TRPO on the whole does not perform much better than FiGAR-TRPO. In these TRPO experiments, the neural networks we used were rather shallow at only two hidden layers deep. Hence, we believe that sharing of layers thus leads to only small gains in terms of optimality of policy learnt.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel factored policy representation for temporal abstraction in RL with consistent empirical validation across three different algorithms (A3C, TRPO, DDPG) and multiple domains. Clear methodological contribution despite incremental gains in some settings."
+      },
+      "token": {
+        "prompt_tokens": 5573,
+        "completion_tokens": 87,
+        "total_tokens": 5660
+      },
+      "time": "2026-02-08T22:18:05.053100+00:00"
+    }
   ]
 }

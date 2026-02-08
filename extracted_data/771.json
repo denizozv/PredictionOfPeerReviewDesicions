@@ -100,5 +100,21 @@
       "text": "We proposed a fuzzy approach to control the contamination caused by the polysemous words when a lexicon is used to improve the vector-space word representations. We annotate each paraphrase of a word with a degree of reliability, like the members of a fuzzy set with their memberships, on the basis of their multilingual similarities to the original ones. We use the fuzzy paraphrases to learn a corpus by jointly learning a generated text, in which the original words are randomly replaced by their paraphrases. A paraphrase is less likely to be put into the generated text if it has lower reliability than the others, and vice versa. We tested the performance using different types of paraphrases in the lexicon PPDB2.0 and find that it is best to use the equivalence type and the entailment type. Using other related paraphrases deteriorates the performance. We explored the effects of parameters. We find that the best parameter setting depends on the task. We should tune the model carefully in practical use. We evaluated the effectiveness of our approach by comparing it to the situations that simpler functions are used to control replacements: f(x) = 1 which accepts all, and f(x) = 0 which rejects all. We also repeated the experiments under a tiny, a medium sized, and a large corpus, to see the effects of the corpus size on the effectiveness. Our approach achieves the best in 3 of 4 benchmarks under the tiny corpus, and in all benchmarks under the medium sized and the large one. The results indicate that our approach is effective to improve the word vectors. Our proposed method also achieved the top scores, compared with the prior works. Unlike the previous works that solve the problems about polysemy by estimating a vector for each word sense or word type, our approach keeps one vector per word. It makes the word vectors easier to use in practical terms: it is neither necessary to disambiguate the word senses nor to tag the part-of-speeches before we use the word vectors. The fuzzy paraphrases can also be employed for the other models with some changes. We are going to show it in the future. The proposed idea for the polysemy problem without word sense disambiguation is meaningful especially for practical use because it saves the effort of part-of-speech tagging and word sense disambiguation. Besides, the control function may be more accurate if it considers all the context. We are also going to work on it in the future. We have opened the source of a demo of the proposed method online4.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in core contribution. The fuzzy paraphrase idea is a straightforward application of membership weighting to existing lexicon-based word embedding methods. The technical contribution (Bernoulli dropout based on PPDB similarity scores) is incremental. Experimental validation is narrow (word similarity/analogy tasks only), comparisons are incomplete (unable to reproduce baselines), and the writing quality is below conference standards. The work reads as an engineering improvement rather than a methodological advance."
+      },
+      "token": {
+        "prompt_tokens": 4986,
+        "completion_tokens": 138,
+        "total_tokens": 5124
+      },
+      "time": "2026-02-08T22:49:09.245126+00:00"
+    }
   ]
 }

@@ -125,5 +125,21 @@
       "text": "In our paper, we proposed the general two-step scheme of training SGNS word embedding model and introduced the algorithm that performs the search of a solution in the low-rank form via Riemannian optimization framework. We also demonstrated the superiority of the proposed method, by providing the experimental comparison to the existing state-of-the-art approaches. It seems to be an interesting direction of future work to apply more advanced optimization techniques to Step 1 of the scheme proposed in Section 1 and to explore the Step 2 obtaining embeddings with a given low-rank matrix. 3Original Google word2vec: https://code.google.com/archive/p/word2vec/ 4Gensim word2vec: https://radimrehurek.com/gensim/models/word2vec.html",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in methodology (standard Riemannian optimization applied to known SGNS problem), narrow experimental scope (only word similarity tasks on single corpus), marginal improvements over baselines, and lack of broader impact demonstration."
+      },
+      "token": {
+        "prompt_tokens": 5604,
+        "completion_tokens": 83,
+        "total_tokens": 5687
+      },
+      "time": "2026-02-08T22:43:05.395402+00:00"
+    }
   ]
 }

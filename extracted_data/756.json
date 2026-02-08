@@ -65,5 +65,21 @@
       "text": "We would like to thank Antje Relitz, Christoph Hartmann, Ivana Balazevic, and other anonymous reviewers for their helpful comments on earlier versions of this manuscript. Additionally, Franziska Horn acknowledges funding from the Elsa-Neumann scholarship from the TU Berlin.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty and weak experimental validation. SimEc is essentially a neural network approximation of kernel PCA with standard MSE/cross-entropy losses—the connection to kPCA is well-known. ConEc reinterprets word2vec through a similarity encoder lens without substantial algorithmic innovation. Experiments are limited to toy datasets (MNIST, 20 newsgroups) and a single NER task with modest improvements. No comparison to contemporary dimensionality reduction or embedding methods. The paper reads as an incremental application of existing techniques rather than a methodological advance suitable for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 6762,
+        "completion_tokens": 162,
+        "total_tokens": 6924
+      },
+      "time": "2026-02-08T22:48:11.328117+00:00"
+    }
   ]
 }

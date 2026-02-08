@@ -85,5 +85,21 @@
       "text": "In this section, we detail the metric used for computing the subspace distance between two matrices. The computed metric is closely related with the principle angles between subspaces, first defined in Jordan (1875). Our aim is to compute a metric distance between two given matrices, X and Y . We do this in three steps: (1) Obtain two matrices with orthonormal columns, U and V , such that span(U)=span(X) and span(V )=span(Y ). U and V could be obtained with a QR decomposition. (2) Calculate the projection of either one of U and V onto the other; e.g. do S = UUTV , where S is the projection of V onto U . Then calculate the residual matrix as R = V S. (3) Let .Fr denote the frobenious norm, and let C be the number of columns of R. Then the distance metric is found as d where d2 = 1C R 2 Fr = 1 C Trace(R TR). We note that d as calculated above is a valid metric up to the equivalence set of matrices which span the same column space, although we are not going to show it. Instead, we will mention some metric properties of d, and relate it to the principal angles between the subspaces. We first work out an expression for d: Cd2 = Trace(RTR) = Trace ( (V UUTV )T (V UUTV ) ) = Trace ( V T (I UUT )(I UUT )V ) = Trace ( V T (I UUT )V ) = Trace ( (I UUT )V V T ) = Trace(V TV ) Trace ( UUTV V T ) = C Trace ( UUTV V T ) = C Trace ( (UTV )T (UTV ) ) = C UTV 2Fr = C i=1 1 2i , (B.1) where i is the ith singular value of UTV , commonly referred to as the ith principle angle between the subspaces of X and Y , i. In above, we used the cyclic permutation property of the trace in the third and the fourth lines. Since d2 is 1C Trace(R TR), it is always nonnegative, and it is only zero when the residual is zero, which is the case when span(X) = span(Y). Further, it is symmetric between U and V due to the form of (B.1) (singular values of V TU and V TU are the same). Also, d2 = 1C C i=1 sin 2(i), namely the average of the sines of the principle angles, which is a quantity between 0 and 1.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel theoretical framework with strong empirical validation. Weight tying mechanism is well-motivated through loss augmentation analysis, achieves SOTA on PTB, and provides both theoretical insights and practical parameter reduction benefits."
+      },
+      "token": {
+        "prompt_tokens": 6331,
+        "completion_tokens": 78,
+        "total_tokens": 6409
+      },
+      "time": "2026-02-08T22:20:24.375922+00:00"
+    }
   ]
 }

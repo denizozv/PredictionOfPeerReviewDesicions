@@ -60,5 +60,21 @@
       "text": "Work supported by a Google Faculty Research Award and by NSF award IIS1423515. We thank Ramin Raziperchikolaei (UC Merced) for discussions about binary autoencoders, Dong Li (UC Merced) for discussions about MPI and performance evaluation on parallel systems, and Quoc Le (Google) for discussions about Googles DistBelief system.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel distributed optimization framework with solid theoretical analysis, practical MPI implementation, and strong experimental validation on large-scale datasets. Clear contribution to parallel machine learning, though application scope (binary autoencoders) is somewhat narrow."
+      },
+      "token": {
+        "prompt_tokens": 7765,
+        "completion_tokens": 81,
+        "total_tokens": 7846
+      },
+      "time": "2026-02-08T22:46:14.446807+00:00"
+    }
   ]
 }

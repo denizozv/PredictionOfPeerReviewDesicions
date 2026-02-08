@@ -120,5 +120,21 @@
       "text": "",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel character-level open-vocabulary approach with NCE training for NLM; solid experimental validation on morphologically-rich language (Czech MT); addresses real technical challenges (training instability, character n-gram contamination); demonstrates practical improvements (+0.7 BLEU). Limitations: modest gains, narrow task scope (reranking only), some design choices (no LSTMs) lack strong justification."
+      },
+      "token": {
+        "prompt_tokens": 4952,
+        "completion_tokens": 123,
+        "total_tokens": 5075
+      },
+      "time": "2026-02-08T22:41:18.827534+00:00"
+    }
   ]
 }

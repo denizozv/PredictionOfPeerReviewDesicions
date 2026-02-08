@@ -90,5 +90,21 @@
       "text": "This work combined the mRNNs factorized hidden weights with the LSTMs hidden units for generative modelling of discrete multinomial sequences. This mLSTM architecture was motivated by its ability to have both controlled and flexible input-dependent transitions, to allow for fast changes to the distributed hidden representation without erasing information. In a series of character-level language modelling experiments, mLSTM showed improvements over LSTM and its deep variants. This relative improvement increased with the complexity of the task, and provides evidence that mLSTM has a more powerful fitting ability for character-level language modelling than regular LSTM and its common deep variants. mLSTM performed competitively at large scale characterlevel language modelling, and achieved dramatic improvement over the state of the art with 1.19 bits/character on the Hutter prize dataset when combined with dynamic evaluation, motivating further investigation of dynamic evaluation for RNN sequence modelling. While these results are promising, it remains to be seen how mLSTM performs at word-level language modelling and other discrete multinomial generative modelling tasks, and whether mLSTM can be formulated to apply more broadly to tasks with continuous or non-sparse input units. We also hope this work will motivate further exploration in generative RNN architectures with flexible input-dependent transition functions.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel architecture combining mRNN and LSTM with clear motivation, comprehensive experiments across multiple benchmarks (Penn Treebank, Text8, Hutter Prize), strong empirical results including state-of-the-art with dynamic evaluation, and insightful analysis of model behavior after surprising inputs."
+      },
+      "token": {
+        "prompt_tokens": 5102,
+        "completion_tokens": 98,
+        "total_tokens": 5200
+      },
+      "time": "2026-02-08T22:26:13.653160+00:00"
+    }
   ]
 }

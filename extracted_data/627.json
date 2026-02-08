@@ -135,5 +135,21 @@
       "text": "C.1 HYPERPARAMETERS Table 2 presents parameters that we use in the experiments. We found that Multi30k dataset is easy to overfit. Figure 8 and Figure 9 present training cost and validation METEOR score graph of the two experimental settings of the NMT model. Table 3 presents the hyperparameters which were used in the experiments. Large decay-c ans small batchsize give the better METEOR scores in the end. Training is stopped if there is no validation cost improvements over the last 10 validations. 0 10000 20000 30000 40000 50000 60000 70000 iteration 0 20 40 60 80 100 co st Training cost 1 2 Figure 8: NMT Training Cost 0 10 20 30 40 50 60 70 iteration (x 1000) 0 10 20 30 40 50 60 M E T E O R Validation METEOR 1 2 Figure 9: NMT Validation METEOR score Figure 10 presents the English word length histogram of the Multi30k test dataset. Most sentences in the Multi30k are less than 20 words. We assume that this is one of the reasons why Multi30k is easy to overfit. C.2 COST GRAPH Figure 11 and 12 present the training cost and validation cost graph of each models. Please note that VNMT fine-tuned NMT, and other models fine-tuned VNMT. C.3 TRANSLATION EXAMPLES We present some selected translations from VNMT and our proposed model (G). As of translation 3 to 5 our model give the better METEOR scores than VNMT and as of translation 6 to 8 VNMT give the better METEOR scores than our models.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty (straightforward VAE+image extension of VNMT), weak experimental validation (small dataset, marginal improvements, overfitting issues), and insufficient analysis of why multimodal fusion helps."
+      },
+      "token": {
+        "prompt_tokens": 6431,
+        "completion_tokens": 79,
+        "total_tokens": 6510
+      },
+      "time": "2026-02-08T22:36:04.182520+00:00"
+    }
   ]
 }

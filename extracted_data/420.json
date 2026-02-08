@@ -85,5 +85,21 @@
       "text": "This work was supported by Microsoft Research and the Engineering and Physical Sciences Research Council through PhD Scholarship Programmes, an Allen Distinguished Investigator Award, and a Marie Curie Career Integration Award.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel empirical finding that simple n-gram RNN matches sophisticated attention mechanisms; well-executed experiments with clear insights about attention span limitations in language modeling, though incremental methodological contributions."
+      },
+      "token": {
+        "prompt_tokens": 3488,
+        "completion_tokens": 74,
+        "total_tokens": 3562
+      },
+      "time": "2026-02-08T22:14:12.055565+00:00"
+    }
   ]
 }

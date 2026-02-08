@@ -65,5 +65,21 @@
       "text": "We presented a reinforcement learning method to learn hierarchical structures of natural language sentences. We demonstrated the benefit of learning task-specific composition order on four tasks: sentiment analysis, semantic relatedness, natural language inference, and sentence generation. We qualitatively and quantitatively analyzed the induced trees and showed that they both incorporate some linguistically intuitive structures (e.g., noun phrases, simple verb phrases) and are different than conventional English syntactic structures.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel application of RL to unsupervised syntax discovery for sentence representation; strong empirical validation across multiple NLP tasks; clear methodological contribution with thorough experimental analysis and interpretability of learned structures."
+      },
+      "token": {
+        "prompt_tokens": 4568,
+        "completion_tokens": 78,
+        "total_tokens": 4646
+      },
+      "time": "2026-02-08T22:19:15.680500+00:00"
+    }
   ]
 }

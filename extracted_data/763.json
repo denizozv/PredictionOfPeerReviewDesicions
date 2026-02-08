@@ -90,5 +90,21 @@
       "text": "We have proposed a model for relational time series forecasting. Our model (RDG) is based on latent Gaussian embeddings, and has shown competitive performance on four different datasets compared to state-of-the-art models. Moreover, RDG allows us to model the uncertainty of predictions, providing for example confidence intervals for each prediction. Future work will investigate more complex dynamic and prediction functions, as well as observing the behavior of the model for imputation tasks.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel probabilistic state-space model with principled uncertainty quantification for relational time series. Strong theoretical grounding (KL divergence, Gaussian embeddings), well-motivated structural regularization, and comprehensive experimental validation across multiple domains. Solid contribution despite incremental improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 5019,
+        "completion_tokens": 96,
+        "total_tokens": 5115
+      },
+      "time": "2026-02-08T22:48:20.547108+00:00"
+    }
   ]
 }

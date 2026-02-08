@@ -85,5 +85,21 @@
       "text": "In Table A1 we report for each dataset: the radiuses r of the neighborhood subgraphs used in the EGNN decomposition and the number of units in the hidden layers for each stratum. Figure A1: Parameters for the neural networks used in the experiments. DATASET RADIUSES HIDDEN UNITS r S0 S1 S2 COLLAB 0, 1 15 5 5 2 5 3 IMDB-BINARY 0, 1, 2 2 5 2 5 3 1 IMDB-MULTI 0, 1, 2 2 5 2 5 3 REDDIT-BINARY 0, 1 10 5 5 2 5 3 1 REDDIT-MULTI5K 0, 1 10 10 6 5 REDDIT-MULTI12K 0, 1 10 10 20 11 MUTAG 0, 1, 2, 3 10 5 5 5 5 1 PTC 0, 1 15 15 15 1 NCI1 0, 1, 2, 3 15 15 15 10 1 PROTEINS 0, 1, 2, 3 3 2 6 5 4 6 3 1 D&D 0, 1, 2, 3 10 5 2 5 3 1",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel hierarchical decomposition framework with principled SAE schema and domain compression technique exploiting symmetries. Solid experimental validation on social networks with clear speedup/memory benefits. Methodologically sound contribution despite limited baseline comparisons and incremental improvements over prior work."
+      },
+      "token": {
+        "prompt_tokens": 5516,
+        "completion_tokens": 90,
+        "total_tokens": 5606
+      },
+      "time": "2026-02-08T22:24:10.058104+00:00"
+    }
   ]
 }

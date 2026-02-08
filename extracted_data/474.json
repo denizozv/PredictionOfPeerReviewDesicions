@@ -95,5 +95,21 @@
       "text": "Table 4 is essentially the same as Table 2 in our previous publication (Yu et al., 2016a), with feature notations following the current fashion. is the pace control parameter that we used in our previous system. No hierarchy was present in any of the three rule traces. For instance, the ordering features were learned as independent rules in a trace, even if they are apparently correlated, e.g. the ordering of w1,2,3,4 (S,A,T,B) implies the ordering of w1,4 (S,B).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel hierarchical representation learning for interpretable music concept extraction with principled information-theoretic framework (Bayesian surprise, KL divergence). Strong technical depth in feature hierarchy induction and adaptive memory selection. Clear pedagogical application. However, limited experimental validation (single dataset, no quantitative comparisons with baselines, no user studies despite pedagogical claims)."
+      },
+      "token": {
+        "prompt_tokens": 6751,
+        "completion_tokens": 111,
+        "total_tokens": 6862
+      },
+      "time": "2026-02-08T22:20:26.658695+00:00"
+    }
   ]
 }

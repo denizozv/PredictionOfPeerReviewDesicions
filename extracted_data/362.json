@@ -130,5 +130,21 @@
       "text": "We evaluate the learned neural net optimizer, which is trained on neural net classification problems on data drawn from mixtures of four random Gaussians, on neural net classification problems on data drawn from mixtures of different numbers of random Gaussians. As the number of mixture components increases, the data distributions used at test time become more dissimilar from those seen during training. As shown in Figures 5, the learned optimizer seems to be fairly robust and performs reasonably well despite deviations of data distributions from those used for training.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel meta-learning approach using RL/GPS to learn optimization algorithms; strong conceptual contribution with solid experimental validation across convex and non-convex problems; clear generalization to unseen objectives."
+      },
+      "token": {
+        "prompt_tokens": 6584,
+        "completion_tokens": 77,
+        "total_tokens": 6661
+      },
+      "time": "2026-02-08T22:07:16.620426+00:00"
+    }
   ]
 }

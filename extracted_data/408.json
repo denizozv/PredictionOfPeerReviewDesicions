@@ -90,5 +90,21 @@
       "text": "We first explore the effect of network architectures for our embedding models. We learn embeddings using objective obj0 and evaluate them on the acoustic and cross-view word discrimination tasks. The resulting average precisions on the development set are given in Table 4. All of the models were trained for 1000 epochs, except for the 1-layer unidirectional models which converged after 500 epochs. It is clear that bidirectional LSTMs are more successful than unidirectional LSTMs for these tasks, and two layers of LSTMs are much better than a single layer of LSTMs. We did not observe significant further improvement by using more than two layers of LSTMs. For all other experiments, we fix the architecture to 2-layer bidirectional LSTMs for each view. In Figure 5 we also give the precision-recall curve for our best models, as well as the scatter plot of cosine distances between acoustic embeddings vs. orthographic edit distances.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel multi-view contrastive learning approach for acoustic embeddings with systematic exploration of loss variants and cross-view tasks. Solid experimental design and clear contributions, though incremental methodologically (LSTM + contrastive losses)."
+      },
+      "token": {
+        "prompt_tokens": 5914,
+        "completion_tokens": 84,
+        "total_tokens": 5998
+      },
+      "time": "2026-02-08T22:12:36.683658+00:00"
+    }
   ]
 }

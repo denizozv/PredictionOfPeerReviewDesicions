@@ -85,5 +85,21 @@
       "text": "We display a couple of representative documents, one each from the Daily Mail and DUC corpora, highlighting the sentences chosen by deep classifier and comparing them with the gold summaries in Table 6. The examples demonstrate qualitatively that the model performs a reasonably good job in identifying the key messages of a document.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited architectural novelty (standard RNN-based sequence models with interpretable scoring), incremental contribution over Cheng & Lapata (2016), noisy pseudo ground-truth generation via greedy ROUGE matching, and mixed experimental results (matches rather than exceeds SOTA on Daily Mail, underperforms on DUC 2002)."
+      },
+      "token": {
+        "prompt_tokens": 5011,
+        "completion_tokens": 110,
+        "total_tokens": 5121
+      },
+      "time": "2026-02-08T22:43:12.873204+00:00"
+    }
   ]
 }

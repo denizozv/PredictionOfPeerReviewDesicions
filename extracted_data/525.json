@@ -80,5 +80,21 @@
       "text": "This paper describes a first online structure learning technique for Gaussian SPNs that does a single pass through the data. This allowed us to learn the structure of Gaussian SPNs in domains for which the state of the art was previously to generate a random network structure. This algorithm can also scale to large datasets efficiently. In the future, this work could be extended in several directions. We are investigating the combination of our structure learning technique with other parameter learning methods. Currently, we are simply learning the parameters by keeping running statistics for the weights, mean vectors, and covariance matrices. It might be possible to improve the performance by using more sophisticated parameter learning algorithms. We would also like to extend the structure learning algorithm to discrete variables. Finally, we would like to look into ways to automatically control the complexity of the networks. For example, it would be useful to add a regularization mechanism to avoid possible overfitting.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "First online structure learning for continuous SPNs with Gaussian leaves; novel parameter update technique with theoretical guarantee; solid experimental validation on multiple datasets with comparisons to baselines."
+      },
+      "token": {
+        "prompt_tokens": 8743,
+        "completion_tokens": 71,
+        "total_tokens": 8814
+      },
+      "time": "2026-02-08T22:26:09.914503+00:00"
+    }
   ]
 }

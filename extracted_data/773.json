@@ -85,5 +85,21 @@
       "text": "We have introduced rectified factor networks (RFNs) for biclustering and benchmarked it with 13 other biclustering methods on artificial and real-world data sets. On 400 benchmark data sets with artificially implanted biclusters, RFN significantly outperformed all other biclustering competitors including FABIA. On three gene expression data sets with previously verified ground-truth, RFN biclustering yielded twice significantly better results than all other methods and was once the second best performing method. On data of the 1000 Genomes Project, RFN could identify IBD segments which support the hypothesis that interbreeding between ancestors of humans and other ancient hominins already have taken place in Africa. RFN biclustering is geared to large data sets, sparse coding, many coding units, and distinct membership assignment. Thereby RFN biclustering overcomes the shortcomings of FABIA and has the potential to become the new state of the art biclustering algorithm. Acknowledgment. We thank the NVIDIA Corporation for supporting this research with several Titan X GPUs.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid application of RFNs to biclustering with comprehensive experiments on synthetic, gene expression, and genomic data. Clear methodological contribution (Laplace priors, dropout for sparsity) and strong empirical results against 13 baselines. However, limited algorithmic novelty (applies existing RFN framework) and presentation could be more concise for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4855,
+        "completion_tokens": 119,
+        "total_tokens": 4974
+      },
+      "time": "2026-02-08T22:49:14.364134+00:00"
+    }
   ]
 }

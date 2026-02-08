@@ -70,5 +70,21 @@
       "text": "We introduce an end-to-end memory-based attention model to describe an input video using natural language description, similar to the central executive system proposed in human cognition. Our model utilizes memories of past attention when reasoning about where to attend to in the current time step. This allows the model to not only reason about local attention more effectively, but also allows it to consider the entire sequence of video frames while generating each word. Our experiments have confirmed that the memory components in our architecture play a significant role in improving the performance of the entire network. It is worth noting that in this paper, we consider the problem of video caption generation, but our architecture can be applied to any sequence learning problem, which we hope to explore in the future.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core components (standard LSTM+attention), incremental contribution (memory-augmented attention is straightforward extension of existing mechanisms), weak experimental validation (only 2 datasets, modest improvements, no statistical significance testing, limited baselines), and presentation issues (unclear memory mechanism formulation, missing technical depth)."
+      },
+      "token": {
+        "prompt_tokens": 4992,
+        "completion_tokens": 103,
+        "total_tokens": 5095
+      },
+      "time": "2026-02-08T22:34:07.364654+00:00"
+    }
   ]
 }

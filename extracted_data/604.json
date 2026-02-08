@@ -75,5 +75,21 @@
       "text": "In this paper we have proposed how to use a modified PN (Vinyals et al., 2015b) to extract links between ACs in argumentative text. We evaluate our models on two corpora: a corpus of persuasive essays (Stab & Gurevych, 2016), and a corpus of microtexts (Peldszus, 2014). The PN model records state-of-the-art results on the persuasive essay corpus, as well as achieving state-of-the-art results for link prediction on the microtext corpus, despite only having 90 training examples. The results show that jointly modeling the two prediction tasks is crucial for high performance, as well as the presence of a fully-connected layer prior to the LSTM input. Future work can attempt to learn the AC representations themselves, such as in Kumar et al. (2015). Lastly, future work can integrate subtasks 1 and 4 into the model. The representations produced by Equation 3 could potentially be used to predict the type of link connecting ACs, i.e. supporting or attacking; this is the fourth subtask in the pipeline. In addition, a segmenting technique, such as the one proposed by Weston et al. (2014), can accomplish subtask 1.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel application of Pointer Networks to argumentation mining with joint learning; solid experimental validation on two corpora with state-of-the-art results; clear methodological contribution despite incremental architectural modifications."
+      },
+      "token": {
+        "prompt_tokens": 3979,
+        "completion_tokens": 77,
+        "total_tokens": 4056
+      },
+      "time": "2026-02-08T22:33:20.873424+00:00"
+    }
   ]
 }

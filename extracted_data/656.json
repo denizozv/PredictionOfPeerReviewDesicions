@@ -110,5 +110,21 @@
       "text": "In this section, we recall the notion of additive stability of a deep network and derive some simple properties that shows that instabilities are due to the cascaded deepnetwork, and we demonstrate bounds to quantify them. Instabilities are due to perturbations of an initial sample that a deepnetwork does not reduce correctly: the modification is visually not significant or does not affect the label of the perturbated sample, yet the network incorrectly classifies the image. We consider a (trained) deep network f , with bounded outputs, that are for instance the probabilities output obtained after a sigmoid function. We write label(x) the labels computed by this deepnetwork for an input x. It is possible to define the contraction factor of a deep network f via: (f) = sup label(x) 6=label(y) f(x) f(y) x y Observe that label(x) 6= label(y) x 6= y. A small value of (f) indicates a better stability. It is possible to introduce a local version of this definition, that depends on the input sample (Moosavi-Dezfooli et al., 2015). It is consistant with the definitions of Goodfellow et al. (2016); Moosavi-Dezfooli et al. (2015); Szegedy et al. (2013); Goodfellow et al. (2014), in the sens that the numerator is bounded, but the denominator might become arbitrary small. Let us now consider a hybrid network, e.g. for an input x, the output is f(Sx) where Sx Rn is its scattering transform. Let us write S = Sx, x the span of a scattering transform, which corresponds to a strict embedding in the standard euclidean space Rn, e.g. S ( Rn. Proposition 1. The following bounds stand: (f S) sup label(x) 6=label(y) (x,y)S2 f(x) f(y) x y (f) Proof. Let x, y two samples with different estimated labels, then Sx 6= Sy. In this case, f(Sx) f(Sy) x y = f(Sx) f(Sy) Sx Sy . Sx Sy x y Thanks to the non-expansivity property of a Scattering transform, Sx Sy x y 1 Setting x = Sx, y = Sy and taking the supremum ends the demonstration. One sees that the amplitude of the resulting instabilities depends on the class of f . Furthermore, the inequalities might be strict and the bounds tighter, but there is no reason it does occur. However, it suggests that such instabilities could be removed if additional constraints were added during the training phase of f . The deformation transformations are as well a class of instabilities. The cited works (Goodfellow et al., 2016; Moosavi-Dezfooli et al., 2015; Szegedy et al., 2013; Goodfellow et al., 2014) do not consider them, however, since the scattering transform linearizes them, one sees it is possible for a deepnetwork to explicitly build such invariance. Actually, the average along rotation and translation variables observed in Subsection 3.2.1 seems to indicate it is likely to occur.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel hybrid architecture combining fixed scattering transform with learned CNN; strong theoretical motivation (stability, geometric invariance); solid experimental validation on small-data regimes; interpretable analysis of learned representations."
+      },
+      "token": {
+        "prompt_tokens": 7230,
+        "completion_tokens": 76,
+        "total_tokens": 7306
+      },
+      "time": "2026-02-08T22:38:26.987536+00:00"
+    }
   ]
 }

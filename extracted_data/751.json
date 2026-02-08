@@ -60,5 +60,21 @@
       "text": "Our experiments suggest that DQNs may be too brittle for use in real-world applications where harm can come of actions. While its easy to visualize these problems on toy examples, similar dynamics are embedded in more complex domains. Consider a domestic robot acting as a barber. The robot might receive positive feedback for giving a closer shave. This reward encourages closer contact at a steeper angle. Of course, the shape of this reward function belies the catastrophe lurking just past the optimal shave. Similar dynamics might be found in a vehicle which is rewarded for traveling faster but could risk an accident with excessive speed. These scenarios are not so unlike the pathological case presented in Adventure Seeker. We might even say these shortcomings seem analogous to the fundamental inability of linear models to solve XOR. But while XOR can be solved by simply incorporating hidden layers of representation, its less obvious how to overcome these pitfalls. These early successes of the intrinsic fear model suggest that for some classes of problems, we might avoid perpetual catastrophe and still enjoy the benefits of function approximation. In this work we assume the ability to recognize a catastrophe once it has happened. But we dont assume anything in advance about the precise form that the danger states might take in the state space. Our approaches seem appropriate for problems with some notion of proximity. A self-driving car cant run over a passenger in the next second if no people are in close proximity. But out methods might not be appropriate for other problems. For example, in a problem where a single action, from any state, can produce a catastrophe with high probability, our methods might fail. This work represents a first step towards combating AI safety issues stemming from the use of function approximation in deep reinforcement learning. In follow-up work, we hope to formalize the notion of danger presented here. We hope to critically examine competing definitions of catastrophe and of danger, to organize them into a taxonomy and to develop theory addressing the most promising ones. We also hope to explore the effectiveness of our technique on more complex domains. In precisely what sorts of environments should our approach work? Under what conditions can we expect it to fail?",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel problem formulation (Sisyphean curse in DQN), well-motivated safety approach with clear intuition, demonstrates pathological failures in standard benchmarks, introduces intrinsic fear mechanism with theoretical grounding. However, limited experimental scope (toy problems + one Atari game), hyperparameter sensitivity (fear radius, phase-in), and lack of comparison with recent safe RL methods weaken contribution."
+      },
+      "token": {
+        "prompt_tokens": 4855,
+        "completion_tokens": 122,
+        "total_tokens": 4977
+      },
+      "time": "2026-02-08T22:47:22.220621+00:00"
+    }
   ]
 }

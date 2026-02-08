@@ -75,5 +75,21 @@
       "text": "We introduced a novel latent space modeling method for supervised tasks based on the standard feed-forward neural network architecture. The presented model simultaneously optimizes both supervised and unsupervised losses based on the assumption that the better latent representation can be obtained by maximizing the sum of hierarchical mutual informations. Especially the stochastic perturbation process which is achieved by modeling the semantic additive noise during training enhances the representational power of the latent space. From the proposed semantic noise modeling process, we can expect improvement of generalization performance in supervised learning with implicit semantic augmentation effect on the latent space. The presented model architecture can be intuitively extended to semi-supervised learning because it is implemented as the joint optimization of supervised and unsupervised objectives. For semisupervised learning, however, logical link between features learned from labelled and unlabelled data needs to be considered additionally. We leave the extension of the presented approach to semisupervised learning for the future.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty and weak experimental validation. The base model (maximizing hierarchical mutual information) is a straightforward combination of existing ideas. The semantic noise modeling via output-space perturbation is incremental—essentially a regularization technique without strong theoretical justification. Experiments limited to MNIST and CIFAR-10 with modest improvements; no comparison with modern regularization methods (dropout, batch norm, mixup, etc.). Mathematical derivation in Section 2.1 is loose (acknowledged lower bound). Missing ablations and analysis of why semantic perturbation works. Presentation could be clearer."
+      },
+      "token": {
+        "prompt_tokens": 4817,
+        "completion_tokens": 162,
+        "total_tokens": 4979
+      },
+      "time": "2026-02-08T22:49:21.226957+00:00"
+    }
   ]
 }

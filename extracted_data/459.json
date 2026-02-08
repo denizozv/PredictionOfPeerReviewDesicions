@@ -85,5 +85,21 @@
       "text": "We list the number of parameters for each model in the first experiment (MNIST, binary one-vs-rest classification) and the performance (1% training data, mean of error rate for 10-fold CV). The conventional hard-sharing method (UD-MTL) design is to share all layers except the top layer. Its number of parameter is roughly 10% of the single task learning method (STL), as most parameters are shared across the 10 tasks corresponding to 10 digits. Our soft-sharing methods also significantly reduce the number of parameters compared to STL, but are larger than UD-MTLs hard sharing. To compare our method to UD-MTL, while controlling for network capacity, we expanded UDMDL by adding more hidden neurons so its number of parameter is close to our methods (denoted UD-MTL-Large). However UD-MDL performance does not increase. This is evidence that our models good performance is not simply due to greater capacity than UD-MTL.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel tensor factorization framework for deep MTL with automatic soft parameter sharing across layers; solid experimental validation on multiple datasets (MNIST, AdienceFaces, Omniglot) demonstrating consistent improvements over user-defined hard sharing; principled approach to learning sharing structure from data rather than manual design."
+      },
+      "token": {
+        "prompt_tokens": 6750,
+        "completion_tokens": 101,
+        "total_tokens": 6851
+      },
+      "time": "2026-02-08T22:19:07.132128+00:00"
+    }
   ]
 }

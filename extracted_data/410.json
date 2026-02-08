@@ -105,5 +105,21 @@
       "text": "Throughout this work, we show that the softmax probability of a predicted class is consistently high and thus is a poor proxy for estimating the confidence in a classification. In addition to being frequently high, the softmax prediction probability is bounded below by a value greater than zero. To see this, note that a binary sentiment classifiers minimum confidence in an out-of-distribution example is 50% since the highest softmax probability must be at least 50%. Yet for an out-ofdistribution example we may want less confidence if confidence is to reflect the probability of correct classification. To evaluate how well a confidence model reflects the probability of correct classification, we present two metrics. First, let us establish notation. Denote the confidence model by c : X [0, 1], where X is a set of inputs. An output near 1 from c reflects high confidence, or a high probability that the underlying classification model f : X Y correctly classified its input. Also, let 1(b) be 1 if b is True, and 0 if b is False. A possible confidence model evaluation metric is accuracy. To compute this, we must threshold the confidence at 0.5. However, the model can output probabilities slightly above or below 0.5 and obtain perfect accuracy. Probabilities all near 0.5 are insufficiently informative and lack numerical resolution, and for this reason we avoid thresholding in our metrics. Instead, we use the confidence itself in a metric which we call the probability alignment score, E(x,y)(X ,Y)[21(f(x) = y) 1][2c(x) 1]. Note that if f is a highly accurate model, then the confidence model can obtain a high probability alignment by predicting 1 constantly. We meet this challenge by also calculating a soft F1 score (Pastor-Pellicer et al., 1998) for a test set (xi, yi)mi=1. We define the soft F1 score by first letting tp = m i=1(1 c(xi))1(f(xi) 6= yi), fp = m i=1(1 c(xi))1(f(xi) = yi), fn = m i=1 c(xi)1(f(xi) 6= yi), pr = tp/(tp + fp), and rc = tp/(tp + fn). Then the soft F1 score is 2 pr rc pr + rc , and this is our second and final metric for evaluating a confidence model. Using these metrics, we now establish a baseline using the logits of a softmax. Let li represent the logits vector (the input to the softmax) for example xi. Our baseline confidence model is c(xi) = (max li), where is the logistic sigmoid. Let us evaluate this baseline by using the same MNIST, Twitter, and IMDB setups from before. We take the median result over five runs. In the case of CIFAR-10, we train using a 40-2 WideResNet. The results are in Table 12, and they indicate that the probabilities are positively aligned and have a nonzero soft F1 score. However, these results also indicate wide room for improvement. In this appendix, we presented a simple baseline method for estimating classification confidence and metrics for evaluating the confidence model. The baseline draws on the idea of using softmax classification information to create a confidence model. We hope this appendix gives ideas for future research directions, serves as a baseline, or provides metrics for confidence model evaluation.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: proposes softmax maximum probability as baseline for error/OOD detection (well-known observation), with auxiliary decoder method lacking sufficient technical depth. Primarily an empirical study across datasets rather than a methodological contribution. Suitable for a workshop or applications track, not a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 6057,
+        "completion_tokens": 101,
+        "total_tokens": 6158
+      },
+      "time": "2026-02-08T22:12:44.044509+00:00"
+    }
   ]
 }

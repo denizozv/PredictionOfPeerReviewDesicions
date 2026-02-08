@@ -60,5 +60,21 @@
       "text": "We would like to thank Afonso Bandeira, Yann Dauphin, Ruoyu Sun, Arthur Szlam and Soumith Chintala for valuable discussions. We also thank the reviewers for valuable feedback. Part of the research has been conducted when the first author was an intern at FAIR.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Empirical observations lack theoretical insight or mechanistic explanation. Limited novelty: bulk-edge Hessian structure is known from random matrix theory. Experiments are narrow (toy 2D data, small MNIST subsets, simple architectures). No actionable implications for deep learning practice or theory. Missing connections to existing literature on loss landscape geometry."
+      },
+      "token": {
+        "prompt_tokens": 1573,
+        "completion_tokens": 109,
+        "total_tokens": 1682
+      },
+      "time": "2026-02-08T22:35:16.052094+00:00"
+    }
   ]
 }

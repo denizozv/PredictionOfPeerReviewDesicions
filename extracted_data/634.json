@@ -90,5 +90,21 @@
       "text": "This research is based upon work funded in part by NSF IIS-1320956 and in part by the Office of the Director of National Intelligence (ODNI), Intelligence Advanced Research Projects Activity (IARPA), via IARPA R&D Contract No. 2014-14071600012. The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies or endorsements, either expressed or implied, of the ODNI, IARPA, or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Governmental purposes notwithstanding any copyright annotation thereon.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel layerwise approach to adversarial generation and DNN visualization with dual utility; solid experimental validation on MNIST and VGGFace; demonstrates practical improvements in adversarial robustness training. However, limited theoretical depth, incremental over prior work (hot/cold, FGS), and modest experimental scope reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 5185,
+        "completion_tokens": 106,
+        "total_tokens": 5291
+      },
+      "time": "2026-02-08T22:37:08.452413+00:00"
+    }
   ]
 }

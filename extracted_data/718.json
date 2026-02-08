@@ -120,5 +120,21 @@
       "text": "For the XOR task, we set the number of hidden units to [3, 4, 5]. For MNIST, we used [100, 100, 100] network for all experiments. The learning rate was fixed to 0.001 at pretraining time and 0.1 at finetuning. We trained 30 epochs of pretrainings for each MLP layer and 50 epochs of finetuning. We used a single core of Intel(R) E5-2630 @ 2.40GHz to measure the performance invariant to paralization method. The effect of paralization is a question for future research.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Limited novelty: reformulating standard neural networks as message-passing agents is conceptually interesting but lacks significant algorithmic or theoretical contribution. Experiments are weak (only MNIST, toy XOR, no comparison with modern baselines). The claimed equivalence to standard SDAE is trivial—it's a reimplementation, not a new method. Sparse connectivity is a minor variant with unclear benefits. Writing quality is poor with numerous grammatical errors. No evidence of practical advantages over standard implementations."
+      },
+      "token": {
+        "prompt_tokens": 6183,
+        "completion_tokens": 138,
+        "total_tokens": 6321
+      },
+      "time": "2026-02-08T22:44:23.695099+00:00"
+    }
   ]
 }

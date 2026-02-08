@@ -95,5 +95,21 @@
       "text": "In this paper, the overlaps between different regions occur in the 3 and 4 scale pyramid. A single region in each scale can be specified as the combination of a slice from the the width and height of the feature map. If a scale has N N regions, then the number of slices in width and height of the feature map are both N . We use the same set of slices for both the width and height in this experiment. In 3 scale (see Table 3 (b3)), overlap occurs only in scale 2, and the slice (in the proportion to the length of feature map width or height: (0, 23 ), ( 1 3 , 1). In 4 scale v1 (Table 3 (c1)(c3)), the slices for scale 2 and 3 are (0, 34 ), ( 1 4 , 1) and (0, 2 4 ), ( 1 4 , 3 4 ), ( 2 4 , 1). In 4 scale v2 (Table 3 (c4)(c5)), the slices for scale 2 and 3 are (0, 35 ), ( 2 5 , 1) and (0, 3 5 ), ( 1 5 , 4 5 ), ( 2 5 , 1). In 4 scale v3 (Table 3 (c6)(c8)), the slices are (0, 46 ), ( 2 6 , 1) and (0, 3 6 ), ( 1 6 , 4 6 ), ( 3 6 , 1), for scale 2 and 3, respectively.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Empirical study of existing techniques (aggregation, layer selection, resizing, multi-scale, PCA) applied to standard VGG-19. Limited novelty—combines known methods without significant methodological innovation. Primarily an engineering/ablation study rather than a novel scientific contribution suitable for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 4552,
+        "completion_tokens": 103,
+        "total_tokens": 4655
+      },
+      "time": "2026-02-08T22:49:12.005091+00:00"
+    }
   ]
 }

@@ -100,5 +100,21 @@
       "text": "Our data augmentation procedure code is inherited from the Lasagne Recipe code for ResNets where flipped images are added to the training set. This doubles the number of training examples per epoch and thus might impact the results because hyperparameter values defined as a function of epoch index have a different meaning. While our experimental results given in Table 1 reproduced the results obtained by Zagoruyko & Komodakis (2016), here we test whether SGDR still makes sense for WRN-28-1 (i.e., ResNet with 28 layers) where one epoch corresponds to 50k training examples. We investigate different learning rate values for the default learning rate schedule (4 values out of [0.01, 0.025, 0.05, 0.1]) and SGDR (3 values out of [0.025, 0.05, 0.1]). In line with the results given in the main paper, Figure 6 suggests that SGDR is competitive in terms of anytime performance.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel warm restart technique with strong empirical results (SOTA on CIFAR-10/100), clear methodological contribution (cosine annealing schedule), comprehensive experiments across multiple domains, and practical impact on training efficiency."
+      },
+      "token": {
+        "prompt_tokens": 5722,
+        "completion_tokens": 82,
+        "total_tokens": 5804
+      },
+      "time": "2026-02-08T22:15:12.108504+00:00"
+    }
   ]
 }

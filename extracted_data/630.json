@@ -100,5 +100,21 @@
       "text": "In this paper we have proposed two simple mechanisms to alleviate the problems of current encoderdecoder models. Our first contribution is a Read-Again model which does not form a representation of the input word until the whole sentence is read. Our second contribution is a copy mechanism that can handle out-of-vocabulary words in a principled manner allowing us to reduce the decoder vocabulary size and significantly speed up inference. We have demonstrated the effectiveness of our approach in the context of summarization and shown state-of-the-art performance. In the future, we plan to tackle summarization problems with large input text. We also plan to exploit our findings in other tasks such as machine translation.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel Read-Again encoder mechanism with principled copy decoder for summarization; strong empirical results on Gigaword/DUC2004 with practical benefits (5-30x vocabulary reduction); clear methodological contributions despite incremental nature."
+      },
+      "token": {
+        "prompt_tokens": 6493,
+        "completion_tokens": 87,
+        "total_tokens": 6580
+      },
+      "time": "2026-02-08T22:36:13.522241+00:00"
+    }
   ]
 }

@@ -100,5 +100,21 @@
       "text": "This experiment was designed to test the applicability of the method to problems beyond those presented in the previous sections. In particular, we show that with small changes we can also compute an accurate approximation to a pursuit-evasion problem in 3 dimensions. Similar to the previous examples, we frame the problem in relative coordinates with the x-axis aligned with the evaders heading, and give the pursuer and evader control over the rate of rotation. This can be written as follows: xryr r = f(x, a, b) = [ve + vpcos(r) + ayrvpsin(r) axr b a ] (16) For this problem the capture condition is encoded in the boundary condition V (x, 0) = ||[xr yr]T ||2 1 (where we ignore r since the capture condition only depends on the distance) and we consider a the time horizon T = 1.0s. For this problem we give both pursuer and evader the same speed vp = ve = 1.0 and the same turning rates a, b [1, 1]. Unlike the previous experiments, we used a neural network with two hidden layers with 10 and 5 units respectively and sigmoid activations. The number of points sampled was chosen to be N = 2000, uniformly picked over the set S := (xr, yr, r)|xr, yr [5, 5], r [, ] and over t [T, 0]. The batches were picked to be of size K = 25, momentum decay = 0.999 and learning rate = 0.001. The interval to renew the regression points was chosen to be 1000 iterations and the program was halted at 500,000 iterations. As shown in Fig. 6, both error metrics decrease as the algorithm progresses, reaching an average error for E1 in the order of 5.0 102 and an average error for E2 in the order of 1.0 101. The points used to compute E1 were taken from a 51 51 50 approximation grid at t = 0.5s. This set of experiments was run in a different machine4 using 8 threads and the total time for all threads to finish was 1000 seconds. Finally, Fig. 7 shows the zero level set contour at t = 0.5, which is now a 3D surface, from side and top perspectives. The first row shows the output of the LevelSet Toolbox from each perspective, and the second row shows a 3D scatter plot of points on the zero level-set obtained from one of the 8 neural networks that were trained. 4due to heavy usage of the first machine we had to switch to a different one For this experiment, only 111 numbers were needed to store the approximation, as opposed to 51 515010 = 1300500 numbers (i.e. 51 in xr, 51 in yr, 50 in r and 10 in t) for a [51515010] grid approximation.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel recursive regression approach to HJI PDE with practical advantages over gridding; solid experimental validation on control/robotics problems; clear contribution to PDE approximation via neural networks, though limited to low-dimensional systems and incremental methodological novelty."
+      },
+      "token": {
+        "prompt_tokens": 6252,
+        "completion_tokens": 89,
+        "total_tokens": 6341
+      },
+      "time": "2026-02-08T22:24:13.641131+00:00"
+    }
   ]
 }

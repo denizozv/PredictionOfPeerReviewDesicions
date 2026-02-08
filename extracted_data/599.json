@@ -120,5 +120,21 @@
       "text": "We also conducted experiments on 2-layer RNN models to demonstrate the superiority of our proposed GRU-D models can be generalized to multi-layer RNNs. For all baseline and proposed GRU models, we add one standard GRU layer on top of the baseline or proposed GRU layer. We tested models both with similar number of parameters to single layer models and with more parameters. As shown in Table 6 and 7, our GRU-D model consistently outperforms other baselines in all cases, and models with moderate size perform as good as larger models with more parameters. Compared with 1-layer RNNs, all models with deeper structures perform much better on the large MIMIC-III dataset but no better on the relative small PhysioNet dataset.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel architectural contribution (GRU-D with trainable decay mechanisms) for handling informative missingness in time series; strong empirical validation on real clinical datasets (MIMIC-III, PhysioNet); thorough experimental design with multiple baselines and ablations; addresses practical problem with clear methodological innovation."
+      },
+      "token": {
+        "prompt_tokens": 8524,
+        "completion_tokens": 102,
+        "total_tokens": 8626
+      },
+      "time": "2026-02-08T22:33:07.882352+00:00"
+    }
   ]
 }

@@ -65,5 +65,21 @@
       "text": "The authors would like to thank Hamid Maei for helpful initial discussions.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel black-box adversarial attack methodology with strong empirical validation. Introduces simple yet effective pixel-perturbation strategies (random and greedy local-search) that work without network access, demonstrates surprising vulnerability of DNNs to minimal perturbations, and provides comprehensive experiments across multiple datasets and architectures."
+      },
+      "token": {
+        "prompt_tokens": 11254,
+        "completion_tokens": 101,
+        "total_tokens": 11355
+      },
+      "time": "2026-02-08T22:43:24.584671+00:00"
+    }
   ]
 }

@@ -65,5 +65,21 @@
       "text": "We would like to thank Harm de Vries and Laurent Dinh for their help and feedback in writing the paper. And also thank Adam Lerer and Jiajun Wu for sharing their dataset. We thank NSERC, CIFAR, IBM, Canada Research Chairs, Google and Samsung for funding.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty and scope. Standard CNN/LSTM architectures for frame prediction combined with ResNet for classification. Narrow task domain (block stability), small-scale experiments (3-5 blocks), and incremental contribution. Lacks theoretical insight or methodological innovation expected at top venues."
+      },
+      "token": {
+        "prompt_tokens": 3005,
+        "completion_tokens": 96,
+        "total_tokens": 3101
+      },
+      "time": "2026-02-08T22:24:17.516039+00:00"
+    }
   ]
 }

@@ -145,5 +145,21 @@
       "text": "In these experiments, we investigate the influence of model depth (number of layers) on classification performance. We report results on a 5-fold cross-validation experiment on the Cora, Citeseer and Pubmed datasets (Sen et al., 2008) using all labels. In addition to the standard GCN model (Eq. 2), we report results on a model variant where we use residual connections (He et al., 2016) between hidden layers to facilitate training of deeper models by enabling the model to carry over information from the previous layers input: H(l+1) = ( D 1 2 AD 1 2H(l)W (l) ) +H(l) . (14) On each cross-validation split, we train for 400 epochs (without early stopping) using the Adam optimizer (Kingma & Ba, 2015) with a learning rate of 0.01. Other hyperparameters are chosen as follows: 0.5 (dropout rate, first and last layer), 5 104 (L2 regularization, first layer), 16 (number of units for each hidden layer) and 0.01 (learning rate). Results are summarized in Figure 5. For the datasets considered here, best results are obtained with a 2- or 3-layer model. We observe that for models deeper than 7 layers, training without the use of residual connections can become difficult, as the effective context size for each node increases by the size of its K th-order neighborhood (for a model with K layers) with each additional layer. Furthermore, overfitting can become an issue as the number of parameters increases with model depth.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.98,
+        "primary_reason": "Seminal work introducing Graph Convolutional Networks (GCN) with strong theoretical motivation via spectral graph convolutions, efficient O(|E|) complexity, clear methodological novelty, comprehensive experiments on multiple datasets, and significant empirical improvements over baselines. Highly influential contribution to graph neural networks."
+      },
+      "token": {
+        "prompt_tokens": 7413,
+        "completion_tokens": 102,
+        "total_tokens": 7515
+      },
+      "time": "2026-02-08T22:22:18.886670+00:00"
+    }
   ]
 }

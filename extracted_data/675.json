@@ -135,5 +135,21 @@
       "text": "The author would like to thank Max Welling, Dick de Ridder and Michiel de Jong for valuable comments and suggestions on earlier versions.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core method (standard LSTM+MDN), narrow experimental scope (single synthetic task), and incremental learning principle is well-established. While the MNIST stroke sequence dataset is creative and results show improvements, the contribution lacks sufficient depth for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 8456,
+        "completion_tokens": 93,
+        "total_tokens": 8549
+      },
+      "time": "2026-02-08T22:40:19.226724+00:00"
+    }
   ]
 }

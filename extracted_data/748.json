@@ -115,5 +115,21 @@
       "text": "In Figure 4 and Figure 5, we plot attention scores for a sample WMT15 English-German and WMT14 English-French translation with BiLSTM and deep convolutional encoders. The translation is on the x-axis and the source sentence on the y-axis. The attention scores of the BiLSTM output are sharp but do not necessarily represent a correct alignment. For CNN encoders the scores are less focused but still indicate an approximate source location, e.g., in Figure 4b, when moving the clause over 1,000 people were taken hostage to the back of the translation. For some models, attention maxima are consistently shifted by one token as both in Figure 4b and Figure 5b. Interestingly, convolutional encoders tend to focus on the last token (Figure 4b) or both the first and last tokens (Figure 5b). Motivated by the hypothesis that the this may be due to the decoder depending on the length of the source sentence (which it cannot determine without position embeddings), we explicitly provided a distributed representation of the input length to the decoder and attention module. However, this did not cause a change in attention patterns nor did it improve translation accuracy. B PERFORMANCE BY SENTENCE LENGTH One characteristic of our convolutional encoder architecture is that the context over which outputs are computed depends on the number of layers. With bi-directional RNNs, every encoder output depends on the entire source sentence. In Figure 3, we evaluate whether limited context affects the translation quality on longer sentences of WMT15 English-German which often requires moving verbs over long distances. We sort the newstest2015 test set by source length, partition it into 15 equally-sized buckets, and compare the BLEU scores of models listed in Table 2 on a per-bucket basis. There is no clear evidence for sub-par translations on sentences that are longer than the observable context per encoder output. We include a small encoder with a 6-layer CNN-c and a 3-layer CNN-a in the comparison which performs worse than a 2-layer BiLSTM (23.3 BLEU vs23.6). With 6 convolutional layers at kernel width 3, each encoder output contains information of 13 adjacent source words . Looking at the accuracy for sentences with 15 words or more, this relatively shallow CNN is either on par or better than the BiLSTM for 5 out of 10 buckets; the BiLSTM has access to the entire source context. Similar observations can be made for the deeper convolutional encoders.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel convolutional encoder architecture for NMT with strong empirical results across multiple WMT benchmarks, thorough ablations, and practical efficiency gains. Methodologically sound with clear scientific contribution to sequence-to-sequence modeling."
+      },
+      "token": {
+        "prompt_tokens": 6957,
+        "completion_tokens": 85,
+        "total_tokens": 7042
+      },
+      "time": "2026-02-08T22:47:10.702957+00:00"
+    }
   ]
 }

@@ -80,5 +80,21 @@
       "text": "We also experimented with adding an interpolation between the last action a(t1) with a candidate action a(h) via a gate r(h) [0, 1] to produce the final action a(t). Then the final equation of the new head is q := a(t) (tq + (1 t)q). This allows the controller to easily move in a straight line by just saturating both t and r. For example, for the translation group we have straight-line interpolation, a(t) := ra+(1r)a(t1). For the rotation group SO(3), each rotation is represented by its axis S2 and angle (, ], and we just interpolate each separately (t) := (r+(1r)(t1)) and (t) := r+(1r)(t1). where is L2-normalization.7 We perform the same experiments, with the same grid as specified in the last section, and with the initial action interpolation gates biased toward the previous action. The results are given in table B.2. Figure B.1 shows action interpolations impact on performance. Most notably, interpolation seems to improve performance of most models in the 5-INTERLEAVED ADD task and of the spherical memory models in the 6-ODD FIRST task, but causes failure to learn in many situations, most significantly, the failure of LANTM to learn 6-ODD FIRST. 7There is, in fact, a canonical way to interpolate the most common Lie groups, including all of the groups mentioned above, based on the exponential map and the Baker-Campbell-Hausdorff formula (Lee, 2012), but the details are outside the scope of this paper and the computational cost, while acceptable in control theory settings, is too hefty for us. Interested readers are referred to Shingel (2009) and Marthinsen (1999).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel theoretical framework (Lie groups for neural memory access) with principled mathematical motivation, solid experimental validation on algorithmic tasks, and clear generalization improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 7353,
+        "completion_tokens": 71,
+        "total_tokens": 7424
+      },
+      "time": "2026-02-08T22:12:23.327544+00:00"
+    }
   ]
 }

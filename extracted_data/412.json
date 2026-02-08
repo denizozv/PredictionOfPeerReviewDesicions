@@ -110,5 +110,21 @@
       "text": "Here we discuss some weaknesses of the SGD-based algorithms that we have encountered in practice for our learning objective function. These behaviors have been observed in the case of PL-CNNs, and generally may not appear in different architectures (in particular the failure to learn with high regularization goes away with the use of batch normalization layers). E.1 Initial Learning Rate As mentioned in the experiments section, the choice of the initial learning rate is critical for good performance of all Adagrad, Adadelta and Adam. When the learning rate is too high, the network does not learn anything and the training and validating accuracies are stuck at random level. When it is too low, the network may take a considerably greater number of epochs to converge. E.2 Failures to Learn Regularization When the regularization hyper-parameter is set to a value of 0.01 or higher on CIFAR-10, SGD solvers get trapped in a local minimum and fail to learn. The SGD solvers indeed fall in the local minimum of shutting down all activations on ReLUs, which provide zero-valued feature vector to the SVM loss layer (and a hinge loss of one). As a consequence, no information can be back-propagated. We plot this behavior below: In this situation, the network is at a bad saddle point (note that the training and validation accuracies are stuck at random levels). Our algorithm does not fall into such bad situations, however it is not able to get out of it either: each layer is at a pathological critical point of its own objective function, which makes our algorithm unable to escape from it. With a lower initial learning rate, the evolution is slower, but eventually the solver goes back to the bad situation presented above. Biases The same failing behavior as above has been observed when not using the biases in the network. Again our algorithm is robust to this change.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework reformulating layer-wise CNN optimization as DC programs solvable via structured SVM with convergence guarantees; solid experimental validation on MNIST/CIFAR/ImageNet showing consistent improvements over SGD variants."
+      },
+      "token": {
+        "prompt_tokens": 11337,
+        "completion_tokens": 83,
+        "total_tokens": 11420
+      },
+      "time": "2026-02-08T22:12:47.989100+00:00"
+    }
   ]
 }

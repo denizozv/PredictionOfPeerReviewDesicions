@@ -50,5 +50,21 @@
       "text": "This work is supported by the Intel Collaborative Research Institute for Computational Intelligence (ICRI-CI).",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel noise adaptation layer approach with solid theoretical grounding (EM equivalence), clear methodological contribution, and comprehensive experiments on multiple datasets with consistent improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 4861,
+        "completion_tokens": 70,
+        "total_tokens": 4931
+      },
+      "time": "2026-02-08T22:19:13.926104+00:00"
+    }
   ]
 }

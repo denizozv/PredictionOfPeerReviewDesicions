@@ -90,5 +90,21 @@
       "text": "As shown in many literatures (Massa et al., 2015; Aubry & Russell, 2015), features from different layers sometimes perform differently for a given task. For the instance retrieval task on the novel instance dataset of the ShapeNet, we compare OPnet and AlexNet using features from different layers, as shown in Figure 8. The accuracy of AlexNet is pretty flat up to conv3, and then keeps increasing until layer fc8 where the feature becomes categorical probability and not appropriate for instance level discrimination. On the other hand, the object persistence training gives a significant increase in accuracy in fully connected layers.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel distance metric learning approach with object persistence constraints; comprehensive transfer experiments across multiple test sets; strong correlation with human perception; clear scientific contribution to understanding view-invariant similarity learning."
+      },
+      "token": {
+        "prompt_tokens": 5260,
+        "completion_tokens": 72,
+        "total_tokens": 5332
+      },
+      "time": "2026-02-08T22:05:04.388074+00:00"
+    }
   ]
 }

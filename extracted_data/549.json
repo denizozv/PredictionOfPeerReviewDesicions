@@ -110,5 +110,21 @@
       "text": "We show in this section that coding in the EB-SSC model can be solved efficiently by a combination of convolution, shrinkage and projection, steps which can be implemented with standard libraries on a GPU. For convenience, we first rewrite the objective in terms of cross-correlation rather than convolution (i.e., , xT(dk zk) = (dk ? x)Tzk). For ease of understanding, we first consider the coding problem when there is no classification term. z = arg max z221 vTz z1, where v = [(d1 ? x)T, . . . , (dK ? x)T]T. Pulling the constraint into the objective, we get its Lagrangian function: L(z, ) = vTz z1 + ( 1 z22 ) . From the partial subderivative of the Lagrangian w.r.t. zi we derive the optimal solution as a function of ; and from that find the conditions in which the solutions hold, giving us: zi() = 1 2 vi vi > 0 otherwise vi + vi < . (17) This can also be compactly written as: z() = 1 2 z, (18) z = s2 v s where s = sign(z) 1, 0, 1|z| and s2 = s s 0, 1|z|. The sign vector of z can be determined without knowing , as is a Lagrangian multiplier for an inequality it must be nonnegative and therefore does not change the sign of the optimal solution. Lastly, we define the squared `2-norm of z, a result that will be used later: z22 = zT(s2 v) zTs = zTv z1. (19) Substituting z() back into the Lagrangian we get: L(z(), ) = 1 2 vTz 2 z1 + ( 1 1 42 z22 ) , and the derivative w.r.t. is: L(z() = 1 22 vTz + 22 z1 + 1 + 1 42 z22. Setting the derivative equal to zero and using the result from Eq. 19, we can find the optimal solution to : 2 = 1 2 zTv 2 z1 1 4 z22 = 1 2 z22 1 4 z22 = = 1 2 z2. Finally, plugging into Eq. 18 we find the optimal solution z = z z2 . (20)",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Limited novelty and experimental scope. The core contribution—spherical sparse coding with class-conditional biases—is a relatively incremental modification of existing sparse coding and energy-based models. Experiments are restricted to CIFAR-10 with modest improvements (9.23% vs 10.17% baseline). The closed-form coding solution is elegant but not sufficiently novel for a top venue. Stacking analysis is preliminary, and comparisons lack depth against modern deep learning baselines. The generative visualization is interesting but insufficient to overcome limited methodological novelty and narrow experimental validation."
+      },
+      "token": {
+        "prompt_tokens": 5713,
+        "completion_tokens": 158,
+        "total_tokens": 5871
+      },
+      "time": "2026-02-08T22:28:09.244609+00:00"
+    }
   ]
 }

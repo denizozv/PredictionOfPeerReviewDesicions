@@ -110,5 +110,21 @@
       "text": "For further comparison, we display t-SNE scatterplots of GRAM (Figure 5a) RandomDAG (Figure 5b, RNN (Figure 5c), and Skip-gram (Figure 5d). GRAM, RandomDAG and RNN were trained for sequential diagnoses prediction on Sutter data, and Skip-gram (Mikolov et al., 2013) was trained on Sutter data as it is an unsupervised method. For Skip-gram, we used each visit Vt as the context window. As we do not distinguish between the target concept and the neighbor concepts, we calculated the Skip-gram objective function using all possible pairs of codes within a single visit. We can see from Figure 5a that the quality of the final representations gi of GRAM is quite similar to GRAM+ (Figure 2a). Compared to other baselines, GRAM demonstrates significantly more structured representations that align well with the given knowledge DAG. It is interesting that Skip-gram shows the most structured representation among all baselines. We used GloVe to initialize the basic embeddings ei in this work because it uses global co-occurrence information and its training time is dependent only on the total number of unique concepts |C|. Skip-grams training time, on the other hand, depends on both the number of patients and the number of visits each patient made, which makes the algorithm generally slower than GloVe. However, considering both Figures 2c and 5d, initializing eis with Skip-gram vectors might give us additional performance boost.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel attention-based mechanism for leveraging medical ontologies to address data insufficiency and interpretability in healthcare prediction. Strong empirical validation across three tasks with comprehensive baselines and interpretability analysis."
+      },
+      "token": {
+        "prompt_tokens": 7394,
+        "completion_tokens": 75,
+        "total_tokens": 7469
+      },
+      "time": "2026-02-08T22:40:04.886672+00:00"
+    }
   ]
 }

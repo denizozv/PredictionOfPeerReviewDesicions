@@ -105,5 +105,21 @@
       "text": "The authors would like to thanks Clement Masson for fruitful discussion and his help in generating the data used in this paper. This work is supported by the DREAM project1 through the European Union Horizon 2020 research and innovation program under grant agreement No 640891.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Limited novelty (direct application of Jonschkowski & Brock 2015), narrow single-task evaluation (1D head position), weak experimental validation (small dataset, simulation-only, no comparison with related methods), and incremental contribution (adding standard CNN to existing robotic priors framework)."
+      },
+      "token": {
+        "prompt_tokens": 3163,
+        "completion_tokens": 100,
+        "total_tokens": 3263
+      },
+      "time": "2026-02-08T22:44:14.486146+00:00"
+    }
   ]
 }

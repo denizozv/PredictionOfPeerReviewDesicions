@@ -60,5 +60,21 @@
       "text": "We construct the underlying graph as follows: on a three-dimensional unit-sphere, we randomly generate a set of nodes. For each node, we connect its K-nearest neighbors and use the euclidean distance between two nodes to construct a graph. We randomly sample two nodes and compute its shortest path if it is connected between these two nodes. Given the fact that all the sub-paths within a shortest path are shortest paths, we incrementally create the dataset and remove the instances which are a sub-path of previously selected paths or are super-set of previous selected paths. In this case, all the shortest paths can not be answered through directly copying from another instance. In addition, all the weights in the graph are hidden and not shown in the training data, which increases the difficulty of the tasks. We set k = 50 as a default value.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel architecture combining shared memory with dynamic multi-step inference for KBC; strong empirical results (5.7% improvement on FB15k); thoughtful synthetic task analysis; some concerns about clarity and limited theoretical justification for design choices."
+      },
+      "token": {
+        "prompt_tokens": 5060,
+        "completion_tokens": 85,
+        "total_tokens": 5145
+      },
+      "time": "2026-02-08T22:32:26.212078+00:00"
+    }
   ]
 }

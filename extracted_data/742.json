@@ -140,5 +140,21 @@
       "text": "We implemented the random network architecture described in Section 2.1. In separate experiments we then swept an input vector along a great circle trajectory (a rotation) for fixed weights, and swept weights along a great circle trajectory for a fixed set of inputs, as described in Section 2.4. In both cases, the trajectory was subdivided into 106 segments. We repeated this for a grid of network widths k, weight variances 2w, and number of inputs s. Unless otherwise noted, b = 0 for all experiments. We repeated each experiment 10 times and averaged over the results. The simulation results are discussed and plotted throughout the text. The networks trained on MNIST and CIFAR-10 were implemented using Keras and Tensorflow, and trained for a fixed number of epochs with the ADAM optimizer. Transitions Count during Training We also have preliminary experimental results on Convolutional Networks. To try and make the comparisons fair, we implemented a fully convolutional network (no fully connected layers except for the last layer). We also include the plot showing the effect of training on number of transitions for interpolated MNIST and interpolated random points.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel theoretical framework connecting trajectory length to multiple expressivity measures (transitions, activation patterns, dichotomies) with rigorous proofs and comprehensive experiments. Strong contribution to understanding depth-dependent expressivity in deep networks."
+      },
+      "token": {
+        "prompt_tokens": 8649,
+        "completion_tokens": 80,
+        "total_tokens": 8729
+      },
+      "time": "2026-02-08T22:46:18.525624+00:00"
+    }
   ]
 }

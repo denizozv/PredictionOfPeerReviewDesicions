@@ -70,5 +70,21 @@
       "text": "We compared our approach to three prior methods: DQN (Mnih et al., 2015), DSR (Kulkarni et al., 2016b), and A3C (Mnih et al., 2016). We used the authors implementations of DQN (https://github.com/kuz/DeepMind-Atari-Deep-Q-Learner) and DSR (https://github.com/Ardavans/DSR), and an independent implementation of A3C (https://github.com/muupan/async-rl). For scenarios D1 and D2 we used the change in health as reward. For D3 and D4 we used a linear combination of changes of the three normalized measurements with the same coefficients as for the presented approach: (0.5, 0.5, 1). For DQN and DSR we tested three learning rates: the default one (0.00025) and two alternatives (0.00005 and 0.00002). Other hyperparameters were left at their default values. For A3C, which trains faster, we performed a search over a set of learning rates (2, 4, 8, 16, 32 104) for the first two tasks; for the last two tasks we trained 20 models with random learning rates sampled log-uniformly between 104 and 102 and random (entropy regularization) sampled log-uniformly between 104 and 101. For all baselines we report the best results we were able to obtain.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel formulation of sensorimotor control via direct future prediction with dense multidimensional feedback; strong empirical results across multiple complex 3D environments; principled architectural design with ablation studies; competition validation and generalization experiments demonstrate significant scientific contribution."
+      },
+      "token": {
+        "prompt_tokens": 6748,
+        "completion_tokens": 89,
+        "total_tokens": 6837
+      },
+      "time": "2026-02-08T22:02:50.329971+00:00"
+    }
   ]
 }

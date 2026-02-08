@@ -85,5 +85,21 @@
       "text": "In this work, we introduce density-diversity penalty as a regularization on the fully-connected layers of deep neural networks to encourage high sparsity and low diversity pattern in the trained weight matrices. To efficiently optimize the density-diversity penalty, we propose a sorting trick to make the density-diversity penalty computationally feasible. On the MNIST and TIMIT datasets, networks trained with the density-diversity penalty achieve 20X to 200X compression rate on fullyconnected layers, while keeping the performance comparable to that of the original model. In future work, we plan to apply the density-diversity penalty to recurrent models, extend the densitydiversity penalty to convolutional layers, and test other values of p. Moreover, besides pairwise L1 loss for the diversity portion of the density-diversity penalty, we will investigate other forms of regularizations to reduce the diversity of the trained weight matrices (e.g., other forms of structured convex norms). Throughout this work, we have focused on the compression task, but the learned sparsity/diversity pattern of the trained weight matrices is also worth exploring further. For image and speech data, we know that we can use the convolutional structure to improve performance, whereas for other very different forms of data, where we have no prior knowledge about the structure (i.e., patterns of locality), the density-diversity penalty may be applied to discover the underlying hidden pattern of the data and to achieve improved results.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in regularization design (total variation penalty applied globally rather than locally), narrow scope (fully-connected layers only), incremental compression improvements over Deep Compression, and weak experimental validation (only MNIST and TIMIT, no modern benchmarks or architectures)."
+      },
+      "token": {
+        "prompt_tokens": 4892,
+        "completion_tokens": 93,
+        "total_tokens": 4985
+      },
+      "time": "2026-02-08T22:07:20.650139+00:00"
+    }
   ]
 }

@@ -135,5 +135,21 @@
       "text": "For binary data, the log-likelihood of the smoothed model is a concave function of k(d), see Section 6.1.2. We could therefore in principal perform an optimization for the experts opinions using Newtons method. There are a few complications though. One problem is that the second derivative is proportional to the squared responsibility and hence close to 0 if the level of expertise is small. Consequently, template updates in regions with low expertise would be unstable. To deal with that we could add a penalty on the squared log-odds for example. Another problem is that the Newton steps may lead to probability estimates outside of [0, 1]. This can be dealt with by pulling the estimates back into the unit interval. Note that working on the log-odds scale is not possible because the log-likelihood of our model is not concave in the expert log-odds. Because of these complications we use the simple, fast and robust heuristic (5) instead of Netwons method.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty and weak experimental validation. The core idea of partitioning variables among experts is straightforward; the smoothing mechanism via expertise-weighted mixtures is a standard EM approach. Experiments lack quantitative comparisons with modern baselines, use only small datasets (MNIST, 328 horse images), and provide no statistical significance testing or error bars. The method shows no clear advantage over existing mixture models or sparse coding approaches."
+      },
+      "token": {
+        "prompt_tokens": 4406,
+        "completion_tokens": 126,
+        "total_tokens": 4532
+      },
+      "time": "2026-02-08T22:50:05.924459+00:00"
+    }
   ]
 }

@@ -105,5 +105,21 @@
       "text": "This work was partially supported by the HPC Center of Champagne-Ardenne ROMEO.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Interesting conceptual contribution on out-of-distribution novelty, but limited technical novelty, narrow experimental scope (MNIST/letters only), and weak methodological rigor. The paper is more of a position paper with preliminary experiments than a mature contribution with strong empirical validation or algorithmic innovation."
+      },
+      "token": {
+        "prompt_tokens": 6661,
+        "completion_tokens": 98,
+        "total_tokens": 6759
+      },
+      "time": "2026-02-08T22:31:10.624603+00:00"
+    }
   ]
 }

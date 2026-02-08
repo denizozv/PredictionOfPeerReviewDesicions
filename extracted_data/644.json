@@ -105,5 +105,21 @@
       "text": "Are longer sentences better? Many recent works propose a scoring or a ranking objective that depends on the sequence length. These favor longer sequences, reasoning that they tend to have more details and resulting in improved accuracies. We measure the correlation between length of a sequence and its accuracy (here, SPICE) and observe insignificant correlation between SPICE and sequence length. On the PASCAL-50S dataset, we find that BS and DBS have are negatively correlated ( = 0.003 and = 0.015 respectively), while (Li & Jurafsky, 2016) is correlated positively ( = 0.002). Length is not correlated with performance in this case. Efficient utilization of beam budget. In this experiment, we emperically show that DBS makes efficient use of the beam budget in exploring the search space for better solutions. Fig. 9 shows the variation of oracle SPICE (@B) with the beam size. At really high beam widths, all decoding techniques achieve similar oracle accuracies. However, diverse decoding techniques like DBS achieve the same oracle at much lower beam widths. Hence, DBS not only produces sequence lists that are significantly different but also efficiently utilizes the beam budget to decode better solutions.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel decoding algorithm with strong theoretical motivation, comprehensive experiments across 4 diverse tasks, human studies, and practical efficiency gains. Clear methodological contribution to sequence generation."
+      },
+      "token": {
+        "prompt_tokens": 6112,
+        "completion_tokens": 70,
+        "total_tokens": 6182
+      },
+      "time": "2026-02-08T22:38:04.593245+00:00"
+    }
   ]
 }

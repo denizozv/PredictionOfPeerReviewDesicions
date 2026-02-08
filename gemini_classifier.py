@@ -6,32 +6,26 @@ import time
 from datetime import datetime, timezone
 
 from dotenv import load_dotenv
-import anthropic
+from google import genai
 
 load_dotenv()
 
-SYSTEM_PROMPT = """Sen deneyimli bir akademik editörsün. Aşağıdaki bilimsel makaleyi inceleyerek konferansta (ICML/ICLR/NeurIPS gibi) kabul edilip edilmeyeceği kararını ver.
 
-Değerlendirme kriterleri:
-- Kapsam uyumu (dergi/konferans ile alakalı mı?)
-- Metodolojik kalite (yöntem güvenilir mi?)
-- Örneklem büyüklüğü (yeterli mi?)
-- Özgünlük (yeni bir katkı var mı?)
+class GeminiClassifier:
+    """Sends extracted paper data to Google Gemini for desk rejection classification."""
 
-Çıktını kesinlikle aşağıdaki JSON formatında ver, başka hiçbir şey yazma:
-{"rejection": true/false, "confidence": 0.00-1.0, "primary_reason": "Short Desc"}"""
-
-
-class AnthropicZeroShotClassifier:
-    """Sends extracted paper data to Anthropic Claude for zero-shot desk rejection classification."""
-
-    def __init__(self, data_dir: str = "extracted_data", model: str = "claude-sonnet-4-20250514",
-                 error_log: str = "anthropic_failed_ids.json", limit: int = 0):
+    def __init__(self, system_prompt: str, approach: str = "zeroShot",
+                 data_dir: str = "extracted_data", model: str = "gemini-2.0-flash",
+                 error_log: str = "gemini_failed_ids.json", limit: int = 0,
+                 dry_run: bool = False):
+        self.system_prompt = system_prompt
+        self.approach = approach
         self.data_dir = data_dir
         self.model = model
         self.error_log = error_log
-        self.limit = limit  # 0 = process all, >0 = process only N files (for debugging)
-        self.client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from environment
+        self.limit = limit
+        self.dry_run = dry_run  # True = print prompts to terminal, skip API call
+        self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
         self.failed: list[dict] = []
 
     def _build_user_prompt(self, record: dict) -> str:
@@ -59,33 +53,33 @@ class AnthropicZeroShotClassifier:
         return "\n".join(parts)
 
     def _classify(self, user_prompt: str) -> tuple[dict | None, dict | None, float]:
-        """Send the prompt to Anthropic Claude and return (decision, token_usage, elapsed_seconds)."""
+        """Send the prompt to Gemini and return (decision, token_usage, elapsed_seconds)."""
         start = time.time()
 
         try:
-            response = self.client.messages.create(
+            response = self.client.models.generate_content(
                 model=self.model,
-                max_tokens=256,
-                system=SYSTEM_PROMPT,
-                messages=[
-                    {"role": "user", "content": user_prompt},
-                ],
-                temperature=0.0,
+                contents=user_prompt,
+                config=genai.types.GenerateContentConfig(
+                    system_instruction=self.system_prompt,
+                    temperature=0.0,
+                    response_mime_type="application/json",
+                ),
             )
         except Exception as e:
-            print(f"[ERROR] Anthropic API call failed: {e}")
+            print(f"[ERROR] Gemini API call failed: {e}")
             return None, None, time.time() - start
 
         elapsed = time.time() - start
 
-        usage = response.usage
+        usage = response.usage_metadata
         token_info = {
-            "prompt_tokens": usage.input_tokens,
-            "completion_tokens": usage.output_tokens,
-            "total_tokens": usage.input_tokens + usage.output_tokens,
+            "prompt_tokens": usage.prompt_token_count,
+            "completion_tokens": usage.candidates_token_count,
+            "total_tokens": usage.total_token_count,
         } if usage else {}
 
-        content = response.content[0].text if response.content else ""
+        content = response.text or ""
         content = re.sub(r"^```(?:json)?\s*\n?", "", content.strip())
         content = re.sub(r"\n?```\s*$", "", content.strip())
 
@@ -98,12 +92,12 @@ class AnthropicZeroShotClassifier:
         return decision, token_info, elapsed
 
     def run(self) -> None:
-        """Process all extracted JSON files and append zero-shot classification results."""
+        """Process all extracted JSON files and append classification results."""
         pattern = os.path.join(self.data_dir, "*.json")
         files = sorted(glob.glob(pattern))
         if self.limit > 0:
             files = files[:self.limit]
-        print(f"[INFO] Running Anthropic zero-shot classification on {len(files)} file(s) with model '{self.model}'")
+        print(f"[INFO] Running Gemini {self.approach} classification on {len(files)} file(s) with model '{self.model}'")
 
         for i, filepath in enumerate(files, start=1):
             filename = os.path.basename(filepath)
@@ -111,12 +105,22 @@ class AnthropicZeroShotClassifier:
             with open(filepath, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            existing_models = [e.get("model") for e in data.get("zeroShot", [])]
+            existing_models = [e.get("model") for e in data.get(self.approach, [])]
             if self.model in existing_models:
-                print(f"[SKIP] {filename} already has results for model '{self.model}'")
+                print(f"[SKIP] {filename} already has {self.approach} results for model '{self.model}'")
                 continue
 
             user_prompt = self._build_user_prompt(data)
+
+            if self.dry_run:
+                print(f"\n{'='*80}")
+                print(f"[DRY RUN] File: {filename} ({i}/{len(files)})")
+                print(f"{'='*80}")
+                print(f"\n--- SYSTEM PROMPT ---\n{self.system_prompt}")
+                print(f"\n--- USER PROMPT ---\n{user_prompt}")
+                print(f"{'='*80}\n")
+                continue
+
             decision, token_info, elapsed = self._classify(user_prompt)
 
             if decision is None:
@@ -135,7 +139,7 @@ class AnthropicZeroShotClassifier:
                 "time": datetime.now(timezone.utc).isoformat(),
             }
 
-            data.setdefault("zeroShot", []).append(entry)
+            data.setdefault(self.approach, []).append(entry)
 
             with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
@@ -143,10 +147,10 @@ class AnthropicZeroShotClassifier:
             print(f"[{i}/{len(files)}] {filename} -> rejection={decision.get('rejection')} "
                   f"(confidence={decision.get('confidence')}) [{elapsed:.1f}s]")
 
-            time.sleep(0.2)
+            time.sleep(4)
 
         self._save_failed()
-        print(f"[OK] Anthropic zero-shot classification completed.")
+        print(f"[OK] Gemini {self.approach} classification completed.")
 
     def _save_failed(self) -> None:
         """Save failed IDs to a JSON file. Remove the file if there are no failures."""

@@ -80,5 +80,21 @@
       "text": "We presented a framework for studying whether a given neural network architecture can perceive visual details not explicitly present in the input. Using the framework, we studied a simple fullyconnected network and found it could fill in missing details such as shape, color and contrast, but not texture. We found that the network compensates for missing details by learning global features which when appropriately activated by the surround, effectively infer the missing information. Thus, the network performs perceptual filling-in even though the layers lack the lateral connections and grid-like structure that have been postulated in the isomorphic filling in theory (von der Heydt et al., 2003). Further, the network appears to learn correlations between color and shape: when presented a sunflower input in which only the dark brown center and the inner yellow petals were in color, the network correctly perceived that the surrounding leaves are green; in the case of landscapes, the network incorrectly perceived the sky as blue, even when a small fovea of red sunset is present in the input. Upon inspection, the network indeed learns global color features and these features may be activated by input patterns corresponding to certain shapes causing the network to occasionally over-generalize, but further investigation is needed to fully confirm this hypothesis. A potentially interesting line of future research would be to employ the DFAE framework to test the existing hypotheses for how our own visual system performs perceptual filling in: e.g., the process by which our brain infers information that is not explicitly present in our sensory input from the surround (Komatsu, 2006). The specific architectures we studied here are a far cry from the true mechanisms, but in future work we could implement several architectures that capture the essence of competing theories: Which neural architectures exhibit similar behaviors and abilities as humans? Will the architecture be fooled in the same way as humans by optical illusions such as the Cornsweet illusion or the Troxler effect? When does it perceive The Dress as blue and gold or white and black? By answering questions such as these, the DFAE framework could provide evidence for one theory (or neural mechanism) over another, and these theories can be further investigated with behavioral and neurological experiments.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel framework (DFAEs) with clear biological motivation, systematic experimental design across multiple foveation types, interpretable findings on perception from degraded input, and insights applicable to both vision science and network design."
+      },
+      "token": {
+        "prompt_tokens": 4777,
+        "completion_tokens": 80,
+        "total_tokens": 4857
+      },
+      "time": "2026-02-08T22:48:17.442789+00:00"
+    }
   ]
 }

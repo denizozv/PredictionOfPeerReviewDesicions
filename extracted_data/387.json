@@ -80,5 +80,21 @@
       "text": "We presented an approach to satisfying long-range consistency constraints in the generation of images. It is based on a variation of the method by Gatys et al., and considers spatial co-occurences of local features (instead of only co-occurences across features). We showed that the approach permits to generate textures with various global symmetry properties and that it makes it possible to apply texture generation to in-painting. Since it preserves correlations across sites, the approach is reminiscent of an MRF, but in contrast to an MRF or other graphical models, it defines correlationconstraints on high-level features of a (pre-trained) CNN rather than on pixels.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Clear methodological contribution extending Gram matrices with spatial co-occurrence terms; well-motivated approach with solid experimental validation across multiple applications (texture synthesis, inpainting, style transfer, symmetry); addresses a real limitation of prior work."
+      },
+      "token": {
+        "prompt_tokens": 4306,
+        "completion_tokens": 84,
+        "total_tokens": 4390
+      },
+      "time": "2026-02-08T22:09:14.033452+00:00"
+    }
   ]
 }

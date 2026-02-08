@@ -115,5 +115,21 @@
       "text": "We introduce a novel neural network quantization method that compresses network weights to ternary values. We introduce two trained scaling coefficients W lp and W l n for each layer and train these coefficients using back-propagation. During training, the gradients are back-propagated both to the latent full-resolution weights and to the scaling coefficients. We use layer-wise thresholds that are proportional to the maximum absolute values to quantize the weights. When deploying the ternary network, only the ternary weights and scaling coefficients are needed, which reducing parameter size by at least 16. Experiments show that our model reaches or even surpasses the accuracy of full precision models on both CIFAR-10 and ImageNet dataset. On ImageNet we exceed the accuracy of prior ternary networks (TWN) by 3%. 9",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel trained quantization approach learning both ternary values and assignments; strong empirical results on CIFAR-10 and ImageNet with practical efficiency gains; clear methodological contribution beyond prior work (TWN, DoReFa-Net)."
+      },
+      "token": {
+        "prompt_tokens": 5011,
+        "completion_tokens": 88,
+        "total_tokens": 5099
+      },
+      "time": "2026-02-08T22:08:08.235329+00:00"
+    }
   ]
 }

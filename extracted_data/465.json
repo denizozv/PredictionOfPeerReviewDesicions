@@ -120,5 +120,21 @@
       "text": "This material is in part based upon work supported by the National Science Foundation under Grant No. TWC-1409915. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "First large-scale study of adversarial transferability with novel ensemble-based approach for targeted attacks; strong empirical validation including real-world black-box attack on Clarifai; geometric analysis provides new insights into model decision boundaries."
+      },
+      "token": {
+        "prompt_tokens": 7408,
+        "completion_tokens": 85,
+        "total_tokens": 7493
+      },
+      "time": "2026-02-08T22:19:17.426764+00:00"
+    }
   ]
 }

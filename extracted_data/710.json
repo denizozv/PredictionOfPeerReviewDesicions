@@ -95,5 +95,21 @@
       "text": "We would like to thanks Pr. Gianni Pavan (Pavia University, Italy) and Simone Clemente for their bioacoustic points of view. We also want to thanks Virgil Tassan for his re-reading. BIOACOUSTICIAN DISCUSSION One of the main topics in ecological acoustics is the development of unsupervised methods for automatic detection of vocalized species, which would help specialists in ecological works during their monitoring activities. Although some works already have reach good classification percentage 3 4, theres a lack of methodologies available for works focused on real world data, and with further applications in ecology and wildlife management. One of the major bottlenecks for the application of these methodologies is their inability to work under heavy complex acoustic environment, where different taxa may sing together or conversely, their extreme sensitivity which may result in an over classification due to the high degree of variability insight many repertoire of the vocal species. Our unsupervised method for automatic annotation of bioacoustics sequences seems to overtake these obstacles, by the identification of specie-specific pattern, and seems to be not influenced by the inter-individual variation whiting the songs structure. Furthermore, during the study, we have worked whit recording that may contain more than a species vocalizing, or partial overlapping from different species and specimen, and even in these circumstance our model has shown a great ability of categorisations and generalisations, identifying the main pattern and almost all the other sequences recorded (including silence). Good examples are provided, from the birds dataset, by recordings including the common wood pigeon (Columba palumbus; Figure 3 (top)), or from the files containing golden oriole (Oriolus oriolus) as a main species. Their vocalisations are partially overlapped by vocalisation of different species, such as Eurasian blue tit (Cyanistes caeruleus, figure 3 (bottom)) or cricket, and is clear in the analysis, the distinction between the bird vocalising and other animals in the background. Finally, a last example could be taken from the carrion crow (Corvus corone, figure 3 (middle) recordings. Here, multiple specimens are vocalising at the same time, but it does not influence the efficiency of our method. By the other hand, in presence of species with complex acoustics behaviours, such as the common nightingale (Luscinia megarhynchos) the method could lead to identify as different classes each one of the different phrasing elements in the song. This last approach could be useful in order to perform behavioural analysis focused on the identification of hidden significance in the songs, but may loose his benefit when the main achievement is an ecological topic. We finally consider this method as a promising tool, as we move forward, but further analysis will be needed to build, an efficient tool whit relevant application in the acoustic monitoring and conservation of biodiversity. 3Automatic large-scale classification of bird sounds is strongly improved by unsupervised feature learning; Dan Stowell and Mark D Plumbley; 2014; PeerJ 4Automatic classification of a taxon-rich community recorded in the wild; Potamitis and Ilyas; 2014; PloS on",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: applies existing HDP-HMM method to bioacoustics without algorithmic innovation. Weak experimental validation: NMI score of 0.49 on birds, inconsistent state discovery, no comparison with baselines. Insufficient rigor: single expert validation, no statistical testing, limited dataset scope. Application-focused rather than methodologically advancing the field."
+      },
+      "token": {
+        "prompt_tokens": 6190,
+        "completion_tokens": 116,
+        "total_tokens": 6306
+      },
+      "time": "2026-02-08T22:44:06.641292+00:00"
+    }
   ]
 }

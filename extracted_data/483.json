@@ -85,5 +85,21 @@
       "text": "The proposed model for recognition is presented in Fig. 2. At each time t, we extract two representations: the context branch is given by the C3D representation of the original clip, while the soft attentional branch is given by the C3D representation of the input clip weighted by the saliency map. The two representations are then concatenated at the clip level and max-pooled over the video to obtain the final video-level descriptor. This video-level representation is then used as input to train the video classifier which is a linear SVM in our experiments. In our experiments, we also evaluated the option of weighting the convolutional feature map xt instead of the input, as for example done by Sharma et al. (2016). However, we will see that soft-masking the input gives higher accuracy, probably because applying C3Ds non-linear transformation after the soft-weighting produces a representation that is less redundant with the original (non-masked) C3D representation. B IMPLEMENTATION DETAILS We used the pretrained C3D network (Tran et al., 2015) as feature representation which is the input of the LSTM network. The convolutional layer before the fully-connected layers is used for saliency prediction, while the last fully-connected layer before the softmax is used for classification, since Tran et al. (2015) showed to obtain the best performance. The training of the RMDN is performed using RMSprop with adaptive learning rate and gradient clipping. We start from a learning rate of 0.0003 and after 8 epochs it is reduced at each epoch with a decay factor of 0.95. The gradient is clipped with a threshold of 20. Dropout with a ratio of 0.5 is applied only on the hidden layer of the LSTM network before the MDN. We trained for 40 epochs, but training is stopped if there is no significative improvement of the loss. During training, temporal data augmentation is performed by clipping the videos to shorter videos of length 65 frames (which corresponds to 50 C3D descriptors since it needs a buffer of 16 frames for the first descriptor). The number of components of the GMM C is fixed to 20 for all the experiments. All the experiments were carried out using an NVIDIA Tesla K40 card. After extracting the saliency maps and the feature representations on GPU, our recognition experiments were performed on CPU using a linear SVM. In order to compute the video-level representation, we performed max pooling of the clip-level representations of the video. For all the experiments, we used 20% of the training data as validation set to find the regularization parameter of the SVM. We searched the parameter space on a grid between 109 to 103 with a step of 10 1 2 . Finally, we retrain the SVM on all the training set (including the validation set) using the best cross-validated parameter.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel spatiotemporal attention model combining 3D CNN, LSTM, and Mixture Density Networks for video saliency prediction. Strong experimental validation on Hollywood2 and UCF101 with clear generalization results. Well-motivated design choices and thorough ablation studies. Solid contribution to attention mechanisms in video understanding."
+      },
+      "token": {
+        "prompt_tokens": 7244,
+        "completion_tokens": 105,
+        "total_tokens": 7349
+      },
+      "time": "2026-02-08T22:22:09.172513+00:00"
+    }
   ]
 }

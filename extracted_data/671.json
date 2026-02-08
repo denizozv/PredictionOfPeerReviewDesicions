@@ -75,5 +75,21 @@
       "text": "We thank Kuzman Ganchev, Michael Collins, Dipanjan Das, Slav Petrov, Aliaksei Severyn, Chris Dyer, and Noah Smith for their useful feedback and discussion while preparing this draft.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel modular framework (DRAGNN/TBRU) with strong theoretical grounding, demonstrates clear methodological contributions across multiple NLP tasks, achieves state-of-the-art results on dependency parsing, and shows principled approach to multi-task learning through compositional structure sharing."
+      },
+      "token": {
+        "prompt_tokens": 5013,
+        "completion_tokens": 96,
+        "total_tokens": 5109
+      },
+      "time": "2026-02-08T22:40:10.803655+00:00"
+    }
   ]
 }

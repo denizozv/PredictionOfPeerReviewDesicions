@@ -90,5 +90,21 @@
       "text": "We thankfully acknowledge the support of NVIDIA Corporation for providing the Tesla K80 and K20 GPUs for our experiments.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Incremental activation function design with limited novelty. PELU is a straightforward parametrization of ELU with modest empirical gains (4-7% relative improvement). Lacks significant methodological innovation, theoretical depth, or insights beyond parameter tuning. Comparable to PReLU-style work with narrow scope."
+      },
+      "token": {
+        "prompt_tokens": 4915,
+        "completion_tokens": 104,
+        "total_tokens": 5019
+      },
+      "time": "2026-02-08T22:44:12.470985+00:00"
+    }
   ]
 }

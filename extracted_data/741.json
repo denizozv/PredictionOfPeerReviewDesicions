@@ -95,5 +95,21 @@
       "text": "The core experiment in this paper is to train a classification CNN on rendered chessboard images under weak labels. After class activation mapping visualization, we analyse and interpret the results in three different backgrounds. Although simple, we argue that our results are enough to show that: (1) a CNN can automatically figure out complicated game rule concepts in this case. (2) cross-modal supervision for representation learning is still applicable in this case of higher-level semantics. (3) the technique of CAM can activate at non-salient regions, testifying CNNs capability to collect information from context in an extreme case (only context has information).",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited scope (tic-tac-toe only), weak methodological novelty (standard CNN+CAM), incremental contribution to CAM literature, lacks rigor in concept learning claims, insufficient experimental depth for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4806,
+        "completion_tokens": 85,
+        "total_tokens": 4891
+      },
+      "time": "2026-02-08T22:46:16.263739+00:00"
+    }
   ]
 }

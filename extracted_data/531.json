@@ -60,5 +60,21 @@
       "text": "We thank Ryan Burt for several suggestions to the first draft. This work was partially funded by the University of Florida Graduate Student Fellowship and ONR N00014-14-1-0542.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel architectural framework combining graphics pipeline principles with neural networks for interpretable video generation. Strong theoretical foundation (VAE-based statistical model) and explicit what-where factorization with architectural constraints. Reasonable experimental validation on synthetic and Moving MNIST datasets, though results lag state-of-the-art and evaluation could be more comprehensive."
+      },
+      "token": {
+        "prompt_tokens": 5359,
+        "completion_tokens": 104,
+        "total_tokens": 5463
+      },
+      "time": "2026-02-08T22:26:21.978025+00:00"
+    }
   ]
 }

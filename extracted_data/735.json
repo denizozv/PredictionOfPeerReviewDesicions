@@ -80,5 +80,21 @@
       "text": "In section 4.2, we have compared the proposed non-linear dimensionality reduction prior against a variant of Garg et al. (2013a) which handles missing data by optimizing: min S,R S + F i=1 N j=1 Zi(xj)wi(xj)Risi(xj)2 (21) This problem is convex in S given noise free projection matrix Ris but non-differentiable. To optimize (21), we first rewrite it in its primal-dual form by dualizing the trace norm 7 : max Q min S,R + F i=1 N j=1 Zi(xj)wi(xj)Risi(xj)2 s.t.Qs 1 (22) where Q RXN stores the dual variables to S and .s represent spectral norm (highest eigenvalue) of a matrix. 7For more details on primal dual formulation and dual norm of the trace norm see Rockafellar (1974); Recht et al. (2010); Chambolle & Pock (2011). Algorithm 3: Trace norm Heuristics. Input: Initial estimates S0, R0 of S and R. Output: Low-dimensional S and camera poses R. Parameters: Regularization strength , measurements W and binary mask Z. Dataset PTAAkhter et al. (2009) CSF2Gotardo & Martinez (2011b) BMMDai et al. (2014) TNH Drink 0.0229 0.0215 0.0238 0.0237 Pick-up 0.0992 0.0814 0.0497 0.0482 Yoga 0.0580 0.0371 0.0334 0.0333 Stretch 0.0822 0.0442 0.0456 0.0431 We choose quaternions to perametrize the 2 3 camera matrices Ri to satisfy orthonormality constraints as done in Garg et al. (2013a) and optimize the saddle point problem (22) using alternation. In particular, for a single iteration: (i) we optimize the camera poses Ris using LM, (ii) take a steepest descend step for updating S and (ii) a steepest ascend step for updating Q which is followed by projecting its spectral norm to unit ball. Given ground truth camera matrices ( without step (i)), alternation (ii-iii) can be shown to reach global minima of (22). Algorithm 3 outlines TNH algorithm. As the main manuscript uses NRSfM only as a practical application of our non-linear dimensionality reduction prior, we have restricted our NRSfM experiments to only compare the proposed method against its linear counterpart. For the timely evaluation, the reported experiments we conducted on sub-sampled CMU mocap dataset. Here, we supplement the arguments presented in the main manuscript by favorably comparing the linear dimensionality reduction based NRSfM algorithm(TNH) to other NRSfM methods on full length CMU mocap sequences.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical contribution (closed-form solution for non-linear dimensionality regularization via trace norm in KPCA framework with L1/2 norm generalization), solid mathematical foundation (Theorem 1), and demonstrated improvements on two distinct inverse problems (matrix completion, NRSfM). However, limited by narrow experimental scope, modest baselines, and lack of comparison with recent deep learning approaches to these problems."
+      },
+      "token": {
+        "prompt_tokens": 7483,
+        "completion_tokens": 124,
+        "total_tokens": 7607
+      },
+      "time": "2026-02-08T22:46:06.127618+00:00"
+    }
   ]
 }

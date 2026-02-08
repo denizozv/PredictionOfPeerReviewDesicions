@@ -70,5 +70,21 @@
       "text": "We consider two methods for wild variational inference that allows us to train general inference networks with intractable density functions, and apply it to adaptively estimate step sizes of stochastic gradient Langevin dynamics. More studies are needed to develop better methods, more applications and theoretical understandings for wild variational inference, and we hope that the two methods we discussed in the paper can motivate more ideas and studies in the field.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel framework for variational inference without tractable densities using Stein discrepancy and amortized SVGD; solid theoretical grounding and practical application to adaptive SGLD step-size optimization with reasonable experimental validation."
+      },
+      "token": {
+        "prompt_tokens": 6558,
+        "completion_tokens": 84,
+        "total_tokens": 6642
+      },
+      "time": "2026-02-08T22:37:17.875101+00:00"
+    }
   ]
 }

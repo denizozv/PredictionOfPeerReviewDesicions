@@ -95,5 +95,21 @@
       "text": "We take the addition task to mean sequence-to-sequence decimal addition of unaligned, variablelength numbers (the hardest of several versions). An example of this task for maximum length 5 digits is 73952+946283414. We train on ntrain randomly generated examples for up to 100 epochs with early stopping, and report the smallest model setup that achieves> 99% character-level validation accuracy, or the best validation accuracy achieved by any model setup if none achieve 99%. For ndigits = 5 and ntrain = 100000, the QRNN converges with models larger than 3 layers of 256 units, while in our experiments LSTMs require only 2 layers of 128 units. For ndigits = 10 and ntrain = 100000, an LSTM reaches 98.5% with 3 layers of 1024 units, while the best QRNN model (4 layers of 512 units) reaches only 95.0%. The copy task is similarly implemented as sequence-to-sequence reconstruction of variable-length decimal numbers. For 5 digits, an example is 2353223532. We train on 10000 randomly generated examples for up to 100 epochs. For ndigits = 5, the QRNN converges with models larger than 2 layers of 32 units or 1 layer of 256 units, while the LSTM requires only 1 layer of 32 units. For ndigits = 10, the QRNN requires a model larger than 2 layers of 128 units while the LSTM requires a model of at least 2 layers of 64 units or 1 layer of 256 units. For ndigits = 40, a QRNN with 5 layers of 512 units reaches 98.0% while the best LSTM model, with 3 layers of 512 units, only reaches 95.5%. A deeper LSTM would likely need some kind of residual or highway connections to converge on this task, while the deep QRNN converges relatively well despite our earlier experiences with 4-layer QRNNs without dense connections not converging successfully on the sentiment task.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Novel architecture combining convolutional and minimalist recurrent pooling for improved parallelism and speed while maintaining competitive accuracy. Strong empirical validation across multiple NLP tasks (sentiment, language modeling, machine translation) with significant computational speedups (up to 16x). Clear methodological contribution with practical impact."
+      },
+      "token": {
+        "prompt_tokens": 5666,
+        "completion_tokens": 99,
+        "total_tokens": 5765
+      },
+      "time": "2026-02-08T22:12:25.511310+00:00"
+    }
   ]
 }

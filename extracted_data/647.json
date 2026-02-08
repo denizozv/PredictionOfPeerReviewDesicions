@@ -105,5 +105,21 @@
       "text": "The research was funded by the DOME project (Astron & IBM) and the Netherlands Organization for Scientific Research (NWO). The authors are greatful for helpful comments from Thomas Kipf, Mijung Park, Rajat Thomas, and Karen Ullrich.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel unification of model and inference through learned recurrent updates; strong theoretical motivation bridging classical optimization and deep learning; comprehensive experiments on multiple inverse problems with competitive results; clear methodological contribution with ablation studies."
+      },
+      "token": {
+        "prompt_tokens": 4822,
+        "completion_tokens": 79,
+        "total_tokens": 4901
+      },
+      "time": "2026-02-08T22:38:12.522373+00:00"
+    }
   ]
 }

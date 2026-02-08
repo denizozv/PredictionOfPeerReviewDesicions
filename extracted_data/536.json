@@ -65,5 +65,21 @@
       "text": "We show an efficient analog of the universal approximation theorem for neural networks in the case of noise-sensitive halfspaces of boolean hypercube, and gave efficient learning algorithms for the same. We do this via an interplay of techniques from Fourier analysis over the boolean hypercube and size-weight-depth trade-off results on linear threshold circuits from circuit complexity. One might be able to extend these result to continuous domains where the input is sampled uniformly from [1, 1]n by using the ANOVA (analysis of variance) decomposition of a function. However, to do this one will have to prove a Bourgain-type theorem for these settings.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel theoretical contribution connecting noise-stability to small neural network approximation with constructive learning algorithm; rigorous proofs and clear scientific insights on robust concepts."
+      },
+      "token": {
+        "prompt_tokens": 4648,
+        "completion_tokens": 67,
+        "total_tokens": 4715
+      },
+      "time": "2026-02-08T22:27:09.751217+00:00"
+    }
   ]
 }

@@ -145,5 +145,21 @@
       "text": "According to the log-likelihood evaluation, we find digit 2\" is the hardest digit for modelling. In this section we investigate the quality of modelling 2\" of each model. We randomly sampled a fixed set of 100 samples of digit 2\" from training data and compare whether model capture this mode. We show the plots of 2\" for GAN-10, GAN-50, VAE-10 and true data in the following figures for illustration. We see that GAN-10 fails at capturing many instances of digit 2\" in the training data! We see instead of generating 2\", it tries to generate digit 1\", 7\" 9\", 4\", 8\" from reconstruction. GAN-50 does much better, its reconstruction are all digit 2\" and there is only some style difference from the true data. VAE-10 totally dominates this competition, where it perfectly reconstructs all the samples of digit 2\". We emphasize if directly sampling from each model, samples look visually indistinguishable (see Fig. 1), but we can clearly see differences in posterior samples. 2We pick the best variance parameter among 0.005, 0.01, 0.015, 0.02, 0.025 for each training/validation examples when evaluating GAN-50 and GMMN-50 and 0.015, 0.02, 0.025, 0.03, 0.035 when evaluating GAN-10 and GMMN-10. 3In particular, heavy-tailed radially symmetric distributions can be viewed as Gaussian scale mixtures (Wainwright & Simoncelli, 1999). I.e., one has a prior distribution on (possibly learned) and integrates it out for each test example. Clearly the probability under such a mixture cannot exceed the maximum value with respect to .",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel methodological contribution applying AIS with BDMC validation to quantify decoder-based generative models; rigorous empirical analysis revealing limitations of KDE and IWAE; important insights on mode coverage and overfitting in VAEs, GANs, and GMMNs."
+      },
+      "token": {
+        "prompt_tokens": 8259,
+        "completion_tokens": 96,
+        "total_tokens": 8355
+      },
+      "time": "2026-02-08T22:08:06.136496+00:00"
+    }
   ]
 }

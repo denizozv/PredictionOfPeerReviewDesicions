@@ -100,5 +100,21 @@
       "text": "In order to understand how the method depends on the amount of noise and the number of datapoints we scan through the two parameters and present the empirical results in Fig. 8. In general the method is robust to noise and as expected, more noise can be compensated by more data.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel architecture for interpretable equation learning with strong extrapolation capability, rigorous experimental validation across synthetic and real physics problems, addresses fundamental gap between black-box ML and scientific discovery."
+      },
+      "token": {
+        "prompt_tokens": 6388,
+        "completion_tokens": 73,
+        "total_tokens": 6461
+      },
+      "time": "2026-02-08T22:28:04.459427+00:00"
+    }
   ]
 }

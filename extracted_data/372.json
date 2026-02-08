@@ -50,5 +50,21 @@
       "text": "We presented a long-term memory module that can be used for life-long learning. It is versatile, so it can be added to different deep learning models and at different layers to give the networks one-shot learning capability. Several parts of the presented memory module could be tuned and studied in more detail. The update rule that averages the query with the correct key could be parametrized. Instead of returning only the single nearest neighbor we could also return a number of them to be processed by other layers of the network. We leave these questions for future research. The main issue we encountered, though, is that evaluating one-shot learning is difficult, as standard metrics do not focus on this scenario. In this work, we adapted the standard metrics to investigate our approach. For example, in the translation task we used half of the test set as context for the other half, and we still report the standard BLEU score. This allows us to show that our module works, but it is only a temporary solution. Better metrics are needed to accelerate progress of one-shot and life-long learning. Thus, we consider the present work as just a first step on the way to making deep models learn to remember rare events through their lifetime.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel differentiable memory module with practical efficiency (LSH), demonstrated versatility across multiple architectures (CNN, seq2seq, convolutional-recurrent), strong one-shot learning results on Omniglot, and first demonstration of life-long one-shot learning in large-scale NMT. Clear scientific contribution despite modest BLEU improvements on translation."
+      },
+      "token": {
+        "prompt_tokens": 4674,
+        "completion_tokens": 114,
+        "total_tokens": 4788
+      },
+      "time": "2026-02-08T22:08:16.469211+00:00"
+    }
   ]
 }

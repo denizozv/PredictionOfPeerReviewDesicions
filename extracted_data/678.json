@@ -140,5 +140,21 @@
       "text": "Table 5 shows the mean accuracy across all models trained for each combination of task, pre-training dataset and target-adjustment dataset size. Table 6 shows the corresponding standard deviations. Table 7 then shows the p-value that whether the expected accuracy of pre-trained models is greater than the expected accuracy of randomly initialized models. This shows that the pre-trained models are statistically significantly better for all target-adjustment set sizes on the SQuAD dataset. On bAbI the BookTest pre-trained models perform convincingly better especially for target-adjustment dataset sizes 100, 500 and 1000, with Task 16 being the main exception to this because the AS Reader struggles to learn it in any setting. For the CNN+DM pre-training the results are not conclusive. Ta sk Pr et ra in in g Ta rg et -a dj us tm en ts et si ze 0 1 10 10 0 50 0 10 00 50 00 10 00 0 28 17 4 SQ uA D B oo kT es t 1. 01 e45 4. 07 e05 7. 40 e05 7. 82 e08 N A 5. 17 e08 N A 3. 93 e08 8. 52 e03 Ta sk 1 B oo kT es t 3. 34 e83 1. 81 e03 1. 33 e01 2. 35 e19 9. 41 e04 1. 67 e02 1. 32 e01 N A N A Ta sk 2 B oo kT es t 1. 24 e34 3. 86 e07 7. 29 e03 2. 59 e01 1. 39 e08 2. 63 e06 7. 54 e09 2. 04 e01 N A Ta sk 3 B oo kT es t 9. 84 e55 1. 27 e05 7. 66 e03 1. 48 e03 3. 18 e04 2. 18 e03 2. 16 e04 1. 03 e01 N A Ta sk 4 B oo kT es t 7. 25 e78 9. 50 e01 9. 71 e01 1. 04 e05 6. 38 e03 1. 70 e02 1. 81 e02 N A N A Ta sk 5 B oo kT es t 6. 55 e11 5 9. 88 e22 8. 87 e19 5. 25 e05 3. 66 e03 8. 61 e02 5. 65 e03 N A N A Ta sk 11 B oo kT es t 6. 78 e15 2 1. 00 e+ 00 9. 94 e01 4. 07 e09 2. 50 e04 2. 28 e02 6. 37 e02 N A N A Ta sk 12 B oo kT es t 2. 27 e90 9. 10 e01 6. 46 e01 1. 89 e05 2. 78 e04 1. 43 e02 2. 36 e02 N A N A Ta sk 13 B oo kT es t 5. 30 e91 9. 75 e01 9. 99 e01 2. 88 e02 2. 74 e02 1. 03 e01 7. 06 e02 N A N A Ta sk 14 B oo kT es t 1. 97 e20 0 1. 01 e03 6. 79 e01 2. 22 e14 3. 40 e05 2. 93 e03 3. 66 e06 3. 97 e01 N A Ta sk 15 B oo kT es t 3. 64 e09 4. 75 e01 4. 12 e01 6. 70 e01 1. 68 e03 3. 70 e03 1. 03 e05 4. 54 e01 N A Ta sk 16 B oo kT es t 1. 81 e05 8. 28 e04 4. 38 e01 2. 72 e01 4. 89 e01 5. 71 e01 7. 40 e03 N A N A Ta sk 1 C N N +D M 9. 43 e09 2. 99 e01 1. 11 e01 1. 05 e01 9. 54 e02 1. 45 e01 3. 97 e03 N A N A Ta sk 2 C N N +D M 9. 38 e17 6. 93 e01 9. 02 e01 9. 15 e01 1. 05 e03 4. 20 e01 2. 64 e03 8. 49 e02 N A Ta sk 3 C N N +D M 2. 42 e16 4. 95 e02 6. 30 e01 1. 75 e01 2. 13 e03 6. 59 e04 4. 68 e02 1. 24 e01 N A Ta sk 4 C N N +D M 5. 84 e03 9. 70 e01 1. 37 e01 4. 83 e03 3. 33 e01 8. 84 e01 1. 08 e01 N A N A Ta sk 5 C N N +D M 1. 17 e10 7. 00 e03 7. 93 e04 5. 20 e01 9. 70 e01 5. 66 e01 1. 83 e01 N A N A Ta sk 11 C N N +D M 1. 00 e+ 00 9. 84 e01 9. 73 e01 2. 58 e01 7. 17 e01 1. 45 e01 6. 95 e01 N A N A Ta sk 12 C N N +D M 1. 93 e14 9. 32 e01 9. 92 e01 2. 57 e02 4. 06 e01 6. 65 e02 2. 09 e01 N A N A Ta sk 13 C N N +D M 8. 69 e02 9. 61 e01 9. 72 e01 9. 89 e01 6. 22 e01 9. 44 e01 2. 83 e01 N A N A Ta sk 14 C N N +D M 2. 17 e12 6. 64 e02 1. 11 e01 2. 05 e02 3. 66 e02 4. 52 e01 9. 10 e01 8. 24 e01 N A Ta sk 15 C N N +D M 1. 36 e52 5. 30 e03 3. 48 e02 7. 21 e02 8. 36 e01 3. 09 e01 8. 47 e01 9. 84 e01 N A Ta sk 16 C N N +D M 6. 39 e35 4. 56 e02 9. 66 e01 5. 95 e01 7. 19 e01 4. 09 e02 2. 51 e02 2. 22 e03 N A Ta bl e 7: O ne -s id ed p- va lu e w he th er th e m ea n ac cu ra cy of pr etr ai ne d m od el s is gr ea te rt ha n th e ac cu ra cy of th e ra nd om ly in iti al iz ed on es fo re ac h co m bi na tio n of ta sk pr etr ai ni ng da ta se t. pva lu es be lo w 0. 05 ar e m ar ke d in gr ee n.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in transfer learning approach, standard architecture (AS Reader), narrow experimental scope (single model, cloze-style tasks), and incremental findings without significant methodological innovation."
+      },
+      "token": {
+        "prompt_tokens": 8886,
+        "completion_tokens": 74,
+        "total_tokens": 8960
+      },
+      "time": "2026-02-08T22:41:08.030812+00:00"
+    }
   ]
 }

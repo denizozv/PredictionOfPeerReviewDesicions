@@ -150,5 +150,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical investigation of loss surface geometry with novel 2D/3D visualization techniques and systematic comparison of optimization algorithms. Contributes useful insights on basin structure and algorithm-specific minima characteristics, though limited theoretical novelty and incremental methodological advances."
+      },
+      "token": {
+        "prompt_tokens": 6836,
+        "completion_tokens": 90,
+        "total_tokens": 6926
+      },
+      "time": "2026-02-08T22:29:04.104406+00:00"
+    }
   ]
 }

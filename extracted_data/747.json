@@ -120,5 +120,21 @@
       "text": "We show that the methods DeepLift and Layer-wise relevance propagation (LRP) break the implementation invariance axiom, and the Deconvolution and Guided back-propagation methods break the sensitivity axiom. Figure 14 provides an example of two equivalent networks f(x1, x2) and g(x1, x2) for which DeepLift and LRP yield different attributions. First, observe that the networks f and g are of the form f(x1, x2) = ReLU(h(x1, x2)) and f(x1, x2) = ReLU(k(x1, x2)) 7, where h(x1, x2) = ReLU(x1) 1 ReLU(x2) k(x1, x2) = ReLU(x1 1) ReLU(x2) Note that h and k are not equivalent. They have different values whenever x1 < 1. But f and g are equivalent. To prove this, suppose for contradiction that f and g are different for some x1, x2. Then it must be the case that ReLU(x1) 1 6= ReLU(x1 1). This happens only when x1 < 1, which implies that f(x1, x2) = g(x1, x2) = 0. Now we leverage the above example to show that Deconvolution and Guided back-propagation break sensitivity. Consider the network f(x1, x2) from Figure 14. For a fixed value of x1 greater than 1, the output decreases linearly as x2 increases from 0 to x1 1. Yet, for all inputs, Deconvolutional networks and Guided back-propagation results in zero attribution for x2. This happens because for all inputs the back-propagated signal received at the node ReLU(x2) is negative and is therefore not back-propagated through the ReLU operation (per the rules of deconvolution and guided backpropagation; see Springenberg et al. (2014) for details). As a result, the feature x2 receives zero attribution despite the networks output being sensitive to it. 7 ReLU(x) is defined as max(x, 0).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel theoretical framework (integrated gradients with axiomatic justification), addresses fundamental problem (gradient saturation in attribution), strong empirical validation across multiple domains (vision, chemistry, NLP), and practical computational efficiency."
+      },
+      "token": {
+        "prompt_tokens": 9928,
+        "completion_tokens": 80,
+        "total_tokens": 10008
+      },
+      "time": "2026-02-08T22:47:08.331054+00:00"
+    }
   ]
 }

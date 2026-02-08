@@ -75,5 +75,21 @@
       "text": "We proposed supervised competitive learning to imitate a drivers potential intentions. Competitive learning was applied to supervised learning and the squared error was reduced to 1/25 that of a conventional method. We also demonstrated that competitive learning can distinguish valid data from disturbance data to train a model.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty (competitive learning is well-established), narrow single-task application (driving only), weak experimental validation (small dataset, no comparison with modern baselines or state-of-the-art methods), and presentation issues. The core contribution—applying supervised competitive learning to behavior prediction—lacks sufficient theoretical or empirical depth for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 3144,
+        "completion_tokens": 109,
+        "total_tokens": 3253
+      },
+      "time": "2026-02-08T22:50:12.521442+00:00"
+    }
   ]
 }

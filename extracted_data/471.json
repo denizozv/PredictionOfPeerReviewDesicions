@@ -115,5 +115,21 @@
       "text": "In Tables 2 and 3 we have presented some examples. The text in black/grey shows the conversation history, the response in blue is by the bot trained via maximum likelihood (ML) alone and in red is the bot after improvement using our BPG reinforcement learning algorithm. The first two examples of Table 2 present examples where the ML algorithm repeated generic questions (on budget, group size etc.) even though they had already been answered previously. After applying BPG, we are able to correct such issues, even though there are some grammatical errors. In the second, third and fourth example, we see that the ML+BPG bot is able to take context into consideration well when responding. For example, the customer asks for oriental/Mexican/Italian food. While the ML bot doesnt take this into consideration, the ML+BPG bot is able to provide relevant answers. However, in the third example, the name of the restaurant suggests that the food might be Indian and not Mexican. In the final example of Table 2 the customer asks a direct question about smoking. The ML bot provides an irrelevant answer where as the ML+BPG bot directly responds to the question. In some examples, the ML bot had a tendency to produce sentences that were grammatically correct but nonsensical, sensible but grammatically incorrect, or just complete gibberish. We were able to correct such issues via RL. The first three examples of Table 3 present such cases. Occasionally the opposite happened. The last example of Table 3 is one such instance.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel off-policy batch policy gradient method for RL in seq2seq models with practical motivation (noisy, expensive rewards). Solid theoretical grounding, addresses real limitations of prior on-policy NLP-RL work, and demonstrates empirical improvements on real task (AMT restaurant recommendations). However, limited experimental scope and modest statistical significance reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 7481,
+        "completion_tokens": 109,
+        "total_tokens": 7590
+      },
+      "time": "2026-02-08T22:20:15.091575+00:00"
+    }
   ]
 }

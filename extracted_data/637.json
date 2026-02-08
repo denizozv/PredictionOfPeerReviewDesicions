@@ -65,5 +65,21 @@
       "text": "",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel approach casting rule mining as sparse reconstruction in embedding space with theoretical grounding and consistent empirical improvements over baselines, though limited experimental scope and modest gains."
+      },
+      "token": {
+        "prompt_tokens": 4615,
+        "completion_tokens": 68,
+        "total_tokens": 4683
+      },
+      "time": "2026-02-08T22:37:13.159726+00:00"
+    }
   ]
 }

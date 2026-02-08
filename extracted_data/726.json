@@ -75,5 +75,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel information-theoretic framework connecting dropout, information bottleneck, and VAEs with solid theoretical grounding and well-designed experiments demonstrating nuisance invariance."
+      },
+      "token": {
+        "prompt_tokens": 7732,
+        "completion_tokens": 71,
+        "total_tokens": 7803
+      },
+      "time": "2026-02-08T22:45:14.485893+00:00"
+    }
   ]
 }

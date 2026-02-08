@@ -75,5 +75,21 @@
       "text": "Because we use guided policy search to optimize the policy, we inherit its sample efficiency. In Table 2, we report the number of samples used in both labeled and unlabeled scenarios for all tasks and all methods. Note that the labeled samples used by the oracle are in from the unlabeled MDPs U , where we generally assume that reward labels are not available.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel problem formulation (semi-supervised RL), theoretically grounded approach combining inverse RL with maximum entropy control, well-designed experiments on generalization tasks with clear improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 5680,
+        "completion_tokens": 76,
+        "total_tokens": 5756
+      },
+      "time": "2026-02-08T22:07:13.230224+00:00"
+    }
   ]
 }

@@ -105,5 +105,21 @@
       "text": "We took the experiments on whitened versions of MNIST. 10 greatest principal components are kept for the dataset inputs. The dataset outputs are represented using one-hot encoding. The network was trained using gradient descent. For every epoch, the Hessians of the networks were calculated using the method proposed in (Bishop, 1992). As the ||min of Hessian is usually very unstable, we calculated ||max||(0.1) to represent condition number instead, where ||(0.1) is the 10 th percentile of the absolute values of eigenvalues. As pre, mid or post positions are not defined in linear networks without shortcuts, when comparing Xavier or orthogonal initialized linear networks to 2-shortcut networks, we added ReLUs at the same positions in linear networks as in 2-shortcuts networks.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel theoretical analysis of ResNet via Hessian condition numbers at initialization; rigorous mathematical framework explaining why 2-shortcuts achieve depth-invariant optimization; strong experimental validation on learning dynamics and convergence properties."
+      },
+      "token": {
+        "prompt_tokens": 7140,
+        "completion_tokens": 80,
+        "total_tokens": 7220
+      },
+      "time": "2026-02-08T22:48:07.135004+00:00"
+    }
   ]
 }

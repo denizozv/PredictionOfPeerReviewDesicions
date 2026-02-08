@@ -70,5 +70,21 @@
       "text": "This research was supported by the National Natural Science Foundation of China (No.61672203 & 61375047), the Program for Changjiang Scholars and Innovative Research Team in University of the Ministry of Education of China (No.IRT13059), and the Fundamental Research Funds for the Central Universities of China.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.95,
+        "primary_reason": "Limited novelty: straightforward application of existing Fast R-CNN + batch normalization to pedestrian detection. Batch normalization is a standard technique (Ioffe & Szegyi 2015), not a novel contribution. Incremental improvements over baselines (2% over FRCNN on INRIA, underperforms on ETH). Lacks methodological innovation, theoretical insight, or significant empirical advances expected for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 3099,
+        "completion_tokens": 133,
+        "total_tokens": 3232
+      },
+      "time": "2026-02-08T22:48:25.143608+00:00"
+    }
   ]
 }

@@ -110,5 +110,21 @@
       "text": "We present an argument that running the walkback chain for a sufficient number of steps will cause the variational bound to become tight. Consider a sequence st, ..., s1 generated in that order by our model p through a sequence of applications of the transition operator T, i.e., p(s1, ..., st) = p(st)T (st1|st)...T (s1|s2), i.e. p(sn1|sn) = T (sn1|sn), but note that p(sn|sn1) 6= p(sn1|sn). Let pi(s) denote the stationary distribution associated with T. Note that T and pi and related by the detailed balance equation, i.e., T (s|s)pi(s) = T (s|s)pi(s). We want to approximate the posterior p(st, st1, ..., s2|s1) = t n=2 p(sn|sn1) now by Bayes rule = t n=2 p(sn1|sn) p(sn) p(sn1) by telescopic cancellation and definition of T = p(st)p(s1) t n=2 T (sn1|sn) now by detailed balance = p(st)p(s1) t n=2 T (sn|sn1) pi(sn1) pi(sn) by telescopic cancellation = p(st)pi(st) pi(s1) p(s1) t n=2 T (sn|sn1) again by definition of T = p(st)pi(st) pi(s1) p(s1) t n=2 p(sn|sn1) So our approximation error in the posterior is the factor p(st)pi(st) pi(s1) p(s1) . If t is large enough, then s1 (being at the end of the generative sequence) has pretty much converged, i.e., p(s1) pi(s1). If we throw in temperature annealing along the way (now the notation would have to be changed to put an index n on both p and T), with the initial temperature being very high, then we can hope that the initial Gaussian p(st) is very similar to the stationary distribution at high temperature pi(st). These arguments suggest that as we make t larger and the final (initial) temperature larger as well, the approximation becomes better.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel variational framework for training undirected graphical models with rigorous theoretical grounding. Addresses fundamental MCMC mixing problem through walkback strategy with temperature annealing. Strong mathematical contribution with practical algorithmic innovation and reasonable experimental validation."
+      },
+      "token": {
+        "prompt_tokens": 7051,
+        "completion_tokens": 86,
+        "total_tokens": 7137
+      },
+      "time": "2026-02-08T22:38:23.128576+00:00"
+    }
   ]
 }

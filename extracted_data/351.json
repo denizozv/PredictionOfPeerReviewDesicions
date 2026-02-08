@@ -85,5 +85,21 @@
       "text": "In this section, we analyze the influence of increasing the number of PCs used to perform classification. Figure 4 depicts the obtained results when considering 100, 200, 400, 800 and 1000 PCs. As shown in the figure, the best validation error comes with PC200. Further increasing the number of PCs improves the training error but does not generalize well on the validation set.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel parameter reduction technique for high-dimensional genomic data via auxiliary networks predicting fat layer parameters. Well-motivated problem, clear methodological contribution, solid experimental validation on real genomic dataset with meaningful comparisons to domain baselines (PCA)."
+      },
+      "token": {
+        "prompt_tokens": 4705,
+        "completion_tokens": 87,
+        "total_tokens": 4792
+      },
+      "time": "2026-02-08T22:06:21.699264+00:00"
+    }
   ]
 }

@@ -80,5 +80,21 @@
       "text": "Authors thank Camille Couprie and Michael Mathieu for discussions and helping with evaluation of their models.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel transformation-based approach to video prediction with solid methodological contribution, new evaluation protocol using discriminative features, and strong experimental validation on UCF-101 with computational efficiency gains."
+      },
+      "token": {
+        "prompt_tokens": 4457,
+        "completion_tokens": 73,
+        "total_tokens": 4530
+      },
+      "time": "2026-02-08T22:34:21.335219+00:00"
+    }
   ]
 }

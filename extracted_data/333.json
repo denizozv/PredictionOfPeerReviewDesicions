@@ -60,5 +60,21 @@
       "text": "",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel empirical finding that random filters in shallow networks can synthesize natural textures comparably to deep supervised networks; well-designed ablation studies systematically isolate critical components (multi-scale, non-linearity, filter count); strong experimental validation with perceptual metrics; challenges conventional wisdom about deep learning for generative tasks."
+      },
+      "token": {
+        "prompt_tokens": 3716,
+        "completion_tokens": 104,
+        "total_tokens": 3820
+      },
+      "time": "2026-02-08T22:05:06.413175+00:00"
+    }
   ]
 }

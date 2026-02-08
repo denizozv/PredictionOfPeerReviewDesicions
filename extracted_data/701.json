@@ -75,5 +75,21 @@
       "text": "This work was supported by the US Government.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty: modular networks and multi-tower architectures are well-established. Weak experimental validation: unfair comparisons (different parameter counts), no statistical significance testing, cherry-picked baselines, missing ablations. Presentation issues: incremental contributions presented as novel, no theoretical insight into why modularity helps. Small-scale experiments (MNIST, CIFAR subsets) insufficient for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4359,
+        "completion_tokens": 124,
+        "total_tokens": 4483
+      },
+      "time": "2026-02-08T22:43:10.730962+00:00"
+    }
   ]
 }

@@ -85,5 +85,21 @@
       "text": "This work was supported by Microsoft Research through its PhD Scholarship Programme, an Allen Distinguished Investigator Award, and a Marie Curie Career Integration Award.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel sparse pointer network for long-range identifier dependencies in code suggestion, large-scale Python corpus contribution, solid experimental validation with clear improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 3920,
+        "completion_tokens": 67,
+        "total_tokens": 3987
+      },
+      "time": "2026-02-08T22:47:23.669377+00:00"
+    }
   ]
 }

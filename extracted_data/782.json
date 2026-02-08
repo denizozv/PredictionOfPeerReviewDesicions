@@ -90,5 +90,21 @@
       "text": "One of the open questions in the area of designing neural networks with attention mechanisms is whether to use a soft or hard attention. The model described in the paper belongs to the latter class of attention mechanisms as it makes hard, stochastic choices. The other solution would be to use a soft, differentiable mechanism, which attends to a linear combination of the potential attention targets and do not involve any sampling. The main advantage of such models is that their gradients can be computed exactly. We now describe how to modify the model to make it fully differentiable (\"DHAM\"). Recall that in the original model the leaf which is attended at every timestep is sampled stochastically. Instead of that, we will now at every timestep compute for every leaf e the probability p(e) that this leaf would be attended if we used the stochastic procedure described in Fig. 2b. The value p(e) can be computed by multiplying the probabilities of going in the right direction from all the nodes on the path from the root to e. As the input for the LSTM we then use the value eL p(e)he. During the write phase, we update the values of all the leaves using the formula he := p(e)WRITE(he, hROOT)+(1p(e))he. Then, in the update phase we update the values of all the inner nodes, so that the equation he = JOIN(hl(e), hr(e)) is satisfied for each inner node e. Notice that one timestep of the soft version of the model takes time (n) as we have to update the values of all the nodes in the tree. Our model may be seen as a special case of Gated Graph Neural Network (Li et al., 2015). This version of the model is fully differentiable and therefore it can be trained using end-to-end backpropagation on the log-probability of producing the correct output. We observed that training DHAM is slightly easier than the REINFORCE version. However, DHAM does not generalize as well as HAM to larger memory sizes.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel hierarchical tree-based attention mechanism achieving O(log n) memory access complexity. Strong algorithmic contributions (learning sorting, merging, binary search from I/O examples with excellent generalization). Rigorous experimental validation on multiple tasks with clear comparisons to baselines. Well-motivated architecture with theoretical grounding and interpretable learned algorithms."
+      },
+      "token": {
+        "prompt_tokens": 8322,
+        "completion_tokens": 107,
+        "total_tokens": 8429
+      },
+      "time": "2026-02-08T22:50:08.069545+00:00"
+    }
   ]
 }

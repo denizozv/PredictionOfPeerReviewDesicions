@@ -110,5 +110,21 @@
       "text": "In this additional section, we investigate the influence of weighting coefficient when using exponential moving average estimates of the covariance matrices for CCA computation (see Section 3). A high (close to 1.0) means that the averaged estimate of xx, yy and xy mostly depends on the current batch, and a low (close to 0.0) means it more strongly depends on the history of previous batches. To assess whether and under what circumstances exponential moving averages are helpful, we run an additional experiment on the IAPR TC-12 dataset as follows: We re-train one of the models of Section 4 both with batch size 1000 and with batch size 200, varying from 1.0 to 0.1 with a step size of 0.1 and measuring the MAP achieved on the validation set. We run each setting three times and report the average over the three runs. Figure 3 shows the results of this experiment. For batch size 1000, we draw the same conclusion as was reported in (Wang et al., 2015a;b): If the batch size is sufficiently large and representative for the entire population, learning on distribution parameters (in this case covariance matrices) is feasible, and the network performs best when trained with an close to one. This is not the case for batch size 200. In particular, the configurations with a large (small effective running average window) perform poorly. We conclude that a batch size of 200 is too small to obtain stable and representative covariances. However, when choosing a small , it is still possible to train the models and achieve reasonable retrieval performance. As a practical recommendation, we suggest to use large batch sizes whenever possible (e.g., if feasible with available hardware). If the batch size needs to be reduced (e.g., for very large models and limited memory), using small alpha values still allows for training canonically correlated retrieval networks. For this work, we use a batch size of 1000 and fix = 1, disabling moving averages.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel technical contribution enabling gradient flow through CCA projections with practical multi-view applications; solid experimental validation on standard benchmarks with meaningful improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 5334,
+        "completion_tokens": 68,
+        "total_tokens": 5402
+      },
+      "time": "2026-02-08T22:30:31.118602+00:00"
+    }
   ]
 }

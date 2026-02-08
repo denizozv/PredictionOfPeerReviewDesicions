@@ -105,5 +105,21 @@
       "text": "There have been multiple approaches for evaluation of variational autoencoders, in particular log-likelihood lower bound and log-density (using the Parzen window estimator, Rifai et al. (2012)). Here we show that for the generation task, log-density is a more appropriate measure than log-likelihood lower bound. Models are trained on binarized MNIST, to be consistent with literature reporting likelihood bounds. The encoder and decoder for all models consist of a single deterministic layer with 500 units. Table 3 shows the log-likelihood bound and log-density for VAE and eVAE models as the dimensionD of latent variable z is increased. For VAE, as D increases, the likelihood bound improves, but the log-density decreases. Referring to the corresponding generation samples in Fig. 11, we see that sample quality in fact decreases, counter to the likelihood bound but consistent with log-density. The reported VAE bounds and sample quality also matches Figs. 2 and 5 in Kingma & Welling (2014). On the other hand, eVAE log-density first decreases and then improves with larger D. We see that this is also consistent with Fig. 11, where eVAE samples for D = 8 are the most interpretable overall, and D = 48 improves over D = 24 but still has some degenerate or washed out digits. (Note that these models are consistent with Kingma & Welling (2014) but are not the best-performing models reported in our experiments.) Since our work is motivated by the generation task, we therefore use log-density as the evaluation metric in our experiments. Intuitively, the reason why VAE improves the likelihood bound but generation quality still decreases can be seen in the breakdown of the bound into the reconstruction and KL terms (Table 3 and Fig. 10). The improvement of the bound is due to large improvement in reconstruction, but the KL becomes significantly worse. This has a negative effect on generation, since the KL term is closely related to generation. On the other hand, eVAE reconstruction improves to a lesser extent, but the KL is also not as strongly affected, so generation ability remains stronger overall. As a result of this, simply tuning the KL weight in the training objective is insufficient to improve VAE generation, as shown in Fig. 1 in the main paper.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel structured sparsity approach to VAE over-pruning problem with solid theoretical motivation and comprehensive experiments on standard benchmarks, though limited to simple datasets and modest empirical gains."
+      },
+      "token": {
+        "prompt_tokens": 7026,
+        "completion_tokens": 73,
+        "total_tokens": 7099
+      },
+      "time": "2026-02-08T22:32:17.341626+00:00"
+    }
   ]
 }

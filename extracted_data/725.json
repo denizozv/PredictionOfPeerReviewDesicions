@@ -130,5 +130,21 @@
       "text": "From assumption, there exists some constant `1i such that `1i < B and h`1i (x) = h `1 i (x) + `1 i , i,x. (13) Let ` = max j,xD f (W`jh`1(x) + b`j) be the maximum value of hidden units. If we initialize the parameters ( `,W `, b` ) ( 1 ` , W`, b` ) , then the marginal distribution becomes P ( h`j = 1 | x,W`,b` ) = min `f ( W`jh `1 (x) + b`j ) , 1 = 1 ` f ( W`jh `1 (x) + b`j ) , j,x. From (13), it follows that P ( h`j = 1 | x,W`,b` ) = 1 ` f ( W`jh `1 (x) + i W `ij `1 i + b ` j ) , j,x. Similar to Lemma 4, there exists some constant `j such that `j < BN `1W `max and P ( h`j = 1 | x,W`,b` ) = 1 ` ( h`j (x) + ` j ) , j,x. (14) Next, consider the upper hidden layer of stochastic layer. From Taylors theorem, there exists a value z between 0 and t such that s(x) = s(0) + s(0)x+ R(x), where R(x) = s (z)x2 2! . Since we consider a binary random vector, i.e., h` 0, 1N` , one can write EP (h`|x)[s(k(h`))] = h` ( s(0) + s(0)k(h `) +R ( k(h `) )) P (h` | x) = s(0) + s(0) j W `+1jk P (h ` j = 1 | x) + b`+1k + h` R(k(h `))P (h` | x), where k(h`) = W`+1k h ` + b`+1k is the incoming signal. From (14) and above equation, for every hidden unit k, we have h`+1k (x;W `+1,b`+1) = f `+1 s(0) 1 ` j W `+1jk h ` j(x) + j W `+1jk ` j + b`+1k + EP (h`|x) [R(k(h`))] . Since we assume that |f (x)| < 1, the following inequality holds:h`+1k (x;W`+1,b`+1) f `+1s(0) 1 ` j W `+1ij h ` j(x) + b `+1 j `+1s (0) ` j W `+1jk ` j + `+1EP (h`|x) [ R(k(h `)) ] `+1s (0) ` j W `+1jk ` j + `+1 2 EP (h`|x) [( W`+1k h ` + b`+1k )2] , (15) where we use |s(z)| < 1 for the last inequality. Therefore, it follows that h`+1k (x) h`+1k (x) BN `1N `W `maxW `+1max + ` ( N `W `+1max + b `+1 max 1 ` )2 2s(0)`+1 , since we set ( `+1,W `+1, b`+1 ) ( `+1` s(0) , W`+1 `+1 , 1` b `+1 `+1 ) . This completes the proof of Lemma 5.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel intermediate model (Simplified-SFNN) with theoretical guarantees for parameter transfer from DNN to SFNN; solid experimental validation across multiple tasks and architectures; addresses practical training challenges of stochastic networks."
+      },
+      "token": {
+        "prompt_tokens": 10620,
+        "completion_tokens": 82,
+        "total_tokens": 10702
+      },
+      "time": "2026-02-08T22:45:12.863210+00:00"
+    }
   ]
 }

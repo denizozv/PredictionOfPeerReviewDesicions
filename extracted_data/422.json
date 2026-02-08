@@ -105,5 +105,21 @@
       "text": "B.1 EXPERIMENTAL SETUP In all our experiments, we use sequences of 15 raw images of the respective system with 1616 pixels each, i.e., observation space X R256, as well as control inputs of varying dimension and interpretation depending on the experiment. We used training, validation and test sets with 500 sequences each. Control input sequences were drawn randomly (motor babbling). Additional details about the implementation can be found in the published code at https://brml.org/ projects/dvbf. B.2 ADDITIONAL EXPERIMENT PLOTS B.3 IMPLEMENTATION DETAILS FOR DVBF IN PENDULUM EXPERIMENT Input: 15 timesteps of 162 observation dimensions and 1 action dimension Latent Space: 3 dimensions Observation Network p(xt|zt) = N (xt;(zt), ): 128 ReLU + 162 identity output Recognition Model: 128 ReLU + 6 identity output q(wt|zt,xt+1,ut) = N (wt;, ), (, ) = f(zt,xt+1,ut) Transition Network t(zt): 16 softmax output Initial Network w1 p(x1:T ): Fast Dropout BiRNN with: 128 ReLU + 3 identity output Initial Transition z1(w1): 128 ReLU + 3 identity output Optimizer: adadelta, 0.1 step rate Inverse temperature: c0 = 0.01, updated every 250th gradient update, TA = 105 iterations Batch-size: 500 B.4 IMPLEMENTATION DETAILS FOR DVBF IN BOUNCING BALL EXPERIMENT Input: 15 timesteps of 162 observation dimensions and 2 action dimension Latent Space: 4 dimensions Observation Network p(xt|zt) = N (xt;(zt), ): 128 ReLU + 162 identity output Recognition Model: 128 ReLU + 8 identity output q(wt|zt,xt+1,ut) = N (wt;, ), (, ) = f(zt,xt+1,ut) Transition Network t(zt): 16 softmax output Initial Network w1 p(x1:T ): Fast Dropout BiRNN with: 128 ReLU + 4 identity output Initial Transition z1(w1): 128 ReLU + 4 identity output Optimizer: adadelta, 0.1 step rate Inverse temperature: c0 = 0.01, updated every 250th gradient update, TA = 105 iterations Batch-size: 500 B.5 IMPLEMENTATION DETAILS FOR DVBF IN TWO BOUNCING BALLS EXPERIMENT Input: 15 timesteps of 202 observation dimensions and 2000 samples Latent Space: 10 dimensions Observation Network p(xt|zt) = N (xt;(zt), ): 128 ReLU + 202 sigmoid output Recognition Model: 128 ReLU + 20 identity output q(wt|zt,xt+1,ut) = N (wt;, ), (, ) = f(zt,xt+1,ut) Transition Network t(zt): 64 softmax output Initial Network w1 p(x1:T ): MLP with: 128 ReLU + 10 identity output Initial Transition z1(w1): 128 ReLU + 10 identity output Optimizer: adam, 0.001 step rate Inverse temperature: c0 = 0.01, updated every gradient update, TA = 2 105 iterations Batch-size: 80 B.6 IMPLEMENTATION DETAILS FOR DKF IN PENDULUM EXPERIMENT Input: 15 timesteps of 162 observation dimensions and 1 action dimension Latent Space: 3 dimensions Observation Network p(xt|zt) = N (xt;(zt), (zt)): 128 Sigmoid + 128 Sigmoid + 2 162 identity output Recognition Model: Fast Dropout BiRNN 128 Sigmoid + 128 Sigmoid + 3 identity output Transition Network p(zt|zt1,ut1): 128 Sigmoid + 128 Sigmoid + 6 output Optimizer: adam, 0.001 step rate Inverse temperature: c0 = 0.01, updated every 25th gradient update, TA = 2000 iterations Batch-size: 500",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel variational inference framework for unsupervised state space learning with principled reparametrization of transitions to enforce Markovian assumptions. Strong theoretical contribution (proper ELBO derivation), clear methodological innovation over prior work (DKF, E2C), and convincing experiments demonstrating superior latent state information content and long-term prediction."
+      },
+      "token": {
+        "prompt_tokens": 7950,
+        "completion_tokens": 112,
+        "total_tokens": 8062
+      },
+      "time": "2026-02-08T22:14:17.547564+00:00"
+    }
   ]
 }

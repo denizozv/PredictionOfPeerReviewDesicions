@@ -140,5 +140,21 @@
       "text": "We had initially expected that, when a convolutional network is tasked with processing subsequent frames of video, high-level features would change much more slowly than the pixels and low-level features. This would give a computational advantage to our Sigma-Delta networks, whose computational cost scales with the amount of change in the feature representations. To our surprise, this appeared not to be the case. See the final plot of Figure 5. To verify that this was a property of the original convolutional network (and not somehow related our discretization scheme), we take the same snippet of video used for Figure 5 and measure the inter-frame differences. Figure 6 shows the results of this small experiment, and confirms that our initial belief - that inter-frame differences should become smaller and smaller at higher layers, was not quite correct.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel temporal-difference quantization scheme with solid theoretical foundation (sigma-delta modulation connection), practical optimization method for post-training quantization, and demonstrated computational savings on video. However, experiments are preliminary (toy problem, synthetic temporal-MNIST, limited video results) and lack comparison with other quantization/efficiency methods, preventing higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 6311,
+        "completion_tokens": 106,
+        "total_tokens": 6417
+      },
+      "time": "2026-02-08T22:13:14.318331+00:00"
+    }
   ]
 }

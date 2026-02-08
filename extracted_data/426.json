@@ -105,5 +105,21 @@
       "text": "In tables 7 and 8, we provide results at precisions @5 and @10, for the same experiments shown @1 in table 6 of the main text. Once again, the inverted softmax performs well when retrieving the Italian translations of English sentences, but is less effective translating Italian sentences into English. However, the performance of Dinus method appears to rise more rapidly than other methods as we transition from precision @1 to @5 to @10. Additionally, while Dinus method performs better when using the word dictionary @1, it prefers the phrase dictionary @5 and @10.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel theoretical contribution (orthogonal transformation proof), practical improvements (inverted softmax), comprehensive experiments including pseudo-dictionaries and sentence-level translation. Solid methodological advance with clear empirical validation."
+      },
+      "token": {
+        "prompt_tokens": 6047,
+        "completion_tokens": 78,
+        "total_tokens": 6125
+      },
+      "time": "2026-02-08T22:14:24.424104+00:00"
+    }
   ]
 }

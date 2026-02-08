@@ -115,5 +115,21 @@
       "text": "PERFORMANCE CCA methods are typically evaluated intrinsically by the amount of correlation captured, or reconstruction error. These measures are dependent on the width of the shared embeddings and viewspecific output layers, and do not necessarily predict downstream performance. Although reconstruction error cannot solely be relied on for model selection for a downstream task, we found that it was a useful as a signal to weed out very poor models. Figure 6 shows the reconstruction error against hashtag prediction Recall at 1000 for an initial grid search of DGCCA hyperparameters. Models with tuning reconstruction error greater than 103 can safely be ignored, while there is some variability in the performance of models with achieving lower error. Since a DGCCA model with high reconstruction error suggests that the views do not agree with each other at all, it makes sense that the shared embedding will likely be noisy, whereas a relatively lowly reconstruction error suggests that the transformed views have converged to a stable solution.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel methodological contribution combining deep learning with multiview CCA; addresses clear limitation (extending DCCA to >2 views); solid theoretical derivation; comprehensive experiments on diverse tasks with consistent improvements over baselines."
+      },
+      "token": {
+        "prompt_tokens": 5878,
+        "completion_tokens": 80,
+        "total_tokens": 5958
+      },
+      "time": "2026-02-08T22:38:07.598885+00:00"
+    }
   ]
 }

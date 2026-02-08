@@ -75,5 +75,21 @@
       "text": "This research used resources of the National Energy Research Scientific Computing Center (NERSC), a DOE Office of Science User Facility supported by the Office of Science of the U.S. Department of Energy under Contract No. DE-AC02-05CH11231. Code relies on open-source deep learning frameworks Theano (Bergstra et al.; Team et al., 2016) and Lasagne (Team, 2016), whose developers we gratefully acknowledge. We would also like to thank Yunjie Liu and Michael Wehner for providing access to the climate datasets; Alex Lamb and Thorsten Kurth for helpful discussions; and Samsung for their support of this research.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel application of semi-supervised 3D CNN encoder-decoder to climate extreme weather detection with solid experimental validation, though methodological novelty is moderate (hybrid reconstruction+detection loss) and results show mixed performance on strict metrics."
+      },
+      "token": {
+        "prompt_tokens": 5938,
+        "completion_tokens": 82,
+        "total_tokens": 6020
+      },
+      "time": "2026-02-08T22:32:10.334256+00:00"
+    }
   ]
 }

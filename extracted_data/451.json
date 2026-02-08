@@ -125,5 +125,21 @@
       "text": "E.1 A DISCONNECTION As a sanity check for the algorithm, we also applied it to a problem for which we know that it is not possible to connect models of equivalent power by the arguments of section 2.3.1. The input data is 3 points in R2, and the task is to permute the datapoints, i.e. map x1, x2, x3 x2, x3, x1. This map requires at least 12 parameters in general for the three linear maps which take xi xj for i, j 1, 2, 2, 3, 3, 1. Our archticture was a 2-3-2 fully connected neural network with a single relu nonlinearity after the hidden layera model which clearly has 12 free parameters by construction. The two models we tried to connect were a single model, , and a copy of with the first two neurons in the hidden layer permuted, . The algorithm fails to converge when initialized with these two models. We provide a visualization of the string of models produced by the algorithm in Fig. 4. In general, a persistent high interpolated loss between two neighboring beads on the string of models could arise from either a slowly converging, connected pair of models or from a truly disconnected pair of models. Proving a disconnection at the level of numerical experiments is intractable in general, but a collection of negative resultsi.e., failures to convergeare highly suggestive of a true disconnection.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical contribution on loss landscape topology with rigorous analysis of half-rectified networks; strong mathematical framework connecting overparametrization to level-set connectedness; practical algorithm with comprehensive experiments across architectures."
+      },
+      "token": {
+        "prompt_tokens": 11965,
+        "completion_tokens": 79,
+        "total_tokens": 12044
+      },
+      "time": "2026-02-08T22:17:16.938782+00:00"
+    }
   ]
 }

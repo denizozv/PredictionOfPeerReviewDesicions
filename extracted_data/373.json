@@ -100,5 +100,21 @@
       "text": "This work was funded by NVIDIA, the Office of Naval Research grant N000141512791, the ADeLAIDE grant FA8750-16C-0130-001, the NSF grant IIS1250956, and Google Research.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Well-motivated transfer learning framework with systematic exploration across three dimensions (domain, application, language), comprehensive experiments on multiple benchmarks, and consistent SOTA improvements. Clear methodological contribution with practical impact."
+      },
+      "token": {
+        "prompt_tokens": 4542,
+        "completion_tokens": 76,
+        "total_tokens": 4618
+      },
+      "time": "2026-02-08T22:08:18.140417+00:00"
+    }
   ]
 }

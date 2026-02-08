@@ -75,5 +75,21 @@
       "text": "In conclusion, we presented a new regularization method based on the observation that co-label similarities apparent in the beginning of training, disappear once a network begins to over-fit. SoftTarget regularization reduced over-fitting as well as Dropout without adding complexity to the network, therefore reducing computational time, and we provided novel insights into the problem of overfitting. Future work will focus on methods to reduce the number of hyper-parameters introduced by SoftTarget regularization, as well as providing a formal mathematical framework to understand the phenomenon of co-label similarities.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Limited novelty: method is a straightforward combination of exponential moving average of soft labels with standard training. Weak experimental validation: only MNIST, CIFAR-10, SVHN with modest improvements; no statistical significance testing, confidence intervals, or multiple runs reported. Insufficient comparison to related work (Reed et al., Grandvalet & Bengio, knowledge distillation). Hyperparameter tuning appears ad-hoc. Co-label similarity analysis (Section 2.4) is superficial and doesn't rigorously validate the core hypothesis. Missing ablation studies and theoretical justification."
+      },
+      "token": {
+        "prompt_tokens": 4581,
+        "completion_tokens": 165,
+        "total_tokens": 4746
+      },
+      "time": "2026-02-08T22:51:07.296778+00:00"
+    }
   ]
 }

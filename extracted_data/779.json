@@ -90,5 +90,21 @@
       "text": "This paper presents a comprehensive analysis of vocabulary selection techniques for neural machine translation. Vocabulary selection constrains the output words to be scored to a small subset relevant to the current source sentence. The idea is to avoid scoring a high number of unlikely candidates with the full model which can be ruled out by simpler means. We extend previous work by considering a wide range of simple and complex selection techniques including bilingual word co-occurrence counts, bilingual embeddings built with Hellinger PCA, word alignments, phrase pairs, and discriminative SVM classifiers. We explore the trade-off between speed and accuracy for different vocabulary sizes and validate results on two language pairs and several test sets. Our experiments show that decoding speed-up can be reduced by up to 90% without compromising accuracy. Word alignments, bilingual phrases and SVMs can achieve high accuracy, even when considering fewer than 1, 000 word types per sentence. At training time, we achieve a speed-up of up to 1.33 with a bi-directional LSTM encoder and 1.66 with a faster alternative. Efficiency increases are less pronounced during training because of two combined factors. First, vocabulary scoring at the final layer of the model is a smaller part of the computation compared to beam search. Second, state-of-the-art bi-directional LSTM encoders (Bahdanau et al., 2015) are relatively costly compared to scoring the vocabulary on GPU hardware. Efficiency gains from vocabulary selection highlight the importance of progress towards efficient, accurate encoder and decoder architectures.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Incremental engineering contribution with limited novelty. Applies existing vocabulary selection techniques (word alignments, phrase tables, SVMs) to NMT decoding/training. While practical results are solid, the methodological contributions are minimal—mostly combining known methods. Lacks significant algorithmic or theoretical innovation expected at top venues."
+      },
+      "token": {
+        "prompt_tokens": 4118,
+        "completion_tokens": 103,
+        "total_tokens": 4221
+      },
+      "time": "2026-02-08T22:49:25.485853+00:00"
+    }
   ]
 }

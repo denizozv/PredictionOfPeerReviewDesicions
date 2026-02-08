@@ -135,5 +135,21 @@
       "text": "Here well show that a stochastic extension of the AffGAN model approximately minimises an amortised variational inference criterion as in e. g. variational autoencoders, which for the first time establishes a connection between adversarial methods of inferences and and variational inference. We introduce a variant of AffGAN where, in addition to the LR data x, the generator function also takes as input some independent noise variables z: we establish a connection between GANs and amortised variational z pZ (36) y = Ax f(x, z) (37) Similarly to how we defined q in Section 3.1 we introduce the following notation: qY ; := ExpXEzpZ ( y Ax f(x, z) ) (38) qY |X; := EzpZ ( y Ax f(x, z) ) (39) qX,Y ; := pX qY |X; (40) Here the affine projection ensures that under qX,Y ; , x and y are always consistent. Therefore, under qX,Y ; , the conditional of x given y is the same as the likelihood pX|Y = (xAy) by construction and the following equality holds: qX,Y ; = qY ; pX|Y = pX qY |X; (41) Applying Bayes rule to pX|Y = pY |XpX pY and substituting into the above equality we get: qY ; pY |X=Ay = pY ; qY |X=Ay; (42) The KL divergence that the AffGAN objective minimises can now be rewritten as. KL [qY ;pY ] = EqY ; log qY ;(y) pY (y) (43) = EqX,Y ; log qY ;(y) pY (y) (44) = EqX,Y ; log qY |X;(y|x) pY |X(y|x) (45) = EpX KL [ qY |X; pY |X] (46) Therefore we can conclude that the AffGAN algorithm described in Section 3.2 approximately minimizes the following amortised variational inference criterion: argmin KL [qY ;pY ] = argmin ExpX KL [ qY |X; pY |X] , (47) and in doing so it only requires samples from PY and PX .",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel theoretical framework connecting MAP inference to amortised learning via affine projections; principled GAN formulation with instance noise stabilization; multiple complementary methods (AffGAN, AffDG, AffLL); rigorous experiments from toy problems to real images; establishes connection between GANs and variational inference."
+      },
+      "token": {
+        "prompt_tokens": 9974,
+        "completion_tokens": 106,
+        "total_tokens": 10080
+      },
+      "time": "2026-02-08T22:03:04.850333+00:00"
+    }
   ]
 }

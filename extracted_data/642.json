@@ -100,5 +100,21 @@
       "text": "In this work, we introduced the importance of carefully considering customized precision when realizing neural networks. We show that using the IEEE 754 single precision floating point representation in hardware results in surrendering substantial performance. On the other hand, picking a configuration that has lower precision than optimal will result in severe accuracy loss. By reconsidering the representation from the ground up in designing custom precision hardware and using our search technique, we find an average speedup across deployable DNNs, including GoogLeNet and VGG, of 7.6 with less than 1% degradation in inference accuracy.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Solid systems contribution with practical hardware validation, novel precision search technique, and comprehensive experimental evaluation on production DNNs. Addresses important efficiency-accuracy tradeoff with concrete 7.6x speedup results and efficient design space exploration methodology."
+      },
+      "token": {
+        "prompt_tokens": 5244,
+        "completion_tokens": 86,
+        "total_tokens": 5330
+      },
+      "time": "2026-02-08T22:37:20.004233+00:00"
+    }
   ]
 }

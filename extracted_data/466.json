@@ -85,5 +85,21 @@
       "text": "In this section, we state two folklore linear algebra statements. The following Claim should be known, but we cant find it in the literature. We provide the proof here for completeness. Claim C.1. Let U Rdd be a real normal matrix (that is, it satisfies UU> = U>U ). Then, there exists an orthonormal matrix S Rdd such that U = SDS> , where D is a real block diagonal matrix that consists of blocks with size at most 2 2. Moreover, if d is even, then D consists of blocks with size exactly 2 2. Proof. Since U is a normal matrix, it is unitarily diagonalizable (see Weisstein (2016) for backgrounds). Therefore, there exists unitary matrix V in Cdd and diagonal matrix in Cdd such that U has eigen-decomposition U = V V . Since U itself is a real matrix, we have that the eigenvalues (the diagonal entries of ) come as conjugate pairs, and so do the eigenvectors (which are the columns of V ). That is, we can group the columns of V into pairs (v1, v1), . . . , (vs, vs), vs+1, . . . , vt, and let the corresponding eigenvalues be 1, 1, . . . , s , s, s+1, . . . , t. Here s+1, . . . , t R. Then we get that U =s i=1 2 i . Let Qi = i where Di is a 2 2 matrix. Finally, let S = [S1, . . . , Ss, vs+1, . . . , vt], and D = diag(D1, . . . , Ds, s+1, . . . , t) we complete the proof. The following Claim is used in the proof of Theorem 2.2. We provide a proof here for completeness. Claim C.2 (folklore). For any two matrices A,B Rdd, we have that ABF min(A)BF . Proof. Since min(A)2 is the smallest eigenvalue of A>A, we have that B>A>AB B> min(A)2Id B . Therefore, it follows that AB2F = tr(B>A>AB) tr(B> min(A)2Id B) = min(A) 2tr(B>B) = min(A)2B2F . Taking square root of both sides completes the proof.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Strong theoretical contributions (optimization landscape of linear residual networks, universal finite-sample expressivity) with solid empirical validation on standard benchmarks. Novel insights on identity parameterization principle with rigorous proofs and practical architectural implications."
+      },
+      "token": {
+        "prompt_tokens": 11360,
+        "completion_tokens": 83,
+        "total_tokens": 11443
+      },
+      "time": "2026-02-08T22:19:20.202756+00:00"
+    }
   ]
 }

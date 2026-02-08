@@ -95,5 +95,21 @@
       "text": "Most of this paper assumes only a few basic notions in machine learning and neural networks, as provided by general introductions (e.g., LeCun et al. (2015)). The following is a brief review. Neural networks are specifications of parameterized functions. They are typically constructed out of a sequence of somewhat modular building blocks. For example, the input to Alice is a vector of bits that represents the concatenation of the key and the plaintext. This vector (x) is input into a fully-connected layer, which consists of a matrix multiply (by A) and a vector addition (with b): Ax+ b. The result of that operation is then passed into a nonlinear function, sometimes termed an activation function, such as the sigmoid function, or the hyperbolic tangent function, tanh. In classical neural networks, the activation function represents a threshold that determines whether a neuron would fire or not, based upon its inputs. This threshold, and matrices and vectors such as A and b, are typical neural network parameters. Training a neural network is the process that finds values of its parameters that minimize the specified loss function over the training inputs. Fully-connected layers are powerful but require substantial amounts of memory for a large network. An alternative to fully-connected layers are convolutional layers. Convolutional layers operate much like their counterparts in computer graphics, by sliding a parameterized convolution window across their input. The number of parameters in this window is much smaller than in an equivalent fully-connected layer. Convolutional layers are useful for applying the same function(s) at every point in an input. A neural network architecture consists of a graph of these building blocks (often, but not always, a DAG), specifying what the individual layers are (e.g., fully-connected or convolutional), how they are parameterized (number of inputs, number of outputs, etc.), and how they are wired.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel adversarial framework for learning cryptography end-to-end; demonstrates neural networks can discover encryption schemes without prescribed algorithms; strong experimental validation with selective protection extension; significant methodological contribution to security and deep learning intersection."
+      },
+      "token": {
+        "prompt_tokens": 7983,
+        "completion_tokens": 81,
+        "total_tokens": 8064
+      },
+      "time": "2026-02-08T22:50:18.647712+00:00"
+    }
   ]
 }

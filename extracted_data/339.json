@@ -65,5 +65,21 @@
       "text": "We presented the neural cache model to augment neural language models with a longer-term memory that dynamically updates the word probablilities based on the long-term context. A neural cache can be added on top of a pre-trained language model at negligible cost. Our experiments on both language modeling tasks and the challenging LAMBADA dataset shows that significant performance gains can be expected by adding this external memory component. Technically, the neural cache models is similar to some recent memory-augmented neural networks such as pointer networks. However, its specific design makes it possible to avoid learning the memory lookup component. This makes the neural cache appealing since it can use larger cache sizes than memory-augment networks and can be applied as easily as traditional count-based caches.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel and practical memory mechanism for LMs with strong empirical results across multiple datasets; simple yet effective approach that bridges neural networks and classical cache models with clear computational advantages."
+      },
+      "token": {
+        "prompt_tokens": 3713,
+        "completion_tokens": 70,
+        "total_tokens": 3783
+      },
+      "time": "2026-02-08T22:06:05.974294+00:00"
+    }
   ]
 }

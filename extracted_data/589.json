@@ -80,5 +80,21 @@
       "text": "This research was supported in part by the European Unions H2020 Framework Programme (H2020-MSCA-ITN-2014) under grant No. 642685 MacSeNet, and Nvidia equipment grant.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Limited novelty: straightforward combination of existing graph CNN (Defferrard et al. 2016) with standard LSTM/RNN. Weak experimental validation: Moving MNIST shows marginal gains over CNN baselines with questionable explanations; Penn Treebank results are mixed and unconvincing (Model 1 only works with dropout, Model 2 fails). Lacks depth in analysis of when/why graph structure helps. Missing comparisons with other structured sequence models."
+      },
+      "token": {
+        "prompt_tokens": 5177,
+        "completion_tokens": 140,
+        "total_tokens": 5317
+      },
+      "time": "2026-02-08T22:32:12.957070+00:00"
+    }
   ]
 }

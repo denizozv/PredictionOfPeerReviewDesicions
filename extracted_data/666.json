@@ -80,5 +80,21 @@
       "text": "We proposed a generalizable k-shot learning framework that can be easily integrated into any existing deep net architectures. By grouping parameters together and forcing orthogonality among groups, the method is able to reduce parameter space dimensionality for avoiding overfitting. Experiments on k-shot learning tasks have proven that OMG is able to have a good performance on k-shot class and easily to be adopted to the current existing deep net framework like VGG, ResNet and so on.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty in core contribution (parameter grouping via orthogonal decomposition is incremental), weak theoretical justification, experimental evaluation lacks depth (no comparison with modern few-shot methods, limited baselines), presentation quality issues, and unclear practical advantages over existing approaches."
+      },
+      "token": {
+        "prompt_tokens": 5279,
+        "completion_tokens": 91,
+        "total_tokens": 5370
+      },
+      "time": "2026-02-08T22:39:20.631107+00:00"
+    }
   ]
 }

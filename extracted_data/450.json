@@ -515,5 +515,21 @@
       "text": "We are thankful to L. Bottou, B. Graham, D. Kiela, M. Rojas-Carulla, I. Tolstikhin, and M. Tygert for their help in improving the quality of this manuscript. This work was partly supported by ERC grant LEAP (no. 336845) and CIFAR Learning in Machines & Brains program.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel theoretical framework connecting binary classification to two-sample testing with rigorous analysis, strong experimental validation across multiple domains (classical tests, GANs, causal discovery), and practical interpretability advantages. Solid contribution to statistical testing methodology."
+      },
+      "token": {
+        "prompt_tokens": 11043,
+        "completion_tokens": 84,
+        "total_tokens": 11127
+      },
+      "time": "2026-02-08T22:17:15.121608+00:00"
+    }
   ]
 }

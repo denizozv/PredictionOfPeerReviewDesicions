@@ -110,5 +110,21 @@
       "text": "The first author was partly supported by the ERC starting grant 714034.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Significant dataset contribution for formal theorem proving with well-motivated ML tasks, comprehensive baseline experiments, and clear relevance to automated reasoning. Establishes important benchmark for the community."
+      },
+      "token": {
+        "prompt_tokens": 3678,
+        "completion_tokens": 72,
+        "total_tokens": 3750
+      },
+      "time": "2026-02-08T22:23:03.437204+00:00"
+    }
   ]
 }

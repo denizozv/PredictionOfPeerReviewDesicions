@@ -100,5 +100,21 @@
       "text": "This research is supported by the Key Program of National Natural Science Foundation of China (Grant nos. U1536201 and U1405254), the National Natural Science Foundation of China (Grant no. 61472092), the National High Technology Research and Development Program of China (863 Program) (Grant no. 2015AA020101), the National Science and Technology Support Program of China (Grant no. 2014BAH41B00), and the Initiative Scientific Research Program of Tsinghua University.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty: standard Bi-LSTM with basic attention mechanism. Two-scan approach is incremental. Weak experimental validation: no statistical significance testing, limited baselines, no pretrained embeddings (disadvantaging the method). Presentation issues and incremental contribution over concurrent work (Shen & Lee 2016)."
+      },
+      "token": {
+        "prompt_tokens": 5038,
+        "completion_tokens": 105,
+        "total_tokens": 5143
+      },
+      "time": "2026-02-08T22:42:04.153111+00:00"
+    }
   ]
 }

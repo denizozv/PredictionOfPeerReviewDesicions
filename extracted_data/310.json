@@ -55,5 +55,21 @@
       "text": "Our results confirmed that fairly simple neural-network agents can learn to coordinate in a referential game in which they need to communicate about a large number of real pictures. They also suggest that the meanings agents come to assign to symbols in this setup capture general conceptual properties of the objects depicted in the image, rather than low-level visual properties. We also showed a path to grounding the communication in natural language by mixing the game with a supervised task. In future work, encouraged by our preliminary experiments with object naming, we want to study how to ensure that the emergent communication stays close to human natural language. Predictive learning should be retained as an important building block of intelligent agents, focusing on teaching them structural properties of language (e.g., lexical choice, syntax or style). However, it is also important to learn the function-driven facets of language, such as how to hold a conversation, and interactive games are a potentially fruitful method to achieve this goal.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel framework for emergent communication through multi-agent referential games with rigorous analysis of semantic grounding and human interpretability. Strong experimental design combining interactive learning with supervised grounding, demonstrating both technical innovation and meaningful scientific insights into language emergence."
+      },
+      "token": {
+        "prompt_tokens": 5011,
+        "completion_tokens": 86,
+        "total_tokens": 5097
+      },
+      "time": "2026-02-08T22:02:45.566992+00:00"
+    }
   ]
 }

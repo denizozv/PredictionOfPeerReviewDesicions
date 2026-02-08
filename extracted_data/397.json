@@ -110,5 +110,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel theoretical framework (bits-back coding analysis of VAE information preference) combined with principled architectural innovations (autoregressive flow priors, controlled lossy compression via decoder design). Strong empirical results across multiple benchmarks with thorough ablations and insightful visualizations of learned representations."
+      },
+      "token": {
+        "prompt_tokens": 9336,
+        "completion_tokens": 96,
+        "total_tokens": 9432
+      },
+      "time": "2026-02-08T22:11:04.623492+00:00"
+    }
   ]
 }

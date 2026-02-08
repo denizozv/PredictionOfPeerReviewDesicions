@@ -65,5 +65,21 @@
       "text": "This work is partly supported by the Office of Naval Research (ONR) grants N00014-12-1-0167, N00014-15-1-2791 and MURI N00014-10-1-0278. We gratefully acknowledge the support of NVIDIA Corporation with the donation of the TX1, Titan X, K40 GPUs used for this research.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Well-motivated efficient architecture with systematic design choices, comprehensive experiments across multiple datasets, strong practical impact for real-time segmentation, and thorough ablation studies justifying each component."
+      },
+      "token": {
+        "prompt_tokens": 4817,
+        "completion_tokens": 73,
+        "total_tokens": 4890
+      },
+      "time": "2026-02-08T22:44:17.832482+00:00"
+    }
   ]
 }

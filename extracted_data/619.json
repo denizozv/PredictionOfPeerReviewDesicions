@@ -75,5 +75,21 @@
       "text": "In this paper, we demonstrate the effectiveness of adding noise to the gradient when training deep neural networks. We find that adding noise to the gradient helps optimization and generalization of complicated neural networks and is compatible with and complementary to other stochastic optimization methods. We suspect that the effects are pronounced for complex models because they have many saddle points. We believe that this surprisingly simple yet effective idea, essentially a single line of code, should be in the toolset of neural network practitioners when facing issues with training neural networks.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Simple but effective technique with broad empirical validation across diverse architectures (deep FC nets, Memory Networks, Neural Programmer, NRAM, Neural GPUs). Practical contribution with consistent improvements and minimal hyperparameter tuning. Solid experimental methodology despite limited theoretical novelty."
+      },
+      "token": {
+        "prompt_tokens": 4402,
+        "completion_tokens": 93,
+        "total_tokens": 4495
+      },
+      "time": "2026-02-08T22:35:11.991858+00:00"
+    }
   ]
 }

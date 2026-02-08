@@ -70,5 +70,21 @@
       "text": "Authors acknowledge the support of the Spanish project TIN2015-65464-R (MINECO/FEDER), the 2016FI B 01163 grant of Generalitat de Catalunya, and the COST Action IC1307 iV&L Net (European Network on Integrating Vision and Language) supported by COST (European Cooperation in Science and Technology). We also gratefully acknowledge the support of NVIDIA Corporation with the donation of a Tesla K40 GPU and a GTX TITAN GPU, used for this research.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel local orthogonality regularization with solid theoretical motivation (preserving negative correlations), comprehensive experiments on CIFAR-10/100/SVHN showing consistent improvements over strong baselines, and clear practical contribution to CNN regularization."
+      },
+      "token": {
+        "prompt_tokens": 4650,
+        "completion_tokens": 86,
+        "total_tokens": 4736
+      },
+      "time": "2026-02-08T22:13:15.974055+00:00"
+    }
   ]
 }

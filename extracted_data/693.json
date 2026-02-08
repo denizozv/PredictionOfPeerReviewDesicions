@@ -105,5 +105,21 @@
       "text": "The neural statistician model falls into the category of models with global latent variables which we describe in section 2.2. The conditional likelihood for these models has the form: p(x|X,) = p(|X,)p(x|,)d. This quantity is hard to compute since it consists of an expectation with respect to the true posterior over global variable . Since this distribution is intractable, simple importance sampling can not be used to estimate the likelihood. Thus, we tried the following strategies. First, we used self-normalizing importance sampling to directly estimate p(x|X,) as p(x|X,) = S s=1 wsp(x, z (s)|(s),)S s=1 ws , ws = p((s),X,Z(s)|) q((s)|X,)q(Z(s), z(s)|X,x,(s),) , but observed somewhat contradictory results such as non-monotonic dependency of the estimate on the size of conditioning dataset. The diagnostic of the effective sample size suggested that the recognition model is not well suited as proposal for the task. Another strategy was to sequentially estimate p(X<t,) and then use the equation p(xt|X<t,) = p(xt,X<t|) p(X<t|) , which appeared to as unreliable as the previous strategy.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel meta-learning approach for generative models with matching-based adaptation mechanism. Strong theoretical motivation combining nonparametric representations with efficient neural inference. Solid experimental validation on Omniglot with ablation studies, though limited to single dataset and modest baselines."
+      },
+      "token": {
+        "prompt_tokens": 5347,
+        "completion_tokens": 91,
+        "total_tokens": 5438
+      },
+      "time": "2026-02-08T22:42:05.945486+00:00"
+    }
   ]
 }

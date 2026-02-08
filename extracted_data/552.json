@@ -85,5 +85,21 @@
       "text": "This research was funded in part by Darpa through the SIMPlEX program and the FunLOL program, by NSF through a Career award. Zoe McCarthy is also supported by an NSF Graduate Fellowship. Peter Chen is also supported by a Berkeley AI Research (BAIR) lab Fellowship.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel orthogonal RNN architecture with theoretical gradient preservation guarantees and rotation plane parameterization. Strong mathematical foundation, though experiments limited to simplified synthetic task; needs broader empirical validation for acceptance at top venues."
+      },
+      "token": {
+        "prompt_tokens": 4323,
+        "completion_tokens": 79,
+        "total_tokens": 4402
+      },
+      "time": "2026-02-08T22:28:15.494190+00:00"
+    }
   ]
 }

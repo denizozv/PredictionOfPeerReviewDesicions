@@ -140,5 +140,21 @@
       "text": "In Table 6, we provide results for D-NTM using BoW with positional encoding (PE) Sukhbaatar et al. (2015) as the representation of the input facts. The facts representations are provided as an input to the GRU controller. In agreement to our results with the GRU fact representation, with the BoW fact representation we observe improvements with multi-step of addressing over single-step and discrete addressing over continuous addressing.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel extensions to NTM with learnable addressing (continuous/discrete), dynamic LRU mechanism, and curriculum learning strategy. Solid experimental validation across multiple tasks (bAbI, pMNIST, toy tasks) with meaningful ablations and analysis."
+      },
+      "token": {
+        "prompt_tokens": 6990,
+        "completion_tokens": 90,
+        "total_tokens": 7080
+      },
+      "time": "2026-02-08T22:39:14.456709+00:00"
+    }
   ]
 }

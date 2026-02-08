@@ -75,5 +75,21 @@
       "text": "In this paper, we proposed a new extension of PixelCNN that can accommodate both unstructured text and spatially-structured constraints for image synthesis. Our proposed model and the recent Generative Adversarial What-Where Networks both can condition on text and keypoints for image synthesis. However, these two approaches have complementary strengths. Given enough data GANs can quickly learn to generate high-resolution and sharp samples, and are fast enough at inference time for use in interactive applications (Zhu et al., 2016). Our model, since it is an extension of the autoregressive PixelCNN, can directly learn via maximum likelihood. It is very simple, fast and robust to train, and provides principled and meaningful progress benchmarks in terms of likelihood. We advanced the idea of conditioning on segmentations to improve both control and interpretability of the image samples. A possible direction for future work is to learn generative models of segmentation masks to guide subsequent image sampling. Finally, our results have demonstrated the ability of our model to perform controlled combinatorial image generation via manipulation of the input text and spatial constraints.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel conditioning mechanism for autoregressive image generation combining text and spatial structure (keypoints/segmentation); solid experimental validation across three datasets with interpretability demonstrations; clear technical contribution extending PixelCNN with multi-modal conditioning."
+      },
+      "token": {
+        "prompt_tokens": 4268,
+        "completion_tokens": 83,
+        "total_tokens": 4351
+      },
+      "time": "2026-02-08T22:25:09.763208+00:00"
+    }
   ]
 }

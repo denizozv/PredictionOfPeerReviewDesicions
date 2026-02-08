@@ -80,5 +80,21 @@
       "text": "We compared INFERSSPN to running -expansion on a flat pairwise MRF and to max-product belief propagation over a multi-level (3-D) pairwise grid MRF. Each label of the flat MRF corresponds to a possible path in the grammar from the start symbol to a production to one of its constituent symbols, etc, until reaching a terminal. In general, the number of such paths is exponential in the height of the grammar. The unary terms are the sum of unary terms along the path and the pairwise term for a pair of labels is the pairwise term of the first production at which their constituents differ. For any two labels with paths that choose a different production of the same symbol (and have the same path from the start symbol) we assign infinite cost to enforce the restriction that an object can only have a single production of it into constituents. Note that after convergence -expansion is guaranteed to be within a constant factor of the global minimum energy (Boykov et al., 2001) and thus serves as a good surrogate for the true global minimum, which is intractable to compute. The multi-layer MRF is constructed similarly. The number of levels in the MRF is equal to the height of the DAG corresponding to the grammar used. The labels at a particular level of the MRF are all (production, constituent) pairs that can occur at this height in the grammar. The pairwise term between the same pixel in two levels is 0 when the parent labels constituent equals the child labels production head, and otherwise. Pairwise terms within a layer are defined as in the flat MRF with infinite cost for incompatible labels (i.e., two neighboring productions of the same symbol), unless two copies of that nonterminal could be produced at that level by the grammar. All experiments were run on the same computer running an Intel Core i7-5960X with 8 cores and 128MB of RAM. Each algorithm was limited to a single thread.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel theoretical framework combining SPNs with submodular optimization for structured scene understanding. Strong algorithmic contribution (INFERSSPN with convergence guarantees), rigorous mathematical treatment, and clear computational advantages over baselines. Addresses genuine expressivity-tractability tradeoff in probabilistic graphical models."
+      },
+      "token": {
+        "prompt_tokens": 9018,
+        "completion_tokens": 99,
+        "total_tokens": 9117
+      },
+      "time": "2026-02-08T22:36:07.056861+00:00"
+    }
   ]
 }

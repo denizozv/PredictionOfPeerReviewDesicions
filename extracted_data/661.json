@@ -100,5 +100,21 @@
       "text": "We would like to thank the Google Expander team for insightful feedbacks.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel semi-supervised training objective combining neural networks with graph-based label propagation; principled formulation with theoretical connections; diverse experimental validation across multiple architectures (NN, CNN, LSTM) and domains; scalable via SGD. However, limited novelty in individual components and modest empirical improvements reduce confidence."
+      },
+      "token": {
+        "prompt_tokens": 4033,
+        "completion_tokens": 102,
+        "total_tokens": 4135
+      },
+      "time": "2026-02-08T22:39:12.617013+00:00"
+    }
   ]
 }

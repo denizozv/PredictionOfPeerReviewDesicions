@@ -135,5 +135,21 @@
       "text": "To demonstrate the robustness of our NODL algorithm w.r.t. the tuning parameters, we perform additional experiments by varing each of the tuning parameters, over a wide range of values, while keeping the others same as those used for producing the Fig. 2. In Fig. 21, 22, 23, 24, 25, 26, we vary the tuning parameters batchsize, ck, g , c, d, respectively, and show the corresponding test results on the flowers dataset of the second domain (see the Alg. 1, in the Sec. 3, for the roles of the tuning parameters in our NODL algorithm). In these plots, we see that our NODL algorithm outperforms the baseline ODL algorithm, consistently across all the parameter settings. Figure 17: Reconstructed animal images of size 100x100 (test data), with 500 sparse dictionary elements (non-sparse codes). In each row, the original image is on the left, and the reconstructions, computed with ODL and NODL (our algorithm), are in the center and right respectively. Figure 18: Reconstructed animal images of size 100x100 (test data), with 500 non-sparse dictionary elements (non-sparse codes). In each row, the original image is on the left, and the reconstructions, computed with ODL and NODL (our algorithm), are in the center and right respectively.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Limited novelty in core technique; neurogenesis metaphor is primarily a combination of existing regularization methods (L1/L2 group sparsity + random initialization). Narrow experimental scope (dictionary learning only); improvements are marginal and highly dependent on specific data properties (sparse dictionaries with non-overlapping supports). Lacks comparison with modern deep learning baselines and contemporary online learning methods. The biological motivation is superficial and does not drive fundamental algorithmic innovation."
+      },
+      "token": {
+        "prompt_tokens": 12367,
+        "completion_tokens": 133,
+        "total_tokens": 12500
+      },
+      "time": "2026-02-08T22:37:23.756452+00:00"
+    }
   ]
 }

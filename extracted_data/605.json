@@ -105,5 +105,21 @@
       "text": "Optimizing the variational autoencoder objective turned out to be a significant optimization challenge, as pointed out by prior work (Bowman et al., 2015; Snderby et al., 2016; Kingma et al., 2016). Specifically, it is easy for the KL divergence term DKL(q(z | x) p(z)) to collapse to zero, which means that q(z | x) is equal to the prior and does not convey any information about x. This leads to uninteresting latent representations and reduces the generative model to one that does not use a latent representation at all. As explained by Kingma et al. (2016), this phenomenon occurs as at the beginning of training it is much easier for the optimization process to move q(z | x) closer to the prior p(z) than to improve p(x | z), especially when q(z | x) has not yet learned how to convey any useful information. To combat this, we use a combination of two techniques described in the previous work: Anneal the weight on the KL cost term slowly from 0 to 1. Similar to Bowman et al. (2015), our schedule was a shifted and horizontally-scaled sigmoid function.1 Set a floor on the KL cost, i.e. use max(DKL(q(z | x) p(z)), ) instead of DKL(q(z | x) p(z)) in the objective (Kingma et al., 2016). This change means that the model receives no penalty for producing a KL divergence below , and as the other part of the objective (the reconstruction term) benefits from a higher KL divergence, it naturally learns a more informative q(z | x) at least in KL divergence. We found that at least one of these techniques were required to avoid collapse of the KL divergence to 0. However, as shown in Figure 2, we found that different combinations of these techniques could led to different overall results, suggesting that finding the desired equilibrium necessitates a hyperparameter search. 1To anneal from a to b, we used ( step a+b 2 ) /10 to weight the KL cost as a function of the number of optimization steps taken.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel compositional architecture for tree-structured data combining VAEs with recursive neural networks. Strong methodological contribution with careful treatment of variable-sized trees, typed grammars, and gating mechanisms. Solid experimental validation on synthetic and real datasets (theorem proving). Clear scientific contribution to generative modeling of structured data."
+      },
+      "token": {
+        "prompt_tokens": 6461,
+        "completion_tokens": 100,
+        "total_tokens": 6561
+      },
+      "time": "2026-02-08T22:33:23.025298+00:00"
+    }
   ]
 }

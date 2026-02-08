@@ -125,5 +125,21 @@
       "text": "In this paper, we proposed a novel deep learning framework that based on stacked some feature learning models to handle small or middle data sets. Then we introduce MFA in this framework, called MDA. The deep learning tricks like backpropagation, denoising and dropout operation are applied on MDA to improve its performance. Extensive experiments on 7 different type data sets demonstrate that MDA performs not only better than shallow feature learning models, but also stateof-the-art deep learning models on small and middle scale applications. The evaluation of MDA show that how to adjust the parameters make the MDA work well. For future work, we plan to try other feature learning models and explore the different structures for this novel deep learning model. In addition, we plan to explore new deep architectures based on this framework to handle the large scale datasets.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Limited novelty: stacking MFA for initialization is incremental; standard techniques (backprop, dropout, denoising) are not novel. Weak experimental validation: small/medium datasets only, no statistical significance testing, unfair comparisons (gray-CIFAR10 is artificially handicapped), missing comparisons with modern deep learning methods. Presentation issues: grammatical errors, unclear motivation for MFA choice over alternatives, no theoretical justification. The core contribution—using MFA for weight initialization—lacks depth and generalizability."
+      },
+      "token": {
+        "prompt_tokens": 5200,
+        "completion_tokens": 150,
+        "total_tokens": 5350
+      },
+      "time": "2026-02-08T22:43:08.427254+00:00"
+    }
   ]
 }

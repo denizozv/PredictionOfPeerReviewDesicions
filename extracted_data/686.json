@@ -100,5 +100,21 @@
       "text": "This paper presents a novel homologically functional hashing for neural network compression. Briefly, after adopting multiple low-cost hash functions to fetch values in a homological compression space, HFH employs a small reconstruction network to recover each entry in an matrix of the original network. The compression space is shared throughout all layers, and the reconstruction network is plugged into the whole network and learned jointly. HFH includes the recently proposed HashedNets (Chen et al., 2015a) as a degenerated special case. On multiple datasets, HFH demonstrates promisingly high compression ratios with little loss on prediction accuracy, especially significantly improved compared with HashedNets. As a simple and effective approach, HFH is expected to be a standard tool for DNN compression. As future work, we aim for deeper analysis on the properties and bounds of HFH. More industrial applications are also expected, especially on mobile devices. Furthermore, HFH might be extended in a multi-hops hyper-structure. Briefly, imagining w in the compression space plays a virtual role similar to V, we may adopt the homologically functional hashing structure once again on w, so that w is still virtual and reconstructed by hashed values from another further compressed space.",
       "exclude": true
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel compression method with solid theoretical grounding (homological structure, multiple hash functions, reconstruction network), comprehensive experiments across multiple domains (feedforward NNs, CNNs, ranking), and consistent improvements over HashedNets baseline. However, limited novelty scope (incremental over HashedNets), modest experimental depth on state-of-the-art comparisons, and presentation clarity issues prevent higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 6214,
+        "completion_tokens": 121,
+        "total_tokens": 6335
+      },
+      "time": "2026-02-08T22:41:21.688147+00:00"
+    }
   ]
 }

@@ -150,5 +150,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel use of SPNs/MPNs for unsupervised representation learning with principled encoder-decoder framework; solid theoretical contributions (Propositions 1-2) and comprehensive experiments on structured prediction tasks with meaningful comparisons to RBMs, MADEs, and other baselines."
+      },
+      "token": {
+        "prompt_tokens": 10485,
+        "completion_tokens": 98,
+        "total_tokens": 10583
+      },
+      "time": "2026-02-08T22:39:02.360301+00:00"
+    }
   ]
 }

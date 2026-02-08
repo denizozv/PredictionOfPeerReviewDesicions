@@ -100,5 +100,21 @@
       "text": "In order to demonstrated the convergence of the proposed method, we show the value of objective function (4) (at r = 45) via Figure 5(a) and the prediction result (P@1) via Figure 5(b) along with the number of passes to the dataset (i.e., in Algorithm 1). It can be seen that SEM could be convergent and the prediction performance becomes stable in less than 50 epochs, which will leverage SEM dealing with large-scale data.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid methodological contribution with practical scalability solution (marginal fitting), comprehensive experiments on 8 datasets, and consistent improvements over strong baselines. However, limited conceptual novelty—core model is relatively straightforward (low-rank factorization + sigmoid nonlinearity + multinomial likelihood). Marginal sampling is pragmatic but incremental. Suitable for a top-tier venue but not groundbreaking."
+      },
+      "token": {
+        "prompt_tokens": 5614,
+        "completion_tokens": 123,
+        "total_tokens": 5737
+      },
+      "time": "2026-02-08T22:50:14.765272+00:00"
+    }
   ]
 }

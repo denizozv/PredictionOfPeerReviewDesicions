@@ -105,5 +105,21 @@
       "text": "B.1 CORRELATION BETWEEN CHARACTER EDIT DISTANCES AND OB COSINE SIMILARITIES On Figure 7, we randomly selected pairs of words, and pairs of words with high cosine similarity in the French and English dictionary, and plotted their cosine similarity in the bigram space against the edit distance between the two words, normalized by the length of the longest word. We note that words with high cosine similarity also have short edit distance, supporting the idea that the bigram representation encode some global letter order, and therefore might favor word recognition. B.2 EVALUATION OF PERFORMANCE OF RNN ALONE We trained RNNs to predict sequences of bigrams of a given order. Their performance to accomplish this task can be measured, on the validation set, with the edit distance (edit.dist) between the recognized sequence and the true sequence, and with the percentage of sequences with at least one error: the Sequence Error Rate (SER). The results are reported on Table 6. We observe that the performance decreases as d increase. Yet the errors remain in a reasonable range compared to the simple case d = 0, and one should keep in mind that a small degradation should be expected from the larger number of classes and smaller number of training examples per class. We have shown that RNNs can perform the apparently difficult task of recognizing sequences of open-bigrams. Thus, we may use the RNN bigram predictions in our decoder, rather than building bigram predictions from letter ones, which would have been less satisfying considering the supposed interest of the redundancy of the bigram representation that allows error corrections. B.3 EVALUATION OF PERFORMANCE OF THE DECODER In Table 7, we report the results of the cosine decoder applied to the outputs of OB RNNs with different bigram orders. In Table 8, we evaluate the cosine decoder by applying it to the ground-truth OB decomposition with varying order of the validation sets, i.e. the performance assuming the RNN optical models are perfect. B.4 ERROR ANALYSIS B.4.1 COMPARISON OF ERRORS OF THE SEQUENTIAL AND OPEN-BIGRAM MODELS",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Limited novelty and weak experimental validation. Open-bigrams are a known cognitive concept; the contribution is primarily engineering (LSTM + cosine similarity decoder). Results are merely comparable to baselines, not superior. Narrow application domain (handwritten word recognition), no significant methodological innovation, and experiments lack depth in analysis of why this approach should be preferred."
+      },
+      "token": {
+        "prompt_tokens": 5920,
+        "completion_tokens": 109,
+        "total_tokens": 6029
+      },
+      "time": "2026-02-08T22:45:10.961598+00:00"
+    }
   ]
 }

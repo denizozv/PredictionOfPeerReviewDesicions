@@ -105,5 +105,21 @@
       "text": "",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel application of count-based exploration to deep RL via hashing with strong empirical results across continuous control and Atari. Thorough ablation studies on granularity and hash function design provide valuable insights. Some limitations: incremental conceptual novelty, mixed results vs SOTA on hardest tasks, and reliance on domain-specific preprocessing reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 5848,
+        "completion_tokens": 112,
+        "total_tokens": 5960
+      },
+      "time": "2026-02-08T22:29:06.621665+00:00"
+    }
   ]
 }

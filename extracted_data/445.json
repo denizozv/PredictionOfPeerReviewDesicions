@@ -110,5 +110,21 @@
       "text": "C.1 ADDITIONAL EXPERIMENTS FOR MECHANICAL TURK SETUP In the experiment in Section 5.2 we conducted experiments with real human feedback. Here, we compare this to a form of synthetic feedback, mostly as a sanity check, but also to see how much improvement we can get if the signal is simpler and cleaner (as it is synthetic). We hence constructed synthetic feedback for the 10,000 responses, using either Task 2 (positive or negative feedback), Task 3 (answers provided by teacher) or a mix (Task 2+3) where we use one or the other for each example (50% chance of each). The latter makes the synthetic data have a mixed setup of responses, which more closely mimics the real data case. The results are given in Table 4. The RBI+FP combination is better using the synthetic data than the real data with Task 2+3 or Task 3, which is to be expected, but the real data is competitive, despite the difficulty of dealing with its lexical and semantic variability. The real data is better than using Task 2 synthetic data. For comparison purposes, we also ran a supervised (imitation learning) MemN2N on different sized training sets of turker authored questions with gold annotated labels (so, there are no numerical rewards or textual feedback, this is a pure supervised setting). The results are given in Table 5. They indicate that RBI+FP and even FP alone get close to the performance of fully supervised learning. C.2 SECOND ITERATION OF FEEDBACK We conducted experiments with an additional iteration of data collection for the case of binary rewards and textual feedback using the synthetic Task 2+3 mix. We selected the best model from the previous training, using RBI+FP with r = 1 which previously gave a test accuracy of 0.478 (see Table 4). Using that model as a predictor, we collected an additional 10,000 training examples. We then continue to train our model using the original 1k+10k training set, plus the additional 10k. As before, we report the test accuracy varying r on the additional collected set. We also report the performance from varying , the proportion of random exploration of predictions on the new set. The results are reported in Table 6. Overall, performance is improved in the second iteration, with slightly better performance for large r and = 0.5. However, the improvement is mostly invariant to those parameters, likely because FP takes advantage of feedback from incorrect predictions in any case.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel online learning framework for dialogue agents with human feedback; solid experimental validation combining simulation and real Mechanical Turk studies; practical contribution to interactive learning, though incremental algorithmic novelty."
+      },
+      "token": {
+        "prompt_tokens": 6569,
+        "completion_tokens": 75,
+        "total_tokens": 6644
+      },
+      "time": "2026-02-08T22:17:07.162638+00:00"
+    }
   ]
 }

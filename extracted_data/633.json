@@ -105,5 +105,21 @@
       "text": "We thank Hansheng Jiang for her work on this project as a summer visiting student. We thank Tian Han for sharing the code on learning the generator network, and for helpful discussions. The work is supported by NSF DMS 1310391, DARPA SIMPLEX N66001-15-C-4035, ONR MURI N00014-16-1-2007, and DARPA ARO W911NF-16-1-0579.",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel cooperative training framework combining descriptor (energy-based) and generator (latent variable) networks with theoretical justification and solid experimental validation on image synthesis and inpainting tasks."
+      },
+      "token": {
+        "prompt_tokens": 8298,
+        "completion_tokens": 72,
+        "total_tokens": 8370
+      },
+      "time": "2026-02-08T22:37:06.291639+00:00"
+    }
   ]
 }

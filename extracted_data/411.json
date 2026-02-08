@@ -105,5 +105,21 @@
       "text": "The first task of the Hackers Delight corpus consists in turning off the right-most one bit of a register. When compiling the code in Listing 6a, llvm generates the code shown in Listing 6b. A typical example of an equivalent version of the same program obtained by the data-augmentation procedure is shown in Listing 6c. Listing 6d contains the optimal version of this program. Note that such optimization are already feasible using the stoke system of Schkufza et al. (2013).",
       "exclude": false
     }
+  ],
+  "fewShot": [
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel learning-based approach to code super-optimization using REINFORCE gradient estimation on proposal distributions. Strong methodological contribution combining stochastic search with learned parameterized proposals. Solid experimental validation on two datasets with clear improvements over baselines. Well-executed work with practical impact."
+      },
+      "token": {
+        "prompt_tokens": 4809,
+        "completion_tokens": 94,
+        "total_tokens": 4903
+      },
+      "time": "2026-02-08T22:12:46.015528+00:00"
+    }
   ]
 }
