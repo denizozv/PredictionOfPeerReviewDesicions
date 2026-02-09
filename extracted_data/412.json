@@ -125,6 +125,20 @@
         "total_tokens": 11420
       },
       "time": "2026-02-08T22:12:47.989100+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, nontrivial optimization contribution: reframes layerwise training of ReLU/max-pool CNNs with an SVM top layer as a DC program/latent structured SVM, enabling CCCP + (extended) BCFW with analytic step sizes and monotonic objective decrease; backed by scaling evidence up to ImageNet and practical engineering (warm-start/proximal term, memory reductions). Main weaknesses are somewhat narrow scope (PL-CNN + SVM loss, fine-tuning from SGD rather than from scratch) and reliance on heuristic approximations (restricted constraint search), but overall novelty + empirical validation are at the ICML/ICLR/NeurIPS accept bar."
+      },
+      "token": {
+        "prompt_tokens": 12657,
+        "completion_tokens": 163,
+        "total_tokens": 12820
+      },
+      "time": "2026-02-09T20:16:44.222570+00:00"
     }
   ],
   "test": true

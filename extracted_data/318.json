@@ -145,6 +145,20 @@
         "total_tokens": 5925
       },
       "time": "2026-02-08T22:04:05.105786+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Promising differentiable graph-transformation framework, but the main empirical claims rely on strong per-timestep graph supervision (teacher-forced gold graphs) on synthetic/curated settings (bAbI with exposed “knowledge object”, Rule30, small TMs), with limited evidence of end-to-end learning from text, robustness, or fair comparisons; novelty vs prior GGNN/GGS-NN + neural program/graph induction work is not clearly established and the evaluation scope/baselines/ablations needed for ICML/ICLR/NeurIPS are insufficient."
+      },
+      "token": {
+        "prompt_tokens": 7736,
+        "completion_tokens": 140,
+        "total_tokens": 7876
+      },
+      "time": "2026-02-09T20:07:55.516394+00:00"
     }
   ],
   "test": false

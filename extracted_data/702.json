@@ -100,6 +100,20 @@
         "total_tokens": 5121
       },
       "time": "2026-02-08T22:43:12.873204+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental extractive summarization architectures with limited novelty/impact: the Classify vs Select framing is intuitive but close to existing sequence labeling and pointer-style selection approaches, and the main gains are modest/mostly on-par with strong baselines; reliance on greedy ROUGE-based pseudo-labels and limited comparison to stronger contemporary neural/structured baselines weakens the scientific contribution for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 6989,
+        "completion_tokens": 111,
+        "total_tokens": 7100
+      },
+      "time": "2026-02-09T20:45:54.642699+00:00"
     }
   ],
   "test": false

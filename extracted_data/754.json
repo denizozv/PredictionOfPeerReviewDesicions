@@ -100,6 +100,20 @@
         "total_tokens": 3987
       },
       "time": "2026-02-08T22:47:23.669377+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Solid applied idea (pointer/copy mechanism for long-range identifier prediction) and a valuable large Python corpus, but the technical novelty is limited relative to existing pointer/copy and cache-based language models for code; evaluation has fairness issues (different batch sizes/optimization across baselines), limited ablations/analysis, and the identifier normalization scheme may inflate gains while reducing real IDE relevance, leaving the contribution below typical ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6006,
+        "completion_tokens": 118,
+        "total_tokens": 6124
+      },
+      "time": "2026-02-09T20:51:03.526156+00:00"
     }
   ],
   "test": false

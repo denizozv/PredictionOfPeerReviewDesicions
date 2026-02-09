@@ -105,6 +105,20 @@
         "total_tokens": 3927
       },
       "time": "2026-02-08T22:10:13.283552+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an engineering/pruning study with limited novelty and unclear generality: the gradual magnitude-pruning-with-masks approach is close to existing pruning/compression work, the key hyperparameter heuristics are ad hoc, and experiments are narrowly focused on proprietary ASR setups with incomplete baseline coverage (e.g., strong compression baselines, structured sparsity, quantization-only, modern sparse training) and limited analysis of when/why sparsity helps; speedup claims depend heavily on sparse GEMM/SpMV library behavior and are not convincingly demonstrated as broadly deployable."
+      },
+      "token": {
+        "prompt_tokens": 5864,
+        "completion_tokens": 141,
+        "total_tokens": 6005
+      },
+      "time": "2026-02-09T20:14:10.542890+00:00"
     }
   ],
   "test": false

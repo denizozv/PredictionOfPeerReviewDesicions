@@ -90,6 +90,20 @@
         "total_tokens": 6288
       },
       "time": "2026-02-08T22:47:03.261825+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Interesting idea (symbolic/linear combiner to match sequential SGD in expectation via JL projection), but the contribution is narrow (only linear-update learners), the key guarantee is only in expectation with variance controlled by heuristics, and the empirical evaluation is largely systems-style speedup/accuracy on a single 16-core shared-memory machine without strong modern baselines or broader ML impact; overall likely below ICML/ICLR/NeurIPS research-track bar."
+      },
+      "token": {
+        "prompt_tokens": 7960,
+        "completion_tokens": 118,
+        "total_tokens": 8078
+      },
+      "time": "2026-02-09T20:50:12.914779+00:00"
     }
   ],
   "test": true

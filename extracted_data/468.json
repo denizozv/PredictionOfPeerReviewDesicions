@@ -140,6 +140,20 @@
         "total_tokens": 6628
       },
       "time": "2026-02-08T22:20:06.077920+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental synthesis of known ideas (second-order/Hessian-weighted sensitivity for quantization + entropy-constrained scalar quantization + Huffman coding) with limited novelty and somewhat dated/insufficient experimental positioning; results are not convincingly beyond strong existing compression baselines and rely on approximations (diagonal Hessian, local quadratic) without deeper analysis or broader modern evaluation."
+      },
+      "token": {
+        "prompt_tokens": 8330,
+        "completion_tokens": 103,
+        "total_tokens": 8433
+      },
+      "time": "2026-02-09T20:22:24.862668+00:00"
     }
   ],
   "test": false

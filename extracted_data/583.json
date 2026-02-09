@@ -120,6 +120,20 @@
         "total_tokens": 6759
       },
       "time": "2026-02-08T22:31:10.624603+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting framing (class-held-out novelty generation) but the contribution is mainly a benchmark/metric/protocol proposal with weakly justified novelty definition, heavy reliance on classifier-based scores that are known to be brittle, and limited evidence of genuine OOD generation beyond MNIST→fonts; results hinge on hyperparameter search/model selection rather than a principled method, with unclear baselines and external validity for top-tier ML."
+      },
+      "token": {
+        "prompt_tokens": 8494,
+        "completion_tokens": 109,
+        "total_tokens": 8603
+      },
+      "time": "2026-02-09T20:33:35.022884+00:00"
     }
   ],
   "test": false

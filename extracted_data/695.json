@@ -100,6 +100,20 @@
         "total_tokens": 4721
       },
       "time": "2026-02-08T22:42:10.880615+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Incremental/prior-art-heavy pruning idea (merge highly correlated neurons) with a weak/incorrectly justified “noise outputs increase correlation” claim, limited and outdated empirical validation (mostly MNIST/SVHN, dense-layer-only, no strong modern baselines like magnitude pruning, structured pruning, lottery ticket, distillation), and missing rigor on training/inference cost, generality, and comparisons—overall below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6625,
+        "completion_tokens": 119,
+        "total_tokens": 6744
+      },
+      "time": "2026-02-09T20:45:17.229939+00:00"
     }
   ],
   "test": false

@@ -120,6 +120,20 @@
         "total_tokens": 11523
       },
       "time": "2026-02-08T22:25:12.795044+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Primarily an engineering/feature-design paper (chirplet front-end + FFT implementation + pretraining) with limited novelty and insufficiently rigorous evaluation: small/toy or weakly positioned datasets (e.g., BIRD10 details inconsistent), modest gains, no strong baselines (modern audio CNNs, PCEN/log-mel variants, scattering, learnable filterbanks/SincNet), and unclear fairness/ablation (is improvement from representation, smoothing, architecture, overlap, or pretraining). The ‘fast’ algorithm is essentially standard FFT-based block convolution (O(N log M)) rather than a new transform, and the writing/presentation has many issues that would likely prevent acceptance at ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 13098,
+        "completion_tokens": 174,
+        "total_tokens": 13272
+      },
+      "time": "2026-02-09T20:27:02.969355+00:00"
     }
   ],
   "test": false

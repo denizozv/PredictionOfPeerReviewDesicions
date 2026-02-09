@@ -125,6 +125,20 @@
         "total_tokens": 7306
       },
       "time": "2026-02-08T22:38:26.987536+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "Solid, well-motivated hybrid of fixed scattering features with a learned convnet, with competitive CIFAR/STL results, a clear small-data generalization story, and some analysis/ablations (e.g., angular-frequency sparsification, replacing scattering with a learned front-end) plus a useful GPU software release; novelty is moderate and SOTA is not reached, but the empirical case and practical value likely clear the bar."
+      },
+      "token": {
+        "prompt_tokens": 8923,
+        "completion_tokens": 112,
+        "total_tokens": 9035
+      },
+      "time": "2026-02-09T20:41:26.491012+00:00"
     }
   ],
   "test": false

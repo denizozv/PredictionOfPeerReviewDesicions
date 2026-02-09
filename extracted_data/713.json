@@ -105,6 +105,20 @@
         "total_tokens": 5019
       },
       "time": "2026-02-08T22:44:12.470985+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental activation-function tweak (a parametric ELU similar in spirit to PReLU) with limited conceptual novelty and unclear significance: gains are modest/inconsistent and appear sensitive to training/regularization choices, with insufficiently strong baselines/ablations to rule out that improvements come from hyperparameter tuning rather than the activation itself; overall contribution likely below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6887,
+        "completion_tokens": 111,
+        "total_tokens": 6998
+      },
+      "time": "2026-02-09T20:47:18.582721+00:00"
     }
   ],
   "test": false

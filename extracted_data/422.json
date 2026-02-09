@@ -120,6 +120,20 @@
         "total_tokens": 8062
       },
       "time": "2026-02-08T22:14:17.547564+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated variational state-space model that enforces Markov structure by reparameterizing transitions to allow backpropagation through time, with clear empirical evidence (pendulum/ball) that it recovers missing dynamical factors (e.g., velocity) and enables long-horizon prediction better than DKF; contribution is substantive and experimentally validated despite being mostly on simulated domains."
+      },
+      "token": {
+        "prompt_tokens": 9385,
+        "completion_tokens": 105,
+        "total_tokens": 9490
+      },
+      "time": "2026-02-09T20:17:37.880006+00:00"
     }
   ],
   "test": false

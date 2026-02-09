@@ -75,6 +75,20 @@
         "total_tokens": 6436
       },
       "time": "2026-02-08T22:32:21.766482+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The core contribution—low-rank / low-rank+diagonal parameterizations for passthrough architectures (GRU/LSTM/Highway/ResNet-style)—is a fairly incremental compression/parameter-efficiency tweak with limited conceptual novelty, and the empirical case is not strong enough for ICML/ICLR/NeurIPS: results are mostly on older synthetic long-memory benchmarks and permuted sequential MNIST, comparisons are narrow/dated (primarily uRNN) with limited modern baselines and ablations, and several claims are undercut by slower convergence, instability, and only modest/unclear gains on realistic tasks (language modeling not competitive; NMT negative). Overall it reads more like a useful engineering note than a top-tier research advance."
+      },
+      "token": {
+        "prompt_tokens": 8269,
+        "completion_tokens": 180,
+        "total_tokens": 8449
+      },
+      "time": "2026-02-09T20:34:45.664227+00:00"
     }
   ],
   "test": false

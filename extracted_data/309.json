@@ -120,6 +120,20 @@
         "total_tokens": 7032
       },
       "time": "2026-02-08T22:02:43.672161+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, well-motivated algorithmic contribution (UNREAL) that augments A3C with multiple off-policy auxiliary tasks + replay, backed by extensive ablations and large-scale results showing substantial, robust performance and data-efficiency gains on both Atari and a challenging 3D benchmark; the empirical evidence and impact are clearly above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8746,
+        "completion_tokens": 105,
+        "total_tokens": 8851
+      },
+      "time": "2026-02-09T20:07:08.466479+00:00"
     }
   ],
   "test": false

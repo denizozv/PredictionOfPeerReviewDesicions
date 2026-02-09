@@ -75,6 +75,20 @@
         "total_tokens": 3820
       },
       "time": "2026-02-08T22:05:06.413175+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, surprising empirical finding that high-quality texture synthesis does not require deep, pooled, or trained CNN features; the paper supports this with clear methodology, extensive ablations across filter types/scales, and both qualitative and VGG-based quantitative evaluation, making it a solid, impactful contribution and a useful minimal baseline."
+      },
+      "token": {
+        "prompt_tokens": 5730,
+        "completion_tokens": 89,
+        "total_tokens": 5819
+      },
+      "time": "2026-02-09T20:09:11.316500+00:00"
     }
   ],
   "test": true

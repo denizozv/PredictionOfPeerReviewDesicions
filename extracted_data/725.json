@@ -145,6 +145,20 @@
         "total_tokens": 10702
       },
       "time": "2026-02-08T22:45:12.863210+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental/dated contribution with modest empirical gains: the DNN→(Simplified-)SFNN parameter-transfer idea and Taylor-based approximation are plausible but not clearly novel relative to existing stochastic-unit training/approximation (e.g., dropout/variational/importance-sampling lines), and the reported improvements on modern vision benchmarks are small (e.g., ~0.08% on CIFAR-10, ~0.58% on CIFAR-100) with evaluation choices (e.g., test via deterministic approximation) that weaken the claim that the stochastic model itself is better; overall impact and positioning vs stronger contemporary baselines are unlikely to meet ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 11863,
+        "completion_tokens": 167,
+        "total_tokens": 12030
+      },
+      "time": "2026-02-09T20:48:35.154410+00:00"
     }
   ],
   "test": false

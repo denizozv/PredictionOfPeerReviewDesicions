@@ -95,6 +95,20 @@
         "total_tokens": 4510
       },
       "time": "2026-02-08T22:39:06.683723+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Solid NLP/seq2seq engineering for monotonic transduction with good task-specific results and some analysis, but the core idea (hard monotonic attention via a STEP action with externally precomputed alignments) is incremental/previously explored, relies on a separate alignment pipeline, and the empirical scope is narrow (morphological inflection) without broader methodological novelty or stronger evidence that the approach generalizes or advances attention/learning beyond this setting—likely below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6580,
+        "completion_tokens": 129,
+        "total_tokens": 6709
+      },
+      "time": "2026-02-09T20:41:41.513535+00:00"
     }
   ],
   "test": false

@@ -75,6 +75,20 @@
         "total_tokens": 1682
       },
       "time": "2026-02-08T22:35:16.052094+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Primarily an empirical observation paper about Hessian spectra (bulk near zero + a few outliers) on small fully-connected ReLU nets and toy Gaussian blobs, with limited novelty/insight beyond known overparameterization/flat-minima phenomena; experiments are narrow (exact Hessians on tiny models, full-batch GD), lack strong baselines/theory, and contain concerning methodological issues (e.g., reported non-convergence/large gradient norm) that weaken the claims for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 3874,
+        "completion_tokens": 132,
+        "total_tokens": 4006
+      },
+      "time": "2026-02-09T20:37:57.902464+00:00"
     }
   ],
   "test": false

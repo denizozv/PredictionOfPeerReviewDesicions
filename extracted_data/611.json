@@ -95,6 +95,20 @@
         "total_tokens": 5427
       },
       "time": "2026-02-08T22:34:19.401649+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental deepening of matrix-factorization-style dual-encoder recommendation (deep user/item encoders + multi-level/branching dot-product matching) with limited novelty and insufficiently rigorous evaluation for ICML/ICLR/NeurIPS: comparisons are narrow (mostly WMF/CDL), key details/fairness around cold-start and feature encoders are unclear, and results are not positioned against stronger modern baselines (e.g., neural CF/MLP, factorization machines, WARP/BPR variants, content-based and two-tower retrieval models) or accompanied by deeper analysis."
+      },
+      "token": {
+        "prompt_tokens": 7321,
+        "completion_tokens": 147,
+        "total_tokens": 7468
+      },
+      "time": "2026-02-09T20:36:48.424447+00:00"
     }
   ],
   "test": true

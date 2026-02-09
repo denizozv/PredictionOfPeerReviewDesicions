@@ -95,6 +95,20 @@
         "total_tokens": 6695
       },
       "time": "2026-02-08T22:18:10.959322+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Introduces a simple, efficient moment-matching discrepancy (CMD) with nontrivial theoretical properties (metric on compact support; CMD→0 implies weak convergence) and demonstrates strong empirical results on standard domain adaptation benchmarks (Office, Amazon) with reasonable comparisons and sensitivity analysis, making it a solid top-tier empirical+theory contribution despite some limitations (bounded-activation assumption; practical regularizer matches only marginal moments)."
+      },
+      "token": {
+        "prompt_tokens": 8444,
+        "completion_tokens": 110,
+        "total_tokens": 8554
+      },
+      "time": "2026-02-09T20:21:06.791497+00:00"
     }
   ],
   "test": false

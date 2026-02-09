@@ -100,6 +100,20 @@
         "total_tokens": 6310
       },
       "time": "2026-02-08T22:24:07.976332+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a dataset/resource + evaluation protocol paper with limited methodological novelty; contributions (Wikidata-based cluster/outlier generation, heuristics, OOV handling) are incremental and the empirical claims (e.g., downstream correlation) are based on small/possibly confounded comparisons, likely below the novelty/insight bar for ICML/ICLR/NeurIPS main track."
+      },
+      "token": {
+        "prompt_tokens": 8125,
+        "completion_tokens": 103,
+        "total_tokens": 8228
+      },
+      "time": "2026-02-09T20:25:42.093644+00:00"
     }
   ],
   "test": false

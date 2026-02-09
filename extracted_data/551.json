@@ -145,6 +145,20 @@
         "total_tokens": 6416
       },
       "time": "2026-02-08T22:28:13.033714+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Differentiable histogram/Bayes filtering with learned motion+measurement models is a sensible 'algorithm unrolling' idea, but the contribution and experiments look incremental and too toy/limited (1D hallway, 2D grid with binary observations) with weak positioning against stronger modern baselines (e.g., particle filters/learned PFs, differentiable filters, neural state-space models) and limited evidence of scalability beyond small discrete state spaces; overall impact/novelty likely below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8203,
+        "completion_tokens": 134,
+        "total_tokens": 8337
+      },
+      "time": "2026-02-09T20:30:15.013886+00:00"
     }
   ],
   "test": false

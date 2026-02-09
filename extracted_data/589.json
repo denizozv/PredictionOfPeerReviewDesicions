@@ -95,6 +95,20 @@
         "total_tokens": 5317
       },
       "time": "2026-02-08T22:32:12.957070+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core idea (replacing dense/Euclidean convolutions in RNN/LSTM with graph convolutions) is a fairly direct combination of existing graph CNNs (ChebNet/GCN) with standard recurrent cells, and the empirical evidence is not strong or well-positioned: results are on Moving-MNIST and PTB with a kNN graph built from word2vec, with limited baselines/ablations and some confusing/negative findings (Model 2 failing due to dimensionality, graph-LSTM worse without dropout). Overall novelty and experimental rigor/impact appear below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7027,
+        "completion_tokens": 155,
+        "total_tokens": 7182
+      },
+      "time": "2026-02-09T20:34:13.353182+00:00"
     }
   ],
   "test": false

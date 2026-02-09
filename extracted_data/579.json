@@ -130,6 +130,20 @@
         "total_tokens": 5601
       },
       "time": "2026-02-08T22:31:03.678292+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Incremental CNN+LSTM fusion for trend forecasting with heavy reliance on a hand-designed segmentation pre-processing step; limited novelty/insight, weak positioning vs modern time-series forecasting baselines, and evaluation lacks rigor/ablation to justify the architecture beyond standard hybrid models."
+      },
+      "token": {
+        "prompt_tokens": 7432,
+        "completion_tokens": 81,
+        "total_tokens": 7513
+      },
+      "time": "2026-02-09T20:33:13.584186+00:00"
     }
   ],
   "test": false

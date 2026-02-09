@@ -130,6 +130,20 @@
         "total_tokens": 9008
       },
       "time": "2026-02-08T22:14:15.116261+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Promising idea (RNN emissions inside HSMM) but the core technical novelty and learning/inference story are not convincingly solid for ICML/ICLR/NeurIPS: the “distributional penalty method”/auxiliary Q̃ looks like an ad-hoc workaround for discrete-latent training with unclear theoretical/optimization guarantees, and the claimed 400× speedup relies on an amortized bi-RNN that is said to mimic DP without rigorous validation of approximation error or robustness. Empirically, comparisons are mostly to older HSMM variants/CRF-AE with limited coverage of stronger modern baselines for unsupervised segmentation with neural sequence models, and key settings (e.g., K fixed to ground truth, duration truncation, BPTT limits) raise concerns about fairness/generalization."
+      },
+      "token": {
+        "prompt_tokens": 10355,
+        "completion_tokens": 191,
+        "total_tokens": 10546
+      },
+      "time": "2026-02-09T20:17:31.065489+00:00"
     }
   ],
   "test": false

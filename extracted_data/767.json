@@ -115,6 +115,20 @@
         "total_tokens": 5941
       },
       "time": "2026-02-08T22:48:28.169492+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "The core contribution—using an actor-critic controller to output a scalar learning rate during SGD—is not sufficiently novel or well-justified relative to existing adaptive optimizers and meta-learning/learned-optimizer work, and the empirical evidence is too limited (MNIST/CIFAR-10 with small gains, unclear fairness/compute budget, weak state representation, and missing comparisons to stronger schedules/modern baselines and learned-optimizer methods) to meet ICML/ICLR/NeurIPS standards."
+      },
+      "token": {
+        "prompt_tokens": 7814,
+        "completion_tokens": 128,
+        "total_tokens": 7942
+      },
+      "time": "2026-02-09T20:52:08.646000+00:00"
     }
   ],
   "test": true

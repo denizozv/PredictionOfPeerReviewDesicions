@@ -105,6 +105,20 @@
         "total_tokens": 5730
       },
       "time": "2026-02-08T22:16:18.126904+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated noisy-channel formulation for neural seq2seq with a tractable latent-alignment channel model and practical beam-search decoding, plus convincing gains across multiple tasks and a clear demonstration of leveraging unpaired target-side data—an impactful contribution beyond incremental modeling tweaks."
+      },
+      "token": {
+        "prompt_tokens": 7486,
+        "completion_tokens": 82,
+        "total_tokens": 7568
+      },
+      "time": "2026-02-09T20:19:48.483941+00:00"
     }
   ],
   "test": false

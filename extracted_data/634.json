@@ -105,6 +105,20 @@
         "total_tokens": 5291
       },
       "time": "2026-02-08T22:37:08.452413+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental repackaging of existing gradient-based feature inversion/targeted adversarial methods (optimize intermediate-layer representations) with limited novelty and unclear rigorous evaluation; results/claims hinge on qualitative visualizations and small-scale comparisons on LeNet/MNIST and VGG-Face without strong modern baselines, ablations, or robustness methodology, so the contribution is below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7161,
+        "completion_tokens": 113,
+        "total_tokens": 7274
+      },
+      "time": "2026-02-09T20:39:17.430927+00:00"
     }
   ],
   "test": false

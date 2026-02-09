@@ -65,6 +65,20 @@
         "total_tokens": 4931
       },
       "time": "2026-02-08T22:19:13.926104+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core idea (explicit label-noise modeling via an added “noise adaptation” layer, with an EM-equivalent interpretation) is reasonable but largely incremental/rediscovery relative to prior noisy-label and confusion-matrix/noise-layer work, and the empirical validation is not at modern ICML/ICLR/NeurIPS bar: experiments are limited to synthetic label flips on MNIST/CIFAR-100 with relatively weak/dated baselines, little analysis of identifiability/degeneracy and when the feature-dependent noise model is warranted, and no convincing demonstration on realistic instance-dependent noise or large-scale settings where the quadratic layer and sparsification claims would matter."
+      },
+      "token": {
+        "prompt_tokens": 6874,
+        "completion_tokens": 160,
+        "total_tokens": 7034
+      },
+      "time": "2026-02-09T20:21:50.284354+00:00"
     }
   ],
   "test": false

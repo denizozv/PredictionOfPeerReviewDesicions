@@ -100,6 +100,20 @@
         "total_tokens": 4989
       },
       "time": "2026-02-08T22:28:19.298332+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental empirical study (adding forward-view eligibility traces to DRQN) evaluated on only two Atari games with limited baselines/ablations and unclear novelty/rigor; results are confounded by optimizer/hyperparameter effects and lack the breadth, analysis, and positioning needed for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 6924,
+        "completion_tokens": 94,
+        "total_tokens": 7018
+      },
+      "time": "2026-02-09T20:30:35.998683+00:00"
     }
   ],
   "test": true

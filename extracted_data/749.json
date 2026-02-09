@@ -105,6 +105,20 @@
         "total_tokens": 6443
       },
       "time": "2026-02-08T22:47:13.159347+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a survey/heuristic “design patterns” write-up with limited novelty and weak empirical validation: the proposed FoF/SBN/TSN variants are only lightly tested on CIFAR, show at best parity (FoF) and often worse final accuracy (SBN/TSN), and the paper explicitly defers thorough evaluation; overall contribution and rigor are below ICML/ICLR/NeurIPS research-track standards."
+      },
+      "token": {
+        "prompt_tokens": 8260,
+        "completion_tokens": 114,
+        "total_tokens": 8374
+      },
+      "time": "2026-02-09T20:50:39.907710+00:00"
     }
   ],
   "test": true

@@ -115,6 +115,20 @@
         "total_tokens": 6335
       },
       "time": "2026-02-08T22:41:21.688147+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental extension of HashedNets (multiple hashes + small reconstruction MLP + shared global hash table) with limited novelty/insight, weak/dated experimental positioning and baselines (mostly vs HashedNets; no strong modern compression/quantization/distillation comparisons), unclear rigor/reproducibility (promised future code, missing key training details), and only heuristic property analysis—overall below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8081,
+        "completion_tokens": 119,
+        "total_tokens": 8200
+      },
+      "time": "2026-02-09T20:44:14.923541+00:00"
     }
   ],
   "test": false

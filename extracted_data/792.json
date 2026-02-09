@@ -90,6 +90,20 @@
         "total_tokens": 4746
       },
       "time": "2026-02-08T22:51:07.296778+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental label-smoothing/self-distillation regularizer with limited novelty and insufficiently rigorous evaluation/positioning against strong modern baselines; gains are shown on small benchmarks with many hyperparameters and unclear fairness, and the co-label analysis is suggestive but not a compelling mechanistic or theoretical contribution at top-tier level."
+      },
+      "token": {
+        "prompt_tokens": 6602,
+        "completion_tokens": 90,
+        "total_tokens": 6692
+      },
+      "time": "2026-02-09T20:54:25.683877+00:00"
     }
   ],
   "test": false

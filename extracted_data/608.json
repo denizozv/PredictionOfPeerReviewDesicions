@@ -90,6 +90,20 @@
         "total_tokens": 4336
       },
       "time": "2026-02-08T22:34:09.948749+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting analysis of sine-activation loss landscapes and a plausible story about when periodicity is/ isn’t used, but the contribution is not convincingly at ICML/ICLR/NeurIPS level: theory is largely limited to a very simplified 1-hidden-neuron/1-layer MSE setting (with speculative extension to deep nets), experiments are on relatively weak/dated benchmarks (MNIST/Reuters bag-of-words, toy algorithmic addition/subtraction) with unclear baseline strength and missing modern comparisons (e.g., SIREN-style init, Fourier features, positional encodings, ReLU/GeLU, gated RNN variants), and the empirical claims about “faster learning” and “periodicity usage” rely on a somewhat ad-hoc truncated-sine probe without deeper controls/ablation (init/scale, frequency content, optimization settings, statistical robustness). Overall: solid as an exploratory/diagnostic paper, but insufficient novelty + rigor/positioning for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 6418,
+        "completion_tokens": 227,
+        "total_tokens": 6645
+      },
+      "time": "2026-02-09T20:36:25.629518+00:00"
     }
   ],
   "test": false

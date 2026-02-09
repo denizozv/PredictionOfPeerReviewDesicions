@@ -150,6 +150,20 @@
         "total_tokens": 11742
       },
       "time": "2026-02-08T22:11:10.238620+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, original, and practically impactful realization of conditional computation via sparsely-gated MoE: clear algorithmic innovations (noisy top-k gating + load/importance balancing + scalable data/model-parallel implementation), demonstrated at unprecedented parameter scales with convincing efficiency measurements and substantial SOTA gains on large LM and MT benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 12876,
+        "completion_tokens": 90,
+        "total_tokens": 12966
+      },
+      "time": "2026-02-09T20:15:07.553909+00:00"
     }
   ],
   "test": false

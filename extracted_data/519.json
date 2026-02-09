@@ -115,6 +115,20 @@
         "total_tokens": 5222
       },
       "time": "2026-02-08T22:25:07.726129+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental LSTM reparameterization (largely weight-norm + fixed variance corrections) with strong independence/steady-state assumptions and limited empirical validation (few datasets, modest/unclear SOTA gains, missing rigorous ablations and comparisons to strong modern baselines), so the novelty and evidence likely fall below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6961,
+        "completion_tokens": 99,
+        "total_tokens": 7060
+      },
+      "time": "2026-02-09T20:26:46.899761+00:00"
     }
   ],
   "test": false

@@ -120,6 +120,20 @@
         "total_tokens": 8155
       },
       "time": "2026-02-08T22:36:16.640854+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core idea (bidirectional spatial RNNs inserted into CNN feature maps, including as a drop-in fine-tuning add-on) is largely incremental relative to prior spatial RNN/RCNN/context modules for vision, and the empirical case is not strong enough for ICML/ICLR/NeurIPS: results are limited to CIFAR-10 and VOC12 with comparisons that are not clearly against the strongest contemporaneous baselines (e.g., modern residual/dilated/attention/CRF variants under matched training), gains are partly confounded by architectural/training choices, and the method lacks deeper analysis/theory or compelling new insight beyond 'add recurrence for context'."
+      },
+      "token": {
+        "prompt_tokens": 9677,
+        "completion_tokens": 164,
+        "total_tokens": 9841
+      },
+      "time": "2026-02-09T20:38:55.845559+00:00"
     }
   ],
   "test": false

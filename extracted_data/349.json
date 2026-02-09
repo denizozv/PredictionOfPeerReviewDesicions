@@ -100,6 +100,20 @@
         "total_tokens": 5289
       },
       "time": "2026-02-08T22:06:19.253484+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a synthetic dataset + modest architectural tweak (memory-net hop aggregation) with RL training; contributions and empirical evidence are not strong/novel enough for ICML/ICLR/NeurIPS, with limited comparison to stronger interactive QA/RL baselines and unclear external validity beyond the toy simulator."
+      },
+      "token": {
+        "prompt_tokens": 7266,
+        "completion_tokens": 88,
+        "total_tokens": 7354
+      },
+      "time": "2026-02-09T20:10:39.264015+00:00"
     }
   ],
   "test": false

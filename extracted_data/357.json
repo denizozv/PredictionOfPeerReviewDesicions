@@ -140,6 +140,20 @@
         "total_tokens": 6834
       },
       "time": "2026-02-08T22:07:09.797092+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "A reasonably novel and well-motivated architecture that explicitly factorizes motion (via ConvLSTM over frame differences) and content (via CNN over the last frame), with multi-scale residual connections and adversarial+gradient losses, supported by solid experiments/ablations and competitive results on standard video prediction benchmarks (KTH/Weizmann/UCF-101) including generalization analysis; while not a major conceptual leap and with some evaluation caveats (e.g., copy-last-frame baseline strong on UCF-101), it meets the empirical/engineering contribution bar for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 8559,
+        "completion_tokens": 145,
+        "total_tokens": 8704
+      },
+      "time": "2026-02-09T20:11:08.708146+00:00"
     }
   ],
   "test": false

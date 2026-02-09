@@ -95,6 +95,20 @@
         "total_tokens": 4530
       },
       "time": "2026-02-08T22:34:21.335219+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Clever but dated/limited contribution: predicting patchwise affine transforms is a restrictive motion model, and the main empirical claim rests on a classifier-based evaluation protocol that is not well-validated (susceptible to classifier bias and not a standard, broadly accepted metric). Comparisons/baselines are incomplete (e.g., no strong modern video prediction models, limited datasets/ablations on failure modes like occlusion/non-affine motion), so the impact and generality are unlikely to meet ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6527,
+        "completion_tokens": 135,
+        "total_tokens": 6662
+      },
+      "time": "2026-02-09T20:36:55.446813+00:00"
     }
   ],
   "test": true

@@ -140,6 +140,20 @@
         "total_tokens": 6744
       },
       "time": "2026-02-08T22:38:10.400202+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Primarily an incremental GRU+hierarchical attention QA model with a simplistic “interactive” extension evaluated on synthetic bAbI-derived ibAbI; novelty and external validity are weak, interaction is heavily constrained (single follow-up, simulated feedback, EOS-based decision), and comparisons/analysis are insufficient to justify ICML/ICLR/NeurIPS-level impact beyond existing memory/attention QA work."
+      },
+      "token": {
+        "prompt_tokens": 8481,
+        "completion_tokens": 107,
+        "total_tokens": 8588
+      },
+      "time": "2026-02-09T20:40:26.470384+00:00"
     }
   ],
   "test": false

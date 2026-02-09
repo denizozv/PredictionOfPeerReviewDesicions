@@ -85,6 +85,20 @@
         "total_tokens": 2982
       },
       "time": "2026-02-08T22:28:11.078451+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The proposed objective (adding an encoder-consistency/denoising penalty between codes of clean vs corrupted inputs) is a fairly incremental variant closely related to contractive/robust/siamese-style regularization, and the empirical evidence is too limited (mostly synthetic visualizations + a small MNIST feature-extraction sweep) with no strong modern baselines, ablations, or compelling gains to justify ICML/ICLR/NeurIPS acceptance."
+      },
+      "token": {
+        "prompt_tokens": 5066,
+        "completion_tokens": 118,
+        "total_tokens": 5184
+      },
+      "time": "2026-02-09T20:30:07.480964+00:00"
     }
   ],
   "test": false

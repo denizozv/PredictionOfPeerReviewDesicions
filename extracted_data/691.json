@@ -155,6 +155,20 @@
         "total_tokens": 5664
       },
       "time": "2026-02-08T22:41:33.722426+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a benchmark/software environment paper with limited novel methodology and relatively shallow/dated empirical evaluation (mostly DQN variants + reward shaping case studies); contributions and experimental rigor/positioning vs existing platforms (e.g., Gym/Universe and later retro benchmarks) are unlikely to meet ICML/ICLR/NeurIPS research-track bar without stronger scientific insights, standardized tasks/metrics, and broader baselines/analysis."
+      },
+      "token": {
+        "prompt_tokens": 7531,
+        "completion_tokens": 111,
+        "total_tokens": 7642
+      },
+      "time": "2026-02-09T20:44:47.712299+00:00"
     }
   ],
   "test": true

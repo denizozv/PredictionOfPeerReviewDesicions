@@ -75,6 +75,20 @@
         "total_tokens": 3542
       },
       "time": "2026-02-08T22:45:04.604529+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "The core idea (two networks predicting each other’s pseudo-labels under a uniform-output constraint) is not sufficiently novel relative to established self-supervised/co-training/EM-style clustering methods, and the empirical validation is too weak and narrow (synthetic MNIST pairings, limited baselines like k-means/agglomerative, no comparisons to modern SSL clustering/contrastive methods, unclear objective/optimization details and ablations), so the contribution and evidence fall below ICML/ICLR/NeurIPS standards."
+      },
+      "token": {
+        "prompt_tokens": 5641,
+        "completion_tokens": 130,
+        "total_tokens": 5771
+      },
+      "time": "2026-02-09T20:48:02.651471+00:00"
     }
   ],
   "test": true

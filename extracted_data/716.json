@@ -80,6 +80,20 @@
         "total_tokens": 4890
       },
       "time": "2026-02-08T22:44:17.832482+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong practical contribution: a carefully engineered real-time semantic segmentation architecture with substantial speed/compute/parameter reductions (validated on Cityscapes/CamVid/SUN and embedded hardware) while maintaining competitive accuracy, plus clear design ablations and systems-level analysis of bottlenecks."
+      },
+      "token": {
+        "prompt_tokens": 6826,
+        "completion_tokens": 81,
+        "total_tokens": 6907
+      },
+      "time": "2026-02-09T20:47:40.433117+00:00"
     }
   ],
   "test": false

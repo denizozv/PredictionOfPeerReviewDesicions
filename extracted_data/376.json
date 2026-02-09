@@ -160,6 +160,20 @@
         "total_tokens": 8489
       },
       "time": "2026-02-08T22:09:02.588528+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, carefully executed empirical study that isolates and quantifies two meaningful notions of RNN capacity (per-parameter task memorization and per-unit input memory), showing architecture differences are small when training is properly tuned; includes extensive controlled comparisons across architectures/depths/sizes and introduces a plausible new deep-trainable gated variant (+RNN)."
+      },
+      "token": {
+        "prompt_tokens": 10143,
+        "completion_tokens": 96,
+        "total_tokens": 10239
+      },
+      "time": "2026-02-09T20:12:59.101798+00:00"
     }
   ],
   "test": false

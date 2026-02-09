@@ -75,6 +75,20 @@
         "total_tokens": 6368
       },
       "time": "2026-02-08T22:30:10.305914+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting retrieval-motivated multi-view objective (matching probabilistic neighborhoods across views) but the contribution appears incremental/under-positioned relative to existing neighborhood-embedding and multi-view metric learning ideas, with optimization heuristics and limited evidence of broad impact or scalability; experiments focus on custom setups and retrieval curves without strong modern baselines or clear downstream gains."
+      },
+      "token": {
+        "prompt_tokens": 8086,
+        "completion_tokens": 96,
+        "total_tokens": 8182
+      },
+      "time": "2026-02-09T20:31:53.283403+00:00"
     }
   ],
   "test": false

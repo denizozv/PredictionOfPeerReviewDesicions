@@ -100,6 +100,20 @@
         "total_tokens": 6030
       },
       "time": "2026-02-08T22:19:11.708056+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, simple semi-supervised learning method (temporal ensembling / consistency regularization) with clear algorithmic novelty over prior self-training, solid motivation, and convincing state-of-the-art empirical results on standard benchmarks (SVHN/CIFAR-10) plus useful extensions (extra unlabeled data, label-noise tolerance) and ablations; overall impact and clarity meet top-tier conference bar."
+      },
+      "token": {
+        "prompt_tokens": 7855,
+        "completion_tokens": 106,
+        "total_tokens": 7961
+      },
+      "time": "2026-02-09T20:21:42.173394+00:00"
     }
   ],
   "test": false

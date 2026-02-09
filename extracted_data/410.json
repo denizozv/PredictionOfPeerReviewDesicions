@@ -120,6 +120,20 @@
         "total_tokens": 6158
       },
       "time": "2026-02-08T22:12:44.044509+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, simple baseline (max softmax probability) for misclassification and OOD detection, validated across multiple modalities/tasks with appropriate AUROC/AUPR metrics and clear experimental protocol; while conceptually simple, the breadth and clarity make it a valuable reference point and spur further work."
+      },
+      "token": {
+        "prompt_tokens": 7947,
+        "completion_tokens": 83,
+        "total_tokens": 8030
+      },
+      "time": "2026-02-09T20:16:28.875706+00:00"
     }
   ],
   "test": false

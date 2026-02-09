@@ -155,6 +155,20 @@
         "total_tokens": 8960
       },
       "time": "2026-02-08T22:41:08.030812+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an empirical transfer study using an existing QA model (AS Reader) and known datasets; the main finding—limited zero-shot transfer but gains with few-shot fine-tuning—is unsurprising and the evaluation is constrained (single-word answers, cloze-converted/anonymized bAbI, subset of SQuAD), with limited novelty/insight and weak positioning against stronger contemporary baselines, so the contribution is below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 10518,
+        "completion_tokens": 123,
+        "total_tokens": 10641
+      },
+      "time": "2026-02-09T20:43:34.815825+00:00"
     }
   ],
   "test": true

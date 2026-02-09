@@ -115,6 +115,20 @@
         "total_tokens": 6082
       },
       "time": "2026-02-08T22:21:06.346332+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "A reasonably novel multi-step “hypothesis testing”/query-regression mechanism on top of NSE with dynamic halting, supported by solid empirical gains (new SOTA at the time) on established CBT/WDW benchmarks plus some analysis; while the improvements are modest and the method is close to contemporaneous multi-hop/termination work, the combination of adaptive stopping + memory-based query rewriting is sufficiently substantive and validated to clear the top-tier bar."
+      },
+      "token": {
+        "prompt_tokens": 7927,
+        "completion_tokens": 116,
+        "total_tokens": 8043
+      },
+      "time": "2026-02-09T20:23:29.045047+00:00"
     }
   ],
   "test": false

@@ -165,6 +165,20 @@
         "total_tokens": 11050
       },
       "time": "2026-02-08T22:48:13.841189+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, nontrivial generative/compositional model with a clear technical contribution (MAP learning/inference via max-product message passing with an effective schedule) and compelling evidence that it learns interpretable parts and can do classification/inpainting by clamping; while some experiments are synthetic and scalability is a concern (very high memory/CPU), the method is original and empirically convincing enough for a top-tier accept."
+      },
+      "token": {
+        "prompt_tokens": 12436,
+        "completion_tokens": 109,
+        "total_tokens": 12545
+      },
+      "time": "2026-02-09T20:51:26.034810+00:00"
     }
   ],
   "test": false

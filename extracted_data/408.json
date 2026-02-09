@@ -105,6 +105,20 @@
         "total_tokens": 5998
       },
       "time": "2026-02-08T22:12:36.683658+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical multi-view acoustic/text embedding study with reasonable ablations, but the core contribution (biLSTM encoders + multi-view contrastive/triplet losses, plus a simple edit-distance-based margin) is incremental relative to existing Siamese/triplet and multi-view embedding work; evaluation is limited to intrinsic discrimination/correlation on a single dataset with modest gains and no clear downstream ASR/STD impact or stronger baselines (e.g., hard-negative mining/in-batch negatives, CCA-style or modern metric-learning objectives), making it likely below the novelty/impact bar for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 7878,
+        "completion_tokens": 153,
+        "total_tokens": 8031
+      },
+      "time": "2026-02-09T20:16:16.324265+00:00"
     }
   ],
   "test": false

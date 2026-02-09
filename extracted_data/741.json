@@ -110,6 +110,20 @@
         "total_tokens": 4891
       },
       "time": "2026-02-08T22:46:16.263739+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.9,
+        "primary_reason": "Too toy/under-scoped and methodologically weak for ICML/ICLR/NeurIPS: the work is essentially CAM-based post-hoc visualization on a synthetic tic-tac-toe dataset with labels that already encode the winning move (18 classes = side×cell), achieving trivial 100% classification; the main claims about 'concept emergence' and 'weak supervision/cross-modal' are not convincingly established beyond this small closed world, with limited baselines/controls (e.g., simpler models, randomization tests, alternative attribution methods), no demonstration of generalization to harder games/realistic settings, and the CAM localization metrics (~70%) are not strong enough to support the broader conceptual conclusions."
+      },
+      "token": {
+        "prompt_tokens": 6905,
+        "completion_tokens": 170,
+        "total_tokens": 7075
+      },
+      "time": "2026-02-09T20:49:40.679414+00:00"
     }
   ],
   "test": false

@@ -185,6 +185,20 @@
         "total_tokens": 9822
       },
       "time": "2026-02-08T22:31:12.307498+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated many-task NLP architecture with clear technical contributions (layer-wise task stacking with shortcut connections + label-embedding feedback + successive regularization to mitigate interference) and extensive experiments/ablations showing consistent gains and several SOTA results; while some components are incremental and evaluation is on a fixed set of classic datasets, the breadth, empirical rigor, and practical impact clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 11267,
+        "completion_tokens": 115,
+        "total_tokens": 11382
+      },
+      "time": "2026-02-09T20:33:42.173943+00:00"
     }
   ],
   "test": false

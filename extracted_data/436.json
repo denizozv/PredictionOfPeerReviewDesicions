@@ -120,6 +120,20 @@
         "total_tokens": 4715
       },
       "time": "2026-02-08T22:16:02.434260+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, timely contribution: an end-to-end weakly supervised neural program-induction approach for real-world table QA (WikiTableQuestions) that is competitive with a hand-engineered semantic parser, with clear objective modifications to handle answer ambiguity, solid baselines/ablations, and meaningful analysis; main weaknesses (hand-designed ops, heavy ensembling, training heuristics) are outweighed by novelty and empirical impact for ICML/ICLR/NeurIPS of its era."
+      },
+      "token": {
+        "prompt_tokens": 6737,
+        "completion_tokens": 122,
+        "total_tokens": 6859
+      },
+      "time": "2026-02-09T20:18:58.708855+00:00"
     }
   ],
   "test": false

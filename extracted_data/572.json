@@ -145,6 +145,20 @@
         "total_tokens": 6885
       },
       "time": "2026-02-08T22:30:24.354720+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting early study of adversarial attacks on VAEs/VAE-GANs, but the core techniques are largely straightforward adaptations of existing adversarial optimization (classifier-on-latent, reconstruction-loss targeting, latent-feature matching) with limited novelty and somewhat weak/indirect evaluation of attack success (relying on an auxiliary classifier and qualitative examples, with no strong baselines/metrics or broader threat-model analysis), making the contribution likely below the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8592,
+        "completion_tokens": 125,
+        "total_tokens": 8717
+      },
+      "time": "2026-02-09T20:32:30.455703+00:00"
     }
   ],
   "test": false

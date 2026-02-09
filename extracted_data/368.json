@@ -160,6 +160,20 @@
         "total_tokens": 8355
       },
       "time": "2026-02-08T22:08:06.136496+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated evaluation contribution: adapts AIS (with HMC transitions) to obtain accurate log-likelihood estimates for decoder-based models and validates estimator accuracy via BDMC on simulated data; then uses the tool to deliver substantive empirical findings (KDE unreliability, IWAE underestimation/recognition overfitting, overfitting analysis, and mode-missing diagnostics) with careful controls and open-source code. While experiments are mostly limited to MNIST and the Gaussian observation model is a caveat, the methodological rigor and impact on evaluation practice meet top-tier standards."
+      },
+      "token": {
+        "prompt_tokens": 9863,
+        "completion_tokens": 145,
+        "total_tokens": 10008
+      },
+      "time": "2026-02-09T20:12:10.509505+00:00"
     }
   ],
   "test": false

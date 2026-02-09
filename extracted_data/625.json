@@ -150,6 +150,20 @@
         "total_tokens": 9780
       },
       "time": "2026-02-08T22:35:21.887118+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated hierarchical RL contribution with a clear zero-shot/long-horizon generalization target, novel communication-based meta/subtask controller design (incl. learned temporal abstraction) and an analogy-making regularizer, supported by reasonably thorough ablations and two environments (2D + 3D visual) showing meaningful gains over a flat baseline; while the domains are still synthetic and some components (options/termination, memory pointer, curriculum) are close to prior art, the combined method+evidence is above the typical top-tier bar."
+      },
+      "token": {
+        "prompt_tokens": 11396,
+        "completion_tokens": 136,
+        "total_tokens": 11532
+      },
+      "time": "2026-02-09T20:38:13.567618+00:00"
     }
   ],
   "test": false

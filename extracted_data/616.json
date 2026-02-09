@@ -95,6 +95,20 @@
         "total_tokens": 3706
       },
       "time": "2026-02-08T22:35:04.790022+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting unpaired inversion idea (reconstruction + adversarial priors from retrieved exemplar memories), but the contribution and evidence look below ICML/ICLR/NeurIPS bar: experiments are largely toy/synthetic (MNIST inpainting; composited chair-on-SUN), intrinsic decomposition uses a small dataset with unclear quantitative evaluation, and the method relies on task-specific renderers and heuristic retrieval (L2/ detector) plus even some supervised pretraining for stability, weakening the “weakly supervised” claim; overall novelty vs prior GAN priors/patch discriminators/exemplar-based constraints is not clearly established and baselines/ablations seem insufficient to support broad claims."
+      },
+      "token": {
+        "prompt_tokens": 5673,
+        "completion_tokens": 161,
+        "total_tokens": 5834
+      },
+      "time": "2026-02-09T20:37:19.917834+00:00"
     }
   ],
   "test": false

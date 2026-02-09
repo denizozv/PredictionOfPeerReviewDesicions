@@ -115,6 +115,20 @@
         "total_tokens": 5330
       },
       "time": "2026-02-08T22:37:20.004233+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, practically impactful empirical+hardware study showing large speed/energy gains from narrow custom floating-point on real DNNs (AlexNet/VGG/GoogLeNet) with minimal accuracy loss, backed by ASIC-level area/timing/power analysis and a useful search method that greatly reduces design-space exploration cost; while not deeply theoretical and somewhat systems-oriented, the results are substantial and well-validated for a top-tier ML venue (often as an efficient inference/hardware co-design paper)."
+      },
+      "token": {
+        "prompt_tokens": 7200,
+        "completion_tokens": 126,
+        "total_tokens": 7326
+      },
+      "time": "2026-02-09T20:39:58.234402+00:00"
     }
   ],
   "test": false

@@ -150,6 +150,20 @@
         "total_tokens": 8549
       },
       "time": "2026-02-08T22:40:19.226724+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental/curriculum training heuristic (prefix-length schedule) evaluated on a newly constructed but still fairly toy MNIST-derived stroke dataset, with limited positioning against stronger modern sequence-modeling baselines and unclear generality beyond this setting; gains appear partly attributable to batch/optimization effects rather than a broadly new method or insight at ICML/ICLR/NeurIPS level."
+      },
+      "token": {
+        "prompt_tokens": 10338,
+        "completion_tokens": 104,
+        "total_tokens": 10442
+      },
+      "time": "2026-02-09T20:43:19.792528+00:00"
     }
   ],
   "test": false

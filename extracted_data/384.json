@@ -120,6 +120,20 @@
         "total_tokens": 5978
       },
       "time": "2026-02-08T22:09:11.743888+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, timely SQuAD-style span-extraction model combining match-LSTM with a pointer-based answer module; shows clear gains over then-standard feature-based baselines and includes reasonable ablations/analyses, making it competitive for top-tier venues despite being largely an architectural combination of existing components."
+      },
+      "token": {
+        "prompt_tokens": 7849,
+        "completion_tokens": 85,
+        "total_tokens": 7934
+      },
+      "time": "2026-02-09T20:13:34.155509+00:00"
     }
   ],
   "test": false

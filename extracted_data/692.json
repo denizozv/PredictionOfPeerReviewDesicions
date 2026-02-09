@@ -115,6 +115,20 @@
         "total_tokens": 5143
       },
       "time": "2026-02-08T22:42:04.153111+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The proposed global-to-local attention with one/two Bi-LSTM scans is a fairly incremental variant of existing LSTM+attention/RCNN-style text classifiers, and the empirical evidence as described is not strong enough for ICML/ICLR/NeurIPS: limited novelty/insight, unclear/dated SOTA claims, missing key modern baselines and rigor (e.g., pretrained embeddings/transformers, stronger attention pooling variants, hyperparameter fairness, regularization), and the evaluation/analysis is mostly qualitative with insufficient ablations to isolate what the two-scan/global-context attention contributes."
+      },
+      "token": {
+        "prompt_tokens": 7074,
+        "completion_tokens": 146,
+        "total_tokens": 7220
+      },
+      "time": "2026-02-09T20:44:55.720443+00:00"
     }
   ],
   "test": false

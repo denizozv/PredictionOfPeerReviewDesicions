@@ -90,6 +90,20 @@
         "total_tokens": 4056
       },
       "time": "2026-02-08T22:33:20.873424+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an application of an existing Pointer Network/seq2seq attention architecture to a small, niche argument-mining setup; the modeling changes (self-pointing root, FC layer, joint loss) are incremental, and the empirical evidence—while showing SOTA on two small datasets—does not convincingly establish broad impact or robustness (limited scale, heavy feature engineering, greedy decoding, and no strong modern neural/structured baselines or deeper analysis of structural constraint satisfaction/generalization)."
+      },
+      "token": {
+        "prompt_tokens": 6064,
+        "completion_tokens": 124,
+        "total_tokens": 6188
+      },
+      "time": "2026-02-09T20:35:53.406244+00:00"
     }
   ],
   "test": false

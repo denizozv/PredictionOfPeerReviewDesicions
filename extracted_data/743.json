@@ -90,6 +90,20 @@
         "total_tokens": 4961
       },
       "time": "2026-02-08T22:46:20.519041+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an empirical universality claim with limited ML-specific novelty and insufficiently rigorous/statistically grounded evidence: the paper reports distributional “collapse” of normalized halting times across a few ensembles/tasks, but does not provide a clear theoretical mechanism, precise conditions, or strong quantitative tests (e.g., goodness-of-fit, finite-size scaling, sensitivity to stopping rules/optimizers/architectures) to substantiate universality beyond suggestive plots; the deep-learning experiments are relatively small/dated (MNIST FCN/convnet, random-label/noise control) and the halting criterion is somewhat ad hoc, making the contribution feel more like an interesting observation from numerical analysis/stat-phys than a top-tier ICML/ICLR/NeurIPS research advance."
+      },
+      "token": {
+        "prompt_tokens": 6854,
+        "completion_tokens": 181,
+        "total_tokens": 7035
+      },
+      "time": "2026-02-09T20:49:57.558939+00:00"
     }
   ],
   "test": false

@@ -85,6 +85,20 @@
         "total_tokens": 4007
       },
       "time": "2026-02-08T22:27:17.687078+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a systems/engineering implementation (JS/WebCL deep learning + browser-based distributed training) with limited algorithmic novelty and weak top-tier ML positioning: relies on nonstandard/obsolete deployment assumptions (WebCL add-ons), provides mostly speed/practicality comparisons rather than new learning methods, and the distributed-training results are preliminary (simple data-parallel SGD, modest scaling, communication bottlenecks) without rigorous evaluation against modern baselines or broader impact beyond an implementation report."
+      },
+      "token": {
+        "prompt_tokens": 5933,
+        "completion_tokens": 122,
+        "total_tokens": 6055
+      },
+      "time": "2026-02-09T20:29:16.757015+00:00"
     }
   ],
   "test": false

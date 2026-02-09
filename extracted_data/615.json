@@ -140,6 +140,20 @@
         "total_tokens": 7592
       },
       "time": "2026-02-08T22:35:02.284011+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental quasi-Newton variant with limited novelty and insufficiently convincing empirical evidence: results are only on MNIST/CIFAR10 (mostly small models + a single ResNet-20), show at best parity with tuned SGD/NAG rather than clear wins, and the distributed-training motivation is not actually demonstrated; comparisons and reporting (compute cost, wall-clock fairness, modern baselines/large-scale settings) are not strong enough for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 9139,
+        "completion_tokens": 123,
+        "total_tokens": 9262
+      },
+      "time": "2026-02-09T20:37:11.516661+00:00"
     }
   ],
   "test": false

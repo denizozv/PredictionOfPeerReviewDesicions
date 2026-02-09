@@ -80,6 +80,20 @@
         "total_tokens": 6924
       },
       "time": "2026-02-08T22:48:11.328117+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core contributions (SimEc as a neural approximation to similarity-matrix factorization/kPCA-style embeddings, and ConEc as a reinterpretation/heuristic post-processing of CBOW+negative sampling to form context-based/OOV embeddings) are largely incremental and under-positioned relative to substantial prior work on out-of-sample kernel embeddings, metric/similarity learning, and context-/sense-aware word representations; the empirical evaluation is limited (small-scale datasets, mostly qualitative plots, and a non-competitive NER setup with weak baselines/ablations), so the paper does not convincingly demonstrate a clear, top-tier methodological advance or strong, broadly compelling results."
+      },
+      "token": {
+        "prompt_tokens": 8755,
+        "completion_tokens": 161,
+        "total_tokens": 8916
+      },
+      "time": "2026-02-09T20:51:18.353631+00:00"
     }
   ],
   "test": true

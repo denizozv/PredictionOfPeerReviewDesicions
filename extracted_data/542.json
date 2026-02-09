@@ -100,6 +100,20 @@
         "total_tokens": 5262
       },
       "time": "2026-02-08T22:27:15.501397+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated multitask RL contribution: uses lightweight supervision (policy sketches) to induce reusable option-like subpolicies, with a clean decoupled actor–critic objective and curriculum; shows clear gains over reasonable baselines plus ablations and compelling zero-shot/recombination results on sparse-reward hierarchical domains. Main weaknesses are limited environment diversity/scale and reliance on provided sketches (not learned), but overall novelty + empirical evidence are above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7205,
+        "completion_tokens": 129,
+        "total_tokens": 7334
+      },
+      "time": "2026-02-09T20:29:09.124007+00:00"
     }
   ],
   "test": false

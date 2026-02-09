@@ -130,6 +130,20 @@
         "total_tokens": 7042
       },
       "time": "2026-02-08T22:47:10.702957+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated architectural contribution (convolutional encoder for NMT) with clear speed advantages and competitive BLEU on multiple major WMT benchmarks, supported by sensible ablations (depth, residuals, separate CNNs for attention vs context) and practical analysis of decoding speed; overall impact and empirical rigor meet top-tier conference standards for the time."
+      },
+      "token": {
+        "prompt_tokens": 8648,
+        "completion_tokens": 99,
+        "total_tokens": 8747
+      },
+      "time": "2026-02-09T20:50:32.973498+00:00"
     }
   ],
   "test": false

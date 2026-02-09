@@ -125,6 +125,20 @@
         "total_tokens": 3750
       },
       "time": "2026-02-08T22:23:03.437204+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "A large, well-documented, publicly released HOL proof-step dataset (millions of labeled examples) with clear task formulations and reproducible baselines is a substantial community resource likely to enable follow-on research, despite the baseline modeling being fairly simple and the conditioned setting not yet showing gains."
+      },
+      "token": {
+        "prompt_tokens": 5846,
+        "completion_tokens": 84,
+        "total_tokens": 5930
+      },
+      "time": "2026-02-09T20:24:53.651720+00:00"
     }
   ],
   "test": false

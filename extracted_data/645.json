@@ -130,6 +130,20 @@
         "total_tokens": 5958
       },
       "time": "2026-02-08T22:38:07.598885+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, clearly novel extension of CCA/GCCA to the deep + many-view setting with a nontrivial objective/gradient derivation and scalable stochastic optimization, supported by solid experiments on real multiview datasets showing consistent gains over key baselines (DCCA, GCCA, WGCCA) and a convincing synthetic sanity check."
+      },
+      "token": {
+        "prompt_tokens": 7660,
+        "completion_tokens": 93,
+        "total_tokens": 7753
+      },
+      "time": "2026-02-09T20:40:19.650358+00:00"
     }
   ],
   "test": false

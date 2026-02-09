@@ -90,6 +90,20 @@
         "total_tokens": 6247
       },
       "time": "2026-02-08T22:44:16.238197+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "The core contribution—randomly sampling many coarse pruning masks and selecting the best by validation accuracy, then retraining—is too heuristic/incremental relative to established structured pruning and sparsification methods, and the empirical evidence is not positioned against strong modern baselines (e.g., structured channel pruning with learned importance, L1/BN-gamma criteria, group-lasso, network slimming, lottery-ticket/rewinding, or FLOP/latency-aware pruning). Claims about GPU/VLSI/FFT benefits are largely speculative without convincing end-to-end speed/latency measurements, and results are mostly on small CIFAR/SVHN-style models with limited rigor on compute budgets, reproducibility, and comparisons, putting it below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7942,
+        "completion_tokens": 181,
+        "total_tokens": 8123
+      },
+      "time": "2026-02-09T20:47:34.532941+00:00"
     }
   ],
   "test": false

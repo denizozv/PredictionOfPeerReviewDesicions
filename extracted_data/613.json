@@ -105,6 +105,20 @@
         "total_tokens": 14921
       },
       "time": "2026-02-08T22:34:23.096347+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core contribution (ICM-based pairwise causality detector used to weight an L1 penalty) is conceptually straightforward and heavily dependent on a synthetic, assumption-laden causality classifier; the paper does not convincingly validate that the learned 'causality scores' correspond to interventional/causal effects in real EHR data, relying instead on limited expert labeling of top features/hypotheses and lacking strong causal baselines, robustness checks (distribution shift, unobserved confounding, temporal leakage), and ablations that would be needed for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 16072,
+        "completion_tokens": 142,
+        "total_tokens": 16214
+      },
+      "time": "2026-02-09T20:37:03.760714+00:00"
     }
   ],
   "test": false

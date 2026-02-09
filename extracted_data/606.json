@@ -85,6 +85,20 @@
         "total_tokens": 2219
       },
       "time": "2026-02-08T22:34:05.424531+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Interesting framing (probabilistic axiomatic specs) but the technical contribution and evidence are below ICML/ICLR/NeurIPS: experiments are largely toy (unrolled finite stacks/queues/trees with MNIST items), the “distribution-sensitive” claim is not convincingly quantified against strong neural algorithmic reasoning/memory baselines, and the method appears to amount to training small CNN modules to approximately satisfy extensionalized axioms without clear novelty, scalability, or rigorous evaluation of tradeoffs (accuracy vs capacity/time/space) that would substantiate distribution-sensitive data-structure learning."
+      },
+      "token": {
+        "prompt_tokens": 4411,
+        "completion_tokens": 145,
+        "total_tokens": 4556
+      },
+      "time": "2026-02-09T20:36:08.972105+00:00"
     }
   ],
   "test": false

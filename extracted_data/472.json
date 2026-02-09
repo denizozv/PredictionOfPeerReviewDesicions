@@ -130,6 +130,20 @@
         "total_tokens": 12995
       },
       "time": "2026-02-08T22:20:19.759122+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental graph-regularized sparse coding: the support-distance regularizer and LISTA-style encoder are plausible but not clearly novel vs prior manifold/structured sparsity work, the optimization theory relies on a condition asserted to hold empirically, and experiments focus on older clustering/label-propagation benchmarks with limited modern baselines, so the overall contribution/impact is below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 13938,
+        "completion_tokens": 111,
+        "total_tokens": 14049
+      },
+      "time": "2026-02-09T20:22:53.306924+00:00"
     }
   ],
   "test": false

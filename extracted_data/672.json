@@ -150,6 +150,20 @@
         "total_tokens": 6738
       },
       "time": "2026-02-08T22:40:14.492813+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong multimodal generative modeling contribution: a clean joint VAE formulation enabling truly bi-directional generation, plus a practical KL-regularized training scheme (JMVAE-kl) to handle missing modalities; supported by reasonable comparisons (VAE/CVAE/CMMA), quantitative likelihood estimates, and qualitative results on MNIST and CelebA (including a VAE-GAN variant). Main weaknesses are limited novelty relative to broader multimodal VAE literature and somewhat narrow evaluation (two datasets, likelihood-centric metrics), but overall the method+evidence are above the typical top-tier acceptance bar."
+      },
+      "token": {
+        "prompt_tokens": 8151,
+        "completion_tokens": 146,
+        "total_tokens": 8297
+      },
+      "time": "2026-02-09T20:43:06.248708+00:00"
     }
   ],
   "test": false

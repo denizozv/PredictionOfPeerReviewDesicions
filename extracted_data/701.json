@@ -90,6 +90,20 @@
         "total_tokens": 4483
       },
       "time": "2026-02-08T22:43:10.730962+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.82,
+        "primary_reason": "The core idea (freeze a pretrained backbone and add/train auxiliary modules via parallel towers or stitched connections) is plausible but not sufficiently novel or rigorously validated for ICML/ICLR/NeurIPS: experiments are small/dated (CIFAR10→CIFAR100, MNIST, Cars, IMDB-500), comparisons are not clearly fair (often more parameters/compute for the modular model; limited hyperparameter tuning; unclear strong baselines like modern adapters/LoRA, linear probing, partial fine-tuning, regularized fine-tuning, or few-shot transfer protocols), and the empirical evidence/analysis is inconsistent (e.g., Cars result confounded by parameter count; CIFAR setup uses unusual batching/epoch simulation; limited ablations on module size/placement/regularization and no statistical reporting except one case). Overall impact and credibility fall below the top-tier bar."
+      },
+      "token": {
+        "prompt_tokens": 6436,
+        "completion_tokens": 206,
+        "total_tokens": 6642
+      },
+      "time": "2026-02-09T20:45:47.425736+00:00"
     }
   ],
   "test": false

@@ -90,6 +90,20 @@
         "total_tokens": 3253
       },
       "time": "2026-02-08T22:50:12.521442+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.9,
+        "primary_reason": "Essentially a hard mixture-of-experts / winner-take-all multi-head predictor for driving (train only the minimum-loss head), which is a well-known idea and presented without sufficient novelty, theory, or rigorous evaluation; experiments are very small-scale (80 minutes, 2 Hz, single setup), with weak baselines/ablations and unclear methodology (e.g., gating uses ground-truth at test via min-loss selection, limited metrics, no comparison to standard MoE/MDN/ensemble or probabilistic intent models), so the claims about “intention” extraction and robustness to disturbance data are not convincingly supported at ICML/ICLR/NeurIPS level."
+      },
+      "token": {
+        "prompt_tokens": 5365,
+        "completion_tokens": 164,
+        "total_tokens": 5529
+      },
+      "time": "2026-02-09T20:53:57.926948+00:00"
     }
   ],
   "test": false

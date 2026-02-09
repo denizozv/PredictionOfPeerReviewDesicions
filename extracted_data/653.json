@@ -70,6 +70,20 @@
         "total_tokens": 3957
       },
       "time": "2026-02-08T22:38:21.259998+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "The main claims (large-batch and many-learner inefficiency) largely restate well-known theory/practice and are derived from existing nonconvex SGD/ASGD bounds with minor algebraic manipulation; the analysis is not tight/novel and the experiments are limited (single CIFAR-10 CNN, fixed LR, no strong baselines or modern large-batch techniques, no wall-clock/throughput or scaling study), so the contribution and empirical support are below ICML/ICLR/NeurIPS standards."
+      },
+      "token": {
+        "prompt_tokens": 5794,
+        "completion_tokens": 133,
+        "total_tokens": 5927
+      },
+      "time": "2026-02-09T20:41:03.459149+00:00"
     }
   ],
   "test": false

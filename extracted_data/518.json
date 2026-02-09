@@ -65,6 +65,20 @@
         "total_tokens": 5325
       },
       "time": "2026-02-08T22:25:05.966965+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, novel contribution: amortizing SVGD into a neural sampler (learning-to-sample via Stein updates) and leveraging it for approximate MLE training of energy-based models, with a clear algorithmic derivation, broad applicability to unnormalized densities, and competitive image-generation results; while some evaluation choices (heavy reliance on visual quality/inception score, stabilization heuristics, and limited likelihood-focused comparisons) could be questioned, the core idea is substantive and impactful enough for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 7091,
+        "completion_tokens": 130,
+        "total_tokens": 7221
+      },
+      "time": "2026-02-09T20:26:40.248942+00:00"
     }
   ],
   "test": true

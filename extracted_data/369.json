@@ -130,6 +130,20 @@
         "total_tokens": 5099
       },
       "time": "2026-02-08T22:08:08.235329+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.74,
+        "primary_reason": "Strong, practically impactful quantization method that learns ternary assignments and per-layer scaling factors end-to-end, with convincing ImageNet/CIFAR results and clear comparisons to prior binary/ternary baselines; novelty is moderate but the empirical gains and deployability make it above the bar."
+      },
+      "token": {
+        "prompt_tokens": 6968,
+        "completion_tokens": 84,
+        "total_tokens": 7052
+      },
+      "time": "2026-02-09T20:12:16.776067+00:00"
     }
   ],
   "test": false

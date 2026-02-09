@@ -100,6 +100,20 @@
         "total_tokens": 5778
       },
       "time": "2026-02-08T22:30:26.044139+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Promising benchmark-style formulation of information-seeking with RL, but contributions appear incremental/under-validated: tasks are largely synthetic or simplified, key gains rely on adding privileged low-res global summaries (weakening the ‘efficient search’ claim), and evaluation/baselines are not strong enough (e.g., comparisons mainly to random/upper-bound, limited ablations vs existing attention/glimpse/active perception methods and intrinsic-motivation objectives)."
+      },
+      "token": {
+        "prompt_tokens": 7650,
+        "completion_tokens": 116,
+        "total_tokens": 7766
+      },
+      "time": "2026-02-09T20:32:37.691447+00:00"
     }
   ],
   "test": false

@@ -120,6 +120,20 @@
         "total_tokens": 7896
       },
       "time": "2026-02-08T22:05:15.003509+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Provides a coherent and novel interpretive framework (unrolled iterative estimation) that unifies/derives ResNets and Highway nets, and supports it with nontrivial empirical corroboration and comparative case studies; while partly conceptual, the derivations and experiments are sufficiently insightful and well-positioned to clear the top-tier bar."
+      },
+      "token": {
+        "prompt_tokens": 9549,
+        "completion_tokens": 92,
+        "total_tokens": 9641
+      },
+      "time": "2026-02-09T20:09:41.212091+00:00"
     }
   ],
   "test": false

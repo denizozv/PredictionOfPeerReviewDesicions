@@ -120,6 +120,20 @@
         "total_tokens": 7099
       },
       "time": "2026-02-08T22:32:17.341626+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting structured-sparsity/mixture-of-subspaces variant of VAE that can mitigate posterior collapse, but the core idea (selecting a small active latent subspace per example via a discrete selector) is not sufficiently novel/rigorous for ICML/ICLR/NeurIPS, and the empirical case is weak by modern standards: limited datasets (MNIST/TFD), reliance on Parzen-window log-density (known to be unreliable), hard-EM/argmin assignment for y with heuristic balanced minibatches, and missing comparisons to stronger/principled alternatives (e.g., IWAE/VampPrior/flows, KL-annealing/free-bits, mixture-of-VAEs with learned gating via Gumbel-Softmax/RELAX, hierarchical priors)."
+      },
+      "token": {
+        "prompt_tokens": 8786,
+        "completion_tokens": 186,
+        "total_tokens": 8972
+      },
+      "time": "2026-02-09T20:34:29.351961+00:00"
     }
   ],
   "test": false

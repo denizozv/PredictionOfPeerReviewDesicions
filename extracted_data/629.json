@@ -150,6 +150,20 @@
         "total_tokens": 6888
       },
       "time": "2026-02-08T22:36:10.067452+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a correlational/observational study using existing ImageNet DNNs and hand-designed metrics (L1/MI) on a small set of psychophysics-inspired stimuli; while interesting and sometimes quantitatively strong, the novelty and methodological depth are limited, several claims are anecdotal/under-controlled, and the evaluation lacks the rigor/positioning (stronger baselines, statistical testing, modern perceptual metrics, broader tasks) typically required for ICML/ICLR/NeurIPS acceptance."
+      },
+      "token": {
+        "prompt_tokens": 8683,
+        "completion_tokens": 129,
+        "total_tokens": 8812
+      },
+      "time": "2026-02-09T20:38:41.403301+00:00"
     }
   ],
   "test": false

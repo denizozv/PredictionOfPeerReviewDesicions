@@ -145,6 +145,20 @@
         "total_tokens": 6661
       },
       "time": "2026-02-08T22:07:16.620426+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.74,
+        "primary_reason": "Strong, original contribution: formulates optimizer design as RL policy learning (via guided policy search) and demonstrates a learned optimizer that can be deployed at test time without hyperparameter tuning, with convincing empirical gains over multiple standard optimizers and some generalization/transfer evidence; while evaluation is on synthetic tasks and would invite questions about breadth/real-world impact, the methodological novelty and results are likely above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8526,
+        "completion_tokens": 117,
+        "total_tokens": 8643
+      },
+      "time": "2026-02-09T20:11:37.408835+00:00"
     }
   ],
   "test": false

@@ -90,6 +90,20 @@
         "total_tokens": 4815
       },
       "time": "2026-02-08T22:40:08.980107+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting multi-task extension of Learning with Robotic Priors via a gated architecture and an episode-level task-coherence loss, but the contribution feels incremental and the empirical validation is too narrow/toy (slot-car with synthetic cues, low-res images, kNN Q-learning). Lacks comparisons to stronger multi-task/unsupervised representation learning baselines and modern RL pipelines, limited evidence of generality (more environments, task-switching within episodes, varying/unknown task counts), and the method relies on a fairly strong assumption (tasks constant per episode) that is baked into the objective."
+      },
+      "token": {
+        "prompt_tokens": 6763,
+        "completion_tokens": 144,
+        "total_tokens": 6907
+      },
+      "time": "2026-02-09T20:42:51.331597+00:00"
     }
   ],
   "test": true

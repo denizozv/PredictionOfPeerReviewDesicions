@@ -145,6 +145,20 @@
         "total_tokens": 15196
       },
       "time": "2026-02-08T22:12:30.136100+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "Strong, unusually extensive empirical study of action-conditioned recurrent video prediction for long-horizon environment simulation across many domains (10 Atari + TORCS + 3D mazes), with clear architectural contributions (direct action-conditioned transitions; prediction-independent simulator for efficiency) and deep analysis of training schemes (PDT/ODT, truncation) plus a concrete model-based exploration use-case; while some components are incremental and evaluation relies heavily on MSE/qualitative videos with known issues (blurriness, metric misalignment, limited policy generalization), the breadth, rigor of ablations, and practical impact likely clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 15912,
+        "completion_tokens": 160,
+        "total_tokens": 16072
+      },
+      "time": "2026-02-09T20:15:52.589944+00:00"
     }
   ],
   "test": false

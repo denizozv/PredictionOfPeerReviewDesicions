@@ -120,6 +120,20 @@
         "total_tokens": 4730
       },
       "time": "2026-02-08T22:05:13.118877+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.93,
+        "primary_reason": "Substantial, well-motivated improvements to PixelCNN (discretized logistic mixture likelihood, whole-pixel conditioning, multiscale down/up-sampling with U-net-style shortcuts, dropout) with strong CIFAR-10 likelihood and convincing ablations; clear practical impact and reproducibility via code release."
+      },
+      "token": {
+        "prompt_tokens": 6632,
+        "completion_tokens": 88,
+        "total_tokens": 6720
+      },
+      "time": "2026-02-09T20:09:34.380119+00:00"
     }
   ],
   "test": false

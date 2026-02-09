@@ -125,6 +125,20 @@
         "total_tokens": 6434
       },
       "time": "2026-02-08T22:08:13.706070+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, well-motivated compositional/object-centric architecture (pairwise interaction factorization + additive aggregation + local neighborhood masking) that demonstrably improves long-horizon prediction, extrapolation to more objects, and latent property inference, supported by clear ablations against reasonable baselines and targeted analyses of the inductive biases."
+      },
+      "token": {
+        "prompt_tokens": 8359,
+        "completion_tokens": 90,
+        "total_tokens": 8449
+      },
+      "time": "2026-02-09T20:12:30.490994+00:00"
     }
   ],
   "test": false

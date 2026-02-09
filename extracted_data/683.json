@@ -65,6 +65,20 @@
         "total_tokens": 2688
       },
       "time": "2026-02-08T22:41:16.355881+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "The core contribution (AdaBoost-style incremental ensembling by growing a ResNet via block insertion + weight transfer) is a fairly incremental combination of existing ideas (ResNets, boosting, warm-start/transfer), and the writeup provides no convincing top-tier evidence: no clear novelty beyond prior Deep Incremental Boosting, no rigorous theoretical justification for boosting with deep nets, and—critically—no strong experimental validation/ablations on standard benchmarks against competitive baselines (e.g., strong single ResNets, snapshot ensembles, SWA, bagging, modern boosting/ensemble methods) or analysis of accuracy–compute tradeoffs."
+      },
+      "token": {
+        "prompt_tokens": 4755,
+        "completion_tokens": 154,
+        "total_tokens": 4909
+      },
+      "time": "2026-02-09T20:44:00.386395+00:00"
     }
   ],
   "test": false

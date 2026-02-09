@@ -145,6 +145,20 @@
         "total_tokens": 7010
       },
       "time": "2026-02-08T22:28:17.492103+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a systems/simulation paper with limited ML novelty and weak top-tier ML evaluation: focuses on logistic regression on (augmented) MNIST, uses a custom SSD simulator without public artifact/validation against real hardware, and the claimed ISP-vs-host advantages hinge on modeling assumptions (I/O-trace-based comparison, memory-shortage setup) rather than convincing end-to-end results on modern deep learning workloads or strong baselines."
+      },
+      "token": {
+        "prompt_tokens": 8676,
+        "completion_tokens": 113,
+        "total_tokens": 8789
+      },
+      "time": "2026-02-09T20:30:29.414035+00:00"
     }
   ],
   "test": false

@@ -125,6 +125,20 @@
         "total_tokens": 5715
       },
       "time": "2026-02-08T22:42:07.961447+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong end-to-end sentence-level lipreading system (STCNN+BiGRU+CTC) with clear novelty over prior word-classification pipelines, solid experimental protocol (unseen-speaker and overlapped splits), meaningful baselines/ablations (2D conv, LSTM, no-LM, human lipreaders), and large performance gains plus interpretability analyses (saliency, viseme confusions) on a standard dataset."
+      },
+      "token": {
+        "prompt_tokens": 7434,
+        "completion_tokens": 115,
+        "total_tokens": 7549
+      },
+      "time": "2026-02-09T20:45:10.116793+00:00"
     }
   ],
   "test": false

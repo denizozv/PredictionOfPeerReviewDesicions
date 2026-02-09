@@ -135,6 +135,20 @@
         "total_tokens": 17552
       },
       "time": "2026-02-08T22:21:01.637105+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, technically novel contribution enabling low-variance backpropagation through discrete latent variables via continuous auxiliary smoothing (with clear derivations), combined with a correlated/hierarchical discrete posterior and hybrid RBM+continuous hierarchy; supported by competitive likelihood results and meaningful ablations on standard benchmarks, making it above the ICML/ICLR/NeurIPS bar despite some complexity and reliance on MCMC for the RBM prior."
+      },
+      "token": {
+        "prompt_tokens": 18126,
+        "completion_tokens": 111,
+        "total_tokens": 18237
+      },
+      "time": "2026-02-09T20:23:14.667927+00:00"
     }
   ],
   "test": false

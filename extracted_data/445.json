@@ -125,6 +125,20 @@
         "total_tokens": 6644
       },
       "time": "2026-02-08T22:17:07.162638+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental empirical study on an existing MemN2N + bandit-style HITL setup (largely following Weston 2016) with synthetic tasks and limited real-human validation; novelty is modest, the RL methods are standard, and the human experiments are small/templated and not convincingly positioned against stronger interactive learning/RLHF baselines or broader dialogue benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 8550,
+        "completion_tokens": 103,
+        "total_tokens": 8653
+      },
+      "time": "2026-02-09T20:20:02.601618+00:00"
     }
   ],
   "test": false

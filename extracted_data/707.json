@@ -100,6 +100,20 @@
         "total_tokens": 5527
       },
       "time": "2026-02-08T22:43:22.357073+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core idea—latent reference/copy decisions via a pointer/switch over external tables, ingredient lists, or prior mentions—is largely a repackaging of existing pointer/copy and attention mechanisms (pointer networks, copy-net, latent alignment) with limited novelty, and the empirical evidence is not positioned against strong contemporary baselines (e.g., CopyNet/Pointer-Generator, entity-aware/coref LMs, stronger dialogue/recipe systems). Reported gains are mostly in perplexity on “reference tokens” with heavy preprocessing (collapsing multi-token fields, string matching, using an external coref tool), and the analysis suggests optimization issues and mixed effects on non-reference words, leaving unclear whether the approach yields robust, general improvements or new scientific insight at ICML/ICLR/NeurIPS level."
+      },
+      "token": {
+        "prompt_tokens": 7407,
+        "completion_tokens": 189,
+        "total_tokens": 7596
+      },
+      "time": "2026-02-09T20:46:30.166314+00:00"
     }
   ],
   "test": false

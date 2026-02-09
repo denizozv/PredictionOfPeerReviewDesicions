@@ -27,7 +27,7 @@
       "fewShot",
       "zeroShot"
     ],
-    "total_model_approach_combinations": 2
+    "total_model_approach_combinations": 3
   },
   "per_model_approach": [
     {
@@ -158,6 +158,137 @@
           "predicted_reject": 15,
           "predicted_accept": 23,
           "rejection_rate": 0.3947
+        }
+      }
+    },
+    {
+      "approach": "fewShot",
+      "model": "gpt-5.2",
+      "all": {
+        "total_classified": 387,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 3166481,
+          "total_completion_tokens": 47950,
+          "total_tokens": 3214431,
+          "avg_prompt_tokens": 8182.1214,
+          "avg_completion_tokens": 123.9018,
+          "avg_total_tokens": 8306.0233,
+          "min_total_tokens": 3007,
+          "max_total_tokens": 18237
+        },
+        "confusion_matrix": {
+          "TP": 107,
+          "TN": 173,
+          "FP": 60,
+          "FN": 47,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.7235,
+          "precision": 0.6407,
+          "recall": 0.6948,
+          "f1_score": 0.6667,
+          "specificity": 0.7425,
+          "mcc": 0.4322
+        },
+        "confidence_stats": {
+          "mean": 0.7711,
+          "min": 0.62,
+          "max": 0.93,
+          "std": 0.062
+        },
+        "prediction_distribution": {
+          "predicted_reject": 220,
+          "predicted_accept": 167,
+          "rejection_rate": 0.5685
+        },
+        "time": {
+          "first_timestamp": "2026-02-09T20:04:18.357221+00:00",
+          "last_timestamp": "2026-02-09T20:54:31.739346+00:00",
+          "total_elapsed_seconds": 3013.38,
+          "total_elapsed_formatted": "50m 13s",
+          "avg_seconds_per_file": 7.81
+        }
+      },
+      "train": {
+        "total_classified": 349,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 2854630,
+          "total_completion_tokens": 43227,
+          "total_tokens": 2897857,
+          "avg_prompt_tokens": 8179.4556,
+          "avg_completion_tokens": 123.8596,
+          "avg_total_tokens": 8303.3152,
+          "min_total_tokens": 3007,
+          "max_total_tokens": 18237
+        },
+        "confusion_matrix": {
+          "TP": 96,
+          "TN": 153,
+          "FP": 57,
+          "FN": 43,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.7135,
+          "precision": 0.6275,
+          "recall": 0.6906,
+          "f1_score": 0.6575,
+          "specificity": 0.7286,
+          "mcc": 0.4136
+        },
+        "confidence_stats": {
+          "mean": 0.7697,
+          "min": 0.62,
+          "max": 0.93,
+          "std": 0.0615
+        },
+        "prediction_distribution": {
+          "predicted_reject": 196,
+          "predicted_accept": 153,
+          "rejection_rate": 0.5616
+        }
+      },
+      "test": {
+        "total_classified": 38,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 311851,
+          "total_completion_tokens": 4723,
+          "total_tokens": 316574,
+          "avg_prompt_tokens": 8206.6053,
+          "avg_completion_tokens": 124.2895,
+          "avg_total_tokens": 8330.8947,
+          "min_total_tokens": 4975,
+          "max_total_tokens": 14592
+        },
+        "confusion_matrix": {
+          "TP": 11,
+          "TN": 20,
+          "FP": 3,
+          "FN": 4,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.8158,
+          "precision": 0.7857,
+          "recall": 0.7333,
+          "f1_score": 0.7586,
+          "specificity": 0.8696,
+          "mcc": 0.6109
+        },
+        "confidence_stats": {
+          "mean": 0.7842,
+          "min": 0.62,
+          "max": 0.93,
+          "std": 0.0658
+        },
+        "prediction_distribution": {
+          "predicted_reject": 24,
+          "predicted_accept": 14,
+          "rejection_rate": 0.6316
         }
       }
     },

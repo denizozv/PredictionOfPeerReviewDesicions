@@ -175,6 +175,20 @@
         "total_tokens": 6013
       },
       "time": "2026-02-08T22:30:15.487483+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "Strong empirical contribution: an attention+recurrent similarity model that achieves state-of-the-art Omniglot one-shot results (including surpassing HBPL/human baselines) with a reasonably clear mechanism (iterative cross-conditioned glimpses) and some qualitative/ablation analysis; novelty is moderate and the claims hinge heavily on Omniglot protocol fairness, but the performance jump and architecture are likely above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7856,
+        "completion_tokens": 120,
+        "total_tokens": 7976
+      },
+      "time": "2026-02-09T20:32:07.878030+00:00"
     }
   ],
   "test": false

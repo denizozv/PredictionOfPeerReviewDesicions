@@ -100,6 +100,20 @@
         "total_tokens": 5284
       },
       "time": "2026-02-08T22:49:05.179093+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting use of privileged segmentation to enforce foreground/background feature separation, but the core technique (mask-based suppression losses + two feature groups) is relatively incremental/heuristic, the “orthogonality/diversity” objective is not rigorously realized (no clear orthogonality constraint beyond masked zeroing), and the empirical evidence is not strong enough for ICML/ICLR/NeurIPS: relies on a custom manually-segmented 10% ImageNet subset, limited comparisons/ablations against stronger modern alternatives (e.g., multi-task segmentation pretraining, attention/regularization baselines, self-supervised/auxiliary-loss methods), and modest gains that may be attributable to extra supervision rather than a principled diversity mechanism."
+      },
+      "token": {
+        "prompt_tokens": 7097,
+        "completion_tokens": 174,
+        "total_tokens": 7271
+      },
+      "time": "2026-02-09T20:52:16.802703+00:00"
     }
   ],
   "test": false

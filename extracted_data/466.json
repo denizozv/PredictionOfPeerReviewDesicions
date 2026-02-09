@@ -100,6 +100,20 @@
         "total_tokens": 11443
       },
       "time": "2026-02-08T22:19:20.202756+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated theoretical contributions (no spurious critical points for deep linear residual nets under identity parameterization; finite-sample memorization/universal expressivity for simple ReLU residual blocks) paired with a clean, theory-inspired architecture that achieves competitive CIFAR results without BN/dropout and reasonable ImageNet performance; overall novelty/insight and empirical validation are above the ICML/ICLR/NeurIPS bar despite some limitations (expressivity result is essentially memorization; ImageNet underperforms standard ResNets)."
+      },
+      "token": {
+        "prompt_tokens": 12651,
+        "completion_tokens": 135,
+        "total_tokens": 12786
+      },
+      "time": "2026-02-09T20:22:11.293368+00:00"
     }
   ],
   "test": false

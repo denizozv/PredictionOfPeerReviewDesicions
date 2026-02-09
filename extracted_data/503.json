@@ -120,6 +120,20 @@
         "total_tokens": 7650
       },
       "time": "2026-02-08T22:24:03.593316+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Introduces a simple but effective gated fusion unit (GMU) for multimodal representation learning, demonstrates consistent gains over strong fusion baselines (concat/linear-sum/MoE) on a realistic multilabel text+image task, and releases a large, valuable multimodal dataset (MM-IMDb) with analysis/ablations that make the contribution impactful and reusable."
+      },
+      "token": {
+        "prompt_tokens": 9296,
+        "completion_tokens": 101,
+        "total_tokens": 9397
+      },
+      "time": "2026-02-09T20:25:28.022896+00:00"
     }
   ],
   "test": false

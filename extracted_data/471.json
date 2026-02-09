@@ -130,6 +130,20 @@
         "total_tokens": 7590
       },
       "time": "2026-02-08T22:20:15.091575+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/off-policy PG for seq2seq with limited novelty and weak empirical validation: relies on known importance-weighted policy gradient + lambda-returns/GTD, synthetic task is contrived, and the AMT gains are small with only marginal statistical significance and limited baseline coverage/analysis for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9369,
+        "completion_tokens": 89,
+        "total_tokens": 9458
+      },
+      "time": "2026-02-09T20:22:45.028100+00:00"
     }
   ],
   "test": true

@@ -120,6 +120,20 @@
         "total_tokens": 7868
       },
       "time": "2026-02-08T22:10:21.860158+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong systems+research contribution: a well-designed probabilistic programming language tightly integrated with TensorFlow that makes inference first-class and composable (VI/MCMC/GAN-style objectives), supports stochastic control flow and subsampling, and is backed by convincing efficiency benchmarks (large speedups vs Stan/PyMC3) plus demonstrations on modern deep generative models; novelty is primarily in language/inference abstraction and engineering rather than new inference theory, but the scope, clarity, and practical impact clear the top-tier bar."
+      },
+      "token": {
+        "prompt_tokens": 9337,
+        "completion_tokens": 128,
+        "total_tokens": 9465
+      },
+      "time": "2026-02-09T20:14:39.626065+00:00"
     }
   ],
   "test": false

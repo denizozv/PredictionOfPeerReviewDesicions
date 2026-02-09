@@ -205,6 +205,20 @@
         "total_tokens": 8014
       },
       "time": "2026-02-08T22:30:35.202682+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an empirical characterization of invariance/equivariance under standard data augmentation with a fairly limited/new loss that yields small and inconsistent gains (mixed on ILSVRC), and the equivariance/invariance metrics rely on learned linear ‘undo’ maps that make the claims hard to interpret as genuine representation structure; overall insight is incremental relative to prior invariance/equivariance analyses and lacks a strong, broadly effective method or compelling new benchmark result."
+      },
+      "token": {
+        "prompt_tokens": 9542,
+        "completion_tokens": 116,
+        "total_tokens": 9658
+      },
+      "time": "2026-02-09T20:33:07.238483+00:00"
     }
   ],
   "test": false

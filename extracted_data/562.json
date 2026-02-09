@@ -110,6 +110,20 @@
         "total_tokens": 6345
       },
       "time": "2026-02-08T22:29:16.654499+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting idea (training multiple GANs with periodic discriminator swapping) but the contribution is largely heuristic and under-validated: the proposed GAM-II metric is not well-justified and risks being gamed, mode-coverage evidence is mostly toy/qualitative, and improvements are not convincingly established against strong contemporary baselines or via rigorous ablations (e.g., vs. simple ensembles, multi-discriminator training, or alternative regularization), leaving impact below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7996,
+        "completion_tokens": 128,
+        "total_tokens": 8124
+      },
+      "time": "2026-02-09T20:31:28.886849+00:00"
     }
   ],
   "test": false

@@ -80,6 +80,20 @@
         "total_tokens": 4683
       },
       "time": "2026-02-08T22:37:13.159726+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Interesting idea (casting rule mining as sparse recovery over composed relation embeddings) but the contribution feels incremental/under-validated for ICML/ICLR/NeurIPS: relies on strong, somewhat heuristic semantic relaxations (AND→matrix product, OR→sum, negation→negative coefficients, dropping entity embeddings to match Wh) with limited theoretical justification; experiments are small-scale (toy/small KBs), compare mainly to an older kNN miner rather than stronger modern rule-mining and neuro-symbolic baselines, and evaluation focuses on reconstruction metrics without demonstrating downstream impact (e.g., link prediction gains, interpretability/user study, robustness across embedding models)."
+      },
+      "token": {
+        "prompt_tokens": 6635,
+        "completion_tokens": 160,
+        "total_tokens": 6795
+      },
+      "time": "2026-02-09T20:39:33.483866+00:00"
     }
   ],
   "test": false

@@ -95,6 +95,20 @@
         "total_tokens": 4857
       },
       "time": "2026-02-08T22:48:17.442789+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily an empirical/illustrative study of fully-connected “defoveating autoencoders” (a denoising-AE variant with systematic foveation) on MNIST/CIFAR100 using PSNR, with limited novelty, weak modern baselines (no conv/UNet/VAEs/diffusion/inpainting/colorization comparisons), and largely qualitative claims about “perception” that are not rigorously operationalized beyond reconstruction metrics; overall scope/impact and experimental positioning are below ICML/ICLR/NeurIPS standards."
+      },
+      "token": {
+        "prompt_tokens": 6780,
+        "completion_tokens": 137,
+        "total_tokens": 6917
+      },
+      "time": "2026-02-09T20:51:39.862766+00:00"
     }
   ],
   "test": false

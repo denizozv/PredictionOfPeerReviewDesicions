@@ -100,6 +100,20 @@
         "total_tokens": 4811
       },
       "time": "2026-02-08T22:14:29.099598+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Primarily an interpretability/visualization technique built on an existing “prediction difference” idea; the main additions (conditional patch sampling, patch-wise multivariate occlusion, and extension to hidden layers) are reasonable but not a clear conceptual leap, and the evaluation is largely qualitative with limited rigorous comparisons, faithfulness metrics, or user/clinical validation; moreover the method is computationally expensive (tens of minutes per image), weakening practicality/impact for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 6799,
+        "completion_tokens": 127,
+        "total_tokens": 6926
+      },
+      "time": "2026-02-09T20:18:09.933714+00:00"
     }
   ],
   "test": false

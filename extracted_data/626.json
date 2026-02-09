@@ -80,6 +80,20 @@
         "total_tokens": 3559
       },
       "time": "2026-02-08T22:36:01.843642+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a conceptual/geometry exposition of ReLU preimages with heuristic claims (esp. for convnets) and little in the way of new technical results, rigorous theory, or empirical validation/benchmarks; the “compute preimages” procedure largely restates known piecewise-linear region structure of ReLU nets and does not demonstrate actionable insights or improved methods at ICML/ICLR/NeurIPS level."
+      },
+      "token": {
+        "prompt_tokens": 5625,
+        "completion_tokens": 110,
+        "total_tokens": 5735
+      },
+      "time": "2026-02-09T20:38:19.890389+00:00"
     }
   ],
   "test": false

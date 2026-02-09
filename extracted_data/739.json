@@ -90,6 +90,20 @@
         "total_tokens": 2813
       },
       "time": "2026-02-08T22:46:12.433707+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily an engineering note (sparse polynomial feature expansion via combinatorial index mapping) with limited novelty/insight for ICML/ICLR/NeurIPS: the claimed complexity improvement is essentially the expected sparsity-aware reduction from O(D^k) to O(nnz^k) per row, the presentation is rough/unclear in places, and the empirical evaluation is narrow (synthetic timing vs scikit-learn, no end-to-end ML impact, limited baselines/implementation details)."
+      },
+      "token": {
+        "prompt_tokens": 4845,
+        "completion_tokens": 130,
+        "total_tokens": 4975
+      },
+      "time": "2026-02-09T20:49:24.330575+00:00"
     }
   ],
   "test": true

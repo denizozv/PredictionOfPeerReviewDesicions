@@ -130,6 +130,20 @@
         "total_tokens": 6966
       },
       "time": "2026-02-08T22:04:28.325379+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Promising idea (learning cross-morphology invariant embeddings from proxy skills) but the technical novelty and empirical validation look below ICML/ICLR/NeurIPS bar: the method is essentially Siamese/autoencoder alignment plus reward-shaping imitation, relies on strong assumptions (availability of successful proxy trajectories and time/DTW correspondences), uses a relatively narrow set of simulated MuJoCo tasks with limited analysis/ablations, and lacks clear comparisons to stronger contemporary transfer/IL/RL baselines and robustness tests (multiple seeds, sensitivity to proxy choice/misalignment, generalization to new tasks/robots)."
+      },
+      "token": {
+        "prompt_tokens": 8813,
+        "completion_tokens": 152,
+        "total_tokens": 8965
+      },
+      "time": "2026-02-09T20:08:57.896964+00:00"
     }
   ],
   "test": false

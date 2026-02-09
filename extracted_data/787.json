@@ -115,6 +115,20 @@
         "total_tokens": 5737
       },
       "time": "2026-02-08T22:50:14.765272+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental combination of known ideas (low-rank label embeddings + softmax/multinomial likelihood + negative sampling/marginal fitting + AdaGrad block-coordinate updates) with limited novelty/insight; empirical gains are plausible but evaluation has fairness/rigor issues (hand-tuned baselines, thresholding using ground-truth label cardinality, unclear ablations isolating contributions), making it below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7442,
+        "completion_tokens": 120,
+        "total_tokens": 7562
+      },
+      "time": "2026-02-09T20:54:04.930211+00:00"
     }
   ],
   "test": false

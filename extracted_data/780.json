@@ -80,6 +80,20 @@
         "total_tokens": 5585
       },
       "time": "2026-02-08T22:50:02.788159+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Primarily a systems/collectives engineering paper with unclear novelty vs established ring/pipelined allreduce and weak/dated experimental positioning; the theoretical claims rely on unrealistic latency assumptions and small-P PCIe-specific settings, and the evaluation is limited (few models, few GPUs, questionable baseline implementations like OpenMPI host-staging) without comparison to modern NCCL/ring allreduce or broader hardware, so the contribution/impact is below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7222,
+        "completion_tokens": 124,
+        "total_tokens": 7346
+      },
+      "time": "2026-02-09T20:53:28.366283+00:00"
     }
   ],
   "test": false

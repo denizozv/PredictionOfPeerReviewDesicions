@@ -105,6 +105,20 @@
         "total_tokens": 5200
       },
       "time": "2026-02-08T22:26:13.653160+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Introduces a clear, nontrivial RNN architecture (mLSTM) that meaningfully increases input-dependent transition expressiveness by combining mRNN-style multiplicative transitions with LSTM gating, and supports the claim with solid character/byte-level language modeling results (including strong Hutter Prize performance, dynamic evaluation, and some analysis of behavior after surprising inputs) against relevant LSTM/stacked-LSTM baselines."
+      },
+      "token": {
+        "prompt_tokens": 7060,
+        "completion_tokens": 111,
+        "total_tokens": 7171
+      },
+      "time": "2026-02-09T20:27:49.049225+00:00"
     }
   ],
   "test": false

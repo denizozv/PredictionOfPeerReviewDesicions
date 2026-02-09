@@ -100,6 +100,20 @@
         "total_tokens": 4830
       },
       "time": "2026-02-08T22:10:15.649715+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated learned image compression method with a clean optimization workaround for quantization/entropy (straight-through rounding + differentiable rate upper bound), an efficient sub-pixel/residual architecture, and solid empirical evaluation against JPEG/JPEG2000 and prior neural codecs including perceptual MOS; overall contribution and evidence are at/above ICML/ICLR/NeurIPS bar despite some incremental aspects and limited dataset scale."
+      },
+      "token": {
+        "prompt_tokens": 6710,
+        "completion_tokens": 113,
+        "total_tokens": 6823
+      },
+      "time": "2026-02-09T20:14:17.895504+00:00"
     }
   ],
   "test": false

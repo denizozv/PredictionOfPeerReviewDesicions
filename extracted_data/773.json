@@ -100,6 +100,20 @@
         "total_tokens": 4974
       },
       "time": "2026-02-08T22:49:14.364134+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an application/repurposing of an existing method (RFNs) to biclustering with modest technical novelty; despite broad empirical comparisons, the work relies heavily on synthetic benchmarks and domain-specific case studies with limited methodological insight, unclear fairness/strength of baselines and hyperparameter tuning, and lacks the kind of new algorithmic/theoretical contribution or rigorous analysis typically required for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 6861,
+        "completion_tokens": 113,
+        "total_tokens": 6974
+      },
+      "time": "2026-02-09T20:52:46.233331+00:00"
     }
   ],
   "test": true

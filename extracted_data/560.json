@@ -110,6 +110,20 @@
         "total_tokens": 7163
       },
       "time": "2026-02-08T22:29:12.628439+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting empirical study of orthogonality constraints via SVD factorization and bounded singular values, but the core idea is incremental relative to existing orthogonal/unitary RNN and manifold-optimization literature, and the experimental evidence is not strong enough for ICML/ICLR/NeurIPS: results are mostly on standard synthetic memory tasks + sequential/permuted MNIST + small PTB character setups, with limited comparison to strong contemporary baselines (e.g., unitary/orthogonal RNN variants, gated RNNs beyond a single LSTM config, modern regularization/initialization), and the method is computationally heavy (Cayley + matrix inversions) and framed partly as analysis rather than a broadly useful training approach."
+      },
+      "token": {
+        "prompt_tokens": 8943,
+        "completion_tokens": 175,
+        "total_tokens": 9118
+      },
+      "time": "2026-02-09T20:31:15.130227+00:00"
     }
   ],
   "test": false

@@ -135,6 +135,20 @@
         "total_tokens": 8626
       },
       "time": "2026-02-08T22:33:07.882352+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Introduces a clear, nontrivial architectural modification (trainable input/hidden-state decay conditioned on per-variable time-since-observation plus masking) that directly targets informative missingness, and supports it with strong empirical results and ablations on major clinical benchmarks (PhysioNet, MIMIC-III) and controlled synthetic missingness settings, establishing a solid and impactful contribution for modeling irregular/missing multivariate time series."
+      },
+      "token": {
+        "prompt_tokens": 10156,
+        "completion_tokens": 112,
+        "total_tokens": 10268
+      },
+      "time": "2026-02-09T20:35:16.477163+00:00"
     }
   ],
   "test": false

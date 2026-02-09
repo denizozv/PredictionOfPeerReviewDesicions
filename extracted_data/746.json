@@ -115,6 +115,20 @@
         "total_tokens": 6302
       },
       "time": "2026-02-08T22:47:04.797508+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting inductive bias (recursive split/merge with complexity regularization), but the contribution is incomplete and empirically underpowered for ICML/ICLR/NeurIPS: split and merge are not jointly learned (core claim deferred), merge is only partially learned with task-specific deterministic merging, supervision is effectively strengthened via constructed intermediate targets/heuristics, and experiments are limited to synthetic sorting/convex-hull with small datasets and weak baseline coverage, leaving novelty/impact and generality insufficiently demonstrated."
+      },
+      "token": {
+        "prompt_tokens": 8201,
+        "completion_tokens": 128,
+        "total_tokens": 8329
+      },
+      "time": "2026-02-09T20:50:19.957941+00:00"
     }
   ],
   "test": false

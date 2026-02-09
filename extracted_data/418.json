@@ -160,6 +160,20 @@
         "total_tokens": 12211
       },
       "time": "2026-02-08T22:14:08.816783+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, original stabilization technique for GANs via differentiating through K-step unrolled discriminator optimization; provides clear motivation, a concrete surrogate objective with insightful gradient analysis (missing term reducing mode collapse), and convincing experiments/metrics across toy and real datasets (including recurrent generators and CIFAR-10) demonstrating improved stability and mode coverage."
+      },
+      "token": {
+        "prompt_tokens": 13681,
+        "completion_tokens": 92,
+        "total_tokens": 13773
+      },
+      "time": "2026-02-09T20:17:14.998287+00:00"
     }
   ],
   "test": false

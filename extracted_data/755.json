@@ -120,6 +120,20 @@
         "total_tokens": 7220
       },
       "time": "2026-02-08T22:48:07.135004+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting Hessian-at-initialization analysis suggesting 2-shortcut residual blocks yield depth-invariant conditioning, but the theory is largely for deep linear/toy nonlinear networks around (near-)zero initialization and the experiments are limited (whitened MNIST with 10 PCs, full-Hessian computations) and not convincingly connected to real ResNet training practice (BN, MSRA init, convnets). The central claim risks being an artifact of the chosen initialization/setting, and the paper lacks strong evidence that this mechanism explains ResNet’s empirical success at scale."
+      },
+      "token": {
+        "prompt_tokens": 8828,
+        "completion_tokens": 140,
+        "total_tokens": 8968
+      },
+      "time": "2026-02-09T20:51:10.758494+00:00"
     }
   ],
   "test": false

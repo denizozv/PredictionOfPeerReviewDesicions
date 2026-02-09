@@ -135,6 +135,20 @@
         "total_tokens": 10008
       },
       "time": "2026-02-08T22:47:08.331054+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Introduces Integrated Gradients (path-integrated interior gradients) as a simple, implementation-invariant attribution method that addresses gradient saturation, with a clear completeness property and an axiomatic characterization, plus convincing qualitative and some quantitative evidence across vision, molecules, and language; despite imperfect evaluation and limited comparisons to other attribution baselines, the conceptual clarity and broad impact on interpretability put it above the top-tier acceptance bar."
+      },
+      "token": {
+        "prompt_tokens": 11560,
+        "completion_tokens": 109,
+        "total_tokens": 11669
+      },
+      "time": "2026-02-09T20:50:26.710995+00:00"
     }
   ],
   "test": false

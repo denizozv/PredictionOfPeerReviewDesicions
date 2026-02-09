@@ -75,6 +75,20 @@
         "total_tokens": 4112
       },
       "time": "2026-02-08T22:48:15.653103+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.93,
+        "primary_reason": "Interesting proof-of-concept but too toy and under-positioned: the task is a simple synthetic defined-before-use check with author-generated data, compared mostly to weak baselines; the differentiable-set augmentation is a modest tweak and the results don’t establish meaningful novelty, generalization, or relevance to real static analysis challenges (control-flow joins, functions, aliasing, etc.), so it falls below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6190,
+        "completion_tokens": 117,
+        "total_tokens": 6307
+      },
+      "time": "2026-02-09T20:51:32.507478+00:00"
     }
   ],
   "test": false

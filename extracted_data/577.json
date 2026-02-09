@@ -105,6 +105,20 @@
         "total_tokens": 4548
       },
       "time": "2026-02-08T22:30:33.191024+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a qualitative probing/visualization study with limited novelty and rigor: linear classifier probes are a known diagnostic tool, the paper reframes them as a new 'information' notion without strong theoretical grounding, and the experiments are mostly toy/MNIST with an incomplete large-scale Inception result and weak quantitative comparisons/ablations, so the contribution is below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6584,
+        "completion_tokens": 109,
+        "total_tokens": 6693
+      },
+      "time": "2026-02-09T20:32:59.819572+00:00"
     }
   ],
   "test": false

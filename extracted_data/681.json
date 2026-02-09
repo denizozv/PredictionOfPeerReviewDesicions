@@ -140,6 +140,20 @@
         "total_tokens": 8033
       },
       "time": "2026-02-08T22:41:13.823100+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The paper’s core claims (true linear-time Fourier-domain scattering via quadratic nonlinearity + sparse supports, and improved invariants via variance features) are not convincingly established: the complexity argument is shaky (still requires FFTs/DFTs and per-band operations; sparsity assumptions depend on thresholds and signal/filter choices), the theoretical properties of scattering (stability/invariance/energy propagation) under the |·|^2 nonlinearity are not rigorously developed, and the empirical validation is narrow (single bird-song dataset, weak/unclear baselines vs modern audio pipelines, limited ablations and reproducibility details). Overall it reads as an engineering tweak/implementation note with insufficient rigor and breadth for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 9598,
+        "completion_tokens": 178,
+        "total_tokens": 9776
+      },
+      "time": "2026-02-09T20:43:51.730226+00:00"
     }
   ],
   "test": false

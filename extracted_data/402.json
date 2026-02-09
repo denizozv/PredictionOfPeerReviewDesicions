@@ -100,6 +100,20 @@
         "total_tokens": 7059
       },
       "time": "2026-02-08T22:12:11.614373+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.93,
+        "primary_reason": "Strong, broadly useful contribution: a simple, principled bandit-style early-stopping/resource-allocation scheme (Hyperband) that resolves the key n-vs-budget tradeoff in successive halving, with clear algorithmic presentation, supporting theory (near-optimal up to log factors), and convincing empirical speedups over strong Bayesian optimization baselines across multiple realistic HPO settings (epochs/data/features)."
+      },
+      "token": {
+        "prompt_tokens": 8921,
+        "completion_tokens": 107,
+        "total_tokens": 9028
+      },
+      "time": "2026-02-09T20:15:30.077559+00:00"
     }
   ],
   "test": false

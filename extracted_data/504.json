@@ -130,6 +130,20 @@
         "total_tokens": 7612
       },
       "time": "2026-02-08T22:24:05.495468+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, practically relevant contribution: learns dense visual reward functions from a handful of unlabeled demonstrations using pretrained CNN features + simple IRL/segmentation, and validates on real robot door opening with human-video demos; despite simplistic independence assumptions and limited quantitative scope, the real-world results and clear ablations/analysis likely clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 9402,
+        "completion_tokens": 102,
+        "total_tokens": 9504
+      },
+      "time": "2026-02-09T20:25:34.856393+00:00"
     }
   ],
   "test": false

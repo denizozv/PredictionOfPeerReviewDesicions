@@ -90,6 +90,20 @@
         "total_tokens": 7835
       },
       "time": "2026-02-08T22:02:35.717251+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, well-motivated end-to-end learned transform coding framework (analysis/quantize/synthesis) with a principled differentiable relaxation of quantization, biologically inspired GDN nonlinearity, and convincing rate–distortion gains over JPEG/JPEG2000 (including perceptual MS-SSIM improvements) with substantial implementation/experimental detail; overall novelty+impact and empirical validation meet top-tier conference standards."
+      },
+      "token": {
+        "prompt_tokens": 9431,
+        "completion_tokens": 111,
+        "total_tokens": 9542
+      },
+      "time": "2026-02-09T20:06:38.559239+00:00"
     }
   ],
   "test": false

@@ -95,6 +95,20 @@
         "total_tokens": 5086
       },
       "time": "2026-02-08T22:34:14.875605+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Promising but below ICML/ICLR/NeurIPS bar: the proposed random-walk neighbor ordering convolution is not convincingly novel relative to contemporaneous message-passing/graph CNN ideas, and the empirical evidence is weak/dated—MNIST results are worse than standard CNNs and the Merck claim of challenging SOTA relies on a Kaggle test set with acknowledged leakage/overfitting risk and limited, non-rigorous comparisons/ablations (e.g., against strong graph baselines, learned-graph variants, sensitivity to k/p, tie-breaking, and graph construction choices)."
+      },
+      "token": {
+        "prompt_tokens": 7037,
+        "completion_tokens": 149,
+        "total_tokens": 7186
+      },
+      "time": "2026-02-09T20:36:33.342943+00:00"
     }
   ],
   "test": false

@@ -75,6 +75,20 @@
         "total_tokens": 4194
       },
       "time": "2026-02-08T22:32:02.556525+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Primarily an empirical extension/engineering study of an existing architecture (Neural GPU) whose main gains come from larger models, curriculum design, and memory-efficient implementation; while the decimal arithmetic results and failure-mode analysis are interesting, the paper lacks a clear new methodological contribution or broadly applicable insight, and several key claims (e.g., expression evaluation) remain partial/low-accuracy and heavily seed/curriculum-dependent, leaving impact below typical ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6303,
+        "completion_tokens": 125,
+        "total_tokens": 6428
+      },
+      "time": "2026-02-09T20:33:49.520605+00:00"
     }
   ],
   "test": false

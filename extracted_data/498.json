@@ -215,6 +215,20 @@
         "total_tokens": 13663
       },
       "time": "2026-02-08T22:23:08.814593+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Technically solid and well-motivated: it identifies and formalizes the dropout train–test (inference) gap, provides a latent-variable interpretation plus nontrivial bounds, and proposes a simple regularizer that directly targets the gap with consistent (if modest) empirical gains and comparisons to MC dropout/distillation; overall a credible, publishable contribution for a top-tier venue despite limited SOTA impact."
+      },
+      "token": {
+        "prompt_tokens": 14484,
+        "completion_tokens": 108,
+        "total_tokens": 14592
+      },
+      "time": "2026-02-09T20:25:07.681843+00:00"
     }
   ],
   "test": true

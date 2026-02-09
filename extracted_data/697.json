@@ -140,6 +140,20 @@
         "total_tokens": 5687
       },
       "time": "2026-02-08T22:43:05.395402+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/underdeveloped contribution: reframes SGNS as low-rank matrix optimization and applies a known Riemannian retraction (projector-splitting) with limited novelty, unclear scalability to realistic vocab sizes (explicit X is n×m), and evaluation is narrow (only word similarity on enwik9) with weak/dated baselines and insufficient analysis/ablations to justify superiority over strong SGNS/GloVe variants."
+      },
+      "token": {
+        "prompt_tokens": 7425,
+        "completion_tokens": 117,
+        "total_tokens": 7542
+      },
+      "time": "2026-02-09T20:45:31.432161+00:00"
     }
   ],
   "test": true

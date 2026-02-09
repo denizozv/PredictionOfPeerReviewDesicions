@@ -110,6 +110,20 @@
         "total_tokens": 7763
       },
       "time": "2026-02-08T22:09:06.344204+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong systems/ML contribution: dynamic batching is a clear, nontrivial technique that enables efficient training/inference for variable-structure computation graphs in static-graph frameworks, backed by convincing speed benchmarks and demonstrated across multiple nontrivial models (TreeLSTM, attention, graph conv) with a usable library; novelty is more engineering than new learning theory, but impact and execution quality meet top-tier bar."
+      },
+      "token": {
+        "prompt_tokens": 9208,
+        "completion_tokens": 108,
+        "total_tokens": 9316
+      },
+      "time": "2026-02-09T20:13:06.212099+00:00"
     }
   ],
   "test": false

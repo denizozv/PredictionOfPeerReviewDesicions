@@ -85,6 +85,20 @@
         "total_tokens": 6642
       },
       "time": "2026-02-08T22:37:17.875101+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting use of Stein/KSD for “wild” variational inference and amortized SVGD, but the core methods are largely incremental/derivative of prior Stein VI work (SVGD, amortized SVGD, KSD, operator-based objectives) and the empirical evidence is not at NeurIPS/ICML/ICLR level: limited benchmarks (toy GMM + Bayesian logistic regression), unclear fairness/strength of baselines (step-size heuristics, NUTS comparison not well-controlled), and missing rigorous evaluation of posterior quality, scalability, and ablations; writing/presentation also appears rough with gaps and overclaims."
+      },
+      "token": {
+        "prompt_tokens": 8215,
+        "completion_tokens": 153,
+        "total_tokens": 8368
+      },
+      "time": "2026-02-09T20:39:48.926648+00:00"
     }
   ],
   "test": false

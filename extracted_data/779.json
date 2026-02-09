@@ -105,6 +105,20 @@
         "total_tokens": 4221
       },
       "time": "2026-02-08T22:49:25.485853+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, practically impactful empirical study of multiple vocabulary-selection methods for NMT, with careful speed–accuracy tradeoff analysis on standard WMT benchmarks showing large CPU decoding speedups (and some training gains) at negligible BLEU loss; while the core idea is incremental, the thorough evaluation and clear engineering value meet top-tier bar."
+      },
+      "token": {
+        "prompt_tokens": 6252,
+        "completion_tokens": 92,
+        "total_tokens": 6344
+      },
+      "time": "2026-02-09T20:53:20.765005+00:00"
     }
   ],
   "test": false

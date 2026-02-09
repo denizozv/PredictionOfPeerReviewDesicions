@@ -90,6 +90,20 @@
         "total_tokens": 3188
       },
       "time": "2026-02-08T22:29:14.812134+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a heuristic application of pretrained CNN representations to recover an existing taxonomy (WordNet) via simple similarity + standard clustering/tree-building (MST/MDS), with weak novelty and questionable scientific validity for “tree of life” (visual similarity ≠ phylogeny), limited rigorous evaluation/metrics and baselines, and overclaimed biological relevance."
+      },
+      "token": {
+        "prompt_tokens": 5281,
+        "completion_tokens": 96,
+        "total_tokens": 5377
+      },
+      "time": "2026-02-09T20:31:21.926349+00:00"
     }
   ],
   "test": false

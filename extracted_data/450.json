@@ -530,6 +530,20 @@
         "total_tokens": 11127
       },
       "time": "2026-02-08T22:17:15.121608+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated and broadly useful empirical+theoretical study that systematizes classifier two-sample tests (null distribution, power analysis, interpretability), benchmarks convincingly against MMD/ME/SCF and classical tests, and demonstrates impactful applications (GAN evaluation and a novel CGAN+C2ST causal discovery pipeline)."
+      },
+      "token": {
+        "prompt_tokens": 12631,
+        "completion_tokens": 95,
+        "total_tokens": 12726
+      },
+      "time": "2026-02-09T20:20:31.121862+00:00"
     }
   ],
   "test": false

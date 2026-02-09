@@ -140,6 +140,20 @@
         "total_tokens": 9463
       },
       "time": "2026-02-08T22:04:11.577166+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated combination of pretrained deep visual features, a learned bilinear feature-space dynamics model, and a sample-efficient fitted Q-iteration scheme to learn feature/scale weights for servoing; demonstrates large sample-efficiency gains and robust performance vs pixels, keypoints, and model-free deep RL on a nontrivial simulated benchmark with solid ablations, though limited by reliance on simulation and fixed pretrained features."
+      },
+      "token": {
+        "prompt_tokens": 11015,
+        "completion_tokens": 111,
+        "total_tokens": 11126
+      },
+      "time": "2026-02-09T20:08:09.633484+00:00"
     }
   ],
   "test": false

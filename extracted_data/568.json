@@ -95,6 +95,20 @@
         "total_tokens": 3196
       },
       "time": "2026-02-08T22:30:12.323305+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Incremental architecture (char-CNN + word embeddings + attention + CNN n-grams + residual MLP) with limited novelty and weak/dated baselines; experiments are under-specified (private tweet crawl, unclear splits/hyperparams) and results are only marginal (AG News merely matches TFIDF-SVM), so the empirical evidence and positioning are below ICML/ICLR/NeurIPS standards."
+      },
+      "token": {
+        "prompt_tokens": 5246,
+        "completion_tokens": 110,
+        "total_tokens": 5356
+      },
+      "time": "2026-02-09T20:32:00.302922+00:00"
     }
   ],
   "test": false

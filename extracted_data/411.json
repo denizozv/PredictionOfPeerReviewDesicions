@@ -120,6 +120,20 @@
         "total_tokens": 4903
       },
       "time": "2026-02-08T22:12:46.015528+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Promising idea (learning MCMC proposal distributions for superoptimization) but the technical novelty and empirical validation look below ICML/ICLR/NeurIPS bar: the learning method is essentially REINFORCE over a hand-factorized proposal with very simple features, and experiments are limited/fragile (small Hacker’s Delight with heavy augmentation; synthetic random-walk programs of unclear realism), with comparisons mainly to uniform-proposal STOKE rather than stronger learned or adaptive search baselines and without convincing analysis of generalization, correctness guarantees, or where the learned policy helps."
+      },
+      "token": {
+        "prompt_tokens": 6860,
+        "completion_tokens": 141,
+        "total_tokens": 7001
+      },
+      "time": "2026-02-09T20:16:36.460261+00:00"
     }
   ],
   "test": false

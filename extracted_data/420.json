@@ -100,6 +100,20 @@
         "total_tokens": 3562
       },
       "time": "2026-02-08T22:14:12.055565+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, well-motivated empirical contribution: introduces a clean key–value–predict decomposition for attention in RNN language models, demonstrates consistent perplexity gains over prior memory-augmented baselines, and—most importantly—provides an insightful negative/diagnostic result that attention effectively uses only a very short history, supported by a surprisingly competitive simple n-gram RNN baseline and analysis of attention usage."
+      },
+      "token": {
+        "prompt_tokens": 5583,
+        "completion_tokens": 109,
+        "total_tokens": 5692
+      },
+      "time": "2026-02-09T20:17:22.133006+00:00"
     }
   ],
   "test": false

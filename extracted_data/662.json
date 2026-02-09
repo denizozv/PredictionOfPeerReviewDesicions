@@ -155,6 +155,20 @@
         "total_tokens": 7080
       },
       "time": "2026-02-08T22:39:14.456709+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Incremental NTM variant (learnable address vectors + optional REINFORCE-based discrete heads) with limited novelty and unclear positioning vs stronger contemporary memory-augmented QA models; empirical gains are on bAbI/toy tasks with gaps to MemN2N/DMN+ and heavy training heuristics, leaving impact and generality below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8792,
+        "completion_tokens": 107,
+        "total_tokens": 8899
+      },
+      "time": "2026-02-09T20:42:04.377410+00:00"
     }
   ],
   "test": false

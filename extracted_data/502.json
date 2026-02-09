@@ -110,6 +110,20 @@
         "total_tokens": 5212
       },
       "time": "2026-02-08T22:23:12.397726+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Interesting and timely idea (learned dialogue evaluation) with a new scored dataset and better correlations than BLEU/ROUGE, but the proposed ADEM scoring function is quite simple and likely to overfit/learn annotator biases; evidence is mostly correlation-based on a small set of systems with limited stress tests (adversarial/gaming, calibration, robustness across domains/annotators), so the scientific depth and reliability for top-tier acceptance are not convincingly established."
+      },
+      "token": {
+        "prompt_tokens": 7142,
+        "completion_tokens": 120,
+        "total_tokens": 7262
+      },
+      "time": "2026-02-09T20:25:21.430503+00:00"
     }
   ],
   "test": false

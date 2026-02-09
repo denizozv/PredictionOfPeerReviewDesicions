@@ -100,6 +100,20 @@
         "total_tokens": 2630
       },
       "time": "2026-02-08T22:51:09.548622+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.9,
+        "primary_reason": "The core idea—feeding last-step prediction error/surprisal back into the RNN/LSTM state update—is incremental and insufficiently motivated/validated, with evaluation essentially limited to enwik8 and lacking strong baselines, ablations, and analysis to convincingly establish when/why the feedback helps or that the reported gains are fair and broadly impactful."
+      },
+      "token": {
+        "prompt_tokens": 4628,
+        "completion_tokens": 98,
+        "total_tokens": 4726
+      },
+      "time": "2026-02-09T20:54:31.739346+00:00"
     }
   ],
   "test": false

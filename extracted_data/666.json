@@ -95,6 +95,20 @@
         "total_tokens": 5370
       },
       "time": "2026-02-08T22:39:20.631107+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "The core idea (unsupervised grouping/orthogonalizing units and then tying updates per group for few-shot adaptation) is plausible but not convincingly novel or technically sound as presented, and the empirical evidence/baselines are below ICML/ICLR/NeurIPS standards: the method description is underspecified and seems to mix clustering with an orthogonality penalty without clear guarantees; optimization via heuristic reassignment is ad hoc; evaluation is on relatively weak/dated few-shot setups (MNIST, Office/DECAF) with nonstandard protocols and missing comparisons to modern few-shot/meta-learning and strong transfer baselines; results are reported without sufficient detail for fair reproduction (architectures, hyperparameters, statistical significance), and many claims (\"state-of-the-art\", \"no sacrifices in performance\", \"any network\") are not substantiated."
+      },
+      "token": {
+        "prompt_tokens": 7182,
+        "completion_tokens": 196,
+        "total_tokens": 7378
+      },
+      "time": "2026-02-09T20:42:28.840707+00:00"
     }
   ],
   "test": false

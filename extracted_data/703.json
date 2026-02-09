@@ -95,6 +95,20 @@
         "total_tokens": 7165
       },
       "time": "2026-02-08T22:43:16.904252+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Primarily a hardware-architecture incremental extension of prior variable-precision/bit-serial DNN accelerators (e.g., DaDianNao-style baselines) with modest system-level novelty and limited ML-facing insight; evaluation is narrow (older CNNs, fixed-point precision search without retraining, mostly speed/energy/area tables) and does not convincingly establish broad impact or methodological contribution at ICML/ICLR/NeurIPS compared to stronger contemporary accelerator/quantization work."
+      },
+      "token": {
+        "prompt_tokens": 8809,
+        "completion_tokens": 126,
+        "total_tokens": 8935
+      },
+      "time": "2026-02-09T20:46:03.502340+00:00"
     }
   ],
   "test": false

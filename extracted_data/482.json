@@ -135,6 +135,20 @@
         "total_tokens": 4507
       },
       "time": "2026-02-08T22:22:06.628164+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Primarily an applied GRU/LSTM baseline on ICD-9→ATC prediction with limited methodological novelty and incomplete positioning/validation: the modeling is standard, baselines are relatively weak for modern EHR sequence modeling, and the key claim about “incorrect” predictions indicating record errors is anecdotal without a rigorous label-noise evaluation or clinical outcome validation."
+      },
+      "token": {
+        "prompt_tokens": 6545,
+        "completion_tokens": 98,
+        "total_tokens": 6643
+      },
+      "time": "2026-02-09T20:23:50.786952+00:00"
     }
   ],
   "test": true

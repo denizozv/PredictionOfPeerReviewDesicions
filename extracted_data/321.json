@@ -135,6 +135,20 @@
         "total_tokens": 8522
       },
       "time": "2026-02-08T22:04:16.263756+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental HRL skill-pretraining (latent-conditioned policy + MI bonus) with limited novelty and weak empirical positioning: evaluation is narrow (mostly MuJoCo swimmer/snake mazes/gather), relies on older TRPO-era baselines, and the claimed gains are inconsistent/high-variance with acknowledged dependence on lucky pretrained skills; MI regularizer and SNN construction are close to prior latent-skill/InfoGAN-style objectives without strong new theory or compelling SOTA comparisons."
+      },
+      "token": {
+        "prompt_tokens": 10206,
+        "completion_tokens": 121,
+        "total_tokens": 10327
+      },
+      "time": "2026-02-09T20:08:17.808872+00:00"
     }
   ],
   "test": false

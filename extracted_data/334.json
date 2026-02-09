@@ -90,6 +90,20 @@
         "total_tokens": 3173
       },
       "time": "2026-02-08T22:05:08.506902+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Original differentiable attention model with a learnable retinal sampling lattice and a compelling emergent foveation result (plus clear ablations: fixed vs learnable lattice, translation vs zoom) that provides mechanistic insight into when/why foveated sampling arises, despite experiments being largely limited to cluttered MNIST."
+      },
+      "token": {
+        "prompt_tokens": 5179,
+        "completion_tokens": 90,
+        "total_tokens": 5269
+      },
+      "time": "2026-02-09T20:09:19.383239+00:00"
     }
   ],
   "test": false

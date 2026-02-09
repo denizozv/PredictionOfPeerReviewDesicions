@@ -75,6 +75,20 @@
         "total_tokens": 4436
       },
       "time": "2026-02-08T22:30:29.134602+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily an applied system paper with incremental ML contributions (RNN for multi-label via sequence, residualized Inception, guided Faster R-CNN) and insufficient rigorous evaluation/positioning: unclear novelty vs prior multi-label dependency models and attribute-based retrieval, limited ablations and comparisons to strong baselines (e.g., classifier chains/CRFs/transformers, modern metric learning retrieval), no clear benchmarked gains on standard datasets, and the key end-to-end search objective lacks a well-defined ground-truth and quantitative retrieval evaluation."
+      },
+      "token": {
+        "prompt_tokens": 6322,
+        "completion_tokens": 134,
+        "total_tokens": 6456
+      },
+      "time": "2026-02-09T20:32:45.319279+00:00"
     }
   ],
   "test": true

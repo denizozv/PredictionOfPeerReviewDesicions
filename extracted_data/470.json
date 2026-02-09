@@ -130,6 +130,20 @@
         "total_tokens": 6667
       },
       "time": "2026-02-08T22:20:12.403681+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Introduces a nontrivial, well-motivated extension of SGVB/reparameterization to stick-breaking (via Kumaraswamy / alternative parameterizations) enabling a Bayesian-nonparametric VAE with adaptive effective dimensionality, and supports it with reasonably thorough experiments (unsupervised + semi-supervised, multiple datasets, comparisons to Gaussian and mixture-VAEs, and analysis of latent usage/component collapse)."
+      },
+      "token": {
+        "prompt_tokens": 8207,
+        "completion_tokens": 111,
+        "total_tokens": 8318
+      },
+      "time": "2026-02-09T20:22:38.541527+00:00"
     }
   ],
   "test": false

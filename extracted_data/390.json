@@ -160,6 +160,20 @@
         "total_tokens": 9633
       },
       "time": "2026-02-08T22:10:09.973136+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated metareasoning framework that learns per-instance adaptive computation (when to stop) and expert selection under explicit resource costs, with a clear RL formulation and convincing results on a nontrivial physics control benchmark; while the experimental domain is somewhat narrow and multi-expert gains are mixed, the core idea and empirical evidence are solid for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 11259,
+        "completion_tokens": 103,
+        "total_tokens": 11362
+      },
+      "time": "2026-02-09T20:14:02.588456+00:00"
     }
   ],
   "test": false

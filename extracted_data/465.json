@@ -135,6 +135,20 @@
         "total_tokens": 7493
       },
       "time": "2026-02-08T22:19:17.426764+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.74,
+        "primary_reason": "Strong, timely empirical contribution: first large-scale ImageNet study of transferability (including targeted transfer), clear negative result that targeted attacks don’t transfer with existing methods, and a simple but effective ensemble-based attack that substantially improves targeted transfer and demonstrates a real black-box attack (Clarifai), supported by useful geometric analysis."
+      },
+      "token": {
+        "prompt_tokens": 9191,
+        "completion_tokens": 91,
+        "total_tokens": 9282
+      },
+      "time": "2026-02-09T20:22:04.134444+00:00"
     }
   ],
   "test": false

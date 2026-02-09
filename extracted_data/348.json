@@ -135,6 +135,20 @@
         "total_tokens": 6244
       },
       "time": "2026-02-08T22:06:17.424337+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, principled contribution: a general and efficient framework for group-equivariant/steerable CNNs grounded in representation theory (intertwiners, induced reps, feature-type system) with practical parameterization and computational strategy, plus convincing CIFAR-10/100 results showing clear gains over strong ResNet baselines; overall novelty and impact are above the ICML/ICLR/NeurIPS bar despite evaluation being mostly on CIFAR."
+      },
+      "token": {
+        "prompt_tokens": 8121,
+        "completion_tokens": 117,
+        "total_tokens": 8238
+      },
+      "time": "2026-02-09T20:10:32.186767+00:00"
     }
   ],
   "test": false

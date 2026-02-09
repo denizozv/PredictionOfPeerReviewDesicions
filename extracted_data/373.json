@@ -115,6 +115,20 @@
         "total_tokens": 4618
       },
       "time": "2026-02-08T22:08:18.140417+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Primarily an empirical study of straightforward parameter-sharing transfer for hierarchical RNN-CRF taggers; while results are broad and sometimes strong, the technical novelty is limited (standard multi-task/transfer setups with shared encoders and task-specific CRFs), and key claims (e.g., zero-label transfer, SOTA) would likely be viewed as insufficiently substantiated by modern standards given potential confounds (dataset splits, label mapping, embedding choices) and lack of deeper analysis/stronger contemporary baselines."
+      },
+      "token": {
+        "prompt_tokens": 6489,
+        "completion_tokens": 129,
+        "total_tokens": 6618
+      },
+      "time": "2026-02-09T20:12:45.072443+00:00"
     }
   ],
   "test": false

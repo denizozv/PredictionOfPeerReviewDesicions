@@ -150,6 +150,20 @@
         "total_tokens": 4532
       },
       "time": "2026-02-08T22:50:05.924459+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting compositional idea (per-dimension winner-take-all expert selection with a smoothed EM-like training), but the contribution appears incremental/under-justified relative to existing mixture-of-experts, gating, and sparse coding/PoE literature; inference relies on a greedy matching-pursuit heuristic with limited theoretical guarantees; and the experiments are largely qualitative reconstructions on MNIST/Weizmann/Caltech with weak or outdated baselines and no strong quantitative comparisons (e.g., likelihoods, bits/dim, modern VAEs/flow/autoregressive models, or competitive sparse coding), leaving novelty and impact below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6441,
+        "completion_tokens": 163,
+        "total_tokens": 6604
+      },
+      "time": "2026-02-09T20:53:36.647424+00:00"
     }
   ],
   "test": false

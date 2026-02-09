@@ -105,6 +105,20 @@
         "total_tokens": 8296
       },
       "time": "2026-02-08T22:32:28.150996+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, novel-for-its-time framework showing how to train pointer networks with policy gradients (actor-critic) for NP-hard combinatorial optimization, with solid empirical results on TSP20/50/100 and a credible test-time improvement method (Active Search), plus reasonable baselines and analysis; despite being below specialized OR heuristics/SOTA and limited to relatively small synthetic Euclidean instances, the methodological contribution and demonstrated generality (incl. knapsack) meet top-tier conference bar."
+      },
+      "token": {
+        "prompt_tokens": 9897,
+        "completion_tokens": 124,
+        "total_tokens": 10021
+      },
+      "time": "2026-02-09T20:35:09.488675+00:00"
     }
   ],
   "test": true

@@ -105,6 +105,20 @@
         "total_tokens": 5115
       },
       "time": "2026-02-08T22:48:20.547108+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental latent Gaussian state-space model with graph KL regularization; empirical evaluation is dated/limited (small set of baselines, mostly RMSE, no strong modern spatiotemporal graph forecasting comparisons or likelihood/uncertainty calibration), and the method appears close to prior work (graph-regularized latent SSMs / variational SSMs) without a clearly compelling new technical insight or rigorous analysis."
+      },
+      "token": {
+        "prompt_tokens": 7022,
+        "completion_tokens": 110,
+        "total_tokens": 7132
+      },
+      "time": "2026-02-09T20:51:46.556849+00:00"
     }
   ],
   "test": false

@@ -85,6 +85,20 @@
         "total_tokens": 3232
       },
       "time": "2026-02-08T22:48:25.143608+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.93,
+        "primary_reason": "Incremental application of existing components (Fast R-CNN + EdgeBoxes + standard batch normalization placement) with limited novelty and analysis; results are modest and not clearly state-of-the-art, with insufficient ablations/controls to attribute gains to BN or proposal quality, making the contribution below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 5215,
+        "completion_tokens": 94,
+        "total_tokens": 5309
+      },
+      "time": "2026-02-09T20:52:01.111454+00:00"
     }
   ],
   "test": false

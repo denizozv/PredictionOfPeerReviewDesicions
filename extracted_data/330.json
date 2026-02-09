@@ -90,6 +90,20 @@
         "total_tokens": 6374
       },
       "time": "2026-02-08T22:04:26.238783+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.74,
+        "primary_reason": "Strong, well-motivated simplicity/efficiency contribution: a corruption-based training objective that makes averaged word embeddings a competitive document representation, with a clear regularization interpretation, solid comparisons on multiple tasks (IMDB, Wikipedia classification, SICK) plus word-analogy evidence and efficiency gains; novelty is moderate but the empirical case and practical impact likely clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8164,
+        "completion_tokens": 110,
+        "total_tokens": 8274
+      },
+      "time": "2026-02-09T20:08:49.602931+00:00"
     }
   ],
   "test": true

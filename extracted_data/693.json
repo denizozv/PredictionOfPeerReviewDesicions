@@ -120,6 +120,20 @@
         "total_tokens": 5438
       },
       "time": "2026-02-08T22:42:05.945486+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Promising meta-learning/attention-conditioned VAE idea, but the contribution is under-validated for a top-tier venue: experiments are essentially limited to Omniglot with unclear/weak baseline coverage and no convincing evidence of broad generative modeling gains beyond prior conditional/meta-generative approaches (e.g., Neural Statistician/attentive sequential generative models), plus several key design choices (task distribution using labels, pseudo-input, FCE steps, data-dependent prior) lack rigorous ablations and standardized likelihood comparisons."
+      },
+      "token": {
+        "prompt_tokens": 7323,
+        "completion_tokens": 130,
+        "total_tokens": 7453
+      },
+      "time": "2026-02-09T20:45:03.354606+00:00"
     }
   ],
   "test": false

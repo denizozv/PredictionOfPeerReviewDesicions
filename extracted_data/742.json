@@ -155,6 +155,20 @@
         "total_tokens": 8729
       },
       "time": "2026-02-08T22:46:18.525624+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated theory+empirics linking multiple expressivity measures to a single geometric quantity (trajectory length) with clear depth-scaling predictions and some training-time implications; while not SOTA-driven, the unifying analysis and supporting experiments are likely above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 10314,
+        "completion_tokens": 92,
+        "total_tokens": 10406
+      },
+      "time": "2026-02-09T20:49:47.201349+00:00"
     }
   ],
   "test": false

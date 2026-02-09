@@ -70,6 +70,20 @@
         "total_tokens": 5097
       },
       "time": "2026-02-08T22:02:45.566992+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.74,
+        "primary_reason": "Strong, timely contribution demonstrating emergent communication in referential games with clear experimental results and semantic analyses (purity, t-SNE), plus a compelling grounding strategy combining self-play with supervised labels and a human evaluation showing partial interpretability; while the setup is relatively simple and some analyses are heuristic, the overall novelty/impact and empirical support are above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7104,
+        "completion_tokens": 108,
+        "total_tokens": 7212
+      },
+      "time": "2026-02-09T20:07:16.188509+00:00"
     }
   ],
   "test": false

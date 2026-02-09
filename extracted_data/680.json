@@ -120,6 +120,20 @@
         "total_tokens": 6053
       },
       "time": "2026-02-08T22:41:10.283136+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the character-level hierarchical decoder + morphology-motivated word encoder is a reasonable engineering design, the novelty is limited relative to contemporaneous character/subword NMT work, and the empirical evidence is not strong enough for ICML/ICLR/NeurIPS: gains are emphasized after only 1 epoch (not a standard comparison point), final BLEU is only “comparable” to prior character-level models, and key claims (training efficiency, learned morphology) rely on qualitative/PCA-style analyses and selective examples rather than rigorous ablations, controlled compute/throughput reporting, and strong baselines."
+      },
+      "token": {
+        "prompt_tokens": 7867,
+        "completion_tokens": 148,
+        "total_tokens": 8015
+      },
+      "time": "2026-02-09T20:43:43.178697+00:00"
     }
   ],
   "test": false

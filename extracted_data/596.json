@@ -75,6 +75,20 @@
         "total_tokens": 5145
       },
       "time": "2026-02-08T22:32:26.212078+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting shared-memory + controller idea, but the technical novelty/justification is limited and the empirical story is not convincing by modern ICML/ICLR/NeurIPS standards: results rely on FB15k/WN18 (now known to be heavily affected by test leakage/inverse-relation shortcuts), baselines are dated/insufficient, and the RL/termination mechanism plus “implicit multi-step reasoning” is not clearly validated with strong ablations or comparisons to stronger path-based/graph-neural/embedding methods; the synthetic shortest-path task is also under-specified and not a compelling external validation."
+      },
+      "token": {
+        "prompt_tokens": 7128,
+        "completion_tokens": 148,
+        "total_tokens": 7276
+      },
+      "time": "2026-02-09T20:35:01.228847+00:00"
     }
   ],
   "test": false

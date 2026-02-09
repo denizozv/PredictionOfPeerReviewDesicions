@@ -105,6 +105,20 @@
         "total_tokens": 6451
       },
       "time": "2026-02-08T22:22:02.775116+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Interesting semi-supervised recurrent architecture for behavior modeling, but the core contribution (joint action classification + next-step prediction with lateral/diagonal connections) is incremental relative to existing multi-task/ladder/auxiliary-loss RNN work, and the evidence is not at ICML/ICLR/NeurIPS level: limited/dated baselines, heavy reliance on qualitative simulation and t-SNE for “discovery,” modest/unclear gains and ablations, and substantial evaluation on synthetic/toy or narrowly scoped datasets without strong comparisons to modern sequence models or rigorous generative metrics."
+      },
+      "token": {
+        "prompt_tokens": 8298,
+        "completion_tokens": 144,
+        "total_tokens": 8442
+      },
+      "time": "2026-02-09T20:23:36.736512+00:00"
     }
   ],
   "test": false

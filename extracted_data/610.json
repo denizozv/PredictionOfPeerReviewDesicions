@@ -95,6 +95,20 @@
         "total_tokens": 6470
       },
       "time": "2026-02-08T22:34:16.990512+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily an empirical comparison of known defenses/attacks with limited novelty and outdated/weak robustness methodology (e.g., distillation/AEC, FGSM-focused claims, binary MNIST/CIFAR subset, unclear threat model and fairness), lacking strong baselines (PGD/AutoAttack, certified/modern adversarial training) and rigorous evaluation needed for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 8123,
+        "completion_tokens": 108,
+        "total_tokens": 8231
+      },
+      "time": "2026-02-09T20:36:40.241009+00:00"
     }
   ],
   "test": false

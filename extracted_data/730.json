@@ -85,6 +85,20 @@
         "total_tokens": 5074
       },
       "time": "2026-02-08T22:45:16.921485+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental empirical baseline/engineering paper that combines known tricks (MC dropout at test time, averaging/MLP pooling, residual connections, forget bias, bidirectionality) with limited novelty and limited scope (only SST/IMDB); the gains are modest and not clearly positioned against strong contemporary baselines, so the scientific/technical contribution is likely below the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6945,
+        "completion_tokens": 111,
+        "total_tokens": 7056
+      },
+      "time": "2026-02-09T20:48:48.841266+00:00"
     }
   ],
   "test": false

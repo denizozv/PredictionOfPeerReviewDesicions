@@ -125,6 +125,20 @@
         "total_tokens": 5878
       },
       "time": "2026-02-08T22:06:16.012583+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Promising and well-motivated compression approach (soft weight-sharing/mixture prior with MDL framing) but the contribution is largely a reapplication/modernization of Nowlan & Hinton-style weight sharing with limited convincing top-tier empirical validation: results are mainly on MNIST LeNet variants, the CIFAR ResNet baseline underperforms the cited reference substantially, scalability to large modern models is acknowledged as problematic with no supporting experiments, and the method appears sensitive to many hyperparameters (13 tuned) without clear, robust ablations or fair end-to-end comparisons to strong contemporary compression baselines beyond Han-style pipelines."
+      },
+      "token": {
+        "prompt_tokens": 7758,
+        "completion_tokens": 151,
+        "total_tokens": 7909
+      },
+      "time": "2026-02-09T20:10:25.079677+00:00"
     }
   ],
   "test": false

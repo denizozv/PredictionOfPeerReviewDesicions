@@ -105,6 +105,20 @@
         "total_tokens": 8594
       },
       "time": "2026-02-08T22:24:15.390003+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting idea (learnable nonparametric activations via Fourier bases) but the contribution is not convincingly above the top-tier bar: closely related to prior work on learnable/parametric activations, the theory relies on very loose stability bounds with strong/unclear assumptions (smoothness, max-norm constraints, k growing with n, T=O(n)), and the empirical gains are on small benchmarks with limited modern baselines/ablations and a somewhat ad-hoc two-stage training procedure needed for conv nets."
+      },
+      "token": {
+        "prompt_tokens": 10159,
+        "completion_tokens": 132,
+        "total_tokens": 10291
+      },
+      "time": "2026-02-09T20:26:11.213540+00:00"
     }
   ],
   "test": false

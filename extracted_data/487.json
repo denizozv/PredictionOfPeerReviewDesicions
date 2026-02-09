@@ -95,6 +95,20 @@
         "total_tokens": 5776
       },
       "time": "2026-02-08T22:22:21.448057+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily an applied hardware/implementation paper with a fairly incremental ML contribution (fixed random sparsity via LFSR masks) and limited modern/strong baselines; results are on MNIST/CIFAR10/SVHN with older training setups and unclear fairness, and the key claims (accuracy improves with 90% sparsity + major VLSI gains) are not supported by the kind of rigorous ablations, comparisons to established pruning/structured sparsity methods, and broader impact expected at ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 7523,
+        "completion_tokens": 136,
+        "total_tokens": 7659
+      },
+      "time": "2026-02-09T20:24:18.542117+00:00"
     }
   ],
   "test": false

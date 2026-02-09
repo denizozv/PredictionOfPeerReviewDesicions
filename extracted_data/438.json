@@ -140,6 +140,20 @@
         "total_tokens": 7627
       },
       "time": "2026-02-08T22:16:07.248510+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong empirical RL paper showing substantial data-efficiency and performance gains in 3D maze navigation via well-motivated auxiliary tasks (depth + loop-closure), with solid ablations, robustness checks, and behavioral/representation analyses (localization decoding, latency, policy structure) that together make the contribution credible and impactful for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 9399,
+        "completion_tokens": 95,
+        "total_tokens": 9494
+      },
+      "time": "2026-02-09T20:19:13.664922+00:00"
     }
   ],
   "test": true

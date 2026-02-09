@@ -135,6 +135,20 @@
         "total_tokens": 6039
       },
       "time": "2026-02-08T22:06:10.072758+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Technically plausible but largely a straightforward combination of VRNN (variational sequence modeling) with DANN/GRL-style adversarial domain adaptation; the novelty/insight is limited, and the empirical evidence as described (healthcare-only, modest gains, unclear strength of baselines and fairness—e.g., flattening time for several competitors, limited comparison to stronger sequence DA/self-supervised or modern temporal models, and weak demonstration that 'temporal latent dependencies are transferred') is unlikely to meet ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7679,
+        "completion_tokens": 137,
+        "total_tokens": 7816
+      },
+      "time": "2026-02-09T20:10:02.435352+00:00"
     }
   ],
   "test": false

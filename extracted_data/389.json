@@ -115,6 +115,20 @@
         "total_tokens": 5644
       },
       "time": "2026-02-08T22:10:07.042703+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated hierarchical autoregressive waveform model (multi-timescale RNN+MLP) with convincing empirical results across diverse datasets, meaningful ablations (quantization, autoregressive sample module, TBPTT length), and human preference tests; despite some reproducibility/positioning caveats (WaveNet reimplementation differences, limited compute, evaluation partly subjective), the technical contribution and evidence are above the ICML/ICLR/NeurIPS bar for the time."
+      },
+      "token": {
+        "prompt_tokens": 7484,
+        "completion_tokens": 123,
+        "total_tokens": 7607
+      },
+      "time": "2026-02-09T20:13:55.538119+00:00"
     }
   ],
   "test": false

@@ -61,8 +61,8 @@ if __name__ == '__main__':
 
 
     # 5a. Run OpenAI zero-shot classification
-    # classifier = OpenAiClassifier(system_prompt=prompts["fewShot"], approach="fewShot", data_dir="extracted_data", model="gpt-4o-mini", limit=1)  # DEBUG: limit=1 # DEBUG: limit=1
-    # classifier.run()
+    #classifier = OpenAiClassifier(system_prompt=prompts["fewShot"], approach="fewShot", data_dir="extracted_data", model="gpt-5.2", limit=0)  # DEBUG: limit=1 # DEBUG: limit=1
+    #classifier.run()
 
     # 5b. Run Gemini zero-shot classification
     # gemini_classifier = GeminiClassifier(system_prompt=prompts["fewShot"], approach="fewShot", data_dir="extracted_data", model="gemini-2.5-flash-lite", limit=0)  # DEBUG: limit=1

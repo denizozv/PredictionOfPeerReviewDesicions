@@ -100,6 +100,20 @@
         "total_tokens": 3304
       },
       "time": "2026-02-08T22:45:08.538166+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting equivariant sparse-coding formulation with Lie-group affine transforms and a tree/forest parameter-sharing scheme, but the contribution appears under-validated for ICML/ICLR/NeurIPS: experiments are limited to small natural image patches with reconstruction MSE, lack strong modern baselines (e.g., conv sparse coding, group-equivariant/capsule-style models, learned spatial transformers), and provide little quantitative evidence that the learned pose variables are accurate/useful beyond parameter-count arguments; optimization details and scalability claims (deep trees) are not convincingly demonstrated."
+      },
+      "token": {
+        "prompt_tokens": 5326,
+        "completion_tokens": 139,
+        "total_tokens": 5465
+      },
+      "time": "2026-02-09T20:48:18.077066+00:00"
     }
   ],
   "test": false

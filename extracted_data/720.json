@@ -120,6 +120,20 @@
         "total_tokens": 4302
       },
       "time": "2026-02-08T22:45:06.481956+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core ideas (field-wise embeddings + pairwise interaction functions + pooling to select top interactions + negative-sample discrimination) are largely incremental relative to established CTR/recommender models (FM/FNN/DeepFM/PNN/attention-based interaction selection), and the paper as described lacks the kind of rigorous novelty/analysis expected at ICML/ICLR/NeurIPS: the K-max-by-norm interaction selection is heuristic and not clearly justified, the “discriminant” training is essentially a standard corrupted-sample/negative-sampling objective, and the empirical evaluation appears limited (one main real dataset, unclear strength/fairness of baselines vs modern interaction/attention models, and no compelling ablations isolating which component drives gains or demonstrating robust generalization)."
+      },
+      "token": {
+        "prompt_tokens": 6335,
+        "completion_tokens": 183,
+        "total_tokens": 6518
+      },
+      "time": "2026-02-09T20:48:10.643609+00:00"
     }
   ],
   "test": false

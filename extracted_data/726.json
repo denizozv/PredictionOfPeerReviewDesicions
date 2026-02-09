@@ -90,6 +90,20 @@
         "total_tokens": 7803
       },
       "time": "2026-02-08T22:45:14.485893+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated contribution that unifies dropout-style noise injection with the Information Bottleneck, yielding a practical objective with tractable KL terms (and clear links to variational dropout/VAEs) plus empirical evidence of nuisance-invariant representations and competitive generalization; novelty and impact are sufficient for a top-tier ML venue despite some reliance on approximations (factorized priors, specific noise families) and mostly standard benchmark validation."
+      },
+      "token": {
+        "prompt_tokens": 9309,
+        "completion_tokens": 114,
+        "total_tokens": 9423
+      },
+      "time": "2026-02-09T20:48:42.145399+00:00"
     }
   ],
   "test": false

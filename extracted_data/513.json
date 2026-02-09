@@ -80,6 +80,20 @@
         "total_tokens": 3101
       },
       "time": "2026-02-08T22:24:17.516039+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting idea (self-supervised video prediction features improve OOD stability classification), but the contribution is incremental and empirically underpowered for ICML/ICLR/NeurIPS: synthetic/toy dataset, limited novelty in models (MSE video prediction + ResNet fusion), weak/unclear baselines and comparisons (no strong self-supervised/representation-learning baselines, no physics-informed or domain-randomization baselines, and cross-paper comparison to Zhang et al. is not valid), and insufficient analysis/ablations to isolate why/when the unsupervised features help or to demonstrate robust generalization beyond block-count shifts."
+      },
+      "token": {
+        "prompt_tokens": 5199,
+        "completion_tokens": 154,
+        "total_tokens": 5353
+      },
+      "time": "2026-02-09T20:26:18.724995+00:00"
     }
   ],
   "test": false

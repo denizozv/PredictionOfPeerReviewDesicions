@@ -105,6 +105,20 @@
         "total_tokens": 4157
       },
       "time": "2026-02-08T22:08:19.898034+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "Solid, well-motivated empirical contribution: a vector-valued (fine-grained) gate for combining word- and character-level representations plus an interaction gating variant for document–query modeling, with consistent gains and (for the time) strong results across multiple RC benchmarks and an additional Twitter task, supported by ablations and interpretability analysis; novelty is incremental but the breadth of evidence and practical impact likely clear the bar."
+      },
+      "token": {
+        "prompt_tokens": 6081,
+        "completion_tokens": 111,
+        "total_tokens": 6192
+      },
+      "time": "2026-02-09T20:12:52.131145+00:00"
     }
   ],
   "test": false

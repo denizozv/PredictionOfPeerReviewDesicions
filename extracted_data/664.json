@@ -90,6 +90,20 @@
         "total_tokens": 4351
       },
       "time": "2026-02-08T22:39:16.820026+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting application of GANs (adding a steganalysis adversary) but the technical novelty is limited and the empirical evidence is not convincing for ICML/ICLR/NeurIPS: results largely reflect distribution shift/overfitting of the steganalyzer to real images or to a particular generator seed rather than demonstrating robust steganography security against strong, well-trained steganalysis baselines; evaluation is narrow (mostly 64x64 CelebA, simple 1-embedding, accuracy tables without rigorous threat model, ablations, or comparisons to modern steganalysis/robust training), so the central claim of 'steganalysis-secure embedding' is not well supported."
+      },
+      "token": {
+        "prompt_tokens": 6277,
+        "completion_tokens": 169,
+        "total_tokens": 6446
+      },
+      "time": "2026-02-09T20:42:13.124734+00:00"
     }
   ],
   "test": false

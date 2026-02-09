@@ -125,6 +125,20 @@
         "total_tokens": 7469
       },
       "time": "2026-02-08T22:40:04.886672+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated method that injects medical-ontology structure via an attention-over-ancestors representation, with solid empirical evidence on multiple real EHR datasets showing clear gains under data sparsity plus interpretable attention/embeddings and meaningful baselines (including RandomDAG/roll-up variants) and public code—overall above the ICML/ICLR/NeurIPS bar despite limited novelty on the attention mechanism itself."
+      },
+      "token": {
+        "prompt_tokens": 9174,
+        "completion_tokens": 114,
+        "total_tokens": 9288
+      },
+      "time": "2026-02-09T20:42:36.194471+00:00"
     }
   ],
   "test": false

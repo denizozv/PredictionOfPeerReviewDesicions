@@ -110,6 +110,20 @@
         "total_tokens": 9829
       },
       "time": "2026-02-08T22:31:05.993209+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting physiologically motivated representation + modular RMDN pipeline, but the contribution is primarily an application/engineering combination of known components (Sigma-Lognormal reconstruction, Graves-style MDN-LSTM) with mostly qualitative evidence; lacks rigorous quantitative evaluation, strong baselines, and clear novelty/ablation to justify top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 11350,
+        "completion_tokens": 92,
+        "total_tokens": 11442
+      },
+      "time": "2026-02-09T20:33:20.917606+00:00"
     }
   ],
   "test": false

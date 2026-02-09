@@ -100,6 +100,20 @@
         "total_tokens": 6851
       },
       "time": "2026-02-08T22:19:07.132128+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting tensor-factorized parameter-sharing for deep MTL, but the contribution is largely a straightforward extension of known low-rank/tensor decompositions to multi-task deep nets with limited novelty and weak top-tier empirical positioning (mostly small/dated benchmarks like MNIST 1-vs-all, Adience, Omniglot; no strong modern baselines or large-scale results), so the impact and evidence likely fall below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8510,
+        "completion_tokens": 121,
+        "total_tokens": 8631
+      },
+      "time": "2026-02-09T20:21:28.665722+00:00"
     }
   ],
   "test": false

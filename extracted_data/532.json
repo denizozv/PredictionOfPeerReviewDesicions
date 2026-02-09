@@ -80,6 +80,20 @@
         "total_tokens": 5055
       },
       "time": "2026-02-08T22:27:03.256593+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting RL-for-curriculum/data-selection idea, but the contribution feels incremental and under-validated for ICML/ICLR/NeurIPS: experiments are limited (IMDB LSTM, a small MLP on a synthetic corrupted MNIST), baselines are weak/outdated (no modern data selection/curriculum/importance-sampling or training-speedup comparisons), and the RL formulation/critic design is ad hoc with unclear generality and cost-benefit (policy training overhead vs speedup)."
+      },
+      "token": {
+        "prompt_tokens": 7034,
+        "completion_tokens": 128,
+        "total_tokens": 7162
+      },
+      "time": "2026-02-09T20:28:24.903925+00:00"
     }
   ],
   "test": false

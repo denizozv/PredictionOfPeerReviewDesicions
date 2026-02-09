@@ -110,6 +110,20 @@
         "total_tokens": 6306
       },
       "time": "2026-02-08T22:44:06.641292+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily an application of established HDP-HMM/sticky HDP-HMM with MCMC to MFCC bioacoustic segmentation; novelty is limited, experimental validation is weak (mostly qualitative demos, modest NMI ~0.49 with unclear baselines), and the work lacks rigorous comparisons to strong modern alternatives and ablations needed for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 8015,
+        "completion_tokens": 104,
+        "total_tokens": 8119
+      },
+      "time": "2026-02-09T20:46:52.924610+00:00"
     }
   ],
   "test": false

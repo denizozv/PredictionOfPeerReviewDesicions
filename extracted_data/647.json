@@ -120,6 +120,20 @@
         "total_tokens": 4901
       },
       "time": "2026-02-08T22:38:12.522373+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated idea (learning an iterative inference procedure via an RNN that consumes likelihood gradients and maintains state) with convincing empirical results and ablations across multiple inverse problems, showing stable convergence-like behavior and competitive/superior PSNR/SSIM versus established baselines; overall contribution and evidence appear above the ICML/ICLR/NeurIPS bar despite some scope/benchmark limitations."
+      },
+      "token": {
+        "prompt_tokens": 6846,
+        "completion_tokens": 108,
+        "total_tokens": 6954
+      },
+      "time": "2026-02-09T20:40:33.595036+00:00"
     }
   ],
   "test": false

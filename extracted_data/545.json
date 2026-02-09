@@ -95,6 +95,20 @@
         "total_tokens": 6488
       },
       "time": "2026-02-08T22:28:02.023631+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Interesting kernel/SPN-style formulation for summing over exponentially many “virtual instances,” but the technical novelty and empirical validation look below ICML/ICLR/NeurIPS bar: the model largely repackages known ideas (compositional kernels, invariance via latent alignments, SPN tractability) with a fairly ad-hoc NORB+ORB instantiation, limited datasets, and comparisons that are not convincingly fair/modern (e.g., convnets trained from scratch on tiny data vs CKM with engineered ORB; unclear strength of SVM baselines/feature pipelines). The weight-learning objective is nonconvex and the optimization/scalability claims are not rigorously supported beyond small-scale experiments, leaving impact and generality uncertain."
+      },
+      "token": {
+        "prompt_tokens": 8190,
+        "completion_tokens": 178,
+        "total_tokens": 8368
+      },
+      "time": "2026-02-09T20:29:33.228315+00:00"
     }
   ],
   "test": false

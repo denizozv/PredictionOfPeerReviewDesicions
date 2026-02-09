@@ -110,6 +110,20 @@
         "total_tokens": 7656
       },
       "time": "2026-02-08T22:11:12.968201+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "Novel tree decoder (doubly recurrent depth+width states) with explicit topology prediction and solid empirical validation on both synthetic structure recovery and a real semantic parsing benchmark (IFTTT) showing consistent gains over strong seq2tree/seq2seq baselines; while some experiments (MT) are more qualitative/limited-scale, the core method is clear, nontrivial, and convincingly useful."
+      },
+      "token": {
+        "prompt_tokens": 9424,
+        "completion_tokens": 107,
+        "total_tokens": 9531
+      },
+      "time": "2026-02-09T20:15:14.641514+00:00"
     }
   ],
   "test": true

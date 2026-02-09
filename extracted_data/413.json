@@ -155,6 +155,20 @@
         "total_tokens": 6417
       },
       "time": "2026-02-08T22:13:14.318331+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, original systems/algorithmic contribution: a principled sigma-delta/temporal-difference reformulation of feedforward nets with quantized delta communication, plus an optimization procedure to trade accuracy vs compute and evidence of large compute savings on temporally redundant inputs (incl. a VGG19-on-video case study). While some claims hinge on specialized hardware and the video evaluation is preliminary/heuristic (noise trick, limited benchmarks), the core idea is novel, technically well-motivated, and empirically supported enough to clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8187,
+        "completion_tokens": 145,
+        "total_tokens": 8332
+      },
+      "time": "2026-02-09T20:16:52.192423+00:00"
     }
   ],
   "test": false

@@ -115,6 +115,20 @@
         "total_tokens": 7758
       },
       "time": "2026-02-08T22:13:18.018202+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Interesting idea (solve continuous max-entropy via normalizing flows + augmented Lagrangian) but the contribution reads as a repackaging of known ME/Gibbs duality with a generic constrained flow training recipe; experiments are limited and not convincingly positioned against strong modern baselines (e.g., score-based/EBM training, flow-based moment-constrained fitting, MCMC/VI for exponential families), with unclear guarantees/analysis and some ad-hoc optimization choices (probabilistic c-update) that weaken the top-tier novelty/rigor bar."
+      },
+      "token": {
+        "prompt_tokens": 9266,
+        "completion_tokens": 139,
+        "total_tokens": 9405
+      },
+      "time": "2026-02-09T20:17:06.970695+00:00"
     }
   ],
   "test": false

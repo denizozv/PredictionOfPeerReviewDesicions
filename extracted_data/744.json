@@ -85,6 +85,20 @@
         "total_tokens": 5028
       },
       "time": "2026-02-08T22:46:22.464238+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core idea (a per-layer scalar gate on the residual/skip path to ease identity mappings) is a small, incremental variant of Highway/ResNet-style gating, and the empirical evidence is not at ICML/ICLR/NeurIPS level: MNIST-focused optimization claims are weakly compelling, CIFAR gains are modest and not convincingly isolated via strong ablations/controls, and the paper lacks broader validation (e.g., ImageNet/modern training recipes) and deeper analysis to establish a clear, general, and impactful advance over existing residual scaling/gating techniques."
+      },
+      "token": {
+        "prompt_tokens": 6922,
+        "completion_tokens": 144,
+        "total_tokens": 7066
+      },
+      "time": "2026-02-09T20:50:06.573202+00:00"
     }
   ],
   "test": false

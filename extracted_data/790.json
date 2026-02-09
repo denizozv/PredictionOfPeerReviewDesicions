@@ -110,6 +110,20 @@
         "total_tokens": 8064
       },
       "time": "2026-02-08T22:50:18.647712+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel and timely adversarial-learning formulation showing neural nets can learn key-based obfuscation and selective information hiding end-to-end, with reasonably thorough experimental protocol (alternating training, post-hoc retrained adversaries, ablations across message lengths) and an interesting privacy/utility extension; while not cryptographically rigorous and limited to toy settings, it meets the bar as an impactful ML systems/representation learning study rather than a security paper."
+      },
+      "token": {
+        "prompt_tokens": 9766,
+        "completion_tokens": 114,
+        "total_tokens": 9880
+      },
+      "time": "2026-02-09T20:54:19.446882+00:00"
     }
   ],
   "test": false

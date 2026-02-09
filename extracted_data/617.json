@@ -130,6 +130,20 @@
         "total_tokens": 5060
       },
       "time": "2026-02-08T22:35:07.463418+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a systems/engineering optimization of distributed SGD (overlap/pipelining + bounded staleness) with limited algorithmic novelty and weak evidence of broad impact: the main gain is modest (~1.7x) on dated Caffe/ImageNet baselines, the “exact equivalence” claim is not convincingly formalized given extra buffering/copies and scheduling, and the evaluation lacks modern comparisons (e.g., ring-allreduce/NCCL2, gradient bucketing, mixed precision, larger models) and deeper convergence/accuracy analysis under staleness."
+      },
+      "token": {
+        "prompt_tokens": 6904,
+        "completion_tokens": 141,
+        "total_tokens": 7045
+      },
+      "time": "2026-02-09T20:37:27.535425+00:00"
     }
   ],
   "test": false

@@ -90,6 +90,20 @@
         "total_tokens": 5630
       },
       "time": "2026-02-08T22:26:05.156836+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, practically impactful contribution: an adaptive, frequency-aware hierarchical/shortlist softmax explicitly optimized for GPU matrix-multiply regimes, with clear complexity analysis, sensible design choices (shortlist + tail clusters with reduced capacity), and convincing large-scale experiments (Europarl, One Billion Word) showing substantial training-speed gains at near-full-softmax perplexity against relevant baselines."
+      },
+      "token": {
+        "prompt_tokens": 7541,
+        "completion_tokens": 102,
+        "total_tokens": 7643
+      },
+      "time": "2026-02-09T20:27:19.025606+00:00"
     }
   ],
   "test": false

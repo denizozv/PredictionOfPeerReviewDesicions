@@ -150,6 +150,20 @@
         "total_tokens": 11648
       },
       "time": "2026-02-08T22:08:04.004093+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, nontrivial theoretical contribution: a clean minimax formulation showing that with only encoder–decoder pairwise correlations as side information, the worst-case optimal decoder is a single logistic layer with weights learned via convex optimization, plus a biconvex alternating-minimization training procedure. The paper provides proofs, extensions to other losses/denoising, and competitive experiments against standard AEs/PCA, making it a solid ICML/NeurIPS-style theory+empirics submission (though acceptance would hinge on clarity, positioning vs prior minimax/moment-matching work, and stronger modern baselines)."
+      },
+      "token": {
+        "prompt_tokens": 12714,
+        "completion_tokens": 151,
+        "total_tokens": 12865
+      },
+      "time": "2026-02-09T20:12:02.777286+00:00"
     }
   ],
   "test": false

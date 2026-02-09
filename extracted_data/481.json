@@ -115,6 +115,20 @@
         "total_tokens": 7016
       },
       "time": "2026-02-08T22:22:04.484186+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, timely empirical contribution demonstrating how to scale adversarial training to ImageNet (engineering + protocol details), with clear findings on one-step vs multi-step robustness, transferability behavior, and identification/mitigation of the important 'label leaking' evaluation pitfall; overall impact and evidence are at/above top-tier conference bar despite limited robustness to iterative attacks."
+      },
+      "token": {
+        "prompt_tokens": 8722,
+        "completion_tokens": 98,
+        "total_tokens": 8820
+      },
+      "time": "2026-02-09T20:23:43.598630+00:00"
     }
   ],
   "test": false

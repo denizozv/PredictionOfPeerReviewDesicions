@@ -135,6 +135,20 @@
         "total_tokens": 7563
       },
       "time": "2026-02-08T22:14:21.539188+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting continuation/noise-smoothing framing, but the core technique largely repackages known ideas (noise injection, stochastic depth/skip connections, linearizing activations, curriculum/annealing) with unclear novelty and weak empirical positioning: results are on several toy/dated benchmarks with limited modern baselines/ablations, some instability/ad-hoc choices (e.g., annealing tied to loss then fixed), and the claimed “convex at p=1” simplification is not convincingly justified for the full network/objective, leaving impact below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 9272,
+        "completion_tokens": 147,
+        "total_tokens": 9419
+      },
+      "time": "2026-02-09T20:17:54.135731+00:00"
     }
   ],
   "test": false

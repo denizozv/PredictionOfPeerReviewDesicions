@@ -150,6 +150,20 @@
         "total_tokens": 11145
       },
       "time": "2026-02-08T22:16:09.235880+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated hybrid of learning + symbolic search for inductive program synthesis: predicts program attributes from IO examples to guide enumerative/SMT solvers, yielding large empirical speedups with solid baselines and some theoretical justification; while limited to a DSL and relatively simple competition-style tasks, the contribution is novel and impactful enough for top-tier ML."
+      },
+      "token": {
+        "prompt_tokens": 12549,
+        "completion_tokens": 99,
+        "total_tokens": 12648
+      },
+      "time": "2026-02-09T20:19:20.630202+00:00"
     }
   ],
   "test": false

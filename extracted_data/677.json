@@ -110,6 +110,20 @@
         "total_tokens": 4619
       },
       "time": "2026-02-08T22:41:06.106020+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Primarily a straightforward adaptation of skip-thought/seq2seq to random-walk “sentences” for graphs (close in spirit to DeepWalk/node2vec/doc2vec-style graph embeddings) with limited novelty and weak experimental positioning: evaluation is narrow (4 small, balanced molecular datasets), comparisons omit stronger contemporary graph representation baselines (graph kernels, unsupervised graph2vec/Weisfeiler-Lehman variants, and modern GNN pretraining), and the method relies on heuristic aggregation of walk encodings without clear analysis of what is learned or why it should outperform simpler objectives."
+      },
+      "token": {
+        "prompt_tokens": 6567,
+        "completion_tokens": 146,
+        "total_tokens": 6713
+      },
+      "time": "2026-02-09T20:43:27.538256+00:00"
     }
   ],
   "test": false

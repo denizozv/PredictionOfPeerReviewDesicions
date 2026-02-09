@@ -115,6 +115,20 @@
         "total_tokens": 6902
       },
       "time": "2026-02-08T22:16:05.150722+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a systems/engineering reimplementation of A3C for better GPU utilization (queues, batching, dynamic scheduling) with limited algorithmic novelty and incomplete/weakly controlled empirical validation against strong baselines; the main claims are speedups and some stability tweaks, which are valuable but typically below the ICML/ICLR/NeurIPS research-track bar without deeper methodological insight, broader comparisons, and more rigorous convergence/ablation evidence."
+      },
+      "token": {
+        "prompt_tokens": 8642,
+        "completion_tokens": 116,
+        "total_tokens": 8758
+      },
+      "time": "2026-02-09T20:19:05.779978+00:00"
     }
   ],
   "test": false

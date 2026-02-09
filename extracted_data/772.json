@@ -110,6 +110,20 @@
         "total_tokens": 4655
       },
       "time": "2026-02-08T22:49:12.005091+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an empirical best-practices/ablation study over known CNN-retrieval design choices (pooling/normalization, layer choice, resizing, multi-scale, PCA/whitening) with only modest methodological novelty; the proposed multi-scale + layer-ensemble pipeline is a straightforward combination of existing ideas and the contribution is unlikely to clear the ICML/ICLR/NeurIPS bar without a sharper new technical insight, stronger/modern baselines, and clearer evidence of generality beyond standard landmark/UKB benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 6603,
+        "completion_tokens": 134,
+        "total_tokens": 6737
+      },
+      "time": "2026-02-09T20:52:39.493712+00:00"
     }
   ],
   "test": false

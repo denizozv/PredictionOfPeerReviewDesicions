@@ -110,6 +110,20 @@
         "total_tokens": 6862
       },
       "time": "2026-02-08T22:20:26.658695+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting interpretability-motivated system for symbolic music, but the core ML contribution appears incremental/heuristic (hierarchy construction + filtered feature selection + Dirichlet-smoothed KL objective) with limited rigorous evaluation: narrow dataset (Bach chorales only), unclear strength/fairness of baselines, and mostly qualitative/illustrative claims about “deeper interpretability” and pedagogy without strong quantitative validation (e.g., predictive performance, generalization, user studies, or ablations isolating each proposed component)."
+      },
+      "token": {
+        "prompt_tokens": 8627,
+        "completion_tokens": 132,
+        "total_tokens": 8759
+      },
+      "time": "2026-02-09T20:23:07.395461+00:00"
     }
   ],
   "test": false

@@ -85,6 +85,20 @@
         "total_tokens": 4736
       },
       "time": "2026-02-08T22:13:15.974055+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental regularization idea with modest gains and limited positioning/ablation against strong existing orthogonality/decorrelation methods; improvements are small relative to overhead and the empirical case (mostly CIFAR/SVHN) is unlikely to clear the ICML/ICLR/NeurIPS bar without stronger novelty, broader evaluation, and tighter comparisons."
+      },
+      "token": {
+        "prompt_tokens": 6643,
+        "completion_tokens": 96,
+        "total_tokens": 6739
+      },
+      "time": "2026-02-09T20:16:58.924220+00:00"
     }
   ],
   "test": false

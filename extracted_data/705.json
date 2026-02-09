@@ -85,6 +85,20 @@
         "total_tokens": 5713
       },
       "time": "2026-02-08T22:43:18.745197+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong multimodal unsupervised word discovery/grounding contribution with clear scalability (O(n), 522h), a concrete neural+retrieval setup, and substantial qualitative/quantitative analysis (purity/coverage, cluster pruning, visual grounding examples); while some components are heuristic and evaluation relies on proxy ASR alignments, the overall novelty/impact and empirical evidence are likely above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7634,
+        "completion_tokens": 116,
+        "total_tokens": 7750
+      },
+      "time": "2026-02-09T20:46:11.931100+00:00"
     }
   ],
   "test": false

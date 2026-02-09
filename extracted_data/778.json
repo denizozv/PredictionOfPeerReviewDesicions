@@ -90,6 +90,20 @@
         "total_tokens": 5709
       },
       "time": "2026-02-08T22:49:23.406635+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an engineering-oriented compression/acceleration scheme (ternary weight basis + binary activation encoding with LUT) that is incremental relative to prior binary/ternary quantization and low-rank/factorization work; the paper lacks strong novelty and, by modern ICML/ICLR/NeurIPS standards, the experimental validation is not sufficiently rigorous (limited baselines vs state-of-the-art quantization, unclear fairness of timing without SIMD/parallelism, no end-to-end retraining/finetuning or accuracy–compute Pareto comparisons, and reliance on per-layer heuristic settings), so the contribution/insight is below the bar."
+      },
+      "token": {
+        "prompt_tokens": 7453,
+        "completion_tokens": 156,
+        "total_tokens": 7609
+      },
+      "time": "2026-02-09T20:53:14.459540+00:00"
     }
   ],
   "test": true

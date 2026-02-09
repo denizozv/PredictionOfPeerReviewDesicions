@@ -100,6 +100,20 @@
         "total_tokens": 5606
       },
       "time": "2026-02-08T22:24:10.058104+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/under-positioned GNN variant with limited novelty and weak experimental rigor: SAEN largely instantiates a sum-aggregation message-passing scheme over ego-graph hierarchies (close to existing graph kernels/GCNNs), while the “domain compression” relies on strong assumptions (categorical attributes, exact equivalence) and is not evaluated against modern GNN baselines or with convincing ablations/hyperparameter fairness; results are on older social-network benchmarks with manual tuning and unclear SOTA positioning."
+      },
+      "token": {
+        "prompt_tokens": 7316,
+        "completion_tokens": 130,
+        "total_tokens": 7446
+      },
+      "time": "2026-02-09T20:25:49.337768+00:00"
     }
   ],
   "test": false

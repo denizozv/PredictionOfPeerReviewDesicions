@@ -120,6 +120,20 @@
         "total_tokens": 9642
       },
       "time": "2026-02-08T22:06:14.171931+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting StarCraft micromanagement benchmark + a practical episodic exploration heuristic, but the core algorithmic contribution (zero-order perturbation of last layer with an ad-hoc backprop update) is weakly justified and not clearly connected to established deterministic policy gradient / evolution strategies; evaluation is mostly against built-in AI with limited rigor (no strong modern RL baselines, limited ablations/statistical analysis), so the scientific contribution and evidence likely fall below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 11222,
+        "completion_tokens": 127,
+        "total_tokens": 11349
+      },
+      "time": "2026-02-09T20:10:16.708440+00:00"
     }
   ],
   "test": false

@@ -90,6 +90,20 @@
         "total_tokens": 5756
       },
       "time": "2026-02-08T22:07:13.230224+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.74,
+        "primary_reason": "Introduces a well-motivated semi-supervised RL setting (reward available only in a subset of MDPs) and a principled algorithm (IRL-style reward inference + policy optimization) with solid empirical evidence on continuous-control and vision-based tasks showing improved generalization over strong baselines like reward regression and direct transfer; the contribution is novel enough and experimentally supported at a top-tier conference level."
+      },
+      "token": {
+        "prompt_tokens": 7748,
+        "completion_tokens": 107,
+        "total_tokens": 7855
+      },
+      "time": "2026-02-09T20:11:22.832093+00:00"
     }
   ],
   "test": false

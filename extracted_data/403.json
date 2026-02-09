@@ -95,6 +95,20 @@
         "total_tokens": 7424
       },
       "time": "2026-02-08T22:12:23.327544+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel, well-motivated differentiable memory addressing via Lie group actions (invertible/identity-preserving relative indexing) with strong algorithmic-task generalization and reasonable baselines; despite being mostly synthetic and somewhat under-positioned vs stronger NTM/DNC-style baselines, the conceptual contribution + empirical gains likely clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 9168,
+        "completion_tokens": 102,
+        "total_tokens": 9270
+      },
+      "time": "2026-02-09T20:15:36.869026+00:00"
     }
   ],
   "test": false

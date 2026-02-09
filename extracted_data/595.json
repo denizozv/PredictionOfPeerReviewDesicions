@@ -85,6 +85,20 @@
         "total_tokens": 6312
       },
       "time": "2026-02-08T22:32:24.151363+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated empirical contribution for fitting VAEs/DLGMs to sparse high-dimensional count data (tf-idf inference + semi-amortized local variational refinement) with clear perplexity gains on large text/EHR datasets, plus a novel and useful Jacobian/SVD-based introspection method that yields meaningful (contextual) embeddings; overall impact and validation appear above the top-tier bar despite some components being incremental relative to known ideas."
+      },
+      "token": {
+        "prompt_tokens": 8016,
+        "completion_tokens": 117,
+        "total_tokens": 8133
+      },
+      "time": "2026-02-09T20:34:52.553238+00:00"
     }
   ],
   "test": false

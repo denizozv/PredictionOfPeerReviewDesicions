@@ -130,6 +130,20 @@
         "total_tokens": 7101
       },
       "time": "2026-02-08T22:23:05.525345+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.63,
+        "primary_reason": "Provides a substantive theoretical depth-separation result (polylog(1/ε) size for deep vs polynomial(1/ε) for fixed-depth shallow) for broad smooth/piecewise-smooth function classes with explicit constructions and matching lower bounds, making a strong, ICML/ICLR/NeurIPS-level theory contribution despite relying on step units and somewhat restrictive smoothness/strong-convexity assumptions."
+      },
+      "token": {
+        "prompt_tokens": 8787,
+        "completion_tokens": 110,
+        "total_tokens": 8897
+      },
+      "time": "2026-02-09T20:25:00.602438+00:00"
     }
   ],
   "test": false

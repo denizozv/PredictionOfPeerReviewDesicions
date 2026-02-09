@@ -90,6 +90,20 @@
         "total_tokens": 6020
       },
       "time": "2026-02-08T22:32:10.334256+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Applies fairly standard 3D conv autoencoder + YOLO/Faster-RCNN-style box regression in a semi-supervised reconstruction+supervision setup, but the empirical results are not strong/rigorous enough for ICML/ICLR/NeurIPS (notably poor performance at standard IoU=0.5, limited baselines/ablations, and reliance on noisy TECA heuristics without convincing validation), making the contribution feel more like an application/engineering report than a clear methodological advance."
+      },
+      "token": {
+        "prompt_tokens": 7918,
+        "completion_tokens": 129,
+        "total_tokens": 8047
+      },
+      "time": "2026-02-09T20:34:05.405765+00:00"
     }
   ],
   "test": false

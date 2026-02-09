@@ -120,6 +120,20 @@
         "total_tokens": 5914
       },
       "time": "2026-02-08T22:33:14.470428+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated multi-hop reading-comprehension model with a clear technical contribution (token-wise gated attention via multiplicative query–document interactions), solid ablations/analysis (gating operator, hops, feature effects), and state-of-the-art results on multiple established benchmarks, making it above the ICML/ICLR/NeurIPS bar for empirical NLP at the time."
+      },
+      "token": {
+        "prompt_tokens": 7742,
+        "completion_tokens": 105,
+        "total_tokens": 7847
+      },
+      "time": "2026-02-09T20:35:38.393157+00:00"
     }
   ],
   "test": false

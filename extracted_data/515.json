@@ -135,6 +135,20 @@
         "total_tokens": 7621
       },
       "time": "2026-02-08T22:25:03.913296+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, nontrivial modeling contribution: representing the full exponential-order interaction tensor via Tensor Train yields a scalable, regularized alternative to high-order polynomial/FMs, paired with a principled stochastic Riemannian optimization method and solid empirical evidence (notably on synthetic high-order interactions) plus competitive results on MovieLens; while some gains on real benchmarks are modest and evaluation breadth is limited, the combination of novelty + scalability + optimization technique is likely above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 9109,
+        "completion_tokens": 129,
+        "total_tokens": 9238
+      },
+      "time": "2026-02-09T20:26:33.123018+00:00"
     }
   ],
   "test": false

@@ -115,6 +115,20 @@
         "total_tokens": 6341
       },
       "time": "2026-02-08T22:24:13.641131+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "The core idea is essentially fitted value iteration/bootstrapped regression applied to HJI reachability (self-generated targets via a one-step dynamic programming update), which is not sufficiently novel relative to existing approximate dynamic programming / RL-style PDE solvers and modern neural HJ/PINN literature; experiments are limited (mostly 2D, one 3D toy), comparisons are only to a grid solver without strong neural baselines/ablations, and there is little analysis of stability/convergence, error propagation, or scalability to genuinely high-dimensional systems where the method’s advantage would matter."
+      },
+      "token": {
+        "prompt_tokens": 8177,
+        "completion_tokens": 144,
+        "total_tokens": 8321
+      },
+      "time": "2026-02-09T20:26:04.137075+00:00"
     }
   ],
   "test": false

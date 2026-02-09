@@ -135,6 +135,20 @@
         "total_tokens": 15919
       },
       "time": "2026-02-08T22:05:11.475117+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Despite a lengthy information-theoretic derivation, the core contribution appears to be a re-derivation/variant of classic Infomax ICA + whitening with a hierarchical initialization and asymptotic MI approximation; the empirical evaluation is narrow (mostly Gabor-filter recovery on Olshausen patches/MNIST), relies on dated/weak baselines and qualitative metrics, and does not convincingly demonstrate state-of-the-art impact, robustness, or scalability relative to modern self-supervised/representation-learning methods."
+      },
+      "token": {
+        "prompt_tokens": 16518,
+        "completion_tokens": 127,
+        "total_tokens": 16645
+      },
+      "time": "2026-02-09T20:09:27.408154+00:00"
     }
   ],
   "test": false

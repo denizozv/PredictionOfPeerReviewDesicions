@@ -105,6 +105,20 @@
         "total_tokens": 3871
       },
       "time": "2026-02-08T22:37:11.504701+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core ideas (dropout-aware variance scaling for initialization and re-estimating BN running variance with dropout disabled) are plausible but largely incremental/heuristic and under-validated for a top-tier venue: the initialization resembles straightforward variance-propagation corrections already implicit in He/Xavier-style analyses, and the BN “post-hoc stats recomputation” is a simple calibration trick that needs much stronger positioning, theory, and broad experiments (modern architectures, with/without augmentation, different dropout placements, comparisons to existing BN-stat recomputation practices, and careful controls) to justify the claimed SOTA gains."
+      },
+      "token": {
+        "prompt_tokens": 5829,
+        "completion_tokens": 147,
+        "total_tokens": 5976
+      },
+      "time": "2026-02-09T20:39:25.425080+00:00"
     }
   ],
   "test": false

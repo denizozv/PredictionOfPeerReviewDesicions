@@ -105,6 +105,20 @@
         "total_tokens": 5048
       },
       "time": "2026-02-08T22:32:05.409326+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a systems/engineering layer-fusion heuristic whose gains are heavily tied to specific framework/hardware inefficiencies (non-tensor layer overhead in Caffe/mobile CPUs) and are not convincingly established as a general, principled ML contribution; the method (remove BN/LRN, fold pooling via stride, merge branches by reallocating channels + finetune) lacks strong novelty vs known operator fusion/graph optimization and provides limited rigorous baselines/ablations (e.g., compare to standard BN folding, kernel/operator fusion, optimized inference engines, or stronger mobile runtimes), making it below the typical ICML/ICLR/NeurIPS research-track bar."
+      },
+      "token": {
+        "prompt_tokens": 6864,
+        "completion_tokens": 161,
+        "total_tokens": 7025
+      },
+      "time": "2026-02-09T20:33:57.919994+00:00"
     }
   ],
   "test": false

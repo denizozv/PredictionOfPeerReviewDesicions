@@ -135,6 +135,20 @@
         "total_tokens": 6861
       },
       "time": "2026-02-08T22:12:09.167524+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting empirical observation (many weights change little) and a simple learned per-weight extrapolator, but the contribution is not convincingly novel or principled, and the evidence is below ICML/ICLR/NeurIPS bar: the method ignores parameter correlations, relies on hand-chosen jump schedules and a fixed 2t extrapolation, shows modest/unstable gains (esp. on ImageNet), and lacks strong modern baselines/controls (e.g., learning-rate schedules, warm restarts, momentum/Adam variants, EMA/SWA, hyperparameter-matched compute budgets) and analysis to rule out that improvements come from effectively changing the optimization schedule rather than learning transferable “weight evolution laws.”"
+      },
+      "token": {
+        "prompt_tokens": 8679,
+        "completion_tokens": 169,
+        "total_tokens": 8848
+      },
+      "time": "2026-02-09T20:15:23.306388+00:00"
     }
   ],
   "test": false

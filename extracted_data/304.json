@@ -185,6 +185,20 @@
         "total_tokens": 14582
       },
       "time": "2026-02-08T22:02:32.675142+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, conceptually clean contribution showing that explicitly structuring neural program induction with recursion (via NPI call stack + recursive traces) yields dramatic out-of-distribution length/size generalization on multiple algorithmic tasks, plus a credible verification story (finite base-cases/reduction-rule checking) that is unusually rigorous for neural program learning; while the setting is synthetic and relies on execution-trace supervision, the empirical gains and the interpretability/verification angle are substantial enough for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 15391,
+        "completion_tokens": 125,
+        "total_tokens": 15516
+      },
+      "time": "2026-02-09T20:04:18.357221+00:00"
     }
   ],
   "test": false

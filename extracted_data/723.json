@@ -120,6 +120,20 @@
         "total_tokens": 6029
       },
       "time": "2026-02-08T22:45:10.961598+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting cognitive-inspired representation, but the technical contribution is modest (bag-of-open-bigrams + cosine retrieval) and the empirical case is not at top-tier level: the approach relies on multiple separately trained CTC BLSTMs and then discards sequence structure via max-pooling, comparisons are mainly to older HMM/Viterbi baselines under a nonstandard filtered setting (hard to position vs strong modern end-to-end recognizers), and gains are described as merely comparable with limited ablations/analysis to justify why this decoder is preferable or broadly impactful."
+      },
+      "token": {
+        "prompt_tokens": 7924,
+        "completion_tokens": 137,
+        "total_tokens": 8061
+      },
+      "time": "2026-02-09T20:48:25.328367+00:00"
     }
   ],
   "test": false

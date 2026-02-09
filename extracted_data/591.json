@@ -105,6 +105,20 @@
         "total_tokens": 4389
       },
       "time": "2026-02-08T22:32:15.671033+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily an empirical/diagnostic study with a fairly direct “importance = gradient norm / parameter change” definition, evaluated on small datasets (MNIST/CIFAR-10) with a simple MLP and limited baselines; the main claims about easy vs hard samples and batch mixing vs curriculum are not convincingly established (uses difficulty labels from a full training run, fixed batch partitions, no modern architectures/optimizers, and weak positioning vs existing work on curriculum/self-paced, gradient norms, influence functions), so novelty and impact are below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6374,
+        "completion_tokens": 146,
+        "total_tokens": 6520
+      },
+      "time": "2026-02-09T20:34:21.196972+00:00"
     }
   ],
   "test": false

@@ -95,6 +95,20 @@
         "total_tokens": 10803
       },
       "time": "2026-02-08T22:22:11.092468+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting but narrow/dated theoretical construction (exact embedding of a special piecewise-linear “monotonic chain”) with limited novelty and external validity; experiments are small and synthetic with weak positioning against modern manifold/representation learning baselines, so the overall impact and evidence are below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 12215,
+        "completion_tokens": 92,
+        "total_tokens": 12307
+      },
+      "time": "2026-02-09T20:24:04.620061+00:00"
     }
   ],
   "test": false

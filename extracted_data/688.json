@@ -105,6 +105,20 @@
         "total_tokens": 4465
       },
       "time": "2026-02-08T22:41:29.870404+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/under-positioned contribution: the main idea is an iterative re-tightening of a known PoWER-style concave lower bound using importance sampling (plus a negative-reward extension), but the paper does not convincingly establish novelty over existing EM/MM-style policy optimization and off-policy/importance-weighted policy gradient methods, and the empirical evidence (Cartpole + one proprietary ads dataset) lacks strong baselines, ablations, and clarity on stability/variance, making it unlikely to clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6478,
+        "completion_tokens": 137,
+        "total_tokens": 6615
+      },
+      "time": "2026-02-09T20:44:33.180767+00:00"
     }
   ],
   "test": false

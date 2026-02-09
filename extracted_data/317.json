@@ -150,6 +150,20 @@
         "total_tokens": 10080
       },
       "time": "2026-02-08T22:03:04.850333+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting framing (amortised MAP with an exact LR-consistency projection) but the core technical novelty is limited/derivative of known constrained SR + GAN/DAE score-matching ideas, and the empirical evidence is not strong enough for ICML/ICLR/NeurIPS: the non-GAN methods largely fail, evaluation is mostly qualitative with weak perceptual metrics/baselines, and the MAP/GAN/VI connections rely on idealized assumptions without rigorous validation."
+      },
+      "token": {
+        "prompt_tokens": 11357,
+        "completion_tokens": 123,
+        "total_tokens": 11480
+      },
+      "time": "2026-02-09T20:07:47.020962+00:00"
     }
   ],
   "test": false

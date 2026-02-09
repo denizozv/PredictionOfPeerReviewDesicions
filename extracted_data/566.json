@@ -115,6 +115,20 @@
         "total_tokens": 6311
       },
       "time": "2026-02-08T22:29:21.050130+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "The paper is under-evaluated and under-positioned for ICML/ICLR/NeurIPS: it proposes a complex variational/Fisher-based active learning criterion but validates only on MNIST/USPS with limited baselines and no convincing comparisons to strong Bayesian/deep active learning methods (e.g., BALD/MC-dropout, core-set/diversity methods), and the derivation relies on questionable/unstated assumptions (asymptotic normality of MLE, invertible Fisher, pseudo-labeling for Fisher) without sufficient empirical ablations or analysis to support the claimed novelty and robustness."
+      },
+      "token": {
+        "prompt_tokens": 8057,
+        "completion_tokens": 151,
+        "total_tokens": 8208
+      },
+      "time": "2026-02-09T20:31:45.993189+00:00"
     }
   ],
   "test": true

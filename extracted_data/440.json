@@ -115,6 +115,20 @@
         "total_tokens": 8759
       },
       "time": "2026-02-08T22:16:12.352369+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong model-based RL contribution: BNN dynamics with stochastic latent inputs to capture multimodal/heteroskedastic transitions, trained via alpha-divergence (alpha=0.5) with clear empirical gains over VB/GP/MLP on a hard benchmark and two industrial settings; while some aspects are incremental (rollout-based policy optimization) and comparisons could be broader, the modeling/learning choice is well-motivated and convincingly validated."
+      },
+      "token": {
+        "prompt_tokens": 10114,
+        "completion_tokens": 117,
+        "total_tokens": 10231
+      },
+      "time": "2026-02-09T20:19:27.448830+00:00"
     }
   ],
   "test": false

@@ -135,6 +135,20 @@
         "total_tokens": 6618
       },
       "time": "2026-02-08T22:37:04.050603+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Interesting Gaussian-uncertainty extension of TransE and a neat probabilistic view of path composition/conjunction, but the empirical validation is far below ICML/ICLR/NeurIPS standards: the main QA results are on a tiny, template-generated WorldCup2014 KB with an oracle entity linker, limited relations, and weak external validity; comparisons are mostly to TransE variants with few strong KB/QA baselines, and the gains are not convincingly established on standard benchmarks with realistic entity recognition and broader ablations."
+      },
+      "token": {
+        "prompt_tokens": 8408,
+        "completion_tokens": 133,
+        "total_tokens": 8541
+      },
+      "time": "2026-02-09T20:39:03.258453+00:00"
     }
   ],
   "test": true

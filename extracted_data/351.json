@@ -100,6 +100,20 @@
         "total_tokens": 4792
       },
       "time": "2026-02-08T22:06:21.699264+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated method for extreme p>>n settings: predicting first-layer weights from feature embeddings (a hypernetwork-style parameter sharing) yields orders-of-magnitude parameter reduction with consistent accuracy gains on a real large-scale genomics task, supported by multiple embedding choices, regularization variants, and PCA baselines; while the empirical scope is somewhat narrow (mainly population stratification) and novelty is more architectural than theoretical, the practical impact and careful evaluation are likely above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6738,
+        "completion_tokens": 134,
+        "total_tokens": 6872
+      },
+      "time": "2026-02-09T20:10:46.855503+00:00"
     }
   ],
   "test": false

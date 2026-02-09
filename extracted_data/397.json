@@ -125,6 +125,20 @@
         "total_tokens": 9432
       },
       "time": "2026-02-08T22:11:04.623492+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, well-motivated contribution that clarifies why expressive decoders cause posterior collapse via a bits-back/information-preference argument, then turns that into a principled method (constrained-receptive-field autoregressive decoders) for controllable lossy representations, plus a practical modeling improvement (autoregressive-flow prior) with convincing SOTA/competitive likelihood results and informative ablations/visualizations."
+      },
+      "token": {
+        "prompt_tokens": 10700,
+        "completion_tokens": 108,
+        "total_tokens": 10808
+      },
+      "time": "2026-02-09T20:14:53.292576+00:00"
     }
   ],
   "test": false

@@ -145,6 +145,20 @@
         "total_tokens": 3184
       },
       "time": "2026-02-08T22:44:03.462112+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, broadly useful semi-supervised recipe (LM pretraining of encoder/decoder + joint LM regularization) that yields clear, well-documented gains and SOTA results on a major benchmark (WMT En→De), with sensible architectural/training refinements and ablations demonstrating where the improvements come from—meeting the novelty/impact bar for top-tier venues at the time."
+      },
+      "token": {
+        "prompt_tokens": 5244,
+        "completion_tokens": 103,
+        "total_tokens": 5347
+      },
+      "time": "2026-02-09T20:46:46.007531+00:00"
     }
   ],
   "test": false

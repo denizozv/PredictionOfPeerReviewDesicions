@@ -165,6 +165,20 @@
         "total_tokens": 6691
       },
       "time": "2026-02-08T22:10:05.148694+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, clearly novel-for-its-time QA architecture (coattention encoder + iterative pointer decoder) with convincing SQuAD gains over prior SOTA, plus meaningful ablations and analysis showing the value of coattention and multi-iteration decoding; overall contribution and empirical validation meet top-tier conference standards."
+      },
+      "token": {
+        "prompt_tokens": 8513,
+        "completion_tokens": 86,
+        "total_tokens": 8599
+      },
+      "time": "2026-02-09T20:13:48.260496+00:00"
     }
   ],
   "test": false

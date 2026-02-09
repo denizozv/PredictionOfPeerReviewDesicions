@@ -175,6 +175,20 @@
         "total_tokens": 8819
       },
       "time": "2026-02-08T22:10:23.548099+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Introduces a novel unsupervised, layered-and-recursive GAN generator that explicitly factorizes foreground appearance/mask/pose and composes scenes via spatial transformers, with convincing qualitative results, human studies, and ablations showing the value of masks and transformations; while evaluation metrics are somewhat ad-hoc and gains are mostly over DCGAN-era baselines, the architectural idea and demonstrated emergent decomposition are strong enough for acceptance at the time."
+      },
+      "token": {
+        "prompt_tokens": 10373,
+        "completion_tokens": 114,
+        "total_tokens": 10487
+      },
+      "time": "2026-02-09T20:14:46.558151+00:00"
     }
   ],
   "test": false

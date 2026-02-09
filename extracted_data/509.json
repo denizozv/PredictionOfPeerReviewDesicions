@@ -125,6 +125,20 @@
         "total_tokens": 7120
       },
       "time": "2026-02-08T22:24:11.703109+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, original neuro-symbolic contribution: a fully differentiable Forth interpreter enabling program sketches with learnable slots, plus convincing algorithmic transduction results (sorting/addition) showing large data-efficiency and length generalization gains over seq2seq, and practical execution-speed optimizations; while evaluation is somewhat narrow and comparisons could be broader, the methodological novelty and empirical evidence are above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8917,
+        "completion_tokens": 115,
+        "total_tokens": 9032
+      },
+      "time": "2026-02-09T20:25:56.371666+00:00"
     }
   ],
   "test": false

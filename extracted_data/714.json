@@ -120,6 +120,20 @@
         "total_tokens": 3263
       },
       "time": "2026-02-08T22:44:14.486146+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a reimplementation/straightforward extension of Jonschkowski & Brock (2015) with limited novelty and weak top-tier evidence: evaluation is on a single simple simulated Baxter head-joint task (1D factor), uses correlation to ground truth rather than downstream control/RL, has minimal baseline coverage/ablations (e.g., prior weights, representation dimension, generalization across environments/robots), and the empirical claims (robustness via deeper CNN + augmentation) are incremental and not convincingly positioned against stronger modern self-supervised/state-representation methods."
+      },
+      "token": {
+        "prompt_tokens": 5362,
+        "completion_tokens": 141,
+        "total_tokens": 5503
+      },
+      "time": "2026-02-09T20:47:25.923485+00:00"
     }
   ],
   "test": false

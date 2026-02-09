@@ -105,6 +105,20 @@
         "total_tokens": 4872
       },
       "time": "2026-02-08T22:30:20.829469+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "A reasonably novel and well-motivated meta-framework that unifies generative and discriminative boosting for density estimation, with clear KL-improvement conditions and empirical evidence across synthetic density estimation, MNIST sample quality, and semi-supervised features; while some aspects (heuristic weight choice, reliance on MCMC/normalization, and limited modern baselines/metrics) weaken the case, the combination of theory + generality + demonstrated gains is likely above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6745,
+        "completion_tokens": 129,
+        "total_tokens": 6874
+      },
+      "time": "2026-02-09T20:32:22.830422+00:00"
     }
   ],
   "test": false

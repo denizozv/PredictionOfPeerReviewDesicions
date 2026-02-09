@@ -100,6 +100,20 @@
         "total_tokens": 5224
       },
       "time": "2026-02-08T22:22:22.991252+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.74,
+        "primary_reason": "Strong, well-motivated adaptation of (virtual) adversarial training to discrete text by perturbing embeddings (solving the sparsity/one-hot issue), with solid empirical results across multiple benchmarks (semi-supervised + supervised), reasonable controls (random perturbations), and some analysis/visualization; contribution is incremental relative to VAT but practically impactful and convincingly validated for NLP."
+      },
+      "token": {
+        "prompt_tokens": 7012,
+        "completion_tokens": 103,
+        "total_tokens": 7115
+      },
+      "time": "2026-02-09T20:24:25.297352+00:00"
     }
   ],
   "test": false

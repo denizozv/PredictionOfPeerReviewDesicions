@@ -95,6 +95,20 @@
         "total_tokens": 5999
       },
       "time": "2026-02-08T22:30:19.024333+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Incremental, heavily engineered sentence-selection/concatenation approach with limited novelty (category/title-biased embeddings + biLSTM matching + attention) and weak/unclear evaluation: small curated dataset, narrow domain (Japanese love advice), metrics based on reconstructing original answers rather than open-ended generation quality, and baselines that omit strong modern seq2seq/retrieval-augmented/generative models; claims of 'generation' are essentially template/scenario-based sentence recombination, so the scientific contribution and generality are below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7776,
+        "completion_tokens": 143,
+        "total_tokens": 7919
+      },
+      "time": "2026-02-09T20:32:15.728288+00:00"
     }
   ],
   "test": false

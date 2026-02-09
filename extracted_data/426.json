@@ -120,6 +120,20 @@
         "total_tokens": 6125
       },
       "time": "2026-02-08T22:14:24.424104+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, well-motivated empirical + algorithmic contribution to offline bilingual lexicon induction: (i) clean orthogonal-Procrustes/SVD solution with a clear self-consistency argument, (ii) a practically impactful retrieval fix (inverted softmax) addressing hubness with sizable P@1 gains over Mikolov and competitive with/stronger than Dinu/CCA, and (iii) compelling weak/unsupervised signals (identical strings; aligned sentences) showing robustness and broader applicability. Main weaknesses are limited novelty of the orthogonality claim relative to contemporaneous work (Xing/Artetxe) and somewhat heuristic treatment/analysis of inverted softmax and sentence retrieval asymmetries, but overall the results and clarity are above the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 8035,
+        "completion_tokens": 190,
+        "total_tokens": 8225
+      },
+      "time": "2026-02-09T20:18:02.775057+00:00"
     }
   ],
   "test": false

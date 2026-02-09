@@ -155,6 +155,20 @@
         "total_tokens": 4946
       },
       "time": "2026-02-08T22:17:05.407601+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.63,
+        "primary_reason": "Presents a reasonably novel, mechanistically grounded LSTM output/cell-state decomposition that yields interpretable word/phrase importance and enables automatic extraction of human-readable rules; the extracted phrase-based classifier quantitatively approximates strong LSTM baselines on sentiment and a QA setting with sensible qualitative patterns, making it a solid interpretability contribution with credible empirical validation (though somewhat limited in scope vs. broader explainability work)."
+      },
+      "token": {
+        "prompt_tokens": 6860,
+        "completion_tokens": 110,
+        "total_tokens": 6970
+      },
+      "time": "2026-02-09T20:19:55.689311+00:00"
     }
   ],
   "test": true

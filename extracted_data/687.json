@@ -215,6 +215,20 @@
         "total_tokens": 9763
       },
       "time": "2026-02-08T22:41:24.702043+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a re-derivation/empirical revisit of classic pruning ideas (OBD/OBS/Skeletonization) applied to small MLPs, with the main “result” relying on an expensive brute-force oracle and limited, non–modern evaluation (toy cosine + MNIST subsets/1–2 layer sigmoids). The proposed 2nd-order neuron-pruning criterion is not shown to be competitive or scalable, comparisons omit strong contemporary baselines (magnitude pruning, structured pruning, SNIP/GraSP, lottery ticket, modern Hessian approximations), and the central claims about representation/generalization are overstated given the narrow experimental scope and confounds (training-set error vs test, no retraining, small models). Overall novelty/impact and experimental rigor are below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 11388,
+        "completion_tokens": 195,
+        "total_tokens": 11583
+      },
+      "time": "2026-02-09T20:44:23.982529+00:00"
     }
   ],
   "test": true

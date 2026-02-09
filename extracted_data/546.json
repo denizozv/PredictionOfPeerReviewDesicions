@@ -115,6 +115,20 @@
         "total_tokens": 6461
       },
       "time": "2026-02-08T22:28:04.459427+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Introduces a clearly novel, differentiable “equation learner” architecture (explicit unary/binary operator units + sparsity) aimed at symbolic/analytic regression with extrapolation, and supports the central claim with multiple convincing extrapolation-focused experiments (physics ODEs, kinematics, synthetic formulas) and informative failure analysis when the target is out of model class; despite some weaknesses (heuristic training/selection procedure, limited baseline set vs stronger symbolic-regression methods, and local-minima sensitivity), the core idea and empirical evidence are strong enough for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 8339,
+        "completion_tokens": 146,
+        "total_tokens": 8485
+      },
+      "time": "2026-02-09T20:29:41.367861+00:00"
     }
   ],
   "test": false

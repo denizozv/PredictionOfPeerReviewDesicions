@@ -80,6 +80,20 @@
         "total_tokens": 4646
       },
       "time": "2026-02-08T22:19:15.680500+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Interesting idea (RL to induce task-specific binary composition trees for TreeLSTM/SPINN) but likely below ICML/ICLR/NeurIPS bar due to limited novelty over contemporaneous latent-tree/RL parsing work, high-variance REINFORCE training with unclear variance-reduction/optimization details, and empirical evaluation that is not convincingly state-of-the-art or deeply analyzed (small models, some inconsistent baseline behavior, and limited evidence that induced trees yield robust/generalizable gains beyond these specific setups)."
+      },
+      "token": {
+        "prompt_tokens": 6649,
+        "completion_tokens": 131,
+        "total_tokens": 6780
+      },
+      "time": "2026-02-09T20:21:57.810339+00:00"
     }
   ],
   "test": false

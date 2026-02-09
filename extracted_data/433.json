@@ -140,6 +140,20 @@
         "total_tokens": 4709
       },
       "time": "2026-02-08T22:15:08.668420+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, original and well-executed contribution introducing Real NVP (invertible affine coupling layers + multi-scale architecture) enabling exact likelihood, efficient sampling/inference, and competitive image density estimation with compelling qualitative latent-space manipulations; overall novelty/impact and experimental validation meet top-tier standards despite not clearly surpassing the best autoregressive likelihoods."
+      },
+      "token": {
+        "prompt_tokens": 6621,
+        "completion_tokens": 96,
+        "total_tokens": 6717
+      },
+      "time": "2026-02-09T20:18:38.266859+00:00"
     }
   ],
   "test": false

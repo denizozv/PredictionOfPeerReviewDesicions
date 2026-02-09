@@ -140,6 +140,20 @@
         "total_tokens": 7245
       },
       "time": "2026-02-08T22:02:39.332938+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.74,
+        "primary_reason": "Strong, timely empirical contribution: introduces a clear goal-oriented dialog testbed (synthetic + DSTC2 + real concierge) that isolates key capabilities (state tracking, KB/API interaction, OOV entities) and provides solid baselines/analysis showing where end-to-end MemNets succeed/fail; while the modeling is not highly novel and the synthetic setting is limited, the benchmark + insights are impactful and likely meet top-tier acceptance standards."
+      },
+      "token": {
+        "prompt_tokens": 9046,
+        "completion_tokens": 115,
+        "total_tokens": 9161
+      },
+      "time": "2026-02-09T20:06:54.273415+00:00"
     }
   ],
   "test": false

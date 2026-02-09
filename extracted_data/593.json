@@ -90,6 +90,20 @@
         "total_tokens": 5701
       },
       "time": "2026-02-08T22:32:19.037778+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "Presents a reasonably novel and useful semi-supervised VAE formulation that supports structured (directed) graphical-model encoders with mixed discrete/continuous latents, plus an implementation framework and empirical evidence of improved disentanglement with few labels; while some pieces are incremental relative to prior semi-supervised VAEs/structured inference and the evaluation is partly qualitative with approximations (e.g., plug-in for discrete), the overall methodological package and experiments are likely above the bar for a top-tier ML venue."
+      },
+      "token": {
+        "prompt_tokens": 7488,
+        "completion_tokens": 127,
+        "total_tokens": 7615
+      },
+      "time": "2026-02-09T20:34:37.064269+00:00"
     }
   ],
   "test": false

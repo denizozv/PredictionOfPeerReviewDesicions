@@ -125,6 +125,20 @@
         "total_tokens": 5707
       },
       "time": "2026-02-08T22:35:09.930551+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting unification of frames/steerability with dynamic filtering, but the core contributions feel under-validated for ICML/ICLR/NeurIPS: key empirical claims rely on CIFAR-10+ and two largely synthetic/small-scale demos (infinite blob edge dataset; small hand-gesture set) with limited comparison to strong modern baselines (e.g., group-equivariant/steerable CNNs, deformable convs, modern STN variants) and unclear fairness/ablation; the theoretical development is mostly a repackaging of known steerability/Lie algebra machinery without a crisp new guarantee, and reported gains (including very large % improvements) are not convincingly substantiated or positioned."
+      },
+      "token": {
+        "prompt_tokens": 7521,
+        "completion_tokens": 171,
+        "total_tokens": 7692
+      },
+      "time": "2026-02-09T20:37:35.860959+00:00"
     }
   ],
   "test": false

@@ -160,6 +160,20 @@
         "total_tokens": 6100
       },
       "time": "2026-02-08T22:22:27.201116+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, well-motivated architectural contribution (pointer+softmax mixture with an integrated sentinel gate) that directly addresses rare/OOV prediction and long-context reuse, with clear formulation, modest parameter overhead, and convincing empirical gains (SOTA PTB with fewer parameters) plus a high-impact community contribution in releasing the WikiText benchmarks; overall novelty/impact and evidence meet the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7991,
+        "completion_tokens": 112,
+        "total_tokens": 8103
+      },
+      "time": "2026-02-09T20:24:39.192669+00:00"
     }
   ],
   "test": false

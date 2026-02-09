@@ -65,6 +65,20 @@
         "total_tokens": 2567
       },
       "time": "2026-02-08T22:27:06.793610+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental hierarchical attention over CNN layers for video captioning with limited novelty and insufficiently convincing experimental evidence/analysis (unclear strength of baselines, missing ablations isolating layer-vs-spatiotemporal attention and alignment choices, and modest/benchmark-specific gains), making it unlikely to clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 4651,
+        "completion_tokens": 98,
+        "total_tokens": 4749
+      },
+      "time": "2026-02-09T20:28:38.365874+00:00"
     }
   ],
   "test": false

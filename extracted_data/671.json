@@ -90,6 +90,20 @@
         "total_tokens": 5109
       },
       "time": "2026-02-08T22:40:10.803655+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, general transition-based framework (TBRU/DRAGNN) that unifies and extends multiple neural architectures with dynamic, state-dependent connectivity, and is validated with convincing empirical gains (incl. SOTA dependency parsing and improved multi-task summarization) plus meaningful ablations showing the value of explicit structure and subtree-linked recurrences."
+      },
+      "token": {
+        "prompt_tokens": 6971,
+        "completion_tokens": 94,
+        "total_tokens": 7065
+      },
+      "time": "2026-02-09T20:42:57.863048+00:00"
     }
   ],
   "test": false

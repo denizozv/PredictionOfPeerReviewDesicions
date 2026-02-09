@@ -80,6 +80,20 @@
         "total_tokens": 8502
       },
       "time": "2026-02-08T22:14:31.353480+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Interesting latent segmentation idea, but the training/inference is heuristic (biased left-to-right sampling with ε-greedy) and the empirical validation is too narrow/under-controlled (mainly WSJ, modest gains vs a character baseline, limited comparisons to strong subword/wordpiece baselines and alternative marginalization methods), so the contribution and rigor likely fall below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 10304,
+        "completion_tokens": 110,
+        "total_tokens": 10414
+      },
+      "time": "2026-02-09T20:18:17.026502+00:00"
     }
   ],
   "test": false

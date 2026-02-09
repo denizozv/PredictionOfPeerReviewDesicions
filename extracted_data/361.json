@@ -130,6 +130,20 @@
         "total_tokens": 6130
       },
       "time": "2026-02-08T22:07:15.062539+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid, well-motivated probabilistic learning-curve model using BNNs with a principled inductive-bias layer (parametric basis-function head + heteroscedastic noise), evaluated on multiple benchmarks with strong baselines (GP Freeze-Thaw kernel, RF, PBP, LCExtrapolation) and both predictive (MSE/log-lik) and downstream HPO impact (model-based Hyperband). While not a major conceptual breakthrough and some results rely on surrogate benchmarks, the combination of methodological clarity, uncertainty evaluation, and demonstrated practical benefit is above the typical ICML/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 7925,
+        "completion_tokens": 150,
+        "total_tokens": 8075
+      },
+      "time": "2026-02-09T20:11:30.604276+00:00"
     }
   ],
   "test": false

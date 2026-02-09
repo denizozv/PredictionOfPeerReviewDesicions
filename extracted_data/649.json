@@ -40,6 +40,20 @@
         "total_tokens": 607
       },
       "time": "2026-02-08T22:38:17.341255+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a broad empirical comparison of existing context definitions/representations for word embeddings; while potentially useful as a survey/benchmark, the abstract does not indicate a clear new method or strong, surprising finding, and such “systematic investigation + guidelines” papers typically need exceptionally rigorous methodology, novel insight, and definitive conclusions to clear the ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 2903,
+        "completion_tokens": 104,
+        "total_tokens": 3007
+      },
+      "time": "2026-02-09T20:40:48.406669+00:00"
     }
   ],
   "test": false

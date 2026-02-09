@@ -80,6 +80,20 @@
         "total_tokens": 4715
       },
       "time": "2026-02-08T22:27:09.751217+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the results are theoretically interesting (noise-stable Boolean functions/halfspaces approximable by small depth-2 threshold circuits and learnable via junta reduction + Chow-parameter methods), the contribution appears largely to be a synthesis of known ingredients (Bourgain junta theorem and its refinements, Goldmann et al. size–weight tradeoffs, De et al. Chow-parameter learning) with limited novelty and unclear sharpness/impact; moreover the learning guarantee is quite weak/complex (brute-force over k-subsets, large n^k factor, approximation degrading to exp(-poly(1/ε))) and the scope is restricted to uniform distribution/noise-stability assumptions, making it unlikely to clear the ICML/ICLR/NeurIPS bar without stronger new techniques, tighter bounds, or broader learning implications."
+      },
+      "token": {
+        "prompt_tokens": 6720,
+        "completion_tokens": 193,
+        "total_tokens": 6913
+      },
+      "time": "2026-02-09T20:28:47.343818+00:00"
     }
   ],
   "test": false

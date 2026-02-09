@@ -120,6 +120,20 @@
         "total_tokens": 13762
       },
       "time": "2026-02-08T22:04:18.280756+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting idea (grow/prune via group sparsity with a soundness theorem) but the empirical evidence is too weak and dated for ICML/ICLR/NeurIPS: experiments are limited to small MLP benchmarks (MNIST + synthetic rectangles/convex + one tabular dataset), comparisons rely on extensive tuning and manual representative selection, and there is no evaluation on modern architectures/tasks (CNNs/ResNets/Transformers) or against strong baselines for dynamic capacity/pruning/architecture search; the new optimizer (AdaRad) and CapNorm add complexity without clearly demonstrated, broadly compelling gains."
+      },
+      "token": {
+        "prompt_tokens": 14792,
+        "completion_tokens": 150,
+        "total_tokens": 14942
+      },
+      "time": "2026-02-09T20:08:25.910925+00:00"
     }
   ],
   "test": false

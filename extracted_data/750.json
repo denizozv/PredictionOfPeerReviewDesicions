@@ -110,6 +110,20 @@
         "total_tokens": 6505
       },
       "time": "2026-02-08T22:47:15.551054+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an incremental analysis/regularization paper with limited novelty and weakly substantiated claims: the key contribution (feature L2 penalty/gradient penalty ≈ centering/whitening and links to BN/MAP) is largely known or straightforward, the theoretical results are informal and in places questionable (e.g., broad generalization of Lemma 1 to deep CNNs/ReLU/max-pool), and the empirical evaluation is not at current top-tier standard (few strong low-shot baselines beyond older SGM/Matching Nets, unclear protocol details and statistical rigor, and modest gains)."
+      },
+      "token": {
+        "prompt_tokens": 8121,
+        "completion_tokens": 146,
+        "total_tokens": 8267
+      },
+      "time": "2026-02-09T20:50:49.095281+00:00"
     }
   ],
   "test": false

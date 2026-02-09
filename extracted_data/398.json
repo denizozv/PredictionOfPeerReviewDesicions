@@ -65,6 +65,20 @@
         "total_tokens": 5745
       },
       "time": "2026-02-08T22:11:06.847270+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Interesting dynamical-systems perspective and a provably contractive/“chaos-free” gated RNN, but the core modeling contribution is modest and the empirical evidence is not strong enough for ICML/ICLR/NeurIPS: results are limited to word-level LM on PTB/Text8 with older training recipes, no convincing advantage over LSTM/GRU beyond comparable perplexity, and the chaos analysis (induced zero-input dynamics) is arguably not well-aligned with practical operating conditions where inputs dominate; overall impact/positioning vs existing stability/contractive RNN work and modern baselines is insufficient."
+      },
+      "token": {
+        "prompt_tokens": 7590,
+        "completion_tokens": 152,
+        "total_tokens": 7742
+      },
+      "time": "2026-02-09T20:15:01.042418+00:00"
     }
   ],
   "test": true

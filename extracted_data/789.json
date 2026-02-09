@@ -130,6 +130,20 @@
         "total_tokens": 5073
       },
       "time": "2026-02-08T22:50:16.675463+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "The core idea—sampling by iterating decode→encode to target the aggregated posterior/learned latent distribution—largely repackages known MCMC/DAE-style Markov chain sampling for autoencoders, and the paper’s theoretical claims (ergodicity/positivity, stationary distribution) are not convincingly justified for realistic neural decoders/encoders; empirically it relies mostly on qualitative CelebA/SVHN samples with confounded choices (e.g., using batch-norm in training mode during sampling) and lacks rigorous quantitative evaluation and strong baselines, so the novelty and evidence are below ICML/ICLR/NeurIPS bar."
+      },
+      "token": {
+        "prompt_tokens": 6844,
+        "completion_tokens": 161,
+        "total_tokens": 7005
+      },
+      "time": "2026-02-09T20:54:12.522685+00:00"
     }
   ],
   "test": false
