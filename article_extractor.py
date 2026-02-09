@@ -60,21 +60,22 @@ class ArticleExtractor:
 
     def enrich(self, records: list[tuple[str, dict]]) -> None:
         """Add article sections to existing extracted records and update the JSON files.
-        If the file already exists, preserves the existing zeroShot data."""
+        If the file already exists, only updates the article field and preserves everything else as-is."""
         enriched_count = 0
 
         for filename, record in records:
             parsed_pdf_path = self._get_parsed_pdf_path(filename)
             sections = self._extract_sections(parsed_pdf_path)
-            record["article"] = sections
 
             output_path = os.path.join(self.output_dir, filename)
 
-            # Preserve existing zeroShot data if the file already exists
             if os.path.exists(output_path):
                 with open(output_path, "r", encoding="utf-8") as f:
                     existing = json.load(f)
-                record["zeroShot"] = existing.get("zeroShot", [])
+                existing["article"] = sections
+                record = existing
+            else:
+                record["article"] = sections
 
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(record, f, indent=2, ensure_ascii=False)

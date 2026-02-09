@@ -1,0 +1,346 @@
+{
+  "summary": {
+    "total_files": 387,
+    "train_files": 349,
+    "test_files": 38,
+    "ground_truth": {
+      "all": {
+        "total": 387,
+        "accepted": 154,
+        "rejected": 233,
+        "acceptance_rate": 0.3979
+      },
+      "train": {
+        "total": 349,
+        "accepted": 139,
+        "rejected": 210,
+        "acceptance_rate": 0.3983
+      },
+      "test": {
+        "total": 38,
+        "accepted": 15,
+        "rejected": 23,
+        "acceptance_rate": 0.3947
+      }
+    },
+    "approaches_found": [
+      "fewShot",
+      "zeroShot"
+    ],
+    "total_model_approach_combinations": 2
+  },
+  "per_model_approach": [
+    {
+      "approach": "fewShot",
+      "model": "claude-haiku-4-5",
+      "all": {
+        "total_classified": 387,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 2450943,
+          "total_completion_tokens": 36844,
+          "total_tokens": 2487787,
+          "avg_prompt_tokens": 6333.186,
+          "avg_completion_tokens": 95.2041,
+          "avg_total_tokens": 6428.3902,
+          "min_total_tokens": 607,
+          "max_total_tokens": 17552
+        },
+        "confusion_matrix": {
+          "TP": 144,
+          "TN": 89,
+          "FP": 144,
+          "FN": 10,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.6021,
+          "precision": 0.5,
+          "recall": 0.9351,
+          "f1_score": 0.6516,
+          "specificity": 0.382,
+          "mcc": 0.3557
+        },
+        "confidence_stats": {
+          "mean": 0.8125,
+          "min": 0.72,
+          "max": 0.98,
+          "std": 0.0805
+        },
+        "prediction_distribution": {
+          "predicted_reject": 99,
+          "predicted_accept": 288,
+          "rejection_rate": 0.2558
+        },
+        "time": {
+          "first_timestamp": "2026-02-08T22:02:32.675142+00:00",
+          "last_timestamp": "2026-02-08T22:51:09.548622+00:00",
+          "total_elapsed_seconds": 2916.87,
+          "total_elapsed_formatted": "48m 37s",
+          "avg_seconds_per_file": 7.56
+        }
+      },
+      "train": {
+        "total_classified": 349,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 2209845,
+          "total_completion_tokens": 33044,
+          "total_tokens": 2242889,
+          "avg_prompt_tokens": 6331.9341,
+          "avg_completion_tokens": 94.6819,
+          "avg_total_tokens": 6426.616,
+          "min_total_tokens": 607,
+          "max_total_tokens": 17552
+        },
+        "confusion_matrix": {
+          "TP": 129,
+          "TN": 74,
+          "FP": 136,
+          "FN": 10,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.5817,
+          "precision": 0.4868,
+          "recall": 0.9281,
+          "f1_score": 0.6386,
+          "specificity": 0.3524,
+          "mcc": 0.3211
+        },
+        "confidence_stats": {
+          "mean": 0.8134,
+          "min": 0.72,
+          "max": 0.98,
+          "std": 0.081
+        },
+        "prediction_distribution": {
+          "predicted_reject": 84,
+          "predicted_accept": 265,
+          "rejection_rate": 0.2407
+        }
+      },
+      "test": {
+        "total_classified": 38,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 241098,
+          "total_completion_tokens": 3800,
+          "total_tokens": 244898,
+          "avg_prompt_tokens": 6344.6842,
+          "avg_completion_tokens": 100.0,
+          "avg_total_tokens": 6444.6842,
+          "min_total_tokens": 2813,
+          "max_total_tokens": 13663
+        },
+        "confusion_matrix": {
+          "TP": 15,
+          "TN": 15,
+          "FP": 8,
+          "FN": 0,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.7895,
+          "precision": 0.6522,
+          "recall": 1.0,
+          "f1_score": 0.7895,
+          "specificity": 0.6522,
+          "mcc": 0.6522
+        },
+        "confidence_stats": {
+          "mean": 0.8039,
+          "min": 0.72,
+          "max": 0.98,
+          "std": 0.0761
+        },
+        "prediction_distribution": {
+          "predicted_reject": 15,
+          "predicted_accept": 23,
+          "rejection_rate": 0.3947
+        }
+      }
+    },
+    {
+      "approach": "zeroShot",
+      "model": "claude-haiku-4-5",
+      "all": {
+        "total_classified": 387,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 2388249,
+          "total_completion_tokens": 39861,
+          "total_tokens": 2428110,
+          "avg_prompt_tokens": 6171.186,
+          "avg_completion_tokens": 103.0,
+          "avg_total_tokens": 6274.186,
+          "min_total_tokens": 471,
+          "max_total_tokens": 17390
+        },
+        "confusion_matrix": {
+          "TP": 140,
+          "TN": 101,
+          "FP": 132,
+          "FN": 14,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.6227,
+          "precision": 0.5147,
+          "recall": 0.9091,
+          "f1_score": 0.6573,
+          "specificity": 0.4335,
+          "mcc": 0.3669
+        },
+        "confidence_stats": {
+          "mean": 0.8044,
+          "min": 0.72,
+          "max": 0.98,
+          "std": 0.0816
+        },
+        "prediction_distribution": {
+          "predicted_reject": 115,
+          "predicted_accept": 272,
+          "rejection_rate": 0.2972
+        },
+        "time": {
+          "first_timestamp": "2026-02-05T22:33:02.355786+00:00",
+          "last_timestamp": "2026-02-05T23:20:14.706717+00:00",
+          "total_elapsed_seconds": 2832.35,
+          "total_elapsed_formatted": "47m 12s",
+          "avg_seconds_per_file": 7.34
+        }
+      },
+      "train": {
+        "total_classified": 349,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 2153307,
+          "total_completion_tokens": 36105,
+          "total_tokens": 2189412,
+          "avg_prompt_tokens": 6169.9341,
+          "avg_completion_tokens": 103.4527,
+          "avg_total_tokens": 6273.3868,
+          "min_total_tokens": 471,
+          "max_total_tokens": 17390
+        },
+        "confusion_matrix": {
+          "TP": 126,
+          "TN": 89,
+          "FP": 121,
+          "FN": 13,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.616,
+          "precision": 0.5101,
+          "recall": 0.9065,
+          "f1_score": 0.6528,
+          "specificity": 0.4238,
+          "mcc": 0.3555
+        },
+        "confidence_stats": {
+          "mean": 0.8064,
+          "min": 0.72,
+          "max": 0.98,
+          "std": 0.0815
+        },
+        "prediction_distribution": {
+          "predicted_reject": 102,
+          "predicted_accept": 247,
+          "rejection_rate": 0.2923
+        }
+      },
+      "test": {
+        "total_classified": 38,
+        "skipped_invalid": 0,
+        "tokens": {
+          "total_prompt_tokens": 234942,
+          "total_completion_tokens": 3756,
+          "total_tokens": 238698,
+          "avg_prompt_tokens": 6182.6842,
+          "avg_completion_tokens": 98.8421,
+          "avg_total_tokens": 6281.5263,
+          "min_total_tokens": 2657,
+          "max_total_tokens": 13495
+        },
+        "confusion_matrix": {
+          "TP": 14,
+          "TN": 12,
+          "FP": 11,
+          "FN": 1,
+          "note": "Pozitif sinif = Acceptance (accepted=True)"
+        },
+        "classification_metrics": {
+          "accuracy": 0.6842,
+          "precision": 0.56,
+          "recall": 0.9333,
+          "f1_score": 0.7,
+          "specificity": 0.5217,
+          "mcc": 0.4689
+        },
+        "confidence_stats": {
+          "mean": 0.7861,
+          "min": 0.72,
+          "max": 0.98,
+          "std": 0.081
+        },
+        "prediction_distribution": {
+          "predicted_reject": 13,
+          "predicted_accept": 25,
+          "rejection_rate": 0.3421
+        }
+      }
+    }
+  ],
+  "cross_comparison": [
+    {
+      "model": "claude-haiku-4-5",
+      "all": {
+        "zeroShot_accuracy": 0.6227,
+        "fewShot_accuracy": 0.6021,
+        "accuracy_diff": -0.0206,
+        "zeroShot_f1": 0.6573,
+        "fewShot_f1": 0.6516,
+        "f1_diff": -0.0057,
+        "zeroShot_precision": 0.5147,
+        "fewShot_precision": 0.5,
+        "zeroShot_recall": 0.9091,
+        "fewShot_recall": 0.9351,
+        "zeroShot_total_tokens": 2428110,
+        "fewShot_total_tokens": 2487787,
+        "token_overhead_pct": 2.46
+      },
+      "train": {
+        "zeroShot_accuracy": 0.616,
+        "fewShot_accuracy": 0.5817,
+        "accuracy_diff": -0.0343,
+        "zeroShot_f1": 0.6528,
+        "fewShot_f1": 0.6386,
+        "f1_diff": -0.0142,
+        "zeroShot_precision": 0.5101,
+        "fewShot_precision": 0.4868,
+        "zeroShot_recall": 0.9065,
+        "fewShot_recall": 0.9281,
+        "zeroShot_total_tokens": 2189412,
+        "fewShot_total_tokens": 2242889,
+        "token_overhead_pct": 2.44
+      },
+      "test": {
+        "zeroShot_accuracy": 0.6842,
+        "fewShot_accuracy": 0.7895,
+        "accuracy_diff": 0.1053,
+        "zeroShot_f1": 0.7,
+        "fewShot_f1": 0.7895,
+        "f1_diff": 0.0895,
+        "zeroShot_precision": 0.56,
+        "fewShot_precision": 0.6522,
+        "zeroShot_recall": 0.9333,
+        "fewShot_recall": 1.0,
+        "zeroShot_total_tokens": 238698,
+        "fewShot_total_tokens": 244898,
+        "token_overhead_pct": 2.6
+      }
+    }
+  ]
+}

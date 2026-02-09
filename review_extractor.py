@@ -6,9 +6,10 @@ import glob
 class ReviewExtractor:
     """Extracts id, title and abstract from PeerRead review JSON files."""
 
-    def __init__(self, reviews_dir: str, output_dir: str = "extracted_data"):
+    def __init__(self, reviews_dir: str, output_dir: str = "extracted_data", test: bool = False):
         self.reviews_dir = reviews_dir
         self.output_dir = output_dir
+        self.test = test
 
     def get_review_files(self) -> list[str]:
         """Return a list of all .json file paths in the reviews directory."""
@@ -32,7 +33,7 @@ class ReviewExtractor:
                 "title": data.get("title", ""),
                 "abstract": data.get("abstract", ""),
                 "accepted": data.get("accepted", ""),
-                "zeroShot": [],
+                "test": self.test,
             }
             extracted.append((filename, record))
 
@@ -41,7 +42,8 @@ class ReviewExtractor:
 
     def save(self) -> list[tuple[str, dict]]:
         """Extract and save each record as a separate JSON file. Returns the records.
-        If the file already exists, preserves the existing zeroShot data."""
+        If the file already exists, only updates base fields (id, title, abstract, accepted)
+        and preserves everything else (zeroShot, fewShot, article, etc.) as-is."""
         os.makedirs(self.output_dir, exist_ok=True)
 
         records = self.extract()
@@ -49,11 +51,16 @@ class ReviewExtractor:
         for filename, record in records:
             output_path = os.path.join(self.output_dir, filename)
 
-            # Preserve existing zeroShot data if the file already exists
             if os.path.exists(output_path):
                 with open(output_path, "r", encoding="utf-8") as f:
                     existing = json.load(f)
-                record["zeroShot"] = existing.get("zeroShot", [])
+                # Only update base fields, keep the rest untouched
+                existing["id"] = record["id"]
+                existing["title"] = record["title"]
+                existing["abstract"] = record["abstract"]
+                existing["accepted"] = record["accepted"]
+                existing["test"] = record["test"]
+                record = existing
 
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(record, f, indent=2, ensure_ascii=False)
