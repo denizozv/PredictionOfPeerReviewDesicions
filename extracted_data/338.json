@@ -17,6 +17,20 @@
         "total_tokens": 7703
       },
       "time": "2026-02-05T22:36:14.716527+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and methodological/empirical rigor for a top-tier venue: the paper is largely a conceptual reinterpretation of ResNets/Highway nets with heuristic derivations (e.g., unbiased/zero-mean residual assumptions) and limited, non-decisive experiments that do not establish new capabilities or strong, general evidence."
+      },
+      "token": {
+        "prompt_tokens": 6915,
+        "completion_tokens": 86,
+        "total_tokens": 7001
+      },
+      "time": "2026-02-09T21:09:45.363281+00:00"
     }
   ],
   "article": [

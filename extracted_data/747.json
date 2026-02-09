@@ -17,6 +17,20 @@
         "total_tokens": 9845
       },
       "time": "2026-02-05T23:16:23.145752+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient experimental rigor/novelty for a top-tier ML venue: largely a repackaging of path-integrated gradients with limited baselines and small, mostly qualitative evaluations."
+      },
+      "token": {
+        "prompt_tokens": 8926,
+        "completion_tokens": 55,
+        "total_tokens": 8981
+      },
+      "time": "2026-02-09T21:45:23.310584+00:00"
     }
   ],
   "article": [

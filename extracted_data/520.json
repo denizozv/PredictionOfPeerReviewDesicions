@@ -17,6 +17,20 @@
         "total_tokens": 4210
       },
       "time": "2026-02-05T22:55:13.900813+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental PixelCNN conditioning with limited empirical validation (32x32 only, mostly qualitative, weak comparisons/metrics) and lacks novelty for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 3739,
+        "completion_tokens": 50,
+        "total_tokens": 3789
+      },
+      "time": "2026-02-09T21:25:33.793576+00:00"
     }
   ],
   "article": [

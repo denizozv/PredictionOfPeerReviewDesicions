@@ -17,6 +17,20 @@
         "total_tokens": 3003
       },
       "time": "2026-02-05T23:09:14.180534+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a dataset release with limited methodological novelty and insufficient, non-final experimental validation for top-tier conference standards"
+      },
+      "token": {
+        "prompt_tokens": 2624,
+        "completion_tokens": 40,
+        "total_tokens": 2664
+      },
+      "time": "2026-02-09T21:38:33.397006+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5985
       },
       "time": "2026-02-05T22:45:10.950463+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated contribution with limited experimental breadth; orthogonality and SVD Procrustes alignment were already known, and results are on a single language pair/dataset with modest gains and incomplete methodological justification (e.g., inverted softmax, pseudo-dictionary setup)."
+      },
+      "token": {
+        "prompt_tokens": 5401,
+        "completion_tokens": 73,
+        "total_tokens": 5474
+      },
+      "time": "2026-02-09T21:17:04.545929+00:00"
     }
   ],
   "article": [

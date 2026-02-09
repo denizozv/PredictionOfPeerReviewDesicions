@@ -17,6 +17,20 @@
         "total_tokens": 5470
       },
       "time": "2026-02-05T22:48:17.288325+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant, and original energy-based reinterpretation of GANs with theoretical equilibrium analysis and multi-dataset experiments showing improved training stability and high-resolution generation; evidence is reasonably broad though some evaluations rely on qualitative results and limited quantitative metrics beyond MNIST."
+      },
+      "token": {
+        "prompt_tokens": 4775,
+        "completion_tokens": 69,
+        "total_tokens": 4844
+      },
+      "time": "2026-02-09T21:19:55.822497+00:00"
     }
   ],
   "article": [

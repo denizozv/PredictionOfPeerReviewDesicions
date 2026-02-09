@@ -17,6 +17,20 @@
         "total_tokens": 6522
       },
       "time": "2026-02-05T23:10:09.351239+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Limited novelty and methodological/experimental weaknesses relative to top-tier standards (independence assumption, ad-hoc missing-modality handling, and evaluation largely on MNIST/CelebA with likelihood estimates and VAE-GAN mixing without strong ablations or broader benchmarks)."
+      },
+      "token": {
+        "prompt_tokens": 5517,
+        "completion_tokens": 72,
+        "total_tokens": 5589
+      },
+      "time": "2026-02-09T21:39:15.307303+00:00"
     }
   ],
   "article": [

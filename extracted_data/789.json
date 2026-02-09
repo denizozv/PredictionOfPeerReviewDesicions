@@ -17,6 +17,20 @@
         "total_tokens": 4903
       },
       "time": "2026-02-05T23:20:07.330347+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological issues and limited evidence: the Markov-chain convergence/stationary-distribution claims are not rigorously justified for learned encoder/decoder (positivity/ergodicity assumptions unrealistic; stationary distribution argument is incorrect), and experiments are largely qualitative on limited datasets without strong quantitative evaluation."
+      },
+      "token": {
+        "prompt_tokens": 4210,
+        "completion_tokens": 76,
+        "total_tokens": 4286
+      },
+      "time": "2026-02-09T21:48:35.048615+00:00"
     }
   ],
   "article": [

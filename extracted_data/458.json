@@ -17,6 +17,20 @@
         "total_tokens": 10059
       },
       "time": "2026-02-05T22:49:03.380154+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant and original optimization method with solid empirical results; minor concerns are heavy hyperparameter tuning/compute overhead and theory relying on unrealistic Hessian assumptions."
+      },
+      "token": {
+        "prompt_tokens": 8937,
+        "completion_tokens": 50,
+        "total_tokens": 8987
+      },
+      "time": "2026-02-09T21:20:16.615524+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 8418
       },
       "time": "2026-02-05T22:54:21.315217+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/theoretical and empirical evidence are not strong enough for a top-tier venue: the stability-based generalization analysis relies on very strong/unclear assumptions (smooth loss/activations, max-norm constraints, boundedness/rescaling) and yields vacuous constants, while experiments are limited to MNIST/CIFAR-10 with modest baselines and insufficient ablations/modern comparisons to substantiate the claimed gains and robustness."
+      },
+      "token": {
+        "prompt_tokens": 7525,
+        "completion_tokens": 105,
+        "total_tokens": 7630
+      },
+      "time": "2026-02-09T21:24:55.048926+00:00"
     }
   ],
   "article": [

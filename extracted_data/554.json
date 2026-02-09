@@ -17,6 +17,20 @@
         "total_tokens": 4839
       },
       "time": "2026-02-05T22:58:23.002052+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient experimental evidence and methodological rigor for a top-tier venue (only 2 games, limited ablations/seeds, unclear statistical reliability and novelty over prior DRQN/n-step/trace-style targets)."
+      },
+      "token": {
+        "prompt_tokens": 4290,
+        "completion_tokens": 59,
+        "total_tokens": 4349
+      },
+      "time": "2026-02-09T21:28:38.671944+00:00"
     }
   ],
   "article": [

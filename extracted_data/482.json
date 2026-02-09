@@ -17,6 +17,20 @@
         "total_tokens": 4374
       },
       "time": "2026-02-05T22:52:13.633592+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and novelty for a top-tier ML venue: limited baselines/ablations and unclear handling of temporal labeling/noise; results are plausible but not convincingly attributable to the proposed RNN approach beyond standard practice."
+      },
+      "token": {
+        "prompt_tokens": 3911,
+        "completion_tokens": 65,
+        "total_tokens": 3976
+      },
+      "time": "2026-02-09T21:22:41.812087+00:00"
     }
   ],
   "article": [

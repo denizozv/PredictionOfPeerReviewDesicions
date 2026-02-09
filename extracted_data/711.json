@@ -17,6 +17,20 @@
         "total_tokens": 5282
       },
       "time": "2026-02-05T23:13:22.764873+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient experimental evidence for a top-tier venue (no blind test-set results / limited benchmarking), despite being on-scope and methodologically reasonable with a moderately novel span-scoring architecture."
+      },
+      "token": {
+        "prompt_tokens": 4712,
+        "completion_tokens": 56,
+        "total_tokens": 4768
+      },
+      "time": "2026-02-09T21:42:34.518909+00:00"
     }
   ],
   "article": [

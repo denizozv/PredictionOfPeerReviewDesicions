@@ -17,6 +17,20 @@
         "total_tokens": 4973
       },
       "time": "2026-02-05T23:02:06.716279+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/experimental weaknesses: the proposed layer-merging largely removes/approximates normalization/pooling (often architecture- and implementation-dependent bottlenecks), with limited theoretical justification and incomplete, potentially biased evaluation (best-of-10 latency reporting, unclear reproducibility/controls, limited modern baselines and ablations), making the claimed 3–5× speedups hard to attribute to a generally sound, novel technique for top-tier ML venues."
+      },
+      "token": {
+        "prompt_tokens": 4230,
+        "completion_tokens": 108,
+        "total_tokens": 4338
+      },
+      "time": "2026-02-09T21:31:26.761981+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 3164
       },
       "time": "2026-02-05T22:59:11.908630+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, relevant, and original metric-based few-shot method with sound episodic training and convincing results on standard benchmarks (Omniglot/miniImageNet) plus a clear zero-shot extension."
+      },
+      "token": {
+        "prompt_tokens": 2730,
+        "completion_tokens": 58,
+        "total_tokens": 2788
+      },
+      "time": "2026-02-09T21:29:02.284141+00:00"
     }
   ],
   "article": [

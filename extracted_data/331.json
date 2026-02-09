@@ -17,6 +17,20 @@
         "total_tokens": 6775
       },
       "time": "2026-02-05T22:35:11.663653+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental evidence and methodological rigor for top-tier: only a few simulated tasks/robots, limited ablations and statistical reporting, and the core transfer signal relies on strong alignment/optimal-trajectory assumptions that are not convincingly validated."
+      },
+      "token": {
+        "prompt_tokens": 6179,
+        "completion_tokens": 66,
+        "total_tokens": 6245
+      },
+      "time": "2026-02-09T21:09:01.250451+00:00"
     }
   ],
   "article": [

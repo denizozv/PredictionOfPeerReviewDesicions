@@ -17,6 +17,20 @@
         "total_tokens": 10699
       },
       "time": "2026-02-05T23:12:06.753540+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and evidence for the central 'predication structure' claim (largely qualitative/diagnostic correlations without strong controls, ablations, or alternative explanations), with limited novelty relative to known pointer/attention interpretations; performance gains from added linguistic features are incremental and not convincingly isolated."
+      },
+      "token": {
+        "prompt_tokens": 9572,
+        "completion_tokens": 78,
+        "total_tokens": 9650
+      },
+      "time": "2026-02-09T21:41:14.769519+00:00"
     }
   ],
   "article": [

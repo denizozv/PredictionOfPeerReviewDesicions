@@ -17,6 +17,20 @@
         "total_tokens": 9242
       },
       "time": "2026-02-05T22:41:16.488606+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient novelty and experimental rigor for a top-tier 2026 conference: the core ideas (VAE+autoregressive decoder/prior, receptive-field control for information placement, AF/IAF connections) are largely incremental/previously explored, and evidence is limited to standard small benchmarks with unclear ablations and no strong downstream representation evaluation."
+      },
+      "token": {
+        "prompt_tokens": 8066,
+        "completion_tokens": 87,
+        "total_tokens": 8153
+      },
+      "time": "2026-02-09T21:14:16.652131+00:00"
     }
   ],
   "article": [

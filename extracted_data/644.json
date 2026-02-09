@@ -17,6 +17,20 @@
         "total_tokens": 6046
       },
       "time": "2026-02-05T23:07:22.247483+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant, and well-validated diverse decoding method with broad empirical support and clear novelty over standard beam search."
+      },
+      "token": {
+        "prompt_tokens": 5401,
+        "completion_tokens": 42,
+        "total_tokens": 5443
+      },
+      "time": "2026-02-09T21:36:44.197512+00:00"
     }
   ],
   "article": [

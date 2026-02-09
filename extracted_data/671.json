@@ -17,6 +17,20 @@
         "total_tokens": 4930
       },
       "time": "2026-02-05T23:10:07.774451+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant, and original transition-system-based modular RNN framework with dynamic connectivity (TBRU/DRAGNN) and solid empirical gains on dependency parsing and multi-task summarization; experiments are reasonably sized and methodologically sound for a top-tier ML/NLP venue."
+      },
+      "token": {
+        "prompt_tokens": 4337,
+        "completion_tokens": 74,
+        "total_tokens": 4411
+      },
+      "time": "2026-02-09T21:39:08.906069+00:00"
     }
   ],
   "article": [

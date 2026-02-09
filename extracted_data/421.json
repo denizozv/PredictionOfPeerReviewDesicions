@@ -17,6 +17,20 @@
         "total_tokens": 8812
       },
       "time": "2026-02-05T22:44:11.532692+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological and experimental evidence are insufficiently rigorous for a top-tier venue (unclear/weakly justified training objective and inference, limited ablations and comparisons, and small/imbalanced real-data evaluations)."
+      },
+      "token": {
+        "prompt_tokens": 7721,
+        "completion_tokens": 60,
+        "total_tokens": 7781
+      },
+      "time": "2026-02-09T21:16:36.581516+00:00"
     }
   ],
   "article": [

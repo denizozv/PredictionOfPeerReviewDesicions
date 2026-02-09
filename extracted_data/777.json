@@ -17,6 +17,20 @@
         "total_tokens": 4791
       },
       "time": "2026-02-05T23:19:09.532882+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and weak methodological justification/empirical validation for the proposed mutual-information objective and semantic noise perturbation beyond existing representation learning and latent-space augmentation approaches; experiments are limited (MNIST/CIFAR-10, small ablations, few trials) for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 4097,
+        "completion_tokens": 75,
+        "total_tokens": 4172
+      },
+      "time": "2026-02-09T21:47:39.088012+00:00"
     }
   ],
   "article": [

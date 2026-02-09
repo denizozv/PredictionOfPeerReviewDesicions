@@ -17,6 +17,20 @@
         "total_tokens": 6652
       },
       "time": "2026-02-05T22:46:11.268208+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a systems/engineering speedup of known A3C with limited novelty and insufficient, non-standardized experimental evidence (few games/runs, weak baselines/ablations, unclear statistical rigor) for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 6008,
+        "completion_tokens": 67,
+        "total_tokens": 6075
+      },
+      "time": "2026-02-09T21:18:04.012093+00:00"
     }
   ],
   "article": [

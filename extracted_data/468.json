@@ -17,6 +17,20 @@
         "total_tokens": 6461
       },
       "time": "2026-02-05T22:50:12.565202+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated contribution with limited modern experimental validation; strong compression results but methodology relies on diagonal-Hessian approximations and small benchmark suite without rigorous comparisons/ablations expected at top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 5696,
+        "completion_tokens": 58,
+        "total_tokens": 5754
+      },
+      "time": "2026-02-09T21:21:15.016417+00:00"
     }
   ],
   "article": [

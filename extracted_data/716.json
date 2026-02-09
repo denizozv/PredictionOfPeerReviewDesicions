@@ -17,6 +17,20 @@
         "total_tokens": 4732
       },
       "time": "2026-02-05T23:14:11.976889+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient novelty and experimental rigor for a top-tier ML conference: largely an efficiency-focused architecture engineering paper with limited ablations/reproducibility details and no clear new learning principle beyond known components (ResNet bottlenecks, dilations, factorized convs, encoder-decoder), despite strong speed results."
+      },
+      "token": {
+        "prompt_tokens": 4192,
+        "completion_tokens": 81,
+        "total_tokens": 4273
+      },
+      "time": "2026-02-09T21:43:05.108574+00:00"
     }
   ],
   "article": [

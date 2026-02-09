@@ -17,6 +17,20 @@
         "total_tokens": 6699
       },
       "time": "2026-02-05T22:48:21.612259+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient methodological novelty/rigor for a top-tier ML conference: incremental partition+quantize+retrain is a straightforward extension of pruning-style iterative compression, with heuristic quantization rules and limited ablation/analysis to substantiate the claimed 'lossless' improvements."
+      },
+      "token": {
+        "prompt_tokens": 5893,
+        "completion_tokens": 73,
+        "total_tokens": 5966
+      },
+      "time": "2026-02-09T21:20:08.577543+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 9639
       },
       "time": "2026-02-05T23:11:17.829761+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient novelty and weak experimental evidence (toy/MNIST subset, small models, no modern baselines); methodological claims about representation/generalization are not rigorously supported and the proposed 2nd-order neuron-pruning is largely a re-derivation of classic OBD/OBS-style Taylor pruning without compelling new insights or scalable results."
+      },
+      "token": {
+        "prompt_tokens": 8754,
+        "completion_tokens": 86,
+        "total_tokens": 8840
+      },
+      "time": "2026-02-09T21:40:22.737790+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 7575
       },
       "time": "2026-02-05T22:45:08.996805+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence: the proposed 'mollification' is largely a heuristic noise/skip-connection scheme with unclear theoretical guarantees, incomplete/unstable empirical validation, and limited controlled comparisons/ablation to establish novelty beyond existing continuation/noise-injection/stochastic-depth/residual methods."
+      },
+      "token": {
+        "prompt_tokens": 6638,
+        "completion_tokens": 80,
+        "total_tokens": 6718
+      },
+      "time": "2026-02-09T21:16:56.418809+00:00"
     }
   ],
   "article": [

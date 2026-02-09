@@ -17,6 +17,20 @@
         "total_tokens": 4029
       },
       "time": "2026-02-05T23:09:21.750503+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited originality for a top-tier venue (confidence penalty closely related to label smoothing/entropy regularization) despite broad experiments; contribution is largely empirical/interpretive rather than a clearly novel method or theory."
+      },
+      "token": {
+        "prompt_tokens": 3518,
+        "completion_tokens": 59,
+        "total_tokens": 3577
+      },
+      "time": "2026-02-09T21:38:56.376329+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 3927
       },
       "time": "2026-02-05T22:58:10.494770+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence: the CPN update is not clearly/soundly derived or analyzed, comparisons are weak (limited baselines/ablations, partial datasets, unclear tuning fairness), and results are not demonstrated at a scale/standard expected for top-tier ML venues."
+      },
+      "token": {
+        "prompt_tokens": 3436,
+        "completion_tokens": 76,
+        "total_tokens": 3512
+      },
+      "time": "2026-02-09T21:28:02.339571+00:00"
     }
   ],
   "article": [

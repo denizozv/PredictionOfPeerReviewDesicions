@@ -17,6 +17,20 @@
         "total_tokens": 6252
       },
       "time": "2026-02-05T22:59:19.132589+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological novelty and weak/dated evaluation: discriminator-swapping resembles known multi-discriminator/ensemble regularization ideas, and the proposed GAM-II metric is not well-justified; experiments rely heavily on qualitative plots and limited quantitative evidence without strong baselines or modern metrics."
+      },
+      "token": {
+        "prompt_tokens": 5362,
+        "completion_tokens": 74,
+        "total_tokens": 5436
+      },
+      "time": "2026-02-09T21:29:21.042835+00:00"
     }
   ],
   "article": [

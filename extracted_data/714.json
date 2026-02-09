@@ -17,6 +17,20 @@
         "total_tokens": 3134
       },
       "time": "2026-02-05T23:14:07.868407+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Incremental replication of prior work with limited experimental evidence (single simulated task, small dataset, correlation-only evaluation) and insufficient methodological/empirical rigor for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 2728,
+        "completion_tokens": 55,
+        "total_tokens": 2783
+      },
+      "time": "2026-02-09T21:42:52.632201+00:00"
     }
   ],
   "article": [

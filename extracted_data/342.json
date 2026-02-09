@@ -17,6 +17,20 @@
         "total_tokens": 5861
       },
       "time": "2026-02-05T22:36:19.693544+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier venue: the approach is largely a straightforward combination of VRNN + DANN/GRL with limited novelty, and the empirical evaluation lacks key controls (strong time-series DA baselines, clear protocol/selection without target labels, statistical testing, and detailed ablations/implementation clarity) to substantiate the claimed contribution."
+      },
+      "token": {
+        "prompt_tokens": 5045,
+        "completion_tokens": 92,
+        "total_tokens": 5137
+      },
+      "time": "2026-02-09T21:10:03.238895+00:00"
     }
   ],
   "article": [

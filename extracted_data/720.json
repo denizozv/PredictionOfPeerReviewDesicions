@@ -17,6 +17,20 @@
         "total_tokens": 4217
       },
       "time": "2026-02-05T23:14:23.251022+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor and novelty for a top-tier venue (unclear theoretical justification for K-max-by-norm interaction selection, limited/unclear empirical reporting and comparisons to modern CTR/feature-interaction baselines)."
+      },
+      "token": {
+        "prompt_tokens": 3701,
+        "completion_tokens": 64,
+        "total_tokens": 3765
+      },
+      "time": "2026-02-09T21:43:32.442833+00:00"
     }
   ],
   "article": [

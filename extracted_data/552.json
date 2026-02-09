@@ -17,6 +17,20 @@
         "total_tokens": 4316
       },
       "time": "2026-02-05T22:58:19.236599+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient experimental evidence and unclear practical value: only a heavily simplified copy task with no baselines/ablations; method’s expressivity/optimization behavior and comparisons to existing orthogonal/unitary RNNs are not convincingly demonstrated despite theoretical norm-preservation claims."
+      },
+      "token": {
+        "prompt_tokens": 3682,
+        "completion_tokens": 72,
+        "total_tokens": 3754
+      },
+      "time": "2026-02-09T21:28:26.000069+00:00"
     }
   ],
   "article": [

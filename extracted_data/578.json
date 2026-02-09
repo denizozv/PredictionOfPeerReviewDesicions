@@ -17,6 +17,20 @@
         "total_tokens": 7904
       },
       "time": "2026-02-05T23:01:02.827638+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated empirical study with limited novelty and weak methodological justification for the proposed equivariance loss/mappings; improvements are small and inconsistent, and evaluation is largely descriptive without strong baselines or theory."
+      },
+      "token": {
+        "prompt_tokens": 6908,
+        "completion_tokens": 59,
+        "total_tokens": 6967
+      },
+      "time": "2026-02-09T21:30:43.525429+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5331
       },
       "time": "2026-02-05T22:46:05.716355+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant, and (for its time) novel reparameterization enabling batch normalization on recurrent transitions with solid multi-task empirical gains; minor concerns about reliance on per-timestep BN statistics and some task-specific workarounds, but overall conference-worthy."
+      },
+      "token": {
+        "prompt_tokens": 4652,
+        "completion_tokens": 69,
+        "total_tokens": 4721
+      },
+      "time": "2026-02-09T21:17:43.863012+00:00"
     }
   ],
   "article": [

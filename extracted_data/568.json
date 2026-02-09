@@ -17,6 +17,20 @@
         "total_tokens": 3069
       },
       "time": "2026-02-05T23:00:09.906862+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Incremental/dated architecture with insufficient experimental rigor (unclear dataset sizes/splits, missing statistical significance and ablations, limited baselines vs modern pretrained models), making novelty and evidence inadequate for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 2612,
+        "completion_tokens": 63,
+        "total_tokens": 2675
+      },
+      "time": "2026-02-09T21:29:46.864426+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 6086
       },
       "time": "2026-02-05T22:37:07.965685+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental evidence for top-tier acceptance (limited benchmarks/ablations; key claims like SOTA on CIFAR not convincingly substantiated vs strong modern baselines and standard augmentation), despite strong relevance and solid theory."
+      },
+      "token": {
+        "prompt_tokens": 5487,
+        "completion_tokens": 63,
+        "total_tokens": 5550
+      },
+      "time": "2026-02-09T21:10:28.497465+00:00"
     }
   ],
   "article": [

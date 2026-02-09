@@ -17,6 +17,20 @@
         "total_tokens": 11081
       },
       "time": "2026-02-05T22:41:07.402980+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While highly relevant and conceptually solid, the experimental evidence is not sufficiently rigorous for a current top-tier ML conference: limited/dated baselines and ablations, modest gains on MT/NLI, and QA evaluation uses best-of-20 selection (inflates results) without proper statistical reporting; overall novelty is incremental (differentiable CRF/inside-outside as an attention layer) and the empirical validation does not convincingly establish broad impact."
+      },
+      "token": {
+        "prompt_tokens": 9955,
+        "completion_tokens": 109,
+        "total_tokens": 10064
+      },
+      "time": "2026-02-09T21:13:51.711225+00:00"
     }
   ],
   "article": [

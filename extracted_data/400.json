@@ -17,6 +17,20 @@
         "total_tokens": 7491
       },
       "time": "2026-02-05T22:42:07.086744+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier ML conference: limited novelty vs prior tree decoders, key training/inference issues (teacher forcing/exposure bias, topology sampling) not addressed, and evidence is either synthetic, narrow, or largely qualitative without strong ablations or state-of-the-art comparisons."
+      },
+      "token": {
+        "prompt_tokens": 6790,
+        "completion_tokens": 80,
+        "total_tokens": 6870
+      },
+      "time": "2026-02-09T21:14:35.516318+00:00"
     }
   ],
   "article": [

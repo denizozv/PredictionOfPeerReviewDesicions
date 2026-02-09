@@ -17,6 +17,20 @@
         "total_tokens": 3633
       },
       "time": "2026-02-05T22:36:16.413644+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.62,
+        "primary_reason": "Limited originality for a top-tier venue: the continuous cache/pointer-style mechanism is a relatively straightforward adaptation of existing cache and memory-augmented/pointer LM ideas, and the paper (as provided) lacks sufficient methodological/experimental detail and ablations to clearly establish a novel, robust contribution beyond prior work."
+      },
+      "token": {
+        "prompt_tokens": 3217,
+        "completion_tokens": 80,
+        "total_tokens": 3297
+      },
+      "time": "2026-02-09T21:09:51.228470+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 4631
       },
       "time": "2026-02-05T22:37:13.126459+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and experimental validation: the hypernetwork-style parameter prediction is plausible but not convincingly differentiated from prior work, and results are shown on essentially one dataset/task with modest baselines and insufficient ablations to establish robustness/generality."
+      },
+      "token": {
+        "prompt_tokens": 4104,
+        "completion_tokens": 65,
+        "total_tokens": 4169
+      },
+      "time": "2026-02-09T21:10:40.777398+00:00"
     }
   ],
   "article": [

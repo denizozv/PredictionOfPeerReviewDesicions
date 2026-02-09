@@ -17,6 +17,20 @@
         "total_tokens": 4502
       },
       "time": "2026-02-05T22:39:12.804229+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental multi-task parameter sharing for sequence tagging with limited methodological novelty and insufficiently rigorous/replicable experimental evidence (notably random splits, limited low-resource protocol details, and missing statistical validation) for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 3855,
+        "completion_tokens": 65,
+        "total_tokens": 3920
+      },
+      "time": "2026-02-09T21:12:26.278901+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 9884
       },
       "time": "2026-02-05T22:34:12.707483+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier: key theoretical claims are shaky (MAP vs marginal matching; GAN objective/entropy discussion), and empirical validation is limited/dated (mostly qualitative, unclear baselines/ablations, small/unclear test sizes, no comparison to strong SR methods or modern perceptual metrics)."
+      },
+      "token": {
+        "prompt_tokens": 8723,
+        "completion_tokens": 84,
+        "total_tokens": 8807
+      },
+      "time": "2026-02-09T21:07:54.438929+00:00"
     }
   ],
   "article": [

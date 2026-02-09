@@ -17,6 +17,20 @@
         "total_tokens": 4836
       },
       "time": "2026-02-05T23:16:15.360259+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily empirical universality claims without a clear theoretical mechanism, rigorous statistical testing, or sufficiently comprehensive experiments; novelty and methodological support are not strong enough for a top-tier ML venue."
+      },
+      "token": {
+        "prompt_tokens": 4220,
+        "completion_tokens": 55,
+        "total_tokens": 4275
+      },
+      "time": "2026-02-09T21:44:57.623792+00:00"
     }
   ],
   "article": [

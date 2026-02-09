@@ -17,6 +17,20 @@
         "total_tokens": 7573
       },
       "time": "2026-02-05T22:56:10.361127+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/experimental evidence is insufficient for top-tier: the main convergence result is a regret bound relative to a path-dependent Taylor optimum under strong bounded-gradient/diameter assumptions, offering limited new guarantees for nonconvex training, and experiments are small-scale (MNIST autoencoder, small CIFAR-10 convnet, partial activation logging) without strong baselines or generalization/ablation to substantiate the exploration claims."
+      },
+      "token": {
+        "prompt_tokens": 6427,
+        "completion_tokens": 104,
+        "total_tokens": 6531
+      },
+      "time": "2026-02-09T21:26:11.673231+00:00"
     }
   ],
   "article": [

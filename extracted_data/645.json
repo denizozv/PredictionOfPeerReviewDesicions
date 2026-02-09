@@ -17,6 +17,20 @@
         "total_tokens": 5834
       },
       "time": "2026-02-05T23:08:04.079841+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant and original multiview representation learning method (nonlinear many-view CCA) with sound optimization/derivation and solid empirical gains on two real datasets; evidence is adequate though not exhaustive by modern standards."
+      },
+      "token": {
+        "prompt_tokens": 5026,
+        "completion_tokens": 63,
+        "total_tokens": 5089
+      },
+      "time": "2026-02-09T21:36:50.035525+00:00"
     }
   ],
   "article": [

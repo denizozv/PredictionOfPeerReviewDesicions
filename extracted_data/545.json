@@ -17,6 +17,20 @@
         "total_tokens": 6343
       },
       "time": "2026-02-05T22:58:05.934879+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence: the CKM formulation/learning is underspecified (e.g., nonconvex leave-one-out optimization details, tractability vs. max-sum inference, architecture constraints), and results are limited to NORB variants with unclear baselines/ablations and no broad evaluation to substantiate a top-tier ML contribution despite an interesting SPN-style compositional kernel idea."
+      },
+      "token": {
+        "prompt_tokens": 5556,
+        "completion_tokens": 99,
+        "total_tokens": 5655
+      },
+      "time": "2026-02-09T21:27:49.730785+00:00"
     }
   ],
   "article": [

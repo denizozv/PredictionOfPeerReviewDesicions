@@ -17,6 +17,20 @@
         "total_tokens": 4708
       },
       "time": "2026-02-05T22:43:16.858680+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier ML: limited novelty beyond learning proposal biases for STOKE, unclear correctness/acceptance details for non-symmetric proposals, and small/weakly justified benchmarks (25 tasks + synthetic random-walk programs) without strong baselines or ablations."
+      },
+      "token": {
+        "prompt_tokens": 4226,
+        "completion_tokens": 78,
+        "total_tokens": 4304
+      },
+      "time": "2026-02-09T21:15:49.077946+00:00"
     }
   ],
   "article": [

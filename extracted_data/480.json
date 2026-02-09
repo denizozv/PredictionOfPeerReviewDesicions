@@ -17,6 +17,20 @@
         "total_tokens": 6288
       },
       "time": "2026-02-05T22:52:09.086854+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier venue: the architecture is a modest semi-supervised RNN with lateral connections, but novelty is limited relative to prior multi-task/ladder/sequence generative models, and the empirical evidence is largely qualitative with unclear baselines, ablations, and statistical validation (especially for the key 'discovery' claims)."
+      },
+      "token": {
+        "prompt_tokens": 5664,
+        "completion_tokens": 92,
+        "total_tokens": 5756
+      },
+      "time": "2026-02-09T21:22:28.061011+00:00"
     }
   ],
   "article": [

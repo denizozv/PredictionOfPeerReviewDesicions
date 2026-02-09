@@ -17,6 +17,20 @@
         "total_tokens": 471
       },
       "time": "2026-02-05T23:08:11.606309+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a systematic empirical comparison of context definitions for word embeddings with unclear methodological novelty and insufficient evidence (from the provided summary) to meet top-tier conference standards."
+      },
+      "token": {
+        "prompt_tokens": 269,
+        "completion_tokens": 51,
+        "total_tokens": 320
+      },
+      "time": "2026-02-09T21:37:15.887500+00:00"
     }
   ],
   "article": [

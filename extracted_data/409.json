@@ -17,6 +17,20 @@
         "total_tokens": 5057
       },
       "time": "2026-02-05T22:43:12.620267+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental validation: very small/possibly non-standard test split (3 recordings, limited time range) and limited methodological novelty beyond dataset release/benchmarks; alignment/label noise and generalization not rigorously quantified for top-tier ML standards."
+      },
+      "token": {
+        "prompt_tokens": 4377,
+        "completion_tokens": 68,
+        "total_tokens": 4445
+      },
+      "time": "2026-02-09T21:15:36.594508+00:00"
     }
   ],
   "article": [

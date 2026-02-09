@@ -17,6 +17,20 @@
         "total_tokens": 7010
       },
       "time": "2026-02-05T22:57:15.012096+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier venue: evaluation is entirely on synthetic exhaustive datasets with a k-NN embedding metric, limited task baselines, and no demonstrated impact on real program/logic reasoning benchmarks or downstream equivalence checking accuracy."
+      },
+      "token": {
+        "prompt_tokens": 6299,
+        "completion_tokens": 69,
+        "total_tokens": 6368
+      },
+      "time": "2026-02-09T21:27:17.864399+00:00"
     }
   ],
   "article": [

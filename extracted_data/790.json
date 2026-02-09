@@ -17,6 +17,20 @@
         "total_tokens": 7913
       },
       "time": "2026-02-05T23:20:09.460159+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for cryptographic claims (toy settings, weak adversary model/evaluation, unstable training, limited baselines), making the contribution unlikely to meet top-tier conference standards despite relevance and some originality."
+      },
+      "token": {
+        "prompt_tokens": 7132,
+        "completion_tokens": 64,
+        "total_tokens": 7196
+      },
+      "time": "2026-02-09T21:48:41.050471+00:00"
     }
   ],
   "article": [

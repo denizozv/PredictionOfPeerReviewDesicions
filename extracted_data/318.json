@@ -17,6 +17,20 @@
         "total_tokens": 5744
       },
       "time": "2026-02-05T22:34:15.034257+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Strong supervision and limited/unclear experimental rigor (graph oracle, bAbI-only style benchmarks, missing ablations/complexity/reproducibility details) make the novelty and methodological contribution insufficient for a top-tier conference."
+      },
+      "token": {
+        "prompt_tokens": 5102,
+        "completion_tokens": 64,
+        "total_tokens": 5166
+      },
+      "time": "2026-02-09T21:08:02.507861+00:00"
     }
   ],
   "article": [

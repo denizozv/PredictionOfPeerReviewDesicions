@@ -17,6 +17,20 @@
         "total_tokens": 9445
       },
       "time": "2026-02-05T22:37:03.894130+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological weakness: the proposed zero-order/backprop update is heuristic and not theoretically justified, with limited experimental validation (few scenarios, no strong baselines/ablations), making evidence insufficient for top-tier acceptance despite relevance and some originality."
+      },
+      "token": {
+        "prompt_tokens": 8588,
+        "completion_tokens": 66,
+        "total_tokens": 8654
+      },
+      "time": "2026-02-09T21:10:15.973380+00:00"
     }
   ],
   "article": [

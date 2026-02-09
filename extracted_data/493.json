@@ -17,6 +17,20 @@
         "total_tokens": 4345
       },
       "time": "2026-02-05T22:53:07.655786+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological/experimental weakness: the proposed iterative reweighting bound is closely related to known majorization-minimization/CCCP ideas, lacks clear novelty and theoretical guarantees, and the empirical evaluation is limited (linear models only, unclear baselines/significance, no modern deep/large-scale comparisons) for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 3857,
+        "completion_tokens": 86,
+        "total_tokens": 3943
+      },
+      "time": "2026-02-09T21:23:38.229264+00:00"
     }
   ],
   "article": [

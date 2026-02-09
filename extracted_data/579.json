@@ -17,6 +17,20 @@
         "total_tokens": 5521
       },
       "time": "2026-02-05T23:01:06.612752+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Incremental CNN+LSTM fusion with limited novelty and insufficiently rigorous experimental validation/ablation for a top-tier venue"
+      },
+      "token": {
+        "prompt_tokens": 4798,
+        "completion_tokens": 43,
+        "total_tokens": 4841
+      },
+      "time": "2026-02-09T21:30:49.435375+00:00"
     }
   ],
   "article": [

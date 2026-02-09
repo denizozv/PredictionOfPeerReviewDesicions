@@ -17,6 +17,20 @@
         "total_tokens": 8195
       },
       "time": "2026-02-05T23:07:05.174208+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental rigor/scale for a top-tier venue (limited datasets/metrics/ablations; heavy reliance on short-run Langevin with lG=0 and weak comparisons), despite being relevant and conceptually interesting."
+      },
+      "token": {
+        "prompt_tokens": 7176,
+        "completion_tokens": 63,
+        "total_tokens": 7239
+      },
+      "time": "2026-02-09T21:35:52.316550+00:00"
     }
   ],
   "article": [

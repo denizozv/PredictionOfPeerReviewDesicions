@@ -17,6 +17,20 @@
         "total_tokens": 4828
       },
       "time": "2026-02-05T22:38:02.226305+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant and original hierarchical VAE for dataset-level representations with solid multi-domain experiments; minor weaknesses are limited ablations and some evaluation gaps vs. strongest few-shot baselines."
+      },
+      "token": {
+        "prompt_tokens": 4222,
+        "completion_tokens": 55,
+        "total_tokens": 4277
+      },
+      "time": "2026-02-09T21:11:03.874544+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 3890
       },
       "time": "2026-02-05T23:08:16.821254+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient novelty and weak/dated empirical evidence; theoretical claims largely restate known mini-batch/parallelism tradeoffs with loose bounds and limited experiments (single dataset/model, no strong baselines or scaling methodology)."
+      },
+      "token": {
+        "prompt_tokens": 3160,
+        "completion_tokens": 62,
+        "total_tokens": 3222
+      },
+      "time": "2026-02-09T21:37:27.741268+00:00"
     }
   ],
   "article": [

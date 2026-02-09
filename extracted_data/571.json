@@ -17,6 +17,20 @@
         "total_tokens": 4749
       },
       "time": "2026-02-05T23:00:17.271531+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient and weak experimental validation for top-tier standards (limited datasets/metrics, mostly qualitative samples, unclear likelihood/FID comparisons and ablations), despite relevant scope and a plausible boosting framework."
+      },
+      "token": {
+        "prompt_tokens": 4111,
+        "completion_tokens": 57,
+        "total_tokens": 4168
+      },
+      "time": "2026-02-09T21:30:05.495343+00:00"
     }
   ],
   "article": [

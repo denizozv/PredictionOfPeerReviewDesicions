@@ -17,6 +17,20 @@
         "total_tokens": 4528
       },
       "time": "2026-02-05T23:18:24.263206+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily an empirical best-practices study with limited methodological novelty; experiments are on small, standard retrieval benchmarks and lack modern baselines/ablations expected at top-tier ML venues."
+      },
+      "token": {
+        "prompt_tokens": 3969,
+        "completion_tokens": 56,
+        "total_tokens": 4025
+      },
+      "time": "2026-02-09T21:47:14.630225+00:00"
     }
   ],
   "article": [

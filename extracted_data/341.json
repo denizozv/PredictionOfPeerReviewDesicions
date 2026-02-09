@@ -17,6 +17,20 @@
         "total_tokens": 4871
       },
       "time": "2026-02-05T22:36:18.123349+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficient experimental evidence for top-tier acceptance (small set of simple MuJoCo tasks, unclear rigor/ablation depth), despite being on-scope and methodologically plausible."
+      },
+      "token": {
+        "prompt_tokens": 4344,
+        "completion_tokens": 56,
+        "total_tokens": 4400
+      },
+      "time": "2026-02-09T21:09:56.836042+00:00"
     }
   ],
   "article": [

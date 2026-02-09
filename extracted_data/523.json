@@ -17,6 +17,20 @@
         "total_tokens": 5482
       },
       "time": "2026-02-05T22:56:05.213201+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant adaptive softmax method with solid large-scale LM experiments and clear GPU-motivated complexity analysis; novelty is incremental but sufficient and evidence on Europarl/1B Word is compelling for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4907,
+        "completion_tokens": 64,
+        "total_tokens": 4971
+      },
+      "time": "2026-02-09T21:25:52.462597+00:00"
     }
   ],
   "article": [

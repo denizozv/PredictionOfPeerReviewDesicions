@@ -17,6 +17,20 @@
         "total_tokens": 4895
       },
       "time": "2026-02-05T23:04:07.088317+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier venue: the proposed memory-augmented attention is only incrementally novel relative to existing attention+RNN captioning, key implementation/training details and comparisons are incomplete, and evidence is limited to small-scale benchmarks with weak/dated metrics and no strong modern baselines or statistical validation."
+      },
+      "token": {
+        "prompt_tokens": 4323,
+        "completion_tokens": 86,
+        "total_tokens": 4409
+      },
+      "time": "2026-02-09T21:33:19.112472+00:00"
     }
   ],
   "article": [

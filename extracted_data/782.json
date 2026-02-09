@@ -17,6 +17,20 @@
         "total_tokens": 8255
       },
       "time": "2026-02-05T23:19:21.499001+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient methodological rigor/experimental evidence for top-tier: relies on high-variance REINFORCE with heavy curriculum and hyperparameter search, limited baselines/ablations and small-scale synthetic experiments (train n<=32, test 128) without statistical robustness or broader real-world validation; novelty is incremental relative to prior memory/attention work and claims (e.g., learned O(n log n) sorting) are not convincingly substantiated beyond these settings."
+      },
+      "token": {
+        "prompt_tokens": 7439,
+        "completion_tokens": 111,
+        "total_tokens": 7550
+      },
+      "time": "2026-02-09T21:48:11.406883+00:00"
     }
   ],
   "article": [

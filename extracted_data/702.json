@@ -17,6 +17,20 @@
         "total_tokens": 4909
       },
       "time": "2026-02-05T23:13:04.400397+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental RNN extractive summarization with heuristic ROUGE-based pseudo-labels is not sufficiently novel or methodologically strong for a top-tier ML conference; contributions are largely architectural variants of prior extractive models with limited new insight."
+      },
+      "token": {
+        "prompt_tokens": 4355,
+        "completion_tokens": 65,
+        "total_tokens": 4420
+      },
+      "time": "2026-02-09T21:41:41.958504+00:00"
     }
   ],
   "article": [

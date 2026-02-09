@@ -17,6 +17,20 @@
         "total_tokens": 4761
       },
       "time": "2026-02-05T22:47:08.651113+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/novelty concerns: the proposed LSTM output/cell decompositions and phrase-scoring heuristic are insufficiently justified/rigorous and overlap with existing attribution/interpretability work; experimental validation relies mainly on approximation via a simple rule-based classifier without strong baselines or ablations to establish a clear, novel contribution."
+      },
+      "token": {
+        "prompt_tokens": 4226,
+        "completion_tokens": 85,
+        "total_tokens": 4311
+      },
+      "time": "2026-02-09T21:18:52.314019+00:00"
     }
   ],
   "article": [

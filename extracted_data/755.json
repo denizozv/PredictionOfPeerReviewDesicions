@@ -17,6 +17,20 @@
         "total_tokens": 7093
       },
       "time": "2026-02-05T23:17:18.449889+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficient experimental evidence: theory focuses on deep linear/whitened MNIST setting with questionable relevance to modern ResNet training (BN/conv/standard init), and claims about 2-shortcuts/zero-init are not convincingly validated on realistic architectures or datasets."
+      },
+      "token": {
+        "prompt_tokens": 6194,
+        "completion_tokens": 75,
+        "total_tokens": 6269
+      },
+      "time": "2026-02-09T21:46:02.068692+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 9086
       },
       "time": "2026-02-05T22:45:18.372138+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental reliability (unclear novelty vs prior soft actor-critic/advantage-learning links, shaky theoretical claims under function approximation/off-policy, and evaluation uses best-of-5 with limited ablations/statistics)"
+      },
+      "token": {
+        "prompt_tokens": 8233,
+        "completion_tokens": 65,
+        "total_tokens": 8298
+      },
+      "time": "2026-02-09T21:17:31.455006+00:00"
     }
   ],
   "article": [

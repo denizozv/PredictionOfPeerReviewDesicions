@@ -17,6 +17,20 @@
         "total_tokens": 5988
       },
       "time": "2026-02-05T23:03:10.552321+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "High-impact, well-designed large-scale QA dataset with solid collection/validation methodology and sufficient baselines; strong relevance and originality for top-tier ML venues."
+      },
+      "token": {
+        "prompt_tokens": 5323,
+        "completion_tokens": 49,
+        "total_tokens": 5372
+      },
+      "time": "2026-02-09T21:32:42.733115+00:00"
     }
   ],
   "article": [

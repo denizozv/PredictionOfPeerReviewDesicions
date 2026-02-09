@@ -17,6 +17,20 @@
         "total_tokens": 6791
       },
       "time": "2026-02-05T22:43:07.963680+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient novelty and experimental rigor for a top-tier venue: the approach is essentially a soft mixture-of-experts/attention gating over fixed source policies/Q-functions with a learn-from-scratch base, and the empirical evaluation is limited (few domains, mostly toy + modified Pong, unclear statistical robustness/ablations), leaving methodological questions about stability/off-policy updates and comparisons to strong transfer/meta-RL baselines."
+      },
+      "token": {
+        "prompt_tokens": 6129,
+        "completion_tokens": 100,
+        "total_tokens": 6229
+      },
+      "time": "2026-02-09T21:15:22.509445+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 6101
       },
       "time": "2026-02-05T23:11:14.669939+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/experimental evidence is insufficient for a top-tier venue: the core idea is an incremental extension of HashedNets (shared hash space + small reconstruction MLP) with limited theoretical justification, unclear/possibly outdated baselines, and incomplete, non-rigorous experimental reporting (missing key details, ablations, statistical robustness, and reproducibility)."
+      },
+      "token": {
+        "prompt_tokens": 5447,
+        "completion_tokens": 90,
+        "total_tokens": 5537
+      },
+      "time": "2026-02-09T21:40:16.357870+00:00"
     }
   ],
   "article": [

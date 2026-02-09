@@ -17,6 +17,20 @@
         "total_tokens": 11581
       },
       "time": "2026-02-05T22:42:04.888307+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, relevant, and original conditional-computation MoE with convincing large-scale LM/MT results and solid methodology"
+      },
+      "token": {
+        "prompt_tokens": 10242,
+        "completion_tokens": 41,
+        "total_tokens": 10283
+      },
+      "time": "2026-02-09T21:14:28.881102+00:00"
     }
   ],
   "article": [

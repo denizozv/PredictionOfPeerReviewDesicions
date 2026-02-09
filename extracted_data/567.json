@@ -17,6 +17,20 @@
         "total_tokens": 6199
       },
       "time": "2026-02-05T23:00:06.193478+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Method/experiments not at top-tier standard: objective resembles known neighborhood-embedding/metric-learning ideas with limited novelty, optimization is heuristic with unclear guarantees, and empirical evaluation lacks strong baselines/ablation/scalability and uses small or nonstandard setups (e.g., MNIST via NeRV preprocessing) without demonstrating broad, statistically solid gains."
+      },
+      "token": {
+        "prompt_tokens": 5452,
+        "completion_tokens": 89,
+        "total_tokens": 5541
+      },
+      "time": "2026-02-09T21:29:40.679362+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5074
       },
       "time": "2026-02-05T22:52:24.877879+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental/dated contribution (embedding-level adversarial/VAT for text) with limited modern baselines/ablation; experimental evidence is not sufficiently rigorous for current top-tier standards despite relevance and generally sound methodology."
+      },
+      "token": {
+        "prompt_tokens": 4378,
+        "completion_tokens": 61,
+        "total_tokens": 4439
+      },
+      "time": "2026-02-09T21:23:16.846470+00:00"
     }
   ],
   "article": [

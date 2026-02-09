@@ -17,6 +17,20 @@
         "total_tokens": 10611
       },
       "time": "2026-02-05T22:52:17.656420+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficient empirical validation: theory applies to a narrow manifold class (monotonic piecewise-linear chains) with strong assumptions, and experiments are synthetic/small-scale without comparisons or demonstrated impact on standard ML tasks."
+      },
+      "token": {
+        "prompt_tokens": 9581,
+        "completion_tokens": 63,
+        "total_tokens": 9644
+      },
+      "time": "2026-02-09T21:22:55.820920+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 8564
       },
       "time": "2026-02-05T23:16:13.199309+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/experimental evidence insufficient for top-tier: several key claims are observational with limited datasets (MNIST/CIFAR-10), unclear baselines/controls, and theoretical results largely re-derive known depth-expressivity/region-count phenomena without a clearly novel, rigorously validated contribution beyond trajectory-length framing."
+      },
+      "token": {
+        "prompt_tokens": 7680,
+        "completion_tokens": 82,
+        "total_tokens": 7762
+      },
+      "time": "2026-02-09T21:44:51.905008+00:00"
     }
   ],
   "article": [

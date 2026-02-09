@@ -17,6 +17,20 @@
         "total_tokens": 4443
       },
       "time": "2026-02-05T22:35:08.398334+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental rigor/novelty for top-tier: limited ablations and evaluation (mostly Inception score + qualitative), unclear stability/reliability of the 3-network training, and the core idea is close to prior feature-matching/DAE-score-matching style regularization without a clearly demonstrated, robust advantage."
+      },
+      "token": {
+        "prompt_tokens": 3898,
+        "completion_tokens": 84,
+        "total_tokens": 3982
+      },
+      "time": "2026-02-09T21:08:47.854423+00:00"
     }
   ],
   "article": [

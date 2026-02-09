@@ -17,6 +17,20 @@
         "total_tokens": 6900
       },
       "time": "2026-02-05T23:14:03.132375+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for top-tier ML: limited novelty vs prior VRNN-style variational RNNs, unclear/possibly unfair baselines (trend+volatility entanglement), and evaluation focuses on smoothness/NLL without strong forecasting or uncertainty calibration evidence."
+      },
+      "token": {
+        "prompt_tokens": 6057,
+        "completion_tokens": 74,
+        "total_tokens": 6131
+      },
+      "time": "2026-02-09T21:42:40.802462+00:00"
     }
   ],
   "article": [

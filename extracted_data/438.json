@@ -17,6 +17,20 @@
         "total_tokens": 7445
       },
       "time": "2026-02-05T22:46:13.508444+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and methodological rigor for a top-tier 2026 venue: the core contribution is an incremental auxiliary-task A3C navigation setup (depth/loop-closure) with limited ablations and potentially biased evaluation (reporting mean of top-5 out of 64 hyperparameter sweeps), making the empirical evidence and claims (e.g., human-level) less reliable."
+      },
+      "token": {
+        "prompt_tokens": 6765,
+        "completion_tokens": 95,
+        "total_tokens": 6860
+      },
+      "time": "2026-02-09T21:18:11.025346+00:00"
     }
   ],
   "article": [

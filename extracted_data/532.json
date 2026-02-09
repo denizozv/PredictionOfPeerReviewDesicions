@@ -17,6 +17,20 @@
         "total_tokens": 4900
       },
       "time": "2026-02-05T22:57:08.053517+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and experimental evidence for a top-tier venue: the RL-based data filtering idea is close to prior curriculum/self-paced and data selection work, and results are limited to two small benchmarks with modest baselines/ablations and unclear methodological rigor (reward design, policy generalization, compute cost, and statistical validation)."
+      },
+      "token": {
+        "prompt_tokens": 4400,
+        "completion_tokens": 83,
+        "total_tokens": 4483
+      },
+      "time": "2026-02-09T21:26:54.528168+00:00"
     }
   ],
   "article": [

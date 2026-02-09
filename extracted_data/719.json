@@ -17,6 +17,20 @@
         "total_tokens": 3382
       },
       "time": "2026-02-05T23:14:20.241497+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological and experimental weaknesses: unclear/unsound EM formulation and objective, limited baselines/ablation, and insufficient evidence beyond MNIST variants to support novelty and reliability for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 3007,
+        "completion_tokens": 59,
+        "total_tokens": 3066
+      },
+      "time": "2026-02-09T21:43:26.213368+00:00"
     }
   ],
   "article": [

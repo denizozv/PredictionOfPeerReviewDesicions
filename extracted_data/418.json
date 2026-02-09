@@ -17,6 +17,20 @@
         "total_tokens": 12042
       },
       "time": "2026-02-05T22:44:06.892173+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, relevant, and original stabilization method (unrolling discriminator optimization) with sound differentiation-through-optimization formulation and multi-dataset evidence showing reduced mode collapse and improved stability; experiments are reasonably extensive though evaluation metrics are somewhat indirect by modern standards."
+      },
+      "token": {
+        "prompt_tokens": 11047,
+        "completion_tokens": 67,
+        "total_tokens": 11114
+      },
+      "time": "2026-02-09T21:16:22.688819+00:00"
     }
   ],
   "article": [

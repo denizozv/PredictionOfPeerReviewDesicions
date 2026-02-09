@@ -17,6 +17,20 @@
         "total_tokens": 4248
       },
       "time": "2026-02-05T23:04:09.943844+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier: analysis is limited (mostly 1-hidden-unit/1-layer, informal extensions), experiments lack strong baselines/ablations and statistical rigor, and novelty is incremental relative to prior sinusoidal/SIREN-style work."
+      },
+      "token": {
+        "prompt_tokens": 3784,
+        "completion_tokens": 73,
+        "total_tokens": 3857
+      },
+      "time": "2026-02-09T21:33:25.363619+00:00"
     }
   ],
   "article": [

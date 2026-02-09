@@ -17,6 +17,20 @@
         "total_tokens": 4391
       },
       "time": "2026-02-05T23:19:19.359975+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental validation: inference/learning rely on greedy pursuit and heuristic expertise updates without guarantees or strong baselines/metrics, and experiments are largely qualitative with limited quantitative comparisons/ablation."
+      },
+      "token": {
+        "prompt_tokens": 3807,
+        "completion_tokens": 60,
+        "total_tokens": 3867
+      },
+      "time": "2026-02-09T21:48:04.205029+00:00"
     }
   ],
   "article": [

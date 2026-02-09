@@ -17,6 +17,20 @@
         "total_tokens": 5030
       },
       "time": "2026-02-05T22:56:12.322491+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant and reasonably novel hybrid RNN (input-dependent multiplicative transitions + LSTM gating) with solid large-scale character/byte-level LM results; minor concerns are incremental novelty vs prior multiplicative RNNs and limited ablations/hyperparameter sensitivity analysis."
+      },
+      "token": {
+        "prompt_tokens": 4426,
+        "completion_tokens": 72,
+        "total_tokens": 4498
+      },
+      "time": "2026-02-09T21:26:18.554301+00:00"
     }
   ],
   "article": [

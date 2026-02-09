@@ -17,6 +17,20 @@
         "total_tokens": 2998
       },
       "time": "2026-02-05T22:36:07.854653+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental evidence and methodological rigor for top-tier ML: results limited to cluttered MNIST with small ablations, unclear training/eval details and missing comparisons to strong baselines; novelty is incremental relative to prior differentiable attention/glimpse models."
+      },
+      "token": {
+        "prompt_tokens": 2545,
+        "completion_tokens": 69,
+        "total_tokens": 2614
+      },
+      "time": "2026-02-09T21:09:22.631908+00:00"
     }
   ],
   "article": [

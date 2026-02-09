@@ -17,6 +17,20 @@
         "total_tokens": 13581
       },
       "time": "2026-02-05T22:35:04.073396+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/empirical rigor: ad-hoc training scheme (unit addition schedule, CapNorm, AdaRad) with limited ablations and comparisons; experiments are small-scale and include manual model selection, making claims about automatic sizing and superiority not convincingly supported for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 12158,
+        "completion_tokens": 76,
+        "total_tokens": 12234
+      },
+      "time": "2026-02-09T21:08:33.161242+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 6183
       },
       "time": "2026-02-05T23:13:20.522155+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Limited novelty and weak experimental validation: mostly applies known HDP-HMM/sticky HDP-HMM with MFCCs to small datasets, minimal baselines/ablations, and modest quantitative results (e.g., NMI ~0.49) without strong comparisons or rigorous evaluation."
+      },
+      "token": {
+        "prompt_tokens": 5381,
+        "completion_tokens": 76,
+        "total_tokens": 5457
+      },
+      "time": "2026-02-09T21:42:28.014915+00:00"
     }
   ],
   "article": [

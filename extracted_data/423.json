@@ -17,6 +17,20 @@
         "total_tokens": 4727
       },
       "time": "2026-02-05T22:45:05.539817+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and experimental rigor for a top-tier venue: multi-discriminator GANs are a known extension, and the paper relies on limited evaluation (small N, few datasets, nonstandard/weak metric) without strong baselines or quantitative evidence of sample quality/stability."
+      },
+      "token": {
+        "prompt_tokens": 4125,
+        "completion_tokens": 74,
+        "total_tokens": 4199
+      },
+      "time": "2026-02-09T21:16:48.792645+00:00"
     }
   ],
   "article": [

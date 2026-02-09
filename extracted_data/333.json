@@ -17,6 +17,20 @@
         "total_tokens": 3681
       },
       "time": "2026-02-05T22:36:05.278605+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient experimental rigor/validation: largely qualitative results with limited datasets and no human study; evaluation relies on VGG Gram-loss proxy and lacks strong baselines/ablation/statistical analysis to support broad claims of equivalence to deep trained features."
+      },
+      "token": {
+        "prompt_tokens": 3096,
+        "completion_tokens": 68,
+        "total_tokens": 3164
+      },
+      "time": "2026-02-09T21:09:16.367969+00:00"
     }
   ],
   "article": [

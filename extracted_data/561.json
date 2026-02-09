@@ -17,6 +17,20 @@
         "total_tokens": 3061
       },
       "time": "2026-02-05T22:59:16.338424+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological weakness and limited novelty: uses ad-hoc similarity from pretrained ImageNet CNN activations and compares to WordNet (not phylogenetic ground truth), with no rigorous evaluation/metrics or biological validation; results are qualitative and largely reflect visual/semantic similarity rather than evolutionary relationships."
+      },
+      "token": {
+        "prompt_tokens": 2647,
+        "completion_tokens": 76,
+        "total_tokens": 2723
+      },
+      "time": "2026-02-09T21:29:14.462911+00:00"
     }
   ],
   "article": [

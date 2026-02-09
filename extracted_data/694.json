@@ -17,6 +17,20 @@
         "total_tokens": 5532
       },
       "time": "2026-02-05T23:12:02.889248+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.62,
+        "primary_reason": "Insufficient experimental breadth for a top-tier ML conference: results are primarily on the constrained GRID corpus with limited comparisons/ablations and unclear generalization beyond this setting, despite being relevant and methodologically sound."
+      },
+      "token": {
+        "prompt_tokens": 4800,
+        "completion_tokens": 60,
+        "total_tokens": 4860
+      },
+      "time": "2026-02-09T21:41:00.581836+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 6377
       },
       "time": "2026-02-05T23:04:02.346012+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental validation and unclear novelty vs prior tree/grammar VAEs; results limited to two datasets with weak baselines/ablations and no compelling top-tier empirical or theoretical advance."
+      },
+      "token": {
+        "prompt_tokens": 5693,
+        "completion_tokens": 56,
+        "total_tokens": 5749
+      },
+      "time": "2026-02-09T21:33:06.616549+00:00"
     }
   ],
   "article": [

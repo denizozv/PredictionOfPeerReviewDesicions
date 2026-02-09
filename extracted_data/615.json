@@ -17,6 +17,20 @@
         "total_tokens": 7455
       },
       "time": "2026-02-05T23:04:25.148241+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient methodological/experimental rigor and novelty for a top-tier venue: limited evaluation (MNIST/CIFAR10 only, small set of models), unclear/possibly inconsistent algorithm specification and fair baselines (different batch sizes/epochs and tuned vs untuned comparisons), and the core idea (limited-memory SR1 + trust region) is largely known in optimization with only incremental adaptation to deep learning."
+      },
+      "token": {
+        "prompt_tokens": 6505,
+        "completion_tokens": 98,
+        "total_tokens": 6603
+      },
+      "time": "2026-02-09T21:34:08.079868+00:00"
     }
   ],
   "article": [

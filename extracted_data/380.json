@@ -17,6 +17,20 @@
         "total_tokens": 10629
       },
       "time": "2026-02-05T22:39:21.112662+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/empirical weakness: relies on ad-hoc, poorly justified entropy approximations (kNN in pixel space; variational bound with inaccurate gradients) and provides limited, non-standard evaluation of energy calibration (mostly qualitative/ranking; Inception score only), insufficient for top-tier acceptance despite relevant scope and some theoretical novelty."
+      },
+      "token": {
+        "prompt_tokens": 9337,
+        "completion_tokens": 85,
+        "total_tokens": 9422
+      },
+      "time": "2026-02-09T21:12:54.629213+00:00"
     }
   ],
   "article": [

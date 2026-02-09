@@ -17,6 +17,20 @@
         "total_tokens": 11051
       },
       "time": "2026-02-05T22:48:06.690392+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and methodological gaps (classifier-based two-sample testing is largely known; theory/experiments rely on questionable independence/normal approximations and do not convincingly establish advantages over strong baselines across settings)"
+      },
+      "token": {
+        "prompt_tokens": 9997,
+        "completion_tokens": 61,
+        "total_tokens": 10058
+      },
+      "time": "2026-02-09T21:19:24.660652+00:00"
     }
   ],
   "article": [

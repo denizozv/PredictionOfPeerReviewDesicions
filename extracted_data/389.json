@@ -17,6 +17,20 @@
         "total_tokens": 5467
       },
       "time": "2026-02-05T22:40:12.379141+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.62,
+        "primary_reason": "Strong scope fit and a novel hierarchical autoregressive waveform model with solid empirical validation (multiple datasets, ablations, human preference), though some comparisons (WaveNet reimplementation) and evaluation details limit top-tier certainty."
+      },
+      "token": {
+        "prompt_tokens": 4850,
+        "completion_tokens": 61,
+        "total_tokens": 4911
+      },
+      "time": "2026-02-09T21:13:26.249394+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 6004
       },
       "time": "2026-02-05T22:43:15.151354+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Limited novelty and methodological depth: largely a simple max-softmax baseline with modest auxiliary reconstruction module, lacking strong new algorithmic contribution or state-of-the-art comparisons expected at top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 5313,
+        "completion_tokens": 56,
+        "total_tokens": 5369
+      },
+      "time": "2026-02-09T21:15:42.420805+00:00"
     }
   ],
   "article": [

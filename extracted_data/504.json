@@ -17,6 +17,20 @@
         "total_tokens": 7422
       },
       "time": "2026-02-05T22:54:08.697378+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier: relies on a very strong independence/feasibility approximation for IRL, manual choice of number of segments, limited baselines/ablations, and small-scale mostly qualitative real-robot evaluation (few tasks, ~dozen videos, unclear statistical robustness/generalization)."
+      },
+      "token": {
+        "prompt_tokens": 6768,
+        "completion_tokens": 83,
+        "total_tokens": 6851
+      },
+      "time": "2026-02-09T21:24:22.995105+00:00"
     }
   ],
   "article": [

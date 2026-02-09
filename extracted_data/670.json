@@ -17,6 +17,20 @@
         "total_tokens": 4742
       },
       "time": "2026-02-05T23:10:06.098324+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/empirical strength for a top-tier venue: limited novelty over prior LRP + mixture-of-experts gating, and experiments are narrow (single simple simulated domain, small-scale evaluation, weak baselines/ablations) to substantiate broad multi-task unsupervised claims."
+      },
+      "token": {
+        "prompt_tokens": 4129,
+        "completion_tokens": 77,
+        "total_tokens": 4206
+      },
+      "time": "2026-02-09T21:39:02.626195+00:00"
     }
   ],
   "article": [

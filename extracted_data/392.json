@@ -17,6 +17,20 @@
         "total_tokens": 4681
       },
       "time": "2026-02-05T22:41:05.683705+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient experimental evidence and methodological novelty for a top-tier ML venue (small training/test sets, limited baselines/ablation, and largely incremental contributions over prior neural compression work)."
+      },
+      "token": {
+        "prompt_tokens": 4076,
+        "completion_tokens": 55,
+        "total_tokens": 4131
+      },
+      "time": "2026-02-09T21:13:43.935525+00:00"
     }
   ],
   "article": [

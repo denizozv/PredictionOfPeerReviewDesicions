@@ -17,6 +17,20 @@
         "total_tokens": 6967
       },
       "time": "2026-02-05T22:47:13.998832+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily synthetic/simulator-driven study with limited novelty and weak methodological rigor (best-of-N reporting, simplistic RL setup, and narrow human evaluation), making evidence insufficient for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 6295,
+        "completion_tokens": 56,
+        "total_tokens": 6351
+      },
+      "time": "2026-02-09T21:19:11.611963+00:00"
     }
   ],
   "article": [

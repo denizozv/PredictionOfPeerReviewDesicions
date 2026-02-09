@@ -17,6 +17,20 @@
         "total_tokens": 7005
       },
       "time": "2026-02-05T22:48:15.170072+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and experimental depth for a top-tier venue: the method is a relatively incremental reweighting/projection variant of existing binarization (BWN/Adam-style preconditioning), with limited evaluation (small/older benchmarks, no modern architectures or strong baselines, and no hardware/latency or comprehensive ablations) and only weak nonconvex optimization justification."
+      },
+      "token": {
+        "prompt_tokens": 6020,
+        "completion_tokens": 94,
+        "total_tokens": 6114
+      },
+      "time": "2026-02-09T21:19:48.100762+00:00"
     }
   ],
   "article": [

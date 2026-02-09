@@ -17,6 +17,20 @@
         "total_tokens": 6212
       },
       "time": "2026-02-05T22:44:01.776502+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental evidence and methodological validation for claimed efficiency gains (toy/Temporal-MNIST + limited VGG-on-video, no real hardware/latency/energy results, and training/optimization details appear unstable/heuristic), despite being relevant and moderately original."
+      },
+      "token": {
+        "prompt_tokens": 5553,
+        "completion_tokens": 72,
+        "total_tokens": 5625
+      },
+      "time": "2026-02-09T21:16:01.899669+00:00"
     }
   ],
   "article": [

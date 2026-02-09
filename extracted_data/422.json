@@ -17,6 +17,20 @@
         "total_tokens": 7957
       },
       "time": "2026-02-05T22:45:03.967547+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental evidence and unclear methodological novelty vs prior variational state-space models; evaluations are limited to small synthetic tasks with weak baselines/metrics and lack ablations/robustness needed for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 6751,
+        "completion_tokens": 62,
+        "total_tokens": 6813
+      },
+      "time": "2026-02-09T21:16:42.665051+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5893
       },
       "time": "2026-02-05T22:49:08.678035+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, relevant semi-supervised learning contribution with sound self-ensembling methodology and solid benchmark improvements (multiple datasets, 10-run averages), offering a novel and efficient temporal ensembling approach."
+      },
+      "token": {
+        "prompt_tokens": 5221,
+        "completion_tokens": 58,
+        "total_tokens": 5279
+      },
+      "time": "2026-02-09T21:20:35.359209+00:00"
     }
   ],
   "article": [

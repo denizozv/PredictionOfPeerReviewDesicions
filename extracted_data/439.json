@@ -17,6 +17,20 @@
         "total_tokens": 10947
       },
       "time": "2026-02-05T22:46:15.274969+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Experimental evidence is too limited and synthetic (small test sets, narrow DSL), so novelty/impact for a top-tier ML venue is insufficient despite a sound hybrid learning+search approach."
+      },
+      "token": {
+        "prompt_tokens": 9915,
+        "completion_tokens": 55,
+        "total_tokens": 9970
+      },
+      "time": "2026-02-09T21:18:17.023009+00:00"
     }
   ],
   "article": [

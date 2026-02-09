@@ -17,6 +17,20 @@
         "total_tokens": 4534
       },
       "time": "2026-02-05T22:46:09.109261+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental/dated contribution with limited methodological novelty and insufficiently convincing experimental evidence (heavy heuristics, filtering, and reliance on large ensembles) for a current top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 4103,
+        "completion_tokens": 55,
+        "total_tokens": 4158
+      },
+      "time": "2026-02-09T21:17:57.756982+00:00"
     }
   ],
   "article": [

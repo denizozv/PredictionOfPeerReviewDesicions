@@ -17,6 +17,20 @@
         "total_tokens": 3619
       },
       "time": "2026-02-05T22:53:09.993947+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Primarily a dataset/baseline paper with limited methodological novelty and weak evidence that conjecture-conditioning works; experimental validation is narrow (simple models, single dataset/task) for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 3212,
+        "completion_tokens": 59,
+        "total_tokens": 3271
+      },
+      "time": "2026-02-09T21:23:44.291605+00:00"
     }
   ],
   "article": [

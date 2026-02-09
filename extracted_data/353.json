@@ -17,6 +17,20 @@
         "total_tokens": 4978
       },
       "time": "2026-02-05T22:37:15.753625+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, relevant, and original hybrid VAE+autoregressive decoder with hierarchical latents; sound methodology and solid experimental evidence with competitive/state-of-the-art likelihoods on standard benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 4084,
+        "completion_tokens": 55,
+        "total_tokens": 4139
+      },
+      "time": "2026-02-09T21:10:46.655601+00:00"
     }
   ],
   "article": [

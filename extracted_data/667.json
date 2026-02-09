@@ -17,6 +17,20 @@
         "total_tokens": 7311
       },
       "time": "2026-02-05T23:09:19.845096+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient novelty and methodological/experimental rigor for a top-tier ML conference (incremental ontology-guided attention over known embedding+RNN baselines; limited ablations and statistical validation)."
+      },
+      "token": {
+        "prompt_tokens": 6540,
+        "completion_tokens": 56,
+        "total_tokens": 6596
+      },
+      "time": "2026-02-09T21:38:48.739174+00:00"
     }
   ],
   "article": [

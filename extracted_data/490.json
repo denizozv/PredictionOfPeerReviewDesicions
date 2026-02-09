@@ -17,6 +17,20 @@
         "total_tokens": 5921
       },
       "time": "2026-02-05T22:53:05.084979+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, relevant, and original pointer–softmax mixture for language modeling with solid empirical gains and introduction of a valuable benchmark dataset (WikiText), meeting top-tier standards despite limited breadth of tasks beyond LM."
+      },
+      "token": {
+        "prompt_tokens": 5357,
+        "completion_tokens": 60,
+        "total_tokens": 5417
+      },
+      "time": "2026-02-09T21:23:30.899389+00:00"
     }
   ],
   "article": [

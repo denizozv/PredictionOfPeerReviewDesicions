@@ -17,6 +17,20 @@
         "total_tokens": 4379
       },
       "time": "2026-02-05T23:04:19.512246+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficiently rigorous/complete experimental validation for top-tier acceptance (strong simplifying assumptions, offline transform extraction, and evaluation protocol not fully justified/standardized)."
+      },
+      "token": {
+        "prompt_tokens": 3893,
+        "completion_tokens": 52,
+        "total_tokens": 3945
+      },
+      "time": "2026-02-09T21:33:53.638470+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 4882
       },
       "time": "2026-02-05T23:16:17.261244+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental idea with limited empirical validation (mostly MNIST/CIFAR), weak theoretical justification, and insufficient ablations/controls to support strong claims over established residual/skip designs at top-tier standards."
+      },
+      "token": {
+        "prompt_tokens": 4288,
+        "completion_tokens": 59,
+        "total_tokens": 4347
+      },
+      "time": "2026-02-09T21:45:03.753697+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5870
       },
       "time": "2026-02-05T23:14:27.994319+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficiently compelling methodology/experiments for a top-tier ML venue (bag-of-open-bigrams + cosine lexicon retrieval; heavy reliance on engineered features and multiple per-order RNNs; comparisons/ablations and modern baselines are not strong enough to justify acceptance)."
+      },
+      "token": {
+        "prompt_tokens": 5290,
+        "completion_tokens": 76,
+        "total_tokens": 5366
+      },
+      "time": "2026-02-09T21:43:44.679331+00:00"
     }
   ],
   "article": [

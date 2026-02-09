@@ -17,6 +17,20 @@
         "total_tokens": 9293
       },
       "time": "2026-02-05T22:34:19.103454+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental validation and novelty for a top-tier ML venue: results are limited to a single synthetic benchmark with small target diversity and no real-robot/real-image evaluation; the core technique largely combines existing components (fixed pretrained VGG features + bilinear feature dynamics + linear Q-function/FQI for feature weighting) with incremental algorithmic tweaks, and methodological details/ablations are not strong enough to establish broad reliability/generalization."
+      },
+      "token": {
+        "prompt_tokens": 8381,
+        "completion_tokens": 105,
+        "total_tokens": 8486
+      },
+      "time": "2026-02-09T21:08:18.341589+00:00"
     }
   ],
   "article": [

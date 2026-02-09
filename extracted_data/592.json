@@ -17,6 +17,20 @@
         "total_tokens": 6921
       },
       "time": "2026-02-05T23:02:15.819933+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and weak experimental validation (small benchmarks + Parzen-window evaluation; hard-assignment training for discrete selector lacks sound inference/ablation vs stronger baselines)"
+      },
+      "token": {
+        "prompt_tokens": 6152,
+        "completion_tokens": 52,
+        "total_tokens": 6204
+      },
+      "time": "2026-02-09T21:31:53.746251+00:00"
     }
   ],
   "article": [

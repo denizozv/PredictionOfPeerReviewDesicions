@@ -17,6 +17,20 @@
         "total_tokens": 7074
       },
       "time": "2026-02-05T22:33:43.261942+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient empirical strength and novelty for a top-tier ML conference: the main contribution is a synthetic testbed plus baseline MemNN results, but experiments are small/limited and the proposed model does not solve key tasks (near-zero per-dialog accuracy on several), with only modest methodological innovation (match-type features) and limited real-world validation."
+      },
+      "token": {
+        "prompt_tokens": 6412,
+        "completion_tokens": 86,
+        "total_tokens": 6498
+      },
+      "time": "2026-02-09T21:07:08.296562+00:00"
     }
   ],
   "article": [

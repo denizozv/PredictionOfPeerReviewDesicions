@@ -17,6 +17,20 @@
         "total_tokens": 6919
       },
       "time": "2026-02-05T22:53:12.018447+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/novelty issues: relies on nonstandard ReLU+binary-step model and questionable/insufficiently justified approximation and lower-bound claims; lacks empirical validation and appears largely incremental to prior depth-separation/approximation theory."
+      },
+      "token": {
+        "prompt_tokens": 6153,
+        "completion_tokens": 67,
+        "total_tokens": 6220
+      },
+      "time": "2026-02-09T21:23:50.637212+00:00"
     }
   ],
   "article": [

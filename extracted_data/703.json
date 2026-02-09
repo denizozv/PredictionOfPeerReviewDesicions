@@ -17,6 +17,20 @@
         "total_tokens": 6950
       },
       "time": "2026-02-05T23:13:06.635794+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier ML venues (hardware-focused work with limited benchmarks/metrics, small accuracy evaluation set, and unclear novelty vs prior precision-scalable accelerators)"
+      },
+      "token": {
+        "prompt_tokens": 6175,
+        "completion_tokens": 57,
+        "total_tokens": 6232
+      },
+      "time": "2026-02-09T21:41:48.615788+00:00"
     }
   ],
   "article": [

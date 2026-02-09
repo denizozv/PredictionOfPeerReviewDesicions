@@ -17,6 +17,20 @@
         "total_tokens": 6800
       },
       "time": "2026-02-05T22:42:10.464117+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence: the per-weight independent predictor lacks theoretical justification/ablation, gains are modest and confounded by jump-point tuning, and evaluation is limited (few architectures, no strong modern baselines, unclear reproducibility/statistics)."
+      },
+      "token": {
+        "prompt_tokens": 6045,
+        "completion_tokens": 70,
+        "total_tokens": 6115
+      },
+      "time": "2026-02-09T21:14:41.726531+00:00"
     }
   ],
   "article": [

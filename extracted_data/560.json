@@ -17,6 +17,20 @@
         "total_tokens": 6985
       },
       "time": "2026-02-05T22:59:13.636545+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated contribution with limited methodological rigor and insufficiently convincing experimental evidence for a top-tier venue"
+      },
+      "token": {
+        "prompt_tokens": 6309,
+        "completion_tokens": 39,
+        "total_tokens": 6348
+      },
+      "time": "2026-02-09T21:29:08.247008+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5183
       },
       "time": "2026-02-05T23:07:07.930326+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/insufficiently novel method with limited methodological rigor and incomplete experimental validation for top-tier standards"
+      },
+      "token": {
+        "prompt_tokens": 4527,
+        "completion_tokens": 39,
+        "total_tokens": 4566
+      },
+      "time": "2026-02-09T21:35:58.549692+00:00"
     }
   ],
   "article": [

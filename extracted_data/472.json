@@ -17,6 +17,20 @@
         "total_tokens": 12815
       },
       "time": "2026-02-05T22:50:21.921975+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/experimental weaknesses: nonconvex support regularizer with unclear guarantees and limited, dated empirical validation vs modern baselines"
+      },
+      "token": {
+        "prompt_tokens": 11304,
+        "completion_tokens": 44,
+        "total_tokens": 11348
+      },
+      "time": "2026-02-09T21:21:40.611075+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 4353
       },
       "time": "2026-02-05T23:09:03.096453+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and methodological weakness: relies on externally precomputed alignments for hard monotonic attention (not end-to-end), with experiments confined to morphological inflection and comparisons that may be confounded by training/selection differences; contribution likely incremental for a top-tier ML venue."
+      },
+      "token": {
+        "prompt_tokens": 3946,
+        "completion_tokens": 73,
+        "total_tokens": 4019
+      },
+      "time": "2026-02-09T21:38:00.126059+00:00"
     }
   ],
   "article": [

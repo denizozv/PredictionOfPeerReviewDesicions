@@ -17,6 +17,20 @@
         "total_tokens": 4377
       },
       "time": "2026-02-05T23:11:20.519782+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier venue: the core idea is largely a re-derivation/iterative variant of existing PoWER/EM-style concave lower-bound optimization with importance sampling, but the paper lacks clear novelty over prior work, has unclear/possibly flawed treatment of negative rewards via mixed bounds, and provides limited, non-standard experimental validation (Cartpole + one proprietary dataset without strong baselines/ablations or reproducibility)."
+      },
+      "token": {
+        "prompt_tokens": 3844,
+        "completion_tokens": 110,
+        "total_tokens": 3954
+      },
+      "time": "2026-02-09T21:40:29.486819+00:00"
     }
   ],
   "article": [

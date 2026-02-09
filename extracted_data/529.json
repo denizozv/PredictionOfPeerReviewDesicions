@@ -17,6 +17,20 @@
         "total_tokens": 6726
       },
       "time": "2026-02-05T22:56:16.114245+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for a top-tier ML conference (ad-hoc reward design, limited/unclear baselines and ablations, and small-scale human evaluation despite a largely incremental KL-regularized RL framing)."
+      },
+      "token": {
+        "prompt_tokens": 5961,
+        "completion_tokens": 65,
+        "total_tokens": 6026
+      },
+      "time": "2026-02-09T21:26:31.816191+00:00"
     }
   ],
   "article": [

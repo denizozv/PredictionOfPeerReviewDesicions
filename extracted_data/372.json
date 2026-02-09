@@ -17,6 +17,20 @@
         "total_tokens": 4599
       },
       "time": "2026-02-05T22:39:10.227098+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient methodological/experimental rigor for top-tier: nearest-neighbor memory with margin loss is incremental over prior memory-augmented/metric-learning work, and the evidence (limited ablations, unclear baselines/statistical validation, modest MT gains) is not strong enough to substantiate broad claims of lifelong one-shot learning."
+      },
+      "token": {
+        "prompt_tokens": 4131,
+        "completion_tokens": 83,
+        "total_tokens": 4214
+      },
+      "time": "2026-02-09T21:12:17.900960+00:00"
     }
   ],
   "article": [

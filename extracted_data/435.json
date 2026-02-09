@@ -17,6 +17,20 @@
         "total_tokens": 5640
       },
       "time": "2026-02-05T22:46:07.473723+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong empirical contribution introducing cosine-annealed learning rates with warm restarts for SGD, showing consistent anytime-performance gains and SOTA CIFAR results; method is simple but impactful and well-validated across multiple datasets/ensembling."
+      },
+      "token": {
+        "prompt_tokens": 4903,
+        "completion_tokens": 65,
+        "total_tokens": 4968
+      },
+      "time": "2026-02-09T21:17:50.348469+00:00"
     }
   ],
   "article": [

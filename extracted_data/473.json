@@ -17,6 +17,20 @@
         "total_tokens": 6260
       },
       "time": "2026-02-05T22:51:04.280417+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Limited originality and insufficient modern empirical validation for a top-tier venue (main contribution—input/output embedding tying with a soft-target/temperature loss—was already emerging in prior work; experiments are narrow, mostly PTB/WikiText-2, and lack broader comparisons/ablations expected at ICML/ICLR/NeurIPS)."
+      },
+      "token": {
+        "prompt_tokens": 5561,
+        "completion_tokens": 86,
+        "total_tokens": 5647
+      },
+      "time": "2026-02-09T21:21:49.963399+00:00"
     }
   ],
   "article": [

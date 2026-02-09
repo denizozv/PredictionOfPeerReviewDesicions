@@ -17,6 +17,20 @@
         "total_tokens": 3062
       },
       "time": "2026-02-05T23:13:17.540723+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Limited originality for a top-tier venue today: LM-initialized encoder/decoder pretraining for seq2seq is now a well-established paradigm, and the submission (as provided) lacks sufficient novel methodology/analysis beyond known pretraining + auxiliary LM loss; experimental evidence is also incomplete in the excerpt (missing full tables, statistical testing, broader benchmarks)."
+      },
+      "token": {
+        "prompt_tokens": 2610,
+        "completion_tokens": 89,
+        "total_tokens": 2699
+      },
+      "time": "2026-02-09T21:42:21.948690+00:00"
     }
   ],
   "article": [

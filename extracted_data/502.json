@@ -17,6 +17,20 @@
         "total_tokens": 5044
       },
       "time": "2026-02-05T22:54:04.607797+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for a top-tier ML venue (small/limited human-rated dataset, potential metric gaming/degeneracy, and weak validation of robustness/generalization beyond a few systems)."
+      },
+      "token": {
+        "prompt_tokens": 4508,
+        "completion_tokens": 60,
+        "total_tokens": 4568
+      },
+      "time": "2026-02-09T21:24:10.162514+00:00"
     }
   ],
   "article": [

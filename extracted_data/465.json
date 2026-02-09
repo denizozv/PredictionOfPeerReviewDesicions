@@ -17,6 +17,20 @@
         "total_tokens": 7317
       },
       "time": "2026-02-05T22:50:07.288456+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental evidence and limited novelty: only 100 ImageNet images, heavy reliance on an online technical report for key results, and the main ensemble-transfer idea is incremental for a top-tier venue despite being relevant and methodologically mostly sound."
+      },
+      "token": {
+        "prompt_tokens": 6557,
+        "completion_tokens": 67,
+        "total_tokens": 6624
+      },
+      "time": "2026-02-09T21:20:54.887893+00:00"
     }
   ],
   "article": [

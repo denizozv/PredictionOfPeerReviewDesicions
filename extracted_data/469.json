@@ -17,6 +17,20 @@
         "total_tokens": 5872
       },
       "time": "2026-02-05T22:50:15.253424+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient and incomplete experimental validation for a top-tier ML venue (limited end-to-end benchmarks/accuracy reporting, reliance on SGEMM proxy and AlexNet-era models, unclear comparisons to strong baselines and modern hardware/software stacks), despite relevant scope and a plausible sparse-conv implementation/model."
+      },
+      "token": {
+        "prompt_tokens": 4994,
+        "completion_tokens": 77,
+        "total_tokens": 5071
+      },
+      "time": "2026-02-09T21:21:21.797869+00:00"
     }
   ],
   "article": [

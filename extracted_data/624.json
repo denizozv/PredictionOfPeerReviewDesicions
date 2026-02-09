@@ -17,6 +17,20 @@
         "total_tokens": 8464
       },
       "time": "2026-02-05T23:05:16.335336+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient methodological/empirical support for top-tier acceptance: mostly contrived counterexamples and initialization pathologies with limited, non-standard experiments; claims are not validated at scale or with rigorous baselines, and several theoretical statements rely on strong/degenerate constructions rather than broadly applicable insights."
+      },
+      "token": {
+        "prompt_tokens": 7646,
+        "completion_tokens": 76,
+        "total_tokens": 7722
+      },
+      "time": "2026-02-09T21:34:52.262373+00:00"
     }
   ],
   "article": [

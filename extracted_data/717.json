@@ -17,6 +17,20 @@
         "total_tokens": 5173
       },
       "time": "2026-02-05T23:14:14.965370+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Incremental interpretability method with weak empirical validation (single architecture, mostly qualitative/summary stats) and limited novelty vs prior neuron visualization/selectivity work; lacks rigorous comparisons, ablations, and evidence that the proposed indices yield new insights or improve downstream tasks."
+      },
+      "token": {
+        "prompt_tokens": 4583,
+        "completion_tokens": 70,
+        "total_tokens": 4653
+      },
+      "time": "2026-02-09T21:43:11.462809+00:00"
     }
   ],
   "article": [

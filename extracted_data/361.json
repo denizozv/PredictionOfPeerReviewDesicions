@@ -17,6 +17,20 @@
         "total_tokens": 5964
       },
       "time": "2026-02-05T22:38:07.693631+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Experimental validation is not strong enough for a top-tier venue: key HPO results rely on random-forest surrogate benchmarks rather than real end-to-end optimization, and the methodological novelty (BNN + parametric curve layer) is incremental relative to prior learning-curve extrapolation and Freeze-Thaw/BOHAMIANN."
+      },
+      "token": {
+        "prompt_tokens": 5291,
+        "completion_tokens": 83,
+        "total_tokens": 5374
+      },
+      "time": "2026-02-09T21:11:17.053373+00:00"
     }
   ],
   "article": [

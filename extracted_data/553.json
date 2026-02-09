@@ -17,6 +17,20 @@
         "total_tokens": 6826
       },
       "time": "2026-02-05T22:58:21.232633+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for top-tier ML: simulator-only evaluation on logistic regression (MNIST) with limited baselines and unclear fairness/validity of the IHP-vs-ISP comparison methodology; contribution is more systems-architecture than novel ML and lacks compelling end-to-end evidence on modern models."
+      },
+      "token": {
+        "prompt_tokens": 6042,
+        "completion_tokens": 81,
+        "total_tokens": 6123
+      },
+      "time": "2026-02-09T21:28:32.853008+00:00"
     }
   ],
   "article": [

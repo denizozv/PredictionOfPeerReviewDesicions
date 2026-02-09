@@ -17,6 +17,20 @@
         "total_tokens": 8437
       },
       "time": "2026-02-05T23:10:13.879191+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficiently rigorous/standard experimental validation (single synthetic dataset, weak baselines/ablations, unclear statistical robustness)"
+      },
+      "token": {
+        "prompt_tokens": 7704,
+        "completion_tokens": 45,
+        "total_tokens": 7749
+      },
+      "time": "2026-02-09T21:39:30.114869+00:00"
     }
   ],
   "article": [

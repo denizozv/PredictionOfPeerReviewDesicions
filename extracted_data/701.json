@@ -17,6 +17,20 @@
         "total_tokens": 4327
       },
       "time": "2026-02-05T23:12:13.874882+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier acceptance (limited/unclear baselines, confounded comparisons due to parameter count and regularization choices, weak statistical validation, and modest novelty relative to established adapter/parallel-branch/stitching transfer methods)."
+      },
+      "token": {
+        "prompt_tokens": 3802,
+        "completion_tokens": 71,
+        "total_tokens": 3873
+      },
+      "time": "2026-02-09T21:41:34.970877+00:00"
     }
   ],
   "article": [

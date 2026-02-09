@@ -17,6 +17,20 @@
         "total_tokens": 2923
       },
       "time": "2026-02-05T23:11:23.420494+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a descriptive benchmarking study with limited novelty and weakly supported general claims (e.g., power independence of architecture/batch size) based on a single hardware/software setup and no rigorous statistical/experimental controls."
+      },
+      "token": {
+        "prompt_tokens": 2471,
+        "completion_tokens": 61,
+        "total_tokens": 2532
+      },
+      "time": "2026-02-09T21:40:37.287328+00:00"
     }
   ],
   "article": [

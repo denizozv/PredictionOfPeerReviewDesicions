@@ -17,6 +17,20 @@
         "total_tokens": 3833
       },
       "time": "2026-02-05T23:17:16.215938+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated pointer-network LM with limited experimental rigor (unfair baseline tuning, narrow metrics, no strong modern comparisons/ablations), so novelty and evidence are insufficient for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 3372,
+        "completion_tokens": 60,
+        "total_tokens": 3432
+      },
+      "time": "2026-02-09T21:45:54.738770+00:00"
     }
   ],
   "article": [

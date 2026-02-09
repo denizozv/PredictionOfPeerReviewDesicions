@@ -17,6 +17,20 @@
         "total_tokens": 5072
       },
       "time": "2026-02-05T23:07:12.673347+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient experimental validation for top-tier ML: limited tasks/metrics and unclear methodological rigor (variational DP details, ablations, and comparisons), with modest gains and some negative results (SCWS) without thorough analysis."
+      },
+      "token": {
+        "prompt_tokens": 4502,
+        "completion_tokens": 63,
+        "total_tokens": 4565
+      },
+      "time": "2026-02-09T21:36:18.063520+00:00"
     }
   ],
   "article": [

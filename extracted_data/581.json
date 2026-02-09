@@ -17,6 +17,20 @@
         "total_tokens": 9701
       },
       "time": "2026-02-05T23:01:10.177399+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.84,
+        "primary_reason": "Insufficient experimental rigor: results are largely qualitative with limited baselines/ablation and reduced-scale training; novelty is mainly a representation/augmentation pipeline without strong quantitative evidence or clear state-of-the-art gains."
+      },
+      "token": {
+        "prompt_tokens": 8716,
+        "completion_tokens": 60,
+        "total_tokens": 8776
+      },
+      "time": "2026-02-09T21:30:55.581029+00:00"
     }
   ],
   "article": [

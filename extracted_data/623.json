@@ -17,6 +17,20 @@
         "total_tokens": 1549
       },
       "time": "2026-02-05T23:05:14.123664+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily empirical/observational Hessian-spectrum study with limited scale and unclear methodological rigor; lacks a clear novel theoretical or algorithmic contribution and provides insufficient experimental evidence for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 1240,
+        "completion_tokens": 56,
+        "total_tokens": 1296
+      },
+      "time": "2026-02-09T21:34:44.328793+00:00"
     }
   ],
   "article": [

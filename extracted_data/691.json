@@ -17,6 +17,20 @@
         "total_tokens": 5471
       },
       "time": "2026-02-05T23:11:24.861254+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier ML venue: primarily an environment/engineering contribution with limited, non-standardized benchmarking and unclear novelty relative to existing platforms (e.g., Gym/Universe), plus weak evidence that results are reliable/generalizable."
+      },
+      "token": {
+        "prompt_tokens": 4897,
+        "completion_tokens": 70,
+        "total_tokens": 4967
+      },
+      "time": "2026-02-09T21:40:43.445512+00:00"
     }
   ],
   "article": [

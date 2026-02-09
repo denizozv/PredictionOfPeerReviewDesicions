@@ -17,6 +17,20 @@
         "total_tokens": 5743
       },
       "time": "2026-02-05T22:59:09.434812+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier acceptance (limited statistical reporting/ablations, unclear robustness and comparisons), despite being relevant and reasonably original."
+      },
+      "token": {
+        "prompt_tokens": 5036,
+        "completion_tokens": 50,
+        "total_tokens": 5086
+      },
+      "time": "2026-02-09T21:28:56.539727+00:00"
     }
   ],
   "article": [

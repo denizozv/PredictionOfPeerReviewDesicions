@@ -17,6 +17,20 @@
         "total_tokens": 6957
       },
       "time": "2026-02-05T22:54:15.658372+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient and dated experimental validation for a top-tier ML conference: limited task diversity/baselines/ablations and unclear robustness despite an interesting differentiable interpreter idea."
+      },
+      "token": {
+        "prompt_tokens": 6283,
+        "completion_tokens": 52,
+        "total_tokens": 6335
+      },
+      "time": "2026-02-09T21:24:41.750180+00:00"
     }
   ],
   "article": [

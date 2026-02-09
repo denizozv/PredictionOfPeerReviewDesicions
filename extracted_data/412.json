@@ -17,6 +17,20 @@
         "total_tokens": 11318
       },
       "time": "2026-02-05T22:43:19.359058+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient novelty and experimental rigor for a top-tier venue: the DC/CCCP + (latent) structured SVM framing is largely a repackaging of known ideas, and the empirical evaluation is mostly fine-tuning from strong SGD baselines without convincing ablations, fair end-to-end comparisons, or evidence that the method is broadly superior beyond modest gains."
+      },
+      "token": {
+        "prompt_tokens": 10023,
+        "completion_tokens": 91,
+        "total_tokens": 10114
+      },
+      "time": "2026-02-09T21:15:55.493537+00:00"
     }
   ],
   "article": [

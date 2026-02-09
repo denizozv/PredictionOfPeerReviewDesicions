@@ -17,6 +17,20 @@
         "total_tokens": 8065
       },
       "time": "2026-02-05T23:03:14.706366+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental LSTM-on-AST approach with limited novelty and insufficient modern experimental rigor/analysis for a top-tier ML venue (no strong baselines/ablations, small gains on key task, and unclear evaluation beyond accuracy on a single dataset)."
+      },
+      "token": {
+        "prompt_tokens": 7188,
+        "completion_tokens": 68,
+        "total_tokens": 7256
+      },
+      "time": "2026-02-09T21:32:55.058660+00:00"
     }
   ],
   "article": [

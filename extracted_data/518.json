@@ -17,6 +17,20 @@
         "total_tokens": 5178
       },
       "time": "2026-02-05T22:55:09.765423+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier venue: the amortized-SVGD-to-sampler training is plausible but lacks solid theoretical guarantees and ablations, and the empirical evaluation is mostly qualitative with limited, potentially problematic metrics (inception score, classifier-on-samples) and no strong likelihood/EBM baselines or thorough comparisons."
+      },
+      "token": {
+        "prompt_tokens": 4457,
+        "completion_tokens": 88,
+        "total_tokens": 4545
+      },
+      "time": "2026-02-09T21:25:21.238301+00:00"
     }
   ],
   "article": [

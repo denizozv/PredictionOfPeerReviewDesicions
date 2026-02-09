@@ -17,6 +17,20 @@
         "total_tokens": 7893
       },
       "time": "2026-02-05T23:11:08.106916+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological and experimental weaknesses: key claims (true linear-time complexity, contractive/Lipschitz properties, and invariance/discriminativeness benefits) are insufficiently justified and the empirical validation is limited (single small dataset, no strong baselines/ablations or cross-validation), making the contribution unlikely to meet top-tier conference standards despite topical relevance."
+      },
+      "token": {
+        "prompt_tokens": 6964,
+        "completion_tokens": 90,
+        "total_tokens": 7054
+      },
+      "time": "2026-02-09T21:39:58.405514+00:00"
     }
   ],
   "article": [

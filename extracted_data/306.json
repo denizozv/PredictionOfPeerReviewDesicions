@@ -17,6 +17,20 @@
         "total_tokens": 5753
       },
       "time": "2026-02-05T22:33:37.601608+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and experimental rigor for a top-tier venue (largely incremental over prior LSTM-learned optimizers; limited evaluation on a custom Mini-ImageNet split with few baselines/ablations and a simplifying gradient-independence assumption)."
+      },
+      "token": {
+        "prompt_tokens": 5191,
+        "completion_tokens": 70,
+        "total_tokens": 5261
+      },
+      "time": "2026-02-09T21:07:01.951931+00:00"
     }
   ],
   "article": [

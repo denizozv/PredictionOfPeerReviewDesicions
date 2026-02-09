@@ -17,6 +17,20 @@
         "total_tokens": 4573
       },
       "time": "2026-02-05T22:36:13.048441+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, relevant, and original improvements to autoregressive image modeling with solid CIFAR-10 results and ablations; experimental scope is somewhat narrow but sufficient for acceptance."
+      },
+      "token": {
+        "prompt_tokens": 3998,
+        "completion_tokens": 52,
+        "total_tokens": 4050
+      },
+      "time": "2026-02-09T21:09:37.136879+00:00"
     }
   ],
   "article": [

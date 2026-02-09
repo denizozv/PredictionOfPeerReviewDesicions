@@ -17,6 +17,20 @@
         "total_tokens": 5692
       },
       "time": "2026-02-05T22:52:22.939527+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient novelty and methodological/experimental rigor for a top-tier ML venue: fixed random LFSR masks resemble prior sparse/pruning/structured sparsity ideas, and results lack strong baselines/ablations/statistical robustness; hardware claims are per-neuron and not end-to-end system-level."
+      },
+      "token": {
+        "prompt_tokens": 4889,
+        "completion_tokens": 78,
+        "total_tokens": 4967
+      },
+      "time": "2026-02-09T21:23:10.412022+00:00"
     }
   ],
   "article": [

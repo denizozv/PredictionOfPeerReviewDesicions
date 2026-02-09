@@ -17,6 +17,20 @@
         "total_tokens": 11258
       },
       "time": "2026-02-05T22:50:08.893901+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Empirical evidence and novelty are insufficient for a top-tier conference: experiments are limited/dated and underperform on ImageNet, while the main theoretical results (benign landscape for deep linear residual nets; finite-sample memorization with overparameterization) are either restricted to linear models or align with known expressivity/memorization phenomena, reducing perceived originality/impact."
+      },
+      "token": {
+        "prompt_tokens": 10017,
+        "completion_tokens": 92,
+        "total_tokens": 10109
+      },
+      "time": "2026-02-09T21:21:01.513488+00:00"
     }
   ],
   "article": [

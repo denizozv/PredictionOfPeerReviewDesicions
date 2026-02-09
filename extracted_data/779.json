@@ -17,6 +17,20 @@
         "total_tokens": 4097
       },
       "time": "2026-02-05T23:19:13.815431+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Incremental contribution focused on engineering trade-offs; limited novelty and methodological depth relative to top-tier ML conference standards despite solid experiments."
+      },
+      "token": {
+        "prompt_tokens": 3618,
+        "completion_tokens": 44,
+        "total_tokens": 3662
+      },
+      "time": "2026-02-09T21:47:51.725073+00:00"
     }
   ],
   "article": [

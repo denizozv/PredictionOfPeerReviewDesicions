@@ -17,6 +17,20 @@
         "total_tokens": 5510
       },
       "time": "2026-02-05T23:20:05.684208+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and methodological/experimental rigor for a top-tier ML conference (largely a straightforward low-rank softmax neural model with negative sampling; limited ablations and some evaluation choices like using ground-truth label counts at test time)."
+      },
+      "token": {
+        "prompt_tokens": 4808,
+        "completion_tokens": 67,
+        "total_tokens": 4875
+      },
+      "time": "2026-02-09T21:48:28.702323+00:00"
     }
   ],
   "article": [

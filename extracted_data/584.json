@@ -17,6 +17,20 @@
         "total_tokens": 9682
       },
       "time": "2026-02-05T23:01:17.861247+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient novelty and experimental rigor by current top-tier standards (dated architecture, limited benchmarks/ablations, and a non-tree-constrained greedy dependency parser), despite being relevant and reasonably sound."
+      },
+      "token": {
+        "prompt_tokens": 8633,
+        "completion_tokens": 57,
+        "total_tokens": 8690
+      },
+      "time": "2026-02-09T21:31:12.602928+00:00"
     }
   ],
   "article": [

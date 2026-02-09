@@ -17,6 +17,20 @@
         "total_tokens": 6351
       },
       "time": "2026-02-05T23:04:15.218987+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological weaknesses and insufficient/dated evaluation: relies on limited binary subsets of MNIST/CIFAR-10 with LeNet-5, uses nonstandard/weak attack settings (e.g., CG/Adam with λ=0, unclear threat model), lacks modern adaptive white-box evaluations (PGD/AutoAttack, EOT, BPDA for AEC/IAEC), and the main claims (transferability of adversarial training, distillation/AEC baselines) are not novel and conflict with known failures of distillation/obfuscated-gradient defenses."
+      },
+      "token": {
+        "prompt_tokens": 5489,
+        "completion_tokens": 131,
+        "total_tokens": 5620
+      },
+      "time": "2026-02-09T21:33:40.744299+00:00"
     }
   ],
   "article": [

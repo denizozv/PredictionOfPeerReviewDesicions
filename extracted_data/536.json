@@ -17,6 +17,20 @@
         "total_tokens": 4557
       },
       "time": "2026-02-05T22:57:13.356286+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental validation and unclear novelty beyond known noise-stability-to-junta and threshold-circuit simulation results"
+      },
+      "token": {
+        "prompt_tokens": 4086,
+        "completion_tokens": 40,
+        "total_tokens": 4126
+      },
+      "time": "2026-02-09T21:27:11.401086+00:00"
     }
   ],
   "article": [

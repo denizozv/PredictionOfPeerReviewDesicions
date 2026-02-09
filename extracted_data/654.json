@@ -17,6 +17,20 @@
         "total_tokens": 6947
       },
       "time": "2026-02-05T23:08:18.507319+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient empirical validation and unclear methodological rigor (bound tightness/likelihood estimation), with limited novelty over prior walkback/GSN/diffusion-style training."
+      },
+      "token": {
+        "prompt_tokens": 6204,
+        "completion_tokens": 52,
+        "total_tokens": 6256
+      },
+      "time": "2026-02-09T21:37:34.097235+00:00"
     }
   ],
   "article": [

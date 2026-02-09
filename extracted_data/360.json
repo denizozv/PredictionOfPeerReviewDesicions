@@ -17,6 +17,20 @@
         "total_tokens": 5656
       },
       "time": "2026-02-05T22:38:05.477811+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient experimental evidence and unclear novelty vs prior guided cost learning/IRL; evaluation is limited to a few MuJoCo tasks with narrow baselines and no strong modern comparisons, making methodological and empirical support inadequate for a top-tier conference."
+      },
+      "token": {
+        "prompt_tokens": 5114,
+        "completion_tokens": 67,
+        "total_tokens": 5181
+      },
+      "time": "2026-02-09T21:11:09.830849+00:00"
     }
   ],
   "article": [

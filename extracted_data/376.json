@@ -17,6 +17,20 @@
         "total_tokens": 8280
       },
       "time": "2026-02-05T22:39:17.825264+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological and evidential gaps: capacity claims (e.g., ~5 bits/parameter, 1 real number/unit) are based on highly tuned, synthetic setups with limited statistical rigor and unclear generalization; novelty of proposed architectures and conclusions about architecture equivalence are insufficiently substantiated for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7509,
+        "completion_tokens": 82,
+        "total_tokens": 7591
+      },
+      "time": "2026-02-09T21:12:38.661005+00:00"
     }
   ],
   "article": [

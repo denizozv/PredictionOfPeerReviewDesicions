@@ -17,6 +17,20 @@
         "total_tokens": 6526
       },
       "time": "2026-02-05T22:48:19.302699+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Methodological/experimental weaknesses: CMD metric theory relies on full moment sequences on compact support but the implemented regularizer matches only marginal moments up to finite K, weakening guarantees; empirical evaluation is limited (small benchmarks, no strong modern baselines/ablations, and some comparisons are not apples-to-apples), so evidence is insufficient for a top-tier conference."
+      },
+      "token": {
+        "prompt_tokens": 5810,
+        "completion_tokens": 90,
+        "total_tokens": 5900
+      },
+      "time": "2026-02-09T21:20:02.411634+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 8357
       },
       "time": "2026-02-05T23:05:11.810866+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological weaknesses and insufficient empirical validation: heavy reliance on unrealistic spin-glass/independence approximations and limited experiments (mostly small synthetic + descriptive CIFAR plots) without strong quantitative evidence or ablations to substantiate the dynamic-ensemble/BN-scaling claims."
+      },
+      "token": {
+        "prompt_tokens": 7261,
+        "completion_tokens": 73,
+        "total_tokens": 7334
+      },
+      "time": "2026-02-09T21:34:38.201268+00:00"
     }
   ],
   "article": [

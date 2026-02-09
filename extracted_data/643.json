@@ -17,6 +17,20 @@
         "total_tokens": 12384
       },
       "time": "2026-02-05T23:07:20.043383+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental heuristic over prior online dictionary learning with limited methodological novelty and insufficiently rigorous/large-scale experimental validation for a top-tier ML venue"
+      },
+      "token": {
+        "prompt_tokens": 11300,
+        "completion_tokens": 46,
+        "total_tokens": 11346
+      },
+      "time": "2026-02-09T21:36:38.526599+00:00"
     }
   ],
   "article": [

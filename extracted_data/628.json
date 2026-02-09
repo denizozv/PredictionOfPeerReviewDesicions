@@ -17,6 +17,20 @@
         "total_tokens": 8937
       },
       "time": "2026-02-05T23:06:07.086557+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient and methodologically weak experimental validation (evaluated on training data with features trained on same images; synthetic grammars/weights; no learning or generalization results), plus unclear novelty vs. existing graph-cut/fusion-move inference and limited theoretical guarantees (local optimum only, strong submodularity constraints)."
+      },
+      "token": {
+        "prompt_tokens": 7970,
+        "completion_tokens": 81,
+        "total_tokens": 8051
+      },
+      "time": "2026-02-09T21:35:18.141488+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5571
       },
       "time": "2026-02-05T23:13:09.308242+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Methodological/experimental weaknesses: grounding+clustering pipeline relies on heavy heuristics and proxy-ASR-based evaluation, with limited rigorous baselines/ablation and unclear evidence that discovered units are truly word-like beyond post-hoc analysis."
+      },
+      "token": {
+        "prompt_tokens": 5000,
+        "completion_tokens": 66,
+        "total_tokens": 5066
+      },
+      "time": "2026-02-09T21:41:54.946897+00:00"
     }
   ],
   "article": [

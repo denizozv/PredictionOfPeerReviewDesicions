@@ -17,6 +17,20 @@
         "total_tokens": 5929
       },
       "time": "2026-02-05T22:57:16.587670+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological and empirical gaps for top-tier: key theorem/algorithms rely on strong/handwavy solvability assumptions and approximate BN/activation handling, with limited ablations and unclear reproducibility despite relevance and some empirical gains."
+      },
+      "token": {
+        "prompt_tokens": 5340,
+        "completion_tokens": 65,
+        "total_tokens": 5405
+      },
+      "time": "2026-02-09T21:27:24.054165+00:00"
     }
   ],
   "article": [

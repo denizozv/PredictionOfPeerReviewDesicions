@@ -17,6 +17,20 @@
         "total_tokens": 5917
       },
       "time": "2026-02-05T23:00:15.076807+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient novelty and weak experimental rigor for a top-tier venue (small/limited evaluation, unclear baselines/metrics, and method largely incremental to prior LSTM/paragraph2vec/attention answer selection)."
+      },
+      "token": {
+        "prompt_tokens": 5142,
+        "completion_tokens": 60,
+        "total_tokens": 5202
+      },
+      "time": "2026-02-09T21:29:59.116693+00:00"
     }
   ],
   "article": [

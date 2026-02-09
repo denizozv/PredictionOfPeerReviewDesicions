@@ -17,6 +17,20 @@
         "total_tokens": 6159
       },
       "time": "2026-02-05T23:16:21.295751+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological and experimental weaknesses: key components are not jointly learned (merge is partly deterministic and split/merge trained separately), supervision assumptions are inconsistent with the claimed weak-supervision setting, and empirical evidence is limited (small synthetic datasets, narrow baselines/ablations), making novelty/impact insufficient for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 5567,
+        "completion_tokens": 84,
+        "total_tokens": 5651
+      },
+      "time": "2026-02-09T21:45:17.506076+00:00"
     }
   ],
   "article": [

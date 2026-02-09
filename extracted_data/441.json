@@ -17,6 +17,20 @@
         "total_tokens": 4356
       },
       "time": "2026-02-05T22:47:02.547002+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient methodological/experimental rigor for a current top-tier venue: the variable-computation mechanism is only loosely justified (soft-threshold masking, penalty/annealing heuristics, unclear stability/optimization analysis), and the empirical evaluation lacks modern baselines, ablations, and statistically robust comparisons to convincingly establish novelty and reliability beyond prior adaptive-computation/gating ideas."
+      },
+      "token": {
+        "prompt_tokens": 3830,
+        "completion_tokens": 92,
+        "total_tokens": 3922
+      },
+      "time": "2026-02-09T21:18:31.719573+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5225
       },
       "time": "2026-02-05T23:00:24.598761+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Incremental contribution (differentiating through CCA via eigendecomposition) with limited experimental validation (only two small retrieval datasets, fixed features, narrow baselines/ablations) and unclear methodological robustness around stochastic covariance estimation and eigenvector-gradient stability."
+      },
+      "token": {
+        "prompt_tokens": 4580,
+        "completion_tokens": 70,
+        "total_tokens": 4650
+      },
+      "time": "2026-02-09T21:30:29.842172+00:00"
     }
   ],
   "article": [

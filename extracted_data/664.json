@@ -17,6 +17,20 @@
         "total_tokens": 4253
       },
       "time": "2026-02-05T23:09:11.873139+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient methodological rigor and experimental validation: results largely reflect steganalyser domain shift/overfitting to real images rather than demonstrated steganographic security, with limited baselines, unclear metrics, and weak evidence of novelty beyond prior GAN-based adversarial setups."
+      },
+      "token": {
+        "prompt_tokens": 3643,
+        "completion_tokens": 71,
+        "total_tokens": 3714
+      },
+      "time": "2026-02-09T21:38:27.381989+00:00"
     }
   ],
   "article": [

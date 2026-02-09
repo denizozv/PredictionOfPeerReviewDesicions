@@ -17,6 +17,20 @@
         "total_tokens": 5827
       },
       "time": "2026-02-05T22:40:07.193807+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and outdated/limited experimental validation relative to current top-tier standards (incremental match-LSTM + pointer span prediction; comparisons mainly to early baselines, lacking stronger modern baselines/ablations and broader analysis)."
+      },
+      "token": {
+        "prompt_tokens": 5215,
+        "completion_tokens": 64,
+        "total_tokens": 5279
+      },
+      "time": "2026-02-09T21:13:08.571175+00:00"
     }
   ],
   "article": [

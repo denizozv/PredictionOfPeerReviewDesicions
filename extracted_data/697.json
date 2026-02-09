@@ -17,6 +17,20 @@
         "total_tokens": 5540
       },
       "time": "2026-02-05T23:12:08.720769+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/insufficiently validated contribution: reformulating SGNS as low-rank matrix optimization is known, the proposed Riemannian method is not rigorously developed (unclear correctness/convergence, questionable complexity claims), and experiments are limited (single corpus, narrow evaluation, no strong modern baselines or ablations)."
+      },
+      "token": {
+        "prompt_tokens": 4791,
+        "completion_tokens": 84,
+        "total_tokens": 4875
+      },
+      "time": "2026-02-09T21:41:21.041092+00:00"
     }
   ],
   "article": [

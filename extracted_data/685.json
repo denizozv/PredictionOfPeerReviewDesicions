@@ -17,6 +17,20 @@
         "total_tokens": 4969
       },
       "time": "2026-02-05T23:11:13.225644+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficient experimental evidence: character-CNN word representations and NCE are established; evaluation is narrow (SMT reranking on one MT task) with small gains and unstable training, lacking strong baselines/ablations and broader validation."
+      },
+      "token": {
+        "prompt_tokens": 4275,
+        "completion_tokens": 68,
+        "total_tokens": 4343
+      },
+      "time": "2026-02-09T21:40:09.805033+00:00"
     }
   ],
   "article": [

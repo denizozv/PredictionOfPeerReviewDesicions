@@ -17,6 +17,20 @@
         "total_tokens": 11646
       },
       "time": "2026-02-05T23:10:11.098460+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Theoretical/empirical gap and limited novelty: analysis relies on strong, idealized assumptions (random Gaussian filters, paired ± filters, simplified pooling/sparsity model) and provides only single-layer, one-step IHT-style bounds; experiments are largely indirect/qualitative and do not convincingly validate the theory for trained modern CNNs at scale."
+      },
+      "token": {
+        "prompt_tokens": 10385,
+        "completion_tokens": 89,
+        "total_tokens": 10474
+      },
+      "time": "2026-02-09T21:39:24.256049+00:00"
     }
   ],
   "article": [

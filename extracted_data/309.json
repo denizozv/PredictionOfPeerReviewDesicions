@@ -17,6 +17,20 @@
         "total_tokens": 6905
       },
       "time": "2026-02-05T22:33:55.235062+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, novel auxiliary-task framework (UNREAL) with sound methodology and extensive empirical validation on Atari-57 and 13 diverse 3D Labyrinth tasks, including ablations and robustness sweeps, showing substantial and credible performance/data-efficiency gains."
+      },
+      "token": {
+        "prompt_tokens": 6112,
+        "completion_tokens": 69,
+        "total_tokens": 6181
+      },
+      "time": "2026-02-09T21:07:22.216877+00:00"
     }
   ],
   "article": [

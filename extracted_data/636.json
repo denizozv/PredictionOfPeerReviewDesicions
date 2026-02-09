@@ -17,6 +17,20 @@
         "total_tokens": 3665
       },
       "time": "2026-02-05T23:07:09.417568+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental validation for top-tier acceptance (derivations rely on strong/unclear assumptions; limited, non-standardized experiments/ablations and missing comparisons to established BN+dropout handling), despite being in-scope and having a plausible idea."
+      },
+      "token": {
+        "prompt_tokens": 3195,
+        "completion_tokens": 73,
+        "total_tokens": 3268
+      },
+      "time": "2026-02-09T21:36:05.323417+00:00"
     }
   ],
   "article": [

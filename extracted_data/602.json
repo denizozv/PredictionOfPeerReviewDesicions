@@ -17,6 +17,20 @@
         "total_tokens": 5775
       },
       "time": "2026-02-05T23:03:12.261965+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong relevance and solid multi-hop gated-attention method with extensive experiments/ablations showing SOTA on multiple RC benchmarks; contribution is incremental but sufficiently novel and well-supported for acceptance."
+      },
+      "token": {
+        "prompt_tokens": 5108,
+        "completion_tokens": 55,
+        "total_tokens": 5163
+      },
+      "time": "2026-02-09T21:32:48.996531+00:00"
     }
   ],
   "article": [

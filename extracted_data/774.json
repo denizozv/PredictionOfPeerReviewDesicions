@@ -17,6 +17,20 @@
         "total_tokens": 3049
       },
       "time": "2026-02-05T23:19:05.753780+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Primarily a collection of visualization/sampling heuristics (e.g., slerp, analogy grids, mean-difference attribute vectors with rebalancing/augmentation) with limited methodological novelty and insufficient rigorous experimental validation for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 2510,
+        "completion_tokens": 68,
+        "total_tokens": 2578
+      },
+      "time": "2026-02-09T21:47:26.989289+00:00"
     }
   ],
   "article": [

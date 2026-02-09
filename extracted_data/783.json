@@ -17,6 +17,20 @@
         "total_tokens": 5356
       },
       "time": "2026-02-05T23:19:23.835422+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficiently rigorous/controlled experimental evidence for a top-tier ML conference (mostly known sync-SGD+backup-workers idea; comparisons confounded by different tuning/stabilization choices and lack of broader baselines/ablations)."
+      },
+      "token": {
+        "prompt_tokens": 4678,
+        "completion_tokens": 66,
+        "total_tokens": 4744
+      },
+      "time": "2026-02-09T21:48:17.248616+00:00"
     }
   ],
   "article": [

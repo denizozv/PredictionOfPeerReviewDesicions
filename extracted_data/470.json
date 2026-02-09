@@ -17,6 +17,20 @@
         "total_tokens": 6498
       },
       "time": "2026-02-05T22:50:17.336356+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/experimental weaknesses: truncated stick-breaking makes the model effectively finite-dimensional; comparisons are not fully fair (limited baselines, hyperparameter tuning asymmetry), and evidence is insufficient for top-tier acceptance despite relevance and some novelty."
+      },
+      "token": {
+        "prompt_tokens": 5573,
+        "completion_tokens": 65,
+        "total_tokens": 5638
+      },
+      "time": "2026-02-09T21:21:28.266978+00:00"
     }
   ],
   "article": [

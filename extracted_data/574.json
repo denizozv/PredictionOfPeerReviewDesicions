@@ -17,6 +17,20 @@
         "total_tokens": 4250
       },
       "time": "2026-02-05T23:00:23.134241+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient novelty and weak experimental validation for a top-tier ML venue (system-style paper with limited rigorous comparisons/ablations and unclear methodological details)"
+      },
+      "token": {
+        "prompt_tokens": 3688,
+        "completion_tokens": 48,
+        "total_tokens": 3736
+      },
+      "time": "2026-02-09T21:30:23.442977+00:00"
     }
   ],
   "article": [

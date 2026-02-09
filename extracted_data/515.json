@@ -17,6 +17,20 @@
         "total_tokens": 7457
       },
       "time": "2026-02-05T22:55:07.790403+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient experimental evidence and limited demonstrated advantage over strong baselines; novelty is mainly an application of TT tensorization with Riemannian optimization, and results are on small/dated benchmarks with marginal gains."
+      },
+      "token": {
+        "prompt_tokens": 6475,
+        "completion_tokens": 60,
+        "total_tokens": 6535
+      },
+      "time": "2026-02-09T21:25:12.723937+00:00"
     }
   ],
   "article": [

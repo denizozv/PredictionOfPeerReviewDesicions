@@ -17,6 +17,20 @@
         "total_tokens": 7150
       },
       "time": "2026-02-05T22:52:04.704128+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficient experimental scope (mostly CIFAR-10 distillation ablations) for a top-tier conference; conclusions are largely confirmatory and lack broader validation/theoretical insight."
+      },
+      "token": {
+        "prompt_tokens": 6339,
+        "completion_tokens": 55,
+        "total_tokens": 6394
+      },
+      "time": "2026-02-09T21:22:12.500821+00:00"
     }
   ],
   "article": [

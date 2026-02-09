@@ -17,6 +17,20 @@
         "total_tokens": 6869
       },
       "time": "2026-02-05T23:17:05.619762+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant NMT contribution with sound convolutional encoder design and extensive WMT-scale experiments showing competitive BLEU and clear decoding speedups; novelty is solid for top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 6014,
+        "completion_tokens": 55,
+        "total_tokens": 6069
+      },
+      "time": "2026-02-09T21:45:29.298728+00:00"
     }
   ],
   "article": [

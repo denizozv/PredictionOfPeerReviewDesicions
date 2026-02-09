@@ -17,6 +17,20 @@
         "total_tokens": 5858
       },
       "time": "2026-02-05T23:00:11.744042+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient methodological/experimental rigor for top-tier: unclear reproducibility and evaluation details, limited breadth of experiments/ablations, and novelty is incremental relative to prior attention+RNN and metric/one-shot frameworks despite strong Omniglot claims."
+      },
+      "token": {
+        "prompt_tokens": 5222,
+        "completion_tokens": 69,
+        "total_tokens": 5291
+      },
+      "time": "2026-02-09T21:29:53.301887+00:00"
     }
   ],
   "article": [

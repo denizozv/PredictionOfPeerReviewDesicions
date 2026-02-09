@@ -17,6 +17,20 @@
         "total_tokens": 5167
       },
       "time": "2026-02-05T23:07:16.736317+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficiently rigorous/modern experimental validation for top-tier ML venues (hardware speedup claims rely on modeled ASIC MAC units and partial accuracy sweeps; search method is heuristic with limited evidence of generality)."
+      },
+      "token": {
+        "prompt_tokens": 4566,
+        "completion_tokens": 62,
+        "total_tokens": 4628
+      },
+      "time": "2026-02-09T21:36:31.409359+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 12832
       },
       "time": "2026-02-05T22:49:06.918503+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong RL contribution with sound off-policy actor-critic methodology (Retrace + truncated IS with bias correction + trust-region stabilization) and extensive empirical validation on Atari-57 and multiple MuJoCo tasks; overall meets top-tier conference standards despite some presentation/clarity issues and reliance on hyperparameter search in continuous control."
+      },
+      "token": {
+        "prompt_tokens": 11298,
+        "completion_tokens": 82,
+        "total_tokens": 11380
+      },
+      "time": "2026-02-09T21:20:29.071180+00:00"
     }
   ],
   "article": [

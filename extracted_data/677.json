@@ -17,6 +17,20 @@
         "total_tokens": 4463
       },
       "time": "2026-02-05T23:10:16.074960+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated method with limited experimental validation and unclear methodological novelty vs prior random-walk/skip-gram graph embedding approaches; evidence restricted to small, balanced molecular datasets and accuracy-only evaluation."
+      },
+      "token": {
+        "prompt_tokens": 3933,
+        "completion_tokens": 58,
+        "total_tokens": 3991
+      },
+      "time": "2026-02-09T21:39:37.662516+00:00"
     }
   ],
   "article": [

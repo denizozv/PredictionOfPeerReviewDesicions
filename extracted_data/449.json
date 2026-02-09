@@ -17,6 +17,20 @@
         "total_tokens": 4584
       },
       "time": "2026-02-05T22:48:03.453822+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient novelty and experimental rigor by current top-tier standards (architecture largely a ResNet-like multi-path/averaging design; limited ablations/analysis to isolate why it works and to compare fairly against stronger modern baselines)."
+      },
+      "token": {
+        "prompt_tokens": 4032,
+        "completion_tokens": 64,
+        "total_tokens": 4096
+      },
+      "time": "2026-02-09T21:19:17.800304+00:00"
     }
   ],
   "article": [

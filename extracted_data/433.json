@@ -17,6 +17,20 @@
         "total_tokens": 4558
       },
       "time": "2026-02-05T22:46:03.697886+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Lacks originality for a top-tier venue: the submission largely reproduces the established Real NVP/normalizing flows framework and standard image-density experiments, with no clearly new technical contribution or substantially stronger empirical results beyond prior work."
+      },
+      "token": {
+        "prompt_tokens": 3987,
+        "completion_tokens": 64,
+        "total_tokens": 4051
+      },
+      "time": "2026-02-09T21:17:37.722506+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 6517
       },
       "time": "2026-02-05T23:07:14.985344+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier venue: limited and unclear empirical validation (few tasks, weak baselines/ablations, missing quantitative details and uncertainty), plus the core ideas (amortized SVGD, KSD-based objectives, treating SGLD as an inference network) are largely incremental/derivative of prior Stein/SVGD literature rather than a clearly novel contribution."
+      },
+      "token": {
+        "prompt_tokens": 5581,
+        "completion_tokens": 98,
+        "total_tokens": 5679
+      },
+      "time": "2026-02-09T21:36:25.187739+00:00"
     }
   ],
   "article": [

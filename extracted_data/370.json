@@ -17,6 +17,20 @@
         "total_tokens": 4691
       },
       "time": "2026-02-05T22:39:06.269255+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental dense–prune–retrain–densify scheme with limited methodological novelty and insufficiently rigorous/controlled evaluation for a top-tier ML conference"
+      },
+      "token": {
+        "prompt_tokens": 4112,
+        "completion_tokens": 49,
+        "total_tokens": 4161
+      },
+      "time": "2026-02-09T21:12:02.861560+00:00"
     }
   ],
   "article": [

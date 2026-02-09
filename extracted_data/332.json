@@ -17,6 +17,20 @@
         "total_tokens": 5162
       },
       "time": "2026-02-05T22:36:01.708408+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental triplet-metric learning on rendered multi-view ShapeNet with limited novelty and insufficiently rigorous/large-scale human-perception evaluation; experiments lack strong baselines/ablations and methodological clarity expected for top-tier ML venues."
+      },
+      "token": {
+        "prompt_tokens": 4666,
+        "completion_tokens": 65,
+        "total_tokens": 4731
+      },
+      "time": "2026-02-09T21:09:08.626738+00:00"
     }
   ],
   "article": [

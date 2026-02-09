@@ -17,6 +17,20 @@
         "total_tokens": 5001
       },
       "time": "2026-02-05T23:18:21.822269+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.83,
+        "primary_reason": "Insufficient methodological/experimental rigor: the approach is a minor stochastic reweighting of PPDB paraphrase constraints, and the evaluation lacks reproducible, fair baselines (cannot run prior methods), ablations, and statistically solid comparisons beyond small intrinsic benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 4234,
+        "completion_tokens": 70,
+        "total_tokens": 4304
+      },
+      "time": "2026-02-09T21:47:08.868200+00:00"
     }
   ],
   "article": [

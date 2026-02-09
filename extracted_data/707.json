@@ -17,6 +17,20 @@
         "total_tokens": 5383
       },
       "time": "2026-02-05T23:13:13.472330+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor and novelty for a top-tier venue: the approach largely repackages known pointer/copy and attention mechanisms with a latent switch, and the paper lacks key details/ablations, strong baselines, and convincing evaluation beyond perplexity on relatively small/limited setups (e.g., DSTC2), with unclear statistical significance and incomplete reporting of results/tables."
+      },
+      "token": {
+        "prompt_tokens": 4773,
+        "completion_tokens": 97,
+        "total_tokens": 4870
+      },
+      "time": "2026-02-09T21:42:07.871594+00:00"
     }
   ],
   "article": [

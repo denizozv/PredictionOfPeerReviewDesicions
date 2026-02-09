@@ -17,6 +17,20 @@
         "total_tokens": 5419
       },
       "time": "2026-02-05T22:54:03.180221+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Insufficient methodological/experimental rigor for top-tier: unclear novelty vs prior multiplicative/normalization methods, incomplete/ambiguous formulation and missing key experimental details/ablations (tables, exact baselines, statistical significance, compute parity), making SOTA claims hard to verify."
+      },
+      "token": {
+        "prompt_tokens": 4649,
+        "completion_tokens": 74,
+        "total_tokens": 4723
+      },
+      "time": "2026-02-09T21:24:03.891164+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 4477
       },
       "time": "2026-02-05T22:50:05.611594+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier venue: RL-based latent tree learning is plausible but the paper lacks key details and controls (variance reduction/baselines for REINFORCE, training stability, compute budget), uses weak evaluation protocol (selecting best run by dev rather than reporting mean±std/significance), and provides limited evidence that gains are robust beyond a few datasets/metrics; novelty is also incremental relative to SPINN/latent-structure work."
+      },
+      "token": {
+        "prompt_tokens": 4015,
+        "completion_tokens": 114,
+        "total_tokens": 4129
+      },
+      "time": "2026-02-09T21:20:48.746035+00:00"
     }
   ],
   "article": [

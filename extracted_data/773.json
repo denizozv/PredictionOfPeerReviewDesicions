@@ -17,6 +17,20 @@
         "total_tokens": 4753
       },
       "time": "2026-02-05T23:19:02.201307+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological and experimental evidence are insufficient for a top-tier ML venue: the paper largely repurposes an existing RFN model for biclustering with limited novelty, and key experimental details/rigor (clear baselines tuning protocol, ablations, statistical methodology, scalability/complexity analysis, and reproducibility) are not convincingly established despite many synthetic datasets."
+      },
+      "token": {
+        "prompt_tokens": 4227,
+        "completion_tokens": 92,
+        "total_tokens": 4319
+      },
+      "time": "2026-02-09T21:47:21.099810+00:00"
     }
   ],
   "article": [

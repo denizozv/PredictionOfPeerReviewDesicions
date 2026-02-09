@@ -17,6 +17,20 @@
         "total_tokens": 5826
       },
       "time": "2026-02-05T22:43:09.700530+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Incremental multi-view contrastive LSTM embeddings with limited experimental validation (single dataset/task proxy, small training set, no downstream ASR/QbE results) and modest novelty relative to prior Siamese/multi-view contrastive work."
+      },
+      "token": {
+        "prompt_tokens": 5244,
+        "completion_tokens": 66,
+        "total_tokens": 5310
+      },
+      "time": "2026-02-09T21:15:28.648194+00:00"
     }
   ],
   "article": [

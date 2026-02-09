@@ -17,6 +17,20 @@
         "total_tokens": 4757
       },
       "time": "2026-02-05T22:38:11.509857+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated compare-aggregate architecture with limited novelty and insufficiently rigorous experimental validation for a top-tier conference"
+      },
+      "token": {
+        "prompt_tokens": 4190,
+        "completion_tokens": 41,
+        "total_tokens": 4231
+      },
+      "time": "2026-02-09T21:11:28.803373+00:00"
     }
   ],
   "article": [

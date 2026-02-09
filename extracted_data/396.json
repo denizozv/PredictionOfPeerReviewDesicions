@@ -17,6 +17,20 @@
         "total_tokens": 8663
       },
       "time": "2026-02-05T22:41:14.742838+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier acceptance (limited baselines/metrics, unclear reliability of proposed evaluation, and modest/dated novelty vs prior layered/transformer generative models)."
+      },
+      "token": {
+        "prompt_tokens": 7739,
+        "completion_tokens": 58,
+        "total_tokens": 7797
+      },
+      "time": "2026-02-09T21:14:10.140048+00:00"
     }
   ],
   "article": [

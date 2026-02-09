@@ -17,6 +17,20 @@
         "total_tokens": 3955
       },
       "time": "2026-02-05T23:09:06.618185+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental graph-regularized objective with limited methodological/experimental rigor for top-tier (missing strong baselines/ablations, unclear graph construction & transductive setup, modest gains)"
+      },
+      "token": {
+        "prompt_tokens": 3469,
+        "completion_tokens": 56,
+        "total_tokens": 3525
+      },
+      "time": "2026-02-09T21:38:13.422826+00:00"
     }
   ],
   "article": [

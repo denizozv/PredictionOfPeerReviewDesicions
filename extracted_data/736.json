@@ -17,6 +17,20 @@
         "total_tokens": 4459
       },
       "time": "2026-02-05T23:15:12.287168+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficiently rigorous experimental validation for a top-tier venue (method largely reduces to updating BN running statistics; gains are modest and comparisons/ablations are incomplete)."
+      },
+      "token": {
+        "prompt_tokens": 3881,
+        "completion_tokens": 53,
+        "total_tokens": 3934
+      },
+      "time": "2026-02-09T21:44:21.181381+00:00"
     }
   ],
   "article": [

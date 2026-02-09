@@ -17,6 +17,20 @@
         "total_tokens": 6874
       },
       "time": "2026-02-05T23:06:10.645766+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental validation: largely correlational analyses on limited/modified psychophysics stimuli with ad-hoc metrics, weak controls and statistical testing, and only anecdotal/partial evidence for several claims; novelty is incremental relative to prior perceptual-loss/DNN-perception literature."
+      },
+      "token": {
+        "prompt_tokens": 6049,
+        "completion_tokens": 77,
+        "total_tokens": 6126
+      },
+      "time": "2026-02-09T21:35:24.746561+00:00"
     }
   ],
   "article": [

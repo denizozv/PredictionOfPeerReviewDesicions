@@ -17,6 +17,20 @@
         "total_tokens": 4814
       },
       "time": "2026-02-05T22:49:10.767300+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated contribution with limited experimental rigor (synthetic noise only, small set of benchmarks/architectures, insufficient ablations and comparisons to stronger modern noisy-label baselines), so novelty and evidence are not strong enough for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4240,
+        "completion_tokens": 69,
+        "total_tokens": 4309
+      },
+      "time": "2026-02-09T21:20:41.565434+00:00"
     }
   ],
   "article": [

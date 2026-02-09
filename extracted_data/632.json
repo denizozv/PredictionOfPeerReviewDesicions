@@ -17,6 +17,20 @@
         "total_tokens": 6453
       },
       "time": "2026-02-05T23:06:17.083939+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient experimental evidence and novelty for a top-tier ML venue: evaluation is on a small synthetic/template QA dataset with oracle entity linking, limited baselines/ablations, and the core idea (Gaussian/uncertainty-aware KB embeddings with compositionality) is incremental relative to prior translational and probabilistic embedding work."
+      },
+      "token": {
+        "prompt_tokens": 5774,
+        "completion_tokens": 84,
+        "total_tokens": 5858
+      },
+      "time": "2026-02-09T21:35:45.817479+00:00"
     }
   ],
   "article": [

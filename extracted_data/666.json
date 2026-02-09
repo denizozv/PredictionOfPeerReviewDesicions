@@ -17,6 +17,20 @@
         "total_tokens": 5366
       },
       "time": "2026-02-05T23:09:17.546629+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological and experimental weaknesses: the core grouping/orthogonality objective and optimization are underspecified and not convincingly sound, and the empirical evaluation is limited (mostly MNIST/Office, unclear baselines/ablations, no modern few-shot benchmarks), making the claimed generality/SOTA not credible for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4548,
+        "completion_tokens": 85,
+        "total_tokens": 4633
+      },
+      "time": "2026-02-09T21:38:41.411136+00:00"
     }
   ],
   "article": [

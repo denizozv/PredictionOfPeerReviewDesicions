@@ -17,6 +17,20 @@
         "total_tokens": 5551
       },
       "time": "2026-02-05T22:41:18.033724+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental validation and unclear novelty: chaos analysis is on input-free induced dynamics with limited rigor/impact on modeling, and results are only on PTB/Text8 with dated baselines and nonstandard optimization, lacking broader tasks/ablations to justify top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 4956,
+        "completion_tokens": 73,
+        "total_tokens": 5029
+      },
+      "time": "2026-02-09T21:14:23.215954+00:00"
     }
   ],
   "article": [

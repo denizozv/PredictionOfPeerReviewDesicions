@@ -17,6 +17,20 @@
         "total_tokens": 8184
       },
       "time": "2026-02-05T23:03:02.571341+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and experimental rigor for a top-tier 2026 conference; results rely on heavy sampling/active search and limited benchmarks without strong comparisons/ablations."
+      },
+      "token": {
+        "prompt_tokens": 7263,
+        "completion_tokens": 52,
+        "total_tokens": 7315
+      },
+      "time": "2026-02-09T21:32:25.067550+00:00"
     }
   ],
   "article": [

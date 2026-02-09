@@ -17,6 +17,20 @@
         "total_tokens": 4914
       },
       "time": "2026-02-05T22:36:21.969383+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological and experimental evidence insufficient for top-tier: synthesis/search procedure and comparisons lack rigor (unclear ablations, reproducibility, statistical validation, and strong baselines), and claims of outperforming LSTMs are not convincingly supported given limited/dated neural baselines and incomplete experimental details."
+      },
+      "token": {
+        "prompt_tokens": 4359,
+        "completion_tokens": 78,
+        "total_tokens": 4437
+      },
+      "time": "2026-02-09T21:10:09.482354+00:00"
     }
   ],
   "article": [

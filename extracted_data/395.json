@@ -17,6 +17,20 @@
         "total_tokens": 7732
       },
       "time": "2026-02-05T22:41:12.542222+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Strong, relevant systems contribution (PPL integrated with TensorFlow) with sound design and convincing efficiency/flexibility experiments; novelty is primarily engineering but substantial for the field."
+      },
+      "token": {
+        "prompt_tokens": 6703,
+        "completion_tokens": 53,
+        "total_tokens": 6756
+      },
+      "time": "2026-02-09T21:14:03.674472+00:00"
     }
   ],
   "article": [

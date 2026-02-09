@@ -17,6 +17,20 @@
         "total_tokens": 5062
       },
       "time": "2026-02-05T22:55:11.680256+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological and empirical weaknesses: relies on strong independence/steady-state variance assumptions with fixed precomputed statistics, and experiments are limited (few tasks, unclear statistical rigor/ablations), making novelty and reliability insufficient for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 4327,
+        "completion_tokens": 65,
+        "total_tokens": 4392
+      },
+      "time": "2026-02-09T21:25:27.465959+00:00"
     }
   ],
   "article": [

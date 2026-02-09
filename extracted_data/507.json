@@ -17,6 +17,20 @@
         "total_tokens": 6125
       },
       "time": "2026-02-05T22:54:10.884204+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental dataset/method contribution with limited methodological novelty and insufficiently rigorous/large-scale validation for top-tier ML venues (heavy heuristic design, modest human study, and correlation claims based on small embedding sets)."
+      },
+      "token": {
+        "prompt_tokens": 5491,
+        "completion_tokens": 60,
+        "total_tokens": 5551
+      },
+      "time": "2026-02-09T21:24:29.479663+00:00"
     }
   ],
   "article": [

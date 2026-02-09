@@ -17,6 +17,20 @@
         "total_tokens": 4985
       },
       "time": "2026-02-05T23:02:23.681245+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence: relies on REINFORCE with sparse terminal rewards without clear variance-control/ablation, evaluates mainly on outdated/leaky KBC benchmarks (FB15k/WN18) with limited comparisons, and the claimed novelty over prior memory/ReasonNet-style controllers is incremental."
+      },
+      "token": {
+        "prompt_tokens": 4494,
+        "completion_tokens": 81,
+        "total_tokens": 4575
+      },
+      "time": "2026-02-09T21:32:18.760768+00:00"
     }
   ],
   "article": [

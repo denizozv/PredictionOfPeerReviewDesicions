@@ -17,6 +17,20 @@
         "total_tokens": 14395
       },
       "time": "2026-02-05T22:33:02.355786+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological/experimental weaknesses: relies on highly supervised, hand-crafted recursive execution traces and task-specific environments; limited empirical validation (very small training sets, few tasks, no baselines/ablations) and the 'provable generalization' claim depends on a bespoke finite verification set construction that is not convincingly general or automated."
+      },
+      "token": {
+        "prompt_tokens": 12757,
+        "completion_tokens": 85,
+        "total_tokens": 12842
+      },
+      "time": "2026-02-09T21:06:00.904184+00:00"
     }
   ],
   "article": [

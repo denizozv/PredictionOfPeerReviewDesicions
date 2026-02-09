@@ -17,6 +17,20 @@
         "total_tokens": 7563
       },
       "time": "2026-02-05T22:44:04.907859+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Methodological and empirical weaknesses: relies on non-rigorous augmented-Lagrangian convergence/feasibility with stochastic estimates, ad-hoc penalty updates, and limited/insufficient experimental validation (small-scale synthetic test, thin finance study, and largely qualitative texture results without strong baselines/ablation), making the novelty/application of flows to max-entropy not convincingly demonstrated at top-tier standard."
+      },
+      "token": {
+        "prompt_tokens": 6632,
+        "completion_tokens": 99,
+        "total_tokens": 6731
+      },
+      "time": "2026-02-09T21:16:14.360724+00:00"
     }
   ],
   "article": [

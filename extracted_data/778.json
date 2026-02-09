@@ -17,6 +17,20 @@
         "total_tokens": 5497
       },
       "time": "2026-02-05T23:19:11.144245+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient novelty and methodological rigor for a top-tier venue: the approach is largely a straightforward low-rank/greedy ternary weight factorization plus test-time binary activation quantization via lookup tables, with limited analysis (no end-to-end training, weak baselines/ablations, unclear accuracy–latency methodology) and experiments that are not comprehensive by modern standards."
+      },
+      "token": {
+        "prompt_tokens": 4819,
+        "completion_tokens": 93,
+        "total_tokens": 4912
+      },
+      "time": "2026-02-09T21:47:45.517830+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 4798
       },
       "time": "2026-02-05T23:16:11.395978+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.87,
+        "primary_reason": "Limited novelty and weak experimental/methodological support: the work reduces to supervised classification on an exhaustively generated tic-tac-toe dataset with CAM-based post-hoc interpretation; claims about concept learning/weak supervision are not convincingly established, and evidence is small-scale and lacks rigorous baselines/controls."
+      },
+      "token": {
+        "prompt_tokens": 4271,
+        "completion_tokens": 80,
+        "total_tokens": 4351
+      },
+      "time": "2026-02-09T21:44:45.388453+00:00"
     }
   ],
   "article": [

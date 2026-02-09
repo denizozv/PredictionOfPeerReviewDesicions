@@ -17,6 +17,20 @@
         "total_tokens": 3477
       },
       "time": "2026-02-05T23:06:03.158469+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.9,
+        "primary_reason": "Insufficient methodological rigor and experimental validation; claims are largely heuristic/known for ReLU piecewise-linear regions, with no substantive experiments or novel, sound contribution for a top-tier ML venue."
+      },
+      "token": {
+        "prompt_tokens": 2991,
+        "completion_tokens": 57,
+        "total_tokens": 3048
+      },
+      "time": "2026-02-09T21:35:04.442944+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 4933
       },
       "time": "2026-02-05T22:41:09.298659+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel, sound RNN regularizer with solid empirical validation across standard benchmarks; evidence and analysis are sufficient for top-tier acceptance despite limited theoretical depth and modest gains on some settings."
+      },
+      "token": {
+        "prompt_tokens": 4260,
+        "completion_tokens": 54,
+        "total_tokens": 4314
+      },
+      "time": "2026-02-09T21:13:57.812531+00:00"
     }
   ],
   "article": [

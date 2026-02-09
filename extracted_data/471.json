@@ -17,6 +17,20 @@
         "total_tokens": 7390
       },
       "time": "2026-02-05T22:50:19.221809+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficiently convincing empirical validation for a high-impact venue (small/noisy human study, synthetic task, weak baselines/ablation and unclear methodological soundness around off-policy gradients/importance weighting)."
+      },
+      "token": {
+        "prompt_tokens": 6735,
+        "completion_tokens": 61,
+        "total_tokens": 6796
+      },
+      "time": "2026-02-09T21:21:34.512852+00:00"
     }
   ],
   "article": [

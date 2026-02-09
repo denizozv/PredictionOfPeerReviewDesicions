@@ -17,6 +17,20 @@
         "total_tokens": 5646
       },
       "time": "2026-02-05T22:58:12.286790+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental evidence and limited novelty: results only on CIFAR-10 with modest gains over strong CNN baselines, and the core method largely repackages known components (shrinkage/rectification, normalization, unrolled inference/energy-based conditioning) without compelling new theory or broad validation."
+      },
+      "token": {
+        "prompt_tokens": 4902,
+        "completion_tokens": 79,
+        "total_tokens": 4981
+      },
+      "time": "2026-02-09T21:28:08.560534+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 4532
       },
       "time": "2026-02-05T23:07:11.095810+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence for top-tier acceptance (strong assumptions/relaxations, limited baselines and datasets, and unclear novelty over prior embedding-based rule mining)."
+      },
+      "token": {
+        "prompt_tokens": 4001,
+        "completion_tokens": 54,
+        "total_tokens": 4055
+      },
+      "time": "2026-02-09T21:36:11.608010+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 6103
       },
       "time": "2026-02-05T23:02:21.732486+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental contributions (tf-idf conditioning and per-datapoint variational refinement) with limited methodological novelty/ablation and mostly qualitative introspection; evidence likely insufficient for top-tier acceptance despite relevance and reasonable experiments."
+      },
+      "token": {
+        "prompt_tokens": 5382,
+        "completion_tokens": 62,
+        "total_tokens": 5444
+      },
+      "time": "2026-02-09T21:32:11.913937+00:00"
     }
   ],
   "article": [

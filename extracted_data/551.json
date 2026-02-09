@@ -17,6 +17,20 @@
         "total_tokens": 6276
       },
       "time": "2026-02-05T22:58:16.591807+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient methodological/experimental rigor for a top-tier ML venue: limited and synthetic evaluation with weak baselines and unclear novelty relative to prior differentiable Bayes filters/algorithm-unrolling work."
+      },
+      "token": {
+        "prompt_tokens": 5569,
+        "completion_tokens": 57,
+        "total_tokens": 5626
+      },
+      "time": "2026-02-09T21:28:19.746333+00:00"
     }
   ],
   "article": [

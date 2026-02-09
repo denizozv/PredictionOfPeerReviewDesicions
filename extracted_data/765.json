@@ -17,6 +17,20 @@
         "total_tokens": 5928
       },
       "time": "2026-02-05T23:18:08.725757+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental extension of prior Atari video-prediction models with limited novelty and insufficient experimental validation (only 5 games, weak baselines/ablation, no demonstrated planning/control benefit), making the contribution unlikely to meet top-tier conference standards."
+      },
+      "token": {
+        "prompt_tokens": 5167,
+        "completion_tokens": 67,
+        "total_tokens": 5234
+      },
+      "time": "2026-02-09T21:46:39.245678+00:00"
     }
   ],
   "article": [

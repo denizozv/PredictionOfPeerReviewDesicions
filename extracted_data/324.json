@@ -17,6 +17,20 @@
         "total_tokens": 5660
       },
       "time": "2026-02-05T22:35:06.131295+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Incremental/dated contribution: simple L1-norm filter pruning with retraining and limited empirical novelty/rigor relative to extensive prior structured pruning literature; experiments are narrow and largely heuristic without strong baselines or analysis expected at top-tier venues."
+      },
+      "token": {
+        "prompt_tokens": 4987,
+        "completion_tokens": 68,
+        "total_tokens": 5055
+      },
+      "time": "2026-02-09T21:08:41.177238+00:00"
     }
   ],
   "article": [

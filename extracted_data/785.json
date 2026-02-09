@@ -17,6 +17,20 @@
         "total_tokens": 3156
       },
       "time": "2026-02-05T23:20:04.137615+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Insufficient methodological rigor and experimental evidence (small dataset, unclear baselines/metrics, and limited novelty vs. mixture-of-experts/MDN-style approaches)"
+      },
+      "token": {
+        "prompt_tokens": 2731,
+        "completion_tokens": 51,
+        "total_tokens": 2782
+      },
+      "time": "2026-02-09T21:48:22.631260+00:00"
     }
   ],
   "article": [

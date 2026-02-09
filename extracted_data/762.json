@@ -17,6 +17,20 @@
         "total_tokens": 4680
       },
       "time": "2026-02-05T23:18:04.521903+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.86,
+        "primary_reason": "Methodological/experimental weakness: uses simple fully-connected autoencoders with PSNR loss on small datasets and largely qualitative results; lacks rigorous baselines (e.g., conv/modern generative models), ablations, and statistical evaluation to support strong claims of 'perception' or human-like filling-in, limiting novelty and evidence for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4146,
+        "completion_tokens": 90,
+        "total_tokens": 4236
+      },
+      "time": "2026-02-09T21:46:27.779414+00:00"
     }
   ],
   "article": [

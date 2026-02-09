@@ -17,6 +17,20 @@
         "total_tokens": 7557
       },
       "time": "2026-02-05T22:39:19.542794+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient empirical validation for a systems/methods contribution (mostly synthetic benchmark + limited task results; novelty largely incremental/dated given dynamic-graph support in modern frameworks)"
+      },
+      "token": {
+        "prompt_tokens": 6574,
+        "completion_tokens": 53,
+        "total_tokens": 6627
+      },
+      "time": "2026-02-09T21:12:46.480580+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 5736
       },
       "time": "2026-02-05T22:37:06.343438+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Insufficient experimental evidence and methodological maturity for top-tier: results are limited (mostly MNIST, one small ResNet with worse baseline), scalability is unresolved (no large-model experiments), and the approach is largely a reapplication/extension of prior soft weight-sharing/MDL ideas with heavy hyperparameter sensitivity."
+      },
+      "token": {
+        "prompt_tokens": 5124,
+        "completion_tokens": 80,
+        "total_tokens": 5204
+      },
+      "time": "2026-02-09T21:10:22.349102+00:00"
     }
   ],
   "article": [

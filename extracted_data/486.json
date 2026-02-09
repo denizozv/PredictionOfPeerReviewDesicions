@@ -17,6 +17,20 @@
         "total_tokens": 7334
       },
       "time": "2026-02-05T22:52:19.521174+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.86,
+        "primary_reason": "Strong, novel, and well-validated scalable GCN for semi-supervised node classification with clear theoretical motivation and solid empirical gains on standard benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 6537,
+        "completion_tokens": 48,
+        "total_tokens": 6585
+      },
+      "time": "2026-02-09T21:23:01.654781+00:00"
     }
   ],
   "article": [

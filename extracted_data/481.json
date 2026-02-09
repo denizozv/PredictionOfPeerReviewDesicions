@@ -17,6 +17,20 @@
         "total_tokens": 6844
       },
       "time": "2026-02-05T22:52:10.798221+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and incomplete robustness evaluation: largely a scaling/engineering study of one-step adversarial training on ImageNet with known pitfalls (e.g., label leaking/gradient masking) and no convincing defense against strong multi-step/white-box attacks; transferability experiments are small (1k images) and conclusions are not sufficiently supported for a top-tier ML conference."
+      },
+      "token": {
+        "prompt_tokens": 6088,
+        "completion_tokens": 90,
+        "total_tokens": 6178
+      },
+      "time": "2026-02-09T21:22:35.015031+00:00"
     }
   ],
   "article": [

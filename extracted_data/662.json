@@ -17,6 +17,20 @@
         "total_tokens": 6964
       },
       "time": "2026-02-05T23:09:08.939998+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental contribution with limited and insufficiently rigorous empirical validation (mostly bAbI/toy tasks), unclear methodological soundness for discrete addressing (high-variance REINFORCE, no strong ablations/statistical analysis), and results still lag key contemporaneous memory-network baselines on the main benchmark."
+      },
+      "token": {
+        "prompt_tokens": 6158,
+        "completion_tokens": 79,
+        "total_tokens": 6237
+      },
+      "time": "2026-02-09T21:38:21.344778+00:00"
     }
   ],
   "article": [

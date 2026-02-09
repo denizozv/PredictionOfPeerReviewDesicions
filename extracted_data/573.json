@@ -17,6 +17,20 @@
         "total_tokens": 5598
       },
       "time": "2026-02-05T23:00:20.966502+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient novelty and experimental rigor for a top-tier venue: the approach largely combines known RL (GAE/actor-critic) with intrinsic reward (information gain via reconstruction/cross-entropy) and attention/glimpse-style architectures, while experiments lack strong baselines/ablations and include a key result (cluttered MNIST) that becomes trivial via added low-res global summary, weakening the information-efficiency claim."
+      },
+      "token": {
+        "prompt_tokens": 5016,
+        "completion_tokens": 103,
+        "total_tokens": 5119
+      },
+      "time": "2026-02-09T21:30:17.780103+00:00"
     }
   ],
   "article": [

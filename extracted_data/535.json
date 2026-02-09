@@ -17,6 +17,20 @@
         "total_tokens": 2391
       },
       "time": "2026-02-05T22:57:11.767107+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental/dated contribution with insufficient methodological and experimental rigor for a top-tier ML conference (limited novelty beyond hierarchical attention over CNN layers; unclear ablations, baselines, and statistical validation)."
+      },
+      "token": {
+        "prompt_tokens": 2017,
+        "completion_tokens": 57,
+        "total_tokens": 2074
+      },
+      "time": "2026-02-09T21:27:05.976092+00:00"
     }
   ],
   "article": [

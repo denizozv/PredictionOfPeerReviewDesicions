@@ -17,6 +17,20 @@
         "total_tokens": 4039
       },
       "time": "2026-02-05T22:39:15.569150+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental, feature-engineered gating with limited methodological novelty and insufficient modern experimental rigor/ablation for a top-tier venue"
+      },
+      "token": {
+        "prompt_tokens": 3447,
+        "completion_tokens": 43,
+        "total_tokens": 3490
+      },
+      "time": "2026-02-09T21:12:32.123530+00:00"
     }
   ],
   "article": [

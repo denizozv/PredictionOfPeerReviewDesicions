@@ -17,6 +17,20 @@
         "total_tokens": 9617
       },
       "time": "2026-02-05T23:05:19.962663+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.74,
+        "primary_reason": "Insufficient methodological/experimental rigor for top-tier: limited evaluation on custom environments with small test sets and heavy training heuristics; novelty is incremental relative to prior hierarchical RL + memory/option frameworks."
+      },
+      "token": {
+        "prompt_tokens": 8762,
+        "completion_tokens": 58,
+        "total_tokens": 8820
+      },
+      "time": "2026-02-09T21:34:58.797388+00:00"
     }
   ],
   "article": [

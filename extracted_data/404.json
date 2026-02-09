@@ -17,6 +17,20 @@
         "total_tokens": 5586
       },
       "time": "2026-02-05T22:42:16.278400+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, relevant, and original sequence-modeling architecture with solid empirical validation and clear speed/accuracy benefits over LSTMs; experimental scope is adequate for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 4791,
+        "completion_tokens": 54,
+        "total_tokens": 4845
+      },
+      "time": "2026-02-09T21:15:01.283455+00:00"
     }
   ],
   "article": [

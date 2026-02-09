@@ -17,6 +17,20 @@
         "total_tokens": 8166
       },
       "time": "2026-02-05T22:38:19.058273+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and experimental scope: AIS/BDMC-based likelihood evaluation is largely an application/extension of existing techniques, and results are demonstrated only on MNIST with small model variants, which is insufficient for top-tier conference acceptance despite generally sound methodology."
+      },
+      "token": {
+        "prompt_tokens": 7229,
+        "completion_tokens": 68,
+        "total_tokens": 7297
+      },
+      "time": "2026-02-09T21:11:48.967305+00:00"
     }
   ],
   "article": [

@@ -17,6 +17,20 @@
         "total_tokens": 8497
       },
       "time": "2026-02-05T22:47:11.861726+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Strong, relevant, and (for its time) novel adversarial joint-matching framework with solid empirical validation; minor weaknesses are limited quantitative evaluation and some methodological caveats (e.g., discrete variables)."
+      },
+      "token": {
+        "prompt_tokens": 7378,
+        "completion_tokens": 59,
+        "total_tokens": 7437
+      },
+      "time": "2026-02-09T21:19:05.329120+00:00"
     }
   ],
   "article": [

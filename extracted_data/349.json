@@ -17,6 +17,20 @@
         "total_tokens": 5179
       },
       "time": "2026-02-05T22:37:11.129681+00:00"
+    },
+    {
+      "model": "gpt-5.2",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Limited novelty and insufficient empirical validation beyond a synthetic dataset; RL method is standard and results show weak scaling/robustness compared to supervised upper bounds without demonstrating broader impact or strong baselines."
+      },
+      "token": {
+        "prompt_tokens": 4632,
+        "completion_tokens": 57,
+        "total_tokens": 4689
+      },
+      "time": "2026-02-09T21:10:34.547605+00:00"
     }
   ],
   "article": [
