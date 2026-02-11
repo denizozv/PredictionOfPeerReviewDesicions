@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel integration of VAE framework with stochastic volatility modeling; theoretical contributions showing GARCH/Heston as special cases; comprehensive experiments on synthetic and real data with multiple baselines."
-      },
-      "token": {
-        "prompt_tokens": 6979,
-        "completion_tokens": 76,
-        "total_tokens": 7055
-      },
-      "time": "2026-02-08T22:44:10.337137+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -163,6 +149,20 @@
         "total_tokens": 8839
       },
       "time": "2026-02-09T20:47:11.610712+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled neural stochastic volatility model combining VAE-style inference networks with generative RNNs for volatility modeling; shows GARCH and Heston as special cases; demonstrates improved NLL and smoother volatility estimates on synthetic and real stock data. However, limited novelty in architecture (standard LSTM+MLP VAE framework), modest experimental scope (162 stocks, mainly NLL metric), and lack of rigorous statistical testing or comparison to recent deep learning baselines weaken the contribution."
+      },
+      "token": {
+        "prompt_tokens": 9713,
+        "completion_tokens": 148,
+        "total_tokens": 9861
+      },
+      "time": "2026-02-11T19:22:06.027942+00:00"
     }
   ],
   "test": false

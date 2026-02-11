@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: sparse neural networks and pruning are well-established (Han et al. 2016); LFSR-based masking is a minor hardware contribution. Weak experimental validation: only MNIST/CIFAR10/SVHN with modest improvements; no comparison with contemporary pruning methods (magnitude pruning, lottery ticket, etc.). Hardware contribution is incremental (standard MAC unit modification). Paper reads as systems/hardware work rather than advancing ML methodology."
-      },
-      "token": {
-        "prompt_tokens": 5641,
-        "completion_tokens": 135,
-        "total_tokens": 5776
-      },
-      "time": "2026-02-08T22:22:21.448057+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 7659
       },
       "time": "2026-02-09T20:24:18.542117+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper proposes using LFSRs to generate sparse masks for neural networks, but the core contribution is incremental: sparsity in neural networks was already well-established (Han et al. 2016 on pruning, structured sparsity work), and using pseudo-random masks via LFSRs is a straightforward engineering choice rather than a novel insight. The experimental validation is limited to small datasets (MNIST, CIFAR-10, SVHN) with modest improvements, lacks rigorous comparison to contemporary sparsity methods, and the hardware implementation, while practical, is a standard application of existing techniques. The paper reads as an engineering contribution rather than a research advance suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 8375,
+        "completion_tokens": 197,
+        "total_tokens": 8572
+      },
+      "time": "2026-02-11T18:50:10.045471+00:00"
     }
   ],
   "test": false

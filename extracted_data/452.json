@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel factored policy representation for temporal abstraction in RL with consistent empirical validation across three different algorithms (A3C, TRPO, DDPG) and multiple domains. Clear methodological contribution despite incremental gains in some settings."
-      },
-      "token": {
-        "prompt_tokens": 5573,
-        "completion_tokens": 87,
-        "total_tokens": 5660
-      },
-      "time": "2026-02-08T22:18:05.053100+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -178,6 +164,20 @@
         "total_tokens": 7404
       },
       "time": "2026-02-09T20:20:45.482463+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple but general framework (FiGAR) for learning dynamic action repetition in DRL, demonstrates consistent improvements across three different algorithms (A3C, TRPO, DDPG) and diverse domains (Atari, MuJoCo, TORCS), includes ablations on action repetition sets, and provides clear mechanistic insights; however, gains are often modest/inconsistent, hyperparameter choices (|W|=30) appear arbitrary, and the core contribution—factorizing action and repetition policies—is somewhat incremental relative to prior work on temporal abstraction and action repetition in RL."
+      },
+      "token": {
+        "prompt_tokens": 8307,
+        "completion_tokens": 174,
+        "total_tokens": 8481
+      },
+      "time": "2026-02-11T18:44:05.768130+00:00"
     }
   ],
   "test": false

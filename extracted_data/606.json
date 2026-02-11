@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Interesting conceptual framework but severely limited experimental validation. Only toy examples (MNIST stacks/queues), no comparison with baselines, no quantitative metrics, no scalability analysis. The core contribution—probabilistic axiomatic specifications—lacks rigorous theoretical development and practical demonstration of utility over standard approaches."
-      },
-      "token": {
-        "prompt_tokens": 2119,
-        "completion_tokens": 100,
-        "total_tokens": 2219
-      },
-      "time": "2026-02-08T22:34:05.424531+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 4556
       },
       "time": "2026-02-09T20:36:08.972105+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper presents an interesting theoretical framework (probabilistic axiomatic specifications) but the experimental validation is severely limited: only toy tasks (MNIST stacks/queues) with shallow CNNs, no comparison to baselines or existing methods, no quantitative evaluation metrics, and unclear practical utility. The core contribution—learning data structures from axioms—lacks rigorous empirical support and the connection between theory and practice remains underdeveloped."
+      },
+      "token": {
+        "prompt_tokens": 4853,
+        "completion_tokens": 127,
+        "total_tokens": 4980
+      },
+      "time": "2026-02-11T19:07:03.355333+00:00"
     }
   ],
   "test": false

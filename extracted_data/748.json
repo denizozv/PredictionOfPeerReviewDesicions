@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel convolutional encoder architecture for NMT with strong empirical results across multiple WMT benchmarks, thorough ablations, and practical efficiency gains. Methodologically sound with clear scientific contribution to sequence-to-sequence modeling."
-      },
-      "token": {
-        "prompt_tokens": 6957,
-        "completion_tokens": 85,
-        "total_tokens": 7042
-      },
-      "time": "2026-02-08T22:47:10.702957+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -158,6 +144,20 @@
         "total_tokens": 8747
       },
       "time": "2026-02-09T20:50:32.973498+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.75,
+        "primary_reason": "Proposes a practical convolutional encoder alternative to LSTMs for NMT with solid empirical validation across multiple WMT datasets, demonstrating competitive/superior BLEU scores and significant CPU speedups (2.1x on WMT15); includes thorough ablations on architecture design (depth, residual connections, dual CNN stacks) and analysis of attention patterns, though the core contribution is primarily architectural engineering rather than a novel conceptual advance."
+      },
+      "token": {
+        "prompt_tokens": 9691,
+        "completion_tokens": 133,
+        "total_tokens": 9824
+      },
+      "time": "2026-02-11T19:26:14.141489+00:00"
     }
   ],
   "test": false

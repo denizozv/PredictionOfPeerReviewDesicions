@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel technical contribution enabling gradient flow through CCA projections with practical multi-view applications; solid experimental validation on standard benchmarks with meaningful improvements over baselines."
-      },
-      "token": {
-        "prompt_tokens": 5334,
-        "completion_tokens": 68,
-        "total_tokens": 5402
-      },
-      "time": "2026-02-08T22:30:31.118602+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -153,6 +139,20 @@
         "total_tokens": 7333
       },
       "time": "2026-02-09T20:32:52.618384+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a practical and well-motivated extension of Deep CCA that enables gradient flow through CCA projection matrices and arbitrary downstream objectives, with clear technical contributions (eigendecomposition-based gradient computation, stochastic optimization strategy) and solid empirical validation on cross-modality retrieval tasks showing consistent improvements over Deep CCA and learned projections, though the gains are modest and evaluation scope is somewhat limited."
+      },
+      "token": {
+        "prompt_tokens": 8068,
+        "completion_tokens": 121,
+        "total_tokens": 8189
+      },
+      "time": "2026-02-11T19:02:08.256090+00:00"
     }
   ],
   "test": false

@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical framework for modular network morphism with rigorous mathematical formulation (graph abstraction, atomic operations, compatibility proofs). Strong experimental validation across CIFAR-10/100 and ImageNet showing consistent improvements. Addresses fundamental problem of network architecture transformation while preserving function."
-      },
-      "token": {
-        "prompt_tokens": 6038,
-        "completion_tokens": 95,
-        "total_tokens": 6133
-      },
-      "time": "2026-02-08T22:27:13.995557+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 8110
       },
       "time": "2026-02-09T20:29:02.100521+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Presents a theoretically grounded framework for network morphism at the module level with formal guarantees (Theorem 8), introduces practical algorithms for simple and complex modules, and demonstrates consistent empirical improvements across CIFAR-10/100 and ImageNet with modest computational overhead; however, the theoretical novelty is somewhat incremental over prior work, the handling of batch normalization and non-linearity is approximate/heuristic, and the empirical gains, while consistent, are modest (1-2% on ImageNet)."
+      },
+      "token": {
+        "prompt_tokens": 8772,
+        "completion_tokens": 147,
+        "total_tokens": 8919
+      },
+      "time": "2026-02-11T18:57:13.515604+00:00"
     }
   ],
   "test": false

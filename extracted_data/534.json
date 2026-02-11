@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Foundational theoretical work providing unified framework connecting GANs to likelihood-free inference, density ratio estimation, and hypothesis testing. Synthesizes diverse statistical perspectives with novel conceptual contributions and broad scientific impact."
-      },
-      "token": {
-        "prompt_tokens": 7091,
-        "completion_tokens": 78,
-        "total_tokens": 7169
-      },
-      "time": "2026-02-08T22:27:05.012127+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 8854
       },
       "time": "2026-02-09T20:28:31.651662+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Provides a principled unifying framework for GANs and implicit generative models through likelihood-free inference and density ratio estimation, synthesizing four major approaches (class probability, divergence minimization, ratio matching, moment matching) with rigorous mathematical connections and clear exposition that bridges statistics, machine learning, and related fields—a significant conceptual contribution with broad impact."
+      },
+      "token": {
+        "prompt_tokens": 9825,
+        "completion_tokens": 111,
+        "total_tokens": 9936
+      },
+      "time": "2026-02-11T18:56:17.152925+00:00"
     }
   ],
   "test": false

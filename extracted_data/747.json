@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel theoretical framework (integrated gradients with axiomatic justification), addresses fundamental problem (gradient saturation in attribution), strong empirical validation across multiple domains (vision, chemistry, NLP), and practical computational efficiency."
-      },
-      "token": {
-        "prompt_tokens": 9928,
-        "completion_tokens": 80,
-        "total_tokens": 10008
-      },
-      "time": "2026-02-08T22:47:08.331054+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -163,6 +149,20 @@
         "total_tokens": 11669
       },
       "time": "2026-02-09T20:50:26.710995+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes integrated gradients, a principled method for feature attribution that addresses saturation in deep networks via path integrals of gradients along counterfactual inputs; satisfies two fundamental axioms (Sensitivity, Implementation Invariance) and is uniquely characterized by a full set of axioms from cost-sharing theory; demonstrates broad applicability across vision (Inception), chemistry (molecular graphs), and NLP (LSTM) with both empirical validation (ablation, localization, debugging) and theoretical grounding, despite evaluation limitations."
+      },
+      "token": {
+        "prompt_tokens": 12662,
+        "completion_tokens": 150,
+        "total_tokens": 12812
+      },
+      "time": "2026-02-11T19:26:11.694029+00:00"
     }
   ],
   "test": false

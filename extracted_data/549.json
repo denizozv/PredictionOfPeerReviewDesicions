@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.72,
-        "primary_reason": "Limited novelty and experimental scope. The core contribution—spherical sparse coding with class-conditional biases—is a relatively incremental modification of existing sparse coding and energy-based models. Experiments are restricted to CIFAR-10 with modest improvements (9.23% vs 10.17% baseline). The closed-form coding solution is elegant but not sufficiently novel for a top venue. Stacking analysis is preliminary, and comparisons lack depth against modern deep learning baselines. The generative visualization is interesting but insufficient to overcome limited methodological novelty and narrow experimental validation."
-      },
-      "token": {
-        "prompt_tokens": 5713,
-        "completion_tokens": 158,
-        "total_tokens": 5871
-      },
-      "time": "2026-02-08T22:28:09.244609+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -153,6 +139,20 @@
         "total_tokens": 7673
       },
       "time": "2026-02-09T20:29:56.982902+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper presents an interesting energy-based formulation combining sparse coding with class-conditional biases, but suffers from limited experimental validation (CIFAR-10 only), modest improvements over baselines (~1-2% error reduction), and unclear practical advantages over standard CNNs. The theoretical contribution (spherical sparse coding relaxation) is incremental, and the stacking/deep extension lacks thorough investigation. The work reads more as an architectural variant than a significant methodological advance warranting publication at a top venue."
+      },
+      "token": {
+        "prompt_tokens": 8447,
+        "completion_tokens": 144,
+        "total_tokens": 8591
+      },
+      "time": "2026-02-11T18:58:15.753784+00:00"
     }
   ],
   "test": false

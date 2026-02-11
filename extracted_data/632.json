@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty and narrow experimental scope. Gaussian attention is a straightforward extension of TransE with learned diagonal covariance. Experiments only on a small custom FIFA dataset (1127 entities) with oracle entity recognition. No comparison with neural QA baselines or standard KB completion benchmarks. Weak generalization evidence."
-      },
-      "token": {
-        "prompt_tokens": 6515,
-        "completion_tokens": 103,
-        "total_tokens": 6618
-      },
-      "time": "2026-02-08T22:37:04.050603+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -163,6 +149,20 @@
         "total_tokens": 8541
       },
       "time": "2026-02-09T20:39:03.258453+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Limited scope and weak experimental validation. The paper proposes a reasonable extension of TransE using Gaussian distributions for KB embedding and QA, but evaluation is restricted to a small, synthetic FIFA World Cup 2014 dataset with only 1127 entities and manually templated questions. No comparison to dedicated QA systems or modern KB embedding methods beyond TransE. The main contribution—learning diagonal covariance matrices—is incremental. Knowledge base completion results (Appendix C) show only comparable (not superior) performance to TransE. The work lacks depth in analysis, broader experimental validation, and compelling evidence that the Gaussian attention mechanism provides significant practical benefits over simpler alternatives."
+      },
+      "token": {
+        "prompt_tokens": 9249,
+        "completion_tokens": 176,
+        "total_tokens": 9425
+      },
+      "time": "2026-02-11T19:11:06.143769+00:00"
     }
   ],
   "test": true

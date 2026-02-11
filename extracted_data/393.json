@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel integration of graphical model inference (CRFs, dependency parsing) as differentiable neural network layers. Strong methodological contribution with rigorous treatment of backpropagation through structured inference. Comprehensive experiments across diverse tasks (tree transduction, NMT, QA, NLI) demonstrating effectiveness and generalization of structured attention beyond standard soft-selection."
-      },
-      "token": {
-        "prompt_tokens": 11169,
-        "completion_tokens": 114,
-        "total_tokens": 11283
-      },
-      "time": "2026-02-08T22:10:18.038524+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -138,6 +124,20 @@
         "total_tokens": 12724
       },
       "time": "2026-02-09T20:14:26.036793+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel and well-executed framework that generalizes attention mechanisms by incorporating structured inference (CRFs, dependency parsing) as differentiable neural network layers. Demonstrates clear technical contributions (forward-backward backpropagation through graphical models), thorough experimental validation across diverse tasks (tree transduction, NMT, QA, NLI), and provides valuable insights into when structured attention outperforms soft-selection baselines. Strong empirical work with careful ablations and interpretable learned structures."
+      },
+      "token": {
+        "prompt_tokens": 13903,
+        "completion_tokens": 140,
+        "total_tokens": 14043
+      },
+      "time": "2026-02-11T18:33:21.833037+00:00"
     }
   ],
   "test": false

@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel interpretability contribution with rigorous empirical analysis of emergent logical structure in neural readers; strong theoretical framework connecting aggregation and explicit reference models; practical improvements via linguistic features on competitive benchmarks."
-      },
-      "token": {
-        "prompt_tokens": 10772,
-        "completion_tokens": 76,
-        "total_tokens": 10848
-      },
-      "time": "2026-02-08T22:42:12.918768+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 12311
       },
       "time": "2026-02-09T20:45:24.155381+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper's core contribution—identifying emergent predication structure in neural readers—is interesting but relies on post-hoc interpretation of learned representations with weak empirical support. The theoretical claims (equations 16-17) are tested only through approximate correlations and orthogonality checks that don't convincingly establish the proposed decomposition. The secondary contribution (linguistic features) is incremental engineering. The work lacks rigorous ablations, theoretical grounding, and the analysis doesn't provide actionable insights beyond showing that attention mechanisms focus on entity positions—a known behavior. The pointer annotation readers are underdeveloped and the paper reads more as an analysis paper than a methodological advance."
+      },
+      "token": {
+        "prompt_tokens": 13506,
+        "completion_tokens": 176,
+        "total_tokens": 13682
+      },
+      "time": "2026-02-11T19:19:17.108157+00:00"
     }
   ],
   "test": false

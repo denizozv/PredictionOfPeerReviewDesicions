@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Limited novelty with ad-hoc design; weak theoretical justification; inconsistent empirical gains; poor generalization (trained only on MNIST); lacks rigorous comparison with modern optimization methods; presentation issues and incomplete experimental analysis."
-      },
-      "token": {
-        "prompt_tokens": 6778,
-        "completion_tokens": 83,
-        "total_tokens": 6861
-      },
-      "time": "2026-02-08T22:12:09.167524+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -163,6 +149,20 @@
         "total_tokens": 8848
       },
       "time": "2026-02-09T20:15:23.306388+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The core idea—using a small neural network to predict weight trajectories and jump weights forward—is insufficiently novel and lacks rigorous justification. The empirical gains are modest (e.g., ~30% step reduction on CIFAR-10, ~8% on ImageNet), the method requires manual tuning of jump points, and comparisons to baselines are weak (quadratic/linear fits, noise). The introspection network trained only on MNIST shows limited generalization, and the paper provides no theoretical insight into why weight prediction should work or when it will fail. Presentation is also poor with numerous grammatical errors and missing critical details (e.g., fair wall-clock time comparisons, statistical significance, ablations on network architecture choices for I)."
+      },
+      "token": {
+        "prompt_tokens": 9512,
+        "completion_tokens": 197,
+        "total_tokens": 9709
+      },
+      "time": "2026-02-11T18:35:15.327398+00:00"
     }
   ],
   "test": false

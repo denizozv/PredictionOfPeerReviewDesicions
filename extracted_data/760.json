@@ -167,20 +167,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel hierarchical compositional generative model with principled inference via MPMP; strong theoretical contribution (connection to CNN forward pass, noise invariance); demonstrates unsupervised feature discovery on synthetic and real data with superior generalization. However, limited to binary images and modest experimental scale (MNIST with only 40 samples per class) somewhat constrain impact."
-      },
-      "token": {
-        "prompt_tokens": 10939,
-        "completion_tokens": 111,
-        "total_tokens": 11050
-      },
-      "time": "2026-02-08T22:48:13.841189+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -193,6 +179,20 @@
         "total_tokens": 12545
       },
       "time": "2026-02-09T20:51:26.034810+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents an interesting generative model with novel inference via MPMP, the experimental validation is limited to toy/synthetic data and MNIST with only 40 samples per class. The scalability issues (150GB RAM for 400 MNIST images, 17 hours training on CPU) and lack of comparison to modern deep generative models significantly limit impact. The core contribution—using MPMP for discrete feature learning—is solid but incremental, and the practical applicability remains unclear given computational constraints and modest improvements over baselines on real data."
+      },
+      "token": {
+        "prompt_tokens": 13673,
+        "completion_tokens": 152,
+        "total_tokens": 13825
+      },
+      "time": "2026-02-11T19:27:22.766077+00:00"
     }
   ],
   "test": false

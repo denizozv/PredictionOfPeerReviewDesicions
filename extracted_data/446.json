@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel adversarial framework for joint inference-generation learning with strong theoretical grounding (Jensen-Shannon divergence minimization, invertibility proofs), comprehensive experiments across multiple datasets, and demonstrated practical benefits in semi-supervised learning and mode coverage over baselines."
-      },
-      "token": {
-        "prompt_tokens": 8595,
-        "completion_tokens": 88,
-        "total_tokens": 8683
-      },
-      "time": "2026-02-08T22:17:09.211638+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -158,6 +144,20 @@
         "total_tokens": 10142
       },
       "time": "2026-02-09T20:20:09.568221+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel and well-motivated approach to jointly learning inference and generation networks via adversarial training on joint distributions. Strong theoretical grounding (Jensen-Shannon divergence minimization, invertibility results), comprehensive experiments across multiple datasets, and compelling evidence that joint training of encoder/decoder outperforms alternatives (GAN + post-hoc inference). Competitive semi-supervised results and thorough ablations on toy data demonstrate the value of the proposed method."
+      },
+      "token": {
+        "prompt_tokens": 11329,
+        "completion_tokens": 127,
+        "total_tokens": 11456
+      },
+      "time": "2026-02-11T18:43:03.676616+00:00"
     }
   ],
   "test": false

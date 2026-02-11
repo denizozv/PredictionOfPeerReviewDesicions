@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel problem formulation for information-seeking agents with principled RL framework, diverse experimental validation across vision and language tasks, and clear methodological contribution combining intrinsic/extrinsic rewards with deep architectures."
-      },
-      "token": {
-        "prompt_tokens": 5697,
-        "completion_tokens": 81,
-        "total_tokens": 5778
-      },
-      "time": "2026-02-08T22:30:26.044139+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 7766
       },
       "time": "2026-02-09T20:32:37.691447+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Presents a well-motivated general framework for information-seeking agents with clear problem formulation, principled RL training approach combining extrinsic/intrinsic rewards, and demonstrates the approach across diverse tasks (vision, language, reasoning) showing agents learn efficient search strategies. However, limited novelty in individual components (GAE, standard architectures) and modest empirical improvements over baselines somewhat limit impact."
+      },
+      "token": {
+        "prompt_tokens": 8431,
+        "completion_tokens": 121,
+        "total_tokens": 8552
+      },
+      "time": "2026-02-11T19:01:29.797237+00:00"
     }
   ],
   "test": false

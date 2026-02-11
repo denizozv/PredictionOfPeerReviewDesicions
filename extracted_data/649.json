@@ -42,20 +42,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Empirical study without methodological novelty; systematic comparison of existing context definitions lacks new techniques or theoretical insights; limited impact given the shift toward contextualized embeddings (BERT, etc.) in the field."
-      },
-      "token": {
-        "prompt_tokens": 527,
-        "completion_tokens": 80,
-        "total_tokens": 607
-      },
-      "time": "2026-02-08T22:38:17.341255+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -68,6 +54,20 @@
         "total_tokens": 3007
       },
       "time": "2026-02-09T20:40:48.406669+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.82,
+        "primary_reason": "Empirical study lacks novelty and depth: systematically compares existing context definitions (window-based, dependency, etc.) without proposing new methods or theoretical insights; evaluation is broad but shallow with no mechanistic analysis of why certain contexts work better; contribution is primarily a benchmarking exercise rather than advancing understanding of embeddings or proposing actionable improvements."
+      },
+      "token": {
+        "prompt_tokens": 3261,
+        "completion_tokens": 110,
+        "total_tokens": 3371
+      },
+      "time": "2026-02-11T19:13:18.838159+00:00"
     }
   ],
   "test": false

@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel theoretical framework with strong empirical validation. Weight tying mechanism is well-motivated through loss augmentation analysis, achieves SOTA on PTB, and provides both theoretical insights and practical parameter reduction benefits."
-      },
-      "token": {
-        "prompt_tokens": 6331,
-        "completion_tokens": 78,
-        "total_tokens": 6409
-      },
-      "time": "2026-02-08T22:20:24.375922+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 8298
       },
       "time": "2026-02-09T20:23:00.180295+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes a theoretically motivated framework (augmented loss + weight tying) for language modeling with clear mechanistic insights; demonstrates that tying input embeddings to output projections (W=L^T) reduces parameters while improving performance; provides solid empirical validation on PTB/Wikitext-2 with ablations showing both components contribute, achieving state-of-the-art results and offering practical benefits for practitioners."
+      },
+      "token": {
+        "prompt_tokens": 9065,
+        "completion_tokens": 126,
+        "total_tokens": 9191
+      },
+      "time": "2026-02-11T18:48:03.163687+00:00"
     }
   ],
   "test": false

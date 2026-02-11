@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel variational framework for information bottleneck with principled neural network parameterization, strong theoretical contribution, comprehensive experiments demonstrating generalization and adversarial robustness benefits, clear connections to VAEs and unsupervised learning."
-      },
-      "token": {
-        "prompt_tokens": 8179,
-        "completion_tokens": 85,
-        "total_tokens": 8264
-      },
-      "time": "2026-02-08T22:16:16.240540+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 9784
       },
       "time": "2026-02-09T20:19:41.616734+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Presents a principled variational approximation to the information bottleneck objective that enables neural network training via the reparameterization trick. Demonstrates strong empirical results on adversarial robustness and generalization, with clear theoretical motivation, thorough experimental analysis (including 2D visualizations and IB curves), and useful connections to VAEs. The work makes a solid methodological contribution with practical benefits."
+      },
+      "token": {
+        "prompt_tokens": 10913,
+        "completion_tokens": 123,
+        "total_tokens": 11036
+      },
+      "time": "2026-02-11T18:42:11.133264+00:00"
     }
   ],
   "test": false

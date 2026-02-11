@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel multimodal approach to unsupervised word discovery from audio-visual data with strong empirical results, semantic grounding, and scalability improvements (O(n) vs O(n²)). Clear scientific contribution bridging speech processing and vision."
-      },
-      "token": {
-        "prompt_tokens": 5624,
-        "completion_tokens": 89,
-        "total_tokens": 5713
-      },
-      "time": "2026-02-08T22:43:18.745197+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -113,6 +99,20 @@
         "total_tokens": 7750
       },
       "time": "2026-02-09T20:46:11.931100+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel multimodal approach to unsupervised word discovery from audio-visual data with strong empirical results (high cluster purity, good coverage) and meaningful semantic structure in learned embeddings. Demonstrates scalability (522 hours) and interpretable discoveries without text supervision. However, evaluation relies heavily on proxy ASR transcripts for analysis, lacks rigorous quantitative baselines, and the core technical novelty (applying pretrained networks locally + k-means clustering) is somewhat incremental."
+      },
+      "token": {
+        "prompt_tokens": 8358,
+        "completion_tokens": 138,
+        "total_tokens": 8496
+      },
+      "time": "2026-02-11T19:20:21.227573+00:00"
     }
   ],
   "test": false

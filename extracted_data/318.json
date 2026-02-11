@@ -147,20 +147,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel differentiable graph transformation framework with solid experimental validation on diverse tasks (bAbI, cellular automata, Turing machines). Clear methodological contribution combining graph neural networks with structured supervision. Strong results on graph-suited problems despite requiring additional supervision."
-      },
-      "token": {
-        "prompt_tokens": 5837,
-        "completion_tokens": 88,
-        "total_tokens": 5925
-      },
-      "time": "2026-02-08T22:04:05.105786+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -173,6 +159,20 @@
         "total_tokens": 7876
       },
       "time": "2026-02-09T20:07:55.516394+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents an interesting extension of graph neural networks with differentiable graph transformations, it suffers from significant limitations: (1) Heavy reliance on strong supervision (full graph annotations at each timestep) makes the approach impractical and limits fair comparison with end-to-end baselines; (2) bAbI task evaluation is on a well-known toy benchmark where many existing methods already achieve near-perfect performance, and the paper fails on task 17; (3) Rule discovery tasks (cellular automaton, Turing machines) are synthetic and overly simplistic, with no evaluation on realistic structured prediction problems; (4) Limited novelty—the core contribution is essentially composing existing GRU-like operations with soft graph representations, which is incremental; (5) No ablation studies to justify design choices, and the writing/presentation could be clearer. The work reads more as a proof-of-concept than a significant methodological advance suitable for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 8569,
+        "completion_tokens": 246,
+        "total_tokens": 8815
+      },
+      "time": "2026-02-11T18:23:27.633504+00:00"
     }
   ],
   "test": false

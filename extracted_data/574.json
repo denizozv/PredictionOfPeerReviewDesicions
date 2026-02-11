@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Application paper lacking methodological novelty. RNN for multi-label learning is standard; ResCeption is minor Inception-v3 modification; system combines existing techniques (Faster R-CNN, GoogleNet, color histograms) without significant innovation. Evaluation is internal/proprietary with no public benchmarks or comparisons to state-of-the-art methods. Suitable for applications track, not main conference."
-      },
-      "token": {
-        "prompt_tokens": 4311,
-        "completion_tokens": 125,
-        "total_tokens": 4436
-      },
-      "time": "2026-02-08T22:30:29.134602+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 6456
       },
       "time": "2026-02-09T20:32:45.319279+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "This is primarily an engineering/systems paper describing an e-commerce application rather than a research contribution. While it combines existing techniques (ResNet/Inception, LSTM, Faster R-CNN) competently, the core ideas are incremental: using RNNs for multi-label learning via sequence factorization is straightforward, and the 'guided' variants are simple conditional applications. The paper lacks rigorous experimental validation—no proper baselines, no ablation studies, no statistical significance testing, and evaluation is mostly qualitative on proprietary data. The ResCeption architecture (adding residual shortcuts to Inception) is a minor modification already explored independently. There is no novel insight into why these design choices work or when they fail. The work would be suitable for an applications/industry track but falls well below the bar for ICML/ICLR/NeurIPS research contributions."
+      },
+      "token": {
+        "prompt_tokens": 7045,
+        "completion_tokens": 224,
+        "total_tokens": 7269
+      },
+      "time": "2026-02-11T19:02:05.425343+00:00"
     }
   ],
   "test": true

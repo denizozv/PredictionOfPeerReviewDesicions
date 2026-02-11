@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited experimental scope (toy slot-car domain only), incremental methodological contribution (gated network + task coherence loss extension of existing LRP), weak baselines, and narrow applicability. Lacks depth for top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 4730,
-        "completion_tokens": 85,
-        "total_tokens": 4815
-      },
-      "time": "2026-02-08T22:40:08.980107+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 6907
       },
       "time": "2026-02-09T20:42:51.331597+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Limited experimental scope (toy slot-car domain only), incremental extension of existing LRP method with gated architecture, weak baselines (PCA, raw pixels, no comparison to modern multi-task RL or representation learning methods), and unclear generalization beyond the specific synthetic setting. The core contribution—adding task-coherence loss and gating to LRP—is relatively straightforward, and the paper lacks evidence of broader applicability or significant methodological novelty."
+      },
+      "token": {
+        "prompt_tokens": 7464,
+        "completion_tokens": 132,
+        "total_tokens": 7596
+      },
+      "time": "2026-02-11T19:15:32.046166+00:00"
     }
   ],
   "test": true

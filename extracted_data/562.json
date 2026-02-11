@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel training framework with solid empirical validation on mode coverage and generalization, though evaluation metrics (GAM-II) and theoretical justification could be stronger. Practical contribution to GAN training is meaningful."
-      },
-      "token": {
-        "prompt_tokens": 6267,
-        "completion_tokens": 78,
-        "total_tokens": 6345
-      },
-      "time": "2026-02-08T22:29:16.654499+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 8124
       },
       "time": "2026-02-09T20:31:28.886849+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The core idea—swapping discriminators among parallel GANs during training—is intuitive but lacks rigorous theoretical justification and empirical validation. The proposed GAM-II metric is ad-hoc and designed post-hoc to make GAP appear favorable. Improvements are modest and inconsistent (e.g., no benefit for hybrid GAP), evaluation relies heavily on weak/qualitative measures (t-SNE, class histograms), and the paper does not convincingly demonstrate that GAP's gains outweigh the computational cost of training multiple models in parallel. The regularization and mode-coverage arguments are plausible but not rigorously validated."
+      },
+      "token": {
+        "prompt_tokens": 9001,
+        "completion_tokens": 176,
+        "total_tokens": 9177
+      },
+      "time": "2026-02-11T19:00:14.447605+00:00"
     }
   ],
   "test": false

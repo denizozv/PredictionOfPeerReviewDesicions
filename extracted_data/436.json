@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel weak supervision approach for program induction with practical modifications to Neural Programmer architecture. Strong experimental validation on real-world dataset with competitive results and thorough ablation studies. Clear methodological contribution despite modest absolute performance."
-      },
-      "token": {
-        "prompt_tokens": 4635,
-        "completion_tokens": 80,
-        "total_tokens": 4715
-      },
-      "time": "2026-02-08T22:16:02.434260+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 6859
       },
       "time": "2026-02-09T20:18:58.708855+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Presents the first end-to-end weakly supervised neural approach to semantic parsing on real-world tables (WikiTableQuestions), with meaningful modifications to Neural Programmer's training objective to handle real-world ambiguities, achieves competitive results (37.7% ensemble vs 37.1% SOTA), includes solid ablations and error analysis, though limited by small dataset, modest single-model performance (34.2%), and reliance on ensemble averaging."
+      },
+      "token": {
+        "prompt_tokens": 7369,
+        "completion_tokens": 133,
+        "total_tokens": 7502
+      },
+      "time": "2026-02-11T18:41:06.474677+00:00"
     }
   ],
   "test": false

@@ -82,20 +82,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty and scope. Standard CNN/LSTM architectures for frame prediction combined with ResNet for classification. Narrow task domain (block stability), small-scale experiments (3-5 blocks), and incremental contribution. Lacks theoretical insight or methodological innovation expected at top venues."
-      },
-      "token": {
-        "prompt_tokens": 3005,
-        "completion_tokens": 96,
-        "total_tokens": 3101
-      },
-      "time": "2026-02-08T22:24:17.516039+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -108,6 +94,20 @@
         "total_tokens": 5353
       },
       "time": "2026-02-09T20:26:18.724995+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents an interesting idea but suffers from limited scope, weak experimental validation, and insufficient novelty. The core contribution—using unsupervised video prediction to improve supervised stability prediction—is demonstrated only on a toy synthetic task (3–5 block towers) with a small custom dataset. The method shows modest improvements but lacks rigorous ablations, theoretical justification, or evidence of generalization beyond this narrow domain. Comparisons to prior work (Zhang et al. 2016) use different datasets, making claims of superiority unsubstantiated. The architectures (ConvDeconv, ConvLSTMDeconv) are standard, and the paper does not convincingly establish why unsupervised frame prediction should help stability prediction or when this approach would be useful in practice. The writing and presentation are also below conference standards."
+      },
+      "token": {
+        "prompt_tokens": 5739,
+        "completion_tokens": 212,
+        "total_tokens": 5951
+      },
+      "time": "2026-02-11T18:53:13.883595+00:00"
     }
   ],
   "test": false

@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Incremental activation function design with limited novelty. PELU is a straightforward parametrization of ELU with modest empirical gains (4-7% relative improvement). Lacks significant methodological innovation, theoretical depth, or insights beyond parameter tuning. Comparable to PReLU-style work with narrow scope."
-      },
-      "token": {
-        "prompt_tokens": 4915,
-        "completion_tokens": 104,
-        "total_tokens": 5019
-      },
-      "time": "2026-02-08T22:44:12.470985+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 6998
       },
       "time": "2026-02-09T20:47:18.582721+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Incremental activation function variant with modest empirical gains (4-7% relative improvement over ELU) but limited novelty, weak theoretical justification, and concerning experimental issues (requires careful tuning of weight decay, shows overfitting on ImageNet, performance sensitive to learning rate regime). The contribution is primarily engineering-focused without sufficient depth or insight for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7649,
+        "completion_tokens": 116,
+        "total_tokens": 7765
+      },
+      "time": "2026-02-11T19:22:08.457808+00:00"
     }
   ],
   "test": false

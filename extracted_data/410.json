@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: proposes softmax maximum probability as baseline for error/OOD detection (well-known observation), with auxiliary decoder method lacking sufficient technical depth. Primarily an empirical study across datasets rather than a methodological contribution. Suitable for a workshop or applications track, not a top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 6057,
-        "completion_tokens": 101,
-        "total_tokens": 6158
-      },
-      "time": "2026-02-08T22:12:44.044509+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 8030
       },
       "time": "2026-02-09T20:16:28.875706+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents a straightforward empirical study showing that maximum softmax probability can detect misclassified and OOD examples, but the core contribution is too incremental and well-known. The softmax baseline is obvious and unsurprising; the auxiliary decoder method (Section 4) is underdeveloped with limited novelty. Evaluation is broad but shallow across many tasks without deep insights. The work reads as a useful empirical benchmark rather than a research contribution with sufficient originality, methodological depth, or surprising findings for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 8791,
+        "completion_tokens": 153,
+        "total_tokens": 8944
+      },
+      "time": "2026-02-11T18:37:10.150668+00:00"
     }
   ],
   "test": false

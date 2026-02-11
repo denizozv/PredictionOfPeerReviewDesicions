@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel theoretical contribution (CMD as metric with convergence guarantees) + solid experimental validation on standard benchmarks with competitive/SOTA results + practical advantages over MMD (lower computational cost, better parameter stability). Addresses domain adaptation rigorously with mathematical grounding."
-      },
-      "token": {
-        "prompt_tokens": 6605,
-        "completion_tokens": 90,
-        "total_tokens": 6695
-      },
-      "time": "2026-02-08T22:18:10.959322+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -123,6 +109,20 @@
         "total_tokens": 8554
       },
       "time": "2026-02-09T20:21:06.791497+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes CMD, a computationally efficient metric for domain-invariant representation learning with solid theoretical grounding (proves CMD is a metric, establishes convergence properties). Demonstrates competitive or state-of-the-art results on standard benchmarks (Office, Amazon reviews) with thorough parameter sensitivity analysis showing robustness. Main limitations: modest empirical gains, approximations (marginal moments only) weaken theoretical guarantees for joint distributions, and limited novelty in the core domain adaptation framework—but the method is clean, well-motivated, and practically useful."
+      },
+      "token": {
+        "prompt_tokens": 9339,
+        "completion_tokens": 155,
+        "total_tokens": 9494
+      },
+      "time": "2026-02-11T18:44:13.957284+00:00"
     }
   ],
   "test": false

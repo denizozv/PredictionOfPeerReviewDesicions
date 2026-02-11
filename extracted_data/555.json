@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Empirical architecture search study with limited novelty. Applies standard meta-learning to rank DNNs on tabular data; no significant methodological innovation. Experiments confined to 13 small datasets with modest baselines. Findings (shallow networks work best, parallel layers help) are incremental. Meta-learning approach is straightforward feature engineering + Random Forest ranking. Work reads as thorough empirical analysis rather than a research contribution suitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 6612,
-        "completion_tokens": 133,
-        "total_tokens": 6745
-      },
-      "time": "2026-02-08T22:28:21.849351+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 8669
       },
       "time": "2026-02-09T20:30:43.062013+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper is primarily an empirical study on tabular data with limited novelty. While it explores DNN architecture search and meta-learning for ranking, the contributions are incremental: (1) the architecture generation is a straightforward combinatorial enumeration with fixed hyperparameters, (2) the meta-learning approach uses standard Random Forest on hand-crafted features without methodological innovation, (3) experiments are restricted to 13 small tabular datasets where DNNs don't consistently outperform Random Forest, undermining the motivation, (4) the meta-learning results (precision@X) are modest and lack rigorous statistical analysis, and (5) key findings (shallow networks work best, architectures don't transfer across datasets) suggest the problem setting may not be well-suited to deep learning. The work reads as an exploratory analysis rather than a significant methodological or empirical contribution suitable for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9346,
+        "completion_tokens": 231,
+        "total_tokens": 9577
+      },
+      "time": "2026-02-11T18:59:16.763110+00:00"
     }
   ],
   "test": false

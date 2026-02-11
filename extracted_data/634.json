@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel layerwise approach to adversarial generation and DNN visualization with dual utility; solid experimental validation on MNIST and VGGFace; demonstrates practical improvements in adversarial robustness training. However, limited theoretical depth, incremental over prior work (hot/cold, FGS), and modest experimental scope reduce impact."
-      },
-      "token": {
-        "prompt_tokens": 5185,
-        "completion_tokens": 106,
-        "total_tokens": 5291
-      },
-      "time": "2026-02-08T22:37:08.452413+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 7274
       },
       "time": "2026-02-09T20:39:17.430927+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents LOTS as a unifying framework for visualization, robustness assessment, and adversarial example generation via layerwise feature manipulation and backprojection. While the core idea is reasonable, the contribution is primarily incremental: it generalizes existing techniques (hot/cold, FGS, feature inversion) to arbitrary layers without substantial novelty. Experimental validation is limited to MNIST and VGG-Face with weak baselines; adversarial training results show only marginal improvements over simpler methods (0.65% vs 0.66% error). The paper lacks rigorous analysis of when/why LOTS works, theoretical justification, or compelling evidence that layerwise targeting offers advantages beyond computational cost. Presentation is verbose with limited insight into the mechanism or practical impact."
+      },
+      "token": {
+        "prompt_tokens": 7919,
+        "completion_tokens": 204,
+        "total_tokens": 8123
+      },
+      "time": "2026-02-11T19:11:13.976462+00:00"
     }
   ],
   "test": false

@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical connection between policy gradient fixed points and Q-values with practical hybrid algorithm; solid experimental validation on Atari; establishes equivalence between actor-critic and action-value methods."
-      },
-      "token": {
-        "prompt_tokens": 9190,
-        "completion_tokens": 75,
-        "total_tokens": 9265
-      },
-      "time": "2026-02-08T22:15:05.377450+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -168,6 +154,20 @@
         "total_tokens": 10986
       },
       "time": "2026-02-09T20:18:31.495457+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a theoretically motivated hybrid of policy gradient and Q-learning (PGQL) with solid mathematical analysis connecting regularized policy gradient fixed points to Q-values, establishes equivalence between actor-critic and action-value methods, and demonstrates empirical improvements on Atari; however, the core contribution is somewhat incremental (combining existing techniques), the practical implementation diverges from theory, and some experimental details/ablations are missing."
+      },
+      "token": {
+        "prompt_tokens": 11924,
+        "completion_tokens": 128,
+        "total_tokens": 12052
+      },
+      "time": "2026-02-11T18:40:10.331129+00:00"
     }
   ],
   "test": false

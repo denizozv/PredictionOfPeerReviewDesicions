@@ -147,20 +147,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Comprehensive empirical study with novel architectural insights (action-dependent transitions, prediction-independent simulators) and extensive analysis of training dynamics (short vs. long-term accuracy trade-offs). Strong experimental validation across diverse environments (Atari, 3D racing, mazes) with in-depth ablations and human evaluation."
-      },
-      "token": {
-        "prompt_tokens": 15092,
-        "completion_tokens": 104,
-        "total_tokens": 15196
-      },
-      "time": "2026-02-08T22:12:30.136100+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -173,6 +159,20 @@
         "total_tokens": 16072
       },
       "time": "2026-02-09T20:15:52.589944+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Comprehensive empirical study of recurrent environment simulators with extensive ablations on training schemes (prediction-dependent vs observation-dependent transitions), architectural variants, and evaluation across diverse environments (10 Atari games, 3D racing, mazes). Key contributions include action-dependent state transitions, analysis of short-term vs long-term accuracy trade-offs, prediction-independent simulators for efficiency, and model-based exploration. However, limited novelty in core techniques (mostly LSTM variants), incremental improvements over Oh et al. (2015), and modest practical impact on downstream tasks (exploration gains are modest) somewhat limit the contribution."
+      },
+      "token": {
+        "prompt_tokens": 17826,
+        "completion_tokens": 169,
+        "total_tokens": 17995
+      },
+      "time": "2026-02-11T18:36:10.456168+00:00"
     }
   ],
   "test": false

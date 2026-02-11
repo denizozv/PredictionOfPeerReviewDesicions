@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel end-to-end learned image compression with principled rate-distortion optimization, theoretically grounded in variational inference, strong empirical results surpassing JPEG/JPEG2000, and significant visual quality improvements. Methodologically sophisticated with well-motivated architectural choices (GDN, continuous relaxation for quantization)."
-      },
-      "token": {
-        "prompt_tokens": 7728,
-        "completion_tokens": 107,
-        "total_tokens": 7835
-      },
-      "time": "2026-02-08T22:02:35.717251+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 9542
       },
       "time": "2026-02-09T20:06:38.559239+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Landmark contribution combining deep learning with classical rate-distortion theory for image compression. Introduces end-to-end optimization of nonlinear analysis/synthesis transforms with GDN, provides principled continuous relaxation of quantization for gradient-based learning, establishes connection to VAEs while clarifying fundamental differences, and demonstrates substantial practical improvements over JPEG/JPEG2000 in both objective metrics (MS-SSIM) and visual quality across diverse test images. Thorough experimental validation, clear presentation, and reproducible methodology with public code/results."
+      },
+      "token": {
+        "prompt_tokens": 10460,
+        "completion_tokens": 153,
+        "total_tokens": 10613
+      },
+      "time": "2026-02-11T18:19:53.011182+00:00"
     }
   ],
   "test": false

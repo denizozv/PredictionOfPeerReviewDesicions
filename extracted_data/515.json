@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel tensor factorization approach with principled Riemannian optimization for modeling all-order feature interactions. Strong theoretical contributions (Theorems 1-2), practical algorithmic innovations, and solid experimental validation on synthetic and real datasets."
-      },
-      "token": {
-        "prompt_tokens": 7535,
-        "completion_tokens": 86,
-        "total_tokens": 7621
-      },
-      "time": "2026-02-08T22:25:03.913296+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -163,6 +149,20 @@
         "total_tokens": 9238
       },
       "time": "2026-02-09T20:26:33.123018+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel approach to modeling all-order feature interactions via Tensor Train factorization with efficient Riemannian optimization; solid theoretical contributions (Theorems 1-2) and practical algorithmic innovations; demonstrates clear advantages on synthetic high-order data and competitive performance on real datasets, though empirical validation is somewhat limited in scope and scale."
+      },
+      "token": {
+        "prompt_tokens": 10269,
+        "completion_tokens": 107,
+        "total_tokens": 10376
+      },
+      "time": "2026-02-11T18:53:20.634083+00:00"
     }
   ],
   "test": false

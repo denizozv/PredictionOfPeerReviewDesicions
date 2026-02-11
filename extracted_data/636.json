@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid technical contribution with practical impact: principled variance analysis for dropout + weight initialization, plus simple but effective BN variance re-estimation yielding SOTA on CIFAR-10/100. Clear derivations and comprehensive experiments, though incremental in scope and limited novelty in individual components."
-      },
-      "token": {
-        "prompt_tokens": 3774,
-        "completion_tokens": 97,
-        "total_tokens": 3871
-      },
-      "time": "2026-02-08T22:37:11.504701+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 5976
       },
       "time": "2026-02-09T20:39:25.425080+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes two practical and well-motivated corrections for dropout's variance effects: (1) a principled weight initialization accounting for dropout rates and nonlinearity, with clear forward/backward pass derivations and empirical validation across network depths; (2) a simple post-training BN variance re-estimation procedure that achieves state-of-the-art on CIFAR-10/100 without data augmentation. The contributions are technically sound, clearly presented, and yield consistent improvements, though the novelty is somewhat incremental and evaluation could be broader."
+      },
+      "token": {
+        "prompt_tokens": 6508,
+        "completion_tokens": 152,
+        "total_tokens": 6660
+      },
+      "time": "2026-02-11T19:11:16.686707+00:00"
     }
   ],
   "test": false

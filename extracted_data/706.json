@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel piecewise-constant prior for multi-modal latent variables in VAEs with solid theoretical foundation, comprehensive experiments on document and dialogue modeling showing consistent improvements, and clear methodological contribution to variational inference."
-      },
-      "token": {
-        "prompt_tokens": 10151,
-        "completion_tokens": 79,
-        "total_tokens": 10230
-      },
-      "time": "2026-02-08T22:43:20.646707+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -153,6 +139,20 @@
         "total_tokens": 11662
       },
       "time": "2026-02-09T20:46:21.075397+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel piecewise-constant prior for VAEs to capture multi-modal latent distributions, with solid theoretical grounding (inverse transform sampling, KL divergence derivation) and demonstrates consistent empirical improvements on document and dialogue modeling tasks; however, the human evaluation for dialogue is inconclusive and the practical impact of capturing multi-modality remains somewhat unclear."
+      },
+      "token": {
+        "prompt_tokens": 12885,
+        "completion_tokens": 114,
+        "total_tokens": 12999
+      },
+      "time": "2026-02-11T19:20:23.762656+00:00"
     }
   ],
   "test": false

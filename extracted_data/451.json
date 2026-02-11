@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical contribution on loss landscape topology with rigorous analysis of half-rectified networks; strong mathematical framework connecting overparametrization to level-set connectedness; practical algorithm with comprehensive experiments across architectures."
-      },
-      "token": {
-        "prompt_tokens": 11965,
-        "completion_tokens": 79,
-        "total_tokens": 12044
-      },
-      "time": "2026-02-08T22:17:16.938782+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -168,6 +154,20 @@
         "total_tokens": 13393
       },
       "time": "2026-02-09T20:20:38.573407+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper makes interesting theoretical contributions about loss landscape topology and connectivity of ReLU networks, the work suffers from significant limitations: (1) Main theoretical result (Theorem 2.4) applies only to single hidden layer networks with mixed ℓ1/ℓ2 regularization, severely limiting practical relevance; (2) The empirical validation via Dynamic String Sampling is heuristic without convergence guarantees—failure to connect doesn't prove disconnection; (3) Experiments are limited to toy problems (polynomial regression, MNIST, CIFAR-10, PTB) without demonstrating insights for modern deep networks; (4) The gap between theory (single layer) and experiments (multi-layer CNNs/RNNs) is not bridged; (5) Practical impact unclear—the paper characterizes when level sets are connected but doesn't provide actionable insights for optimization or generalization. The work is technically sound but incremental for a top venue."
+      },
+      "token": {
+        "prompt_tokens": 14699,
+        "completion_tokens": 247,
+        "total_tokens": 14946
+      },
+      "time": "2026-02-11T18:43:19.505995+00:00"
     }
   ],
   "test": false

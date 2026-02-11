@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel multi-task learning framework combining RL with auxiliary depth and loop closure tasks for navigation. Strong experimental validation across multiple environments with detailed analysis of learned representations (position decoding, policy structure). Demonstrates clear improvements in data efficiency and performance. Well-executed work with thorough ablations and interpretability studies."
-      },
-      "token": {
-        "prompt_tokens": 7528,
-        "completion_tokens": 99,
-        "total_tokens": 7627
-      },
-      "time": "2026-02-08T22:16:07.248510+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -168,6 +154,20 @@
         "total_tokens": 9494
       },
       "time": "2026-02-09T20:19:13.664922+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Well-executed empirical study demonstrating that auxiliary tasks (depth prediction, loop closure) significantly improve data efficiency and performance in RL-based navigation. Strong experimental validation across multiple environments with thorough ablations, insightful analysis of learned representations (position decoding, policy clustering), and clear practical benefits approaching human-level performance. The multi-task learning approach is sound and the paper provides detailed mechanistic insights into why auxiliary tasks help."
+      },
+      "token": {
+        "prompt_tokens": 10262,
+        "completion_tokens": 126,
+        "total_tokens": 10388
+      },
+      "time": "2026-02-11T18:41:12.060639+00:00"
     }
   ],
   "test": true

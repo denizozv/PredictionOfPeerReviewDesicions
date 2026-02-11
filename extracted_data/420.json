@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel empirical finding that simple n-gram RNN matches sophisticated attention mechanisms; well-executed experiments with clear insights about attention span limitations in language modeling, though incremental methodological contributions."
-      },
-      "token": {
-        "prompt_tokens": 3488,
-        "completion_tokens": 74,
-        "total_tokens": 3562
-      },
-      "time": "2026-02-08T22:14:12.055565+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 5692
       },
       "time": "2026-02-09T20:17:22.133006+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Well-executed empirical study with clear methodological contributions (key-value-predict decomposition), thorough ablations, and a surprising finding that simple n-gram RNNs match complex attention models. Strong analysis of attention patterns and honest reporting of limitations provide valuable insights for the community."
+      },
+      "token": {
+        "prompt_tokens": 6222,
+        "completion_tokens": 96,
+        "total_tokens": 6318
+      },
+      "time": "2026-02-11T18:38:15.548480+00:00"
     }
   ],
   "test": false

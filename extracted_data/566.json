@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in active learning approach, weak experimental validation (only MNIST/USPS), numerous approximations undermine theoretical claims, missing comparisons with recent deep active learning methods."
-      },
-      "token": {
-        "prompt_tokens": 6237,
-        "completion_tokens": 74,
-        "total_tokens": 6311
-      },
-      "time": "2026-02-08T22:29:21.050130+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 8208
       },
       "time": "2026-02-09T20:31:45.993189+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper proposes an active learning method based on variational inference for CNNs, but suffers from: (1) weak experimental validation limited to MNIST/USPS only—toy datasets insufficient for 2016+ standards; (2) numerous unjustified approximations (Eqs. 10-18) that progressively weaken the theoretical foundation without empirical justification of their impact; (3) no comparison to modern active learning baselines or other Bayesian deep learning methods; (4) unclear practical advantage over simpler uncertainty sampling (which works well on MNIST); (5) poor presentation with missing details, notation inconsistencies, and incomplete related work positioning; (6) the core insight (using MLE-based Fisher information for active learning) is interesting but underdeveloped and not convincingly validated."
+      },
+      "token": {
+        "prompt_tokens": 8971,
+        "completion_tokens": 212,
+        "total_tokens": 9183
+      },
+      "time": "2026-02-11T19:00:23.033387+00:00"
     }
   ],
   "test": true

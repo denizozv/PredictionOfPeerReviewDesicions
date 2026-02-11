@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited experimental validation on toy datasets (MNIST, CIFAR10 with small networks), no comparison with modern second-order methods, unclear practical advantages over first-order methods, and insufficient evidence of scalability to realistic deep learning problems."
-      },
-      "token": {
-        "prompt_tokens": 7507,
-        "completion_tokens": 85,
-        "total_tokens": 7592
-      },
-      "time": "2026-02-08T22:35:02.284011+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -168,6 +154,20 @@
         "total_tokens": 9262
       },
       "time": "2026-02-09T20:37:11.516661+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "While L-SR1 is a reasonable algorithmic contribution combining SR1 with limited-memory and trust-region methods, the empirical validation is insufficient for a top venue: experiments are limited to small networks (LeNet, ResNet-20) on toy datasets (MNIST, CIFAR-10), show only competitive (not superior) performance versus NAG/SGD+momentum, lack wall-clock time comparisons, and provide no evidence of practical advantage in distributed training despite being a core motivation. The theoretical justification for why SR1's indefiniteness helps with saddle points is intuitive but not rigorously established, and the reliance on batch normalization to condition the Hessian is presented as hypothesis rather than principled design. Missing comparisons to other second-order methods (natural gradient, K-FAC) and no demonstration of scalability or distributed benefits substantially weaken the contribution."
+      },
+      "token": {
+        "prompt_tokens": 10241,
+        "completion_tokens": 227,
+        "total_tokens": 10468
+      },
+      "time": "2026-02-11T19:08:05.069880+00:00"
     }
   ],
   "test": false

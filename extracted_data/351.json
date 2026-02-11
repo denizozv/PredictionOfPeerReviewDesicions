@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel parameter reduction technique for high-dimensional genomic data via auxiliary networks predicting fat layer parameters. Well-motivated problem, clear methodological contribution, solid experimental validation on real genomic dataset with meaningful comparisons to domain baselines (PCA)."
-      },
-      "token": {
-        "prompt_tokens": 4705,
-        "completion_tokens": 87,
-        "total_tokens": 4792
-      },
-      "time": "2026-02-08T22:06:21.699264+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 6872
       },
       "time": "2026-02-09T20:10:46.855503+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel and practical neural network parametrization (Diet Networks) that substantially reduces parameters in high-dimensional genomic data by using auxiliary networks to predict weight matrices from learned feature embeddings; demonstrates clear parameter reduction (up to 4000×) with competitive or improved accuracy on population stratification, includes multiple embedding strategies with ablations, and addresses a real problem in precision medicine where N << Nd. However, evaluation is limited to a single task (ancestry prediction on 1000 Genomes) with modest absolute improvements, lacks comparison to other dimensionality-reduction or regularization baselines beyond PCA, and the core contribution—using auxiliary networks for parameter prediction—is somewhat incremental. The work is solid and useful but not groundbreaking."
+      },
+      "token": {
+        "prompt_tokens": 7438,
+        "completion_tokens": 194,
+        "total_tokens": 7632
+      },
+      "time": "2026-02-11T18:27:06.771952+00:00"
     }
   ],
   "test": false

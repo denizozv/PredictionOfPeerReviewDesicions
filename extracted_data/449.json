@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel fractal macro-architecture design with strong theoretical motivation, comprehensive experiments across CIFAR/SVHN/ImageNet, introduces drop-path regularization, demonstrates competitive performance without residuals, and provides valuable insights into deep network training dynamics."
-      },
-      "token": {
-        "prompt_tokens": 4652,
-        "completion_tokens": 86,
-        "total_tokens": 4738
-      },
-      "time": "2026-02-08T22:17:13.197843+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -123,6 +109,20 @@
         "total_tokens": 6798
       },
       "time": "2026-02-09T20:20:24.405103+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel self-similar fractal architecture that matches ResNet performance without residuals, introduces drop-path regularization with strong empirical validation, provides compelling mechanistic insights (student-teacher effects, anytime property), and demonstrates that residual connections may not be fundamental to deep network success—a significant conceptual contribution backed by thorough experiments and ablations across CIFAR, SVHN, and ImageNet."
+      },
+      "token": {
+        "prompt_tokens": 7386,
+        "completion_tokens": 120,
+        "total_tokens": 7506
+      },
+      "time": "2026-02-11T18:43:11.395254+00:00"
     }
   ],
   "test": false

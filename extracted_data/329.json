@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel denoising feature matching approach with solid theoretical motivation (score matching via denoising autoencoders), comprehensive experiments across multiple datasets, and consistent improvements. However, limited by low resolution experiments (32×32), modest quantitative gains, and incremental nature of the contribution."
-      },
-      "token": {
-        "prompt_tokens": 4502,
-        "completion_tokens": 94,
-        "total_tokens": 4596
-      },
-      "time": "2026-02-08T22:04:23.909430+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 6679
       },
       "time": "2026-02-09T20:08:42.625282+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel and theoretically motivated approach (denoising feature matching) that leverages discriminator feature distributions to guide generator training, with solid mathematical justification (connection to score matching via denoising autoencoders). Demonstrates consistent improvements across multiple datasets (CIFAR-10, STL-10, ImageNet) with reasonable ablations and qualitative results. However, confidence is moderate due to: (1) modest quantitative gains on CIFAR-10 vs. prior work, (2) evaluation limited to low resolutions and Inception score (which has known limitations), (3) lack of comprehensive ablations on key design choices (denoiser architecture, corruption schedule, loss weighting), and (4) limited analysis of when/why the method helps. The core idea is sound and the execution is competent, placing it at the acceptance threshold for a top venue, but the empirical validation and insights could be stronger."
+      },
+      "token": {
+        "prompt_tokens": 7234,
+        "completion_tokens": 234,
+        "total_tokens": 7468
+      },
+      "time": "2026-02-11T18:22:18.883594+00:00"
     }
   ],
   "test": false

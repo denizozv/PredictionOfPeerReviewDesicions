@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel modular framework (DRAGNN/TBRU) with strong theoretical grounding, demonstrates clear methodological contributions across multiple NLP tasks, achieves state-of-the-art results on dependency parsing, and shows principled approach to multi-task learning through compositional structure sharing."
-      },
-      "token": {
-        "prompt_tokens": 5013,
-        "completion_tokens": 96,
-        "total_tokens": 5109
-      },
-      "time": "2026-02-08T22:40:10.803655+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 7065
       },
       "time": "2026-02-09T20:42:57.863048+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Presents a novel, well-motivated framework (DRAGNN) for composing recurrent architectures via transition systems with dynamic connections. Demonstrates clear practical benefits on dependency parsing (state-of-the-art) and multi-task learning for summarization through principled use of compositional structure. Strong empirical validation with thoughtful ablations and clear presentation of a reusable abstraction."
+      },
+      "token": {
+        "prompt_tokens": 7747,
+        "completion_tokens": 118,
+        "total_tokens": 7865
+      },
+      "time": "2026-02-11T19:16:03.584561+00:00"
     }
   ],
   "test": false

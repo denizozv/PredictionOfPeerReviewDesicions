@@ -162,20 +162,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel mixture architecture combining pointer networks with softmax for language modeling, strong empirical results on PTB, introduces WikiText benchmark dataset, well-motivated design with thorough analysis of rare word handling and pointer usage patterns."
-      },
-      "token": {
-        "prompt_tokens": 6020,
-        "completion_tokens": 80,
-        "total_tokens": 6100
-      },
-      "time": "2026-02-08T22:22:27.201116+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -188,6 +174,20 @@
         "total_tokens": 8103
       },
       "time": "2026-02-09T20:24:39.192669+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Introduces a novel and well-motivated pointer-sentinel mixture architecture that elegantly combines softmax and pointer mechanisms for language modeling, achieves state-of-the-art results on Penn Treebank with fewer parameters, provides thorough empirical validation with insightful ablations and analysis, and contributes a valuable new benchmark (WikiText) addressing real limitations of Penn Treebank for evaluating modern language models."
+      },
+      "token": {
+        "prompt_tokens": 8754,
+        "completion_tokens": 124,
+        "total_tokens": 8878
+      },
+      "time": "2026-02-11T18:50:19.008095+00:00"
     }
   ],
   "test": false

@@ -187,20 +187,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel conceptual contribution (recursion for neural programming) with rigorous verification framework enabling provable generalization guarantees. Strong experimental validation across multiple algorithmic tasks with formal proofs of perfect generalization."
-      },
-      "token": {
-        "prompt_tokens": 14505,
-        "completion_tokens": 77,
-        "total_tokens": 14582
-      },
-      "time": "2026-02-08T22:02:32.675142+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -213,6 +199,20 @@
         "total_tokens": 15516
       },
       "time": "2026-02-09T20:04:18.357221+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "The paper makes a solid conceptual contribution by identifying recursion as a key abstraction for neural program learning, demonstrates it empirically on four algorithmic tasks with strong generalization results, and uniquely provides a formal verification procedure for provable perfect generalization. However, the work is limited by: (1) heavy reliance on hand-crafted recursive execution traces during training (reducing practical applicability), (2) evaluation restricted to relatively simple algorithmic tasks with small training sets, (3) verification procedure only applicable to discrete/finite domains, and (4) lack of comparison to other structured/modular approaches. The core insight is valuable and the execution is generally sound, but the practical limitations and narrow experimental scope place it at the borderline for a top venue."
+      },
+      "token": {
+        "prompt_tokens": 17237,
+        "completion_tokens": 193,
+        "total_tokens": 17430
+      },
+      "time": "2026-02-11T18:17:14.152494+00:00"
     }
   ],
   "test": false

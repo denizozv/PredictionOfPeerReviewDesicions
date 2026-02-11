@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty (straightforward VAE+image extension of VNMT), weak experimental validation (small dataset, marginal improvements, overfitting issues), and insufficient analysis of why multimodal fusion helps."
-      },
-      "token": {
-        "prompt_tokens": 6431,
-        "completion_tokens": 79,
-        "total_tokens": 6510
-      },
-      "time": "2026-02-08T22:36:04.182520+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -178,6 +164,20 @@
         "total_tokens": 8298
       },
       "time": "2026-02-09T20:38:26.405981+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Incremental extension of VNMT with modest empirical gains on a small dataset (Multi30k, 29k training pairs); limited experimental validation, weak baselines, and unclear practical benefit. The core idea—adding image features via VAE—is straightforward but yields only marginal BLEU/METEOR improvements (~0.5–1 point) with significant overfitting issues. Qualitative analysis reveals the model trades semantic accuracy for grammatical errors, and the authors acknowledge image features help mainly on short sentences. Evaluation lacks rigor: no statistical significance testing, no comparison to stronger multimodal baselines beyond one prior work (CMU), and the paper itself notes their baseline tuning may differ from prior work. Writing quality is poor with grammatical errors and unclear presentation. The contribution is insufficient for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9165,
+        "completion_tokens": 212,
+        "total_tokens": 9377
+      },
+      "time": "2026-02-11T19:10:11.020163+00:00"
     }
   ],
   "test": false

@@ -177,20 +177,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel attention-recurrence architecture for similarity learning with strong empirical results (1.5% error on Omniglot one-shot, first DL to beat humans), thorough qualitative/quantitative analysis, and clear methodological contribution despite some presentation issues."
-      },
-      "token": {
-        "prompt_tokens": 5921,
-        "completion_tokens": 92,
-        "total_tokens": 6013
-      },
-      "time": "2026-02-08T22:30:15.487483+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -203,6 +189,20 @@
         "total_tokens": 7976
       },
       "time": "2026-02-09T20:32:07.878030+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel architecture combining attention and recurrence for similarity learning with strong empirical results on Omniglot (1.5% error, first to beat humans at 4.5%), outperforming specialized HBPL (3.3%). Includes qualitative analysis of learned attention patterns and quantitative ablations. However, evaluation is limited primarily to Omniglot; generalization to other domains and comparison with concurrent meta-learning methods (Matching Networks, MANNs) could be stronger. The core contribution—cyclic presentation with cross-image attention conditioning—is solid but somewhat incremental over existing attention mechanisms."
+      },
+      "token": {
+        "prompt_tokens": 8655,
+        "completion_tokens": 168,
+        "total_tokens": 8823
+      },
+      "time": "2026-02-11T19:01:14.234766+00:00"
     }
   ],
   "test": false

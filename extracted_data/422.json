@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel variational inference framework for unsupervised state space learning with principled reparametrization of transitions to enforce Markovian assumptions. Strong theoretical contribution (proper ELBO derivation), clear methodological innovation over prior work (DKF, E2C), and convincing experiments demonstrating superior latent state information content and long-term prediction."
-      },
-      "token": {
-        "prompt_tokens": 7950,
-        "completion_tokens": 112,
-        "total_tokens": 8062
-      },
-      "time": "2026-02-08T22:14:17.547564+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 9490
       },
       "time": "2026-02-09T20:17:37.880006+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Proposes a principled variational inference method (DVBF) for unsupervised learning of nonlinear state-space models from high-dimensional observations. Key innovation: reparametrizing transitions to enable backpropagation through dynamics, forcing latent space to satisfy Markovian assumptions and capture full state information (including velocities). Demonstrates clear advantages over Deep Kalman Filters on synthetic benchmarks with convincing visualizations and quantitative analysis showing recovery of ground-truth dynamics. Well-motivated theoretical framework with proper derivation of variational lower bound. Limitations: evaluation limited to relatively simple simulated environments (pendulum, bouncing balls) with short sequences (15 timesteps); no real-world experiments or comparison to other baselines beyond DKF; modest improvements in likelihood metrics despite better qualitative predictions."
+      },
+      "token": {
+        "prompt_tokens": 10684,
+        "completion_tokens": 214,
+        "total_tokens": 10898
+      },
+      "time": "2026-02-11T18:39:04.367311+00:00"
     }
   ],
   "test": false

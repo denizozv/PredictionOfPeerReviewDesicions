@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical contribution with practical relevance: concave lower bounds for sample-efficient policy optimization, extension to negative rewards via control variates, validated on real-world advertising problem with significant improvements."
-      },
-      "token": {
-        "prompt_tokens": 4390,
-        "completion_tokens": 75,
-        "total_tokens": 4465
-      },
-      "time": "2026-02-08T22:41:29.870404+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 6615
       },
       "time": "2026-02-09T20:44:33.180767+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid theoretical contribution with practical motivation: derives concave/convex bounds on policy reward enabling efficient iterative optimization with limited policy updates; extends to negative rewards via control variates; demonstrates clear improvements on CartPole and real-world advertising data. However, limited experimental scope (mainly CartPole + one proprietary dataset), modest novelty over PoWER, and presentation issues (incomplete sections, missing details on real-world setup) prevent higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 7124,
+        "completion_tokens": 131,
+        "total_tokens": 7255
+      },
+      "time": "2026-02-11T19:18:16.610217+00:00"
     }
   ],
   "test": false

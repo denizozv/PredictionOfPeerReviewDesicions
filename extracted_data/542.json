@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel modular multitask RL framework with policy sketches, principled decoupled actor-critic optimization, strong empirical validation, and demonstrated generalization capabilities."
-      },
-      "token": {
-        "prompt_tokens": 5191,
-        "completion_tokens": 71,
-        "total_tokens": 5262
-      },
-      "time": "2026-02-08T22:27:15.501397+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 7334
       },
       "time": "2026-02-09T20:29:09.124007+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Well-executed multitask RL framework using policy sketches to induce modular subpolicies with parameter sharing. Key contributions: (1) decoupled actor-critic method that conditions critic on task identity to handle shared subpolicies with task-specific rewards, (2) curriculum learning scheme that smoothly scales task complexity, (3) strong empirical results showing faster convergence and better generalization than baselines, (4) clear ablations validating design choices. Limitations: evaluation restricted to two relatively simple grid-world domains; modest novelty in individual components (options, curriculum learning, parameter sharing are known); zero-shot/adaptation experiments use only 2 held-out tasks. Overall solid contribution with good experimental rigor, though scope and technical novelty are somewhat incremental."
+      },
+      "token": {
+        "prompt_tokens": 7925,
+        "completion_tokens": 204,
+        "total_tokens": 8129
+      },
+      "time": "2026-02-11T18:57:17.814010+00:00"
     }
   ],
   "test": false

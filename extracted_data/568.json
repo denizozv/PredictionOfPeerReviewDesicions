@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: straightforward combination of existing techniques (character CNN + word embeddings + attention + residual blocks). Weak experimental validation: only 3 small datasets, missing comparisons with relevant baselines (RNNs, modern attention models), no statistical significance testing. Incremental contribution without clear scientific insight."
-      },
-      "token": {
-        "prompt_tokens": 3093,
-        "completion_tokens": 103,
-        "total_tokens": 3196
-      },
-      "time": "2026-02-08T22:30:12.323305+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 5356
       },
       "time": "2026-02-09T20:32:00.302922+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper combines existing techniques (character-level CNNs, word embeddings, attention, residual networks) without sufficient novelty or insight. Empirical validation is weak: only three small datasets with modest improvements, no statistical significance testing, limited baselines (missing recent deep learning methods), and unclear experimental setup (e.g., train/test splits, hyperparameter selection). The writing is poor with grammatical errors and unclear motivation for design choices. The residual network application appears ad-hoc and poorly justified for this task."
+      },
+      "token": {
+        "prompt_tokens": 5827,
+        "completion_tokens": 147,
+        "total_tokens": 5974
+      },
+      "time": "2026-02-11T19:01:10.288790+00:00"
     }
   ],
   "test": false

@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel gating mechanism with clear theoretical motivation, comprehensive experiments across multiple architectures, interpretable design with single parameter per layer, strong empirical results on CIFAR with practical insights on layer importance."
-      },
-      "token": {
-        "prompt_tokens": 4952,
-        "completion_tokens": 76,
-        "total_tokens": 5028
-      },
-      "time": "2026-02-08T22:46:22.464238+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 7066
       },
       "time": "2026-02-09T20:50:06.573202+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple but effective layer augmentation technique (residual gates with single scalar parameter per layer) that improves optimization and performance across architectures; provides clear theoretical intuition, thorough ablations on MNIST/CIFAR, and interesting insights (layer importance via k values, robustness to layer removal); however, limited by modest empirical gains (~0.5-1% on CIFAR), evaluation restricted to relatively small datasets/models due to hardware constraints, and incremental nature of contribution (straightforward extension of ResNets/Highway Networks)."
+      },
+      "token": {
+        "prompt_tokens": 7686,
+        "completion_tokens": 155,
+        "total_tokens": 7841
+      },
+      "time": "2026-02-11T19:25:19.863982+00:00"
     }
   ],
   "test": false

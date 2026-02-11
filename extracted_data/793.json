@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: surprisal-driven feedback is a straightforward addition of prediction error as input signal. Narrow experimental validation (single dataset, enwik8 only). Weak baselines and incomplete comparisons. Incremental improvement over LSTM without sufficient theoretical insight or broad empirical validation. Missing ablation studies and analysis of when/why feedback helps."
-      },
-      "token": {
-        "prompt_tokens": 2518,
-        "completion_tokens": 112,
-        "total_tokens": 2630
-      },
-      "time": "2026-02-08T22:51:09.548622+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 4726
       },
       "time": "2026-02-09T20:54:31.739346+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Incremental architectural modification (adding prediction-error feedback) with weak empirical validation: single dataset (enwik8), unclear baselines, no ablations, missing implementation details (model size, fair comparisons), and insufficient analysis of when/why feedback helps. The core contribution—feeding last-step surprisal as input—lacks novelty and rigorous justification."
+      },
+      "token": {
+        "prompt_tokens": 5252,
+        "completion_tokens": 114,
+        "total_tokens": 5366
+      },
+      "time": "2026-02-11T19:31:24.882559+00:00"
     }
   ],
   "test": false

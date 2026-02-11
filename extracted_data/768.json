@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core contribution. The method is essentially partitioning CNN filters into foreground/background groups using segmentation masks as privileged information during training. The technical innovation (group orthogonal constraints, suppression losses) is incremental. Experimental validation is narrow: only ImageNet-0.1m (10% annotated) and PASCAL VOC; modest improvements (0.5-1.2% top-1); weak baselines (only ResNet and SVM+); no comparison with other privileged information or diversity-promoting methods. The writing and presentation are adequate but the scientific contribution lacks sufficient depth for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 5112,
-        "completion_tokens": 172,
-        "total_tokens": 5284
-      },
-      "time": "2026-02-08T22:49:05.179093+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 7271
       },
       "time": "2026-02-09T20:52:16.802703+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper proposes using segmentation masks as privileged information to partition CNN filters into foreground/background groups with orthogonality constraints. While the idea is reasonable, the contribution is incremental: it combines existing LUPI paradigm with a straightforward architectural modification (dual-group filters + suppression losses). The experimental validation is limited—only 10% of ImageNet is manually annotated, comparisons are weak (mainly vs. vanilla ResNet and SVM+), and the gains are modest (~1% on ImageNet-0.1m, ~1.2% on full ImageNet-1k). The paper lacks deeper analysis of why orthogonal grouping helps, provides no theoretical justification, and the method's applicability is narrow (requires segmentation masks at training time). The writing and presentation are also below conference standards."
+      },
+      "token": {
+        "prompt_tokens": 7846,
+        "completion_tokens": 212,
+        "total_tokens": 8058
+      },
+      "time": "2026-02-11T19:31:58.376674+00:00"
     }
   ],
   "test": false

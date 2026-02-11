@@ -157,20 +157,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Introduces RLE, a valuable benchmark environment extending RL research beyond Atari to SNES/Genesis with significantly greater complexity. Strong engineering contribution, comprehensive experimental evaluation, and practical impact for the community, though limited algorithmic novelty."
-      },
-      "token": {
-        "prompt_tokens": 5578,
-        "completion_tokens": 86,
-        "total_tokens": 5664
-      },
-      "time": "2026-02-08T22:41:33.722426+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -183,6 +169,20 @@
         "total_tokens": 7642
       },
       "time": "2026-02-09T20:44:47.712299+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Introduces RLE, a valuable open-source benchmark environment extending RL research beyond Atari to SNES/Genesis games with significantly higher complexity; demonstrates clear technical contribution (LibRetro integration, unified interface), identifies concrete challenges (delayed rewards, large action spaces, 3D vision), and provides empirical validation with multiple algorithms and case studies including reward shaping and multi-agent experiments, though the algorithmic contributions are limited and some experimental analyses could be deeper."
+      },
+      "token": {
+        "prompt_tokens": 8312,
+        "completion_tokens": 133,
+        "total_tokens": 8445
+      },
+      "time": "2026-02-11T19:18:23.569270+00:00"
     }
   ],
   "test": true

@@ -67,20 +67,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel theoretical contribution analyzing chaos in RNNs with rigorous dynamical systems analysis; proposes simpler alternative (CFN) with provable non-chaotic dynamics; competitive empirical results on standard benchmarks."
-      },
-      "token": {
-        "prompt_tokens": 5664,
-        "completion_tokens": 81,
-        "total_tokens": 5745
-      },
-      "time": "2026-02-08T22:11:06.847270+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -93,6 +79,20 @@
         "total_tokens": 7742
       },
       "time": "2026-02-09T20:15:01.042418+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel theoretical contribution analyzing chaotic dynamics in LSTMs/GRUs vs. predictable dynamics in proposed CFN, with rigorous mathematical analysis (Lemmas 1-2) and empirical validation showing competitive performance on Penn Treebank/Text8 despite architectural simplicity. Strong mechanistic insight into RNN behavior, though empirical gains are modest and limited to language modeling."
+      },
+      "token": {
+        "prompt_tokens": 8398,
+        "completion_tokens": 118,
+        "total_tokens": 8516
+      },
+      "time": "2026-02-11T18:35:04.689292+00:00"
     }
   ],
   "test": true

@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: straightforward application of Skip-Thought (Kiros et al., 2015) to graphs via random walks. Weak experimental validation: only 4 small molecular datasets, narrow task (binary classification), missing comparisons with contemporary graph neural network methods (GCN, GraphSAGE). Aggregation strategies (average, max, clustering) are standard. No theoretical insight or significant methodological contribution beyond domain transfer."
-      },
-      "token": {
-        "prompt_tokens": 4489,
-        "completion_tokens": 130,
-        "total_tokens": 4619
-      },
-      "time": "2026-02-08T22:41:06.106020+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 6713
       },
       "time": "2026-02-09T20:43:27.538256+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper applies skip-thought (an existing NLP encoder-decoder model) to graphs via random walks with minimal novelty. The method is a straightforward adaptation lacking significant technical innovation, theoretical insight, or compelling empirical validation. Evaluation is limited to small molecular graphs (avg 30 nodes) with modest improvements over baselines, no statistical significance testing, and no analysis of why the approach works. The aggregation strategies (average, max, clustering) are standard pooling techniques. Missing comparisons to graph neural networks and other contemporary graph embedding methods. Overall contribution is incremental and insufficient for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7223,
+        "completion_tokens": 164,
+        "total_tokens": 7387
+      },
+      "time": "2026-02-11T19:17:08.195585+00:00"
     }
   ],
   "test": false

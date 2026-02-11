@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel learning-based approach to code super-optimization using REINFORCE gradient estimation on proposal distributions. Strong methodological contribution combining stochastic search with learned parameterized proposals. Solid experimental validation on two datasets with clear improvements over baselines. Well-executed work with practical impact."
-      },
-      "token": {
-        "prompt_tokens": 4809,
-        "completion_tokens": 94,
-        "total_tokens": 4903
-      },
-      "time": "2026-02-08T22:12:46.015528+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 7001
       },
       "time": "2026-02-09T20:16:36.460261+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled learning-based approach to code super-optimization by learning proposal distributions via REINFORCE gradient estimation, demonstrates clear improvements over STOKE baseline on both Hackers Delight and synthetic benchmarks, and provides solid empirical validation with ablations (bias vs. MLP models). However, evaluation is limited to relatively small/synthetic programs and the core technical contribution (applying REINFORCE to learn MCMC proposal distributions) is somewhat incremental, placing it at the borderline for top-tier acceptance."
+      },
+      "token": {
+        "prompt_tokens": 7543,
+        "completion_tokens": 146,
+        "total_tokens": 7689
+      },
+      "time": "2026-02-11T18:37:13.016073+00:00"
     }
   ],
   "test": false

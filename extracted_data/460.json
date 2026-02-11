@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel off-policy actor-critic with principled integration of Retrace, importance weight truncation with bias correction, stochastic dueling networks, and efficient trust region optimization. Strong empirical results on Atari and continuous control with thorough ablations and theoretical analysis."
-      },
-      "token": {
-        "prompt_tokens": 12899,
-        "completion_tokens": 93,
-        "total_tokens": 12992
-      },
-      "time": "2026-02-08T22:19:09.255034+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 14039
       },
       "time": "2026-02-09T20:21:35.265662+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Presents a principled and well-executed off-policy actor-critic method combining several innovations (truncated importance sampling with bias correction, stochastic dueling networks, efficient trust region optimization) with strong empirical results on both Atari and continuous control, thorough ablations, and theoretical analysis connecting the approach to Retrace."
+      },
+      "token": {
+        "prompt_tokens": 15633,
+        "completion_tokens": 106,
+        "total_tokens": 15739
+      },
+      "time": "2026-02-11T18:45:08.274825+00:00"
     }
   ],
   "test": true

@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in methodology (standard Riemannian optimization applied to known SGNS problem), narrow experimental scope (only word similarity tasks on single corpus), marginal improvements over baselines, and lack of broader impact demonstration."
-      },
-      "token": {
-        "prompt_tokens": 5604,
-        "completion_tokens": 83,
-        "total_tokens": 5687
-      },
-      "time": "2026-02-08T22:43:05.395402+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -168,6 +154,20 @@
         "total_tokens": 7542
       },
       "time": "2026-02-09T20:45:31.432161+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper presents a theoretically motivated reformulation of SGNS as low-rank matrix optimization and applies Riemannian optimization, the empirical gains are marginal and inconsistent (worse on MEN dataset), the evaluation is limited to word similarity tasks only, and the practical advantage over simpler baselines (SVD-SPPMI) is not convincingly demonstrated. The contribution feels incremental—applying an existing optimization framework to an existing problem without substantial new insights or compelling empirical evidence."
+      },
+      "token": {
+        "prompt_tokens": 8338,
+        "completion_tokens": 141,
+        "total_tokens": 8479
+      },
+      "time": "2026-02-11T19:19:19.443111+00:00"
     }
   ],
   "test": true

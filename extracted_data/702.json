@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited architectural novelty (standard RNN-based sequence models with interpretable scoring), incremental contribution over Cheng & Lapata (2016), noisy pseudo ground-truth generation via greedy ROUGE matching, and mixed experimental results (matches rather than exceeds SOTA on Daily Mail, underperforms on DUC 2002)."
-      },
-      "token": {
-        "prompt_tokens": 5011,
-        "completion_tokens": 110,
-        "total_tokens": 5121
-      },
-      "time": "2026-02-08T22:43:12.873204+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 7100
       },
       "time": "2026-02-09T20:45:54.642699+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes two contrasting RNN architectures (Classifier vs. Selector) for extractive summarization with explicit interpretable scoring functions decomposing salience, redundancy, content, and position. Achieves competitive results on Daily Mail and DUC 2002, includes ablations and visualization analysis. However, the core contribution is primarily architectural comparison rather than novel methodology—the scoring function is relatively straightforward, and performance gains over Cheng & Lapata (2016) are marginal/inconsistent. The use of greedy pseudo-labels from abstractive summaries and greedy inference (vs. beam search/Viterbi) limits the work's impact. Interpretability is a plus, but the empirical novelty and technical depth are moderate for a top venue."
+      },
+      "token": {
+        "prompt_tokens": 7745,
+        "completion_tokens": 203,
+        "total_tokens": 7948
+      },
+      "time": "2026-02-11T19:20:14.546791+00:00"
     }
   ],
   "test": false

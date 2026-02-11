@@ -82,20 +82,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel approach casting rule mining as sparse reconstruction in embedding space with theoretical grounding and consistent empirical improvements over baselines, though limited experimental scope and modest gains."
-      },
-      "token": {
-        "prompt_tokens": 4615,
-        "completion_tokens": 68,
-        "total_tokens": 4683
-      },
-      "time": "2026-02-08T22:37:13.159726+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -108,6 +94,20 @@
         "total_tokens": 6795
       },
       "time": "2026-02-09T20:39:33.483866+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel approach to rule mining in knowledge bases by casting logical theory learning as a sparse reconstruction problem in embedding space, leveraging compressed sensing techniques (OMP) to enforce rule diversity through orthogonality; demonstrates consistent empirical improvements over kNN baselines on four standard KBs with clear ablations showing the benefit of orthogonality constraints and negation handling, though evaluation scope is limited to small synthetic/benchmark datasets and lacks comparison to modern ILP or embedding-based methods."
+      },
+      "token": {
+        "prompt_tokens": 7349,
+        "completion_tokens": 139,
+        "total_tokens": 7488
+      },
+      "time": "2026-02-11T19:11:19.497992+00:00"
     }
   ],
   "test": false

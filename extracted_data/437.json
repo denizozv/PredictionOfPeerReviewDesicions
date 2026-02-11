@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Systems/engineering contribution without algorithmic novelty. GA3C is a CPU/GPU implementation optimization of existing A3C with queue-based scheduling. While the policy lag analysis (Section 4.4) is useful, the core contribution is engineering-focused (batching, queue management, dynamic scheduling) rather than advancing RL methodology. Limited experimental scope (Atari only), modest speedups (4-32x depending on system), and comparison only against CPU A3C baseline. Lacks theoretical insights or algorithmic innovations expected at top venues."
-      },
-      "token": {
-        "prompt_tokens": 6752,
-        "completion_tokens": 150,
-        "total_tokens": 6902
-      },
-      "time": "2026-02-08T22:16:05.150722+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 8758
       },
       "time": "2026-02-09T20:19:05.779978+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Engineering contribution without sufficient algorithmic novelty. The paper presents a systems-level optimization (CPU/GPU hybrid implementation) of existing A3C algorithm with queue-based scheduling and dynamic parameter tuning. While the engineering is competent and the policy-lag analysis is useful, the core contribution is primarily implementation/infrastructure rather than new methodology, theory, or fundamental insights. The empirical results show speedups but lack rigorous comparison to A3C (different learning rates, incomplete baselines) and the dynamic adjustment heuristic is ad-hoc. Insufficient novelty and scientific depth for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9486,
+        "completion_tokens": 162,
+        "total_tokens": 9648
+      },
+      "time": "2026-02-11T18:41:09.894059+00:00"
     }
   ],
   "test": false

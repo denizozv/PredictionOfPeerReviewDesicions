@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Empirical comparison study with limited novelty. RAD is from prior work (Li et al. 2016); IAEC is a minor modification (adding cross-entropy regularizer); experiments on only MNIST/CIFAR-10 with binary classification; no significant methodological innovation or theoretical insights; lacks depth in analysis of why methods work."
-      },
-      "token": {
-        "prompt_tokens": 6360,
-        "completion_tokens": 110,
-        "total_tokens": 6470
-      },
-      "time": "2026-02-08T22:34:16.990512+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 8231
       },
       "time": "2026-02-09T20:36:40.241009+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Empirical comparison of existing defense methods (RAD, Distillation, AEC, IAEC) on MNIST/CIFAR-10 with limited novelty. IAEC is a minor modification (adding cross-entropy regularization to AEC). No new theoretical insights, attack methods, or defense principles. Evaluation is narrow (binary classification, simple datasets, LeNet-5), lacks comparison to concurrent work, and findings (RAD generalizes across attacks) are incremental. Insufficient originality and depth for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9094,
+        "completion_tokens": 153,
+        "total_tokens": 9247
+      },
+      "time": "2026-02-11T19:07:18.367800+00:00"
     }
   ],
   "test": false

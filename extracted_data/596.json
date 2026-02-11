@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel architecture combining shared memory with dynamic multi-step inference for KBC; strong empirical results (5.7% improvement on FB15k); thoughtful synthetic task analysis; some concerns about clarity and limited theoretical justification for design choices."
-      },
-      "token": {
-        "prompt_tokens": 5060,
-        "completion_tokens": 85,
-        "total_tokens": 5145
-      },
-      "time": "2026-02-08T22:32:26.212078+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 7276
       },
       "time": "2026-02-09T20:35:01.228847+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes IRNs with shared learnable memory and stochastic search controller for knowledge base completion, achieving significant empirical improvements on FB15k (+5.7% hits@10) over prior work; includes ablation studies on memory size/inference steps and analysis on relation types; synthetic shortest-path task provides additional validation of multi-step inference capability, though presentation clarity and theoretical justification could be stronger."
+      },
+      "token": {
+        "prompt_tokens": 7794,
+        "completion_tokens": 122,
+        "total_tokens": 7916
+      },
+      "time": "2026-02-11T19:05:09.971609+00:00"
     }
   ],
   "test": false

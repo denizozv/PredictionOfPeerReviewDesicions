@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Rigorous theoretical analysis of GAN training dynamics with novel insights into instability sources (manifold support, vanishing gradients, mode collapse). Strong mathematical contributions (Theorems 2.1-2.6, 3.1-3.3) with principled solutions via noise injection and Wasserstein distance bounds. Addresses fundamental problems in deep learning with clear experimental validation."
-      },
-      "token": {
-        "prompt_tokens": 11239,
-        "completion_tokens": 118,
-        "total_tokens": 11357
-      },
-      "time": "2026-02-08T22:02:41.754148+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -113,6 +99,20 @@
         "total_tokens": 12478
       },
       "time": "2026-02-09T20:07:01.586492+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Landmark theoretical contribution providing rigorous analysis of GAN training instability. Establishes that when data and generator distributions lie on low-dimensional manifolds (as proven in Lemma 1), perfect discriminators exist with zero gradients almost everywhere, explaining vanishing gradients (Theorem 2.4) and instability with alternative losses (Theorem 2.6). Proposes principled solution via noise injection with theoretical guarantees (Theorem 3.3 relating Wasserstein distance to noisy JSD). Strong mathematical rigor with careful proofs, insightful characterization of mode collapse via inverted KL (Theorem 2.5), and practical implications validated experimentally. Despite limited experimental scope, the theoretical insights fundamentally advance understanding of GAN dynamics and provide actionable guidance for training."
+      },
+      "token": {
+        "prompt_tokens": 13971,
+        "completion_tokens": 209,
+        "total_tokens": 14180
+      },
+      "time": "2026-02-11T18:20:04.195845+00:00"
     }
   ],
   "test": false

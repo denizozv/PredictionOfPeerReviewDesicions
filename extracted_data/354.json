@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel, practical method with strong empirical results across multiple architectures and datasets. Cyclic learning rate scheduling for ensemble diversity is creative and well-validated. Clear scientific contribution with thorough experimental analysis and reproducibility."
-      },
-      "token": {
-        "prompt_tokens": 5607,
-        "completion_tokens": 80,
-        "total_tokens": 5687
-      },
-      "time": "2026-02-08T22:07:08.053151+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -113,6 +99,20 @@
         "total_tokens": 7523
       },
       "time": "2026-02-09T20:11:00.639542+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes a simple yet effective method to obtain ensemble benefits at no additional training cost by leveraging cyclic learning rate schedules to capture multiple local minima; demonstrates strong empirical results across multiple architectures (ResNet, Wide ResNet, DenseNet) and datasets (CIFAR-10/100, SVHN, Tiny ImageNet, ImageNet) with thorough ablations (NoCycle, SingleCycle variants, ensemble size, restart LR, cycle count, budget sensitivity); includes insightful diversity analysis via parameter interpolation and activation correlation showing cyclic snapshots explore different minima; achieves state-of-the-art results (3.4% CIFAR-10, 17.4% CIFAR-100) with practical value and reproducible code."
+      },
+      "token": {
+        "prompt_tokens": 8341,
+        "completion_tokens": 204,
+        "total_tokens": 8545
+      },
+      "time": "2026-02-11T18:28:47.938845+00:00"
     }
   ],
   "test": false

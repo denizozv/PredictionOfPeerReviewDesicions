@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel methodological contribution combining stick-breaking processes with VAEs via differentiable reparameterization; strong experimental validation on multiple datasets with clear improvements in discriminative quality and adaptive dimensionality; addresses practical challenges (decoder pruning) with principled solution."
-      },
-      "token": {
-        "prompt_tokens": 6577,
-        "completion_tokens": 90,
-        "total_tokens": 6667
-      },
-      "time": "2026-02-08T22:20:12.403681+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -158,6 +144,20 @@
         "total_tokens": 8318
       },
       "time": "2026-02-09T20:22:38.541527+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled extension of VAEs using stick-breaking priors with stochastic latent dimensionality, develops practical DNCP parametrizations (especially Kumaraswamy), and demonstrates competitive or superior discriminative performance on standard benchmarks with thorough ablations and insightful analysis (e.g., decoder pruning, class-specific dimensionality). The contribution is solid but incremental—combining existing techniques rather than introducing fundamentally new theory—and empirical gains are modest on density estimation, limiting impact."
+      },
+      "token": {
+        "prompt_tokens": 9311,
+        "completion_tokens": 149,
+        "total_tokens": 9460
+      },
+      "time": "2026-02-11T18:47:12.107903+00:00"
     }
   ],
   "test": false

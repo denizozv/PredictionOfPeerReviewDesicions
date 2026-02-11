@@ -147,20 +147,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Systems/architecture paper with limited ML novelty. Focuses on SSD simulator design and SGD implementation rather than advancing machine learning methodology. Experiments limited to logistic regression on MNIST; no deep learning validation despite claims of broader applicability. Contribution is primarily engineering-focused (ISP-ML platform) rather than algorithmic or scientific."
-      },
-      "token": {
-        "prompt_tokens": 6903,
-        "completion_tokens": 107,
-        "total_tokens": 7010
-      },
-      "time": "2026-02-08T22:28:17.492103+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -173,6 +159,20 @@
         "total_tokens": 8789
       },
       "time": "2026-02-09T20:30:29.414035+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Systems/architecture paper with limited ML novelty. Proposes ISP-ML simulator for running SGD on SSDs, but evaluation is restricted to logistic regression on MNIST with synthetic augmentation. No new ML algorithms, theoretical insights, or compelling empirical results demonstrating clear advantages over baselines. The comparison methodology is reasonable but the actual performance gains are modest and only demonstrated on toy problems. Missing evaluation on realistic deep learning workloads despite claiming ML acceleration as motivation."
+      },
+      "token": {
+        "prompt_tokens": 9637,
+        "completion_tokens": 134,
+        "total_tokens": 9771
+      },
+      "time": "2026-02-11T18:59:07.978567+00:00"
     }
   ],
   "test": false

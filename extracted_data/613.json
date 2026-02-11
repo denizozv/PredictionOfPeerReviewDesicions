@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel causal regularization framework grounded in ICM assumption with solid empirical validation on real healthcare data and expert evaluation, though limited theoretical analysis and narrow application scope."
-      },
-      "token": {
-        "prompt_tokens": 14851,
-        "completion_tokens": 70,
-        "total_tokens": 14921
-      },
-      "time": "2026-02-08T22:34:23.096347+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 16214
       },
       "time": "2026-02-09T20:37:03.760714+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper addresses an important problem (identifying causal relationships in neural networks for healthcare), the core contribution—a causal regularizer based on ICM—is incremental and relies heavily on prior work (Lopez-Paz et al., Chalupka et al.). The evaluation is limited to two medical datasets with causality validation by a single expert (subjective ground truth), lacks rigorous comparison to alternative causal inference methods, and the empirical gains are modest. The theoretical justification for why the proposed regularizer should work is weak, and the paper does not convincingly demonstrate that ICM assumptions hold in the medical domain."
+      },
+      "token": {
+        "prompt_tokens": 17585,
+        "completion_tokens": 166,
+        "total_tokens": 17751
+      },
+      "time": "2026-02-11T19:07:28.675731+00:00"
     }
   ],
   "test": false

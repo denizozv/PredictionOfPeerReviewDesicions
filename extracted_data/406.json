@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel robust policy learning via ensemble and CVaR optimization with principled Bayesian adaptation. Strong methodological contribution combining adversarial training, model ensembles, and domain adaptation. Comprehensive experiments addressing sim-to-real gap with clear scientific value."
-      },
-      "token": {
-        "prompt_tokens": 5040,
-        "completion_tokens": 89,
-        "total_tokens": 5129
-      },
-      "time": "2026-02-08T22:12:32.159550+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 7139
       },
       "time": "2026-02-09T20:16:00.145258+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Proposes EPOpt, a principled approach combining ensemble-based robust policy search with CVaR optimization and Bayesian model adaptation. Demonstrates clear improvements over standard TRPO on sim-to-real transfer with systematic ablations (ensemble vs. single model, CVaR vs. mean, robustness to unmodeled effects, model adaptation). Well-motivated problem, solid theoretical grounding, and convincing empirical validation on MuJoCo benchmarks, though evaluation is limited to relatively simple continuous control tasks."
+      },
+      "token": {
+        "prompt_tokens": 7774,
+        "completion_tokens": 148,
+        "total_tokens": 7922
+      },
+      "time": "2026-02-11T18:36:13.679955+00:00"
     }
   ],
   "test": false

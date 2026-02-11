@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in distributed training techniques. Layer-wise gradient descent is incremental over prior work (Chen et al. 2016). Asynchronous approach with fixed delays is a straightforward engineering solution without theoretical depth. Experimental evaluation lacks convergence analysis, hyperparameter sensitivity, and comparison with contemporary distributed training methods. Results show modest 1.7x speedup with no clear advantage of proposed methods over baselines."
-      },
-      "token": {
-        "prompt_tokens": 4936,
-        "completion_tokens": 124,
-        "total_tokens": 5060
-      },
-      "time": "2026-02-08T22:35:07.463418+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -158,6 +144,20 @@
         "total_tokens": 7045
       },
       "time": "2026-02-09T20:37:27.535425+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents incremental engineering contributions (layer-wise gradient descent, delayed gradient updates) for distributed training, but lacks sufficient novelty and rigor for a top-tier venue. The layer-wise approach is not new (acknowledged from Chen et al. 2016), delayed gradients are a straightforward parameter-server variant, experimental evaluation is limited (only AlexNet/GoogLeNet, modest 1.7x speedup, no convergence analysis beyond final accuracy), and there is no theoretical insight or principled justification for design choices. The writing quality is also below conference standards with incomplete sections and presentation issues."
+      },
+      "token": {
+        "prompt_tokens": 7670,
+        "completion_tokens": 166,
+        "total_tokens": 7836
+      },
+      "time": "2026-02-11T19:08:09.850048+00:00"
     }
   ],
   "test": false

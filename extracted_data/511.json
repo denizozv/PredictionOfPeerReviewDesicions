@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel recursive regression approach to HJI PDE with practical advantages over gridding; solid experimental validation on control/robotics problems; clear contribution to PDE approximation via neural networks, though limited to low-dimensional systems and incremental methodological novelty."
-      },
-      "token": {
-        "prompt_tokens": 6252,
-        "completion_tokens": 89,
-        "total_tokens": 6341
-      },
-      "time": "2026-02-08T22:24:13.641131+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 8321
       },
       "time": "2026-02-09T20:26:04.137075+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents a bootstrapping method for approximating HJI PDE solutions using neural networks, but the contribution is incremental and insufficiently validated. The core idea—using a neural network's own predictions to generate training data via recursive regression—lacks theoretical justification for convergence or correctness. Experiments are limited to 2D systems (with one 3D example) where gridding methods already work well; no comparison on high-dimensional problems where the claimed advantage should manifest. The method is slower than existing tools (LevelSet Toolbox) on tested problems, hyperparameter tuning is required, and there is no analysis of when/why the bootstrapping approach succeeds or fails. The presentation is dense and the empirical validation is weak—only error metrics on toy problems without ablations, sensitivity analysis, or demonstration of practical utility beyond proof-of-concept."
+      },
+      "token": {
+        "prompt_tokens": 8986,
+        "completion_tokens": 218,
+        "total_tokens": 9204
+      },
+      "time": "2026-02-11T18:53:05.363847+00:00"
     }
   ],
   "test": false

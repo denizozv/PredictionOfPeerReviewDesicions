@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in architecture design. Combines existing techniques (AlexNet, Word2Vec, Text-CNN, Prod2Vec) with standard residual connections. The pairwise residual unit is a straightforward adaptation of ResNets. Experimental evaluation is narrow (single dataset, limited baselines), lacks comparison with contemporary deep learning recommendation methods, and the improvements are incremental. Suitable for applications/industry venues but below the bar for top-tier ML conferences."
-      },
-      "token": {
-        "prompt_tokens": 4622,
-        "completion_tokens": 135,
-        "total_tokens": 4757
-      },
-      "time": "2026-02-08T22:31:08.508296+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 6763
       },
       "time": "2026-02-09T20:33:27.952013+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents a competent engineering contribution combining existing techniques (AlexNet, Word2Vec, Text-CNN, Prod2Vec) with a modest architectural novelty (Pairwise Residual Unit), but lacks sufficient methodological depth and rigor for a top-tier venue. The core idea of multi-modal fusion for recommendation is not new; the residual unit adaptation is incremental; evaluation is limited to one dataset (Amazon Books/Movies subset) with weak baselines (no comparison to modern deep recommendation methods or state-of-the-art content-based systems); and the writing/presentation is unclear in places. While results show improvements, the contribution is primarily a well-executed systems/engineering effort rather than a significant research advance."
+      },
+      "token": {
+        "prompt_tokens": 7356,
+        "completion_tokens": 192,
+        "total_tokens": 7548
+      },
+      "time": "2026-02-11T19:03:07.615478+00:00"
     }
   ],
   "test": false

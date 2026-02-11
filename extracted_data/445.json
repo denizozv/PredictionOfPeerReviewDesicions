@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel online learning framework for dialogue agents with human feedback; solid experimental validation combining simulation and real Mechanical Turk studies; practical contribution to interactive learning, though incremental algorithmic novelty."
-      },
-      "token": {
-        "prompt_tokens": 6569,
-        "completion_tokens": 75,
-        "total_tokens": 6644
-      },
-      "time": "2026-02-08T22:17:07.162638+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -153,6 +139,20 @@
         "total_tokens": 8653
       },
       "time": "2026-02-09T20:20:02.601618+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical work on online dialogue learning with human feedback. Introduces practical RL algorithms (RBI, REINFORCE, FP) for interactive QA, validates on simulator and real Mechanical Turk data, and demonstrates that models can improve iteratively from teacher feedback. Contributions are incremental but well-executed with thorough experiments, though limited novelty in methods and scope to QA tasks."
+      },
+      "token": {
+        "prompt_tokens": 9303,
+        "completion_tokens": 122,
+        "total_tokens": 9425
+      },
+      "time": "2026-02-11T18:42:19.455879+00:00"
     }
   ],
   "test": false

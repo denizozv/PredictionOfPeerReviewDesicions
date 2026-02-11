@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Interesting conceptual contribution on out-of-distribution novelty, but limited technical novelty, narrow experimental scope (MNIST/letters only), and weak methodological rigor. The paper is more of a position paper with preliminary experiments than a mature contribution with strong empirical validation or algorithmic innovation."
-      },
-      "token": {
-        "prompt_tokens": 6661,
-        "completion_tokens": 98,
-        "total_tokens": 6759
-      },
-      "time": "2026-02-08T22:31:10.624603+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 8603
       },
       "time": "2026-02-09T20:33:35.022884+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper proposes a conceptual framework and evaluation metrics for out-of-distribution novelty generation, but the contribution is primarily definitional and experimental rather than methodological. The core idea (hold-out classes as a proxy for novelty) is intuitive but not deeply novel. The experimental validation is limited to MNIST/letters with ~1000 models trained on standard objectives (not optimized for the proposed metrics), and the human evaluation is small-scale and informal. The paper lacks a strong generative model innovation, theoretical insight, or compelling empirical results that would justify acceptance at a top venue. The writing is verbose and the practical impact is unclear."
+      },
+      "token": {
+        "prompt_tokens": 9395,
+        "completion_tokens": 172,
+        "total_tokens": 9567
+      },
+      "time": "2026-02-11T19:03:11.091317+00:00"
     }
   ],
   "test": false

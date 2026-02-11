@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical contribution (closed-form solution for non-linear dimensionality regularization via trace norm in KPCA framework with L1/2 norm generalization), solid mathematical foundation (Theorem 1), and demonstrated improvements on two distinct inverse problems (matrix completion, NRSfM). However, limited by narrow experimental scope, modest baselines, and lack of comparison with recent deep learning approaches to these problems."
-      },
-      "token": {
-        "prompt_tokens": 7483,
-        "completion_tokens": 124,
-        "total_tokens": 7607
-      },
-      "time": "2026-02-08T22:46:06.127618+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 9306
       },
       "time": "2026-02-09T20:49:02.834654+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents a technically sound reformulation of KPCA with trace-norm regularization and a closed-form solution (Theorem 1), but the contribution is primarily incremental: it extends existing rank-minimization ideas to the kernel setting without fundamental novelty. Experimental validation is limited (oil flow dataset is small/standard; NRSfM results lack comparison to recent non-linear baselines like Gotardo & Martinez 2011, acknowledged by authors as hard to replicate). The method requires careful kernel selection and hyperparameter tuning with limited guidance, and improvements over linear baselines, while consistent, are modest (~25-40% on NRSfM). The work is technically competent but lacks the originality, breadth of validation, or significant empirical gains expected for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 10217,
+        "completion_tokens": 210,
+        "total_tokens": 10427
+      },
+      "time": "2026-02-11T19:24:12.197171+00:00"
     }
   ],
   "test": false

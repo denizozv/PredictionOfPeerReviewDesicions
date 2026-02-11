@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel hierarchical architecture for raw audio generation with strong empirical validation. Methodologically sound combination of sample-level and frame-level modules operating at different temporal resolutions. Comprehensive experiments across diverse datasets with human evaluation demonstrating clear improvements over baselines including WaveNet re-implementation."
-      },
-      "token": {
-        "prompt_tokens": 5549,
-        "completion_tokens": 95,
-        "total_tokens": 5644
-      },
-      "time": "2026-02-08T22:10:07.042703+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 7607
       },
       "time": "2026-02-09T20:13:55.538119+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a well-motivated hierarchical architecture (SampleRNN) that combines memory-less MLPs and stateful RNNs at multiple temporal resolutions to model raw audio waveforms. Demonstrates clear improvements over RNN baselines with thorough ablations (frame sizes, quantization, sample-level autoregression, TBPTT length), human preference evaluation, and memory-retention analysis across three diverse datasets. While the core idea of multi-scale hierarchical modeling is somewhat incremental and WaveNet comparison is limited by reimplementation constraints, the systematic empirical validation and practical effectiveness warrant acceptance at a top venue."
+      },
+      "token": {
+        "prompt_tokens": 8283,
+        "completion_tokens": 170,
+        "total_tokens": 8453
+      },
+      "time": "2026-02-11T18:33:09.350633+00:00"
     }
   ],
   "test": false

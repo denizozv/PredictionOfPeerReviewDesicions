@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid empirical investigation of orthogonality constraints in RNNs with novel insights on margin-based spectral control, though incremental methodologically and limited by narrow experimental scope (mostly synthetic tasks)."
-      },
-      "token": {
-        "prompt_tokens": 7083,
-        "completion_tokens": 80,
-        "total_tokens": 7163
-      },
-      "time": "2026-02-08T22:29:12.628439+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 9118
       },
       "time": "2026-02-09T20:31:15.130227+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical study on orthogonality constraints in RNNs with useful insights: shows that hard orthogonality can hurt convergence speed despite stabilizing gradients, proposes a principled SVD-based factorization with controlled spectral margins, and provides thorough experiments on synthetic and real tasks revealing task-dependent trade-offs between orthogonality and optimization efficiency. Main weaknesses are incremental novelty (SVD parameterization + Cayley transform are known techniques) and limited theoretical justification for why loosening orthogonality helps, but the empirical analysis is careful and the practical findings are valuable."
+      },
+      "token": {
+        "prompt_tokens": 9817,
+        "completion_tokens": 170,
+        "total_tokens": 9987
+      },
+      "time": "2026-02-11T19:00:06.523750+00:00"
     }
   ],
   "test": false

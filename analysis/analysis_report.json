@@ -37,127 +37,127 @@
         "total_classified": 387,
         "skipped_invalid": 0,
         "tokens": {
-          "total_prompt_tokens": 2450943,
-          "total_completion_tokens": 36844,
-          "total_tokens": 2487787,
-          "avg_prompt_tokens": 6333.186,
-          "avg_completion_tokens": 95.2041,
-          "avg_total_tokens": 6428.3902,
-          "min_total_tokens": 607,
-          "max_total_tokens": 17552
+          "total_prompt_tokens": 3508944,
+          "total_completion_tokens": 61663,
+          "total_tokens": 3570607,
+          "avg_prompt_tokens": 9067.0388,
+          "avg_completion_tokens": 159.3359,
+          "avg_total_tokens": 9226.3747,
+          "min_total_tokens": 3371,
+          "max_total_tokens": 20354
         },
         "confusion_matrix": {
-          "TP": 144,
-          "TN": 89,
-          "FP": 144,
-          "FN": 10,
+          "TP": 133,
+          "TN": 126,
+          "FP": 107,
+          "FN": 21,
           "note": "Pozitif sinif = Acceptance (accepted=True)"
         },
         "classification_metrics": {
-          "accuracy": 0.6021,
-          "precision": 0.5,
-          "recall": 0.9351,
-          "f1_score": 0.6516,
-          "specificity": 0.382,
-          "mcc": 0.3557
+          "accuracy": 0.6693,
+          "precision": 0.5542,
+          "recall": 0.8636,
+          "f1_score": 0.6751,
+          "specificity": 0.5408,
+          "mcc": 0.4078
         },
         "confidence_stats": {
-          "mean": 0.8125,
+          "mean": 0.7869,
           "min": 0.72,
           "max": 0.98,
-          "std": 0.0805
+          "std": 0.0828
         },
         "prediction_distribution": {
-          "predicted_reject": 99,
-          "predicted_accept": 288,
-          "rejection_rate": 0.2558
+          "predicted_reject": 147,
+          "predicted_accept": 240,
+          "rejection_rate": 0.3798
         },
         "time": {
-          "first_timestamp": "2026-02-08T22:02:32.675142+00:00",
-          "last_timestamp": "2026-02-08T22:51:09.548622+00:00",
-          "total_elapsed_seconds": 2916.87,
-          "total_elapsed_formatted": "48m 37s",
-          "avg_seconds_per_file": 7.56
+          "first_timestamp": "2026-02-11T18:17:14.152494+00:00",
+          "last_timestamp": "2026-02-11T19:33:04.535484+00:00",
+          "total_elapsed_seconds": 4550.38,
+          "total_elapsed_formatted": "1h 15m 50s",
+          "avg_seconds_per_file": 11.79
         }
       },
       "train": {
         "total_classified": 349,
         "skipped_invalid": 0,
         "tokens": {
-          "total_prompt_tokens": 2209845,
-          "total_completion_tokens": 33044,
-          "total_tokens": 2242889,
-          "avg_prompt_tokens": 6331.9341,
-          "avg_completion_tokens": 94.6819,
-          "avg_total_tokens": 6426.616,
-          "min_total_tokens": 607,
-          "max_total_tokens": 17552
+          "total_prompt_tokens": 3163954,
+          "total_completion_tokens": 55640,
+          "total_tokens": 3219594,
+          "avg_prompt_tokens": 9065.7708,
+          "avg_completion_tokens": 159.4269,
+          "avg_total_tokens": 9225.1977,
+          "min_total_tokens": 3371,
+          "max_total_tokens": 20354
         },
         "confusion_matrix": {
-          "TP": 129,
-          "TN": 74,
-          "FP": 136,
-          "FN": 10,
+          "TP": 120,
+          "TN": 110,
+          "FP": 100,
+          "FN": 19,
           "note": "Pozitif sinif = Acceptance (accepted=True)"
         },
         "classification_metrics": {
-          "accuracy": 0.5817,
-          "precision": 0.4868,
-          "recall": 0.9281,
-          "f1_score": 0.6386,
-          "specificity": 0.3524,
-          "mcc": 0.3211
+          "accuracy": 0.659,
+          "precision": 0.5455,
+          "recall": 0.8633,
+          "f1_score": 0.6686,
+          "specificity": 0.5238,
+          "mcc": 0.3926
         },
         "confidence_stats": {
-          "mean": 0.8134,
+          "mean": 0.7864,
           "min": 0.72,
           "max": 0.98,
-          "std": 0.081
+          "std": 0.0828
         },
         "prediction_distribution": {
-          "predicted_reject": 84,
-          "predicted_accept": 265,
-          "rejection_rate": 0.2407
+          "predicted_reject": 129,
+          "predicted_accept": 220,
+          "rejection_rate": 0.3696
         }
       },
       "test": {
         "total_classified": 38,
         "skipped_invalid": 0,
         "tokens": {
-          "total_prompt_tokens": 241098,
-          "total_completion_tokens": 3800,
-          "total_tokens": 244898,
-          "avg_prompt_tokens": 6344.6842,
-          "avg_completion_tokens": 100.0,
-          "avg_total_tokens": 6444.6842,
-          "min_total_tokens": 2813,
-          "max_total_tokens": 13663
+          "total_prompt_tokens": 344990,
+          "total_completion_tokens": 6023,
+          "total_tokens": 351013,
+          "avg_prompt_tokens": 9078.6842,
+          "avg_completion_tokens": 158.5,
+          "avg_total_tokens": 9237.1842,
+          "min_total_tokens": 5589,
+          "max_total_tokens": 16466
         },
         "confusion_matrix": {
-          "TP": 15,
-          "TN": 15,
-          "FP": 8,
-          "FN": 0,
+          "TP": 13,
+          "TN": 16,
+          "FP": 7,
+          "FN": 2,
           "note": "Pozitif sinif = Acceptance (accepted=True)"
         },
         "classification_metrics": {
-          "accuracy": 0.7895,
-          "precision": 0.6522,
-          "recall": 1.0,
-          "f1_score": 0.7895,
-          "specificity": 0.6522,
-          "mcc": 0.6522
+          "accuracy": 0.7632,
+          "precision": 0.65,
+          "recall": 0.8667,
+          "f1_score": 0.7429,
+          "specificity": 0.6957,
+          "mcc": 0.5505
         },
         "confidence_stats": {
-          "mean": 0.8039,
+          "mean": 0.7913,
           "min": 0.72,
           "max": 0.98,
-          "std": 0.0761
+          "std": 0.0841
         },
         "prediction_distribution": {
-          "predicted_reject": 15,
-          "predicted_accept": 23,
-          "rejection_rate": 0.3947
+          "predicted_reject": 18,
+          "predicted_accept": 20,
+          "rejection_rate": 0.4737
         }
       }
     },
@@ -560,48 +560,48 @@
       "model": "claude-haiku-4-5",
       "all": {
         "zeroShot_accuracy": 0.6227,
-        "fewShot_accuracy": 0.6021,
-        "accuracy_diff": -0.0206,
+        "fewShot_accuracy": 0.6693,
+        "accuracy_diff": 0.0466,
         "zeroShot_f1": 0.6573,
-        "fewShot_f1": 0.6516,
-        "f1_diff": -0.0057,
+        "fewShot_f1": 0.6751,
+        "f1_diff": 0.0178,
         "zeroShot_precision": 0.5147,
-        "fewShot_precision": 0.5,
+        "fewShot_precision": 0.5542,
         "zeroShot_recall": 0.9091,
-        "fewShot_recall": 0.9351,
+        "fewShot_recall": 0.8636,
         "zeroShot_total_tokens": 2428110,
-        "fewShot_total_tokens": 2487787,
-        "token_overhead_pct": 2.46
+        "fewShot_total_tokens": 3570607,
+        "token_overhead_pct": 47.05
       },
       "train": {
         "zeroShot_accuracy": 0.616,
-        "fewShot_accuracy": 0.5817,
-        "accuracy_diff": -0.0343,
+        "fewShot_accuracy": 0.659,
+        "accuracy_diff": 0.043,
         "zeroShot_f1": 0.6528,
-        "fewShot_f1": 0.6386,
-        "f1_diff": -0.0142,
+        "fewShot_f1": 0.6686,
+        "f1_diff": 0.0158,
         "zeroShot_precision": 0.5101,
-        "fewShot_precision": 0.4868,
+        "fewShot_precision": 0.5455,
         "zeroShot_recall": 0.9065,
-        "fewShot_recall": 0.9281,
+        "fewShot_recall": 0.8633,
         "zeroShot_total_tokens": 2189412,
-        "fewShot_total_tokens": 2242889,
-        "token_overhead_pct": 2.44
+        "fewShot_total_tokens": 3219594,
+        "token_overhead_pct": 47.05
       },
       "test": {
         "zeroShot_accuracy": 0.6842,
-        "fewShot_accuracy": 0.7895,
-        "accuracy_diff": 0.1053,
+        "fewShot_accuracy": 0.7632,
+        "accuracy_diff": 0.079,
         "zeroShot_f1": 0.7,
-        "fewShot_f1": 0.7895,
-        "f1_diff": 0.0895,
+        "fewShot_f1": 0.7429,
+        "f1_diff": 0.0429,
         "zeroShot_precision": 0.56,
-        "fewShot_precision": 0.6522,
+        "fewShot_precision": 0.65,
         "zeroShot_recall": 0.9333,
-        "fewShot_recall": 1.0,
+        "fewShot_recall": 0.8667,
         "zeroShot_total_tokens": 238698,
-        "fewShot_total_tokens": 244898,
-        "token_overhead_pct": 2.6
+        "fewShot_total_tokens": 351013,
+        "token_overhead_pct": 47.05
       }
     },
     {

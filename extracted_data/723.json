@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty and weak experimental validation. Open-bigrams are a known cognitive concept; the contribution is primarily engineering (LSTM + cosine similarity decoder). Results are merely comparable to baselines, not superior. Narrow application domain (handwritten word recognition), no significant methodological innovation, and experiments lack depth in analysis of why this approach should be preferred."
-      },
-      "token": {
-        "prompt_tokens": 5920,
-        "completion_tokens": 109,
-        "total_tokens": 6029
-      },
-      "time": "2026-02-08T22:45:10.961598+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 8061
       },
       "time": "2026-02-09T20:48:25.328367+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper presents an interesting cognitive-science-motivated approach to handwritten word recognition using open-bigrams, the empirical contribution is incremental and the results are not compelling. The method achieves only comparable (not superior) performance to standard character-sequence baselines on two datasets, lacks strong theoretical justification for why open-bigrams should outperform alternatives, and the experimental validation is limited in scope. The core idea of using bigram representations is intuitive but the execution—training separate RNNs per order, then taking max across orders and timesteps—discards temporal structure in an ad-hoc manner. The paper reads more as an application/ablation study than a fundamental methodological advance, with insufficient novelty and impact for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 8654,
+        "completion_tokens": 197,
+        "total_tokens": 8851
+      },
+      "time": "2026-02-11T19:23:14.930783+00:00"
     }
   ],
   "test": false

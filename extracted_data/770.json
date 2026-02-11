@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel integration of knowledge graphs with RNNLMs via copy mechanism and fact prediction; introduces WikiFacts dataset and Unknown-Penalized Perplexity metric; solid experimental validation with meaningful improvements over baselines."
-      },
-      "token": {
-        "prompt_tokens": 5191,
-        "completion_tokens": 82,
-        "total_tokens": 5273
-      },
-      "time": "2026-02-08T22:49:06.827642+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 7196
       },
       "time": "2026-02-09T20:52:25.682777+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel architecture combining knowledge graphs with RNNs for language modeling, introduces a new evaluation metric (UPP) addressing a real problem with standard perplexity on entity-rich text, and demonstrates clear improvements on a new WikiFacts dataset with thoughtful ablations showing the copy mechanism is key. However, evaluation is limited to a single narrow domain (Film/Actor) and the dataset is relatively small, which somewhat limits the generalizability and impact claims."
+      },
+      "token": {
+        "prompt_tokens": 7925,
+        "completion_tokens": 136,
+        "total_tokens": 8061
+      },
+      "time": "2026-02-11T19:29:04.122644+00:00"
     }
   ],
   "test": false

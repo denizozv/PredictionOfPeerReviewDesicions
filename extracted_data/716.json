@@ -82,20 +82,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Well-motivated efficient architecture with systematic design choices, comprehensive experiments across multiple datasets, strong practical impact for real-time segmentation, and thorough ablation studies justifying each component."
-      },
-      "token": {
-        "prompt_tokens": 4817,
-        "completion_tokens": 73,
-        "total_tokens": 4890
-      },
-      "time": "2026-02-08T22:44:17.832482+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -108,6 +94,20 @@
         "total_tokens": 6907
       },
       "time": "2026-02-09T20:47:40.433117+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Well-executed efficient architecture for real-time semantic segmentation with thorough design justification, strong empirical results across multiple datasets (Cityscapes, CamVid, SUN), and practical impact (18x faster, 75x fewer FLOPs than baselines). Detailed ablations and analysis of design choices (early downsampling, asymmetric convolutions, dilated convolutions, decoder asymmetry) provide valuable insights. Demonstrates state-of-the-art speed-accuracy tradeoffs on embedded systems with clear practical applicability."
+      },
+      "token": {
+        "prompt_tokens": 7551,
+        "completion_tokens": 155,
+        "total_tokens": 7706
+      },
+      "time": "2026-02-11T19:22:17.119419+00:00"
     }
   ],
   "test": false

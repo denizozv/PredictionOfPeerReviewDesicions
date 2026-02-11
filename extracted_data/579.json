@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Standard CNN-LSTM hybrid architecture with simple additive feature fusion. Limited novelty: combines existing components without significant methodological innovation. Narrow task scope (local trend prediction). Weak experimental validation: only 3 datasets, basic baselines, no statistical significance testing, missing ablation studies, no comparison with recent deep learning methods for time series."
-      },
-      "token": {
-        "prompt_tokens": 5493,
-        "completion_tokens": 108,
-        "total_tokens": 5601
-      },
-      "time": "2026-02-08T22:31:03.678292+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -158,6 +144,20 @@
         "total_tokens": 7513
       },
       "time": "2026-02-09T20:33:13.584186+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper proposes a straightforward CNN+LSTM hybrid architecture for trend forecasting with feature fusion, but the contribution is primarily architectural combination rather than methodological innovation. The experimental evaluation is limited to three small datasets with modest improvements (~30% RMSE reduction), lacks comparison to modern time-series baselines (Transformer, attention mechanisms, state-of-the-art deep learning methods), and provides no theoretical insight or analysis of when/why the hybrid approach helps. The trend extraction preprocessing is standard (Keogh et al., 2001), and the overall work reads as an incremental engineering contribution rather than a significant research advance suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 8227,
+        "completion_tokens": 184,
+        "total_tokens": 8411
+      },
+      "time": "2026-02-11T19:02:18.091317+00:00"
     }
   ],
   "test": false

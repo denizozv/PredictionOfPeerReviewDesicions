@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel differentiable physics engine with automatic differentiation for robot control optimization. Strong empirical validation across diverse tasks (ball throwing, robot arm, quadruped, inverted pendulum with vision). Demonstrates clear advantages over derivative-free methods. Well-executed technical contribution with practical robotics relevance."
-      },
-      "token": {
-        "prompt_tokens": 5320,
-        "completion_tokens": 98,
-        "total_tokens": 5418
-      },
-      "time": "2026-02-08T22:27:19.848139+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 7493
       },
       "time": "2026-02-09T20:29:24.791506+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel differentiable physics engine implemented in Theano for gradient-based robot controller optimization, demonstrates clear computational advantages over derivative-free methods (CMA-ES) across multiple tasks (ball throwing, robot arm reaching, quadrupedal locomotion, inverted pendulum with vision), and shows practical feasibility for deep learning in robotics with GPU acceleration and batching; however, limited by narrow experimental scope (mostly toy problems), lack of real-world validation, and incremental nature of applying autodiff to physics simulation."
+      },
+      "token": {
+        "prompt_tokens": 8054,
+        "completion_tokens": 148,
+        "total_tokens": 8202
+      },
+      "time": "2026-02-11T18:57:23.683709+00:00"
     }
   ],
   "test": false

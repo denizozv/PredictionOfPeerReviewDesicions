@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical framework extending boosting to unsupervised generative modeling with formal guarantees (Theorems 1-2), flexible hybrid discriminative-generative approach, and comprehensive empirical validation across multiple tasks and model types."
-      },
-      "token": {
-        "prompt_tokens": 4788,
-        "completion_tokens": 84,
-        "total_tokens": 4872
-      },
-      "time": "2026-02-08T22:30:20.829469+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 6874
       },
       "time": "2026-02-09T20:32:22.830422+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents an interesting extension of boosting to generative models with theoretical grounding (Theorem 1–2), the empirical validation is limited and unconvincing. Experiments are restricted to toy synthetic data, MNIST, and small-scale settings with weak/unclear baselines, no rigorous quantitative metrics for sample quality, and ad-hoc hyperparameter choices (e.g., different epoch counts, manually tuned weights). The computational overhead of MCMC sampling and discriminator training undermines practical appeal. The core contribution—factorizing joint distributions as geometric averages and greedy boosting—is technically sound but incremental, and the paper lacks compelling evidence that BGMs outperform simpler alternatives or scale to realistic problems."
+      },
+      "token": {
+        "prompt_tokens": 7522,
+        "completion_tokens": 194,
+        "total_tokens": 7716
+      },
+      "time": "2026-02-11T19:01:23.663992+00:00"
     }
   ],
   "test": false

@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel distributed optimization framework with solid theoretical analysis, practical MPI implementation, and strong experimental validation on large-scale datasets. Clear contribution to parallel machine learning, though application scope (binary autoencoders) is somewhat narrow."
-      },
-      "token": {
-        "prompt_tokens": 7765,
-        "completion_tokens": 81,
-        "total_tokens": 7846
-      },
-      "time": "2026-02-08T22:46:14.446807+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -103,6 +89,20 @@
         "total_tokens": 9612
       },
       "time": "2026-02-09T20:49:32.907571+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid distributed optimization contribution with practical implementation and strong empirical validation on large-scale problems. ParMAC presents a principled approach to parallelizing nested function optimization via auxiliary coordinates, with theoretical speedup analysis and near-perfect scaling on 128 processors with 100M-point datasets. However, the novelty is somewhat incremental (applying existing MAC framework to distributed setting), and the application scope is limited primarily to binary autoencoders, which reduces broader impact."
+      },
+      "token": {
+        "prompt_tokens": 10499,
+        "completion_tokens": 134,
+        "total_tokens": 10633
+      },
+      "time": "2026-02-11T19:25:06.659214+00:00"
     }
   ],
   "test": false

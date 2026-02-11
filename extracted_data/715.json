@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in pruning strategy (random mask selection is simplistic), incremental contribution over existing work, weak baselines for comparison, and lack of theoretical insight or significant methodological innovation expected at top venues."
-      },
-      "token": {
-        "prompt_tokens": 6168,
-        "completion_tokens": 79,
-        "total_tokens": 6247
-      },
-      "time": "2026-02-08T22:44:16.238197+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 8123
       },
       "time": "2026-02-09T20:47:34.532941+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The core contribution—random mask selection for pruning—is too incremental and lacks novelty. The method is essentially brute-force search over random pruning masks with no principled criterion, outperforming only a weak baseline (weight-sum). Evaluation is limited to small networks on CIFAR-10/SVHN/MNIST with modest compression gains; no comparison to structured pruning, magnitude-based methods, or other contemporary approaches. The writing is poor with unclear motivation, and claims about GPU/VLSI benefits are speculative without actual implementation or speedup measurements."
+      },
+      "token": {
+        "prompt_tokens": 8902,
+        "completion_tokens": 159,
+        "total_tokens": 9061
+      },
+      "time": "2026-02-11T19:22:14.395877+00:00"
     }
   ],
   "test": false

@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel efficient architecture with strong practical impact, systematic design space exploration, comprehensive experiments, and significant compression results (50x vs AlexNet). Clear methodological contribution to model efficiency."
-      },
-      "token": {
-        "prompt_tokens": 7491,
-        "completion_tokens": 72,
-        "total_tokens": 7563
-      },
-      "time": "2026-02-08T22:46:09.672022+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 9316
       },
       "time": "2026-02-09T20:49:16.993022+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes SqueezeNet, a novel CNN architecture achieving AlexNet-level accuracy with 50x fewer parameters through principled design strategies (1x1 filters, squeeze layers, late downsampling) and the Fire module building block. Includes thorough ablation studies on microarchitecture (squeeze ratio, 1x3 filter trade-offs) and macroarchitecture (bypass connections), demonstrates strong empirical results with model compression, and provides practical value for deployment on resource-constrained devices."
+      },
+      "token": {
+        "prompt_tokens": 10225,
+        "completion_tokens": 147,
+        "total_tokens": 10372
+      },
+      "time": "2026-02-11T19:24:17.614457+00:00"
     }
   ],
   "test": false

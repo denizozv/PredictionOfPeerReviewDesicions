@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel variational framework for training undirected graphical models with rigorous theoretical grounding. Addresses fundamental MCMC mixing problem through walkback strategy with temperature annealing. Strong mathematical contribution with practical algorithmic innovation and reasonable experimental validation."
-      },
-      "token": {
-        "prompt_tokens": 7051,
-        "completion_tokens": 86,
-        "total_tokens": 7137
-      },
-      "time": "2026-02-08T22:38:23.128576+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -153,6 +139,20 @@
         "total_tokens": 8949
       },
       "time": "2026-02-09T20:41:10.262158+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled variational framework (Variational Walkback) for training generative models by learning a transition operator that walks away from data then back, with a rigorous variational lower bound on log-likelihood. The approach elegantly unifies ideas from contrastive divergence, denoising autoencoders, and GSNs, eliminates the need for symmetric weights (improving biological plausibility), and demonstrates competitive results on MNIST/CIFAR/CelebA. However, the empirical validation is somewhat limited—samples show blurring artifacts similar to reconstruction-loss autoencoders, comparisons to concurrent methods (e.g., diffusion models) are incomplete, and the practical advantages over simpler baselines are not decisively established, which moderately limits impact."
+      },
+      "token": {
+        "prompt_tokens": 9785,
+        "completion_tokens": 205,
+        "total_tokens": 9990
+      },
+      "time": "2026-02-11T19:13:27.615248+00:00"
     }
   ],
   "test": false

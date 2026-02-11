@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in regularization design (total variation penalty applied globally rather than locally), narrow scope (fully-connected layers only), incremental compression improvements over Deep Compression, and weak experimental validation (only MNIST and TIMIT, no modern benchmarks or architectures)."
-      },
-      "token": {
-        "prompt_tokens": 4892,
-        "completion_tokens": 93,
-        "total_tokens": 4985
-      },
-      "time": "2026-02-08T22:07:20.650139+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 7141
       },
       "time": "2026-02-09T20:11:54.170123+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper proposes a reasonable regularization technique for neural network compression, but the contribution is incremental and the evaluation is limited. The density-diversity penalty is essentially a global total-variation regularizer (acknowledged by authors) combined with sparse initialization and weight tying—none of which are novel individually. Experiments are restricted to small, dated benchmarks (MNIST, TIMIT, LeNet) where compression is less critical; comparisons are primarily against Deep Compression (2015), with no evaluation on modern architectures (ResNets, Transformers) or larger datasets (ImageNet). The sorting trick for efficient gradient computation is a useful engineering contribution but insufficient alone. The alternating optimization between penalty and weight-tying phases lacks theoretical justification and appears ad-hoc. Overall, while technically sound, the work reads as an engineering contribution to a solved problem rather than a significant methodological advance, and the experimental scope is too narrow for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7626,
+        "completion_tokens": 237,
+        "total_tokens": 7863
+      },
+      "time": "2026-02-11T18:30:06.862483+00:00"
     }
   ],
   "test": false

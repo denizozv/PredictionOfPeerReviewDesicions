@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel architecture (Relation Networks) with strong theoretical motivation, comprehensive experimental validation across multiple domains (scene classification, disentanglement, one-shot learning), and clear scientific contribution to object-relation reasoning."
-      },
-      "token": {
-        "prompt_tokens": 6085,
-        "completion_tokens": 78,
-        "total_tokens": 6163
-      },
-      "time": "2026-02-08T22:26:19.906085+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 8198
       },
       "time": "2026-02-09T20:28:10.816454+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Introduces Relation Networks, a novel and general-purpose architecture for object-relation reasoning with strong empirical validation across diverse tasks (scene classification, disentanglement from entangled/pixel inputs, one-shot learning). The key insight—that permutation-invariant aggregation of pairwise object interactions enables both relation discovery and factorization—is original and well-motivated. Comprehensive experiments with proper baselines (MLPs) and ablations (with/without RN in MANN) demonstrate clear architectural benefits. The work is technically sound, clearly presented, and opens a promising research direction with broad applicability."
+      },
+      "token": {
+        "prompt_tokens": 8819,
+        "completion_tokens": 166,
+        "total_tokens": 8985
+      },
+      "time": "2026-02-11T18:56:07.558622+00:00"
     }
   ],
   "test": false

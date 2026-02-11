@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core techniques (rank-one approximation, alternating optimization are standard); narrow experimental scope (only VGG variants and MNIST); modest practical gains (15x on FC layers only, with 1.43% accuracy drop); lacks comparison with contemporary quantization/compression methods; incremental contribution to network compression literature."
-      },
-      "token": {
-        "prompt_tokens": 5603,
-        "completion_tokens": 106,
-        "total_tokens": 5709
-      },
-      "time": "2026-02-08T22:49:23.406635+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 7609
       },
       "time": "2026-02-09T20:53:14.459540+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper presents a reasonable compression technique combining ternary weight decomposition and binary activation encoding, but the contribution is primarily incremental: it combines existing ideas (low-rank factorization, quantization, lookup tables) without sufficient novelty or theoretical insight. Experimental validation is limited to older architectures (VGG-16, LeNet) on CPU without comparison to contemporary compression methods (pruning, knowledge distillation, modern quantization). The activation encoding scheme, while practical, relies on pre-computed prototypes and lookup tables—a pragmatic but not particularly novel engineering choice. Missing comparisons to related work on network compression and lack of evaluation on modern architectures/hardware (GPUs, mobile) significantly weaken the contribution for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 8337,
+        "completion_tokens": 195,
+        "total_tokens": 8532
+      },
+      "time": "2026-02-11T19:30:07.736289+00:00"
     }
   ],
   "test": true

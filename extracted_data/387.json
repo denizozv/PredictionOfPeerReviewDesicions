@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Clear methodological contribution extending Gram matrices with spatial co-occurrence terms; well-motivated approach with solid experimental validation across multiple applications (texture synthesis, inpainting, style transfer, symmetry); addresses a real limitation of prior work."
-      },
-      "token": {
-        "prompt_tokens": 4306,
-        "completion_tokens": 84,
-        "total_tokens": 4390
-      },
-      "time": "2026-02-08T22:09:14.033452+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 6497
       },
       "time": "2026-02-09T20:13:41.818584+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Proposes a simple but effective extension to Gram matrix texture synthesis by incorporating spatially-transformed feature correlations to capture long-range structure and symmetries. Well-motivated by signal processing principles (phase relationships), clearly presented with thorough ablations on offset parameters, and demonstrates convincing improvements on regular textures, inpainting, and symmetry-preserving tasks. The method is practical, reproducible, and addresses a real limitation of prior work, though the contribution is somewhat incremental and evaluation could be more rigorous (limited quantitative metrics, no user studies)."
+      },
+      "token": {
+        "prompt_tokens": 7040,
+        "completion_tokens": 155,
+        "total_tokens": 7195
+      },
+      "time": "2026-02-11T18:32:12.502146+00:00"
     }
   ],
   "test": false

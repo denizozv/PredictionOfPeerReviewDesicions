@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel regularization technique with clear motivation, comprehensive experiments across multiple tasks and architectures, strong theoretical grounding (connections to dropout, stochastic depth), and significant empirical improvements. Well-executed work with thorough ablations and gradient flow analysis."
-      },
-      "token": {
-        "prompt_tokens": 5019,
-        "completion_tokens": 87,
-        "total_tokens": 5106
-      },
-      "time": "2026-02-08T22:10:20.231115+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -163,6 +149,20 @@
         "total_tokens": 6990
       },
       "time": "2026-02-09T20:14:32.758588+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Proposes zoneout, a simple yet effective RNN regularization technique that preserves hidden activations stochastically instead of dropping them, enabling better gradient flow through time. Demonstrates consistent empirical improvements across multiple tasks (Penn Treebank character/word-level, Text8, permuted MNIST), includes thorough comparisons to related methods (recurrent dropout, stochastic depth, weight noise), provides mechanistic insight via gradient flow analysis, and achieves competitive/state-of-the-art results when combined with batch normalization."
+      },
+      "token": {
+        "prompt_tokens": 7753,
+        "completion_tokens": 153,
+        "total_tokens": 7906
+      },
+      "time": "2026-02-11T18:34:02.714742+00:00"
     }
   ],
   "test": false

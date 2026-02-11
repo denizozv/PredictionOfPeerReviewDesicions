@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel learning-based approach to dialogue evaluation with strong empirical validation, addresses real problem in dialogue research, comprehensive experiments including generalization studies and system-level correlations."
-      },
-      "token": {
-        "prompt_tokens": 5142,
-        "completion_tokens": 70,
-        "total_tokens": 5212
-      },
-      "time": "2026-02-08T22:23:12.397726+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 7262
       },
       "time": "2026-02-09T20:25:21.430503+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Addresses a genuine and important problem in dialogue evaluation with a well-motivated neural approach (ADEM) that significantly outperforms word-overlap metrics; demonstrates strong empirical validation including utterance-level and system-level correlations, generalization to unseen models via leave-one-out evaluation, and thorough qualitative analysis; the method is simple, practical, and backed by a new human-annotated dataset, making it a solid contribution to an important evaluation problem."
+      },
+      "token": {
+        "prompt_tokens": 7876,
+        "completion_tokens": 135,
+        "total_tokens": 8011
+      },
+      "time": "2026-02-11T18:52:06.759425+00:00"
     }
   ],
   "test": false

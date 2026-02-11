@@ -147,20 +147,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel application of adversarial attacks to generative models (VAE/VAE-GAN) with three distinct attack methodologies and comprehensive evaluation across multiple datasets. While adversarial examples were known for classifiers, extending this to generative models with well-motivated attack scenarios and systematic comparison of approaches represents a solid contribution. Experiments are thorough with clear metrics and ablations."
-      },
-      "token": {
-        "prompt_tokens": 6770,
-        "completion_tokens": 115,
-        "total_tokens": 6885
-      },
-      "time": "2026-02-08T22:30:24.354720+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -173,6 +159,20 @@
         "total_tokens": 8717
       },
       "time": "2026-02-09T20:32:30.455703+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel application of adversarial attacks to generative models (VAE/VAE-GAN) with three distinct attack methods, well-motivated threat scenario, comprehensive evaluation across MNIST/SVHN/CelebA, and useful insights (e.g., latent attack outperforms classifier-based approach). However, limited novelty in attack techniques themselves (mostly applying existing optimization methods) and evaluation relies heavily on a single classifier-based metric, which somewhat limits depth of analysis."
+      },
+      "token": {
+        "prompt_tokens": 9504,
+        "completion_tokens": 137,
+        "total_tokens": 9641
+      },
+      "time": "2026-02-11T19:01:26.688928+00:00"
     }
   ],
   "test": false

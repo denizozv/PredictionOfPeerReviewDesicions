@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel application of count-based exploration to deep RL via hashing with strong empirical results across continuous control and Atari. Thorough ablation studies on granularity and hash function design provide valuable insights. Some limitations: incremental conceptual novelty, mixed results vs SOTA on hardest tasks, and reliance on domain-specific preprocessing reduce impact."
-      },
-      "token": {
-        "prompt_tokens": 5848,
-        "completion_tokens": 112,
-        "total_tokens": 5960
-      },
-      "time": "2026-02-08T22:29:06.621665+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 7771
       },
       "time": "2026-02-09T20:30:58.732075+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Well-executed empirical study showing that simple count-based exploration via hashing achieves competitive performance on hard exploration benchmarks (Atari, continuous control). Provides useful insights on hash function design (granularity, semantic relevance) and demonstrates practical value as a strong baseline. However, limited novelty (straightforward application of LSH to RL), modest improvements over VIME in some domains, and learned hashing adds complexity without consistent gains across all tasks."
+      },
+      "token": {
+        "prompt_tokens": 8582,
+        "completion_tokens": 134,
+        "total_tokens": 8716
+      },
+      "time": "2026-02-11T18:59:22.941204+00:00"
     }
   ],
   "test": false

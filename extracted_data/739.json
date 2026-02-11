@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Narrow algorithmic contribution with limited scope and impact. The work addresses polynomial feature expansion on sparse matrices—a specialized preprocessing task with incremental novelty (mapping function + loop optimization). Lacks: (1) integration into end-to-end ML systems, (2) downstream task evaluation, (3) comparison with alternative sparse methods, (4) theoretical depth beyond combinatorial counting. Empirical validation is minimal (only synthetic matrices, single baseline). Suitable for a specialized venue but below the bar for ICML/ICLR/NeurIPS."
-      },
-      "token": {
-        "prompt_tokens": 2659,
-        "completion_tokens": 154,
-        "total_tokens": 2813
-      },
-      "time": "2026-02-08T22:46:12.433707+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 4975
       },
       "time": "2026-02-09T20:49:24.330575+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Narrow algorithmic contribution with limited scope and impact. The paper presents an efficient sparse polynomial feature expansion algorithm, but the contribution is primarily an engineering optimization (avoiding densification via a combinatorial mapping function) rather than a fundamental methodological advance. The work lacks: (1) comprehensive experimental validation beyond toy 100×5000 matrices, (2) integration into real ML pipelines to demonstrate practical impact, (3) comparison to other sparse feature engineering approaches, and (4) theoretical novelty—the core idea (enumerate k-combinations of nonzero indices and map to output columns) is relatively straightforward. While the mapping formula is correct, the paper reads as a technical report on a useful but incremental optimization rather than a research contribution with broad significance for the ML community."
+      },
+      "token": {
+        "prompt_tokens": 5393,
+        "completion_tokens": 196,
+        "total_tokens": 5589
+      },
+      "time": "2026-02-11T19:25:03.336794+00:00"
     }
   ],
   "test": true

@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty: modular networks and multi-tower architectures are well-established. Weak experimental validation: unfair comparisons (different parameter counts), no statistical significance testing, cherry-picked baselines, missing ablations. Presentation issues: incremental contributions presented as novel, no theoretical insight into why modularity helps. Small-scale experiments (MNIST, CIFAR subsets) insufficient for top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 4359,
-        "completion_tokens": 124,
-        "total_tokens": 4483
-      },
-      "time": "2026-02-08T22:43:10.730962+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 6642
       },
       "time": "2026-02-09T20:45:47.425736+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The core idea of combining pre-trained and untrained modules is intuitive but lacks novelty and rigorous justification. Experiments are limited in scope (mostly CIFAR variants), comparisons are weak (no comparison to other transfer learning methods like adapter modules, domain adaptation, or data augmentation), and the modular approach often simply adds parameters without fair comparison. The paper reads as an engineering contribution rather than a research advance with clear insights into why/when modularity helps beyond parameter count."
+      },
+      "token": {
+        "prompt_tokens": 7093,
+        "completion_tokens": 137,
+        "total_tokens": 7230
+      },
+      "time": "2026-02-11T19:20:11.263606+00:00"
     }
   ],
   "test": false

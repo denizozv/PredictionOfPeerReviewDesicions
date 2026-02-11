@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel hierarchical representation learning for interpretable music concept extraction with principled information-theoretic framework (Bayesian surprise, KL divergence). Strong technical depth in feature hierarchy induction and adaptive memory selection. Clear pedagogical application. However, limited experimental validation (single dataset, no quantitative comparisons with baselines, no user studies despite pedagogical claims)."
-      },
-      "token": {
-        "prompt_tokens": 6751,
-        "completion_tokens": 111,
-        "total_tokens": 6862
-      },
-      "time": "2026-02-08T22:20:26.658695+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 8759
       },
       "time": "2026-02-09T20:23:07.395461+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper presents an incremental extension of prior work (MUS-ROVER I) with modest technical novelty (hierarchical feature organization and adaptive n-gram selection via Bayesian surprise). While the hierarchical rule representation and 2D memory selection are reasonable ideas, the evaluation is almost entirely qualitative—limited to cherry-picked examples from Bach chorales with no rigorous quantitative comparisons, ablations, or validation against baselines. The claimed contributions (conceptual/informational hierarchies, adaptive memory) lack convincing empirical demonstration of their necessity or superiority. The work reads more as a music pedagogy application than a machine learning research contribution, with insufficient rigor and depth for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9485,
+        "completion_tokens": 186,
+        "total_tokens": 9671
+      },
+      "time": "2026-02-11T18:48:07.134714+00:00"
     }
   ],
   "test": false

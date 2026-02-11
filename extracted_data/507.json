@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Dataset contribution with limited methodological novelty. The work is primarily an engineering effort to create a multilingual evaluation benchmark using Wikidata's graph structure. While the dataset may be useful, the core contribution lacks algorithmic or conceptual innovation. The evaluation is narrow (outlier detection only), and the downstream correlation analysis, though valuable, is insufficient to elevate this to a top-tier venue. Better suited for a datasets/benchmarks track or workshop."
-      },
-      "token": {
-        "prompt_tokens": 6180,
-        "completion_tokens": 130,
-        "total_tokens": 6310
-      },
-      "time": "2026-02-08T22:24:07.976332+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 8228
       },
       "time": "2026-02-09T20:25:42.093644+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper presents a useful dataset creation methodology and multilingual benchmark (WikiSem500) for evaluating word embeddings via outlier detection, with reasonable quality-control heuristics and correlation analysis to sentiment analysis. However, the contribution is primarily a dataset/benchmark paper with limited methodological novelty: the core idea of using Wikidata graph distance to generate semantic clusters and outliers is straightforward, the evaluation is largely empirical validation of existing embeddings rather than proposing new methods, and while the multilingual aspect is valuable, the overall scientific contribution and technical depth fall short of top-tier venue standards. The paper would be better suited for a datasets/resources track or a more specialized venue."
+      },
+      "token": {
+        "prompt_tokens": 8914,
+        "completion_tokens": 181,
+        "total_tokens": 9095
+      },
+      "time": "2026-02-11T18:52:18.294209+00:00"
     }
   ],
   "test": false

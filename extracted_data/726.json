@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel information-theoretic framework connecting dropout, information bottleneck, and VAEs with solid theoretical grounding and well-designed experiments demonstrating nuisance invariance."
-      },
-      "token": {
-        "prompt_tokens": 7732,
-        "completion_tokens": 71,
-        "total_tokens": 7803
-      },
-      "time": "2026-02-08T22:45:14.485893+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 9423
       },
       "time": "2026-02-09T20:48:42.145399+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid theoretical contribution grounding dropout in information theory (Information Bottleneck principle), unifies several dropout variants, establishes VAE connection, and demonstrates empirical benefits especially on smaller models. However, experiments are somewhat limited in scope and scale, and the practical advantages over standard dropout are modest on standard benchmarks."
+      },
+      "token": {
+        "prompt_tokens": 10466,
+        "completion_tokens": 101,
+        "total_tokens": 10567
+      },
+      "time": "2026-02-11T19:23:21.382283+00:00"
     }
   ],
   "test": false

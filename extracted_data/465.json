@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "First large-scale study of adversarial transferability with novel ensemble-based approach for targeted attacks; strong empirical validation including real-world black-box attack on Clarifai; geometric analysis provides new insights into model decision boundaries."
-      },
-      "token": {
-        "prompt_tokens": 7408,
-        "completion_tokens": 85,
-        "total_tokens": 7493
-      },
-      "time": "2026-02-08T22:19:17.426764+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -163,6 +149,20 @@
         "total_tokens": 9282
       },
       "time": "2026-02-09T20:22:04.134444+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical study on adversarial transferability at scale with novel ensemble-based approach for targeted attacks and real-world validation; geometric analysis provides useful insights, though incremental methodologically and limited to 100 test images."
+      },
+      "token": {
+        "prompt_tokens": 10142,
+        "completion_tokens": 84,
+        "total_tokens": 10226
+      },
+      "time": "2026-02-11T18:46:11.953732+00:00"
     }
   ],
   "test": false

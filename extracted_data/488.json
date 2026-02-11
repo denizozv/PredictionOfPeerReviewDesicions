@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel application of adversarial training to embedding space for semi-supervised text classification with strong empirical results across multiple benchmarks and insightful analysis of learned representations."
-      },
-      "token": {
-        "prompt_tokens": 5154,
-        "completion_tokens": 70,
-        "total_tokens": 5224
-      },
-      "time": "2026-02-08T22:22:22.991252+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 7115
       },
       "time": "2026-02-09T20:24:25.297352+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Well-motivated extension of adversarial training to text domain via embedding-level perturbations rather than input-level; achieves state-of-the-art results across multiple benchmarks with thorough experiments, ablations (vs. random perturbations), and analysis (embedding quality, learning curves); clear practical contribution despite incremental conceptual novelty."
+      },
+      "token": {
+        "prompt_tokens": 7888,
+        "completion_tokens": 110,
+        "total_tokens": 7998
+      },
+      "time": "2026-02-11T18:50:13.372882+00:00"
     }
   ],
   "test": false

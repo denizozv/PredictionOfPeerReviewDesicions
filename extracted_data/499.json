@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel architectural contribution with strong empirical validation across diverse tasks (language modeling, handwriting generation, machine translation). Clear methodological innovation in dynamic weight generation via hypernetworks, comprehensive experiments with state-of-the-art results, and good analysis of learned behaviors."
-      },
-      "token": {
-        "prompt_tokens": 5488,
-        "completion_tokens": 90,
-        "total_tokens": 5578
-      },
-      "time": "2026-02-08T22:23:10.728090+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 7402
       },
       "time": "2026-02-09T20:25:14.394826+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel and well-motivated approach to relaxing weight-sharing in RNNs via hypernetworks; demonstrates consistent improvements across diverse sequence modeling tasks (Penn Treebank, enwik8, handwriting, NMT) with thorough experimental validation, ablations, and insightful visualizations of learned weight dynamics; makes a clear conceptual contribution while achieving state-of-the-art results."
+      },
+      "token": {
+        "prompt_tokens": 8222,
+        "completion_tokens": 122,
+        "total_tokens": 8344
+      },
+      "time": "2026-02-11T18:51:16.992028+00:00"
     }
   ],
   "test": false

@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Incremental techniques for latent space visualization and manipulation (slerp interpolation, J-diagrams, attribute vectors). Limited novelty—mostly engineering contributions and empirical observations rather than fundamental methodological advances. Lacks rigorous theoretical justification and comprehensive quantitative evaluation. Suitable for a workshop or applications track, but below the bar for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 2973,
-        "completion_tokens": 112,
-        "total_tokens": 3085
-      },
-      "time": "2026-02-08T22:49:16.542864+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 5247
       },
       "time": "2026-02-09T20:52:52.330336+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Collection of useful but incremental visualization and latent-space manipulation heuristics (slerp, J-diagrams, MINE grids, attribute vectors) lacking novel methodology or theoretical insight. Evaluation is primarily qualitative with minimal rigorous quantitative analysis. Spherical interpolation claim not convincingly justified theoretically. Contributions are practical/illustrative rather than advancing core generative modeling research."
+      },
+      "token": {
+        "prompt_tokens": 5707,
+        "completion_tokens": 120,
+        "total_tokens": 5827
+      },
+      "time": "2026-02-11T19:29:18.745085+00:00"
     }
   ],
   "test": false

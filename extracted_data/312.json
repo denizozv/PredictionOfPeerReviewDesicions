@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.98,
-        "primary_reason": "Seminal work introducing NAS via RL with strong methodological novelty (controller RNN + REINFORCE for architecture search), comprehensive experiments on CIFAR-10 and Penn Treebank with state-of-the-art results, clear scientific contribution that opened a new research direction, and demonstrated transferability across tasks."
-      },
-      "token": {
-        "prompt_tokens": 6449,
-        "completion_tokens": 106,
-        "total_tokens": 6555
-      },
-      "time": "2026-02-08T22:02:47.964607+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 8416
       },
       "time": "2026-02-09T20:07:23.798077+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Seminal work introducing Neural Architecture Search (NAS) using RL to automatically design neural network architectures. Demonstrates strong empirical results on CIFAR-10 (3.65% error, competitive with hand-designed networks) and Penn Treebank (62.4 perplexity, outperforming LSTM), with novel contributions including: (1) controller RNN with REINFORCE for architecture generation, (2) skip-connection mechanism via set-selection attention, (3) recurrent cell design via tree-structured search space, and (4) successful transfer to multiple domains (character-level PTB, machine translation). Includes proper ablations (random search comparison, control experiments with expanded search space) and distributed training methodology. High impact work that opened a major research direction."
+      },
+      "token": {
+        "prompt_tokens": 9181,
+        "completion_tokens": 206,
+        "total_tokens": 9387
+      },
+      "time": "2026-02-11T18:20:18.249061+00:00"
     }
   ],
   "test": false

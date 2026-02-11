@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Limited novelty (direct application of Jonschkowski & Brock 2015), narrow single-task evaluation (1D head position), weak experimental validation (small dataset, simulation-only, no comparison with related methods), and incremental contribution (adding standard CNN to existing robotic priors framework)."
-      },
-      "token": {
-        "prompt_tokens": 3163,
-        "completion_tokens": 100,
-        "total_tokens": 3263
-      },
-      "time": "2026-02-08T22:44:14.486146+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 5503
       },
       "time": "2026-02-09T20:47:25.923485+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper is primarily an application of existing methods (Jonschkowski & Brock 2015 robotic priors + standard siamese networks) to a single toy task (1D head position from simulation). It lacks novelty in methodology, theoretical insight, or significant empirical contribution. The evaluation is limited to one narrow domain with modest results (97.7% correlation on synthetic data), no comparison to other unsupervised representation learning approaches, and no demonstration of generalization or practical utility beyond the toy setup."
+      },
+      "token": {
+        "prompt_tokens": 5897,
+        "completion_tokens": 144,
+        "total_tokens": 6041
+      },
+      "time": "2026-02-11T19:22:11.436864+00:00"
     }
   ],
   "test": false

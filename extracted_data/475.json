@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel methodological contribution solving a fundamental problem (backpropagation through discrete latent variables) with rigorous mathematical framework, comprehensive experimental validation, and strong empirical results on standard benchmarks."
-      },
-      "token": {
-        "prompt_tokens": 17476,
-        "completion_tokens": 76,
-        "total_tokens": 17552
-      },
-      "time": "2026-02-08T22:21:01.637105+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -163,6 +149,20 @@
         "total_tokens": 18237
       },
       "time": "2026-02-09T20:23:14.667927+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Presents a novel and technically sound solution to training VAEs with discrete latent variables by augmenting with continuous auxiliary variables and deriving a differentiable reparameterization through conditional-marginal CDFs. Includes thorough mathematical development, multiple concrete transformations (spike-and-exponential, spike-and-slab, etc.), careful treatment of explaining-away via hierarchical posteriors, and strong empirical validation on standard benchmarks with state-of-the-art results and detailed ablations."
+      },
+      "token": {
+        "prompt_tokens": 20210,
+        "completion_tokens": 144,
+        "total_tokens": 20354
+      },
+      "time": "2026-02-11T18:48:10.437651+00:00"
     }
   ],
   "test": false

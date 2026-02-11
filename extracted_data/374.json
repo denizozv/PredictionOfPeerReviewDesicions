@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel fine-grained gating mechanisms with clear motivation and strong empirical results across multiple datasets (CBT, Who Did What, SQuAD, Twitter). Good analysis and visualization support the approach, though incremental over prior work."
-      },
-      "token": {
-        "prompt_tokens": 4072,
-        "completion_tokens": 85,
-        "total_tokens": 4157
-      },
-      "time": "2026-02-08T22:08:19.898034+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 6192
       },
       "time": "2026-02-09T20:12:52.131145+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes fine-grained vector gating mechanisms (word-character and document-query) that are well-motivated, clearly presented, and validated across multiple tasks (Twitter, CBT, Who Did What, SQuAD) with consistent improvements and state-of-the-art results; includes useful ablations and interpretable analysis showing gates learn linguistically sensible patterns (rare/named entities prefer character-level). Main limitations: incremental architectural contribution, modest gains on some tasks, and gating mechanism itself is relatively straightforward (sigmoid-gated combination), but solid empirical work with good experimental rigor for the era."
+      },
+      "token": {
+        "prompt_tokens": 6806,
+        "completion_tokens": 168,
+        "total_tokens": 6974
+      },
+      "time": "2026-02-11T18:31:15.897570+00:00"
     }
   ],
   "test": false

@@ -147,20 +147,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel Taylor expansion-based pruning criterion with solid theoretical motivation, comprehensive experimental validation across multiple datasets and architectures, and practical speedup measurements. Clear contribution to efficient neural network inference."
-      },
-      "token": {
-        "prompt_tokens": 8082,
-        "completion_tokens": 73,
-        "total_tokens": 8155
-      },
-      "time": "2026-02-08T22:09:10.135103+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -173,6 +159,20 @@
         "total_tokens": 9851
       },
       "time": "2026-02-09T20:13:21.496587+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled Taylor-expansion-based pruning criterion that approximates loss change from parameter removal, demonstrates superior performance over multiple baselines (weight magnitude, activation, mutual information, OBD) across transfer learning and ImageNet tasks, includes thorough empirical validation with oracle comparisons and ablations, and provides practical speedup measurements. The work makes a solid methodological contribution with comprehensive experiments, though the core idea (first-order Taylor approximation) is somewhat incremental relative to OBD and the novelty is primarily in the application and empirical validation rather than fundamental innovation."
+      },
+      "token": {
+        "prompt_tokens": 10816,
+        "completion_tokens": 159,
+        "total_tokens": 10975
+      },
+      "time": "2026-02-11T18:32:06.514165+00:00"
     }
   ],
   "test": false

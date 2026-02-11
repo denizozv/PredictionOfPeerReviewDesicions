@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core components (standard LSTM+attention), incremental contribution (memory-augmented attention is straightforward extension of existing mechanisms), weak experimental validation (only 2 datasets, modest improvements, no statistical significance testing, limited baselines), and presentation issues (unclear memory mechanism formulation, missing technical depth)."
-      },
-      "token": {
-        "prompt_tokens": 4992,
-        "completion_tokens": 103,
-        "total_tokens": 5095
-      },
-      "time": "2026-02-08T22:34:07.364654+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 7064
       },
       "time": "2026-02-09T20:36:16.056257+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper proposes a memory-augmented attention model for video captioning with reasonable empirical results, but the technical contribution is incremental: the core idea of combining temporal modeling (RNN on conv features with location attention), hierarchical attention over frames, and a memory-updated decoder is a straightforward extension of existing sequence-to-sequence + attention architectures. The HAM component (Equations 6-9) is essentially standard attention with an LSTM memory cell—not sufficiently novel. Ablations show HAM helps, but lack deeper analysis of what the memory learns or why it's necessary. Comparisons are limited (mostly to 2015-era baselines), and the gains are modest without external features (C3D/optical flow). The writing is unclear in places (e.g., the distinction between 'attention' and 'memory' in HAM is vague), and qualitative results show failure cases without systematic error analysis. While the work is competent, it reads as an engineering contribution rather than a significant methodological advance."
+      },
+      "token": {
+        "prompt_tokens": 7726,
+        "completion_tokens": 256,
+        "total_tokens": 7982
+      },
+      "time": "2026-02-11T19:07:07.841733+00:00"
     }
   ],
   "test": false

@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid empirical work with systematic comparison of matching functions across multiple tasks. Novel element-wise comparison functions (SUB, MULT) show practical value. Comprehensive evaluation on 4 datasets with strong results, though limited conceptual novelty and incremental over Parikh et al. (2016)."
-      },
-      "token": {
-        "prompt_tokens": 4828,
-        "completion_tokens": 101,
-        "total_tokens": 4929
-      },
-      "time": "2026-02-08T22:07:18.714916+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 6942
       },
       "time": "2026-02-09T20:11:44.849285+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a general compare-aggregate framework for sequence matching with systematic evaluation of six comparison functions (including novel element-wise SUB/MULT variants), demonstrates strong empirical results across four diverse datasets (MovieQA, InsuranceQA, WikiQA, SNLI), and provides useful ablations showing that simple comparison functions can outperform complex neural alternatives—a solid empirical contribution with practical value, though incremental relative to concurrent work (Parikh et al. 2016) and limited novelty in individual components."
+      },
+      "token": {
+        "prompt_tokens": 7562,
+        "completion_tokens": 149,
+        "total_tokens": 7711
+      },
+      "time": "2026-02-11T18:29:20.122222+00:00"
     }
   ],
   "test": true

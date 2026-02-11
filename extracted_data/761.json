@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited scope (toy language, single task), incremental technical contribution (standard LSTM + simple differentiable set), weak experimental validation (synthetic data only, no real-world relevance), and insufficient novelty for top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 4027,
-        "completion_tokens": 85,
-        "total_tokens": 4112
-      },
-      "time": "2026-02-08T22:48:15.653103+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 6307
       },
       "time": "2026-02-09T20:51:32.507478+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Toy problem (defined-before-use on synthetic language) is too simple and well-solved by trivial symbolic analyzers; weak baselines (n-grams, HMMs, vanilla RNNs) rather than prior neural algorithmic reasoning work; limited generalization evidence; differentiable-set contribution is modest architectural tweak; insufficient scope and external validity for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 6761,
+        "completion_tokens": 119,
+        "total_tokens": 6880
+      },
+      "time": "2026-02-11T19:28:04.705408+00:00"
     }
   ],
   "test": false

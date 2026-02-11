@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core method (standard LSTM+MDN), narrow experimental scope (single synthetic task), and incremental learning principle is well-established. While the MNIST stroke sequence dataset is creative and results show improvements, the contribution lacks sufficient depth for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 8456,
-        "completion_tokens": 93,
-        "total_tokens": 8549
-      },
-      "time": "2026-02-08T22:40:19.226724+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -178,6 +164,20 @@
         "total_tokens": 10442
       },
       "time": "2026-02-09T20:43:19.792528+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper presents a reasonable empirical study of curriculum learning for sequence modeling with some positive results, the contribution is primarily incremental and the experimental scope is limited. The core idea—training on progressively longer sequence prefixes—is intuitive but not particularly novel. The MNIST stroke-sequence task, though creative, is a synthetic benchmark that doesn't convincingly demonstrate relevance to real-world sequence learning problems. The paper lacks comparison to other curriculum learning strategies from the literature, relies heavily on a single toy dataset, and the transfer learning experiment is preliminary. The insights about batch size effects (H1) and representation learning (H2) are useful but not sufficiently deep or surprising for a top-tier venue. The work would benefit from evaluation on standard sequence benchmarks and stronger baselines."
+      },
+      "token": {
+        "prompt_tokens": 11190,
+        "completion_tokens": 199,
+        "total_tokens": 11389
+      },
+      "time": "2026-02-11T19:17:05.353823+00:00"
     }
   ],
   "test": false

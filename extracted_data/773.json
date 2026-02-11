@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid application of RFNs to biclustering with comprehensive experiments on synthetic, gene expression, and genomic data. Clear methodological contribution (Laplace priors, dropout for sparsity) and strong empirical results against 13 baselines. However, limited algorithmic novelty (applies existing RFN framework) and presentation could be more concise for top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 4855,
-        "completion_tokens": 119,
-        "total_tokens": 4974
-      },
-      "time": "2026-02-08T22:49:14.364134+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 6974
       },
       "time": "2026-02-09T20:52:46.233331+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Applies RFNs to biclustering with strong empirical validation on 400 synthetic benchmarks and real gene expression datasets, significantly outperforming 13 competitors including the widely-used FABIA method; demonstrates practical impact (used by major companies) and interesting application to 1000 Genomes data. However, the core methodological contribution is limited—RFNs are from prior work (Clevert et al. 2015)—and the biclustering-specific innovations (Laplace prior on weights, dropout) are relatively incremental. The paper is primarily an application/empirical study rather than a fundamental algorithmic advance, which places it at the borderline for a top venue."
+      },
+      "token": {
+        "prompt_tokens": 7589,
+        "completion_tokens": 188,
+        "total_tokens": 7777
+      },
+      "time": "2026-02-11T19:29:16.065350+00:00"
     }
   ],
   "test": true

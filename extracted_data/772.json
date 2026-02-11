@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Empirical study of existing techniques (aggregation, layer selection, resizing, multi-scale, PCA) applied to standard VGG-19. Limited novelty—combines known methods without significant methodological innovation. Primarily an engineering/ablation study rather than a novel scientific contribution suitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 4552,
-        "completion_tokens": 103,
-        "total_tokens": 4655
-      },
-      "time": "2026-02-08T22:49:12.005091+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 6737
       },
       "time": "2026-02-09T20:52:39.493712+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Primarily an empirical ablation study of existing techniques (aggregation, layer selection, resizing, multi-scale, PCA) applied to standard VGG-19 for image retrieval. While thorough, it lacks methodological novelty—the proposed 'multi-scale representation' is a straightforward combination of known techniques (spatial pyramid matching + SPP). The layer ensemble is a simple weighted score fusion. No new architectural insights, learning objectives, or theoretical contributions. The empirical gains, though solid, are incremental improvements from careful hyperparameter tuning rather than a fundamental advance. Best suited for a workshop or applications track, not a top-tier research venue."
+      },
+      "token": {
+        "prompt_tokens": 7286,
+        "completion_tokens": 178,
+        "total_tokens": 7464
+      },
+      "time": "2026-02-11T19:29:11.688185+00:00"
     }
   ],
   "test": false

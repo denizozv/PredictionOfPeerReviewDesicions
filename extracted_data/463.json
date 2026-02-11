@@ -67,20 +67,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel noise adaptation layer approach with solid theoretical grounding (EM equivalence), clear methodological contribution, and comprehensive experiments on multiple datasets with consistent improvements over baselines."
-      },
-      "token": {
-        "prompt_tokens": 4861,
-        "completion_tokens": 70,
-        "total_tokens": 4931
-      },
-      "time": "2026-02-08T22:19:13.926104+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -93,6 +79,20 @@
         "total_tokens": 7034
       },
       "time": "2026-02-09T20:21:50.284354+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a practical and well-motivated approach to learning with noisy labels by adding an explicit noise adaptation layer that optimizes the same likelihood as EM but scales better; demonstrates consistent empirical improvements over baselines (Reed et al.) on MNIST and CIFAR-100 with clear ablations (s-model vs c-model) and a sparse variant for scalability, though experiments are limited to synthetic label noise and relatively simple architectures."
+      },
+      "token": {
+        "prompt_tokens": 7595,
+        "completion_tokens": 130,
+        "total_tokens": 7725
+      },
+      "time": "2026-02-11T18:46:05.782083+00:00"
     }
   ],
   "test": false

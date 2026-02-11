@@ -72,20 +72,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel framework for emergent communication through multi-agent referential games with rigorous analysis of semantic grounding and human interpretability. Strong experimental design combining interactive learning with supervised grounding, demonstrating both technical innovation and meaningful scientific insights into language emergence."
-      },
-      "token": {
-        "prompt_tokens": 5011,
-        "completion_tokens": 86,
-        "total_tokens": 5097
-      },
-      "time": "2026-02-08T22:02:45.566992+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -98,6 +84,20 @@
         "total_tokens": 7212
       },
       "time": "2026-02-09T20:07:16.188509+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel and well-executed study demonstrating that neural agents can learn to communicate through referential games, with emergent symbol meanings that align with semantic intuitions. The paper makes multiple contributions: (1) shows agents develop meaningful communication from scratch using only coordination rewards, (2) demonstrates that symbol semantics reflect visual/categorical structure (purity analysis, t-SNE visualization), (3) introduces a clever mechanism (removing common knowledge) to encourage higher-level semantics, and (4) proposes a practical grounding strategy combining interactive play with supervised learning, validated through crowdsourced human evaluation (68% success). The experimental design is thoughtful with clear ablations (agnostic vs. informed sender, vocabulary sizes, object-level reference), and the human evaluation on ReferItGame demonstrates generalization beyond supervised categories. While the scope is somewhat limited (single referential game, relatively simple architectures, modest absolute performance), the core insights about emergent communication and grounding are original and significant for understanding how language can arise from interaction."
+      },
+      "token": {
+        "prompt_tokens": 7743,
+        "completion_tokens": 251,
+        "total_tokens": 7994
+      },
+      "time": "2026-02-11T18:20:14.664327+00:00"
     }
   ],
   "test": false

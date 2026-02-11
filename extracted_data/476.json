@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Well-designed empirical study with rigorous methodology (Bayesian hyperparameter optimization, state-of-the-art teacher ensemble at 93.8% CIFAR-10), clear scientific question, and strong experimental evidence demonstrating architectural necessity of convolution and depth despite distillation—addresses important theoretical question about inductive biases in deep learning."
-      },
-      "token": {
-        "prompt_tokens": 7192,
-        "completion_tokens": 111,
-        "total_tokens": 7303
-      },
-      "time": "2026-02-08T22:21:03.756652+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 9072
       },
       "time": "2026-02-09T20:23:21.334531+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Well-executed empirical study with rigorous methodology (Bayesian hyperparameter optimization, state-of-the-art teacher ensemble at 93.8% accuracy, careful distillation setup) demonstrating that shallow models cannot match deep convolutional models on CIFAR-10 even with comparable parameters and knowledge distillation; provides clear evidence that both depth and convolution are necessary architectural properties, though limited to single dataset and modest novelty in methods."
+      },
+      "token": {
+        "prompt_tokens": 9926,
+        "completion_tokens": 133,
+        "total_tokens": 10059
+      },
+      "time": "2026-02-11T18:48:12.994754+00:00"
     }
   ],
   "test": false

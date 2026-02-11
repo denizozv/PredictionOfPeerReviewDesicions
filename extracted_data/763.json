@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel probabilistic state-space model with principled uncertainty quantification for relational time series. Strong theoretical grounding (KL divergence, Gaussian embeddings), well-motivated structural regularization, and comprehensive experimental validation across multiple domains. Solid contribution despite incremental improvements over baselines."
-      },
-      "token": {
-        "prompt_tokens": 5019,
-        "completion_tokens": 96,
-        "total_tokens": 5115
-      },
-      "time": "2026-02-08T22:48:20.547108+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 7132
       },
       "time": "2026-02-09T20:51:46.556849+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled state-space model (RDG) for relational time series using Gaussian embeddings with explicit structural regularization; combines decoding, dynamics, and relational losses with theoretical justification (Eq. 9); demonstrates consistent improvements over baselines and provides uncertainty quantification. However, empirical gains are often modest (competitive with RNN rather than clearly superior), experimental scope is limited to 4 datasets, and the structural regularization assumes static known graph structure, which limits applicability."
+      },
+      "token": {
+        "prompt_tokens": 7753,
+        "completion_tokens": 144,
+        "total_tokens": 7897
+      },
+      "time": "2026-02-11T19:28:13.533522+00:00"
     }
   ],
   "test": false

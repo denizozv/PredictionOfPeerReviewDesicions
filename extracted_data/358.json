@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel hierarchical VAE framework for dataset-level representation learning with strong conceptual contribution, diverse experimental validation across synthetic/real tasks, and clear methodological innovation in statistic networks for few-shot learning."
-      },
-      "token": {
-        "prompt_tokens": 4894,
-        "completion_tokens": 78,
-        "total_tokens": 4972
-      },
-      "time": "2026-02-08T22:07:11.533787+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 6986
       },
       "time": "2026-02-09T20:11:16.172185+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel framework for learning dataset-level representations via hierarchical VAE with learnable statistic network; demonstrates strong conceptual contribution with diverse applications (clustering, transfer learning, few-shot classification, sampling) and convincing experiments across synthetic and real datasets (Omniglot, YouTube Faces); introduces principled approach to exchangeable pooling and context inference that enables efficient learning from datasets rather than datapoints."
+      },
+      "token": {
+        "prompt_tokens": 7628,
+        "completion_tokens": 120,
+        "total_tokens": 7748
+      },
+      "time": "2026-02-11T18:28:53.037920+00:00"
     }
   ],
   "test": true

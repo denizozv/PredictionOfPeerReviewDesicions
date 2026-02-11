@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core contributions (quadratic nonlinearity and variance statistics are incremental), weak experimental validation (single narrow task, results match but don't exceed prior work), and presentation issues. The Fourier-domain implementation is engineering-focused rather than methodologically novel. Missing comparisons with modern deep learning baselines and insufficient analysis of when/why the method works."
-      },
-      "token": {
-        "prompt_tokens": 7920,
-        "completion_tokens": 113,
-        "total_tokens": 8033
-      },
-      "time": "2026-02-08T22:41:13.823100+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -168,6 +154,20 @@
         "total_tokens": 9776
       },
       "time": "2026-02-09T20:43:51.730226+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper claims linear time complexity but the analysis is incomplete and potentially misleading. The core contribution—replacing complex modulus with quadratic nonlinearity and computing in Fourier domain—is incremental. The validation is limited to a single bird song dataset with results (47.6% accuracy, 52.4% MAP) that only marginally match or slightly underperform prior work (53% MAP). The writing is dense and difficult to follow, key algorithmic details are unclear, and there is insufficient comparison to baselines or ablation studies to justify the claimed advantages. The theoretical justification for linear complexity relies on sparsity exploitation but lacks rigorous complexity analysis."
+      },
+      "token": {
+        "prompt_tokens": 10654,
+        "completion_tokens": 175,
+        "total_tokens": 10829
+      },
+      "time": "2026-02-11T19:17:17.326634+00:00"
     }
   ],
   "test": false

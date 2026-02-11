@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel cooperative training framework combining descriptor (energy-based) and generator (latent variable) networks with theoretical justification and solid experimental validation on image synthesis and inpainting tasks."
-      },
-      "token": {
-        "prompt_tokens": 8298,
-        "completion_tokens": 72,
-        "total_tokens": 8370
-      },
-      "time": "2026-02-08T22:37:06.291639+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 9924
       },
       "time": "2026-02-09T20:39:10.757387+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes CoopNets, a novel cooperative training framework that elegantly combines descriptor (energy-based) and generator (latent variable) networks by having them jumpstart each other's Langevin sampling. The method is theoretically motivated with clear convergence analysis, demonstrates practical benefits on face completion with quantitative evaluation, and shows qualitative synthesis results. The core insight—that two complementary probabilistic models can mutually accelerate MCMC sampling—is original and well-executed, though experimental validation is somewhat limited (mainly qualitative synthesis + one quantitative task) and comparisons to baselines are not comprehensive."
+      },
+      "token": {
+        "prompt_tokens": 11032,
+        "completion_tokens": 166,
+        "total_tokens": 11198
+      },
+      "time": "2026-02-11T19:11:09.779457+00:00"
     }
   ],
   "test": false

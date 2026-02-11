@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid methodological contribution with systematic low-rank parametrization of passthrough networks (LSTM/GRU/Highway). Comprehensive experiments on multiple benchmarks with competitive results. Clear practical value in parameter reduction. Some concerns: incremental nature of low-rank decomposition, mixed experimental results (slower convergence than baselines in some cases), and language modeling results not state-of-the-art. Acceptable for top-tier venue but not exceptional."
-      },
-      "token": {
-        "prompt_tokens": 6304,
-        "completion_tokens": 132,
-        "total_tokens": 6436
-      },
-      "time": "2026-02-08T22:32:21.766482+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 8449
       },
       "time": "2026-02-09T20:34:45.664227+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple but principled low-rank and low-rank-plus-diagonal parametrization for passthrough networks (LSTMs, GRUs, Highway Networks) that exploits the decoupling of state size from parameter count; demonstrates competitive results on sequential benchmarks (memory, addition, permuted MNIST) and language modeling with fewer parameters, though improvements are modest and convergence is often slower than baselines like uRNNs."
+      },
+      "token": {
+        "prompt_tokens": 9038,
+        "completion_tokens": 132,
+        "total_tokens": 9170
+      },
+      "time": "2026-02-11T19:04:30.678927+00:00"
     }
   ],
   "test": false

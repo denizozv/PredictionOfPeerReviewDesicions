@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: straightforward application of existing DCGAN to steganography via multi-objective loss; weak experimental validation with inconsistent results; no comparison with state-of-the-art steganography methods; unclear practical advantage over standard approaches."
-      },
-      "token": {
-        "prompt_tokens": 4263,
-        "completion_tokens": 88,
-        "total_tokens": 4351
-      },
-      "time": "2026-02-08T22:39:16.820026+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 6446
       },
       "time": "2026-02-09T20:42:13.124734+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper applies existing techniques (DCGAN + standard steganalysis) to steganography without sufficient novelty or rigor. The core contribution—adding a steganalyzer discriminator to GAN training—is a straightforward extension. Experiments are limited to 64×64 images on one dataset with weak baselines; the claimed universality is unsupported. Critical issues include: (1) no comparison to other steganography-aware defenses, (2) distribution mismatch experiments (Section 5.4) suggest the approach exploits train-test discrepancy rather than genuine robustness, (3) limited evaluation of real-world applicability, and (4) presentation quality issues. The work reads as an incremental application paper rather than a methodological advance suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 6997,
+        "completion_tokens": 219,
+        "total_tokens": 7216
+      },
+      "time": "2026-02-11T19:15:15.490139+00:00"
     }
   ],
   "test": false

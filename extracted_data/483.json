@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel spatiotemporal attention model combining 3D CNN, LSTM, and Mixture Density Networks for video saliency prediction. Strong experimental validation on Hollywood2 and UCF101 with clear generalization results. Well-motivated design choices and thorough ablation studies. Solid contribution to attention mechanisms in video understanding."
-      },
-      "token": {
-        "prompt_tokens": 7244,
-        "completion_tokens": 105,
-        "total_tokens": 7349
-      },
-      "time": "2026-02-08T22:22:09.172513+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 9198
       },
       "time": "2026-02-09T20:23:57.501780+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical contribution combining C3D + LSTM + MDN for spatiotemporal saliency prediction from human fixations. Achieves state-of-the-art on Hollywood2 (near human performance), demonstrates good generalization to UCF101, and shows practical benefits for action recognition. Well-executed ablations and thorough experiments, though the core technical novelty (applying MDN to LSTM outputs) is somewhat incremental. The work is methodologically sound and makes useful contributions to video attention modeling."
+      },
+      "token": {
+        "prompt_tokens": 9978,
+        "completion_tokens": 146,
+        "total_tokens": 10124
+      },
+      "time": "2026-02-11T18:49:16.129163+00:00"
     }
   ],
   "test": false

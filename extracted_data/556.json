@@ -167,20 +167,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid empirical investigation of loss surface geometry with novel 2D/3D visualization techniques and systematic comparison of optimization algorithms. Contributes useful insights on basin structure and algorithm-specific minima characteristics, though limited theoretical novelty and incremental methodological advances."
-      },
-      "token": {
-        "prompt_tokens": 6836,
-        "completion_tokens": 90,
-        "total_tokens": 6926
-      },
-      "time": "2026-02-08T22:29:04.104406+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -193,6 +179,20 @@
         "total_tokens": 8778
       },
       "time": "2026-02-09T20:30:52.018921+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper provides useful empirical visualizations of loss surfaces across multiple optimizers, the contributions are primarily observational rather than methodological. The core findings (different optimizers find different minima, basin sizes vary by algorithm, batch norm affects surfaces) lack actionable insights or theoretical grounding. The Runge-Kutta augmentation is underdeveloped and underperforms ADAM. The work reads as an extended empirical study without sufficient novelty, depth, or impact for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9570,
+        "completion_tokens": 143,
+        "total_tokens": 9713
+      },
+      "time": "2026-02-11T18:59:20.446748+00:00"
     }
   ],
   "test": true

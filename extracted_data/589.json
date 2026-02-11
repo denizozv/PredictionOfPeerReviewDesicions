@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.72,
-        "primary_reason": "Limited novelty: straightforward combination of existing graph CNN (Defferrard et al. 2016) with standard LSTM/RNN. Weak experimental validation: Moving MNIST shows marginal gains over CNN baselines with questionable explanations; Penn Treebank results are mixed and unconvincing (Model 1 only works with dropout, Model 2 fails). Lacks depth in analysis of when/why graph structure helps. Missing comparisons with other structured sequence models."
-      },
-      "token": {
-        "prompt_tokens": 5177,
-        "completion_tokens": 140,
-        "total_tokens": 5317
-      },
-      "time": "2026-02-08T22:32:12.957070+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 7182
       },
       "time": "2026-02-09T20:34:13.353182+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper proposes a straightforward combination of graph CNNs and LSTMs without sufficient novelty or insight. While the idea is reasonable, the execution is limited: (1) the two architectures are simple stacking/replacement operations with minimal technical depth; (2) experimental validation is weak—Moving MNIST results show only marginal gains over baselines with unclear significance, and Penn Treebank results are mixed (Model 1 needs dropout to beat LSTM, Model 2 fails entirely); (3) the Penn Treebank application is poorly motivated (why should word embeddings form a meaningful graph for language modeling?) and the graph construction (4-NN on word2vec) is ad-hoc; (4) no ablations, analysis, or insights into when/why the approach helps; (5) missing comparisons to other structured sequence models and no discussion of related work on spatio-temporal modeling. The contribution is primarily engineering-focused without sufficient empirical validation or conceptual novelty for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7911,
+        "completion_tokens": 256,
+        "total_tokens": 8167
+      },
+      "time": "2026-02-11T19:04:18.046187+00:00"
     }
   ],
   "test": false

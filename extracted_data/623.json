@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Empirical observations lack theoretical insight or mechanistic explanation. Limited novelty: bulk-edge Hessian structure is known from random matrix theory. Experiments are narrow (toy 2D data, small MNIST subsets, simple architectures). No actionable implications for deep learning practice or theory. Missing connections to existing literature on loss landscape geometry."
-      },
-      "token": {
-        "prompt_tokens": 1573,
-        "completion_tokens": 109,
-        "total_tokens": 1682
-      },
-      "time": "2026-02-08T22:35:16.052094+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 4006
       },
       "time": "2026-02-09T20:37:57.902464+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Empirical observations on Hessian eigenvalue structure are interesting but lack theoretical depth, mechanistic insight, or actionable implications. The paper is primarily descriptive—documenting that overparameterized networks have singular Hessians with bulk near zero and data-dependent edges—without explaining why this occurs, what it means for optimization/generalization, or how to use these insights. Experiments are limited to toy problems (MNIST, 2D Gaussians, small networks), lack rigorous quantitative analysis, and do not connect findings to existing theory (random matrix theory, implicit regularization, loss landscape geometry). No clear contribution beyond confirming known intuitions about overparameterization."
+      },
+      "token": {
+        "prompt_tokens": 4307,
+        "completion_tokens": 183,
+        "total_tokens": 4490
+      },
+      "time": "2026-02-11T19:09:13.034795+00:00"
     }
   ],
   "test": false

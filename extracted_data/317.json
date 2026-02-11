@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel theoretical framework connecting MAP inference to amortised learning via affine projections; principled GAN formulation with instance noise stabilization; multiple complementary methods (AffGAN, AffDG, AffLL); rigorous experiments from toy problems to real images; establishes connection between GANs and variational inference."
-      },
-      "token": {
-        "prompt_tokens": 9974,
-        "completion_tokens": 106,
-        "total_tokens": 10080
-      },
-      "time": "2026-02-08T22:03:04.850333+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -178,6 +164,20 @@
         "total_tokens": 11480
       },
       "time": "2026-02-09T20:07:47.020962+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework connecting MAP inference to amortised learning via affine projections and cross-entropy minimization, with three principled approaches (AffGAN, AffDG, AffLL) and solid empirical validation on toy and real data. The affine projection constraint is mathematically elegant and ensures consistency. However, the paper has notable limitations: (1) AffDG and AffLL underperform significantly on natural images, leaving only GAN-based approach viable; (2) limited quantitative evaluation (PSNR/SSIM favor MSE baselines); (3) acknowledged representation-dependence of MAP estimates undermines core motivation; (4) modest improvements over baselines on real data; (5) instance noise stabilization feels somewhat ad-hoc. The theoretical contributions and novel perspective on SR as density matching are strong, but empirical impact is mixed and scope somewhat narrow."
+      },
+      "token": {
+        "prompt_tokens": 12706,
+        "completion_tokens": 228,
+        "total_tokens": 12934
+      },
+      "time": "2026-02-11T18:21:10.868268+00:00"
     }
   ],
   "test": false

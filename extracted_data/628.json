@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel theoretical framework combining SPNs with submodular optimization for structured scene understanding. Strong algorithmic contribution (INFERSSPN with convergence guarantees), rigorous mathematical treatment, and clear computational advantages over baselines. Addresses genuine expressivity-tractability tradeoff in probabilistic graphical models."
-      },
-      "token": {
-        "prompt_tokens": 9018,
-        "completion_tokens": 99,
-        "total_tokens": 9117
-      },
-      "time": "2026-02-08T22:36:07.056861+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 10739
       },
       "time": "2026-02-09T20:38:34.420153+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While technically sound with novel theoretical contributions (submodular SPNs, convergent graph-cut inference), the work is limited by: (1) evaluation only on synthetic grammars and training data (SBD with Deeplab features), not real learned grammars or test-time generalization; (2) no comparison to modern semantic segmentation methods or end-to-end learning; (3) unclear practical advantage over simpler alternatives; (4) presentation is dense and difficult to follow, obscuring impact."
+      },
+      "token": {
+        "prompt_tokens": 11752,
+        "completion_tokens": 145,
+        "total_tokens": 11897
+      },
+      "time": "2026-02-11T19:10:14.223834+00:00"
     }
   ],
   "test": false

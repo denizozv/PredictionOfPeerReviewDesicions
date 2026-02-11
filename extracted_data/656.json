@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel hybrid architecture combining fixed scattering transform with learned CNN; strong theoretical motivation (stability, geometric invariance); solid experimental validation on small-data regimes; interpretable analysis of learned representations."
-      },
-      "token": {
-        "prompt_tokens": 7230,
-        "completion_tokens": 76,
-        "total_tokens": 7306
-      },
-      "time": "2026-02-08T22:38:26.987536+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 9035
       },
       "time": "2026-02-09T20:41:26.491012+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents a reasonable idea of combining scattering transforms with supervised CNNs, the empirical results are not competitive with state-of-the-art (4.8% below Wide ResNet on CIFAR10), the theoretical contributions are limited (mostly restating known scattering properties), and the analysis of learned operators (Section 3.2) is superficial. The small-dataset experiments show promise but lack depth. The work reads more as an engineering study than a significant methodological advance."
+      },
+      "token": {
+        "prompt_tokens": 9964,
+        "completion_tokens": 143,
+        "total_tokens": 10107
+      },
+      "time": "2026-02-11T19:14:04.751226+00:00"
     }
   ],
   "test": false

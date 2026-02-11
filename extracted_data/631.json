@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel spatial RNN architecture with solid experimental validation on two tasks (CIFAR-10, PASCAL VOC). Key contributions: within-layer recurrence design, seamless insertion into pre-trained networks, and competitive results with fewer parameters than ResNet-164. However, limited theoretical insight and incremental nature of combining existing components (CNN + RNN) somewhat reduce impact."
-      },
-      "token": {
-        "prompt_tokens": 8041,
-        "completion_tokens": 114,
-        "total_tokens": 8155
-      },
-      "time": "2026-02-08T22:36:16.640854+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 9841
       },
       "time": "2026-02-09T20:38:55.845559+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The core idea of adding 1D spatial RNNs within convolutional layers is incremental and insufficiently novel. While the paper shows empirical improvements on CIFAR-10 and PASCAL VOC, the gains are modest (5.39% vs 5.46% on CIFAR-10; ~5% IOU boost on segmentation), and the contribution lacks theoretical insight or compelling mechanistic understanding. The method is essentially a straightforward application of bidirectional RNNs to spatial dimensions—a natural but not particularly original extension. Comparisons are limited (e.g., no comparison to dilated convolutions on CIFAR-10), ablations are incomplete, and the paper does not convincingly establish why this approach is superior to simpler alternatives like larger receptive fields or multi-scale processing. The writing is dense and presentation could be clearer. Overall, the work is technically sound but falls short of the novelty and impact bar for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 10775,
+        "completion_tokens": 246,
+        "total_tokens": 11021
+      },
+      "time": "2026-02-11T19:10:24.667644+00:00"
     }
   ],
   "test": false

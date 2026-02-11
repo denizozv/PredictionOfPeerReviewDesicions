@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel loss-aware binarization approach using proximal Newton with diagonal Hessian approximation. Solid theoretical contribution (convergence analysis, gradient explosion mitigation in RNNs), comprehensive experiments on feedforward and recurrent networks showing consistent improvements over BinaryConnect/BWN baselines. Well-motivated second-order optimization perspective on network quantization."
-      },
-      "token": {
-        "prompt_tokens": 7016,
-        "completion_tokens": 111,
-        "total_tokens": 7127
-      },
-      "time": "2026-02-08T22:18:07.489717+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 8811
       },
       "time": "2026-02-09T20:20:52.745066+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled loss-aware binarization method using proximal Newton with diagonal Hessian approximation, deriving closed-form solutions and providing convergence analysis; demonstrates consistent improvements over BinaryConnect/BWN across feedforward and recurrent networks with thorough ablations on network width and depth, though empirical gains are often modest and evaluation is limited to relatively small-scale datasets (MNIST, CIFAR-10, SVHN, character-level language modeling)."
+      },
+      "token": {
+        "prompt_tokens": 9750,
+        "completion_tokens": 140,
+        "total_tokens": 9890
+      },
+      "time": "2026-02-11T18:44:08.334455+00:00"
     }
   ],
   "test": false

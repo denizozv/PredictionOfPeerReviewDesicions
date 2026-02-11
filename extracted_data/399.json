@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.98,
-        "primary_reason": "Landmark work introducing Sparsely-Gated Mixture-of-Experts with strong theoretical motivation, novel solutions to practical challenges (batch shrinking, load balancing, network bandwidth), comprehensive experiments on multiple large-scale tasks (language modeling, machine translation), and significant empirical improvements. Demonstrates 1000x capacity gains with practical efficiency—a major methodological and empirical contribution."
-      },
-      "token": {
-        "prompt_tokens": 11623,
-        "completion_tokens": 119,
-        "total_tokens": 11742
-      },
-      "time": "2026-02-08T22:11:10.238620+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -178,6 +164,20 @@
         "total_tokens": 12966
       },
       "time": "2026-02-09T20:15:07.553909+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.98,
+        "primary_reason": "Landmark paper introducing Sparsely-Gated Mixture-of-Experts (MoE) that achieves >1000x capacity improvements with minor computational overhead. Addresses critical practical challenges (shrinking batch problem, network bandwidth, load balancing) with novel solutions (data+model parallelism, noisy top-k gating, importance/load losses). Demonstrates strong empirical results on language modeling (1B and 100B word corpora) and machine translation (WMT14, multilingual), with thorough ablations and architectural details. Highly influential contribution enabling practical conditional computation at scale."
+      },
+      "token": {
+        "prompt_tokens": 14357,
+        "completion_tokens": 168,
+        "total_tokens": 14525
+      },
+      "time": "2026-02-11T18:35:08.244322+00:00"
     }
   ],
   "test": false

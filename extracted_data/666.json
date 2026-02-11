@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in core contribution (parameter grouping via orthogonal decomposition is incremental), weak theoretical justification, experimental evaluation lacks depth (no comparison with modern few-shot methods, limited baselines), presentation quality issues, and unclear practical advantages over existing approaches."
-      },
-      "token": {
-        "prompt_tokens": 5279,
-        "completion_tokens": 91,
-        "total_tokens": 5370
-      },
-      "time": "2026-02-08T22:39:20.631107+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 7378
       },
       "time": "2026-02-09T20:42:28.840707+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper proposes parameter grouping via orthogonal decomposition for k-shot learning, but suffers from: (1) unclear technical contribution—the core idea of grouping correlated parameters and enforcing orthogonality between groups lacks rigorous justification and novelty; (2) weak experimental validation—k-shot experiments are limited to MNIST and Office (small-scale), with outdated baselines (SVM, KNN, DBM from ~2013) and no comparison to modern few-shot methods (Prototypical Networks, MAML, Matching Networks); (3) presentation issues—writing quality is poor with grammatical errors, vague explanations of how orthogonal grouping prevents overfitting, and missing ablations on key design choices; (4) limited scope—no evaluation on standard few-shot benchmarks (miniImageNet, tieredImageNet) that are now standard in the field, making it impossible to assess competitiveness with contemporary work."
+      },
+      "token": {
+        "prompt_tokens": 8013,
+        "completion_tokens": 245,
+        "total_tokens": 8258
+      },
+      "time": "2026-02-11T19:15:22.570167+00:00"
     }
   ],
   "test": false

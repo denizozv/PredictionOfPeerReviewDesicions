@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Landmark dataset paper with significant real-world impact. MS MARCO addresses genuine weaknesses in prior RC datasets (real queries, human answers, web-scale), enables reproducible benchmarking, and has become foundational for the field. Strong experimental validation across multiple model architectures."
-      },
-      "token": {
-        "prompt_tokens": 3041,
-        "completion_tokens": 94,
-        "total_tokens": 3135
-      },
-      "time": "2026-02-08T22:39:18.679266+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 5345
       },
       "time": "2026-02-09T20:42:19.704466+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Introduces MS MARCO, a large-scale (1M queries), real-world machine reading comprehension dataset sourced from actual Bing queries and web documents with human-generated answers. Addresses key weaknesses of prior datasets (SQuAD, CNN/DailyMail) by using authentic user queries rather than synthetic questions, includes multiple reference answers, and provides comprehensive quality control. Demonstrates utility through baseline experiments with generative and cloze-style models. High-impact resource contribution that has enabled substantial follow-up research."
+      },
+      "token": {
+        "prompt_tokens": 5775,
+        "completion_tokens": 150,
+        "total_tokens": 5925
+      },
+      "time": "2026-02-11T19:15:19.183368+00:00"
     }
   ],
   "test": false

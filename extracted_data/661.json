@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel semi-supervised training objective combining neural networks with graph-based label propagation; principled formulation with theoretical connections; diverse experimental validation across multiple architectures (NN, CNN, LSTM) and domains; scalable via SGD. However, limited novelty in individual components and modest empirical improvements reduce confidence."
-      },
-      "token": {
-        "prompt_tokens": 4033,
-        "completion_tokens": 102,
-        "total_tokens": 4135
-      },
-      "time": "2026-02-08T22:39:12.617013+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 6243
       },
       "time": "2026-02-09T20:41:57.823424+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled training objective that unifies neural networks with graph-based label propagation by adding graph-regularization terms encouraging similar hidden representations for neighboring nodes. The method is general (works with NNs, CNNs, LSTMs), scalable via SGD, and validated across diverse tasks (social graphs, text classification, intent classification) with consistent improvements, especially in low-data regimes. However, confidence is moderate due to: limited novelty (straightforward combination of supervised loss + graph smoothness regularization), modest empirical gains, weak baselines in some experiments, and lack of deeper analysis of when/why the approach helps."
+      },
+      "token": {
+        "prompt_tokens": 6767,
+        "completion_tokens": 173,
+        "total_tokens": 6940
+      },
+      "time": "2026-02-11T19:15:07.639281+00:00"
     }
   ],
   "test": false

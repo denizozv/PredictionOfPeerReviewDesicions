@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel theoretical contribution (orthogonal transformation proof), practical improvements (inverted softmax), comprehensive experiments including pseudo-dictionaries and sentence-level translation. Solid methodological advance with clear empirical validation."
-      },
-      "token": {
-        "prompt_tokens": 6047,
-        "completion_tokens": 78,
-        "total_tokens": 6125
-      },
-      "time": "2026-02-08T22:14:24.424104+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 8225
       },
       "time": "2026-02-09T20:18:02.775057+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid theoretical contribution (orthogonal transformation proof) with practical improvements (inverted softmax) and thorough empirical validation across multiple settings (expert dictionaries, pseudo-dictionaries, aligned sentences). The work unifies existing approaches and demonstrates robustness to noisy/weak supervision, though the core orthogonal insight was independently discovered concurrently."
+      },
+      "token": {
+        "prompt_tokens": 8781,
+        "completion_tokens": 110,
+        "total_tokens": 8891
+      },
+      "time": "2026-02-11T18:39:14.040296+00:00"
     }
   ],
   "test": false

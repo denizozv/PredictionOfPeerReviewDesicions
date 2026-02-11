@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel theoretical framework for permutation-equivariant/invariant layers with rigorous mathematical foundation (Theorem 2.1), elegant parameter-sharing design, and diverse well-motivated applications (point clouds, set anomaly detection, cosmology). Strong experimental validation across multiple domains with clear scientific contribution to deep learning on unordered data."
-      },
-      "token": {
-        "prompt_tokens": 6905,
-        "completion_tokens": 107,
-        "total_tokens": 7012
-      },
-      "time": "2026-02-08T22:24:19.868844+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 8740
       },
       "time": "2026-02-09T20:26:25.669230+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Introduces a theoretically grounded and elegant permutation-equivariant layer with clear mathematical foundation (Theorem 2.1), demonstrates broad applicability across diverse tasks (point clouds, MNIST summation, anomaly detection, cosmology), and provides convincing empirical validation including strong point-cloud classification results and insightful ablations showing when permutation invariance is crucial."
+      },
+      "token": {
+        "prompt_tokens": 9639,
+        "completion_tokens": 117,
+        "total_tokens": 9756
+      },
+      "time": "2026-02-11T18:53:17.345314+00:00"
     }
   ],
   "test": false

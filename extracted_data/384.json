@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.75,
-        "primary_reason": "Novel combination of match-LSTM and Pointer Networks for span extraction; strong empirical results on SQuAD and MSMARCO; thorough ablation studies and error analysis; clear methodological contribution to machine reading comprehension."
-      },
-      "token": {
-        "prompt_tokens": 5893,
-        "completion_tokens": 85,
-        "total_tokens": 5978
-      },
-      "time": "2026-02-08T22:09:11.743888+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 7934
       },
       "time": "2026-02-09T20:13:34.155509+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a well-motivated combination of match-LSTM and Pointer Networks for span-based QA, introduces a practical boundary model that outperforms prior work on SQuAD and MSMARCO, includes solid ablations and error analysis, though the core technical novelty is primarily architectural assembly of existing components rather than fundamentally new methods."
+      },
+      "token": {
+        "prompt_tokens": 8627,
+        "completion_tokens": 110,
+        "total_tokens": 8737
+      },
+      "time": "2026-02-11T18:32:09.784397+00:00"
     }
   ],
   "test": false

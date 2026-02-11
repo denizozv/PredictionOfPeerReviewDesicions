@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Limited novelty: stacking MFA for initialization is incremental; standard techniques (backprop, dropout, denoising) are not novel. Weak experimental validation: small/medium datasets only, no statistical significance testing, unfair comparisons (gray-CIFAR10 is artificially handicapped), missing comparisons with modern deep learning methods. Presentation issues: grammatical errors, unclear motivation for MFA choice over alternatives, no theoretical justification. The core contribution—using MFA for weight initialization—lacks depth and generalizability."
-      },
-      "token": {
-        "prompt_tokens": 5200,
-        "completion_tokens": 150,
-        "total_tokens": 5350
-      },
-      "time": "2026-02-08T22:43:08.427254+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -168,6 +154,20 @@
         "total_tokens": 7272
       },
       "time": "2026-02-09T20:45:38.404753+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper proposes stacking Marginal Fisher Analysis (MFA) layers for deep learning on small/medium datasets, but the contribution is incremental: it combines existing techniques (MFA + standard deep learning tricks like dropout/denoising) without novel methodology or theoretical insight. Experiments are limited to small datasets where deep learning is not the natural baseline; comparisons lack rigor (weak baselines, no statistical significance testing, cherry-picked architectures); writing quality is poor with grammatical errors and unclear presentation; and the claimed advantage over standard deep networks is not convincingly demonstrated—results are often marginal and sometimes worse than baselines (e.g., Sensor dataset). The work reads as an engineering exercise rather than a research contribution suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 7934,
+        "completion_tokens": 205,
+        "total_tokens": 8139
+      },
+      "time": "2026-02-11T19:20:08.127979+00:00"
     }
   ],
   "test": false

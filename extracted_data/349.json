@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel interactive reasoning task with well-designed synthetic domain, thoughtful RL formulation for ambiguity resolution, and systematic experimental analysis across complexity dimensions. Solid contribution despite limited architectural novelty."
-      },
-      "token": {
-        "prompt_tokens": 5213,
-        "completion_tokens": 76,
-        "total_tokens": 5289
-      },
-      "time": "2026-02-08T22:06:19.253484+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 7354
       },
       "time": "2026-02-09T20:10:39.264015+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper introduces a synthetic domain (QRAQ) and applies existing memory-network architectures with modest architectural modifications (soft attention over hops in impRL). While the domain design is thoughtful, the core technical contribution is incremental: impRL is a straightforward extension of end-to-end memory networks. The RL results show significant performance gaps versus supervised baselines on complex problems, suggesting the approach does not robustly learn the required reasoning. The evaluation is limited to synthetic data with no comparison to other reasoning or dialogue systems, and the practical impact is unclear. The work reads more as a dataset paper with standard baselines than a methodological advance."
+      },
+      "token": {
+        "prompt_tokens": 7946,
+        "completion_tokens": 173,
+        "total_tokens": 8119
+      },
+      "time": "2026-02-11T18:26:53.037325+00:00"
     }
   ],
   "test": false

@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel architecture for interpretable equation learning with strong extrapolation capability, rigorous experimental validation across synthetic and real physics problems, addresses fundamental gap between black-box ML and scientific discovery."
-      },
-      "token": {
-        "prompt_tokens": 6388,
-        "completion_tokens": 73,
-        "total_tokens": 6461
-      },
-      "time": "2026-02-08T22:28:04.459427+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 8485
       },
       "time": "2026-02-09T20:29:41.367861+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel architecture (EQL) with interpretable basis functions (sin, cos, products) designed specifically for extrapolation; demonstrates strong empirical results on synthetic physics tasks (pendulum, kinematics, robotic arms) and real data (X-ray energies) where it recovers true equations; includes thoughtful hybrid regularization strategy and sparsity-based model selection; honest discussion of failure modes (cart-pendulum with divisions). Main weaknesses: limited theoretical justification, modest baseline comparisons (MLP/SVR only), and some local minima issues (F-3), but overall a solid methodological contribution with clear practical value for scientific discovery."
+      },
+      "token": {
+        "prompt_tokens": 9122,
+        "completion_tokens": 175,
+        "total_tokens": 9297
+      },
+      "time": "2026-02-11T18:58:08.478537+00:00"
     }
   ],
   "test": false

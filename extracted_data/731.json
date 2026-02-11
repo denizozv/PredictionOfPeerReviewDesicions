@@ -72,20 +72,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Incremental extension of existing work (Paragraph Vector) with limited novelty. Binary encoding via sigmoid rounding is straightforward application rather than fundamental methodological contribution. Experiments limited to document retrieval on two standard datasets with comparisons mainly to semantic hashing (2009). Lacks depth in analysis and broader impact for modern NLP."
-      },
-      "token": {
-        "prompt_tokens": 4295,
-        "completion_tokens": 106,
-        "total_tokens": 4401
-      },
-      "time": "2026-02-08T22:45:19.212764+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -98,6 +84,20 @@
         "total_tokens": 6432
       },
       "time": "2026-02-09T20:48:55.449293+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical contribution extending Paragraph Vector to binary codes for efficient document retrieval. Demonstrates clear practical improvements over semantic hashing baselines with thorough experiments on standard benchmarks (20 Newsgroups, RCV1), useful transfer learning analysis, and a practical two-tier retrieval model. However, the core technical novelty is somewhat incremental (applying existing binarization techniques to PV), and the paper lacks deeper theoretical insights or analysis of why the approach works."
+      },
+      "token": {
+        "prompt_tokens": 7029,
+        "completion_tokens": 137,
+        "total_tokens": 7166
+      },
+      "time": "2026-02-11T19:24:07.309852+00:00"
     }
   ],
   "test": false

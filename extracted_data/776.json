@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel iterative refinement approach with dual attention mechanism for post-editing machine translation. Well-motivated problem, technically sound methodology combining error detection and context-aware word substitution, comprehensive experimental analysis with oracle studies. Modest but consistent BLEU improvements demonstrate practical value. Solid contribution to neural MT, though incremental gains limit impact."
-      },
-      "token": {
-        "prompt_tokens": 5172,
-        "completion_tokens": 105,
-        "total_tokens": 5277
-      },
-      "time": "2026-02-08T22:49:18.585983+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 7262
       },
       "time": "2026-02-09T20:52:59.353197+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The iterative refinement approach is limited to token substitutions with narrow context windows, cannot perform insertions/deletions/reordering, and yields only modest gains (+0.4 BLEU with <1 edit/sentence). Weak baselines and insufficient evidence that iterative refinement beats simpler alternatives (stronger initial systems, reranking, or globally-scored decoding). The oracle analysis reveals the model's conservative predictions are the bottleneck, not the refinement strategy, undermining the core contribution."
+      },
+      "token": {
+        "prompt_tokens": 7906,
+        "completion_tokens": 145,
+        "total_tokens": 8051
+      },
+      "time": "2026-02-11T19:29:22.338465+00:00"
     }
   ],
   "test": false

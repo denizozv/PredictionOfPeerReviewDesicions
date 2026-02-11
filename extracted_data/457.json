@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel incremental quantization strategy with strong empirical results on ImageNet across multiple architectures; achieves lossless low-precision conversion (5-bit, 4-bit) through weight partitioning and iterative retraining—a meaningful contribution to network compression with practical hardware implications."
-      },
-      "token": {
-        "prompt_tokens": 6727,
-        "completion_tokens": 97,
-        "total_tokens": 6824
-      },
-      "time": "2026-02-08T22:18:12.778844+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 8641
       },
       "time": "2026-02-09T20:21:14.080146+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Proposes a practical and well-motivated incremental quantization strategy (weight partition + group-wise quantization + retraining) that achieves lossless or near-lossless low-precision CNNs (5-bit, 4-bit, 3-bit) across multiple architectures (AlexNet, VGG, GoogleNet, ResNets) on ImageNet; includes thorough ablations on partition strategies and bit-width trade-offs, and demonstrates strong compression results (53× with 5-bit) when combined with pruning, though the core technical novelty is somewhat incremental and the method requires careful hyperparameter tuning per architecture."
+      },
+      "token": {
+        "prompt_tokens": 9461,
+        "completion_tokens": 180,
+        "total_tokens": 9641
+      },
+      "time": "2026-02-11T18:44:17.879059+00:00"
     }
   ],
   "test": true

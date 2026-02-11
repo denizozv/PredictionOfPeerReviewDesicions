@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel application of distributed representations to multi-field categorical data with reasonable methodological contribution (pairwise interactions + K-max pooling). Solid experimental validation on both synthetic and real datasets (CTR prediction). However, limited theoretical novelty and incremental improvements over baselines reduce confidence for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 4202,
-        "completion_tokens": 100,
-        "total_tokens": 4302
-      },
-      "time": "2026-02-08T22:45:06.481956+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 6518
       },
       "time": "2026-02-09T20:48:10.643609+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper proposes a straightforward application of neural interaction layers and pooling to categorical data representation, but the contribution is incremental: the core idea (learning embeddings + pairwise interactions via gates + K-max pooling) combines existing techniques without significant novelty. The synthetic experiments are somewhat artificial and the real-world CTR results show only modest improvements over baselines (FNN, CCPM) without convincing ablations or analysis of what the model learns. The writing is unclear in places, and the connection to Word2Vec is superficial—the method lacks the principled unsupervised objective that makes Word2Vec compelling. Overall, the work is a competent engineering contribution but falls short of the originality and insight expected at ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 6936,
+        "completion_tokens": 205,
+        "total_tokens": 7141
+      },
+      "time": "2026-02-11T19:23:08.107893+00:00"
     }
   ],
   "test": false

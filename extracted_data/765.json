@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Incremental extension of Oh et al. (2015) with limited novelty. Simply adds a softmax layer for reward prediction to existing video frame prediction architecture. Narrow experimental scope (5 Atari games), weak baselines (only marginal distribution), and results degrade significantly beyond 20-26 steps. Lacks theoretical insight and broader impact for model-based RL."
-      },
-      "token": {
-        "prompt_tokens": 5960,
-        "completion_tokens": 118,
-        "total_tokens": 6078
-      },
-      "time": "2026-02-08T22:48:22.937347+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 7902
       },
       "time": "2026-02-09T20:51:53.053928+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.78,
+        "primary_reason": "Incremental extension of Oh et al. (2015) with modest technical contribution (adding softmax reward head to existing architecture); limited experimental scope (5 Atari games, only 26-51 steps accurate prediction); no demonstration of downstream utility for RL or planning; weak baselines (only marginal reward distribution); insufficient novelty and impact for top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 8694,
+        "completion_tokens": 116,
+        "total_tokens": 8810
+      },
+      "time": "2026-02-11T19:28:15.938363+00:00"
     }
   ],
   "test": false

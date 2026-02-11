@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel empirical finding that random filters in shallow networks can synthesize natural textures comparably to deep supervised networks; well-designed ablation studies systematically isolate critical components (multi-scale, non-linearity, filter count); strong experimental validation with perceptual metrics; challenges conventional wisdom about deep learning for generative tasks."
-      },
-      "token": {
-        "prompt_tokens": 3716,
-        "completion_tokens": 104,
-        "total_tokens": 3820
-      },
-      "time": "2026-02-08T22:05:06.413175+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -103,6 +89,20 @@
         "total_tokens": 5819
       },
       "time": "2026-02-09T20:09:11.316500+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Strong empirical contribution demonstrating that high-quality texture synthesis requires neither deep networks, pooling, nor trained filters—only single-layer CNNs with random filters and multi-scale processing. Thorough ablations (filter types, scales, nonlinearities) provide clear mechanistic insights. Convincing qualitative and quantitative results (VGG-based metrics) validate surprising findings with practical implications for understanding texture generation."
+      },
+      "token": {
+        "prompt_tokens": 6448,
+        "completion_tokens": 126,
+        "total_tokens": 6574
+      },
+      "time": "2026-02-11T18:23:15.442079+00:00"
     }
   ],
   "test": true

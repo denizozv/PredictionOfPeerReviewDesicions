@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel weakly-supervised framework combining adversarial imagination priors with differentiable renderers for inverse problems; demonstrates generalization across multiple vision tasks (inpainting, intrinsic decomposition, figure-ground extraction) with principled design. However, experiments are limited in scale (MNIST, small datasets) and lack quantitative comparisons with state-of-the-art methods, which moderates acceptance confidence."
-      },
-      "token": {
-        "prompt_tokens": 3583,
-        "completion_tokens": 123,
-        "total_tokens": 3706
-      },
-      "time": "2026-02-08T22:35:04.790022+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 5834
       },
       "time": "2026-02-09T20:37:19.917834+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel framework combining adversarial priors with differentiable renderers for weakly-supervised inverse problems; demonstrates compelling results across three diverse vision tasks (inpainting, intrinsic decomposition, figure-ground extraction) with principled use of memory retrieval and fully-convolutional discriminators; shows generalization to unseen objects without paired supervision, though evaluation is somewhat limited in scope and rigor."
+      },
+      "token": {
+        "prompt_tokens": 6317,
+        "completion_tokens": 121,
+        "total_tokens": 6438
+      },
+      "time": "2026-02-11T19:08:07.025860+00:00"
     }
   ],
   "test": false

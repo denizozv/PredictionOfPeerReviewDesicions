@@ -187,20 +187,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel multi-task architecture with successive regularization, strong empirical results across 5 diverse NLP tasks, thorough ablation studies, and clear scientific contribution to joint learning."
-      },
-      "token": {
-        "prompt_tokens": 9749,
-        "completion_tokens": 73,
-        "total_tokens": 9822
-      },
-      "time": "2026-02-08T22:31:12.307498+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -213,6 +199,20 @@
         "total_tokens": 11382
       },
       "time": "2026-02-09T20:33:42.173943+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Strong empirical contribution: proposes a well-motivated joint many-task architecture with successive regularization and shortcut connections that achieves state-of-the-art results across five diverse NLP tasks (POS, chunking, parsing, semantic relatedness, entailment); includes thorough ablations validating each design choice and insightful analysis of how shared representations adapt across tasks; demonstrates that joint training improves even low-level tasks, with a notably simple greedy dependency parser outperforming beam-search baselines."
+      },
+      "token": {
+        "prompt_tokens": 12483,
+        "completion_tokens": 147,
+        "total_tokens": 12630
+      },
+      "time": "2026-02-11T19:03:13.875241+00:00"
     }
   ],
   "test": false

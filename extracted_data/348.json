@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel theoretical framework grounding equivariant CNNs in group representation theory with practical efficiency gains and strong empirical results on CIFAR benchmarks."
-      },
-      "token": {
-        "prompt_tokens": 6176,
-        "completion_tokens": 68,
-        "total_tokens": 6244
-      },
-      "time": "2026-02-08T22:06:17.424337+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -163,6 +149,20 @@
         "total_tokens": 8238
       },
       "time": "2026-02-09T20:10:32.186767+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Presents a principled and mathematically rigorous framework for building equivariant CNNs using group representation theory, introduces the concept of steerable representations and capsules with clear type systems, demonstrates how to efficiently parameterize equivariant filter banks, and validates with strong empirical results (SOTA on CIFAR-10/100). The theoretical contribution is substantial and well-executed, with practical applicability and thorough mathematical exposition."
+      },
+      "token": {
+        "prompt_tokens": 8909,
+        "completion_tokens": 129,
+        "total_tokens": 9038
+      },
+      "time": "2026-02-11T18:26:49.877547+00:00"
     }
   ],
   "test": false

@@ -167,20 +167,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty (heuristic normalization without theoretical justification), weak experimental validation (small datasets, no comparison with saddle point escape methods, hyperparameter selection ad-hoc), unclear mechanism (metaphor-based rather than principled), and presentation issues (incomplete sections, missing related work discussion)."
-      },
-      "token": {
-        "prompt_tokens": 3957,
-        "completion_tokens": 100,
-        "total_tokens": 4057
-      },
-      "time": "2026-02-08T22:28:06.535102+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -193,6 +179,20 @@
         "total_tokens": 6223
       },
       "time": "2026-02-09T20:29:49.272052+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper proposes a heuristic normalization technique (CPN) motivated by an informal 'charged point' metaphor, but lacks rigorous justification, theoretical grounding, and convincing empirical validation. The method introduces multiple hyperparameters with ad-hoc tuning (4-8 manual adjustments), shows inconsistent/chaotic behavior on realistic datasets (CIFAR), doubles memory requirements, and suffers from numerical instability. Experiments are limited in scope (small subsets of data, weak baselines, no comparison to modern saddle-point escape methods like noisy SGD or second-order approaches), and the core claim that CPN escapes saddle points is supported only by a toy 2D example and eigenvalue histograms without rigorous analysis. The writing is informal and the contribution is primarily empirical without sufficient depth, novelty, or practical advantage to warrant acceptance at a top venue."
+      },
+      "token": {
+        "prompt_tokens": 6691,
+        "completion_tokens": 232,
+        "total_tokens": 6923
+      },
+      "time": "2026-02-11T18:58:12.505311+00:00"
     }
   ],
   "test": false

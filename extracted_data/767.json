@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: applying standard actor-critic RL to learning rate scheduling is straightforward. Weak experimental validation: only MNIST/CIFAR-10 with modest improvements, no statistical significance testing, limited baselines (missing recent meta-learning approaches like L2L, MAML). Computational overhead not analyzed. State representation (average loss) is overly simplistic. Method lacks theoretical justification and generalization analysis across architectures/domains."
-      },
-      "token": {
-        "prompt_tokens": 5810,
-        "completion_tokens": 131,
-        "total_tokens": 5941
-      },
-      "time": "2026-02-08T22:48:28.169492+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 7942
       },
       "time": "2026-02-09T20:52:08.646000+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The core idea of using RL to learn learning rates is reasonable but the execution and validation are insufficient: experiments are limited to toy datasets (MNIST, CIFAR-10 with simple CNNs), improvements are marginal and within noise margins, the method introduces significant computational overhead (training two additional networks) without clear justification, and lacks rigorous ablations, theoretical analysis, or demonstration on modern architectures and realistic problems."
+      },
+      "token": {
+        "prompt_tokens": 8548,
+        "completion_tokens": 125,
+        "total_tokens": 8673
+      },
+      "time": "2026-02-11T19:33:04.535484+00:00"
     }
   ],
   "test": true

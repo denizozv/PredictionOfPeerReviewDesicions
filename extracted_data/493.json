@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty with incremental contribution. Core idea (tighter bounds via iterative recomputation) is straightforward application of existing CCCP concepts. Experiments weak: only linear models on standard datasets with modest improvements; no deep learning validation despite claims; policy optimization section underdeveloped and disconnected from main contribution."
-      },
-      "token": {
-        "prompt_tokens": 4380,
-        "completion_tokens": 103,
-        "total_tokens": 4483
-      },
-      "time": "2026-02-08T22:22:29.264302+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 6655
       },
       "time": "2026-02-09T20:24:47.256157+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The core idea of tightening bounds during optimization is incremental and not sufficiently novel. The method is essentially a reweighting scheme (importance weighting based on current parameters) applied iteratively, which is conceptually straightforward. Experimental validation is weak: improvements are modest and inconsistent across datasets (e.g., Alpha dataset shows no benefit), limited to simple linear models, and lack rigorous comparison to related work (CCCP-based methods are mentioned but not thoroughly compared). The policy optimization framing in Section 4, while interesting, feels disconnected from the main contribution and the applications (ROC curves, uncertainty) are underdeveloped. Overall, the paper lacks sufficient novelty, rigor, and empirical impact for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7114,
+        "completion_tokens": 196,
+        "total_tokens": 7310
+      },
+      "time": "2026-02-11T18:51:06.364155+00:00"
     }
   ],
   "test": false

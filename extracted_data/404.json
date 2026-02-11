@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel architecture combining convolutional and minimalist recurrent pooling for improved parallelism and speed while maintaining competitive accuracy. Strong empirical validation across multiple NLP tasks (sentiment, language modeling, machine translation) with significant computational speedups (up to 16x). Clear methodological contribution with practical impact."
-      },
-      "token": {
-        "prompt_tokens": 5666,
-        "completion_tokens": 99,
-        "total_tokens": 5765
-      },
-      "time": "2026-02-08T22:12:25.511310+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -138,6 +124,20 @@
         "total_tokens": 7507
       },
       "time": "2026-02-09T20:15:43.663352+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Introduces a novel and practical architecture (QRNNs) that achieves better accuracy than LSTMs while being 3-16x faster through clever parallelization of convolutions and minimalist recurrent pooling; demonstrates strong empirical results across three diverse NLP tasks (sentiment, language modeling, machine translation) with thorough ablations and speed analysis, plus useful regularization extensions (zoneout adaptation, dense connections); makes a clear architectural contribution with significant practical impact."
+      },
+      "token": {
+        "prompt_tokens": 8400,
+        "completion_tokens": 136,
+        "total_tokens": 8536
+      },
+      "time": "2026-02-11T18:36:06.777204+00:00"
     }
   ],
   "test": false

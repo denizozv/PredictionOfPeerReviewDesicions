@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel semi-supervised VAE framework with structured graphical model encoders, principled auxiliary variable formulation for balancing supervised/unsupervised learning, and comprehensive experiments demonstrating disentangled representation learning across multiple domains."
-      },
-      "token": {
-        "prompt_tokens": 5618,
-        "completion_tokens": 83,
-        "total_tokens": 5701
-      },
-      "time": "2026-02-08T22:32:19.037778+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 7615
       },
       "time": "2026-02-09T20:34:37.064269+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled semi-supervised VAE framework with structured graphical model encoders that enables flexible disentanglement learning from minimal labels. The auxiliary variable formulation elegantly unifies supervised/unsupervised objectives without hyperparameter tuning. Demonstrates solid empirical results on MNIST, SVHN, faces, and multi-MNIST with good qualitative and quantitative evaluation, though the novelty is somewhat incremental over prior work (Kingma et al. 2014) and the scope is limited to relatively simple datasets."
+      },
+      "token": {
+        "prompt_tokens": 8352,
+        "completion_tokens": 152,
+        "total_tokens": 8504
+      },
+      "time": "2026-02-11T19:04:28.267775+00:00"
     }
   ],
   "test": false

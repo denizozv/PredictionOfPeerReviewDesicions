@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel framework treating reference as explicit latent variable with principled probabilistic formulation; demonstrates generality across three diverse tasks (dialogue, recipe generation, coreference); solid experimental validation with meaningful ablations."
-      },
-      "token": {
-        "prompt_tokens": 5449,
-        "completion_tokens": 78,
-        "total_tokens": 5527
-      },
-      "time": "2026-02-08T22:43:22.357073+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 7596
       },
       "time": "2026-02-09T20:46:30.166314+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a general and principled framework treating reference as an explicit latent variable, with clear instantiations across three diverse tasks (dialogue with database, recipe generation, coreference LM). The latent variable formulation is well-motivated and the table pointer mechanism is a useful contribution. However, empirical gains are modest and inconsistent across tasks (latent model underperforms on dialogue), evaluation is limited (small datasets, weak baselines, no comparison to prior reference-aware methods), and analysis of when/why the approach helps is shallow. The work is solid but incremental."
+      },
+      "token": {
+        "prompt_tokens": 8183,
+        "completion_tokens": 159,
+        "total_tokens": 8342
+      },
+      "time": "2026-02-11T19:21:06.660841+00:00"
     }
   ],
   "test": false

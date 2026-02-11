@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel theoretical framework (noisy channel formulation for seq2seq), principled handling of explaining-away effects, ability to leverage unpaired data, strong empirical results across three diverse tasks (summarization, MT, morphology), and clear methodological contribution with tractable inference."
-      },
-      "token": {
-        "prompt_tokens": 5637,
-        "completion_tokens": 93,
-        "total_tokens": 5730
-      },
-      "time": "2026-02-08T22:16:18.126904+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 7568
       },
       "time": "2026-02-09T20:19:48.483941+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Novel reformulation of seq2seq as noisy channel decoding with principled probabilistic framework; demonstrates consistent empirical gains across three diverse tasks (summarization, MT, morphology); key insight that channel models can leverage unpaired output data; well-motivated latent alignment variable enables tractable inference; thorough experimental validation with ablations and qualitative analysis showing the model avoids explaining-away effects."
+      },
+      "token": {
+        "prompt_tokens": 8371,
+        "completion_tokens": 119,
+        "total_tokens": 8490
+      },
+      "time": "2026-02-11T18:42:13.640367+00:00"
     }
   ],
   "test": false

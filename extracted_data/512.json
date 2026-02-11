@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel nonparametric activation function learning via Fourier basis with theoretical generalization bounds and consistent empirical improvements across datasets. Solid contribution despite modest experimental gains."
-      },
-      "token": {
-        "prompt_tokens": 8524,
-        "completion_tokens": 70,
-        "total_tokens": 8594
-      },
-      "time": "2026-02-08T22:24:15.390003+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 10291
       },
       "time": "2026-02-09T20:26:11.213540+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents a reasonable idea (learning activation functions via Fourier basis expansion) with theoretical generalization bounds, the empirical gains are modest (5-15% relative improvement on MNIST/CIFAR-10), the method requires a cumbersome two-stage training procedure that adds complexity, and the theoretical bounds are loose and not particularly insightful. The contribution feels incremental—learning activation functions is not novel, and Fourier basis expansion is a straightforward choice. The experimental validation is limited to toy datasets (MNIST, CIFAR-10) with no comparison to other learnable activation function approaches (e.g., PReLU, Swish, or other parametric variants), making it difficult to assess the true merit of the approach. The generalization theory, while present, relies on standard stability arguments and produces bounds that grow exponentially with network depth, limiting practical relevance."
+      },
+      "token": {
+        "prompt_tokens": 11258,
+        "completion_tokens": 225,
+        "total_tokens": 11483
+      },
+      "time": "2026-02-11T18:53:09.893950+00:00"
     }
   ],
   "test": false

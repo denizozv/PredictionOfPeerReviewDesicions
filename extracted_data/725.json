@@ -147,20 +147,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel intermediate model (Simplified-SFNN) with theoretical guarantees for parameter transfer from DNN to SFNN; solid experimental validation across multiple tasks and architectures; addresses practical training challenges of stochastic networks."
-      },
-      "token": {
-        "prompt_tokens": 10620,
-        "completion_tokens": 82,
-        "total_tokens": 10702
-      },
-      "time": "2026-02-08T22:45:12.863210+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -173,6 +159,20 @@
         "total_tokens": 12030
       },
       "time": "2026-02-09T20:48:35.154410+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper proposes Simplified-SFNN as an intermediate model to enable efficient training of stochastic neural networks from pretrained DNNs. While the theoretical framework (Theorems 1-3) is sound and the empirical results show consistent improvements, the contribution is primarily incremental: the core idea is a parameter transformation scheme with modest regularization gains (~0.08-0.58% on CIFAR), limited experimental scope (mostly small datasets like MNIST, CIFAR), and the practical impact is unclear given that standard regularization (dropout, batch norm) already achieves similar effects. The paper lacks compelling evidence that the added complexity of Simplified-SFNN training justifies its use over simpler alternatives."
+      },
+      "token": {
+        "prompt_tokens": 13354,
+        "completion_tokens": 189,
+        "total_tokens": 13543
+      },
+      "time": "2026-02-11T19:23:19.271814+00:00"
     }
   ],
   "test": false

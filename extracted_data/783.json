@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid empirical study revisiting synchronous SGD with backup workers for straggler mitigation. Clear practical contribution with thorough experiments on Inception and PixelCNN, demonstrating faster convergence and better test accuracy than asynchronous approaches. However, limited theoretical novelty and incremental nature of the core idea (backup workers are known technique) prevent higher confidence."
-      },
-      "token": {
-        "prompt_tokens": 5419,
-        "completion_tokens": 114,
-        "total_tokens": 5533
-      },
-      "time": "2026-02-08T22:50:10.351431+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 7413
       },
       "time": "2026-02-09T20:53:49.901405+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical study revisiting synchronous SGD with backup workers for distributed training. Provides useful practical insights (staleness effects, straggler mitigation trade-offs) and demonstrates consistent improvements over async-SGD on Inception and PixelCNN. However, the core contribution—using backup workers to mitigate stragglers in sync training—is relatively incremental and not deeply novel; the paper is primarily an empirical validation of a straightforward idea rather than introducing fundamentally new methodology or theory. Experiments are reasonably thorough but limited to two models, and the writing could be more polished."
+      },
+      "token": {
+        "prompt_tokens": 8153,
+        "completion_tokens": 166,
+        "total_tokens": 8319
+      },
+      "time": "2026-02-11T19:31:04.255072+00:00"
     }
   ],
   "test": false

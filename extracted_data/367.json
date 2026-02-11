@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical framework with rigorous minimax analysis, convex optimization guarantees, and competitive empirical results. However, limited to binary autoencoders and single-layer decoders, with modest experimental scope and unclear practical advantages over standard methods."
-      },
-      "token": {
-        "prompt_tokens": 11561,
-        "completion_tokens": 87,
-        "total_tokens": 11648
-      },
-      "time": "2026-02-08T22:08:04.004093+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -178,6 +164,20 @@
         "total_tokens": 12865
       },
       "time": "2026-02-09T20:12:02.777286+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents a theoretically elegant minimax formulation for binary autoencoders with convex optimization guarantees, the practical impact is limited: experiments show PC-AE is only competitive with (not superior to) standard backprop-trained autoencoders on standard benchmarks, the restriction to binary data and pairwise correlations is overly conservative, and the single-layer decoder constraint severely limits applicability to modern deep learning. The theoretical contribution, though solid, does not sufficiently compensate for weak empirical validation and narrow scope."
+      },
+      "token": {
+        "prompt_tokens": 14295,
+        "completion_tokens": 151,
+        "total_tokens": 14446
+      },
+      "time": "2026-02-11T18:30:10.202637+00:00"
     }
   ],
   "test": false

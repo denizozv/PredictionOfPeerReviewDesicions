@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel differentiable programming language interpreter with strong theoretical foundation, creative integration of neural networks with symbolic computation, and compelling empirical results on generalization tasks with limited data."
-      },
-      "token": {
-        "prompt_tokens": 7050,
-        "completion_tokens": 70,
-        "total_tokens": 7120
-      },
-      "time": "2026-02-08T22:24:11.703109+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 9032
       },
       "time": "2026-02-09T20:25:56.371666+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel differentiable Forth interpreter with learnable program sketches that effectively incorporates procedural prior knowledge; demonstrates strong generalization on sorting/addition tasks with minimal training data and clear ablations on sketch structure; solid technical contribution with practical optimizations, though evaluation scope is limited to synthetic tasks and comparison baselines are weak."
+      },
+      "token": {
+        "prompt_tokens": 9784,
+        "completion_tokens": 102,
+        "total_tokens": 9886
+      },
+      "time": "2026-02-11T18:52:24.287577+00:00"
     }
   ],
   "test": false

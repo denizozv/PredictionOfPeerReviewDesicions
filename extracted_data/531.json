@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel architectural framework combining graphics pipeline principles with neural networks for interpretable video generation. Strong theoretical foundation (VAE-based statistical model) and explicit what-where factorization with architectural constraints. Reasonable experimental validation on synthetic and Moving MNIST datasets, though results lag state-of-the-art and evaluation could be more comprehensive."
-      },
-      "token": {
-        "prompt_tokens": 5359,
-        "completion_tokens": 104,
-        "total_tokens": 5463
-      },
-      "time": "2026-02-08T22:26:21.978025+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 7462
       },
       "time": "2026-02-09T20:28:17.886625+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper proposes an interesting graphics-inspired architecture for video generation with explicit what-where decomposition, but suffers from: (1) incomplete experimental validation—Moving MNIST results (239 nats) are substantially worse than baselines (87 nats from Video Pixel Networks), with no convincing justification; (2) limited scope—experiments only on toy synthetic data and Moving MNIST, with weak baselines (vanilla LSTMs); (3) presentation issues—missing figures (Fig. ??), incomplete ablations, and unclear practical advantages; (4) the core claim about interpretability via architectural constraints is demonstrated only qualitatively on simple synthetic tasks; (5) no comparison to other structured video models or disentanglement approaches. While the statistical framework is sound, the empirical evidence for the method's utility is insufficient for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 8093,
+        "completion_tokens": 218,
+        "total_tokens": 8311
+      },
+      "time": "2026-02-11T18:56:11.200761+00:00"
     }
   ],
   "test": false

@@ -217,20 +217,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in pruning methodology, narrow experimental scope (toy datasets + MNIST only), weak baselines, and lack of modern context. The core contribution—neuron-level pruning via Taylor approximation—is incremental over classical work (OBD, OBS). No comparison with contemporary pruning methods, no large-scale validation, and presentation issues (missing figures, incomplete sections) suggest early-stage work unsuitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 9632,
-        "completion_tokens": 131,
-        "total_tokens": 9763
-      },
-      "time": "2026-02-08T22:41:24.702043+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -243,6 +229,20 @@
         "total_tokens": 11583
       },
       "time": "2026-02-09T20:44:23.982529+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper proposes neuron-level pruning using Taylor approximations but demonstrates that the proposed second-order method significantly underperforms a brute-force oracle across most experiments, undermining the core contribution. The work is primarily an empirical study on small toy problems (MNIST subset, cosine function) with limited novelty—neuron pruning and Taylor-based ranking are well-established techniques. The paper lacks rigorous evaluation on modern architectures/datasets, provides no theoretical justification for when/why the method should work, and the key finding (that brute-force is much better) actually argues against the practical utility of the proposed approach. Writing quality is poor with incomplete sections (e.g., 'Figure ??'), missing experimental details, and no comparison to contemporary pruning methods (lottery ticket, magnitude pruning, etc.). The insights about non-uniform neuron importance, while interesting, are not sufficiently novel or rigorously validated to compensate for weak methodology and limited scope."
+      },
+      "token": {
+        "prompt_tokens": 12366,
+        "completion_tokens": 245,
+        "total_tokens": 12611
+      },
+      "time": "2026-02-11T19:18:12.909704+00:00"
     }
   ],
   "test": true

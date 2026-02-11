@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Simple but effective technique with broad empirical validation across diverse architectures (deep FC nets, Memory Networks, Neural Programmer, NRAM, Neural GPUs). Practical contribution with consistent improvements and minimal hyperparameter tuning. Solid experimental methodology despite limited theoretical novelty."
-      },
-      "token": {
-        "prompt_tokens": 4402,
-        "completion_tokens": 93,
-        "total_tokens": 4495
-      },
-      "time": "2026-02-08T22:35:11.991858+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 6582
       },
       "time": "2026-02-09T20:37:42.894480+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple, practical gradient noise injection technique with annealed variance schedule that consistently improves training of very deep and complex architectures (20-layer networks, Memory Networks, Neural Programmer, NRAM, Neural GPUs). Well-executed empirical study across diverse models shows robustness to initialization and complementarity with modern optimizers (Adam, AdaGrad). Thorough experiments with ablations (fixed vs. annealed noise, gradient clipping sensitivity, initialization variants) and large-scale grid searches demonstrate broad applicability. Main limitations: technique is relatively incremental (adding noise to gradients is not novel), theoretical justification is limited, and gains are primarily empirical rather than providing deep mechanistic insight into why noise helps optimization in these settings."
+      },
+      "token": {
+        "prompt_tokens": 7136,
+        "completion_tokens": 197,
+        "total_tokens": 7333
+      },
+      "time": "2026-02-11T19:09:07.107112+00:00"
     }
   ],
   "test": false

@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.98,
-        "primary_reason": "Novel metric learning approach with strong theoretical grounding, elegant simplicity over prior work (Matching Networks), comprehensive experiments across multiple domains (few-shot and zero-shot), state-of-the-art results, and clear practical advantages in scalability and interpretability."
-      },
-      "token": {
-        "prompt_tokens": 3243,
-        "completion_tokens": 91,
-        "total_tokens": 3334
-      },
-      "time": "2026-02-08T22:29:08.773345+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 5472
       },
       "time": "2026-02-09T20:31:05.889086+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.98,
+        "primary_reason": "Introduces prototypical networks, a simple yet elegant metric-learning approach for few-shot classification that is more scalable and interpretable than matching networks. Provides strong empirical results on Omniglot and mini-ImageNet, includes theoretical insight (equivalence to linear classifier), and demonstrates generality via zero-shot learning on CUB. Clear methodological contribution with thorough experiments and ablations on design choices."
+      },
+      "token": {
+        "prompt_tokens": 5977,
+        "completion_tokens": 125,
+        "total_tokens": 6102
+      },
+      "time": "2026-02-11T19:00:02.943867+00:00"
     }
   ],
   "test": false

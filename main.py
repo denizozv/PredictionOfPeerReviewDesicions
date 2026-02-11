@@ -58,8 +58,6 @@ if __name__ == '__main__':
     # anthropic_classifier = AnthropicClassifier(system_prompt=prompts["zeroShot"], approach="zeroShot", data_dir="extracted_data", model="claude-haiku-4-5", limit=1,  dry_run=True)  # DEBUG: limit=1
     # anthropic_classifier.run()
 
-
-
     # 5a. Run OpenAI zero-shot classification
     #classifier = OpenAiClassifier(system_prompt=prompts["fewShot"], approach="fewShot", data_dir="extracted_data", model="gpt-5.2", limit=0)  # DEBUG: limit=1 # DEBUG: limit=1
     #classifier.run()
@@ -69,8 +67,8 @@ if __name__ == '__main__':
     # gemini_classifier.run()
 
     # 5c. Run Anthropic Claude zero-shot classification
-    #anthropic_classifier = AnthropicClassifier(system_prompt=prompts["fewShot"], approach="fewShot", data_dir="extracted_data", model="claude-haiku-4-5", limit=0)  # DEBUG: dry_run=True, limit=1
-    #anthropic_classifier.run()
+    anthropic_classifier = AnthropicClassifier(system_prompt=prompts["fewShot"], approach="fewShot", data_dir="extracted_data", model="claude-haiku-4-5", limit=0)  # DEBUG: dry_run=True, limit=1
+    anthropic_classifier.run()
 
     # 6. Tüm sonuçların analizi
     analyser = Analyse(data_dir="extracted_data", output_dir="analysis")

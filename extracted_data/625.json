@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel hierarchical RL architecture with communicating controllers, analogy-making regularizer for zero-shot generalization, and temporal abstraction mechanism. Strong experimental validation on both 2D and 3D environments with thorough ablations demonstrating each component's contribution."
-      },
-      "token": {
-        "prompt_tokens": 9689,
-        "completion_tokens": 91,
-        "total_tokens": 9780
-      },
-      "time": "2026-02-08T22:35:21.887118+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -178,6 +164,20 @@
         "total_tokens": 11532
       },
       "time": "2026-02-09T20:38:13.567618+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel hierarchical RL architecture with communicating controllers, analogy-making regularizer for zero-shot generalization, and temporal abstraction mechanism. Solid empirical validation on 2D/3D environments with thorough ablations demonstrating benefits of each component. However, limited to relatively simple synthetic domains and modest absolute performance numbers reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 12423,
+        "completion_tokens": 107,
+        "total_tokens": 12530
+      },
+      "time": "2026-02-11T19:09:19.278147+00:00"
     }
   ],
   "test": false

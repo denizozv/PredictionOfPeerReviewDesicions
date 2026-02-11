@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel attention transfer mechanism with solid experimental validation across multiple datasets and architectures. Clear methodological contribution (activation-based and gradient-based attention transfer) with consistent improvements over baselines. Well-executed experiments on CIFAR, ImageNet, and transfer learning tasks demonstrate practical value."
-      },
-      "token": {
-        "prompt_tokens": 5361,
-        "completion_tokens": 93,
-        "total_tokens": 5454
-      },
-      "time": "2026-02-08T22:04:06.849408+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -138,6 +124,20 @@
         "total_tokens": 7354
       },
       "time": "2026-02-09T20:08:02.342020+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a practical and well-motivated approach to knowledge transfer via attention maps (both activation-based and gradient-based), demonstrates consistent improvements across CIFAR, CUB, Scenes, and ImageNet with thorough ablations (different attention functions, layer combinations, comparison to full-activation transfer), and shows that attention maps carry more transferable information than raw activations. The work is technically sound with clear methodology, though the ImageNet results are preliminary (only 2 groups, hyperparameters not tuned) and gradient-based method is limited to simple architectures without batch normalization, preventing it from being a stronger contribution."
+      },
+      "token": {
+        "prompt_tokens": 8093,
+        "completion_tokens": 170,
+        "total_tokens": 8263
+      },
+      "time": "2026-02-11T18:21:17.741372+00:00"
     }
   ],
   "test": false

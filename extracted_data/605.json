@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel compositional architecture for tree-structured data combining VAEs with recursive neural networks. Strong methodological contribution with careful treatment of variable-sized trees, typed grammars, and gating mechanisms. Solid experimental validation on synthetic and real datasets (theorem proving). Clear scientific contribution to generative modeling of structured data."
-      },
-      "token": {
-        "prompt_tokens": 6461,
-        "completion_tokens": 100,
-        "total_tokens": 6561
-      },
-      "time": "2026-02-08T22:33:23.025298+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 8468
       },
       "time": "2026-02-09T20:36:01.733262+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel and well-motivated combination of VAEs with tree-structured recursive neural networks for hierarchical data (code, logic, parse trees), with clear technical contributions (typed tree grammar, top-down generation, bottom-up encoding, gating/layer-norm improvements). Demonstrates the approach on synthetic and real datasets with meaningful comparisons to sequential baselines, showing computational efficiency gains (depth vs. node count). Main weaknesses: limited experimental scope (only 2 datasets, modest improvements on logic task), optimization challenges requiring careful hyperparameter tuning (KL annealing/floor), and lack of downstream task evaluation (e.g., actual theorem proving speedup). Solid methodological contribution with practical relevance, but incremental empirical validation."
+      },
+      "token": {
+        "prompt_tokens": 9195,
+        "completion_tokens": 196,
+        "total_tokens": 9391
+      },
+      "time": "2026-02-11T19:06:20.524333+00:00"
     }
   ],
   "test": false

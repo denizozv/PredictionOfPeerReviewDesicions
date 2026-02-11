@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel local orthogonality regularization with solid theoretical motivation (preserving negative correlations), comprehensive experiments on CIFAR-10/100/SVHN showing consistent improvements over strong baselines, and clear practical contribution to CNN regularization."
-      },
-      "token": {
-        "prompt_tokens": 4650,
-        "completion_tokens": 86,
-        "total_tokens": 4736
-      },
-      "time": "2026-02-08T22:13:15.974055+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 6739
       },
       "time": "2026-02-09T20:16:58.924220+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes OrthoReg, a novel weight-space regularization technique that enforces local orthogonality between feature detectors while preserving negative correlations. The key insight—that negatively correlated features should not be penalized—is well-motivated and clearly demonstrated. Solid empirical validation on CIFAR-10/100 and SVHN with state-of-the-art results, good ablations (global vs. local loss, hyperparameter sensitivity), and compatibility with existing regularization methods (dropout, batch norm). Main weaknesses: limited theoretical justification for why local orthogonality improves generalization, modest absolute improvements (~0.26% on CIFAR-10), and narrow experimental scope (only image classification on relatively small datasets)."
+      },
+      "token": {
+        "prompt_tokens": 7384,
+        "completion_tokens": 201,
+        "total_tokens": 7585
+      },
+      "time": "2026-02-11T18:38:07.366718+00:00"
     }
   ],
   "test": false

@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel invertible transformation architecture (Real NVP) with tractable likelihood, exact sampling, and inference. Strong theoretical foundation, comprehensive experiments on multiple datasets, and significant methodological contributions to generative modeling."
-      },
-      "token": {
-        "prompt_tokens": 4631,
-        "completion_tokens": 78,
-        "total_tokens": 4709
-      },
-      "time": "2026-02-08T22:15:08.668420+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -168,6 +154,20 @@
         "total_tokens": 6717
       },
       "time": "2026-02-09T20:18:38.266859+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Introduces Real NVP, a powerful and practical normalizing flow architecture with affine coupling layers that enable tractable exact likelihood, sampling, and inference. The method is theoretically well-motivated, technically sound with clever design choices (masked convolutions, multi-scale architecture, batch normalization variant), and demonstrates strong empirical results on multiple image datasets with interpretable latent space manipulations and high-quality sharp samples."
+      },
+      "token": {
+        "prompt_tokens": 7365,
+        "completion_tokens": 123,
+        "total_tokens": 7488
+      },
+      "time": "2026-02-11T18:40:12.850130+00:00"
     }
   ],
   "test": false

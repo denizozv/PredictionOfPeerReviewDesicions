@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel direct sparse convolution implementation with analytical performance modeling and guided pruning algorithm. Strong experimental validation across multiple architectures (Atom, Xeon, Xeon Phi) with significant speedups (3.1-7.3x). Solid technical contribution bridging theory and practice."
-      },
-      "token": {
-        "prompt_tokens": 5895,
-        "completion_tokens": 97,
-        "total_tokens": 5992
-      },
-      "time": "2026-02-08T22:20:08.053101+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 7741
       },
       "time": "2026-02-09T20:22:31.573668+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Solid systems contribution combining efficient sparse convolution implementation with analytical performance modeling and guided pruning strategy, validated with real speedups (3.1-7.3x) across multiple hardware platforms (Atom, Xeon, Xeon Phi). The performance model provides actionable insights for layer-wise pruning decisions, and the direct sparse convolution avoids lowering overhead. However, the novelty is somewhat incremental (sparse convolution + roofline model + guided training), and evaluation is limited to AlexNet/GoogLeNet on ImageNet without comparison to concurrent sparse inference methods."
+      },
+      "token": {
+        "prompt_tokens": 8629,
+        "completion_tokens": 162,
+        "total_tokens": 8791
+      },
+      "time": "2026-02-11T18:47:08.760354+00:00"
     }
   ],
   "test": false

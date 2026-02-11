@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core contribution. Dual encoding networks for recommendation is a straightforward extension of existing collaborative filtering and deep learning approaches. Multi-level branching is an incremental architectural variation. Experimental validation is narrow (3 datasets, 2 baselines), lacks statistical significance testing, and missing comparisons with other neural recommendation methods contemporary to 2015. The paper reads as solid engineering rather than a methodological advance suitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 5297,
-        "completion_tokens": 130,
-        "total_tokens": 5427
-      },
-      "time": "2026-02-08T22:34:19.401649+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 7468
       },
       "time": "2026-02-09T20:36:48.424447+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents a reasonable idea of using dual encoding networks for recommendation with some useful architectural innovations (multi-level branching), the contribution is primarily incremental over CDL. The empirical validation, though showing improvements, lacks depth: limited baselines (only WMF and CDL), no comparison to other neural recommendation methods, missing ablations on key design choices, and no analysis of why the approach works. The writing is clear but the novelty is modest—the core insight (using deep networks for user encoding instead of linear transforms) is straightforward, and the multi-level branching, while helpful, feels like an engineering fix rather than a principled advance. The experimental scope is narrow (3 datasets, all sparse), and there is insufficient investigation into when/why the method helps or fails."
+      },
+      "token": {
+        "prompt_tokens": 8031,
+        "completion_tokens": 202,
+        "total_tokens": 8233
+      },
+      "time": "2026-02-11T19:07:21.864196+00:00"
     }
   ],
   "test": true

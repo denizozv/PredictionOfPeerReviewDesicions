@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel motion-content decomposition architecture with strong empirical results on multiple datasets and clear generalization benefits, though incremental in some technical components."
-      },
-      "token": {
-        "prompt_tokens": 6769,
-        "completion_tokens": 65,
-        "total_tokens": 6834
-      },
-      "time": "2026-02-08T22:07:09.797092+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -168,6 +154,20 @@
         "total_tokens": 8704
       },
       "time": "2026-02-09T20:11:08.708146+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a well-motivated motion-content decomposition architecture for video frame prediction with clear architectural innovations (separate motion/content encoders, multi-scale residual connections), demonstrates consistent improvements over ConvLSTM baselines on KTH and Weizmann datasets, and shows competitive results on UCF-101; the explicit factorization is intuitive and the asymmetric encoder design is clever, though the empirical gains are sometimes modest and the method struggles with dense/camera motion, limiting impact."
+      },
+      "token": {
+        "prompt_tokens": 9503,
+        "completion_tokens": 143,
+        "total_tokens": 9646
+      },
+      "time": "2026-02-11T18:28:50.637729+00:00"
     }
   ],
   "test": false

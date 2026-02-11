@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty (competitive learning is well-established), narrow single-task application (driving only), weak experimental validation (small dataset, no comparison with modern baselines or state-of-the-art methods), and presentation issues. The core contribution—applying supervised competitive learning to behavior prediction—lacks sufficient theoretical or empirical depth for a top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 3144,
-        "completion_tokens": 109,
-        "total_tokens": 3253
-      },
-      "time": "2026-02-08T22:50:12.521442+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 5529
       },
       "time": "2026-02-09T20:53:57.926948+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper proposes a straightforward application of competitive learning (training multiple output heads and selecting by minimum loss) to driving behavior prediction, but the contribution is incremental and poorly validated. The method lacks novelty—competitive learning is well-established—and the experimental evaluation is limited to a single driver's 80-minute dataset with no comparison to relevant baselines (e.g., mixture-of-experts, multi-task learning, or other intention-modeling approaches). The claimed 25× improvement on training data is not credible given the small dataset and lack of proper train/test separation in reporting. The writing is unclear, the motivation for why this particular competitive scheme captures 'intentions' is unjustified, and there is no evidence of generalization beyond one driver or robustness analysis. The paper reads as an early-stage application study rather than a methodological or empirical contribution suitable for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 5878,
+        "completion_tokens": 228,
+        "total_tokens": 6106
+      },
+      "time": "2026-02-11T19:31:08.474292+00:00"
     }
   ],
   "test": false

@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel theoretical contribution with rigorous analysis of efficient neural network representations for low-dimensional manifolds. Constructive proofs for monotonic chains with near-optimal parameter efficiency, error bounds, and experimental validation. Strong methodological depth and clear scientific contribution to understanding deep network expressivity."
-      },
-      "token": {
-        "prompt_tokens": 10710,
-        "completion_tokens": 93,
-        "total_tokens": 10803
-      },
-      "time": "2026-02-08T22:22:11.092468+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 12307
       },
       "time": "2026-02-09T20:24:04.620061+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid theoretical contribution showing that ReLU networks can efficiently embed piecewise-linear monotonic chains using near-optimal parameters, with rigorous construction, error analysis, and experimental validation that networks trained with SGD discover similar representations. However, scope is limited to synthetic/toy manifolds and the practical impact on real data is unclear."
+      },
+      "token": {
+        "prompt_tokens": 13444,
+        "completion_tokens": 105,
+        "total_tokens": 13549
+      },
+      "time": "2026-02-11T18:49:19.498824+00:00"
     }
   ],
   "test": false

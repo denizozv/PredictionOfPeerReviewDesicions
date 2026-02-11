@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Limited novelty: reformulating standard neural networks as message-passing agents is conceptually interesting but lacks significant algorithmic or theoretical contribution. Experiments are weak (only MNIST, toy XOR, no comparison with modern baselines). The claimed equivalence to standard SDAE is trivial—it's a reimplementation, not a new method. Sparse connectivity is a minor variant with unclear benefits. Writing quality is poor with numerous grammatical errors. No evidence of practical advantages over standard implementations."
-      },
-      "token": {
-        "prompt_tokens": 6183,
-        "completion_tokens": 138,
-        "total_tokens": 6321
-      },
-      "time": "2026-02-08T22:44:23.695099+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -163,6 +149,20 @@
         "total_tokens": 8091
       },
       "time": "2026-02-09T20:47:55.735025+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper reformulates standard neural networks (SDAE) as a multiagent system but provides no meaningful scientific contribution: the 'equivalence proof' merely shows that message-passing can simulate matrix operations (trivial), the biological motivation is unsupported, the sparse variant is a basic random pruning with unclear benefits, and experiments are limited to toy datasets (XOR, MNIST) with no comparison to modern baselines or evidence that the multiagent framing enables new capabilities or insights. The writing is poor with numerous grammatical errors and unclear exposition."
+      },
+      "token": {
+        "prompt_tokens": 8917,
+        "completion_tokens": 152,
+        "total_tokens": 9069
+      },
+      "time": "2026-02-11T19:22:25.098246+00:00"
     }
   ],
   "test": false

@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel methodological contributions (tf-idf-guided inference, local variability optimization, Jacobian-based introspection) applied to underexplored problem (sparse high-dimensional data with DLGMs). Solid experimental validation across multiple domains (text, medical records) with interpretability insights. Some limitations in baseline comparisons and embedding evaluation depth, but sufficient novelty and rigor for acceptance."
-      },
-      "token": {
-        "prompt_tokens": 6191,
-        "completion_tokens": 121,
-        "total_tokens": 6312
-      },
-      "time": "2026-02-08T22:32:24.151363+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -113,6 +99,20 @@
         "total_tokens": 8133
       },
       "time": "2026-02-09T20:34:52.553238+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Addresses a genuine problem (fitting DLGMs to sparse high-dimensional data) with two practical contributions: (1) tf-idf-informed inference + local variational parameter optimization that demonstrably improves convergence and perplexity on multiple datasets, and (2) Jacobian-based introspection method that yields interpretable embeddings. Well-executed empirical validation across text and medical data with reasonable baselines, though the introspection contribution is somewhat incremental and evaluation could be more rigorous."
+      },
+      "token": {
+        "prompt_tokens": 8925,
+        "completion_tokens": 146,
+        "total_tokens": 9071
+      },
+      "time": "2026-02-11T19:05:07.083398+00:00"
     }
   ],
   "test": false

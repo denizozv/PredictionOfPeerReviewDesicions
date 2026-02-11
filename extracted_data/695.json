@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core contribution. Correlation-based pruning is well-established; adding random noise outputs to encourage neuron correlation lacks strong theoretical justification and appears ad-hoc. Experiments limited to small/dated networks (LeNet, basic SVHN model). Missing comparisons with modern pruning methods and lacks depth in analysis of why noise outputs work. Insufficient experimental rigor for top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 4598,
-        "completion_tokens": 123,
-        "total_tokens": 4721
-      },
-      "time": "2026-02-08T22:42:10.880615+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 6744
       },
       "time": "2026-02-09T20:45:17.229939+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The core idea of pruning via neuron correlation is reasonable but not sufficiently novel; the 'noise outputs' mechanism lacks rigorous justification (the toy 2-neuron proof doesn't generalize convincingly), and experiments are limited to small/dated networks (LeNet, basic SVHN model) with no comparison to modern pruning baselines or state-of-the-art methods, making the contribution incremental and the empirical validation insufficient for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7332,
+        "completion_tokens": 138,
+        "total_tokens": 7470
+      },
+      "time": "2026-02-11T19:19:12.579921+00:00"
     }
   ],
   "test": false

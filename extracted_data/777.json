@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty and weak experimental validation. The base model (maximizing hierarchical mutual information) is a straightforward combination of existing ideas. The semantic noise modeling via output-space perturbation is incremental—essentially a regularization technique without strong theoretical justification. Experiments limited to MNIST and CIFAR-10 with modest improvements; no comparison with modern regularization methods (dropout, batch norm, mixup, etc.). Mathematical derivation in Section 2.1 is loose (acknowledged lower bound). Missing ablations and analysis of why semantic perturbation works. Presentation could be clearer."
-      },
-      "token": {
-        "prompt_tokens": 4817,
-        "completion_tokens": 162,
-        "total_tokens": 4979
-      },
-      "time": "2026-02-08T22:49:21.226957+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 6876
       },
       "time": "2026-02-09T20:53:06.912868+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper proposes a joint learning framework with latent space perturbation, but suffers from weak theoretical justification, limited experimental validation, and unclear novelty. The core contribution—adding semantic noise to latent representations—is presented as a heuristic without principled motivation. The mathematical derivation in Section 2.1 (Eq. 2-4) is loose and the connection between maximizing mutual information and the proposed reconstruction objective is not rigorously established. Experiments are restricted to MNIST and CIFAR-10 with modest improvements over weak baselines; no comparison to modern regularization techniques (dropout, batch norm, data augmentation) or contemporary representation learning methods. The 'semantic noise' is simply noise added to logits then backpropagated through a decoder—a relatively straightforward idea presented without sufficient novelty or depth. Writing quality is poor with unclear exposition and missing implementation details. Overall, the work reads as an incremental engineering contribution rather than a significant methodological advance suitable for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7551,
+        "completion_tokens": 255,
+        "total_tokens": 7806
+      },
+      "time": "2026-02-11T19:30:04.556862+00:00"
     }
   ],
   "test": false

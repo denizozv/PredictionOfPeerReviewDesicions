@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel integration of normalizing flows with maximum entropy modeling via constrained optimization. Strong theoretical motivation, rigorous experimental validation on synthetic problems with known solutions, and practical applications. Some concerns: limited novelty in individual components, modest experimental scope, and incomplete theoretical guarantees for augmented Lagrangian convergence in neural network setting."
-      },
-      "token": {
-        "prompt_tokens": 7655,
-        "completion_tokens": 103,
-        "total_tokens": 7758
-      },
-      "time": "2026-02-08T22:13:18.018202+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 9405
       },
       "time": "2026-02-09T20:17:06.970695+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel and principled approach to maximum entropy modeling by reformulating it as learning an invertible transformation via normalizing flows, combined with augmented Lagrangian optimization. Demonstrates effectiveness on synthetic problems with known solutions (Dirichlet), finance applications, and texture synthesis. However, confidence is moderate due to: (1) lack of rigorous convergence guarantees (acknowledged by authors), (2) limited experimental scope and baselines, (3) texture synthesis results are mixed (acknowledged negative examples), and (4) modest practical improvements over existing methods in some applications."
+      },
+      "token": {
+        "prompt_tokens": 10389,
+        "completion_tokens": 157,
+        "total_tokens": 10546
+      },
+      "time": "2026-02-11T18:38:10.984165+00:00"
     }
   ],
   "test": false

@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel application of semi-supervised 3D CNN encoder-decoder to climate extreme weather detection with solid experimental validation, though methodological novelty is moderate (hybrid reconstruction+detection loss) and results show mixed performance on strict metrics."
-      },
-      "token": {
-        "prompt_tokens": 5938,
-        "completion_tokens": 82,
-        "total_tokens": 6020
-      },
-      "time": "2026-02-08T22:32:10.334256+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 8047
       },
       "time": "2026-02-09T20:34:05.405765+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper addresses a relevant application (extreme weather detection in climate data) but suffers from weak empirical validation: semi-supervised learning shows inconsistent benefits (helps only at loose IOU=0.1 threshold, hurts at standard IOU=0.5), the 3D model underperforms 2D at the main metric, and the architectural choices (fixed 64×64 anchor boxes) are poorly suited to the task. The core contribution—combining 3D autoencoders with bounding-box regression—is incremental, combining existing techniques without sufficient novelty or convincing results to warrant acceptance at a top venue."
+      },
+      "token": {
+        "prompt_tokens": 8672,
+        "completion_tokens": 171,
+        "total_tokens": 8843
+      },
+      "time": "2026-02-11T19:31:48.893954+00:00"
     }
   ],
   "test": false

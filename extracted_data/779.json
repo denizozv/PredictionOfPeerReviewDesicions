@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Incremental engineering contribution with limited novelty. Applies existing vocabulary selection techniques (word alignments, phrase tables, SVMs) to NMT decoding/training. While practical results are solid, the methodological contributions are minimal—mostly combining known methods. Lacks significant algorithmic or theoretical innovation expected at top venues."
-      },
-      "token": {
-        "prompt_tokens": 4118,
-        "completion_tokens": 103,
-        "total_tokens": 4221
-      },
-      "time": "2026-02-08T22:49:25.485853+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 6344
       },
       "time": "2026-02-09T20:53:20.765005+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical engineering contribution with practical value (10x decoding speedup, 25% training speedup), but lacks sufficient novelty and depth for top-tier venue. Vocabulary selection strategies are mostly straightforward applications of existing techniques (word alignments, phrase tables, SVMs); the main contribution is systematic comparison and speed/accuracy trade-off analysis rather than new methodology. Evaluation is thorough on two language pairs but limited in scope (single-layer LSTM, beam search only), and the paper reads more as a strong systems/engineering paper than a research advance with new insights or techniques."
+      },
+      "token": {
+        "prompt_tokens": 6852,
+        "completion_tokens": 161,
+        "total_tokens": 7013
+      },
+      "time": "2026-02-11T19:30:10.691633+00:00"
     }
   ],
   "test": false

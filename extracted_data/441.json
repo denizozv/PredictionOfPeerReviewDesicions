@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel adaptive computation mechanism for RNNs with solid experimental validation across multiple sequence modeling tasks, demonstrating both efficiency gains and interpretable learned patterns."
-      },
-      "token": {
-        "prompt_tokens": 4407,
-        "completion_tokens": 66,
-        "total_tokens": 4473
-      },
-      "time": "2026-02-08T22:16:14.070614+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 6588
       },
       "time": "2026-02-09T20:19:35.017379+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel and well-motivated mechanism (Variable Computation Units) allowing RNNs to learn adaptive computation per timestep via a differentiable scheduler, with solid empirical validation across multiple sequence modeling tasks (music, bit/character-level language modeling) showing both computational savings and improved perplexity; includes interpretable learned patterns (ASCII structure, word boundaries, morphology) that validate the approach, though the gains are modest and wall-clock speedup is not demonstrated."
+      },
+      "token": {
+        "prompt_tokens": 7141,
+        "completion_tokens": 138,
+        "total_tokens": 7279
+      },
+      "time": "2026-02-11T18:42:06.237571+00:00"
     }
   ],
   "test": false

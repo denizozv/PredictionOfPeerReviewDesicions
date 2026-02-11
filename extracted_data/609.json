@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in core contribution (random walk-based neighbor selection is incremental), weak experimental validation (MNIST results underperform standard CNN; Merck results use test set access invalidating claims), and insufficient comparison with concurrent graph neural network methods. The paper reads as an early-stage exploration rather than a mature methodological advance suitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 4975,
-        "completion_tokens": 111,
-        "total_tokens": 5086
-      },
-      "time": "2026-02-08T22:34:14.875605+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 7186
       },
       "time": "2026-02-09T20:36:33.342943+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper proposes a graph CNN using random-walk-based neighbor selection, but suffers from weak empirical validation, limited novelty over concurrent work (Duvenaud et al. 2015, spectral methods), and unconvincing experimental results. On MNIST, the method underperforms standard CNNs (1.1% vs 0.75% error) and only matches fully connected networks on correlation-based graphs. On Merck, it claims to beat Kaggle winners but underperforms the concurrent spectral networks with supervised graph learning. The core technical contribution—using expected visit counts Q(k) for neighbor selection—is incremental, and the paper lacks rigorous ablations, theoretical justification, or compelling evidence that the approach offers advantages over existing graph neural network methods. Presentation is also unclear in places (e.g., handling of negative correlations, tie-breaking in MNIST experiments)."
+      },
+      "token": {
+        "prompt_tokens": 7709,
+        "completion_tokens": 231,
+        "total_tokens": 7940
+      },
+      "time": "2026-02-11T19:07:15.521503+00:00"
     }
   ],
   "test": false

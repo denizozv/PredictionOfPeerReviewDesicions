@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel hierarchical character-level architecture with morphology learning for NMT; solid experimental validation on morphologically rich languages; demonstrates practical advantages (faster convergence, handling OOV words) with reasonable BLEU results, though incremental over concurrent work."
-      },
-      "token": {
-        "prompt_tokens": 5964,
-        "completion_tokens": 89,
-        "total_tokens": 6053
-      },
-      "time": "2026-02-08T22:41:10.283136+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 8015
       },
       "time": "2026-02-09T20:43:43.178697+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel hierarchical character-level NMT architecture with morphology-aware word encoding that achieves competitive BLEU scores while being more parameter-efficient than baselines; demonstrates clear morphological learning with insightful visualizations and handles OOV/nonce words well, though empirical gains are modest and evaluation is limited to one epoch comparisons."
+      },
+      "token": {
+        "prompt_tokens": 8698,
+        "completion_tokens": 113,
+        "total_tokens": 8811
+      },
+      "time": "2026-02-11T19:17:14.087746+00:00"
     }
   ],
   "test": false

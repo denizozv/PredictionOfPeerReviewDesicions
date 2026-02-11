@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical contribution (MCMC sampling for generative autoencoders with convergence proofs), clear methodological insight about learned vs. prior latent distributions, solid experimental validation revealing differences between denoising and non-denoising variants. Addresses a genuine gap in sampling practice."
-      },
-      "token": {
-        "prompt_tokens": 4977,
-        "completion_tokens": 96,
-        "total_tokens": 5073
-      },
-      "time": "2026-02-08T22:50:16.675463+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -158,6 +144,20 @@
         "total_tokens": 7005
       },
       "time": "2026-02-09T20:54:12.522685+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the core idea of using MCMC to sample from the learned latent distribution (rather than the prior) is sound and theoretically justified, the empirical validation is weak. The paper lacks quantitative metrics (only qualitative visual comparisons), provides no rigorous comparison to baselines, and the practical improvements are marginal and not convincingly demonstrated. The theoretical contribution (Markov chain convergence) is straightforward, and the experimental scope is limited to CelebA/SVHN with minimal ablation studies. The claimed insight about denoising autoencoders is interesting but underdeveloped."
+      },
+      "token": {
+        "prompt_tokens": 7711,
+        "completion_tokens": 163,
+        "total_tokens": 7874
+      },
+      "time": "2026-02-11T19:31:15.170928+00:00"
     }
   ],
   "test": false

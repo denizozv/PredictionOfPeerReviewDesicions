@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel structured sparsity approach to VAE over-pruning problem with solid theoretical motivation and comprehensive experiments on standard benchmarks, though limited to simple datasets and modest empirical gains."
-      },
-      "token": {
-        "prompt_tokens": 7026,
-        "completion_tokens": 73,
-        "total_tokens": 7099
-      },
-      "time": "2026-02-08T22:32:17.341626+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 8972
       },
       "time": "2026-02-09T20:34:29.351961+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper addresses a real problem (VAE over-pruning) with a reasonable solution (epitomic structure with parameter sharing), the contribution is primarily architectural and incremental. Evaluation is limited to MNIST and TFD with modest improvements over baselines; the discrete epitome selection via argmin lacks principled justification and scalability; and the work lacks theoretical insight or compelling empirical evidence of broader impact. The comparison to mixture VAE shows parameter sharing provides only marginal gains, especially on MNIST."
+      },
+      "token": {
+        "prompt_tokens": 9760,
+        "completion_tokens": 143,
+        "total_tokens": 9903
+      },
+      "time": "2026-02-11T19:04:25.270366+00:00"
     }
   ],
   "test": false

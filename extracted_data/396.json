@@ -177,20 +177,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel compositional architecture with explicit factorization of appearance, shape, and pose in a recursive GAN framework. Strong experimental validation across multiple datasets with new evaluation metrics and thorough ablations demonstrating importance of design choices."
-      },
-      "token": {
-        "prompt_tokens": 8738,
-        "completion_tokens": 81,
-        "total_tokens": 8819
-      },
-      "time": "2026-02-08T22:10:23.548099+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -203,6 +189,20 @@
         "total_tokens": 10487
       },
       "time": "2026-02-09T20:14:46.558151+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel layered recursive GAN architecture that factorizes image generation into background and foreground layers with explicit appearance, shape, and pose modeling. Demonstrates clear improvements over DCGAN with thorough ablations, human studies, and new evaluation metrics. Strong empirical validation across multiple datasets, though limited to relatively simple/small-scale images and modest technical novelty in individual components."
+      },
+      "token": {
+        "prompt_tokens": 11472,
+        "completion_tokens": 118,
+        "total_tokens": 11590
+      },
+      "time": "2026-02-11T18:34:07.930064+00:00"
     }
   ],
   "test": false

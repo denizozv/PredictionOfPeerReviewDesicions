@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel gated fusion mechanism with solid experimental validation, new multimodal dataset, and clear improvements over baselines. However, limited scope (single task), modest technical depth, and incremental nature of contribution prevent higher confidence."
-      },
-      "token": {
-        "prompt_tokens": 7569,
-        "completion_tokens": 81,
-        "total_tokens": 7650
-      },
-      "time": "2026-02-08T22:24:03.593316+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 9397
       },
       "time": "2026-02-09T20:25:28.022896+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents a reasonable multimodal fusion method (GMU) and releases a useful dataset (MM-IMDb), the technical contribution is incremental—gated fusion is a straightforward extension of existing gating mechanisms (GRU/LSTM). The experimental validation is limited: synthetic experiments are toy problems, real-world improvements are modest (~1-2% over baselines), and comparisons lack depth (weak MoE baselines, no comparison to other gating/attention fusion methods). The paper reads more as a solid application/dataset contribution than a methodological advance suitable for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 10303,
+        "completion_tokens": 165,
+        "total_tokens": 10468
+      },
+      "time": "2026-02-11T18:52:10.896598+00:00"
     }
   ],
   "test": false

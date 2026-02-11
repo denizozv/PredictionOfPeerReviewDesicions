@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "First online structure learning for continuous SPNs with Gaussian leaves; novel parameter update technique with theoretical guarantee; solid experimental validation on multiple datasets with comparisons to baselines."
-      },
-      "token": {
-        "prompt_tokens": 8743,
-        "completion_tokens": 71,
-        "total_tokens": 8814
-      },
-      "time": "2026-02-08T22:26:09.914503+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 10439
       },
       "time": "2026-02-09T20:27:34.814241+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes the first online structure learning algorithm for continuous (Gaussian) SPNs with a novel parameter update technique that guarantees likelihood improvement; includes theoretical justification (Theorem 1), comprehensive experiments on multiple datasets with ablations on key hyperparameters, and demonstrates practical advantages over random structures and RealNVP baselines. Main limitations: incremental contribution to SPN literature, modest empirical gains, and limited novelty in the core techniques (correlation detection, mixture creation) which are relatively straightforward extensions of prior work."
+      },
+      "token": {
+        "prompt_tokens": 11477,
+        "completion_tokens": 148,
+        "total_tokens": 11625
+      },
+      "time": "2026-02-11T18:55:10.369696+00:00"
     }
   ],
   "test": false

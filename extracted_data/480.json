@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel hierarchical architecture with lateral connections between discriminative-generative paths; strong multi-faceted evaluation (classification, simulation, discovery); demonstrates clear benefits of auxiliary motion prediction task; well-executed experiments across diverse domains (fly behavior, handwriting, synthetic data)."
-      },
-      "token": {
-        "prompt_tokens": 6360,
-        "completion_tokens": 91,
-        "total_tokens": 6451
-      },
-      "time": "2026-02-08T22:22:02.775116+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 8442
       },
       "time": "2026-02-09T20:23:36.736512+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Well-executed framework combining discriminative and generative RNNs with lateral connections for behavior modeling. Demonstrates clear benefits of motion prediction as auxiliary task for action classification, learns interpretable hierarchical representations (writer identity, fly gender) without supervision, and produces realistic simulations. Solid empirical validation across multiple datasets (fly behavior, handwriting, synthetic) with good ablations and discovery analysis, though incremental architectural contribution and limited theoretical novelty."
+      },
+      "token": {
+        "prompt_tokens": 9094,
+        "completion_tokens": 129,
+        "total_tokens": 9223
+      },
+      "time": "2026-02-11T18:49:08.635619+00:00"
     }
   ],
   "test": false

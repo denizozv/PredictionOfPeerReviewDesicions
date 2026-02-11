@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel hybrid exploration algorithm combining zero-order optimization with backpropagation for multi-agent RL in complex domain; strong empirical results on challenging StarCraft micromanagement tasks outperforming DQN/REINFORCE; solid technical contribution despite limited theoretical analysis."
-      },
-      "token": {
-        "prompt_tokens": 9548,
-        "completion_tokens": 94,
-        "total_tokens": 9642
-      },
-      "time": "2026-02-08T22:06:14.171931+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 11349
       },
       "time": "2026-02-09T20:10:16.708440+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a practical hybrid algorithm combining zero-order optimization with backpropagation for multi-agent RL in StarCraft micromanagement, demonstrating clear empirical advantages over DQN and REINFORCE on challenging scenarios with large action spaces; introduces useful technical contributions (greedy MDP formulation, normalized rewards, joint state-action embeddings) and provides thorough experimental validation with multiple baselines and generalization tests, though the core algorithmic novelty is somewhat incremental and the scope is limited to a specific domain."
+      },
+      "token": {
+        "prompt_tokens": 12281,
+        "completion_tokens": 148,
+        "total_tokens": 12429
+      },
+      "time": "2026-02-11T18:26:43.342538+00:00"
     }
   ],
   "test": false

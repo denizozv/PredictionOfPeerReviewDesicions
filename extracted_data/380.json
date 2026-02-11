@@ -157,20 +157,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel theoretical framework connecting adversarial training to energy-based models with rigorous analysis; dual approximation techniques for practical implementation; comprehensive experiments validating theory on synthetic and real data."
-      },
-      "token": {
-        "prompt_tokens": 10733,
-        "completion_tokens": 73,
-        "total_tokens": 10806
-      },
-      "time": "2026-02-08T22:09:08.383516+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -183,6 +169,20 @@
         "total_tokens": 12119
       },
       "time": "2026-02-09T20:13:14.541117+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel adversarial training framework with solid theoretical analysis (KKT-based characterization of optimal discriminator) showing how to enable GANs to recover energy/density information via a calibrating term K(pgen). Introduces two practical approximations (nearest-neighbor and variational) and validates on synthetic and real data with convincing 2D visualizations and ranking experiments, though high-dimensional evaluation remains limited and approximation quality varies."
+      },
+      "token": {
+        "prompt_tokens": 13467,
+        "completion_tokens": 132,
+        "total_tokens": 13599
+      },
+      "time": "2026-02-11T18:32:03.424760+00:00"
     }
   ],
   "test": false

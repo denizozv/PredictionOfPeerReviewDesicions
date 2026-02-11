@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel framework for variational inference without tractable densities using Stein discrepancy and amortized SVGD; solid theoretical grounding and practical application to adaptive SGLD step-size optimization with reasonable experimental validation."
-      },
-      "token": {
-        "prompt_tokens": 6558,
-        "completion_tokens": 84,
-        "total_tokens": 6642
-      },
-      "time": "2026-02-08T22:37:17.875101+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 8368
       },
       "time": "2026-02-09T20:39:48.926648+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes two principled methods for wild variational inference (amortized SVGD and KSD minimization) that avoid requiring tractable inference network densities, with solid theoretical grounding in Stein operators and discrepancy. Demonstrates practical value by learning SGLD step sizes that outperform hand-designed schemes. However, empirical evaluation is limited in scope (mostly toy/small-scale problems), and the novelty of amortized SVGD is acknowledged as prior work; KSD minimization is more novel but requires Hessian computation. The general Langevin network is interesting but underdeveloped. Overall a solid theoretical contribution with promising but incomplete empirical validation."
+      },
+      "token": {
+        "prompt_tokens": 9292,
+        "completion_tokens": 186,
+        "total_tokens": 9478
+      },
+      "time": "2026-02-11T19:12:05.593937+00:00"
     }
   ],
   "test": false

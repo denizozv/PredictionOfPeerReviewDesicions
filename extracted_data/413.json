@@ -157,20 +157,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel temporal-difference quantization scheme with solid theoretical foundation (sigma-delta modulation connection), practical optimization method for post-training quantization, and demonstrated computational savings on video. However, experiments are preliminary (toy problem, synthetic temporal-MNIST, limited video results) and lack comparison with other quantization/efficiency methods, preventing higher confidence."
-      },
-      "token": {
-        "prompt_tokens": 6311,
-        "completion_tokens": 106,
-        "total_tokens": 6417
-      },
-      "time": "2026-02-08T22:13:14.318331+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -183,6 +169,20 @@
         "total_tokens": 8332
       },
       "time": "2026-02-09T20:16:52.192423+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel approach to video processing efficiency via temporal-difference quantization with solid theoretical grounding (Sigma-Delta modulation connection, mathematical equivalence proofs) and practical optimization method. Demonstrates 4-10x computation savings on video with modest accuracy loss. However, evaluation is preliminary (Temporal-MNIST is synthetic, video results lack rigorous baselines/metrics), optimization requires ad-hoc noise injection, and real-world applicability depends on specialized hardware. Interesting core idea with incomplete validation."
+      },
+      "token": {
+        "prompt_tokens": 9045,
+        "completion_tokens": 141,
+        "total_tokens": 9186
+      },
+      "time": "2026-02-11T18:38:04.405749+00:00"
     }
   ],
   "test": false

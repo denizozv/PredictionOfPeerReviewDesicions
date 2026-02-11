@@ -172,20 +172,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "High-quality dataset paper with rigorous collection methodology, thorough analysis, and significant human-machine performance gap indicating genuine challenge. Establishes important benchmark for machine comprehension research."
-      },
-      "token": {
-        "prompt_tokens": 6090,
-        "completion_tokens": 73,
-        "total_tokens": 6163
-      },
-      "time": "2026-02-08T22:33:12.974928+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -198,6 +184,20 @@
         "total_tokens": 8078
       },
       "time": "2026-02-09T20:35:31.484059+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Introduces a substantial, well-designed machine comprehension dataset (100K+ QA pairs) with rigorous four-stage collection methodology designed to elicit reasoning-heavy questions. Provides thorough analysis showing NewsQA requires deeper reasoning (33.9% synthesis/inference vs 20.5% in SQuAD), demonstrates significant human-machine gap (25.3% F1), includes strong baselines and ablations, and offers clear value as a benchmark for advancing comprehension models beyond simple word-matching."
+      },
+      "token": {
+        "prompt_tokens": 8824,
+        "completion_tokens": 145,
+        "total_tokens": 8969
+      },
+      "time": "2026-02-11T19:06:07.110664+00:00"
     }
   ],
   "test": false

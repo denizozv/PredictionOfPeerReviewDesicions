@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel hierarchical decomposition framework with principled SAE schema and domain compression technique exploiting symmetries. Solid experimental validation on social networks with clear speedup/memory benefits. Methodologically sound contribution despite limited baseline comparisons and incremental improvements over prior work."
-      },
-      "token": {
-        "prompt_tokens": 5516,
-        "completion_tokens": 90,
-        "total_tokens": 5606
-      },
-      "time": "2026-02-08T22:24:10.058104+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 7446
       },
       "time": "2026-02-09T20:25:49.337768+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents a hierarchical graph neural network architecture with a domain compression technique, but suffers from limited novelty, weak experimental validation, and unclear positioning. The core SAE schema is a straightforward application of existing R-convolution ideas with neural networks; the domain compression, while technically sound, is an engineering optimization rather than a fundamental contribution. Experiments are limited to social network datasets with manual hyperparameter tuning and no ablation studies. Comparisons are only against older baselines (2015-2016), missing contemporary GNN methods. The writing is dense and the practical impact is unclear."
+      },
+      "token": {
+        "prompt_tokens": 8250,
+        "completion_tokens": 161,
+        "total_tokens": 8411
+      },
+      "time": "2026-02-11T18:52:21.659629+00:00"
     }
   ],
   "test": false

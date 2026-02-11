@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel technical contributions (differentiable quantization via gradient substitution, entropy rate estimation via Jensen's inequality upper bound), strong experimental validation (PSNR/SSIM/MS-SSIM metrics, MOS study), competitive results against JPEG 2000, practical efficiency via sub-pixel architecture. Addresses real compression problem with principled solutions to non-differentiability."
-      },
-      "token": {
-        "prompt_tokens": 4713,
-        "completion_tokens": 117,
-        "total_tokens": 4830
-      },
-      "time": "2026-02-08T22:10:15.649715+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 6823
       },
       "time": "2026-02-09T20:14:17.895504+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes practical solutions to non-differentiability in autoencoder-based image compression (straight-through estimator for quantization, entropy rate upper bound via Jensen's inequality), demonstrates competitive or superior performance vs JPEG 2000 and RNN methods across PSNR/SSIM/MOS metrics, includes thorough ablations (variable bit rates, incremental training, scale sharing), and provides efficient sub-pixel architecture suitable for high-resolution images—a solid empirical contribution with clear practical value."
+      },
+      "token": {
+        "prompt_tokens": 7447,
+        "completion_tokens": 145,
+        "total_tokens": 7592
+      },
+      "time": "2026-02-11T18:33:18.977441+00:00"
     }
   ],
   "test": false

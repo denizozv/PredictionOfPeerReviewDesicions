@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel application of RL to combinatorial optimization with pointer networks; introduces actor-critic training and active search strategies; demonstrates generalization across problem types (TSP, Knapsack); solid experimental validation on multiple scales."
-      },
-      "token": {
-        "prompt_tokens": 8215,
-        "completion_tokens": 81,
-        "total_tokens": 8296
-      },
-      "time": "2026-02-08T22:32:28.150996+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 10021
       },
       "time": "2026-02-09T20:35:09.488675+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel application of RL + pointer networks to combinatorial optimization with strong empirical results on TSP and Knapsack, demonstrating that neural methods can compete with classical heuristics without hand-crafted features; introduces Active Search as a practical inference strategy; well-executed experiments with thorough comparisons and ablations, though still below state-of-the-art solvers."
+      },
+      "token": {
+        "prompt_tokens": 10949,
+        "completion_tokens": 116,
+        "total_tokens": 11065
+      },
+      "time": "2026-02-11T19:05:12.186372+00:00"
     }
   ],
   "test": true

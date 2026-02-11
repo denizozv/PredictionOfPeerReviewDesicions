@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel GPU-aware optimization strategy with strong theoretical analysis (dynamic programming formulation), comprehensive experiments on standard benchmarks, and significant practical speedups (2-3x) while maintaining accuracy comparable to full softmax."
-      },
-      "token": {
-        "prompt_tokens": 5551,
-        "completion_tokens": 79,
-        "total_tokens": 5630
-      },
-      "time": "2026-02-08T22:26:05.156836+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 7643
       },
       "time": "2026-02-09T20:27:19.025606+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes adaptive softmax that exploits GPU computational characteristics and Zipfian word distributions to efficiently approximate softmax for large vocabularies. Provides rigorous complexity analysis with dynamic programming optimization, thorough empirical validation across multiple datasets (Text8, Europarl, One Billion Word), and demonstrates significant speedups (2-3x) while maintaining accuracy close to full softmax. Strong practical contribution with clear methodology and comprehensive baselines."
+      },
+      "token": {
+        "prompt_tokens": 8285,
+        "completion_tokens": 129,
+        "total_tokens": 8414
+      },
+      "time": "2026-02-11T18:54:25.981827+00:00"
     }
   ],
   "test": false

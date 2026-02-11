@@ -157,20 +157,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel theoretical framework connecting trajectory length to multiple expressivity measures (transitions, activation patterns, dichotomies) with rigorous proofs and comprehensive experiments. Strong contribution to understanding depth-dependent expressivity in deep networks."
-      },
-      "token": {
-        "prompt_tokens": 8649,
-        "completion_tokens": 80,
-        "total_tokens": 8729
-      },
-      "time": "2026-02-08T22:46:18.525624+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -183,6 +169,20 @@
         "total_tokens": 10406
       },
       "time": "2026-02-09T20:49:47.201349+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid theoretical contribution establishing exponential depth dependence of expressivity through trajectory length, with rigorous proofs (Theorems 1-4) and supporting experiments on random networks and trained models (MNIST/CIFAR-10). However, limited practical impact and some experimental scope constraints prevent higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 11383,
+        "completion_tokens": 100,
+        "total_tokens": 11483
+      },
+      "time": "2026-02-11T19:25:13.303777+00:00"
     }
   ],
   "test": false

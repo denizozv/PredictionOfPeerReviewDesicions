@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Well-motivated healthcare application with solid experimental design, comprehensive evaluation metrics, and practical impact. However, limited methodological novelty (standard RNN/LSTM/GRU application) and incremental contribution prevent higher-tier acceptance."
-      },
-      "token": {
-        "prompt_tokens": 4423,
-        "completion_tokens": 84,
-        "total_tokens": 4507
-      },
-      "time": "2026-02-08T22:22:06.628164+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -163,6 +149,20 @@
         "total_tokens": 6643
       },
       "time": "2026-02-09T20:23:50.786952+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper addresses a clinically relevant problem with solid experimental methodology and reasonable results (AUC 0.93), it is primarily an application paper lacking sufficient methodological novelty. The RNN/GRU architectures are standard, the main contribution is demonstrating their effectiveness on a specific healthcare task, and there is no significant algorithmic innovation, theoretical insight, or surprising empirical finding that would merit acceptance at a top-tier ML venue like ICML/ICLR/NeurIPS. The work would be better suited for a domain-specific or applications-focused venue."
+      },
+      "token": {
+        "prompt_tokens": 7157,
+        "completion_tokens": 160,
+        "total_tokens": 7317
+      },
+      "time": "2026-02-11T18:49:13.477244+00:00"
     }
   ],
   "test": true

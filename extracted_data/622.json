@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel theoretical framework connecting ResNets to spin glass models with rigorous analysis of dynamic ensemble behavior and batch normalization's role. Strong mathematical contributions with experimental validation, though some assumptions limit practical applicability."
-      },
-      "token": {
-        "prompt_tokens": 8396,
-        "completion_tokens": 77,
-        "total_tokens": 8473
-      },
-      "time": "2026-02-08T22:35:13.908367+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -123,6 +109,20 @@
         "total_tokens": 9999
       },
       "time": "2026-02-09T20:37:49.910208+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Provides novel theoretical insights connecting ResNets to spin glass models, explains dynamic ensemble behavior during training controlled by batch normalization scaling, and derives conditions on critical points. However, theoretical framework relies on strong assumptions (A1-A4) with acknowledged limitations, and empirical validation is limited to toy Gaussians and standard benchmarks without deeper investigation of when/why the theory applies."
+      },
+      "token": {
+        "prompt_tokens": 11130,
+        "completion_tokens": 115,
+        "total_tokens": 11245
+      },
+      "time": "2026-02-11T19:09:09.648312+00:00"
     }
   ],
   "test": false

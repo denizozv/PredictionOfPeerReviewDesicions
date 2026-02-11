@@ -157,20 +157,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel extensions to NTM with learnable addressing (continuous/discrete), dynamic LRU mechanism, and curriculum learning strategy. Solid experimental validation across multiple tasks (bAbI, pMNIST, toy tasks) with meaningful ablations and analysis."
-      },
-      "token": {
-        "prompt_tokens": 6990,
-        "completion_tokens": 90,
-        "total_tokens": 7080
-      },
-      "time": "2026-02-08T22:39:14.456709+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -183,6 +169,20 @@
         "total_tokens": 8899
       },
       "time": "2026-02-09T20:42:04.377410+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents a reasonable extension to NTMs with learnable address vectors and both continuous/discrete addressing schemes, the contributions are primarily incremental architectural modifications. The experimental validation is limited: bAbI results show significant gaps versus MemN2N/DMN+, pMNIST results are modest improvements over existing methods, and toy tasks (copy/associative recall) lack convincing generalization analysis. The discrete addressing via REINFORCE with curriculum learning is a useful engineering contribution but not sufficiently novel. The regularization techniques (read-write consistency, next-input prediction) appear ad-hoc and task-specific. Overall, the work lacks the depth of insight, novelty, or empirical impact expected for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9724,
+        "completion_tokens": 194,
+        "total_tokens": 9918
+      },
+      "time": "2026-02-11T19:15:11.098542+00:00"
     }
   ],
   "test": false

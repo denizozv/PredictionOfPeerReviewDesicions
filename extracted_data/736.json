@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Simple yet effective method with solid empirical validation across multiple benchmarks. Practical applicability and complementarity with other methods demonstrated. However, limited conceptual novelty—core insight is straightforward application of BN statistics adjustment."
-      },
-      "token": {
-        "prompt_tokens": 4494,
-        "completion_tokens": 82,
-        "total_tokens": 4576
-      },
-      "time": "2026-02-08T22:46:07.921864+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 6615
       },
       "time": "2026-02-09T20:49:10.401009+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple yet effective domain adaptation method (AdaBN) that adapts batch normalization statistics from source to target domain, backed by clear motivation (pilot experiment showing BN statistics separate domains), comprehensive experiments on standard benchmarks (Office, Caltech-Bing) with consistent improvements, useful ablations (layer-wise analysis, sample sensitivity), and practical applicability to real problems (remote sensing). While incremental in nature, the method is parameter-free, complementary to other approaches, and achieves state-of-the-art results with surprising simplicity."
+      },
+      "token": {
+        "prompt_tokens": 7228,
+        "completion_tokens": 157,
+        "total_tokens": 7385
+      },
+      "time": "2026-02-11T19:24:15.096118+00:00"
     }
   ],
   "test": false

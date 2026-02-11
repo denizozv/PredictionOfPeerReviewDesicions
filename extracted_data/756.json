@@ -82,20 +82,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty and weak experimental validation. SimEc is essentially a neural network approximation of kernel PCA with standard MSE/cross-entropy losses—the connection to kPCA is well-known. ConEc reinterprets word2vec through a similarity encoder lens without substantial algorithmic innovation. Experiments are limited to toy datasets (MNIST, 20 newsgroups) and a single NER task with modest improvements. No comparison to contemporary dimensionality reduction or embedding methods. The paper reads as an incremental application of existing techniques rather than a methodological advance suitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 6762,
-        "completion_tokens": 162,
-        "total_tokens": 6924
-      },
-      "time": "2026-02-08T22:48:11.328117+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -108,6 +94,20 @@
         "total_tokens": 8916
       },
       "time": "2026-02-09T20:51:18.353631+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper presents incremental contributions with limited novelty: SimEc is essentially a neural network wrapper around kernel similarity preservation (closely related to existing work on learning mappings for kPCA), and ConEc is a minor reinterpretation of word2vec's negative sampling without substantial methodological innovation. Experimental validation is weak—comparisons are mostly to classical baselines (kPCA, isomap, vanilla word2vec) rather than contemporary neural methods; NER results use only logistic regression on embeddings without comparison to modern NER systems; and the claimed benefits (OOV handling, multi-sense disambiguation) lack rigorous quantitative evaluation. The work reads as a useful engineering contribution but falls short of the novelty and empirical rigor expected at ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 9496,
+        "completion_tokens": 209,
+        "total_tokens": 9705
+      },
+      "time": "2026-02-11T19:27:19.185995+00:00"
     }
   ],
   "test": true

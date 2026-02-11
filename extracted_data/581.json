@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core method (standard LSTM-RMDN architecture from Graves 2013), weak experimental validation (mostly qualitative assessment, no quantitative metrics, limited baselines), and narrow application scope (handwriting synthesis only). While the sigma-lognormal preprocessing is interesting, it is not sufficiently novel to overcome methodological limitations."
-      },
-      "token": {
-        "prompt_tokens": 9720,
-        "completion_tokens": 109,
-        "total_tokens": 9829
-      },
-      "time": "2026-02-08T22:31:05.993209+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 11442
       },
       "time": "2026-02-09T20:33:20.917606+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper presents an interesting application of RMDNs to handwriting synthesis using a physiologically-motivated sigma-lognormal representation, the contribution is primarily engineering-focused with limited novelty. The core technical components (RMDNs, LSTMs, data augmentation) are well-established; the main contribution is their combination with an existing handwriting model. Evaluation is almost entirely qualitative with cherry-picked visual results, no quantitative metrics, no comparison to baselines, and no user studies. The one-shot learning and style transfer experiments lack rigor. The paper reads more as a technical report than a research contribution suitable for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 12454,
+        "completion_tokens": 178,
+        "total_tokens": 12632
+      },
+      "time": "2026-02-11T19:03:04.211770+00:00"
     }
   ],
   "test": false

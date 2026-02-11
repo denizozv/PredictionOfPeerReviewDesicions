@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel framework (LIPS) combining neural networks with classical program synthesis techniques. Strong methodological contribution with rigorous experimental validation, theoretical justification (Lemma 1), and impressive empirical speedups (order of magnitude). Addresses fundamental problem in program synthesis with principled approach to attribute prediction and search guidance."
-      },
-      "token": {
-        "prompt_tokens": 11045,
-        "completion_tokens": 100,
-        "total_tokens": 11145
-      },
-      "time": "2026-02-08T22:16:09.235880+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -178,6 +164,20 @@
         "total_tokens": 12648
       },
       "time": "2026-02-09T20:19:20.630202+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Novel framework (LIPS) combining neural networks with classical program synthesis search techniques, demonstrating order-of-magnitude speedups on competitive programming problems. Strong empirical validation with multiple search backends (DFS, SMT, enumeration), theoretical justification via Lemma 1 on rank loss, and impressive generalization across program lengths. Well-executed work with clear presentation and thorough experimental analysis."
+      },
+      "token": {
+        "prompt_tokens": 13779,
+        "completion_tokens": 119,
+        "total_tokens": 13898
+      },
+      "time": "2026-02-11T18:41:15.209219+00:00"
     }
   ],
   "test": false

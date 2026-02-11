@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty with incremental contribution. Feature regularization analysis is mostly empirical validation of known techniques (SGM, L2 penalty). Theoretical insights (connection to batch normalization, VC-dimension argument) are relatively shallow. Experimental improvements are marginal and lack comparison with modern meta-learning baselines for low-shot learning. The paper reads as an analysis paper rather than a methodological advance."
-      },
-      "token": {
-        "prompt_tokens": 6384,
-        "completion_tokens": 121,
-        "total_tokens": 6505
-      },
-      "time": "2026-02-08T22:47:15.551054+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 8267
       },
       "time": "2026-02-09T20:50:49.095281+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper provides useful empirical and theoretical analysis of feature regularization for low-shot learning, with clear case studies (XOR, regression) and connections to batch normalization. However, the core contribution is primarily analytical rather than methodological: the proposed modification (adding weight penalty ||W||²_F to avoid degenerate solutions) is incremental, the theoretical insights (centering effect, connection to BN) are relatively straightforward, and experimental validation is limited. The Omniglot results (91.5%) are competitive but not state-of-the-art, ImageNet experiments lack depth (only 20-way evaluation on 600 novel classes), and the paper lacks compelling evidence that the proposed design substantially outperforms existing approaches. The work reads more as a thorough analysis of known phenomena rather than a significant methodological advance."
+      },
+      "token": {
+        "prompt_tokens": 9118,
+        "completion_tokens": 213,
+        "total_tokens": 9331
+      },
+      "time": "2026-02-11T19:27:04.899156+00:00"
     }
   ],
   "test": false

@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical framework (sound/probabilistically sound combiners) for parallelizing SGD with formal guarantees. Solid experimental validation on 9 datasets with up to 13× speedup. Addresses real practical problem with principled approach using Johnson-Lindenstrauss lemma for dimensionality reduction. However, limited to linear learners and some experimental concerns (initial accuracy stuttering, modest speedups on sparse datasets) prevent higher confidence."
-      },
-      "token": {
-        "prompt_tokens": 6158,
-        "completion_tokens": 130,
-        "total_tokens": 6288
-      },
-      "time": "2026-02-08T22:47:03.261825+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 8078
       },
       "time": "2026-02-09T20:50:12.914779+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework (sound/probabilistically sound combiners) for parallelizing SGD with formal guarantees; solid empirical validation on 9 datasets with up to 13× speedup; addresses a real problem (sequential dependence in SGD) with principled solution using symbolic computation and JL projection. However, limited to linear learners, modest speedups on some benchmarks, and initial accuracy stuttering reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 8892,
+        "completion_tokens": 125,
+        "total_tokens": 9017
+      },
+      "time": "2026-02-11T19:26:05.323468+00:00"
     }
   ],
   "test": true

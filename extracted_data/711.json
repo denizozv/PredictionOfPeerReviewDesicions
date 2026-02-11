@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel span representation approach with strong empirical results on SQuAD, thorough ablations demonstrating architectural choices, and clear methodological contribution to extractive QA."
-      },
-      "token": {
-        "prompt_tokens": 5350,
-        "completion_tokens": 71,
-        "total_tokens": 5421
-      },
-      "time": "2026-02-08T22:44:08.724216+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -138,6 +124,20 @@
         "total_tokens": 7452
       },
       "time": "2026-02-09T20:47:01.586762+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Proposes RASOR, a well-motivated architecture that explicitly computes joint span representations for extractive QA, avoiding independence assumptions that hurt accuracy. Demonstrates strong empirical results (5% improvement over Wang & Jiang 2016, >50% error reduction vs. baseline) with thorough ablations showing the importance of span-level modeling, question representations, and learning objectives. Includes insightful analysis of failure modes and attention patterns. Main weakness: evaluation only on SQuAD dev set (test results pending), but cross-validation validates generalization."
+      },
+      "token": {
+        "prompt_tokens": 8084,
+        "completion_tokens": 156,
+        "total_tokens": 8240
+      },
+      "time": "2026-02-11T19:21:18.679746+00:00"
     }
   ],
   "test": false

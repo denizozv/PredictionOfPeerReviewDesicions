@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel theoretical analysis of ResNet via Hessian condition numbers at initialization; rigorous mathematical framework explaining why 2-shortcuts achieve depth-invariant optimization; strong experimental validation on learning dynamics and convergence properties."
-      },
-      "token": {
-        "prompt_tokens": 7140,
-        "completion_tokens": 80,
-        "total_tokens": 7220
-      },
-      "time": "2026-02-08T22:48:07.135004+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 8968
       },
       "time": "2026-02-09T20:51:10.758494+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Provides rigorous theoretical analysis of ResNet via deep linear networks, proving that 2-shortcuts yield depth-invariant Hessian condition numbers while 1-shortcuts and deeper shortcuts fail; backed by comprehensive experiments on optimization dynamics and learning behavior, offering valuable mechanistic insights into why ResNet architecture succeeds."
+      },
+      "token": {
+        "prompt_tokens": 9874,
+        "completion_tokens": 101,
+        "total_tokens": 9975
+      },
+      "time": "2026-02-11T19:27:14.712387+00:00"
     }
   ],
   "test": false

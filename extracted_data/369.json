@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel trained quantization approach learning both ternary values and assignments; strong empirical results on CIFAR-10 and ImageNet with practical efficiency gains; clear methodological contribution beyond prior work (TWN, DoReFa-Net)."
-      },
-      "token": {
-        "prompt_tokens": 5011,
-        "completion_tokens": 88,
-        "total_tokens": 5099
-      },
-      "time": "2026-02-08T22:08:08.235329+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -158,6 +144,20 @@
         "total_tokens": 7052
       },
       "time": "2026-02-09T20:12:16.776067+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Proposes Trained Ternary Quantization (TTQ) with learnable ternary values and assignments, demonstrating strong empirical results (16× compression, accuracy improvements on CIFAR-10/ImageNet over full-precision and prior ternary methods), clear methodology with asymmetric quantization factors, and practical efficiency gains; solid contribution to neural network compression despite incremental nature relative to prior quantization work."
+      },
+      "token": {
+        "prompt_tokens": 7745,
+        "completion_tokens": 127,
+        "total_tokens": 7872
+      },
+      "time": "2026-02-11T18:30:15.668021+00:00"
     }
   ],
   "test": false

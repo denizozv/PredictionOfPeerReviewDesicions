@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel self-ensembling approach for semi-supervised learning with strong empirical results, clear methodological contribution, comprehensive experiments across multiple benchmarks, and significant improvements over prior work."
-      },
-      "token": {
-        "prompt_tokens": 5957,
-        "completion_tokens": 73,
-        "total_tokens": 6030
-      },
-      "time": "2026-02-08T22:19:11.708056+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 7961
       },
       "time": "2026-02-09T20:21:42.173394+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Proposes two simple yet effective self-ensembling methods (Π-model and temporal ensembling) for semi-supervised learning with strong empirical results on CIFAR-10, SVHN, and CIFAR-100; demonstrates significant improvements over prior work, includes thorough ablations and analysis (e.g., label noise robustness), provides clear intuition for why consistency regularization works, and offers practical speedups; the temporal ensembling variant is particularly elegant and has proven influential in the field."
+      },
+      "token": {
+        "prompt_tokens": 8691,
+        "completion_tokens": 147,
+        "total_tokens": 8838
+      },
+      "time": "2026-02-11T18:46:03.112506+00:00"
     }
   ],
   "test": false

@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel compression method with solid theoretical grounding (homological structure, multiple hash functions, reconstruction network), comprehensive experiments across multiple domains (feedforward NNs, CNNs, ranking), and consistent improvements over HashedNets baseline. However, limited novelty scope (incremental over HashedNets), modest experimental depth on state-of-the-art comparisons, and presentation clarity issues prevent higher confidence."
-      },
-      "token": {
-        "prompt_tokens": 6214,
-        "completion_tokens": 121,
-        "total_tokens": 6335
-      },
-      "time": "2026-02-08T22:41:21.688147+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 8200
       },
       "time": "2026-02-09T20:44:14.923541+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel compression technique (HFH) that extends HashedNets by using multiple hash functions and a learned reconstruction network, with a key practical benefit: unified compression ratio across layers via homological structure. Demonstrates consistent improvements over HashedNets across multiple benchmarks (MNIST variants, CIFAR-10, ImageNet, semantic ranking) with thorough ablations on hash function count and reconstruction network depth. However, confidence is moderate due to: (1) limited novelty beyond HashedNets (multiple hashing + small learned mapping), (2) comparisons mainly against HashedNets rather than broader compression baselines (pruning, quantization), (3) modest absolute gains on ImageNet, and (4) presentation clarity issues in places."
+      },
+      "token": {
+        "prompt_tokens": 8948,
+        "completion_tokens": 197,
+        "total_tokens": 9145
+      },
+      "time": "2026-02-11T19:18:07.569893+00:00"
     }
   ],
   "test": false

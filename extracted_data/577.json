@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty and experimental scope. Linear classifier probes are a straightforward diagnostic tool without significant methodological innovation. Experiments are mostly on toy problems and standard benchmarks (MNIST, ImageNet) without rigorous comparison to alternative interpretability methods. The paper reads more as a useful engineering practice than a scientific contribution suitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 4441,
-        "completion_tokens": 107,
-        "total_tokens": 4548
-      },
-      "time": "2026-02-08T22:30:33.191024+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 6693
       },
       "time": "2026-02-09T20:32:59.819572+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the linear probe concept is intuitive and useful for interpretability, the paper lacks sufficient novelty, rigor, and empirical depth for a top-tier venue. The core idea (attaching frozen linear classifiers to intermediate layers post-hoc) is straightforward and not deeply novel. Experiments are mostly toy/illustrative (untrained networks, MNIST, incomplete Inception results) with limited actionable insights. The information-theoretic motivation is informal and somewhat confused (conflating representational utility with mutual information). Missing are: rigorous comparisons to other interpretability methods, systematic evaluation on modern architectures, theoretical analysis of what probes actually measure, and clear guidelines for practitioners. The paper reads more as an interpretability tool demonstration than a research contribution with significant new understanding."
+      },
+      "token": {
+        "prompt_tokens": 7175,
+        "completion_tokens": 199,
+        "total_tokens": 7374
+      },
+      "time": "2026-02-11T19:02:11.555856+00:00"
     }
   ],
   "test": false

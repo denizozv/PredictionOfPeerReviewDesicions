@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited scope (tic-tac-toe only), weak methodological novelty (standard CNN+CAM), incremental contribution to CAM literature, lacks rigor in concept learning claims, insufficient experimental depth for top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 4806,
-        "completion_tokens": 85,
-        "total_tokens": 4891
-      },
-      "time": "2026-02-08T22:46:16.263739+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 7075
       },
       "time": "2026-02-09T20:49:40.679414+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper is a toy proof-of-concept on tic-tac-toe that lacks sufficient novelty and rigor for a top-tier venue. The core claims—that CNNs learn game concepts under weak supervision and that CAM activates on non-salient regions—are demonstrated only on an oversimplified domain with exhaustive state enumeration (4,486 states). The methodology is not novel (standard fine-tuned AlexNet + existing CAM technique), the evaluation is primarily qualitative with weak quantitative metrics (70% RAC on a trivial task), and there is no evidence of generalization beyond tic-tac-toe or comparison to meaningful baselines. The three motivating questions are not rigorously addressed, and the paper reads more as an interesting observation than a methodological or empirical contribution suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 7540,
+        "completion_tokens": 229,
+        "total_tokens": 7769
+      },
+      "time": "2026-02-11T19:25:10.580992+00:00"
     }
   ],
   "test": false

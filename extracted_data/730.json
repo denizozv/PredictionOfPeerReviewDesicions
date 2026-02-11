@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Empirical engineering paper combining known techniques (MC dropout, residual connections, embed averaging) without significant methodological novelty. Limited to two text classification datasets with incremental improvements. Lacks theoretical insight or broad scientific contribution expected at top venues."
-      },
-      "token": {
-        "prompt_tokens": 4988,
-        "completion_tokens": 86,
-        "total_tokens": 5074
-      },
-      "time": "2026-02-08T22:45:16.921485+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 7056
       },
       "time": "2026-02-09T20:48:48.841266+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper is primarily an engineering contribution combining existing techniques (Monte Carlo dropout averaging, embed average pooling from prior work, residual connections) without sufficient novelty or insight. While the empirical study is competent, the individual components are not new, the improvements are incremental, and the analysis lacks depth into why these combinations work. The contribution is better suited as a strong baseline/engineering paper rather than a research contribution for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7722,
+        "completion_tokens": 128,
+        "total_tokens": 7850
+      },
+      "time": "2026-02-11T19:24:04.235311+00:00"
     }
   ],
   "test": false

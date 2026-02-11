@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical insight (corruption as data-dependent regularization via Taylor expansion), strong empirical results across multiple tasks, computational efficiency, and clear methodological contribution to document representation learning."
-      },
-      "token": {
-        "prompt_tokens": 6302,
-        "completion_tokens": 72,
-        "total_tokens": 6374
-      },
-      "time": "2026-02-08T22:04:26.238783+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 8274
       },
       "time": "2026-02-09T20:08:49.602931+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple yet effective document representation method (averaging word embeddings with corruption-based regularization) backed by solid theoretical justification via Taylor expansion analysis showing corruption acts as data-dependent regularization favoring informative words. Demonstrates consistent improvements across multiple tasks (sentiment analysis, document classification, semantic relatedness) with strong computational efficiency. However, the core idea of averaging embeddings is not novel, and the main contribution—the corruption regularization mechanism—while theoretically motivated, is somewhat incremental. The empirical gains are meaningful but not dramatic, and some experimental choices (e.g., different embedding dimensions across baselines, Skip-thought underperformance attributed to paragraph length) raise questions about fair comparison. The work is solid and publishable but lacks the novelty or impact for a clear accept at top venues."
+      },
+      "token": {
+        "prompt_tokens": 9034,
+        "completion_tokens": 206,
+        "total_tokens": 9240
+      },
+      "time": "2026-02-11T18:22:23.847763+00:00"
     }
   ],
   "test": true

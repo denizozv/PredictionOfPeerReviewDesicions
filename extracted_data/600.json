@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty (straightforward application of group sparse lasso to autoencoders), narrow task scope (question classification), weak experimental validation (mostly private datasets, marginal improvements on public benchmarks, no comparison with relevant baselines beyond basic CNN), and presentation issues."
-      },
-      "token": {
-        "prompt_tokens": 5045,
-        "completion_tokens": 91,
-        "total_tokens": 5136
-      },
-      "time": "2026-02-08T22:33:09.804869+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 7183
       },
       "time": "2026-02-09T20:35:24.120714+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper proposes group sparse autoencoders embedded in CNNs for question classification, but the contribution is incremental: group sparse constraints are a straightforward extension of existing sparse autoencoders (directly adapting group sparse lasso to autoencoders), and the integration into CNNs is a simple architectural modification. The experimental validation is weak: only marginal improvements on TREC, and the two datasets where improvements are significant (Insurance, DMV) are private/newly collected with no public benchmarks for comparison. The paper lacks rigorous baselines (only compares to vanilla CNN), ablation studies, and theoretical justification for why group sparsity should help question classification. The writing quality is poor with grammatical errors and unclear motivation for using answer sets. Overall, the work reads as an engineering contribution rather than a research advance suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 7779,
+        "completion_tokens": 227,
+        "total_tokens": 8006
+      },
+      "time": "2026-02-11T19:06:04.160615+00:00"
     }
   ],
   "test": false

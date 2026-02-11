@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel analytical reparametrization of LSTM that preserves normalization without per-timestep statistics computation, with theoretical gradient flow analysis and competitive empirical results on language modeling and generative modeling tasks."
-      },
-      "token": {
-        "prompt_tokens": 5144,
-        "completion_tokens": 78,
-        "total_tokens": 5222
-      },
-      "time": "2026-02-08T22:25:07.726129+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 7060
       },
       "time": "2026-02-09T20:26:46.899761+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled LSTM reparametrization that preserves activation statistics analytically (without per-timestep estimation), reducing computation vs. BN/LN while maintaining training benefits; includes gradient flow analysis and demonstrates competitive or better performance on Penn Treebank and DRAW with ~30% speedup, though empirical validation is somewhat limited in scope."
+      },
+      "token": {
+        "prompt_tokens": 7878,
+        "completion_tokens": 114,
+        "total_tokens": 7992
+      },
+      "time": "2026-02-11T18:54:10.143521+00:00"
     }
   ],
   "test": false

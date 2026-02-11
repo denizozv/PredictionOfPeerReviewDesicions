@@ -532,20 +532,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel theoretical framework connecting binary classification to two-sample testing with rigorous analysis, strong experimental validation across multiple domains (classical tests, GANs, causal discovery), and practical interpretability advantages. Solid contribution to statistical testing methodology."
-      },
-      "token": {
-        "prompt_tokens": 11043,
-        "completion_tokens": 84,
-        "total_tokens": 11127
-      },
-      "time": "2026-02-08T22:17:15.121608+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -558,6 +544,20 @@
         "total_tokens": 12726
       },
       "time": "2026-02-09T20:20:31.121862+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Solid empirical and theoretical contribution: revisits classifier-based two-sample testing with clear theoretical analysis (power bounds), comprehensive experiments comparing against MMD/ME/classical tests, and novel applications to GAN evaluation and causal discovery via CGANs. Interpretability advantages and practical utility are well-demonstrated, though the core idea builds on prior work (Friedman 2003, etc.) and some theoretical gaps remain (high-dimensional regime, Remark 1)."
+      },
+      "token": {
+        "prompt_tokens": 13777,
+        "completion_tokens": 138,
+        "total_tokens": 13915
+      },
+      "time": "2026-02-11T18:43:14.927300+00:00"
     }
   ],
   "test": false

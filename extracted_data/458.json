@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel theoretical framework (local entropy objective) with rigorous mathematical foundation, strong empirical validation across CNNs and RNNs, clear generalization bounds via uniform stability, and comprehensive experimental analysis including Hessian eigenspectrum studies."
-      },
-      "token": {
-        "prompt_tokens": 10149,
-        "completion_tokens": 87,
-        "total_tokens": 10236
-      },
-      "time": "2026-02-08T22:18:14.673693+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -163,6 +149,20 @@
         "total_tokens": 11695
       },
       "time": "2026-02-09T20:21:21.539032+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel approach to optimization via local entropy that biases SGD toward flat minima with strong empirical results across CNNs and RNNs, supported by theoretical smoothness analysis and insightful Hessian eigenspectrum studies, though the theory relies on unrealistic assumptions and computational overhead is significant."
+      },
+      "token": {
+        "prompt_tokens": 12883,
+        "completion_tokens": 101,
+        "total_tokens": 12984
+      },
+      "time": "2026-02-11T18:45:03.491100+00:00"
     }
   ],
   "test": false

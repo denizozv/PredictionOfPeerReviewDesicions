@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel problem formulation (Sisyphean curse in DQN), well-motivated safety approach with clear intuition, demonstrates pathological failures in standard benchmarks, introduces intrinsic fear mechanism with theoretical grounding. However, limited experimental scope (toy problems + one Atari game), hyperparameter sensitivity (fear radius, phase-in), and lack of comparison with recent safe RL methods weaken contribution."
-      },
-      "token": {
-        "prompt_tokens": 4855,
-        "completion_tokens": 122,
-        "total_tokens": 4977
-      },
-      "time": "2026-02-08T22:47:22.220621+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 6971
       },
       "time": "2026-02-09T20:50:56.462759+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper addresses a real problem (catastrophic failures in DQN) with a reasonable intuition (reward shaping via a danger model), the contribution is incremental and the evaluation is insufficient. The method requires strong assumptions (catastrophe detector, prior knowledge of fear radius), introduces additional hyperparameters (fear factor, fear radius, phase-in length) that require careful tuning, and is only validated on toy problems (Adventure Seeker, CartPole) plus one Atari game with mixed results. The danger model is a simple supervised classifier with no theoretical justification for why this particular form of reward shaping is optimal. Critically, the paper lacks comparison to relevant safe RL baselines, ablation studies on design choices, and evaluation on realistic safety-critical domains. The Seaquest results show the method trades off safety for reward without clear principled guidance. For a top venue, the work needs stronger baselines, theoretical analysis, more comprehensive experiments, and demonstration on genuinely challenging safety-critical problems."
+      },
+      "token": {
+        "prompt_tokens": 7589,
+        "completion_tokens": 250,
+        "total_tokens": 7839
+      },
+      "time": "2026-02-11T19:27:09.036472+00:00"
     }
   ],
   "test": false

@@ -72,20 +72,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel multilingual extension of multi-sense embeddings with principled Bayesian non-parametric approach; solid experimental validation on WSI tasks; clear methodological contribution beyond prior bilingual work."
-      },
-      "token": {
-        "prompt_tokens": 5159,
-        "completion_tokens": 76,
-        "total_tokens": 5235
-      },
-      "time": "2026-02-08T22:37:15.373266+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -98,6 +84,20 @@
         "total_tokens": 7289
       },
       "time": "2026-02-09T20:39:41.420710+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid contribution extending multi-sense embeddings from bilingual to multilingual settings using principled Bayesian non-parametric approach with Dirichlet process priors. Key insight that multilingual context helps disambiguate senses better than bilingual alone, validated on WSI benchmarks with comparable performance to stronger baselines trained on 5x more data. Well-motivated technical design (especially the φ(ye,xf) factor for aligning multiple language spaces) and systematic ablations. However, evaluation is somewhat narrow (primarily WSI task, limited downstream applications), and SCWS results are unexplained/concerning, which moderately limits impact."
+      },
+      "token": {
+        "prompt_tokens": 7893,
+        "completion_tokens": 174,
+        "total_tokens": 8067
+      },
+      "time": "2026-02-11T19:11:22.800926+00:00"
     }
   ],
   "test": false

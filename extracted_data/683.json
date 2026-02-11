@@ -67,20 +67,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: straightforward combination of existing methods (ResNets + Deep Incremental Boosting). Weak experimental validation with no results section shown. Incremental contribution insufficient for top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 2608,
-        "completion_tokens": 80,
-        "total_tokens": 2688
-      },
-      "time": "2026-02-08T22:41:16.355881+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -93,6 +79,20 @@
         "total_tokens": 4909
       },
       "time": "2026-02-09T20:44:00.386395+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper combines two existing techniques (ResNets and Deep Incremental Boosting) in a straightforward manner without sufficient novelty or compelling empirical validation. The core contribution—adding residual blocks sequentially during boosting rounds—is incremental. The paper lacks comprehensive experiments, clear baselines, ablation studies, and rigorous comparison to alternatives. The writing is dense and the motivation for why this specific combination should work better is not convincingly established. No experimental results section is provided in the excerpt, making it impossible to assess empirical contribution."
+      },
+      "token": {
+        "prompt_tokens": 5342,
+        "completion_tokens": 150,
+        "total_tokens": 5492
+      },
+      "time": "2026-02-11T19:17:20.096790+00:00"
     }
   ],
   "test": false

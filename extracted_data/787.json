@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid methodological contribution with practical scalability solution (marginal fitting), comprehensive experiments on 8 datasets, and consistent improvements over strong baselines. However, limited conceptual novelty—core model is relatively straightforward (low-rank factorization + sigmoid nonlinearity + multinomial likelihood). Marginal sampling is pragmatic but incremental. Suitable for a top-tier venue but not groundbreaking."
-      },
-      "token": {
-        "prompt_tokens": 5614,
-        "completion_tokens": 123,
-        "total_tokens": 5737
-      },
-      "time": "2026-02-08T22:50:14.765272+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 7562
       },
       "time": "2026-02-09T20:54:04.930211+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a practical neural network approach (SEM) for multi-label learning with large label sets, introducing an effective marginal-fitting strategy for scalability and demonstrating consistent empirical improvements over four recent baselines across eight datasets with comprehensive ablations on marginal size and latent dimensionality; however, the core technical contribution (low-rank factorization + sigmoid nonlinearity + KL divergence fitting) is somewhat incremental, and the novelty is primarily in the marginal-sampling approximation rather than fundamental methodological innovation."
+      },
+      "token": {
+        "prompt_tokens": 8348,
+        "completion_tokens": 150,
+        "total_tokens": 8498
+      },
+      "time": "2026-02-11T19:31:11.228128+00:00"
     }
   ],
   "test": false

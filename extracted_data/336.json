@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Strong methodological contributions (discretized logistic mixture likelihood, architectural innovations with downsampling/shortcuts), comprehensive ablation studies, state-of-the-art results on CIFAR-10, clear practical improvements with thorough experimental validation."
-      },
-      "token": {
-        "prompt_tokens": 4644,
-        "completion_tokens": 86,
-        "total_tokens": 4730
-      },
-      "time": "2026-02-08T22:05:13.118877+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 6720
       },
       "time": "2026-02-09T20:09:34.380119+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Delivers clear, practically important improvements to PixelCNN through multiple well-motivated modifications: discretized mixture-of-logistics likelihood (better inductive bias, lower dimensionality, faster convergence), whole-pixel conditioning with channel dependencies, downsampling with U-net-style skip connections, and dropout regularization. Achieves state-of-the-art likelihood on CIFAR-10 (2.92 bits/dim), includes thorough ablations validating each component, provides high-quality public implementation, and offers useful insights (e.g., receptive field size less critical than capacity). Strong empirical contribution with clear practical impact."
+      },
+      "token": {
+        "prompt_tokens": 7376,
+        "completion_tokens": 175,
+        "total_tokens": 7551
+      },
+      "time": "2026-02-11T18:24:05.689503+00:00"
     }
   ],
   "test": false

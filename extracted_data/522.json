@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical analysis of ReLU network convergence with rigorous dynamical systems approach; first global convergence proof for multi-node ReLU networks under orthonormality assumption; symmetry-breaking mechanism well-characterized. However, limited to two-layer networks, restrictive assumptions (Gaussian inputs, orthonormal teacher weights), and modest experimental validation reduce impact."
-      },
-      "token": {
-        "prompt_tokens": 10142,
-        "completion_tokens": 113,
-        "total_tokens": 10255
-      },
-      "time": "2026-02-08T22:25:15.316879+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 11603
       },
       "time": "2026-02-09T20:27:12.133020+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper provides rigorous theoretical analysis of two-layer ReLU networks under restrictive assumptions (Gaussian inputs, orthonormal teacher weights, specific initialization structure), the contributions are primarily incremental extensions of prior work (Saad & Solla 1996) with limited practical relevance. The K=1 case reduces to known results; the K≥2 analysis requires unrealistic symmetry-breaking initialization and orthonormality constraints that severely limit applicability. Experiments are only on synthetic data with no comparison to practical deep learning scenarios. The work is technically sound but lacks sufficient novelty and impact for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 12876,
+        "completion_tokens": 172,
+        "total_tokens": 13048
+      },
+      "time": "2026-02-11T18:54:21.399539+00:00"
     }
   ],
   "test": false

@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Strong theoretical contributions (optimization landscape of linear residual networks, universal finite-sample expressivity) with solid empirical validation on standard benchmarks. Novel insights on identity parameterization principle with rigorous proofs and practical architectural implications."
-      },
-      "token": {
-        "prompt_tokens": 11360,
-        "completion_tokens": 83,
-        "total_tokens": 11443
-      },
-      "time": "2026-02-08T22:19:20.202756+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 12786
       },
       "time": "2026-02-09T20:22:11.293368+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Strong theoretical contributions (no spurious local optima in linear residual networks, universal finite-sample expressivity) with solid proofs and direct empirical validation through simplified all-convolutional architectures achieving competitive results on CIFAR10/100 and ImageNet, though ImageNet results are weaker and some experimental details could be more thorough."
+      },
+      "token": {
+        "prompt_tokens": 14094,
+        "completion_tokens": 109,
+        "total_tokens": 14203
+      },
+      "time": "2026-02-11T18:46:15.709917+00:00"
     }
   ],
   "test": false

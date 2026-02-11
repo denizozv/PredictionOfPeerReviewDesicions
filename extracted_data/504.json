@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel approach to unsupervised reward learning from demonstrations using pre-trained visual features with strong real-world robotic validation. Clear scientific contribution combining IRL approximation with practical imitation learning, though method is relatively simple and evaluation scope is limited to two tasks."
-      },
-      "token": {
-        "prompt_tokens": 7522,
-        "completion_tokens": 90,
-        "total_tokens": 7612
-      },
-      "time": "2026-02-08T22:24:05.495468+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -158,6 +144,20 @@
         "total_tokens": 9504
       },
       "time": "2026-02-09T20:25:34.856393+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel approach to learning dense reward functions from visual demonstrations using pre-trained features and simple IRL approximation; demonstrates real-world robotic learning from human videos without explicit sub-goal labels; solid empirical validation on door opening and pouring tasks with both qualitative and quantitative analysis, though limited scope and some methodological simplifications (naive Bayes assumption, manual segment count) prevent higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 10256,
+        "completion_tokens": 119,
+        "total_tokens": 10375
+      },
+      "time": "2026-02-11T18:52:13.555026+00:00"
     }
   ],
   "test": false

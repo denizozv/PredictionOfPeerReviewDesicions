@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Foundational theoretical contribution with rigorous approximation bounds showing exponential separation between deep and shallow networks for piecewise smooth functions. Novel proof techniques (binary expansion + ReLU multiplication) and comprehensive analysis across univariate/multivariate cases with matching upper/lower bounds."
-      },
-      "token": {
-        "prompt_tokens": 7007,
-        "completion_tokens": 94,
-        "total_tokens": 7101
-      },
-      "time": "2026-02-08T22:23:05.525345+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -158,6 +144,20 @@
         "total_tokens": 8897
       },
       "time": "2026-02-09T20:25:00.602438+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Provides rigorous theoretical analysis establishing exponential separation between shallow and deep networks for function approximation (poly(1/ε) vs polylog(1/ε) neurons), with constructive proofs for univariate and multivariate smooth/piecewise-smooth functions and matching lower bounds via strong convexity, yielding fundamental insights into depth-width tradeoffs."
+      },
+      "token": {
+        "prompt_tokens": 9741,
+        "completion_tokens": 117,
+        "total_tokens": 9858
+      },
+      "time": "2026-02-11T18:51:11.519408+00:00"
     }
   ],
   "test": false

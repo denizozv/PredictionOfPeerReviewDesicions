@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel theoretical framework extending CNNs via frame theory and steerability under Lie groups with solid mathematical foundations. Dynamic Steerable Frame Networks present a principled hybrid approach combining steerable representations with input-conditioned pose estimation. Demonstrates improvements on CIFAR-10+ by substitution and clear advantages on edge detection and video tasks. Strong conceptual contribution despite limited experimental scope."
-      },
-      "token": {
-        "prompt_tokens": 5592,
-        "completion_tokens": 115,
-        "total_tokens": 5707
-      },
-      "time": "2026-02-08T22:35:09.930551+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -153,6 +139,20 @@
         "total_tokens": 7692
       },
       "time": "2026-02-09T20:37:35.860959+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework extending CNNs to frame-based representations with steerability under Lie groups; demonstrates consistent improvements on CIFAR-10+ by substitution and shows compelling advantages on edge detection and small-scale video tasks, though experimental scope is somewhat limited and some claims need stronger empirical validation."
+      },
+      "token": {
+        "prompt_tokens": 8326,
+        "completion_tokens": 99,
+        "total_tokens": 8425
+      },
+      "time": "2026-02-11T19:09:03.319160+00:00"
     }
   ],
   "test": false

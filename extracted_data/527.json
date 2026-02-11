@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel architecture combining mRNN and LSTM with clear motivation, comprehensive experiments across multiple benchmarks (Penn Treebank, Text8, Hutter Prize), strong empirical results including state-of-the-art with dynamic evaluation, and insightful analysis of model behavior after surprising inputs."
-      },
-      "token": {
-        "prompt_tokens": 5102,
-        "completion_tokens": 98,
-        "total_tokens": 5200
-      },
-      "time": "2026-02-08T22:26:13.653160+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 7171
       },
       "time": "2026-02-09T20:27:49.049225+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Proposes a well-motivated hybrid architecture (mLSTM) combining input-dependent transitions from mRNNs with LSTM's gating mechanism; demonstrates consistent empirical improvements across multiple character-level language modeling benchmarks (Penn Treebank, Text8, Hutter Prize) with insightful analysis (e.g., recovery after surprising inputs); achieves competitive results with dynamic evaluation; includes proper ablations and multilingual experiments, though gains are modest and primarily incremental."
+      },
+      "token": {
+        "prompt_tokens": 7836,
+        "completion_tokens": 140,
+        "total_tokens": 7976
+      },
+      "time": "2026-02-11T18:55:19.720926+00:00"
     }
   ],
   "test": false

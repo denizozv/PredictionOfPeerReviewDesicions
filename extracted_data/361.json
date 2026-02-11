@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel specialized learning curve layer for BNNs with heteroscedastic noise modeling; solid empirical validation across multiple tasks; practical application to hyperparameter optimization via model-based Hyperband. Methodologically sound contribution to an important problem."
-      },
-      "token": {
-        "prompt_tokens": 6043,
-        "completion_tokens": 87,
-        "total_tokens": 6130
-      },
-      "time": "2026-02-08T22:07:15.062539+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -158,6 +144,20 @@
         "total_tokens": 8075
       },
       "time": "2026-02-09T20:11:30.604276+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical contribution combining Bayesian neural networks with a specialized learning curve layer for hyperparameter optimization. The paper introduces a practical architectural innovation (basis function layer) that improves learning curve prediction, demonstrates clear benefits over baselines across multiple tasks, and shows real-world applicability via model-based Hyperband. However, the novelty is somewhat incremental (combining existing techniques), and the theoretical insights are limited."
+      },
+      "token": {
+        "prompt_tokens": 8777,
+        "completion_tokens": 124,
+        "total_tokens": 8901
+      },
+      "time": "2026-02-11T18:28:58.462577+00:00"
     }
   ],
   "test": false

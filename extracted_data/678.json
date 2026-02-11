@@ -157,20 +157,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in transfer learning approach, standard architecture (AS Reader), narrow experimental scope (single model, cloze-style tasks), and incremental findings without significant methodological innovation."
-      },
-      "token": {
-        "prompt_tokens": 8886,
-        "completion_tokens": 74,
-        "total_tokens": 8960
-      },
-      "time": "2026-02-08T22:41:08.030812+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -183,6 +169,20 @@
         "total_tokens": 10641
       },
       "time": "2026-02-09T20:43:34.815825+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Empirical study on transfer learning in reading comprehension with limited novelty: uses existing AS Reader architecture on standard datasets (BookTest, CNN/DM, bAbI, SQuAD) without significant methodological innovation. Main findings (poor zero-shot transfer, positive few-shot transfer, both embeddings and encoders matter) are intuitive and unsurprising. Evaluation is narrow (single model architecture, toy tasks), lacks comparison to stronger baselines, and results are not competitive with state-of-the-art. The contribution is primarily empirical validation of expected transfer-learning behavior rather than a novel insight or method."
+      },
+      "token": {
+        "prompt_tokens": 11620,
+        "completion_tokens": 170,
+        "total_tokens": 11790
+      },
+      "time": "2026-02-11T19:17:11.935493+00:00"
     }
   ],
   "test": true

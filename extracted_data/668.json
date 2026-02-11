@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Simple but effective regularization technique with comprehensive empirical validation across 6 diverse benchmarks (vision, NLP, speech). Clear theoretical connection to label smoothing. Practical utility and consistent improvements justify publication despite limited methodological novelty."
-      },
-      "token": {
-        "prompt_tokens": 4106,
-        "completion_tokens": 85,
-        "total_tokens": 4191
-      },
-      "time": "2026-02-08T22:40:06.811046+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 6216
       },
       "time": "2026-02-09T20:42:43.420487+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple but effective regularization technique (confidence penalty via entropy) with exhaustive empirical validation across 6 diverse benchmarks (image classification, language modeling, machine translation, speech recognition), establishes clear connection to label smoothing, and demonstrates consistent improvements without modifying existing hyperparameters; contribution is primarily empirical but thorough and practically useful."
+      },
+      "token": {
+        "prompt_tokens": 6840,
+        "completion_tokens": 112,
+        "total_tokens": 6952
+      },
+      "time": "2026-02-11T19:15:28.528101+00:00"
     }
   ],
   "test": false

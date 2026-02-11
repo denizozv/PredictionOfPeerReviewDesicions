@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in analysis framework; auxiliary prediction tasks are straightforward probes without methodological innovation. Insights about CBOW norm effects and word order statistics are interesting but incremental. Lacks depth in explaining findings or proposing improvements to representations. Suitable for workshop/analysis venue but below ICML/ICLR/NeurIPS bar for novel methods or significant empirical contributions."
-      },
-      "token": {
-        "prompt_tokens": 5059,
-        "completion_tokens": 119,
-        "total_tokens": 5178
-      },
-      "time": "2026-02-08T22:22:25.385756+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 7310
       },
       "time": "2026-02-09T20:24:32.218767+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a useful diagnostic framework for analyzing sentence embeddings via auxiliary prediction tasks (length, word content, word order), with thorough empirical analysis revealing surprising insights (e.g., CBOW encodes length via norm effects, not word identity; LSTM-ED generalizes across permuted sentences). Well-executed ablations and natural-language controls provide mechanistic understanding, though the contribution is primarily analytical/empirical rather than methodological, and the scope is limited to relatively simple low-level properties."
+      },
+      "token": {
+        "prompt_tokens": 7793,
+        "completion_tokens": 142,
+        "total_tokens": 7935
+      },
+      "time": "2026-02-11T18:50:16.412581+00:00"
     }
   ],
   "test": false

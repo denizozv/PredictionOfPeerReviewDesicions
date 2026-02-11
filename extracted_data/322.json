@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel theoretical framework (Theorem 1 on finite optimal network size) with principled optimization algorithm (AdaRad) for automatic architecture search. Strong methodological contributions despite mixed experimental results and limited scalability validation."
-      },
-      "token": {
-        "prompt_tokens": 13681,
-        "completion_tokens": 81,
-        "total_tokens": 13762
-      },
-      "time": "2026-02-08T22:04:18.280756+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 14942
       },
       "time": "2026-02-09T20:08:25.910925+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents an interesting theoretical framework (Theorem 1 on finite optimal network size) and a novel optimization algorithm (AdaRad), the empirical validation is weak and inconsistent. Results on standard benchmarks (MNIST, rectangles, convex) are mixed—nonparametric networks underperform significantly on convex dataset and show no clear advantage on others. The method requires careful tuning of multiple hyperparameters (λ, α_r, α_θ, unit addition rate) and introduces substantial algorithmic complexity (CapNorm, radial-angular decomposition) without convincing evidence of practical benefit over simpler alternatives. The experimental protocol involves manual selection of 'typical representative' networks, raising reproducibility concerns. Scalability is demonstrated only on one large dataset (poker) with marginal improvements. The core contribution—automatically finding network size during training—is not convincingly shown to outperform standard approaches of training multiple fixed-size networks or using simpler growing/pruning heuristics."
+      },
+      "token": {
+        "prompt_tokens": 16413,
+        "completion_tokens": 254,
+        "total_tokens": 16667
+      },
+      "time": "2026-02-11T18:22:09.951105+00:00"
     }
   ],
   "test": false

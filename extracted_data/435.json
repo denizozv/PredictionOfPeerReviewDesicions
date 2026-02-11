@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel warm restart technique with strong empirical results (SOTA on CIFAR-10/100), clear methodological contribution (cosine annealing schedule), comprehensive experiments across multiple domains, and practical impact on training efficiency."
-      },
-      "token": {
-        "prompt_tokens": 5722,
-        "completion_tokens": 82,
-        "total_tokens": 5804
-      },
-      "time": "2026-02-08T22:15:12.108504+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 7622
       },
       "time": "2026-02-09T20:18:51.755202+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes a simple yet effective warm restart technique for SGD with cosine annealing that achieves strong empirical results (SOTA on CIFAR-10/100), demonstrates clear improvements in anytime performance, provides thorough experiments across multiple domains (CIFAR, EEG, downsampled ImageNet), includes useful ensemble insights, and offers practical value with released code. The method is well-motivated by prior restart work, clearly presented, and validated with proper ablations and comparisons."
+      },
+      "token": {
+        "prompt_tokens": 8456,
+        "completion_tokens": 141,
+        "total_tokens": 8597
+      },
+      "time": "2026-02-11T18:41:03.152781+00:00"
     }
   ],
   "test": false

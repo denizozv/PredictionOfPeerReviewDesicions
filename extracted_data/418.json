@@ -162,20 +162,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel technique addressing fundamental GAN training instability through discriminator unrolling; strong theoretical motivation (Eq. 12 analysis), comprehensive experiments across multiple datasets demonstrating mode collapse mitigation, and practical impact on GAN training stability."
-      },
-      "token": {
-        "prompt_tokens": 12126,
-        "completion_tokens": 85,
-        "total_tokens": 12211
-      },
-      "time": "2026-02-08T22:14:08.816783+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -188,6 +174,20 @@
         "total_tokens": 13773
       },
       "time": "2026-02-09T20:17:14.998287+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes a novel and well-motivated technique (unrolling discriminator optimization) that directly addresses a fundamental GAN training problem (mode collapse and instability), with clear theoretical intuition (capturing discriminator response via the missing gradient term), comprehensive experiments across multiple datasets with carefully designed evaluation metrics (mode coverage, manifold collapse, inference-via-optimization, pairwise distances), and thorough ablations demonstrating the mechanism works as intended."
+      },
+      "token": {
+        "prompt_tokens": 14860,
+        "completion_tokens": 128,
+        "total_tokens": 14988
+      },
+      "time": "2026-02-11T18:38:13.735281+00:00"
     }
   ],
   "test": false

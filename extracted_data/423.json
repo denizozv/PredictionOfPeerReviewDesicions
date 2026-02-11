@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel multi-discriminator framework with solid theoretical motivation (ensemble perspective, gradient analysis), comprehensive experimental validation across multiple datasets, and practical training improvements. However, evaluation relies on a newly proposed metric (GMAM) and lacks comparison with contemporary GAN variants, limiting impact assessment."
-      },
-      "token": {
-        "prompt_tokens": 4822,
-        "completion_tokens": 92,
-        "total_tokens": 4914
-      },
-      "time": "2026-02-08T22:14:20.025819+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 6894
       },
       "time": "2026-02-09T20:17:45.368091+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a well-motivated multi-discriminator GAN framework with multiple design perspectives (formidable adversary vs. forgiving teacher), introduces soft aggregation functions that enable training with the original minimax objective, and demonstrates consistent speedup to convergence across MNIST/CIFAR-10/CelebA with a novel GMAM evaluation metric; however, confidence is moderate due to limited baseline comparisons, reliance on a custom evaluation metric, and modest empirical gains that could benefit from stronger quantitative validation and analysis of when/why multiple discriminators help."
+      },
+      "token": {
+        "prompt_tokens": 7556,
+        "completion_tokens": 155,
+        "total_tokens": 7711
+      },
+      "time": "2026-02-11T18:39:07.280745+00:00"
     }
   ],
   "test": false

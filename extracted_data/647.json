@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel unification of model and inference through learned recurrent updates; strong theoretical motivation bridging classical optimization and deep learning; comprehensive experiments on multiple inverse problems with competitive results; clear methodological contribution with ablation studies."
-      },
-      "token": {
-        "prompt_tokens": 4822,
-        "completion_tokens": 79,
-        "total_tokens": 4901
-      },
-      "time": "2026-02-08T22:38:12.522373+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 6954
       },
       "time": "2026-02-09T20:40:33.595036+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel framework unifying model and inference for inverse problems via learned recurrent updates; demonstrates strong empirical results on image restoration tasks with good ablations (RIM vs GDN vs FFN) and competitive performance on denoising/super-resolution; clear motivation from gradient-based optimization and principled generalization to learnable updates; some concerns about limited novelty in core RNN architecture and modest improvements over baselines, but overall solid contribution bridging classical optimization and deep learning."
+      },
+      "token": {
+        "prompt_tokens": 7556,
+        "completion_tokens": 135,
+        "total_tokens": 7691
+      },
+      "time": "2026-02-11T19:13:13.649557+00:00"
     }
   ],
   "test": false

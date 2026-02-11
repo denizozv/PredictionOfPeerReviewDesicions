@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel methodological contribution combining deep learning with multiview CCA; addresses clear limitation (extending DCCA to >2 views); solid theoretical derivation; comprehensive experiments on diverse tasks with consistent improvements over baselines."
-      },
-      "token": {
-        "prompt_tokens": 5878,
-        "completion_tokens": 80,
-        "total_tokens": 5958
-      },
-      "time": "2026-02-08T22:38:07.598885+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -158,6 +144,20 @@
         "total_tokens": 7753
       },
       "time": "2026-02-09T20:40:19.650358+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Combines nonlinear deep learning with multi-view CCA in a principled way, addresses a clear gap (DCCA handles 2 views, GCCA is linear), derives gradient computation for constrained optimization, and demonstrates improvements on phoneme classification and hashtag recommendation tasks with reasonable experimental validation."
+      },
+      "token": {
+        "prompt_tokens": 8612,
+        "completion_tokens": 100,
+        "total_tokens": 8712
+      },
+      "time": "2026-02-11T19:13:07.197080+00:00"
     }
   ],
   "test": false

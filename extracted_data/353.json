@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel hybrid architecture combining VAE with autoregressive PixelCNN decoder, strong theoretical motivation, comprehensive experiments across multiple datasets with state-of-the-art results, clear scientific insights on latent variable information content and multi-scale modeling."
-      },
-      "token": {
-        "prompt_tokens": 5059,
-        "completion_tokens": 87,
-        "total_tokens": 5146
-      },
-      "time": "2026-02-08T22:07:05.262712+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 6825
       },
       "time": "2026-02-09T20:10:53.496528+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes PixelVAE combining VAE's global structure modeling with PixelCNN's local detail capture through autoregressive decoder; demonstrates clear architectural innovation (few PixelCNN layers + hierarchical latents), achieves state-of-the-art on binarized MNIST, competitive results on 64×64 ImageNet, and provides thorough ablations (receptive field analysis, KL decomposition, per-layer feature visualization) with strong empirical validation and public code release."
+      },
+      "token": {
+        "prompt_tokens": 7793,
+        "completion_tokens": 146,
+        "total_tokens": 7939
+      },
+      "time": "2026-02-11T18:28:44.666568+00:00"
     }
   ],
   "test": false

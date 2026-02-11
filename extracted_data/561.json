@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: applies standard distance metrics and existing tree-construction algorithms (ACP, MST, MDS) to CNN activations. No methodological innovation. Evaluation is purely qualitative (visual inspection of trees) with no quantitative metrics, statistical significance testing, or rigorous comparison to phylogenetic baselines. Narrow application scope. Lacks depth expected for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 3070,
-        "completion_tokens": 118,
-        "total_tokens": 3188
-      },
-      "time": "2026-02-08T22:29:14.812134+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 5377
       },
       "time": "2026-02-09T20:31:21.926349+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper applies standard distance metrics and existing tree-construction algorithms (ACP, MST, MDS) to CNN activations without novel methodological contribution. The evaluation is purely qualitative (visual inspection of trees) with no quantitative metrics, statistical significance testing, or rigorous comparison to phylogenetic baselines. The core claim—that CNN features align with evolutionary relationships—is neither theoretically justified nor empirically validated beyond anecdotal examples. The work reads as an application/visualization exercise rather than a research contribution suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 5804,
+        "completion_tokens": 158,
+        "total_tokens": 5962
+      },
+      "time": "2026-02-11T19:00:10.034614+00:00"
     }
   ],
   "test": false

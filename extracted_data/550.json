@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Incremental modification to DAEs with limited novelty, weak experimental validation (toy synthetic data + single MNIST experiment), no comparison with modern baselines or state-of-the-art methods, insufficient depth for top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 2897,
-        "completion_tokens": 85,
-        "total_tokens": 2982
-      },
-      "time": "2026-02-08T22:28:11.078451+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 5184
       },
       "time": "2026-02-09T20:30:07.480964+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper proposes a straightforward modification to DAE's objective (adding an encoder robustness term) that is intuitive but incremental. While the theoretical motivation via information theory is provided, the experimental validation is weak: only toy synthetic data and basic MNIST with a single hidden layer, no comparison to contractive autoencoders (which address the same problem), and no demonstration of practical benefit on realistic tasks or deeper architectures. The contribution lacks sufficient novelty and empirical rigor for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 5631,
+        "completion_tokens": 144,
+        "total_tokens": 5775
+      },
+      "time": "2026-02-11T18:58:18.141770+00:00"
     }
   ],
   "test": false

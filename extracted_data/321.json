@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel combination of SNNs with information-theoretic regularization for hierarchical RL; solid experimental validation on sparse reward tasks; clear methodological contributions despite limited scope and some presentation issues."
-      },
-      "token": {
-        "prompt_tokens": 8447,
-        "completion_tokens": 75,
-        "total_tokens": 8522
-      },
-      "time": "2026-02-08T22:04:16.263756+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -163,6 +149,20 @@
         "total_tokens": 10327
       },
       "time": "2026-02-09T20:08:17.808872+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a well-motivated hierarchical RL framework combining SNNs with information-theoretic regularization for skill discovery, demonstrates clear benefits of bilinear integration and MI bonus for learning diverse skills, and shows consistent improvements on sparse-reward downstream tasks; however, evaluation is limited to relatively simple locomotion benchmarks (Swimmer, Snake, Ant) with modest task diversity, and the approach requires careful tuning of hyperparameters (mesh density, MI coefficient, switch time T) with high variance across random seeds, limiting generalizability claims."
+      },
+      "token": {
+        "prompt_tokens": 11179,
+        "completion_tokens": 152,
+        "total_tokens": 11331
+      },
+      "time": "2026-02-11T18:22:05.162363+00:00"
     }
   ],
   "test": false

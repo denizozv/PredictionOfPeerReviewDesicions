@@ -162,20 +162,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel attention-based architecture for selective multi-source transfer learning with solid experimental validation across policy and value transfer settings, though incremental in some aspects."
-      },
-      "token": {
-        "prompt_tokens": 6848,
-        "completion_tokens": 66,
-        "total_tokens": 6914
-      },
-      "time": "2026-02-08T22:12:34.824979+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -188,6 +174,20 @@
         "total_tokens": 8904
       },
       "time": "2026-02-09T20:16:07.513394+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes A2T, a generic attention-based architecture for multi-source transfer learning that learns state-dependent weights to selectively combine source policies/value functions with a learnable base network. Demonstrates clear ability to avoid negative transfer and perform selective transfer across multiple RL domains (chain world, puddle world, Atari Pong) with instantiations for both policy (REINFORCE, Actor-Critic) and value transfer (Q-learning/DQN). Well-motivated problem, reasonable technical approach, and comprehensive empirical validation showing the method's effectiveness, though limited novelty in individual components and some experimental design choices (e.g., artificial negative experts) reduce impact."
+      },
+      "token": {
+        "prompt_tokens": 9582,
+        "completion_tokens": 182,
+        "total_tokens": 9764
+      },
+      "time": "2026-02-11T18:36:17.739429+00:00"
     }
   ],
   "test": false

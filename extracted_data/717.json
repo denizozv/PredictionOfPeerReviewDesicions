@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty and narrow scope. The paper proposes straightforward visualization and ranking methods (weighted averaging of top activations, PCA-based color indexing, class label frequency analysis) applied to existing pre-trained networks. No new architectures, training methods, or theoretical insights. Empirical analysis is descriptive rather than providing actionable understanding. Methods lack rigor (arbitrary thresholds, ad-hoc normalization choices). Comparisons are absent—no validation against alternative interpretability approaches or quantitative benchmarks. The connection to neuroscience is speculative without rigorous testing. Work is more suitable for a workshop or domain-specific venue than top-tier ML conferences."
-      },
-      "token": {
-        "prompt_tokens": 5171,
-        "completion_tokens": 178,
-        "total_tokens": 5349
-      },
-      "time": "2026-02-08T22:44:20.938133+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 7325
       },
       "time": "2026-02-09T20:47:47.932585+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper presents useful visualization and analysis techniques for understanding CNN neurons (neuron features, color/class selectivity indexes), but the contribution is primarily descriptive and empirical rather than methodological or theoretical. The selectivity indexes are straightforward applications of existing techniques (PCA, weighted averaging, label frequency analysis) without novel algorithmic or conceptual insights. Evaluation is limited to qualitative visualization on a single architecture (VGG-M) with minimal quantitative validation, no comparison to alternative analysis methods, and no demonstration that the indexing framework enables new capabilities or understanding beyond what prior visualization work (e.g., Zeiler & Fergus, Simonyan et al.) already provided. The connection to neuroscience (localist vs. distributed coding) is speculative and underdeveloped. Overall, while the work is competent and could be useful for practitioners, it lacks the novelty, rigor, and impact expected for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 7905,
+        "completion_tokens": 238,
+        "total_tokens": 8143
+      },
+      "time": "2026-02-11T19:22:21.689924+00:00"
     }
   ],
   "test": false

@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical framework reformulating layer-wise CNN optimization as DC programs solvable via structured SVM with convergence guarantees; solid experimental validation on MNIST/CIFAR/ImageNet showing consistent improvements over SGD variants."
-      },
-      "token": {
-        "prompt_tokens": 11337,
-        "completion_tokens": 83,
-        "total_tokens": 11420
-      },
-      "time": "2026-02-08T22:12:47.989100+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 12820
       },
       "time": "2026-02-09T20:16:44.222570+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper presents a theoretically interesting layerwise optimization framework for PL-CNNs using DC programming and structured SVM, the practical contribution is limited: improvements over SGD baselines are modest (0.4-2% on CIFAR/ImageNet), the method requires careful hyperparameter tuning and pre-training with softmax+cross-entropy, and the restriction to SVM final layers and piecewise-linear activations severely limits applicability to modern deep learning. The theoretical insights about DC decomposition are solid but insufficient to overcome weak empirical validation and narrow scope."
+      },
+      "token": {
+        "prompt_tokens": 14071,
+        "completion_tokens": 160,
+        "total_tokens": 14231
+      },
+      "time": "2026-02-11T18:37:16.466731+00:00"
     }
   ],
   "test": true

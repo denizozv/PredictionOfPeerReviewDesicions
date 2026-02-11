@@ -132,20 +132,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Incremental contribution with limited novelty. Support regularization via support distance is a straightforward extension of existing manifold-regularized sparse coding (ℓ2-RSC). The theoretical analysis, while rigorous, addresses a narrow nonconvex optimization problem without broader insights. Deep-SRSC is a direct application of LISTA-style unrolling. Experiments are limited to small-scale clustering tasks (USPS, COIL, MNIST) with modest improvements over baselines. The work lacks significant methodological innovation or compelling empirical validation for a top-tier venue."
-      },
-      "token": {
-        "prompt_tokens": 12833,
-        "completion_tokens": 162,
-        "total_tokens": 12995
-      },
-      "time": "2026-02-08T22:20:19.759122+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -158,6 +144,20 @@
         "total_tokens": 14049
       },
       "time": "2026-02-09T20:22:53.306924+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper proposes support regularization for sparse coding with theoretical analysis and a neural network approximation, but the contribution is incremental: support distance is a straightforward variant of ℓ2 regularization, the theoretical results are narrow (convergence to critical points under restrictive conditions), and experimental validation is limited to relatively simple clustering tasks on small/dated datasets (USPS, COIL, MNIST) without comparison to modern deep learning baselines or state-of-the-art methods, making the practical impact unclear."
+      },
+      "token": {
+        "prompt_tokens": 15567,
+        "completion_tokens": 147,
+        "total_tokens": 15714
+      },
+      "time": "2026-02-11T18:47:17.656922+00:00"
     }
   ],
   "test": false

@@ -157,20 +157,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel interpretability method with solid theoretical foundation (multiplicative/additive LSTM decomposition), comprehensive experiments across multiple tasks (sentiment analysis, QA), and practical rule extraction validation. Addresses important problem of neural network interpretability with principled approach."
-      },
-      "token": {
-        "prompt_tokens": 4859,
-        "completion_tokens": 87,
-        "total_tokens": 4946
-      },
-      "time": "2026-02-08T22:17:05.407601+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -183,6 +169,20 @@
         "total_tokens": 6970
       },
       "time": "2026-02-09T20:19:55.689311+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a novel decomposition of LSTM outputs into word-level importance scores via multiplicative and additive cell decompositions, demonstrates the approach on sentiment analysis and QA tasks, and validates interpretability by extracting rules that approximate LSTM predictions with reasonable accuracy; solid empirical work with clear ablations, though the rule-based approximation gap and modest performance of extracted rules limit impact."
+      },
+      "token": {
+        "prompt_tokens": 7593,
+        "completion_tokens": 118,
+        "total_tokens": 7711
+      },
+      "time": "2026-02-11T18:42:16.355403+00:00"
     }
   ],
   "test": true

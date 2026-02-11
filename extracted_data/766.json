@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.95,
-        "primary_reason": "Limited novelty: straightforward application of existing Fast R-CNN + batch normalization to pedestrian detection. Batch normalization is a standard technique (Ioffe & Szegyi 2015), not a novel contribution. Incremental improvements over baselines (2% over FRCNN on INRIA, underperforms on ETH). Lacks methodological innovation, theoretical insight, or significant empirical advances expected for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 3099,
-        "completion_tokens": 133,
-        "total_tokens": 3232
-      },
-      "time": "2026-02-08T22:48:25.143608+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 5309
       },
       "time": "2026-02-09T20:52:01.111454+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.95,
+        "primary_reason": "Incremental application of existing techniques (Fast R-CNN + batch normalization) to pedestrian detection with limited novelty, weak experimental validation (modest improvements over baselines, underperforms several methods on ETH), and no significant methodological or theoretical contribution. The work is primarily an engineering exercise combining known components without sufficient insight or impact for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 5833,
+        "completion_tokens": 112,
+        "total_tokens": 5945
+      },
+      "time": "2026-02-11T19:28:18.303861+00:00"
     }
   ],
   "test": false

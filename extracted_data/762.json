@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel framework (DFAEs) with clear biological motivation, systematic experimental design across multiple foveation types, interpretable findings on perception from degraded input, and insights applicable to both vision science and network design."
-      },
-      "token": {
-        "prompt_tokens": 4777,
-        "completion_tokens": 80,
-        "total_tokens": 4857
-      },
-      "time": "2026-02-08T22:48:17.442789+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 6917
       },
       "time": "2026-02-09T20:51:39.862766+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Well-motivated study investigating how neural networks can perceive and reconstruct full-detail images from foveated (low-acuity) inputs using defoveating autoencoders. Clear framework, systematic experiments across multiple foveation types (downsampling, scotoma, fovea, achromatic), and interesting findings about global feature learning and color reconstruction. Provides useful insights bridging neuroscience and deep learning, though limited to simple architectures (fully-connected) and small datasets (MNIST, CIFAR-100), and lacks comparison to more sophisticated baselines or modern architectures."
+      },
+      "token": {
+        "prompt_tokens": 7511,
+        "completion_tokens": 163,
+        "total_tokens": 7674
+      },
+      "time": "2026-02-11T19:28:09.039144+00:00"
     }
   ],
   "test": false

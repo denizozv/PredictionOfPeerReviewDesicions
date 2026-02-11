@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel interpretability method with principled improvements (conditional sampling, multivariate analysis, hidden layer visualization) over prior work; solid experimental validation on ImageNet and medical imaging; addresses important problem of neural network interpretability with practical applications."
-      },
-      "token": {
-        "prompt_tokens": 4728,
-        "completion_tokens": 83,
-        "total_tokens": 4811
-      },
-      "time": "2026-02-08T22:14:29.099598+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 6926
       },
       "time": "2026-02-09T20:18:09.933714+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical contribution extending prediction difference analysis with conditional sampling and multivariate patch-based approach; demonstrates clear improvements over prior work with thorough experiments on ImageNet and medical imaging; provides useful interpretability tool with practical applications, though limited novelty in core methodology and lacks quantitative evaluation metrics."
+      },
+      "token": {
+        "prompt_tokens": 7462,
+        "completion_tokens": 97,
+        "total_tokens": 7559
+      },
+      "time": "2026-02-11T18:39:16.125510+00:00"
     }
   ],
   "test": false

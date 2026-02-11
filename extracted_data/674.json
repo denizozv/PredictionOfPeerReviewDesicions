@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel theoretical framework connecting CNN invertibility to model-based compressive sensing with rigorous mathematical analysis (Theorems 3.1, 3.3), comprehensive experimental validation on synthetic and real data (CIFAR-10, ImageNet/VGGNet), and significant insights into CNN properties via RIP conditions."
-      },
-      "token": {
-        "prompt_tokens": 11737,
-        "completion_tokens": 103,
-        "total_tokens": 11840
-      },
-      "time": "2026-02-08T22:40:16.518253+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 13130
       },
       "time": "2026-02-09T20:43:12.926016+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Provides novel theoretical framework connecting CNN invertibility to model-based compressive sensing with rigorous analysis (Theorems 3.1, 3.3 on model-RIP for random filters and reconstruction bounds), validated empirically on synthetic data and real networks (VGGNet/ImageNet), offering new insights into why CNNs can reconstruct inputs despite nonlinearity; main limitations are restrictive assumptions (single-layer analysis, model-k-sparsity structure, Gaussian random filters) and modest practical reconstruction quality, but the theoretical contribution and careful empirical validation of theory-practice gaps merit acceptance at top venue."
+      },
+      "token": {
+        "prompt_tokens": 14471,
+        "completion_tokens": 169,
+        "total_tokens": 14640
+      },
+      "time": "2026-02-11T19:16:10.668169+00:00"
     }
   ],
   "test": false

@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "High-quality dataset contribution with solid experimental validation. MusicNet provides significant value to the music information retrieval community with 330 freely-licensed recordings, 1M+ temporal labels, and rigorous alignment methodology. Experiments demonstrate that end-to-end learning discovers interpretable frequency-selective filters, offering insights into learned audio representations. While not methodologically novel, the dataset's scale, quality, and public availability constitute a substantial scientific contribution suitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 5072,
-        "completion_tokens": 134,
-        "total_tokens": 5206
-      },
-      "time": "2026-02-08T22:12:41.257762+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 7100
       },
       "time": "2026-02-09T20:16:22.613622+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Introduces MusicNet, a large-scale freely-licensed classical music dataset with 1M+ temporal labels, establishes a multi-label note prediction benchmark, and demonstrates that end-to-end neural models learn interpretable frequency-selective filters resembling spectrograms—a solid empirical contribution with practical value for music research, though the modeling innovations are incremental."
+      },
+      "token": {
+        "prompt_tokens": 7806,
+        "completion_tokens": 113,
+        "total_tokens": 7919
+      },
+      "time": "2026-02-11T18:37:07.247574+00:00"
     }
   ],
   "test": false

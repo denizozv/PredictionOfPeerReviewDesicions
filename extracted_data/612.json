@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel transformation-based approach to video prediction with solid methodological contribution, new evaluation protocol using discriminative features, and strong experimental validation on UCF-101 with computational efficiency gains."
-      },
-      "token": {
-        "prompt_tokens": 4457,
-        "completion_tokens": 73,
-        "total_tokens": 4530
-      },
-      "time": "2026-02-08T22:34:21.335219+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 6662
       },
       "time": "2026-02-09T20:36:55.446813+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple and well-motivated approach to video prediction by operating in transformation space rather than pixel space, yielding sharper results with fewer parameters. Introduces a principled evaluation protocol using action classifiers to measure preservation of discriminative features. Demonstrates clear advantages over optical flow and adversarial baselines on UCF-101 with thorough ablations on patch size, input frames, and prediction horizon. Main limitations: restrictive assumptions (affine transforms only, no occlusions/out-of-plane rotation), modest absolute performance gains, and evaluation limited to one dataset, but the core contribution is solid and the execution is careful."
+      },
+      "token": {
+        "prompt_tokens": 7191,
+        "completion_tokens": 170,
+        "total_tokens": 7361
+      },
+      "time": "2026-02-11T19:07:24.767601+00:00"
     }
   ],
   "test": true

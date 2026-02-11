@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel DSL-based approach to character-level language modeling with interpretability advantages, solid experimental validation on two diverse datasets, and practical benefits (fast inference, inspectable programs) over neural baselines, though limited scope and incremental improvements on unstructured text."
-      },
-      "token": {
-        "prompt_tokens": 5009,
-        "completion_tokens": 90,
-        "total_tokens": 5099
-      },
-      "time": "2026-02-08T22:06:12.407260+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 7125
       },
       "time": "2026-02-09T20:10:09.458547+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents an interesting idea of using program synthesis to learn interpretable character-level language models, it suffers from limited novelty in the synthesis approach (reuses ID3+, genetic programming, MCMC), weak experimental validation (only 2 datasets, modest improvements on unstructured text, manual state engineering for code), and unclear practical advantages—the DSL model is slower to train than n-grams, only marginally better than LSTMs on Wikipedia, and the interpretability claims lack rigorous support or analysis of what the synthesized programs actually learn."
+      },
+      "token": {
+        "prompt_tokens": 7743,
+        "completion_tokens": 156,
+        "total_tokens": 7899
+      },
+      "time": "2026-02-11T18:28:40.563575+00:00"
     }
   ],
   "test": false

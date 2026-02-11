@@ -162,20 +162,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel methodological contribution applying AIS with BDMC validation to quantify decoder-based generative models; rigorous empirical analysis revealing limitations of KDE and IWAE; important insights on mode coverage and overfitting in VAEs, GANs, and GMMNs."
-      },
-      "token": {
-        "prompt_tokens": 8259,
-        "completion_tokens": 96,
-        "total_tokens": 8355
-      },
-      "time": "2026-02-08T22:08:06.136496+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -188,6 +174,20 @@
         "total_tokens": 10008
       },
       "time": "2026-02-09T20:12:10.509505+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Proposes using Annealed Importance Sampling (AIS) with Bidirectional Monte Carlo validation to accurately estimate log-likelihoods for decoder-based generative models (VAEs, GANs, GMMNs). Provides rigorous empirical analysis showing AIS is substantially more accurate than KDE and IWAE bounds, and uses it to reveal that GANs/GMMNs miss important modes while VAEs overfit less—insights invisible from samples alone. Well-executed methodology with thorough validation, though limited to MNIST and primarily a measurement/evaluation contribution rather than a new generative model."
+      },
+      "token": {
+        "prompt_tokens": 10993,
+        "completion_tokens": 171,
+        "total_tokens": 11164
+      },
+      "time": "2026-02-11T18:30:13.253949+00:00"
     }
   ],
   "test": false

@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel Read-Again encoder mechanism with principled copy decoder for summarization; strong empirical results on Gigaword/DUC2004 with practical benefits (5-30x vocabulary reduction); clear methodological contributions despite incremental nature."
-      },
-      "token": {
-        "prompt_tokens": 6493,
-        "completion_tokens": 87,
-        "total_tokens": 6580
-      },
-      "time": "2026-02-08T22:36:13.522241+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 8496
       },
       "time": "2026-02-09T20:38:48.235602+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes two practical contributions (Read-Again encoder using bidirectional context via two-pass reading, and copy mechanism for small vocabularies) with solid empirical validation on Gigaword and DUC2004, achieving state-of-the-art results and 4-5x speedup; clear ablations and interpretable weight visualizations support the approach, though the Read-Again idea is somewhat incremental relative to bidirectional RNNs and the copy mechanism builds on concurrent work (Gulcehre et al., Nallapati et al., Gu et al.)."
+      },
+      "token": {
+        "prompt_tokens": 9227,
+        "completion_tokens": 164,
+        "total_tokens": 9391
+      },
+      "time": "2026-02-11T19:10:20.918237+00:00"
     }
   ],
   "test": false

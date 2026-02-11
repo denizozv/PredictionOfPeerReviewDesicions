@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel adversarial framework for learning cryptography end-to-end; demonstrates neural networks can discover encryption schemes without prescribed algorithms; strong experimental validation with selective protection extension; significant methodological contribution to security and deep learning intersection."
-      },
-      "token": {
-        "prompt_tokens": 7983,
-        "completion_tokens": 81,
-        "total_tokens": 8064
-      },
-      "time": "2026-02-08T22:50:18.647712+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -138,6 +124,20 @@
         "total_tokens": 9880
       },
       "time": "2026-02-09T20:54:19.446882+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel and creative application of adversarial neural network training to learn encryption without prescribing algorithms; demonstrates that networks can discover encryption schemes and selectively protect information; well-motivated problem formulation with clear experimental validation, though asymmetric encryption results are preliminary and training stability is a concern."
+      },
+      "token": {
+        "prompt_tokens": 10717,
+        "completion_tokens": 95,
+        "total_tokens": 10812
+      },
+      "time": "2026-02-11T19:31:19.622441+00:00"
     }
   ],
   "test": false

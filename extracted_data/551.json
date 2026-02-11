@@ -147,20 +147,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel differentiable algorithm-learning hybrid combining Bayesian filtering structure with end-to-end learning; demonstrates principled integration of domain priors with data-driven optimization; strong empirical validation of data efficiency gains and unsupervised learning capability."
-      },
-      "token": {
-        "prompt_tokens": 6328,
-        "completion_tokens": 88,
-        "total_tokens": 6416
-      },
-      "time": "2026-02-08T22:28:13.033714+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -173,6 +159,20 @@
         "total_tokens": 8337
       },
       "time": "2026-02-09T20:30:15.013886+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a principled approach to combine algorithmic structure (histogram filters) with end-to-end learning via differentiable implementation, enabling supervised and unsupervised state estimation. Demonstrates improved data efficiency over LSTMs and shows that end-to-end optimization outperforms learning models in isolation. However, evaluation is limited to toy 1D/2D localization tasks with small state spaces, and scalability to higher dimensions is acknowledged as computationally prohibitive, which limits practical impact."
+      },
+      "token": {
+        "prompt_tokens": 9062,
+        "completion_tokens": 142,
+        "total_tokens": 9204
+      },
+      "time": "2026-02-11T18:58:20.593888+00:00"
     }
   ],
   "test": false

@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel orthogonal RNN architecture with theoretical gradient preservation guarantees and rotation plane parameterization. Strong mathematical foundation, though experiments limited to simplified synthetic task; needs broader empirical validation for acceptance at top venues."
-      },
-      "token": {
-        "prompt_tokens": 4323,
-        "completion_tokens": 79,
-        "total_tokens": 4402
-      },
-      "time": "2026-02-08T22:28:15.494190+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 6427
       },
       "time": "2026-02-09T20:30:22.188643+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the theoretical contribution (norm-preserving orthogonal RNN) is solid, the experimental validation is severely limited: only a simplified 1-bit memory copy task with no comparisons to uRNN, LSTM, or other baselines; no real-world datasets; acknowledged instability for long sequences; and incomplete evaluation section ('will be expanded upon'). The paper reads as early-stage work lacking sufficient empirical evidence to support the theoretical claims' practical utility."
+      },
+      "token": {
+        "prompt_tokens": 7057,
+        "completion_tokens": 134,
+        "total_tokens": 7191
+      },
+      "time": "2026-02-11T18:59:04.396521+00:00"
     }
   ],
   "test": false

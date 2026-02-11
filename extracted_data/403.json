@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel theoretical framework (Lie groups for neural memory access) with principled mathematical motivation, solid experimental validation on algorithmic tasks, and clear generalization improvements over baselines."
-      },
-      "token": {
-        "prompt_tokens": 7353,
-        "completion_tokens": 71,
-        "total_tokens": 7424
-      },
-      "time": "2026-02-08T22:12:23.327544+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -123,6 +109,20 @@
         "total_tokens": 9270
       },
       "time": "2026-02-09T20:15:36.869026+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel theoretical framework (Lie groups for neural memory access) with solid mathematical motivation and strong empirical results on algorithmic tasks, though limited to synthetic benchmarks and lacking deeper analysis of learned structures."
+      },
+      "token": {
+        "prompt_tokens": 10087,
+        "completion_tokens": 76,
+        "total_tokens": 10163
+      },
+      "time": "2026-02-11T18:35:21.252649+00:00"
     }
   ],
   "test": false

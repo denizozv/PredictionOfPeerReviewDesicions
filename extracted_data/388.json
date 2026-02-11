@@ -167,20 +167,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel coattention mechanism with dynamic iterative decoder for QA; strong empirical results (SOTA on SQuAD); thorough ablations and analysis; clear methodological contribution beyond standard attention."
-      },
-      "token": {
-        "prompt_tokens": 6613,
-        "completion_tokens": 78,
-        "total_tokens": 6691
-      },
-      "time": "2026-02-08T22:10:05.148694+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -193,6 +179,20 @@
         "total_tokens": 8599
       },
       "time": "2026-02-09T20:13:48.260496+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Strong empirical contribution with novel coattention mechanism and iterative dynamic decoder that achieves state-of-the-art on SQuAD (75.9% F1 single model, 80.4% ensemble). Well-motivated design choices, thorough ablations demonstrating value of each component, and insightful analysis of model behavior across document length, question type, and failure modes. Clear presentation and reproducible results."
+      },
+      "token": {
+        "prompt_tokens": 9347,
+        "completion_tokens": 127,
+        "total_tokens": 9474
+      },
+      "time": "2026-02-11T18:33:05.539387+00:00"
     }
   ],
   "test": false

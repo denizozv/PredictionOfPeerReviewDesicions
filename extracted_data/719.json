@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty and weak experimental validation. The core contribution—two parallel MLPs trained with EM to match a statistical distribution—lacks clear theoretical justification and practical motivation. Experiments only on MNIST variants with weak baselines (k-means, agglomerative clustering); no comparison to relevant semi-supervised or metric learning methods. The 'classless' framing is unclear and the connection to symbol grounding is superficial. Missing ablations, statistical significance testing, and evaluation on realistic datasets."
-      },
-      "token": {
-        "prompt_tokens": 3402,
-        "completion_tokens": 140,
-        "total_tokens": 3542
-      },
-      "time": "2026-02-08T22:45:04.604529+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 5771
       },
       "time": "2026-02-09T20:48:02.651471+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper proposes a niche method (two parallel MLPs with EM-based pseudo-class matching) for an artificially constrained task (classless association on MNIST variants), but lacks sufficient novelty, rigor, and impact. The core technical contribution—matching output distributions to a uniform prior via a power-weighted EM procedure—is incremental and poorly motivated. Evaluation is limited to toy MNIST transformations with weak baselines (k-means, agglomerative clustering); no comparison to relevant prior work on metric learning, siamese networks, or modern self-supervised methods. The connection to symbol grounding and infant learning is superficial and unsupported. Writing is unclear (e.g., the 'power' function justification is ad-hoc), experimental design is questionable (huge batch size of 25% of training set), and results show only modest improvements over clustering on synthetic data with no evidence of generalization or practical utility."
+      },
+      "token": {
+        "prompt_tokens": 6136,
+        "completion_tokens": 238,
+        "total_tokens": 6374
+      },
+      "time": "2026-02-11T19:23:04.785154+00:00"
     }
   ],
   "test": true

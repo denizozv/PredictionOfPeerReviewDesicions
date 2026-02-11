@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: standard Bi-LSTM with basic attention mechanism. Two-scan approach is incremental. Weak experimental validation: no statistical significance testing, limited baselines, no pretrained embeddings (disadvantaging the method). Presentation issues and incremental contribution over concurrent work (Shen & Lee 2016)."
-      },
-      "token": {
-        "prompt_tokens": 5038,
-        "completion_tokens": 105,
-        "total_tokens": 5143
-      },
-      "time": "2026-02-08T22:42:04.153111+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 7220
       },
       "time": "2026-02-09T20:44:55.720443+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper proposes a two-scan LSTM with attention for sentiment classification, but the contribution is incremental: combining Bi-LSTM with standard attention mechanisms is not novel, the empirical gains are modest and not clearly positioned against stronger baselines, evaluation lacks rigor (no statistical significance testing, limited ablations, random embeddings only), and the writing quality is poor with numerous grammatical errors and unclear technical exposition."
+      },
+      "token": {
+        "prompt_tokens": 7772,
+        "completion_tokens": 123,
+        "total_tokens": 7895
+      },
+      "time": "2026-02-11T19:18:25.824593+00:00"
     }
   ],
   "test": false

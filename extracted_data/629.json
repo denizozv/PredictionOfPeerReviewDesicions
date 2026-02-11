@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel empirical investigation of DNN-human perception alignment across multiple well-controlled psychophysical tasks with quantitative correlates; strong experimental design and interpretable findings, though limited methodological innovation and scope constraints reduce impact."
-      },
-      "token": {
-        "prompt_tokens": 6807,
-        "completion_tokens": 81,
-        "total_tokens": 6888
-      },
-      "time": "2026-02-08T22:36:10.067452+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -178,6 +164,20 @@
         "total_tokens": 8812
       },
       "time": "2026-02-09T20:38:41.403301+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "While the paper presents interesting empirical correlations between DNN representations and human perception across multiple well-designed psychophysical tasks, the contribution is primarily observational rather than methodological. The work lacks novel algorithmic or theoretical insights, relies on post-hoc analysis of existing models without proposing new learning objectives or architectures, and the mechanistic understanding of *why* these correlations emerge remains limited. The findings, though thorough, are incremental extensions of prior work (Gatys et al., Yosinski et al.) showing DNNs capture perceptual properties, without sufficient novelty or depth for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 9541,
+        "completion_tokens": 170,
+        "total_tokens": 9711
+      },
+      "time": "2026-02-11T19:10:17.237111+00:00"
     }
   ],
   "test": false

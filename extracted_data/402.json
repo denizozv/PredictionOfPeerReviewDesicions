@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel principled algorithm addressing fundamental n vs B/n tradeoff in hyperparameter optimization with strong theoretical grounding and comprehensive empirical validation across multiple resource types (iterations, data, features) showing order-of-magnitude speedups over state-of-the-art Bayesian optimization methods."
-      },
-      "token": {
-        "prompt_tokens": 6961,
-        "completion_tokens": 98,
-        "total_tokens": 7059
-      },
-      "time": "2026-02-08T22:12:11.614373+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 9028
       },
       "time": "2026-02-09T20:15:30.077559+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.95,
+        "primary_reason": "Proposes Hyperband, a principled and theoretically grounded bandit-based algorithm for hyperparameter optimization that elegantly solves the n vs B/n tradeoff by running multiple brackets of successive halving with different exploration-exploitation balances. Demonstrates order-of-magnitude speedups over Bayesian optimization (SMAC, TPE, Spearmint) across diverse tasks (neural networks, kernel methods, feature subsampling) with extensive empirical validation, thorough ablations, and clear practical applicability. Simple, flexible, and well-executed contribution with strong theoretical motivation and comprehensive experimental evidence."
+      },
+      "token": {
+        "prompt_tokens": 9695,
+        "completion_tokens": 168,
+        "total_tokens": 9863
+      },
+      "time": "2026-02-11T18:35:19.108257+00:00"
     }
   ],
   "test": false

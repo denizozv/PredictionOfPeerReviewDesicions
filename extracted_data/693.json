@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel meta-learning approach for generative models with matching-based adaptation mechanism. Strong theoretical motivation combining nonparametric representations with efficient neural inference. Solid experimental validation on Omniglot with ablation studies, though limited to single dataset and modest baselines."
-      },
-      "token": {
-        "prompt_tokens": 5347,
-        "completion_tokens": 91,
-        "total_tokens": 5438
-      },
-      "time": "2026-02-08T22:42:05.945486+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 7453
       },
       "time": "2026-02-09T20:45:03.354606+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes generative matching networks that extend matching networks to generative modeling with fast adaptation via attention-weighted interpolation in prototype space; demonstrates clear improvements on Omniglot with reasonable ablations (attention steps, data-dependent priors); addresses a meaningful problem (few-shot generative learning) with a principled approach combining meta-learning and variational inference, though evaluation is limited to single dataset and comparisons are somewhat narrow."
+      },
+      "token": {
+        "prompt_tokens": 8081,
+        "completion_tokens": 127,
+        "total_tokens": 8208
+      },
+      "time": "2026-02-11T19:19:05.863532+00:00"
     }
   ],
   "test": false

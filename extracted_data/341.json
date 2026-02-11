@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel problem formulation (third-person imitation learning) with principled domain confusion approach. Clear methodological contribution combining adversarial imitation learning with domain adaptation. Solid experimental validation across multiple tasks, though limited to simple simulated environments and modest baseline comparisons."
-      },
-      "token": {
-        "prompt_tokens": 4966,
-        "completion_tokens": 91,
-        "total_tokens": 5057
-      },
-      "time": "2026-02-08T22:06:07.831394+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 7078
       },
       "time": "2026-02-09T20:09:54.895495+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "The paper addresses a meaningful and practical problem—learning from third-person demonstrations without state correspondence—and proposes a technically sound solution combining domain confusion with adversarial imitation learning. The key insight of using domain-agnostic features via gradient reversal is well-motivated and the method is validated across three environments with appropriate ablations. However, the experimental scope is limited to simple MuJoCo tasks with modest visual variations, the baselines are somewhat weak (no comparison to other cross-domain or viewpoint-invariant methods), and the writing could be clearer in places. The contribution is solid but incremental—primarily combining existing techniques (GAIL + domain confusion) rather than introducing fundamentally new concepts. The work would benefit from more complex environments, stronger baselines, and deeper analysis of failure modes and generalization limits."
+      },
+      "token": {
+        "prompt_tokens": 7698,
+        "completion_tokens": 209,
+        "total_tokens": 7907
+      },
+      "time": "2026-02-11T18:25:27.212437+00:00"
     }
   ],
   "test": false

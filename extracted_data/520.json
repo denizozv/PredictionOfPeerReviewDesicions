@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel conditioning mechanism for autoregressive image generation combining text and spatial structure (keypoints/segmentation); solid experimental validation across three datasets with interpretability demonstrations; clear technical contribution extending PixelCNN with multi-modal conditioning."
-      },
-      "token": {
-        "prompt_tokens": 4268,
-        "completion_tokens": 83,
-        "total_tokens": 4351
-      },
-      "time": "2026-02-08T22:25:09.763208+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 6497
       },
       "time": "2026-02-09T20:26:54.123020+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents a reasonable extension of PixelCNN with text and spatial conditioning, the contribution is primarily architectural/engineering-focused rather than methodologically novel. The core idea (conditioning PixelCNN on text + spatial structure via concatenation and dilated convolutions) is straightforward. Evaluation relies almost entirely on qualitative samples and pixel log-likelihood metrics without rigorous quantitative assessment of generation quality, controllability, or disentanglement. The comparison to prior work (Reed et al. 2016a) is limited to visual inspection. The paper lacks ablations, user studies, or metrics (FID, IS, etc.) that would substantiate claims about interpretability and control. The acknowledged limitations (noisy faces, imperfect color matching, incomplete disentanglement) are significant but not deeply analyzed. For a top-tier venue, the work needs stronger empirical validation, more comprehensive baselines, and clearer methodological novelty beyond combining existing techniques."
+      },
+      "token": {
+        "prompt_tokens": 7002,
+        "completion_tokens": 242,
+        "total_tokens": 7244
+      },
+      "time": "2026-02-11T18:54:14.058764+00:00"
     }
   ],
   "test": false

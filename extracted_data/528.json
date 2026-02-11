@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel systematic study of design choices for differentiable programming languages with strong empirical validation. Clear methodological contributions (memory allocation, immutability, types, control flow) and comprehensive experiments demonstrating significant improvements over baselines."
-      },
-      "token": {
-        "prompt_tokens": 6221,
-        "completion_tokens": 82,
-        "total_tokens": 6303
-      },
-      "time": "2026-02-08T22:26:15.519933+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 8323
       },
       "time": "2026-02-09T20:27:55.912516+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Well-motivated study systematically exploring how programming language design principles (memory allocation, immutability, types, structured control flow) improve neural program synthesis. Clear ablations validate each recommendation, and the functional programming language design yields substantial empirical gains on list-manipulation tasks compared to assembly-like baselines and λ² synthesis."
+      },
+      "token": {
+        "prompt_tokens": 8955,
+        "completion_tokens": 103,
+        "total_tokens": 9058
+      },
+      "time": "2026-02-11T18:55:22.168668+00:00"
     }
   ],
   "test": false

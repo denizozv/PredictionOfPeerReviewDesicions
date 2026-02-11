@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel hard monotonic attention mechanism for sequence transduction with strong empirical results across multiple morphological datasets and insightful analysis of learned representations versus soft attention."
-      },
-      "token": {
-        "prompt_tokens": 4442,
-        "completion_tokens": 68,
-        "total_tokens": 4510
-      },
-      "time": "2026-02-08T22:39:06.683723+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 6709
       },
       "time": "2026-02-09T20:41:41.513535+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a well-motivated hard monotonic attention mechanism for sequence transduction that decouples alignment learning from decoding, demonstrates consistent improvements over soft attention and prior baselines across three morphological inflection datasets (especially in low-resource settings), and provides insightful analysis of learned alignments and representations showing how hard attention avoids encoding positional information redundantly."
+      },
+      "token": {
+        "prompt_tokens": 7176,
+        "completion_tokens": 112,
+        "total_tokens": 7288
+      },
+      "time": "2026-02-11T19:14:09.735969+00:00"
     }
   ],
   "test": false

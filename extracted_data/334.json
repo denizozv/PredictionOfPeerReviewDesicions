@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel emergent property discovery: learnable retinal sampling lattice spontaneously develops foveal structure matching primate vision. Strong biological grounding, well-designed ablations (fixed/translation/zoom variants), clear mechanistic insights into why foveal structure emerges. Solid experimental validation on visual search task."
-      },
-      "token": {
-        "prompt_tokens": 3071,
-        "completion_tokens": 102,
-        "total_tokens": 3173
-      },
-      "time": "2026-02-08T22:05:08.506902+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -118,6 +104,20 @@
         "total_tokens": 5269
       },
       "time": "2026-02-09T20:09:19.383239+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Strong empirical contribution demonstrating that a learnable retinal sampling lattice trained on visual search naturally emerges with foveal structure (high-acuity center, low-acuity periphery) resembling primate retina. Well-designed ablations (fixed vs. learnable lattice, translation-only vs. translation+zoom) provide mechanistic insight into when and why foveation emerges. Clear emergent property with biological relevance, though evaluation scope is limited to cluttered MNIST."
+      },
+      "token": {
+        "prompt_tokens": 5803,
+        "completion_tokens": 143,
+        "total_tokens": 5946
+      },
+      "time": "2026-02-11T18:23:30.462495+00:00"
     }
   ],
   "test": false

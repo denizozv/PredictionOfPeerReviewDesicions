@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel gated-attention mechanism with strong empirical results across multiple benchmarks, thorough ablation studies, and clear methodological contribution to reading comprehension."
-      },
-      "token": {
-        "prompt_tokens": 5846,
-        "completion_tokens": 68,
-        "total_tokens": 5914
-      },
-      "time": "2026-02-08T22:33:14.470428+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 7847
       },
       "time": "2026-02-09T20:35:38.393157+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Strong empirical contribution with novel gated-attention mechanism using multiplicative interactions between query and document representations. Achieves state-of-the-art results on multiple benchmarks (CNN/Daily Mail, Who Did What, CBT) with thorough ablations demonstrating the effectiveness of multiplicative gating vs. alternatives (addition, concatenation), multi-hop architecture analysis, and interpretable attention visualizations. Well-executed work with clear motivation and solid experimental validation."
+      },
+      "token": {
+        "prompt_tokens": 8580,
+        "completion_tokens": 133,
+        "total_tokens": 8713
+      },
+      "time": "2026-02-11T19:06:09.687235+00:00"
     }
   ],
   "test": false

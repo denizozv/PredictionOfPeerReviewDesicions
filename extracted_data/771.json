@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in core contribution. The fuzzy paraphrase idea is a straightforward application of membership weighting to existing lexicon-based word embedding methods. The technical contribution (Bernoulli dropout based on PPDB similarity scores) is incremental. Experimental validation is narrow (word similarity/analogy tasks only), comparisons are incomplete (unable to reproduce baselines), and the writing quality is below conference standards. The work reads as an engineering improvement rather than a methodological advance."
-      },
-      "token": {
-        "prompt_tokens": 4986,
-        "completion_tokens": 138,
-        "total_tokens": 5124
-      },
-      "time": "2026-02-08T22:49:09.245126+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 6999
       },
       "time": "2026-02-09T20:52:32.436160+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "The paper addresses a reasonable problem (polysemy noise in lexicon-based word embeddings) with a simple solution (fuzzy membership weighting via Bernoulli dropout), but the contribution is incremental and insufficiently validated. The core idea—using PPDB similarity scores to weight paraphrase inclusion—is straightforward and not novel. Experimental evaluation is limited: comparisons with prior work use only reported numbers (authors could not reproduce baselines), evaluation is restricted to small corpora and standard benchmarks with high variance, and improvements are modest and often within reported margins of error. The paper lacks deeper analysis of when/why the method helps, theoretical justification, or compelling empirical evidence that fuzzy weighting substantially outperforms simpler alternatives. The writing and presentation are also below conference standards."
+      },
+      "token": {
+        "prompt_tokens": 7720,
+        "completion_tokens": 203,
+        "total_tokens": 7923
+      },
+      "time": "2026-02-11T19:29:07.770050+00:00"
     }
   ],
   "test": false

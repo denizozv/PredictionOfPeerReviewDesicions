@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.92,
-        "primary_reason": "Engineering contribution without novel ML methodology. JavaScript framework implementation is a systems/tools paper, not a research advance in deep learning. Distributed training uses standard data parallelism with no algorithmic innovation. Experimental comparisons are against older baselines (Caffe, ConvNetJS) and show inferior performance. Limited scientific novelty for top-tier ML venues."
-      },
-      "token": {
-        "prompt_tokens": 3896,
-        "completion_tokens": 111,
-        "total_tokens": 4007
-      },
-      "time": "2026-02-08T22:27:17.687078+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -113,6 +99,20 @@
         "total_tokens": 6055
       },
       "time": "2026-02-09T20:29:16.757015+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Engineering contribution without sufficient novelty or scientific insight. The paper implements existing techniques (WebCL-based matrix library, standard data-parallel distributed training) in JavaScript, but lacks methodological innovation, theoretical contribution, or compelling empirical results. Performance is slower than established frameworks (Caffe), distributed training shows communication bottlenecks without novel solutions, and the work reads as a systems/implementation paper rather than a research contribution suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 6630,
+        "completion_tokens": 139,
+        "total_tokens": 6769
+      },
+      "time": "2026-02-11T18:57:20.920762+00:00"
     }
   ],
   "test": false

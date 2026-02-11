@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Pioneering large-scale adversarial training on ImageNet with novel practical insights (label leaking discovery, batch composition strategy, model capacity effects), rigorous experimental methodology, and significant security implications for deep learning."
-      },
-      "token": {
-        "prompt_tokens": 6936,
-        "completion_tokens": 80,
-        "total_tokens": 7016
-      },
-      "time": "2026-02-08T22:22:04.484186+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 8820
       },
       "time": "2026-02-09T20:23:43.598630+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Landmark empirical study scaling adversarial training to ImageNet with practical recommendations, discovery of label leaking phenomenon, thorough ablations on model capacity and transferability, and clear actionable insights for the community despite modest clean accuracy trade-offs."
+      },
+      "token": {
+        "prompt_tokens": 9670,
+        "completion_tokens": 87,
+        "total_tokens": 9757
+      },
+      "time": "2026-02-11T18:49:10.818824+00:00"
     }
   ],
   "test": false

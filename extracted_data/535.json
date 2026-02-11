@@ -67,20 +67,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel dual attention mechanism (spatiotemporal + abstraction-level) with principled feature alignment across CNN layers for video captioning. Solid experimental validation on multiple benchmarks with clear improvements over baselines. Methodologically sound contribution to multimodal learning."
-      },
-      "token": {
-        "prompt_tokens": 2477,
-        "completion_tokens": 90,
-        "total_tokens": 2567
-      },
-      "time": "2026-02-08T22:27:06.793610+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -93,6 +79,20 @@
         "total_tokens": 4749
       },
       "time": "2026-02-09T20:28:38.365874+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper proposes a reasonable idea (multi-layer CNN feature attention for video captioning) but the contribution is incremental: it combines existing attention mechanisms (spatial-temporal + layer-wise) without significant novelty. Evaluation is limited to one main dataset (YouTube2Text) with modest improvements; claims of results on M-VAD and MSR-VTT are mentioned in abstract but not shown. The technical approach (aligning CNN layers via convolution + max-pooling, then applying two sequential softmax attentions) is straightforward and lacks depth. Missing ablations, limited baselines, and insufficient analysis of when/why multi-layer attention helps. The writing is dense and presentation could be clearer. Overall impact and scientific contribution fall below the bar for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 5211,
+        "completion_tokens": 211,
+        "total_tokens": 5422
+      },
+      "time": "2026-02-11T18:57:03.945131+00:00"
     }
   ],
   "test": false

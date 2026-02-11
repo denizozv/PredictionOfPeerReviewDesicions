@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel joint multimodal VAE framework with principled bi-directional generation; solid theoretical contribution (JMVAE-kl with variation of information connection); comprehensive experiments on MNIST and CelebA with quantitative and qualitative evaluation. Addresses real limitation of prior work (unidirectional generation in CVAEs). Methodologically sound despite incremental nature."
-      },
-      "token": {
-        "prompt_tokens": 6623,
-        "completion_tokens": 115,
-        "total_tokens": 6738
-      },
-      "time": "2026-02-08T22:40:14.492813+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -178,6 +164,20 @@
         "total_tokens": 8297
       },
       "time": "2026-02-09T20:43:06.248708+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes JMVAE, a principled extension of VAEs for bidirectional multimodal generation by modeling joint distribution p(x,w) with independent decoders; introduces JMVAE-kl to handle missing modalities via KL regularization toward unimodal encoders; demonstrates solid quantitative improvements in log-likelihood on MNIST and CelebA with reasonable qualitative results, though evaluation scope is limited and the core technical novelty (factorized joint modeling) is somewhat incremental."
+      },
+      "token": {
+        "prompt_tokens": 9357,
+        "completion_tokens": 148,
+        "total_tokens": 9505
+      },
+      "time": "2026-02-11T19:16:06.642732+00:00"
     }
   ],
   "test": false

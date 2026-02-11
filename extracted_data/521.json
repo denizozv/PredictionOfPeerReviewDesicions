@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty in core contribution. Chirplet transforms are well-established (Mann & Haykin 1991-92); the main contribution is a fast implementation and CNN pretraining strategy. Experimental validation is narrow (3 small datasets, weak baselines), lacks rigorous comparison with state-of-the-art methods, and shows modest improvements (2-7% gains). Writing quality is poor with grammatical errors and unclear presentation. Missing critical ablations and statistical significance testing."
-      },
-      "token": {
-        "prompt_tokens": 11384,
-        "completion_tokens": 139,
-        "total_tokens": 11523
-      },
-      "time": "2026-02-08T22:25:12.795044+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -148,6 +134,20 @@
         "total_tokens": 13272
       },
       "time": "2026-02-09T20:27:02.969355+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper proposes a Fast Chirplet Transform (FCT) for audio feature extraction and demonstrates modest CNN pretraining gains (~2-7% relative improvement, ~26-28% training speedup) on small datasets (BIRD10: 15 min, TIMIT vowels: 192 test utterances). While FCT is a reasonable contribution, the experimental validation is severely limited: tiny datasets with weak baselines, no comparison to other time-frequency representations beyond Mel, no statistical significance testing, and claims about generalization to animal communication are unsupported. The writing is poor with grammatical errors and unclear presentation. The work reads as an incremental engineering contribution rather than a significant research advance suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 14118,
+        "completion_tokens": 201,
+        "total_tokens": 14319
+      },
+      "time": "2026-02-11T18:54:18.180642+00:00"
     }
   ],
   "test": false

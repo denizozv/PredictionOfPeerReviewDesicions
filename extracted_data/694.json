@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel end-to-end sentence-level lipreading with spatiotemporal convolutions + RNN + CTC. Strong empirical results (95.2% accuracy, outperforms human lipreaders), thorough experimental validation with ablations, and interpretable learned representations. Clear methodological contribution to multimodal sequence learning."
-      },
-      "token": {
-        "prompt_tokens": 5609,
-        "completion_tokens": 106,
-        "total_tokens": 5715
-      },
-      "time": "2026-02-08T22:42:07.961447+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 7549
       },
       "time": "2026-02-09T20:45:10.116793+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "First end-to-end sentence-level lipreading model combining spatiotemporal convolutions, RNNs, and CTC loss. Achieves 95.2% accuracy on GRID, surpassing human lipreaders (47.7% WER). Strong empirical validation with appropriate baselines, thorough ablations, and insightful phonological analysis via saliency maps and viseme confusion matrices. Clear technical contribution with practical impact."
+      },
+      "token": {
+        "prompt_tokens": 8343,
+        "completion_tokens": 134,
+        "total_tokens": 8477
+      },
+      "time": "2026-02-11T19:19:09.340100+00:00"
     }
   ],
   "test": false

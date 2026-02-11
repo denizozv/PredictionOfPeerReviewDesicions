@@ -87,20 +87,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel formulation of sensorimotor control via direct future prediction with dense multidimensional feedback; strong empirical results across multiple complex 3D environments; principled architectural design with ablation studies; competition validation and generalization experiments demonstrate significant scientific contribution."
-      },
-      "token": {
-        "prompt_tokens": 6748,
-        "completion_tokens": 89,
-        "total_tokens": 6837
-      },
-      "time": "2026-02-08T22:02:50.329971+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -113,6 +99,20 @@
         "total_tokens": 8715
       },
       "time": "2026-02-09T20:07:30.896012+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Strong empirical contribution with a well-motivated and simple approach: learning sensorimotor control via supervised prediction of future measurements rather than RL. Demonstrates clear advantages over DQN/A3C/DSR on complex 3D Doom tasks, particularly when rich multidimensional feedback is available. Includes thorough experiments (4 scenarios, generalization studies, ablations, competition win), goal-agnostic training capability, and solid architectural design. The core insight—that dense vectorial feedback enables effective supervised learning for control—is valuable and well-validated, though the novelty is somewhat incremental relative to prior work on supervised learning for control and goal-conditioned policies."
+      },
+      "token": {
+        "prompt_tokens": 9480,
+        "completion_tokens": 181,
+        "total_tokens": 9661
+      },
+      "time": "2026-02-11T18:20:22.030317+00:00"
     }
   ],
   "test": false

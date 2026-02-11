@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.95,
-        "primary_reason": "Novel compositional architecture with strong inductive biases for physics learning; demonstrates clear generalization across variable object counts and scene configurations; rigorous ablation studies isolate contributions of each component; well-motivated design bridging symbolic and learned approaches."
-      },
-      "token": {
-        "prompt_tokens": 6349,
-        "completion_tokens": 85,
-        "total_tokens": 6434
-      },
-      "time": "2026-02-08T22:08:13.706070+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 8449
       },
       "time": "2026-02-09T20:12:30.490994+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Proposes a well-motivated compositional object-based neural architecture for learning physics dynamics with strong inductive biases (pairwise factorization, function composition, neighborhood masking). Demonstrates convincing generalization across variable object counts and scene configurations through careful ablations (NP, LSTM baselines) and multiple evaluation tasks (prediction, generalization, mass inference). Clear presentation of a principled approach bridging symbolic and learned physics engines, though limited to 2D rigid body dynamics on synthetic data."
+      },
+      "token": {
+        "prompt_tokens": 9083,
+        "completion_tokens": 142,
+        "total_tokens": 9225
+      },
+      "time": "2026-02-11T18:31:06.386058+00:00"
     }
   ],
   "test": false

@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel bidirectional GAN framework with strong theoretical contributions (inverse mapping guarantee, JS divergence characterization), comprehensive experiments across MNIST/ImageNet/VOC, and significant impact on unsupervised feature learning."
-      },
-      "token": {
-        "prompt_tokens": 6411,
-        "completion_tokens": 81,
-        "total_tokens": 6492
-      },
-      "time": "2026-02-08T22:20:04.104742+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 8207
       },
       "time": "2026-02-09T20:22:17.642730+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes BiGAN, a novel and theoretically well-motivated framework that learns bidirectional mappings between data and latent space by training an encoder alongside the generator, with rigorous theoretical analysis (optimal discriminator characterization, proof that E and G are inverses at optimum, connection to autoencoders). Demonstrates competitive unsupervised feature learning on ImageNet and VOC tasks with clear ablations against reasonable baselines, supported by qualitative evidence of learned structure. Strong contribution to unsupervised representation learning."
+      },
+      "token": {
+        "prompt_tokens": 9145,
+        "completion_tokens": 148,
+        "total_tokens": 9293
+      },
+      "time": "2026-02-11T18:46:18.543656+00:00"
     }
   ],
   "test": false

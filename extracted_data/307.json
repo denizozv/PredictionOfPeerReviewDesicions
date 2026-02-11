@@ -142,20 +142,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel benchmark dataset for goal-oriented dialog with systematic task decomposition, comprehensive baseline comparisons, and real-world validation. Strong methodological contribution through match-type features for entity handling and OOV generalization."
-      },
-      "token": {
-        "prompt_tokens": 7165,
-        "completion_tokens": 80,
-        "total_tokens": 7245
-      },
-      "time": "2026-02-08T22:02:39.332938+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -168,6 +154,20 @@
         "total_tokens": 9161
       },
       "time": "2026-02-09T20:06:54.273415+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Introduces a well-designed benchmark (bAbI dialog tasks) that systematically breaks down goal-oriented dialog into interpretable subtasks (API calls, state tracking, entity manipulation, etc.), provides comprehensive baseline comparisons (rule-based, IR, embeddings, Memory Networks), and demonstrates that end-to-end models can learn non-trivial operations but still struggle with entity reasoning. The synthetic tasks are validated against real data (DSTC2, concierge service), and the match-type feature contribution addresses a concrete OOV generalization problem. While performance is imperfect and some tasks remain unsolved, the paper makes a solid empirical and methodological contribution by establishing a useful testbed and identifying specific failure modes of end-to-end approaches in goal-oriented settings."
+      },
+      "token": {
+        "prompt_tokens": 9897,
+        "completion_tokens": 202,
+        "total_tokens": 10099
+      },
+      "time": "2026-02-11T18:20:00.416032+00:00"
     }
   ],
   "test": false

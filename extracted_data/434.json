@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel technical contribution (batch normalization for hidden-to-hidden LSTM transitions), strong theoretical motivation (gradient flow analysis), comprehensive experiments across diverse tasks (sequential MNIST, language modeling, QA), consistent improvements in convergence and generalization."
-      },
-      "token": {
-        "prompt_tokens": 5400,
-        "completion_tokens": 86,
-        "total_tokens": 5486
-      },
-      "time": "2026-02-08T22:15:10.512124+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 7394
       },
       "time": "2026-02-09T20:18:45.045619+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Proposes a principled reparameterization of LSTM with batch normalization applied to both input-to-hidden and hidden-to-hidden transformations, identifies critical initialization insights (γ scaling for gradient flow), and demonstrates consistent improvements across diverse tasks (sequential MNIST, Penn Treebank, Text8, reading comprehension) with thorough ablations and clear mechanistic understanding of why previous attempts failed."
+      },
+      "token": {
+        "prompt_tokens": 8134,
+        "completion_tokens": 124,
+        "total_tokens": 8258
+      },
+      "time": "2026-02-11T18:40:15.244629+00:00"
     }
   ],
   "test": false

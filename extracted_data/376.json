@@ -162,20 +162,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Rigorous empirical study with novel theoretical insights on RNN capacity bottlenecks. Extensive experiments (CPU-millennia scale) with careful HP tuning across multiple architectures and tasks. Introduces two new architectures (UGRNN, +RNN) and provides actionable findings that reconcile capacity vs. trainability—a significant contribution to understanding RNN design tradeoffs."
-      },
-      "token": {
-        "prompt_tokens": 8370,
-        "completion_tokens": 119,
-        "total_tokens": 8489
-      },
-      "time": "2026-02-08T22:09:02.588528+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -188,6 +174,20 @@
         "total_tokens": 10239
       },
       "time": "2026-02-09T20:12:59.101798+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Rigorous empirical study with massive computational investment (CPU-millennia) systematically measuring RNN capacity (per-parameter and per-unit) across architectures and depths. Key findings: ~5 bits/parameter capacity is universal across architectures; trainability (not capacity) explains performance differences; introduces two novel architectures (+RNN, UGRNN) with practical benefits for deep stacking. Thorough ablations, careful HP tuning, and multiple task domains provide strong evidence. Minor limitations: some findings are somewhat expected (e.g., per-unit memory = input dimension); limited theoretical insight into why capacity is universal."
+      },
+      "token": {
+        "prompt_tokens": 11104,
+        "completion_tokens": 170,
+        "total_tokens": 11274
+      },
+      "time": "2026-02-11T18:31:19.960714+00:00"
     }
   ],
   "test": false

@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel theoretical framework (bits-back coding analysis of VAE information preference) combined with principled architectural innovations (autoregressive flow priors, controlled lossy compression via decoder design). Strong empirical results across multiple benchmarks with thorough ablations and insightful visualizations of learned representations."
-      },
-      "token": {
-        "prompt_tokens": 9336,
-        "completion_tokens": 96,
-        "total_tokens": 9432
-      },
-      "time": "2026-02-08T22:11:04.623492+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 10808
       },
       "time": "2026-02-09T20:14:53.292576+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.92,
+        "primary_reason": "Strong theoretical contribution explaining when/why VAEs fail to use latent codes (bits-back coding analysis), novel method combining VAEs with autoregressive models via controlled information placement and learned priors, state-of-the-art density estimation results on multiple benchmarks (MNIST, OMNIGLOT, Caltech-101), and thorough ablations demonstrating each component's contribution."
+      },
+      "token": {
+        "prompt_tokens": 12070,
+        "completion_tokens": 119,
+        "total_tokens": 12189
+      },
+      "time": "2026-02-11T18:34:11.017323+00:00"
     }
   ],
   "test": false

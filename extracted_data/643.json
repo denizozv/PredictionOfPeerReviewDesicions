@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in core technique; neurogenesis metaphor is primarily a combination of existing regularization methods (L1/L2 group sparsity + random initialization). Narrow experimental scope (dictionary learning only); improvements are marginal and highly dependent on specific data properties (sparse dictionaries with non-overlapping supports). Lacks comparison with modern deep learning baselines and contemporary online learning methods. The biological motivation is superficial and does not drive fundamental algorithmic innovation."
-      },
-      "token": {
-        "prompt_tokens": 12367,
-        "completion_tokens": 133,
-        "total_tokens": 12500
-      },
-      "time": "2026-02-08T22:37:23.756452+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -178,6 +164,20 @@
         "total_tokens": 14094
       },
       "time": "2026-02-09T20:40:06.720466+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents a reasonable idea (adaptive dictionary learning via neurogenesis-inspired birth/death of atoms), the contribution is primarily incremental over Mairal et al. (2009). The method combines existing techniques (group sparsity, conditional addition) without sufficient novelty. Empirical validation is limited to relatively simple domains (small images, toy NLP data, synthetic sparse data), lacks comparison to other adaptive/non-stationary learning methods, and improvements are often modest and highly dependent on specific data properties (sparse dictionaries + non-overlapping supports). The theoretical analysis (Lemma 1) is narrow and the paper reads more as an engineering contribution than a fundamental advance."
+      },
+      "token": {
+        "prompt_tokens": 15101,
+        "completion_tokens": 180,
+        "total_tokens": 15281
+      },
+      "time": "2026-02-11T19:12:12.225310+00:00"
     }
   ],
   "test": false

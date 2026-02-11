@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel information retrieval-based objective for multi-view subspace learning with solid theoretical grounding (KL divergence, neighborhood correlation) and reasonable experimental validation, though limited scope (linear methods only) and modest experimental scale reduce impact."
-      },
-      "token": {
-        "prompt_tokens": 6284,
-        "completion_tokens": 84,
-        "total_tokens": 6368
-      },
-      "time": "2026-02-08T22:30:10.305914+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 8182
       },
       "time": "2026-02-09T20:31:53.283403+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper proposes a neighborhood-based objective for multi-view subspace learning, but the contribution is primarily incremental: it replaces CCA's correlation criterion with a neighborhood-preservation objective (Sim measure) optimized via standard L-BFGS. While the information retrieval framing is intuitive, the method lacks novelty in optimization, the experimental validation is limited (weak baselines, small-scale datasets, no statistical significance testing), and the practical advantages over CCA/LPCCA are not convincingly demonstrated. The writing is dense and the paper reads more as a technical report than a research contribution with clear insights."
+      },
+      "token": {
+        "prompt_tokens": 9018,
+        "completion_tokens": 169,
+        "total_tokens": 9187
+      },
+      "time": "2026-02-11T19:01:07.718015+00:00"
     }
   ],
   "test": false

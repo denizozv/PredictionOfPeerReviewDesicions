@@ -77,20 +77,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Solid empirical analysis of Neural GPU with novel insights on generalization failures, curriculum learning, and architectural limitations. Rigorous experimental methodology with multiple seeds. Contributes understanding of when/why neural models fail on algorithmic tasks."
-      },
-      "token": {
-        "prompt_tokens": 4110,
-        "completion_tokens": 84,
-        "total_tokens": 4194
-      },
-      "time": "2026-02-08T22:32:02.556525+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -103,6 +89,20 @@
         "total_tokens": 6428
       },
       "time": "2026-02-09T20:33:49.520605+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical study extending Neural GPU with curriculum learning and scaling, revealing important generalization failure modes (carry limits, symmetric inputs) and providing mechanistic insights into algorithmic learning. Thorough experimental methodology with multiple seeds and ablations, though contributions are somewhat incremental (curriculum + scaling are known techniques) and scope limited to toy arithmetic tasks."
+      },
+      "token": {
+        "prompt_tokens": 6844,
+        "completion_tokens": 107,
+        "total_tokens": 6951
+      },
+      "time": "2026-02-11T19:04:05.993531+00:00"
     }
   ],
   "test": false

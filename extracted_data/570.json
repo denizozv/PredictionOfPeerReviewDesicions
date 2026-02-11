@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty and narrow scope. Core contributions (semantic-biased embeddings via paragraph2vec variant, biLSTM-based sentence selection/combination with attention) are incremental applications of existing techniques. Task is domain-specific (love advice QA) with modest technical depth. Evaluation limited to single Japanese dataset; lacks rigorous comparison with contemporary neural generation methods. Answer 'construction' is actually sentence selection/ordering, not true generation."
-      },
-      "token": {
-        "prompt_tokens": 5870,
-        "completion_tokens": 129,
-        "total_tokens": 5999
-      },
-      "time": "2026-02-08T22:30:19.024333+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 7919
       },
       "time": "2026-02-09T20:32:15.728288+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper addresses a specific application (love advice QA) with incremental technical contributions (semantic word embeddings via paragraph2vec variant + joint LSTM for sentence selection/combination with attention). While the work is competent and deployed in practice, the core methodological novelty is limited: semantic embeddings are a straightforward extension of paragraph2vec, and the answer construction approach is essentially multi-task learning of sentence pairs with standard attention. The evaluation is narrow (single domain, Japanese QA site only, small dataset ~5K examples), lacks rigorous comparison to stronger baselines, and the 20% improvement claim conflates answer selection with construction tasks. Human evaluation is limited (2 judges, small sample) and the claimed success metric (455/1492 = 30% user approval) is not convincingly positioned against baselines. The work is solid engineering for a specific application but lacks the methodological depth, generality, and rigorous empirical validation expected at ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 8604,
+        "completion_tokens": 251,
+        "total_tokens": 8855
+      },
+      "time": "2026-02-11T19:01:20.335321+00:00"
     }
   ],
   "test": false

@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel attention-based mechanism for leveraging medical ontologies to address data insufficiency and interpretability in healthcare prediction. Strong empirical validation across three tasks with comprehensive baselines and interpretability analysis."
-      },
-      "token": {
-        "prompt_tokens": 7394,
-        "completion_tokens": 75,
-        "total_tokens": 7469
-      },
-      "time": "2026-02-08T22:40:04.886672+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 9288
       },
       "time": "2026-02-09T20:42:36.194471+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes GRAM, a principled method that leverages medical ontologies via attention to learn robust representations under data insufficiency in healthcare. Demonstrates consistent improvements over strong baselines across three real clinical prediction tasks (sequential diagnosis on PAMF/MIMIC-III, heart failure prediction), with interpretable attention weights that align with medical knowledge. Includes thorough experiments, ablations (GRAM vs GRAM+, RandomDAG), and qualitative analysis of learned representations. Main limitations: incremental technical novelty (attention + ontology integration is relatively straightforward), modest improvements on some tasks (1.8% on HF), and limited theoretical insight into why this particular attention formulation is optimal for ontology-guided learning."
+      },
+      "token": {
+        "prompt_tokens": 10128,
+        "completion_tokens": 189,
+        "total_tokens": 10317
+      },
+      "time": "2026-02-11T19:15:26.323237+00:00"
     }
   ],
   "test": false

@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel architectural contribution (GRU-D with trainable decay mechanisms) for handling informative missingness in time series; strong empirical validation on real clinical datasets (MIMIC-III, PhysioNet); thorough experimental design with multiple baselines and ablations; addresses practical problem with clear methodological innovation."
-      },
-      "token": {
-        "prompt_tokens": 8524,
-        "completion_tokens": 102,
-        "total_tokens": 8626
-      },
-      "time": "2026-02-08T22:33:07.882352+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -163,6 +149,20 @@
         "total_tokens": 10268
       },
       "time": "2026-02-09T20:35:16.477163+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Proposes GRU-D, a well-motivated RNN architecture that explicitly incorporates missing patterns (masking and time intervals) via trainable decay mechanisms for both inputs and hidden states. Demonstrates strong empirical results on real clinical datasets (MIMIC-III, PhysioNet) with thorough ablations and synthetic experiments validating the utility of modeling informative missingness. The work addresses a practical problem in healthcare time series with a principled approach and provides useful insights into missing value patterns."
+      },
+      "token": {
+        "prompt_tokens": 11258,
+        "completion_tokens": 142,
+        "total_tokens": 11400
+      },
+      "time": "2026-02-11T19:05:14.767058+00:00"
     }
   ],
   "test": false

@@ -122,20 +122,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel meta-learning approach using LSTM to learn optimization algorithms for few-shot learning. Strong methodological contribution with clever LSTM-gradient descent analogy, solid experimental validation on Mini-ImageNet, and competitive results against Matching Networks. Clear presentation and reproducible work."
-      },
-      "token": {
-        "prompt_tokens": 5831,
-        "completion_tokens": 92,
-        "total_tokens": 5923
-      },
-      "time": "2026-02-08T22:02:37.482846+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -148,6 +134,20 @@
         "total_tokens": 7936
       },
       "time": "2026-02-09T20:06:46.978500+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Proposes a novel and well-motivated meta-learning approach using LSTMs to learn task-specific optimization algorithms for few-shot learning. The key insight—mapping gradient descent updates to LSTM cell state dynamics—is creative and theoretically grounded. The method learns both optimal update rules and good initializations, with competitive results against Matching Networks on Mini-ImageNet. Includes thoughtful design choices (parameter sharing, preprocessing, batch normalization handling) and visualization of learned strategies. Main limitations: evaluation limited to one dataset (Mini-ImageNet with custom splits), modest improvements over baselines, and the gradient independence assumption is a significant simplification. However, the core contribution is sufficiently novel and the execution is solid for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 8563,
+        "completion_tokens": 192,
+        "total_tokens": 8755
+      },
+      "time": "2026-02-11T18:19:56.747238+00:00"
     }
   ],
   "test": false

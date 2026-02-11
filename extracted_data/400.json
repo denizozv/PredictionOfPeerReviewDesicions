@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.82,
-        "primary_reason": "Novel architecture for tree-structured decoding with principled design (doubly-recurrent modeling of ancestral/fraternal flows), explicit topology prediction, and solid experimental validation across three diverse tasks (synthetic recovery, semantic parsing, MT). Clear methodological contribution with thoughtful solutions to tree generation challenges."
-      },
-      "token": {
-        "prompt_tokens": 7559,
-        "completion_tokens": 97,
-        "total_tokens": 7656
-      },
-      "time": "2026-02-08T22:11:12.968201+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -138,6 +124,20 @@
         "total_tokens": 9531
       },
       "time": "2026-02-09T20:15:14.641514+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel architecture (doubly-recurrent neural networks) for tree decoding with explicit topology modeling; well-motivated design addressing real challenges in generating tree structures from vectors; solid experimental validation across synthetic trees, semantic parsing (IFTTT), and machine translation with thoughtful evaluation metrics and comparisons to relevant baselines."
+      },
+      "token": {
+        "prompt_tokens": 10293,
+        "completion_tokens": 101,
+        "total_tokens": 10394
+      },
+      "time": "2026-02-11T18:35:11.907619+00:00"
     }
   ],
   "test": true

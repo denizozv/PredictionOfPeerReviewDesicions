@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel character-level open-vocabulary approach with NCE training for NLM; solid experimental validation on morphologically-rich language (Czech MT); addresses real technical challenges (training instability, character n-gram contamination); demonstrates practical improvements (+0.7 BLEU). Limitations: modest gains, narrow task scope (reranking only), some design choices (no LSTMs) lack strong justification."
-      },
-      "token": {
-        "prompt_tokens": 4952,
-        "completion_tokens": 123,
-        "total_tokens": 5075
-      },
-      "time": "2026-02-08T22:41:18.827534+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -163,6 +149,20 @@
         "total_tokens": 7040
       },
       "time": "2026-02-09T20:44:07.418170+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a practical open-vocabulary neural language model using character-level convolutions with NCE training, demonstrates modest but consistent BLEU gains (+0.7) on morphologically-rich Czech MT task, and provides useful analysis of training instabilities and design choices (padding scheme, output representation issues); solid empirical contribution with clear engineering insights, though gains are incremental and evaluation limited to reranking on single language pair."
+      },
+      "token": {
+        "prompt_tokens": 7686,
+        "completion_tokens": 125,
+        "total_tokens": 7811
+      },
+      "time": "2026-02-11T19:17:22.675822+00:00"
     }
   ],
   "test": false

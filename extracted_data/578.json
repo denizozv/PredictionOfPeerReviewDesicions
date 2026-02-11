@@ -207,20 +207,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid empirical study with novel measurement framework for CNN invariance/equivariance properties, comprehensive experiments across multiple transforms and datasets, and a practical loss function contribution. However, limited theoretical novelty and modest improvements from proposed method reduce impact."
-      },
-      "token": {
-        "prompt_tokens": 7928,
-        "completion_tokens": 86,
-        "total_tokens": 8014
-      },
-      "time": "2026-02-08T22:30:35.202682+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -233,6 +219,20 @@
         "total_tokens": 9658
       },
       "time": "2026-02-09T20:33:07.238483+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "Primarily an empirical measurement study with limited novelty. While the systematic evaluation of invariance/equivariance across 9 transforms is thorough, the core contributions are incremental: (1) the proposed loss function (Eq. 6-7) is a straightforward combination of existing ideas with modest empirical gains (0.5% on RVL-CDIP, mixed results on ILSVRC), (2) the representation distance analysis lacks rigor (asymmetry issues, no triangle inequality, difficult to interpret), and (3) the paper is primarily descriptive rather than providing actionable insights or principled improvements to CNN design. The work would be stronger as a detailed empirical analysis paper but falls short of the novelty and impact expected for a top-tier venue."
+      },
+      "token": {
+        "prompt_tokens": 10662,
+        "completion_tokens": 204,
+        "total_tokens": 10866
+      },
+      "time": "2026-02-11T19:02:14.998677+00:00"
     }
   ],
   "test": false

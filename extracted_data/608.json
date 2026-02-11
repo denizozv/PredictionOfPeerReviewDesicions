@@ -92,20 +92,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical analysis of sinusoidal activations with rigorous loss landscape characterization, comprehensive experiments revealing periodicity usage patterns, and demonstration of advantages on algorithmic tasks. Solid contribution despite limited scope on standard benchmarks."
-      },
-      "token": {
-        "prompt_tokens": 4254,
-        "completion_tokens": 82,
-        "total_tokens": 4336
-      },
-      "time": "2026-02-08T22:34:09.948749+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -118,6 +104,20 @@
         "total_tokens": 6645
       },
       "time": "2026-02-09T20:36:25.629518+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper provides useful theoretical analysis of sine activation training dynamics and interesting empirical observations (e.g., networks ignore periodicity on standard tasks), the contributions are incremental and the experimental validation is insufficient. The theoretical analysis is limited to shallow networks with MSE loss; the main empirical finding—that sine acts like tanh on typical tasks—is unsurprising given standard initialization; and the algorithmic task experiments lack rigor (no separate validation/test sets, limited baselines, unclear generalization). The work reads more as an analysis paper than a methodological advance, without sufficient novelty or impact for a top venue."
+      },
+      "token": {
+        "prompt_tokens": 6988,
+        "completion_tokens": 166,
+        "total_tokens": 7154
+      },
+      "time": "2026-02-11T19:07:11.711796+00:00"
     }
   ],
   "test": false

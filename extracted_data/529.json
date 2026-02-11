@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Novel integration of RL with pre-trained RNNs for sequence generation; principled KL-control framework; strong empirical validation with user studies; addresses real failure modes of supervised sequence models."
-      },
-      "token": {
-        "prompt_tokens": 6815,
-        "completion_tokens": 78,
-        "total_tokens": 6893
-      },
-      "time": "2026-02-08T22:26:18.157096+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 8761
       },
       "time": "2026-02-09T20:28:04.159848+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel application of KL-regularized RL to sequence modeling with solid empirical validation. Combines pre-trained RNN with RL using music-theory rewards, derives generalized Ψ and G-learning for deep networks (first application to sequences), and demonstrates improvements via quantitative metrics and user study. However, the contribution is somewhat incremental (combining existing techniques) and evaluation is limited to music generation on a single domain."
+      },
+      "token": {
+        "prompt_tokens": 9549,
+        "completion_tokens": 127,
+        "total_tokens": 9676
+      },
+      "time": "2026-02-11T18:56:04.146966+00:00"
     }
   ],
   "test": false

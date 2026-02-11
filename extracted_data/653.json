@@ -72,20 +72,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty in theoretical analysis (builds directly on Ghadimi & Lan 2013 and Lian et al. 2015 with straightforward extensions), weak experimental validation (single dataset, no comparison with other methods or recent work), and incremental contribution that formalizes known practical observations without significant new insights."
-      },
-      "token": {
-        "prompt_tokens": 3852,
-        "completion_tokens": 105,
-        "total_tokens": 3957
-      },
-      "time": "2026-02-08T22:38:21.259998+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -98,6 +84,20 @@
         "total_tokens": 5927
       },
       "time": "2026-02-09T20:41:03.459149+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "The paper provides theoretical analysis of known phenomena (larger mini-batches and more learners slow convergence) with limited novelty. The theoretical results are straightforward extensions of existing work (Ghadimi & Lan 2013, Lian et al. 2015) with modest technical contribution. Experiments are minimal (single dataset, single architecture, limited baselines) and don't provide compelling new insights. The core message—that parallelism introduces inefficiency—is well-established in the literature and not sufficiently advanced here."
+      },
+      "token": {
+        "prompt_tokens": 6586,
+        "completion_tokens": 149,
+        "total_tokens": 6735
+      },
+      "time": "2026-02-11T19:13:23.744008+00:00"
     }
   ],
   "test": false

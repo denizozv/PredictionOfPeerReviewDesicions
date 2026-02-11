@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Solid systems contribution with practical hardware validation, novel precision search technique, and comprehensive experimental evaluation on production DNNs. Addresses important efficiency-accuracy tradeoff with concrete 7.6x speedup results and efficient design space exploration methodology."
-      },
-      "token": {
-        "prompt_tokens": 5244,
-        "completion_tokens": 86,
-        "total_tokens": 5330
-      },
-      "time": "2026-02-08T22:37:20.004233+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 7326
       },
       "time": "2026-02-09T20:39:58.234402+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical contribution on DNN quantization with practical hardware validation (7.6x speedup, <1% accuracy loss on production networks) and a novel efficient search technique (170x faster than exhaustive search). Well-executed experimental methodology with clear accuracy-efficiency trade-offs and insightful error analysis. However, the core ideas (reduced-precision arithmetic, quantization search) are somewhat incremental, and the search method, while useful, relies on a simple linear correlation model. Acceptable for a top venue but not groundbreaking."
+      },
+      "token": {
+        "prompt_tokens": 7978,
+        "completion_tokens": 150,
+        "total_tokens": 8128
+      },
+      "time": "2026-02-11T19:12:08.621267+00:00"
     }
   ],
   "test": false

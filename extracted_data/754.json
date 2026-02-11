@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel sparse pointer network for long-range identifier dependencies in code suggestion, large-scale Python corpus contribution, solid experimental validation with clear improvements over baselines."
-      },
-      "token": {
-        "prompt_tokens": 3920,
-        "completion_tokens": 67,
-        "total_tokens": 3987
-      },
-      "time": "2026-02-08T22:47:23.669377+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 6124
       },
       "time": "2026-02-09T20:51:03.526156+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Solid empirical contribution with a well-motivated sparse pointer network for code suggestion that effectively captures long-range identifier dependencies in Python. Introduces a large-scale 41M-line Python corpus, demonstrates clear improvements over LSTM baselines (5 percentage points accuracy gain, 13x better identifier prediction), and provides convincing qualitative analysis of long-range captures (60+ tokens). However, the technical novelty is somewhat incremental (sparse attention via identifier filtering + gating mechanism), evaluation is limited to perplexity/accuracy metrics without user studies or deployment validation, and comparisons lack some stronger baselines (e.g., copy mechanisms, transformer-based models). The work is practical and well-executed but not groundbreaking."
+      },
+      "token": {
+        "prompt_tokens": 6654,
+        "completion_tokens": 191,
+        "total_tokens": 6845
+      },
+      "time": "2026-02-11T19:27:12.427077+00:00"
     }
   ],
   "test": false

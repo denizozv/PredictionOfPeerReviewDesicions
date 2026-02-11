@@ -137,20 +137,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel theoretical framework connecting mollification, continuation methods, and neural network optimization with solid mathematical foundation and diverse experimental validation across multiple architectures."
-      },
-      "token": {
-        "prompt_tokens": 7500,
-        "completion_tokens": 63,
-        "total_tokens": 7563
-      },
-      "time": "2026-02-08T22:14:21.539188+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -163,6 +149,20 @@
         "total_tokens": 9419
       },
       "time": "2026-02-09T20:17:54.135731+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "While the paper presents an interesting theoretical framework connecting mollification, continuation methods, and neural network optimization, the execution has significant issues: (1) the core practical contribution—unitwise stochastic skip connections (USSC)—is presented as a complex noisy activation scheme but is conceptually similar to existing dropout/stochastic depth methods without clear differentiation; (2) experimental validation is weak and scattered across toy problems (MNIST, parity, pentomino) and standard benchmarks (CIFAR-10, PTB) with modest improvements and inconsistent comparisons; (3) the mathematical framework, while rigorous, does not clearly translate to actionable insights or principled design choices; (4) presentation is dense and difficult to follow, with critical algorithmic details (Algorithm 1) being convoluted and the connection between theory and practice remaining unclear; (5) missing ablations and fair comparisons (e.g., against batch normalization, layer normalization, other continuation methods) make it hard to assess the true contribution."
+      },
+      "token": {
+        "prompt_tokens": 10234,
+        "completion_tokens": 254,
+        "total_tokens": 10488
+      },
+      "time": "2026-02-11T18:39:11.642523+00:00"
     }
   ],
   "test": false

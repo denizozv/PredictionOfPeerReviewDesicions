@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Incremental contribution with limited novelty. Applies existing pruning techniques (magnitude-based thresholding, gradual pruning) to RNNs without significant methodological innovation. Experimental validation is narrow (single task: speech recognition) and lacks comparison with contemporary pruning methods beyond one baseline. The work is primarily an engineering contribution rather than a scientific advance suitable for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 3808,
-        "completion_tokens": 119,
-        "total_tokens": 3927
-      },
-      "time": "2026-02-08T22:10:13.283552+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 6005
       },
       "time": "2026-02-09T20:14:10.542890+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Incremental contribution with limited novelty: proposes standard magnitude-based gradual pruning for RNNs with layer-specific hyperparameters, but the core technique is well-established. Evaluation is narrow (speech recognition only), lacks comparison to other pruning methods beyond one baseline, and sparse GEMM speedups (2-7×) fall short of theoretical expectations due to implementation limitations. Missing ablations on key design choices and no analysis of why gradual pruning helps beyond empirical observation."
+      },
+      "token": {
+        "prompt_tokens": 6542,
+        "completion_tokens": 143,
+        "total_tokens": 6685
+      },
+      "time": "2026-02-11T18:33:16.294615+00:00"
     }
   ],
   "test": false

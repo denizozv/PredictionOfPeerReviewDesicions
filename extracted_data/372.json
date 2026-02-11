@@ -67,20 +67,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel differentiable memory module with practical efficiency (LSH), demonstrated versatility across multiple architectures (CNN, seq2seq, convolutional-recurrent), strong one-shot learning results on Omniglot, and first demonstration of life-long one-shot learning in large-scale NMT. Clear scientific contribution despite modest BLEU improvements on translation."
-      },
-      "token": {
-        "prompt_tokens": 4674,
-        "completion_tokens": 114,
-        "total_tokens": 4788
-      },
-      "time": "2026-02-08T22:08:16.469211+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -93,6 +79,20 @@
         "total_tokens": 6864
       },
       "time": "2026-02-09T20:12:37.338167+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a practical, differentiable memory module with efficient nearest-neighbor lookup that can be added to any neural network. Demonstrates versatility across CNNs, seq2seq, and convolutional-recurrent models. Sets SOTA on Omniglot one-shot learning and shows life-long learning capability on machine translation. Well-motivated design with clear ablations (synthetic task, oracle evaluation). Main weaknesses: modest BLEU gains on translation (+0.5), limited theoretical novelty (metric learning + memory management), and evaluation could be more comprehensive on real-world one-shot scenarios beyond Omniglot."
+      },
+      "token": {
+        "prompt_tokens": 7408,
+        "completion_tokens": 171,
+        "total_tokens": 7579
+      },
+      "time": "2026-02-11T18:31:09.905374+00:00"
     }
   ],
   "test": false

@@ -82,20 +82,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Solid systems contribution with novel collective communication algorithm (Linear Pipelining) for distributed neural network training. Strong theoretical analysis, comprehensive experimental validation, and practical impact on multi-GPU scalability. Addresses real bottleneck in parallel training."
-      },
-      "token": {
-        "prompt_tokens": 5499,
-        "completion_tokens": 86,
-        "total_tokens": 5585
-      },
-      "time": "2026-02-08T22:50:02.788159+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -108,6 +94,20 @@
         "total_tokens": 7346
       },
       "time": "2026-02-09T20:53:28.366283+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes Linear Pipelining (LP), a novel collective communication algorithm for multi-GPU neural network training that achieves O(1) cost invariant to GPU count (vs O(log P) for MST), with strong theoretical analysis and empirical validation showing 2-360x speedups on benchmarks and 1.6-2.2x end-to-end training speedups on AlexNet/GoogLeNet. The work addresses a real systems bottleneck with a well-motivated design, clear architectural insights, and practical implementations, though the experimental scope is limited to 4-6 GPUs and older networks (2012-2014 era)."
+      },
+      "token": {
+        "prompt_tokens": 8233,
+        "completion_tokens": 181,
+        "total_tokens": 8414
+      },
+      "time": "2026-02-11T19:30:13.857842+00:00"
     }
   ],
   "test": false

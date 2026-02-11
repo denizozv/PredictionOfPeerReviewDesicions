@@ -147,20 +147,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel meta-learning approach using RL/GPS to learn optimization algorithms; strong conceptual contribution with solid experimental validation across convex and non-convex problems; clear generalization to unseen objectives."
-      },
-      "token": {
-        "prompt_tokens": 6584,
-        "completion_tokens": 77,
-        "total_tokens": 6661
-      },
-      "time": "2026-02-08T22:07:16.620426+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -173,6 +159,20 @@
         "total_tokens": 8643
       },
       "time": "2026-02-09T20:11:37.408835+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.85,
+        "primary_reason": "Novel and ambitious idea of learning optimization algorithms via RL/GPS with solid empirical validation across convex and non-convex problems; demonstrates generalization beyond training horizon and outperforms hand-engineered optimizers; clear formulation and reasonable experimental design, though limited scope (small problems, low dimensions) and modest practical impact prevent higher confidence."
+      },
+      "token": {
+        "prompt_tokens": 9318,
+        "completion_tokens": 107,
+        "total_tokens": 9425
+      },
+      "time": "2026-02-11T18:29:17.196166+00:00"
     }
   ],
   "test": false

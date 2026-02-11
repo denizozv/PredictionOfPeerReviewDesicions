@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Well-motivated transfer learning framework with systematic exploration across three dimensions (domain, application, language), comprehensive experiments on multiple benchmarks, and consistent SOTA improvements. Clear methodological contribution with practical impact."
-      },
-      "token": {
-        "prompt_tokens": 4542,
-        "completion_tokens": 76,
-        "total_tokens": 4618
-      },
-      "time": "2026-02-08T22:08:18.140417+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -143,6 +129,20 @@
         "total_tokens": 6618
       },
       "time": "2026-02-09T20:12:45.072443+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Solid empirical contribution demonstrating systematic transfer learning for sequence tagging across domains, applications, and languages with clear architectural choices (T-A/B/C), comprehensive experiments on multiple benchmarks, and state-of-the-art results. Well-executed study with good ablations and practical insights, though the core technical novelty (parameter sharing schemes) is somewhat incremental."
+      },
+      "token": {
+        "prompt_tokens": 7276,
+        "completion_tokens": 115,
+        "total_tokens": 7391
+      },
+      "time": "2026-02-11T18:31:12.284362+00:00"
     }
   ],
   "test": false

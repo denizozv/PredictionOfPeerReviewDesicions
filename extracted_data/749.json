@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty and weak experimental validation. Design patterns are mostly literature observations rather than novel insights. Proposed architectures (FoF, SBN, TSN) show marginal or negative results compared to baselines. Experiments only on CIFAR-10/100 with incomplete evaluation acknowledged by authors. Lacks rigorous scientific contribution expected for top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 6329,
-        "completion_tokens": 114,
-        "total_tokens": 6443
-      },
-      "time": "2026-02-08T22:47:13.159347+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -133,6 +119,20 @@
         "total_tokens": 8374
       },
       "time": "2026-02-09T20:50:39.907710+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Paper presents design patterns and architectural innovations (FoF, SBN, TSN) but lacks rigorous empirical validation. Experiments are limited to CIFAR-10/100 with modest/mixed results (SBN and TSN underperform baseline), no statistical significance testing, and the proposed innovations show no clear advantage over existing methods. The design patterns are largely post-hoc observations from existing literature rather than novel principles, and the paper reads more as an engineering guide than a research contribution with new insights or strong empirical evidence."
+      },
+      "token": {
+        "prompt_tokens": 9063,
+        "completion_tokens": 150,
+        "total_tokens": 9213
+      },
+      "time": "2026-02-11T19:26:16.825710+00:00"
     }
   ],
   "test": true

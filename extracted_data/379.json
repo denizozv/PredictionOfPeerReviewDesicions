@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel systems contribution with strong practical impact. Dynamic batching elegantly solves a real problem (batching heterogeneous computation graphs), is well-engineered, and enables significant speedups (120x on GPU). The combinator library demonstrates principled abstraction design. Solid experimental validation and multiple application domains (NLP, chemistry) show generality."
-      },
-      "token": {
-        "prompt_tokens": 7654,
-        "completion_tokens": 109,
-        "total_tokens": 7763
-      },
-      "time": "2026-02-08T22:09:06.344204+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -138,6 +124,20 @@
         "total_tokens": 9316
       },
       "time": "2026-02-09T20:13:06.212099+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Introduces dynamic batching—a practical and elegant technique that enables efficient execution of neural networks over variable-structure graphs (trees, DAGs) in static dataflow frameworks like TensorFlow. Demonstrates substantial speedups (120x on GPU), provides a well-designed combinator library that simplifies model implementation, and validates the approach across multiple domains (NLP, cheminformatics) with clear empirical results and code-conciseness comparisons."
+      },
+      "token": {
+        "prompt_tokens": 10388,
+        "completion_tokens": 130,
+        "total_tokens": 10518
+      },
+      "time": "2026-02-11T18:31:23.023202+00:00"
     }
   ],
   "test": false

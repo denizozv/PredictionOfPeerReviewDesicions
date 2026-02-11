@@ -152,20 +152,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.75,
-        "primary_reason": "Limited novelty and weak experimental validation. The core idea of partitioning variables among experts is straightforward; the smoothing mechanism via expertise-weighted mixtures is a standard EM approach. Experiments lack quantitative comparisons with modern baselines, use only small datasets (MNIST, 328 horse images), and provide no statistical significance testing or error bars. The method shows no clear advantage over existing mixture models or sparse coding approaches."
-      },
-      "token": {
-        "prompt_tokens": 4406,
-        "completion_tokens": 126,
-        "total_tokens": 4532
-      },
-      "time": "2026-02-08T22:50:05.924459+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -178,6 +164,20 @@
         "total_tokens": 6604
       },
       "time": "2026-02-09T20:53:36.647424+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper presents an interesting idea (dynamic partitioning of variables across experts with expertise-weighted composition), but suffers from limited novelty, weak experimental validation, and unclear practical advantages. The core contribution—using max-expertise selection with a smoothed EM variant—is incremental. Experiments are mostly qualitative visualizations on small/toy datasets (synthetic, MNIST, low-res images) with no quantitative comparisons to modern baselines, no statistical significance testing, and no clear demonstration that the method outperforms simpler alternatives or scales to realistic problems. The writing is dense and the motivation for why this approach is superior to mixture-of-experts or other compositional models is not convincingly established."
+      },
+      "token": {
+        "prompt_tokens": 7140,
+        "completion_tokens": 184,
+        "total_tokens": 7324
+      },
+      "time": "2026-02-11T19:30:17.092647+00:00"
     }
   ],
   "test": false

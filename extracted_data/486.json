@@ -162,20 +162,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.98,
-        "primary_reason": "Seminal work introducing Graph Convolutional Networks (GCN) with strong theoretical motivation via spectral graph convolutions, efficient O(|E|) complexity, clear methodological novelty, comprehensive experiments on multiple datasets, and significant empirical improvements over baselines. Highly influential contribution to graph neural networks."
-      },
-      "token": {
-        "prompt_tokens": 7413,
-        "completion_tokens": 102,
-        "total_tokens": 7515
-      },
-      "time": "2026-02-08T22:22:18.886670+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -188,6 +174,20 @@
         "total_tokens": 9254
       },
       "time": "2026-02-09T20:24:11.236929+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.98,
+        "primary_reason": "Seminal work introducing Graph Convolutional Networks (GCN) with strong theoretical motivation via spectral graph convolutions and first-order approximation, efficient O(|E|) complexity, clear architectural design, comprehensive experiments on citation networks and knowledge graphs showing significant improvements over prior methods, and high practical impact with reproducible code."
+      },
+      "token": {
+        "prompt_tokens": 10147,
+        "completion_tokens": 106,
+        "total_tokens": 10253
+      },
+      "time": "2026-02-11T18:50:06.504327+00:00"
     }
   ],
   "test": true

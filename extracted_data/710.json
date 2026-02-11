@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: applies existing HDP-HMM method to bioacoustics without algorithmic innovation. Weak experimental validation: NMI score of 0.49 on birds, inconsistent state discovery, no comparison with baselines. Insufficient rigor: single expert validation, no statistical testing, limited dataset scope. Application-focused rather than methodologically advancing the field."
-      },
-      "token": {
-        "prompt_tokens": 6190,
-        "completion_tokens": 116,
-        "total_tokens": 6306
-      },
-      "time": "2026-02-08T22:44:06.641292+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -138,6 +124,20 @@
         "total_tokens": 8119
       },
       "time": "2026-02-09T20:46:52.924610+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "Application of existing HDP-HMM method to bioacoustics with weak empirical validation: no novel methodology, limited baselines (no comparison to standard HMM or other unsupervised methods), poor quantitative evaluation (NMI=0.49 on birds, no metrics on whale), and lack of rigorous analysis of when/why the method works. Writing quality is poor with grammatical errors and missing experimental details."
+      },
+      "token": {
+        "prompt_tokens": 8924,
+        "completion_tokens": 128,
+        "total_tokens": 9052
+      },
+      "time": "2026-02-11T19:21:15.482164+00:00"
     }
   ],
   "test": false

@@ -117,20 +117,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel memory-augmented hypothesis testing framework with dynamic termination strategies (query gating and adaptive computation) for machine reading comprehension. Solid experimental validation on CBT and WDW benchmarks with consistent SOTA improvements (1.2-2.6%). Clear methodological contribution beyond standard attention mechanisms, though incremental gains and limited theoretical novelty prevent higher confidence."
-      },
-      "token": {
-        "prompt_tokens": 5970,
-        "completion_tokens": 112,
-        "total_tokens": 6082
-      },
-      "time": "2026-02-08T22:21:06.346332+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -143,6 +129,20 @@
         "total_tokens": 8043
       },
       "time": "2026-02-09T20:23:29.045047+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.72,
+        "primary_reason": "The paper proposes a memory-augmented neural network with iterative hypothesis testing for reading comprehension, achieving modest empirical improvements (1.2–2.6% on CBT, 1.7–2.2% on WDW). However, the core contribution—iterative query refinement via read/write/compose operations—is incremental and not sufficiently novel. The two halting strategies (query gating and adaptive computation) are relatively straightforward applications of existing techniques (gating mechanisms and probabilistic termination). While the empirical results are solid, the conceptual advance is limited, the analysis is mostly post-hoc visualization without deep mechanistic insight, and the improvements, though consistent, are modest relative to the added architectural complexity. The work reads as a competent engineering contribution rather than a significant methodological or empirical advance warranting acceptance at a top venue."
+      },
+      "token": {
+        "prompt_tokens": 8704,
+        "completion_tokens": 221,
+        "total_tokens": 8925
+      },
+      "time": "2026-02-11T18:49:05.971799+00:00"
     }
   ],
   "test": false

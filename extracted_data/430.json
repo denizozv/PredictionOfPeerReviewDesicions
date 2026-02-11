@@ -82,20 +82,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel framework for learning latent sequence decompositions with principled probabilistic formulation, solid experimental validation on WSJ ASR, and meaningful improvements over baselines. The idea of input-dependent, learnable tokenization is conceptually interesting and well-motivated, though the execution relies on heuristic approximations (ε-greedy sampling) and experiments are limited to a single domain."
-      },
-      "token": {
-        "prompt_tokens": 8385,
-        "completion_tokens": 117,
-        "total_tokens": 8502
-      },
-      "time": "2026-02-08T22:14:31.353480+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -108,6 +94,20 @@
         "total_tokens": 10414
       },
       "time": "2026-02-09T20:18:17.026502+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Novel framework for learning latent sequence decompositions with principled probabilistic formulation and gradient estimator; demonstrates consistent improvements on WSJ ASR (12.9% vs 14.8% baseline WER) with good ablations and analysis of learned decompositions, though the left-to-right sampling approximation is somewhat ad-hoc and evaluation is limited to a single task."
+      },
+      "token": {
+        "prompt_tokens": 11119,
+        "completion_tokens": 118,
+        "total_tokens": 11237
+      },
+      "time": "2026-02-11T18:40:05.224092+00:00"
     }
   ],
   "test": false

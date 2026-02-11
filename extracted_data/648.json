@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Novel context-conditional GAN formulation for semi-supervised learning with solid experimental validation on STL-10 and PASCAL VOC, demonstrating clear improvements over baselines and competitive results with state-of-the-art methods."
-      },
-      "token": {
-        "prompt_tokens": 3852,
-        "completion_tokens": 85,
-        "total_tokens": 3937
-      },
-      "time": "2026-02-08T22:38:14.692247+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -128,6 +114,20 @@
         "total_tokens": 6042
       },
       "time": "2026-02-09T20:40:41.388032+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a well-motivated semi-supervised learning approach using context-conditional GANs for inpainting, with clear technical contributions (CC-GAN, CC-GAN2 variants), solid empirical results on STL-10 and PASCAL VOC that match or exceed prior work, reasonable ablations (SSL-GAN baseline, supervised baseline), and good qualitative inpainting visualizations. The method is practical and the writing is clear, though the novelty is somewhat incremental (combining existing GAN ideas with inpainting) and evaluation could be more comprehensive."
+      },
+      "token": {
+        "prompt_tokens": 6586,
+        "completion_tokens": 159,
+        "total_tokens": 6745
+      },
+      "time": "2026-02-11T19:13:16.800495+00:00"
     }
   ],
   "test": true

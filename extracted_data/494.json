@@ -127,20 +127,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.85,
-        "primary_reason": "Significant dataset contribution for formal theorem proving with well-motivated ML tasks, comprehensive baseline experiments, and clear relevance to automated reasoning. Establishes important benchmark for the community."
-      },
-      "token": {
-        "prompt_tokens": 3678,
-        "completion_tokens": 72,
-        "total_tokens": 3750
-      },
-      "time": "2026-02-08T22:23:03.437204+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -153,6 +139,20 @@
         "total_tokens": 5930
       },
       "time": "2026-02-09T20:24:53.651720+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.82,
+        "primary_reason": "Introduces a substantial, high-quality dataset (2M+ examples from HOL proofs) with clear relevance to theorem proving, proposes well-motivated ML tasks, provides multiple baseline models with thorough ablations, and makes all code/data publicly available. The work is a solid dataset contribution with honest empirical analysis, though the baseline models themselves are relatively simple and don't yet demonstrate strong practical impact on real theorem proving."
+      },
+      "token": {
+        "prompt_tokens": 6412,
+        "completion_tokens": 125,
+        "total_tokens": 6537
+      },
+      "time": "2026-02-11T18:51:09.053508+00:00"
     }
   ],
   "test": false

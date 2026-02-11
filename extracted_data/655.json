@@ -82,20 +82,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Limited novelty: BPA from evidence theory is existing technique; distributed single-filter training lacks theoretical justification; weak experimental validation (only MNIST/CIFAR/SVHN, no statistical significance, missing comparisons with modern transfer learning and class-imbalance methods); presentation issues (unclear motivation, ad-hoc design choices, incomplete algorithmic details)."
-      },
-      "token": {
-        "prompt_tokens": 3990,
-        "completion_tokens": 113,
-        "total_tokens": 4103
-      },
-      "time": "2026-02-08T22:38:25.227415+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -108,6 +94,20 @@
         "total_tokens": 6284
       },
       "time": "2026-02-09T20:41:18.902537+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.92,
+        "primary_reason": "The paper proposes combining basic probability assignment (BPA) from evidence theory with distributed transfer learning via single-filter networks, but the contribution is poorly motivated and weakly validated. The core idea—training individual convolutional filters separately and combining them via BPA weights—lacks clear justification for why this decomposition helps optimization or class imbalance. Experiments show only modest improvements on standard benchmarks (MNIST, CIFAR, SVHN) with no statistical significance testing, ablations, or comparison to established class-imbalance methods (e.g., weighted loss, focal loss, oversampling). The writing is unclear, the method's connection to evidence theory feels forced, and the claimed benefits (reduced optimization complexity, class-imbalance handling) are neither rigorously analyzed nor convincingly demonstrated relative to simpler baselines."
+      },
+      "token": {
+        "prompt_tokens": 6724,
+        "completion_tokens": 212,
+        "total_tokens": 6936
+      },
+      "time": "2026-02-11T19:13:31.383988+00:00"
     }
   ],
   "test": false

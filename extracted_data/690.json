@@ -102,20 +102,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": true,
-        "confidence": 0.85,
-        "primary_reason": "Empirical benchmarking study without methodological novelty. Analyzes existing architectures on standard ImageNet task using standard metrics (accuracy, latency, power). No new algorithms, theoretical insights, or architectural innovations. Primarily an engineering/systems analysis paper lacking the scientific contribution expected at top-tier venues."
-      },
-      "token": {
-        "prompt_tokens": 2938,
-        "completion_tokens": 101,
-        "total_tokens": 3039
-      },
-      "time": "2026-02-08T22:41:31.764472+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -128,6 +114,20 @@
         "total_tokens": 5222
       },
       "time": "2026-02-09T20:44:40.057156+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.85,
+        "primary_reason": "Primarily an empirical benchmarking study lacking novel methodology, theoretical insight, or algorithmic contribution. While the comprehensive measurement of accuracy/latency/power tradeoffs on ImageNet models is useful, the findings are largely expected (e.g., accuracy-speed tradeoffs, power independence from batch size) and the analysis is descriptive rather than prescriptive. No new model, training technique, or principled design framework is proposed—only post-hoc measurements of existing architectures. The work reads as a technical report or engineering study rather than a research contribution suitable for ICML/ICLR/NeurIPS."
+      },
+      "token": {
+        "prompt_tokens": 5672,
+        "completion_tokens": 170,
+        "total_tokens": 5842
+      },
+      "time": "2026-02-11T19:18:20.453632+00:00"
     }
   ],
   "test": false

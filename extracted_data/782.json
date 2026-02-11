@@ -107,20 +107,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.92,
-        "primary_reason": "Novel hierarchical tree-based attention mechanism achieving O(log n) memory access complexity. Strong algorithmic contributions (learning sorting, merging, binary search from I/O examples with excellent generalization). Rigorous experimental validation on multiple tasks with clear comparisons to baselines. Well-motivated architecture with theoretical grounding and interpretable learned algorithms."
-      },
-      "token": {
-        "prompt_tokens": 8322,
-        "completion_tokens": 107,
-        "total_tokens": 8429
-      },
-      "time": "2026-02-08T22:50:08.069545+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -133,6 +119,20 @@
         "total_tokens": 10171
       },
       "time": "2026-02-09T20:53:43.309029+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.78,
+        "primary_reason": "Novel hierarchical tree-based attention mechanism achieving O(log n) memory access complexity with strong empirical results on algorithmic tasks (sorting, searching, merging) and impressive generalization to sequences 4x longer than training data; introduces useful inductive bias and demonstrates learning of non-trivial algorithms from input-output pairs alone, though evaluation is limited to synthetic tasks and comparisons to relatively weak baselines (standard LSTM/attention)."
+      },
+      "token": {
+        "prompt_tokens": 11056,
+        "completion_tokens": 128,
+        "total_tokens": 11184
+      },
+      "time": "2026-02-11T19:30:20.150195+00:00"
     }
   ],
   "test": false

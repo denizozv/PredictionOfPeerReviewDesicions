@@ -97,20 +97,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.72,
-        "primary_reason": "Hardware accelerator with novel bit-serial processing exploiting per-layer precision variability. Solid experimental validation on real networks with 1.90x speedup and post-layout results. Addresses practical DNN inference optimization with clear technical contribution, though incremental over prior work (extends prior convolutional-only approach to fully-connected layers)."
-      },
-      "token": {
-        "prompt_tokens": 7056,
-        "completion_tokens": 109,
-        "total_tokens": 7165
-      },
-      "time": "2026-02-08T22:43:16.904252+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": true,
@@ -123,6 +109,20 @@
         "total_tokens": 8935
       },
       "time": "2026-02-09T20:46:03.502340+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": true,
+        "confidence": 0.75,
+        "primary_reason": "Hardware accelerator paper with incremental contribution (extending DaDianNao with bit-serial processing for variable precision) and limited novelty. The core idea of exploiting per-layer precision variability is sound but not sufficiently novel—prior work (Judd et al.) already demonstrated precision reduction; TRT's main contribution is engineering a bit-serial datapath. Evaluation is narrow (only image CNNs on 65nm, dated baseline from 2014), lacks comparison to other precision-exploiting accelerators, and the 1.9x speedup with 49% area overhead is modest. Missing analysis of why bit-serial is better than alternatives (e.g., mixed-precision with standard multipliers). Presentation is dense and hardware-focused, limiting accessibility. Suitable for a systems/architecture venue but below the bar for ICML/ICLR/NeurIPS which prioritize algorithmic and learning contributions."
+      },
+      "token": {
+        "prompt_tokens": 9790,
+        "completion_tokens": 235,
+        "total_tokens": 10025
+      },
+      "time": "2026-02-11T19:20:18.597954+00:00"
     }
   ],
   "test": false

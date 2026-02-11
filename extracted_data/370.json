@@ -112,20 +112,6 @@
   ],
   "fewShot": [
     {
-      "model": "claude-haiku-4-5",
-      "decision": {
-        "rejection": false,
-        "confidence": 0.78,
-        "primary_reason": "Novel three-stage training methodology with strong empirical validation across multiple architectures (CNNs, RNNs, LSTMs) and domains (vision, speech, captioning). Consistent improvements with theoretical justification via Taylor expansion. Comprehensive experiments on ImageNet and other benchmarks demonstrate practical impact."
-      },
-      "token": {
-        "prompt_tokens": 4712,
-        "completion_tokens": 100,
-        "total_tokens": 4812
-      },
-      "time": "2026-02-08T22:08:11.980381+00:00"
-    },
-    {
       "model": "gpt-5.2",
       "decision": {
         "rejection": false,
@@ -138,6 +124,20 @@
         "total_tokens": 6844
       },
       "time": "2026-02-09T20:12:24.059617+00:00"
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "decision": {
+        "rejection": false,
+        "confidence": 0.72,
+        "primary_reason": "Proposes a simple yet effective three-stage training procedure (dense-sparse-dense) that consistently improves accuracy across multiple architectures (CNNs, RNNs, LSTMs) and domains (ImageNet, speech, captioning) with substantial gains (e.g., +4.3% VGG-16, +1.1-2.0% speech WER); includes reasonable theoretical motivation via Taylor expansion, comprehensive experiments with fair baselines (LLR), and practical utility with minimal overhead. Main weaknesses: limited novelty (pruning + retraining is incremental), lacks deeper mechanistic insight into why re-densification helps, and some experimental choices (uniform sparsity, fixed hyperparameters) could be better justified."
+      },
+      "token": {
+        "prompt_tokens": 7446,
+        "completion_tokens": 199,
+        "total_tokens": 7645
+      },
+      "time": "2026-02-11T18:30:19.018187+00:00"
     }
   ],
   "test": false
